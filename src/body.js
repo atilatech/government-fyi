@@ -28,7 +28,7 @@ const Body = (props) => {
     )
 };
 
-const HomePage = mkLoadable(import("pages/home/index"));
+const HomePage = mkLoadable(import("pages/props/index"));
 const Page404 = mkLoadable(import("pages/404/index"));
 
 try {

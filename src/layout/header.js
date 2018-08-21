@@ -5,10 +5,8 @@ import Color from 'layout/colors'
 
 const Container = styled.div`
   width: 100%;
-  background-color: white;
   height: 45px;
   position: relative;
-  box-shadow: 0 0 40px rgba(0,0,0,0.1);
 `
 const LogoLink = styled(Link)`
   color: ${Color('black')};
@@ -25,6 +23,8 @@ const Logo = styled.h2 `
 `
 const Sticky = styled.div`
   position: fixed;
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
   top: 0;
   left: 0;
   display: flex;
@@ -32,6 +32,7 @@ const Sticky = styled.div`
   align-items: center;
   height: 45px;
   width: 100%;
+  z-index:3;
 `
 
 const NavBar = styled.div`
