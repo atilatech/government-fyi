@@ -1,0 +1,116 @@
+@keyframes shimmer {
+  0% {
+    background-position: -250px 0
+  }
+  100% {
+    background-position: 600px 0
+  }
+}
+
+.loading-block {
+  display: block;
+  margin: 70px auto;
+  width: 80%;
+  max-width: 600px;
+  height: 600px;
+}
+
+.animated-background {
+  animation-duration: 1.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: #eee;
+  background: linear-gradient(90deg, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 600px;
+  height: 320px;
+  position: relative;
+}
+
+.background-masker {
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.background-masker.header-top,
+.background-masker.header-top-2{
+  left: 0;
+  right: 0;
+}
+.background-masker.header-top{
+  top: 40px;
+  height: 15px;
+}
+.background-masker.header-top-2{
+  top: 80px;
+  height: 30px;
+}
+
+.background-masker.body-top-left{
+  top: 80px;
+  left: 0;
+  width: 30px;
+  height: 15px;
+}
+.background-masker.body-line,
+.background-masker.body-line-2,
+.background-masker.body-line-3,
+.background-masker.body-line-4,
+.background-masker.body-line-5,
+.background-masker.body-line-6{
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+.background-masker.body-line{
+  top: 80px;
+}
+.background-masker.body-line-2{
+  top: 95px;
+}
+.background-masker.body-line-3{
+  top: 110px;
+}
+.background-masker.body-line-4{
+  top: 125px;
+}
+.background-masker.body-line-5{
+  top: 140px;
+}
+.background-masker.body-line-6{
+  top: 155px;
+}
+.background-masker.body-line-end{
+  position: absolute;
+  top: 305px;
+  right: 0;
+  width: 30px;
+  height: 15px;
+}
+.loading-error{
+  font-family: Helvetica, sans-serif;
+  margin: 70px auto;
+  text-align: center;
+  border: 1px solid salmon;
+  border-radius: 10px;
+  max-width: 600px;
+  padding: 30px 50px;
+}
+.refresh-button{
+  font-family: Roboto, Helvetica;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  padding: 20px 10px;
+  background-color: salmon;
+  color: #fff;
+  cursor:pointer;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
