@@ -21,7 +21,7 @@ const Body = (props) => {
       <Route component={logView}/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
-        {/* <Route component={Page404}/> */}
+        <Route component={Page404}/>
       </Switch>
       <Footer />
     </div>
@@ -29,7 +29,7 @@ const Body = (props) => {
 };
 
 const HomePage = mkLoadable(import("pages/home/index"));
-// const Page404 = mkLoadable(import("pages/404/404"));
+const Page404 = mkLoadable(import("pages/404/index"));
 
 try {
   GA.initialize([
