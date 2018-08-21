@@ -1,5 +1,70 @@
 body {
-  margin: 0;
+  position: relative;
+	font-family: "Georgia", "Times New Roman", Serif;
+	font-size: 16px;
+	line-height: 25px;
+  color: #323232;
+  margin: 0 auto;
   padding: 0;
-  font-family: "itc-avant-garde-gothic-pro", Helvetica, sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width: 1440px;
+  background: linear-gradient(0deg, #f5f5f5, #eee);
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-family: 'itc-avant-garde-gothic-pro', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'itc-avant-garde-gothic-pro', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 31px;
+}
+
+h3 {
+  font-family: 'itc-avant-garde-gothic-pro', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 768px) {
+  html {
+    text-rendering: optimizeLegibility;
+	}
+}
+
+a {
+	color: #FF454C;
+	text-decoration: underline;
+}
+a:hover, a:active {
+  text-decoration: none;
+}
+em {
+	font-style: italic;
+}
+b {
+  font-style: bold;
+}
+::selection {
+	background: #dddddd;
+}
+/*override flexbox-grid to get full bleed*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
