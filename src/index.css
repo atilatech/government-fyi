@@ -19,8 +19,7 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 h2 {
@@ -29,15 +28,17 @@ h2 {
   font-size: 24px;
   text-transform: uppercase;
   line-height: 31px;
+  margin: 0;
 }
 
 h3 {
   font-family: 'itc-avant-garde-gothic-pro', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 1.3px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 
@@ -67,4 +68,8 @@ b {
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+
+.activeNavLink {
+  background-color: #eee;
 }
