@@ -30,7 +30,8 @@ const Title = styled.h1`
 
 const BodyContainer = styled.div`
   box-sizing: border-box;
-  padding-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 5px;
   @media screen and (max-width: 767px) {
     padding-left: 0;
@@ -74,7 +75,7 @@ const PageTitleBlock = (props) => {
           lgOffset={0} lg={5}
         >
           <BodyContainer>
-            <Line color={Color('black')}/>
+            <Line color={Color('black')} width="35%"/>
             {body && <BodyText>{body}</BodyText>}
           </BodyContainer>
         </Col>

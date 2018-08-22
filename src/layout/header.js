@@ -18,7 +18,7 @@ const Logo = styled.h2 `
   font-size: 20px;
   @media not all and (hover: none) {
     &:hover {
-      color: ${Color('orange2')};
+      color: ${Color('pink2')};
     }
   }
   @media screen and (max-width: 767px){

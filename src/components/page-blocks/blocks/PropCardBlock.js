@@ -22,7 +22,7 @@ const Overflow = styled(Row)`
 const Background = styled.div`
 	background: linear-gradient(90deg, ${props=>props.color1}, ${props=>props.color2});
 	background-color: ${props=>props.color1};
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 	min-height: 250px;
 	box-sizing: border-box;
 `;
