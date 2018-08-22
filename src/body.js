@@ -21,6 +21,21 @@ const Body = (props) => {
       <Route component={logView}/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
+        <Route path='/home' component={HomePage}/>
+        <Route path='/subscribe' component={SubscribePage}/>
+        <Route path='/prop-1' component={Prop1}/>
+        {/* <Route path='/prop-2' component={Prop2}/> */}
+        {/* <Route path='/prop-3' component={Prop3}/> */}
+        {/* <Route path='/prop-4' component={Prop4}/> */}
+        {/* <Route path='/prop-5' component={Prop5}/> */}
+        {/* <Route path='/prop-6' component={Prop6}/> */}
+        {/* <Route path='/prop-7' component={Prop7}/> */}
+        {/* <Route path='/prop-8' component={Prop8}/> */}
+        {/* <Route path='/prop-9' component={Prop9}/> */}
+        {/* <Route path='/prop-10' component={Prop10}/> */}
+        {/* <Route path='/prop-11' component={Prop11}/> */}
+        {/* <Route path='/prop-12' component={Prop12}/> */}
+        <Route path='/about' component={AboutPage}/>
         <Route component={Page404}/>
       </Switch>
       <Footer />
@@ -28,7 +43,21 @@ const Body = (props) => {
     )
 };
 
-const HomePage = mkLoadable(import("pages/props/index"));
+const HomePage = mkLoadable(import("pages/home/index"));
+const AboutPage = mkLoadable(import("pages/about/index"));
+const SubscribePage = mkLoadable(import("pages/subscribe/index"));
+const Prop1 = mkLoadable(import("pages/1/index"));
+// const Prop2 = mkLoadable(import("pages/2/index"));
+// const Prop3 = mkLoadable(import("pages/3/index"));
+// const Prop4 = mkLoadable(import("pages/4/index"));
+// const Prop5 = mkLoadable(import("pages/5/index"));
+// const Prop6 = mkLoadable(import("pages/6/index"));
+// const Prop7 = mkLoadable(import("pages/7/index"));
+// const Prop8 = mkLoadable(import("pages/8/index"));
+// const Prop9 = mkLoadable(import("pages/9/index"));
+// const Prop10 = mkLoadable(import("pages/10/index"));
+// const Prop11 = mkLoadable(import("pages/11/index"));
+// const Prop12 = mkLoadable(import("pages/12/index"));
 const Page404 = mkLoadable(import("pages/404/index"));
 
 try {

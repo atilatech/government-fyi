@@ -13,7 +13,7 @@ usage for file:
 	component: WallpaperBannerImg,
 	data: {
 		color: "pink",
-		img: MustBeAPNG,
+		image: MustBeAPNG,
 	}
 },
 */
@@ -28,6 +28,8 @@ const AbsoluteUnderBleed = styled.div`
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	display:flex;
+	align-items: flex-end;
 `;
 
 const Relative = styled.div`
@@ -35,27 +37,34 @@ const Relative = styled.div`
 	min-height: 206px;
 `;
 
+const Title = styled.h1`
+	position: absolute;
+	width: 100%;
+	text-align: center;
+`
+
 const Wallpaper = styled.div`
 	background-image: url('${props=>props.img}');
 	background-repeat: ${props=>props.repeat} no-repeat;
-	height: 206px;
+	height: 100px;
 	width: 100%;
 	background-size: contain;
 `;
 
 const WallpaperBannerImg = (props) => {
-	const {color, image, repeatType} = props.data;
+	const {color, image, repeatType, title} = props.data;
 	const repeatX = repeatType || "space";
 	return(
 		<React.Fragment>
 			<Relative>
 				<Spacer height={30}/>
 				<AbsoluteOverBleed>
-					<Banner color={`${Color(color)}`}/>
+					<Banner color={color}/>
 				</AbsoluteOverBleed>
 				<AbsoluteUnderBleed>
 					<Wallpaper img={image} repeat={repeatX}/>
 				</AbsoluteUnderBleed>
+				<Title>{title}</Title>
 			</Relative>
 			<Spacer height={35}/>
 		</React.Fragment>
@@ -63,8 +72,8 @@ const WallpaperBannerImg = (props) => {
 }
 
 const Banner = (props) => (
-	<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 42.93L1440 .07v160.04L0 205.07z" fill={props.color} fillRule="evenodd"/></svg>
-)
+	<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 42.93L1440 .07v160.04L0 205.07z" fill="url(#Gradient1)" fillRule="evenodd"/><defs><linearGradient id="Gradient1"><stop stop-color={Color(props.color+'1')} offset="0%"/><stop stop-color={Color(props.color+'2')} offset="100%"/></linearGradient></defs></svg>
+	)
 
 WallpaperBannerImg.propTypes = {
 	data: PropTypes.shape({
