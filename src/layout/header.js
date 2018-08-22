@@ -20,11 +20,14 @@ const Logo = styled.h2 `
       color: ${Color('orange2')};
     }
   }
+  @media screen and (max-width: 767px){
+    margin-left: 28px;
+  }
 `
 const Sticky = styled.div`
   position: fixed;
   background-color: white;
-  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+  box-shadow: 0 0 40px rgba(0,0,0,0.2);
   top: 0;
   left: 0;
   display: flex;
