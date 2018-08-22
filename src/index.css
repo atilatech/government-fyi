@@ -41,6 +41,12 @@ h3 {
   margin: 0;
 }
 
+/*For FullScreenModal and overlay*/
+.stopscroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 
 @media screen and (min-width: 768px) {
   html {

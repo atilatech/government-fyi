@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Link, NavLink } from 'react-router-dom'
 import Color from 'layout/colors'
+import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 
 const Container = styled.div`
   width: 100%;
@@ -56,27 +57,51 @@ const NavItem = styled.h3`
 `
 
 
-const Header = (props) => {
-  const navItems = nav.map((item,i) => {
-    return(
-      <NavWrapper key={i} to={item.to} activeClassName="activeNavLink">
-        <NavItem>{item.label}</NavItem>
-      </NavWrapper>
-    );
-  });
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = ({
+      windowWidth: 767,
+    })
+  }
 
-  return(
-    <Container>
-      <Sticky>
-        <LogoLink to="/">
-          <Logo>ballot.fyi</Logo>
-        </LogoLink>
-        <NavBar>
-          {navItems}
-        </NavBar>
-      </Sticky>
-    </Container>
-  )
+  componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+	}
+
+	componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+	}
+
+  handleResize = () => {
+    let w = (window.innerWidth || document.documentElement.clientWidth);
+    this.setState({ windowWidth: w });
+  }
+
+  render() {
+    const navItems = nav.map((item,i) => {
+      return(
+        <NavWrapper key={i} to={item.to} activeClassName="activeNavLink">
+          <NavItem>{item.label}</NavItem>
+        </NavWrapper>
+      );
+    });
+
+    const isXsScreen = this.state.windowWidth < 767;
+    return(
+      <Container>
+        <Sticky>
+          <LogoLink to="/">
+            <Logo>ballot.fyi</Logo>
+          </LogoLink>
+          <NavBar>
+            {isXsScreen ? <MenuDrawerButton items={nav}/> : navItems}
+          </NavBar>
+        </Sticky>
+      </Container>
+    )
+  }
 }
 
 const nav = [

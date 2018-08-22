@@ -32,7 +32,7 @@ const PropNumber = styled.div`
 	font-family: ${props=>props.theme.fonts.h5};
 	align-self: flex-end;
 	color: rgba(0,0,0,0.4);
-	font-size: 37px;
+	font-size: 42px;
 	margin-bottom: 45px;
 	font-weight: bold;
 `
@@ -67,6 +67,10 @@ const Img = styled(MultisourceImage)`
 		transform: translate(0,2px);
 		filter: drop-shadow(8px 3px 0px rgba(0,0,0,0.2)) drop-shadow(-4px 6px rgba(0,0,0,0.1));
 	}
+	@media screen and (max-width: 1023px) {
+		width: 70%;
+		height: auto;
+	}
 	@media screen and (max-width: 767px) {
 		height: auto;
 		width: 100%;
@@ -86,7 +90,10 @@ const TextContainer = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	padding-right: 40px;
+	padding-right: 20px;
+	@media screen and (max-width: 1023px) {
+		min-width: 50%;
+	}
 	@media screen and (max-width: 767px) {
 		min-width: 40%;
 		padding-left: 20px;
@@ -105,8 +112,8 @@ const Description = styled.h2`
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 45px;
+	color: ${Color('black')};
 	@media screen and (max-width: 767px) {
-		color: ${Color('black')};
 	}
 `
 

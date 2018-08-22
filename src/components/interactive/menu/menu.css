@@ -1,0 +1,12 @@
+#menu-transition {
+  opacity: 0;
+  transform: translateX(100%);
+  transition-property: opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#menu-transition.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
