@@ -91,11 +91,12 @@ const TextContainer = styled.div`
 	justify-content: space-between;
 	height: 100%;
 	padding-right: 20px;
+	box-sizing: border-box;
 	@media screen and (max-width: 1023px) {
 		min-width: 50%;
 	}
 	@media screen and (max-width: 767px) {
-		min-width: 40%;
+		min-width: 60%;
 		padding-left: 20px;
 		padding-right: 20px;
 	}

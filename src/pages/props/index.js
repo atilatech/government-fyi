@@ -1,9 +1,8 @@
 import React from 'react'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
-// import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
+import FrontPageTitleBlock from 'components/page-blocks/blocks/FrontPageTitleBlock'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
-// import WallpaperBannerImg from 'components/page-blocks/blocks/WallpaperBannerImg'
-
+import {Link} from 'react-router-dom'
 // import CAImg from './images/ca.png'
 import Prop1Img from './images/prop-1.png'
 import Prop1Img_w from './images/prop-1.webp'
@@ -60,25 +59,15 @@ const Data = {
 		socialImage:"general.png",
 	},
 	blocks: [
-		// {
-		// 	id: "010",
-		// 	component: PageTitleBlock,
-		// 	data: {
-		// 		title: "Preview your November ballot",
-		// 		subtitle: <span>Here's a look at some of the issues and races you can vote on in the Nov. 6 midterm election. We're putting together a nonpartisan voter guide so stay tuned for more by <Link to="/subscribe">subscribing</Link> to our newsletter, and make sure you're <a target="_blank" rel="noopener noreferrer" href="https://www.vote.org/">registered to vote</a>!</span>,
-		// 		datePublished: new Date(PublishDate),
-		// 		dateModified: new Date(EditDate)
-		// 	}
-		// },
-    // {
-    //   id: "020",
-    //   component: WallpaperBannerImg,
-    //   data: {
-    //     color: "orange2",
-    //     image: CAImg,
-    //     repeatType: "repeat"
-    //   }
-    // },
+		{
+			id: "010",
+			component: FrontPageTitleBlock,
+			data: {
+				title: "Nonpartisan guide to the 2018 election",
+				subtitle: "(Just for California's stuff, though.)",
+				body: <span> We're tired of constant news about Trump. Luckily, California gives us 11 semi-ridiculous ballot initiatives to vote and make fun of. We'll break them down for you, what the different sides are saying, and why your vote is actually important. <br/><br/>This is still a work in progress, but you can stay in touch by <Link to="/subscribe">subscribing</Link> to our newsletter. And! please, for fuck's sake, make sure you're <a target="_blank" rel="noopener noreferrer" href="https://www.vote.org/">registered to vote</a> for November 6, 2018.</span>,
+			}
+		},
 		{
 			id: "030",
 			component: PropCardBlock,
