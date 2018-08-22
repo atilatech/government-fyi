@@ -13,7 +13,7 @@ const LogoLink = styled(Link)`
   text-decoration: none;
 `
 const Logo = styled.h2 `
-  margin-left: 30px;
+  margin-left: 60px;
   font-size: 20px;
   @media not all and (hover: none) {
     &:hover {
