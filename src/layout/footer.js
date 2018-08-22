@@ -3,6 +3,12 @@ import styled from 'styled-components'
 import Color from 'layout/colors'
 import {Link} from 'react-router-dom'
 import {Spacer} from 'layout/util'
+import Line from 'components/static/rounded-line'
+
+const LineContainer = styled.div`
+  max-width: 320px;
+  margin: 0 auto;
+`
 
 const FooterContainer = styled.div`
   text-align: center;
@@ -33,22 +39,26 @@ const Footer = (props) => {
   });
   return(
     <div>
-      <Spacer height={70}/>
+      <Spacer height={40}/>
+      <LineContainer>
+        <Line color={Color('blue2')}/>
+      </LineContainer>
+      <Spacer height={30}/>
       <FooterContainer>
         <div>
           Site designed, built, and written by Amir & Erica © 2018 <span role="img" aria-label="US flag">🇺🇸</span>
+          <br/>Until Nov. 7, 2018, we will continually update the site. Please e-send us corrections.
         </div>
         <div>{navItems}</div>
       </FooterContainer>
-      <Spacer height={70}/>
+      <Spacer height={90}/>
     </div>
   )
 }
 
 const nav = [
-  { to:"/races/", label:"races"},
   { to:"/about/", label:"about"},
-  { to:"/instagram/", label:"instagram"},
+  { to:"/about#contact", label:"contact"},
   { to:"/terms/", label:"terms of service"},
 ];
 
