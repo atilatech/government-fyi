@@ -7,6 +7,8 @@ import {Spacer} from 'layout/util'
 const FooterContainer = styled.div`
   text-align: center;
   font-size: 13px;
+  padding-right: 20px;
+  padding-left: 20px;
 `
 const NavLink = styled(Link)`
   text-decoration: none;

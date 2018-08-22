@@ -16,6 +16,8 @@ const BannerLink = styled(Link)`
 
 const Overflow = styled(Row)`
 	overflow: hidden;
+	margin-left: 0;
+	margin-right: 0;
 `;
 const Background = styled.div`
 	background: linear-gradient(90deg, ${props=>props.color1}, ${props=>props.color2});
@@ -38,6 +40,10 @@ const ImgContainer = styled.div`
 	min-width: 400px;
 	display: flex;
 	justify-content: center;
+	@media screen and (max-width: 767px) {
+		justify-content: left;
+		min-width:90%;
+	}
 `
 
 const Img = styled(MultisourceImage)`
@@ -61,6 +67,12 @@ const Img = styled(MultisourceImage)`
 		transform: translate(0,2px);
 		filter: drop-shadow(8px 3px 0px rgba(0,0,0,0.2)) drop-shadow(-4px 6px rgba(0,0,0,0.1));
 	}
+	@media screen and (max-width: 767px) {
+		height: auto;
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 `;
 
 const Container = styled.div`
@@ -75,6 +87,11 @@ const TextContainer = styled.div`
 	justify-content: space-between;
 	height: 100%;
 	padding-right: 40px;
+	@media screen and (max-width: 767px) {
+		min-width: 40%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 `
 
 const Header = styled.h2`
@@ -88,6 +105,9 @@ const Description = styled.h2`
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 45px;
+	@media screen and (max-width: 767px) {
+		color: ${Color('black')};
+	}
 `
 
 const PropCardBlock = (props) => {
@@ -99,7 +119,7 @@ const PropCardBlock = (props) => {
 				<Overflow>
 					<Col
 						xsOffset={0} xs={12}
-						smOffset={3} sm={6}
+						smOffset={1} sm={10}
 						mdOffset={2} md={8}
 						lgOffset={2} lg={8}
 					>
