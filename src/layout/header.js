@@ -5,6 +5,9 @@ import Color from 'layout/colors'
 import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 
 const Container = styled.div`
+  position: fixed;
+  top: -100px;
+  left: 0;
   width: 100%;
   height: 145px;
   display: flex;
@@ -29,17 +32,13 @@ const Logo = styled.h2 `
   }
 `
 const Sticky = styled.div`
-  position: fixed;
   background-color: white;
-  box-shadow: 0 0 40px rgba(0,0,0,0.2);
-  top: 0;
-  left: 0;
+  box-shadow: 0 0 40px rgba(0,0,0,0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 45px;
   width: 100%;
-  z-index:3;
 `
 
 const NavBar = styled.div`
@@ -57,6 +56,11 @@ const NavItem = styled.h3`
   padding: 5px 10px;
   margin-left: 15px;
   margin-right: 15px;
+`
+
+const Secret = styled.h2`
+  z-index: 4;
+  background-color: teal;
 `
 
 

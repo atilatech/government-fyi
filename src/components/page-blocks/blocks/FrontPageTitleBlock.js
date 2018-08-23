@@ -22,9 +22,11 @@ const Title = styled.h1`
   text-transform: uppercase;
   margin-bottom: 0;
   text-rendering: optimizeLegibility;
+  letter-spacing: -2.6px;
   @media screen and (max-width: 767px) {
     font-size: 38px;
     line-height: 46px;
+    letter-spacing: -1.6px;
   }
 `;
 
@@ -81,7 +83,7 @@ const PageTitleBlock = (props) => {
           </BodyContainer>
         </Col>
       </Row>
-      <Spacer height={40}/>
+      <Spacer height={55}/>
     </React.Fragment>
 	)
 }
