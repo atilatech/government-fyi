@@ -1,59 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
 import Color from 'layout/colors'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import {Spacer} from 'layout/util'
-import Line from 'components/static/rounded-line'
 
-const LineContainer = styled.div`
-  max-width: 320px;
-  margin: 0 auto;
-`
 
-const FooterContainer = styled.div`
-  text-align: center;
-  font-size: 13px;
-  padding-right: 20px;
-  padding-left: 20px;
+const Base = styled.div`
+  height: 100px;
+  background-color: ${Color('black')};
 `
-const NavLink = styled(Link)`
-  text-decoration: none;
-  color: ${Color('black')};
-`
-const NavLabel = styled.span`
-  @media not all and (hover: none) {
-    &:hover {
-      color: ${Color('red')};
-    }
-  }
-`
+const Slant = styled.div`
+	background-color: white;
+  margin-bottom: -10px;
+  user-select: none;
+`;
 
 const Footer = (props) => {
-  const navItems = nav.map((item,i) => {
-    return(
-      <NavLink key={i} to={item.to}>
-        <NavLabel>{item.label}</NavLabel>
-        {i!==nav.length-1 && " • "}
-      </NavLink>
-    );
-  });
+
   return(
     <div>
-      <Spacer height={40}/>
-      <LineContainer>
-        <Line color={Color('blue2')}/>
-      </LineContainer>
-      
       <Spacer height={90}/>
+      <Slant>
+        <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M0 84L1440 1v127.8H0z" fill="#323232" fillRule="evenodd"/></svg>
+      </Slant>
+      <Base/>
     </div>
   )
 }
 
-const nav = [
-  { to:"/about/", label:"about"},
-  { to:"/about#contact", label:"contact"},
-  { to:"/subscribe/", label:"subscribe"},
-  { to:"/terms/", label:"terms of service"},
-];
 
 export default Footer;

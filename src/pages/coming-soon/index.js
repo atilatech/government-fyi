@@ -4,6 +4,13 @@ import {Spacer} from 'layout/util'
 import MultisourceImage from 'components/static/multisource-image'
 import CalImg from './images/california.png'
 import CalImg_w from './images/california.webp'
+import Line from 'components/static/rounded-line'
+import Color from 'layout/colors'
+
+const LineContainer = styled.div`
+  max-width: 320px;
+  margin: 0 auto;
+`
 
 const Container = styled.div`
   text-align: left;
@@ -67,6 +74,10 @@ const TempHome = () => {
     <Container>
       <Spacer height={110}/>
       <BigH1>Coming back <br/>soon.</BigH1>
+      <LineContainer>
+        <Line color={Color('blue1')}/>
+      </LineContainer>
+      <Spacer height={20}/>
       <RightJustify>
         <ImgWrapper>
           <Img imageHandles={{_1x:CalImg, _1x_webp: CalImg_w}} alt="California election"/>
@@ -76,6 +87,10 @@ const TempHome = () => {
         </Description>
 
       </RightJustify>
+      <Spacer height={20}/>
+      <LineContainer>
+        <Line color={Color('blue1')}/>
+      </LineContainer>
       <Spacer height={70} xsHeight={30}/>
     </Container>
   )
