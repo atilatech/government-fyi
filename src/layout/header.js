@@ -6,8 +6,11 @@ import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 
 const Container = styled.div`
   width: 100%;
-  height: 45px;
-  position: relative;
+  height: 145px;
+  display: flex;
+  align-items: flex-end;
+  background-color: ${Color('yellow2')};
+  z-index: 3;
 `
 const LogoLink = styled(Link)`
   color: ${Color('black')};
@@ -95,7 +98,7 @@ class Header extends React.Component {
           <LogoLink to="/">
             <Logo>ballot.fyi</Logo>
           </LogoLink>
-          
+
         </Sticky>
       </Container>
     )
