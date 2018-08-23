@@ -12,7 +12,7 @@ const Container = styled.div`
   height: 145px;
   display: flex;
   align-items: flex-end;
-  background-color: skyblue;
+  background-color: ${Color('yellow2')};
   z-index: 3;
 `
 const LogoLink = styled(Link)`
@@ -58,10 +58,10 @@ const NavItem = styled.h3`
   margin-right: 15px;
 `
 
-const Secret = styled.h2`
-  z-index: 4;
-  background-color: teal;
-`
+// const Secret = styled.h2`
+//   z-index: 4;
+//   background-color: teal;
+// `
 
 
 class Header extends React.Component {
