@@ -95,9 +95,7 @@ class Header extends React.Component {
           <LogoLink to="/">
             <Logo>ballot.fyi</Logo>
           </LogoLink>
-          <NavBar>
-            {isXsScreen ? <MenuDrawerButton items={nav}/> : navItems}
-          </NavBar>
+          
         </Sticky>
       </Container>
     )

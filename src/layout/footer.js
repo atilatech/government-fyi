@@ -43,14 +43,7 @@ const Footer = (props) => {
       <LineContainer>
         <Line color={Color('blue2')}/>
       </LineContainer>
-      <Spacer height={30}/>
-      <FooterContainer>
-        <div>
-          Site designed, built, and written by Amir & Erica © 2018 <span role="img" aria-label="US flag">🇺🇸</span>
-          <br/>Until Nov. 7, 2018, we will continually update the site. Please e-send us correctións.
-        </div>
-        <div>{navItems}</div>
-      </FooterContainer>
+      
       <Spacer height={90}/>
     </div>
   )
