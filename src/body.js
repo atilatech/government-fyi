@@ -20,10 +20,10 @@ const Body = (props) => {
       <Header location={props.location}/>
       <Route component={logView}/>
       <Switch>
-        <Route exact path='/' component={HomePage}/>
-        <Route path='/home' component={HomePage}/>
-        <Route path='/subscribe' component={SubscribePage}/>
-        <Route path='/prop-1' component={Prop1}/>
+        <Route exact path='/' component={TempHomePage}/>
+        {/* <Route path='/home' component={TempHomePage}/> */}
+        {/* <Route path='/subscribe' component={SubscribePage}/> */}
+        {/* <Route path='/prop-1' component={Prop1}/> */}
         {/* <Route path='/prop-2' component={Prop2}/> */}
         {/* <Route path='/prop-3' component={Prop3}/> */}
         {/* <Route path='/prop-4' component={Prop4}/> */}
@@ -35,7 +35,7 @@ const Body = (props) => {
         {/* <Route path='/prop-10' component={Prop10}/> */}
         {/* <Route path='/prop-11' component={Prop11}/> */}
         {/* <Route path='/prop-12' component={Prop12}/> */}
-        <Route path='/about' component={AboutPage}/>
+        {/* <Route path='/about' component={AboutPage}/> */}
         <Route component={Page404}/>
       </Switch>
       <Footer />
@@ -43,10 +43,11 @@ const Body = (props) => {
     )
 };
 
-const HomePage = mkLoadable(import("pages/home/index"));
-const AboutPage = mkLoadable(import("pages/about/index"));
-const SubscribePage = mkLoadable(import("pages/subscribe/index"));
-const Prop1 = mkLoadable(import("pages/1/index"));
+const TempHomePage = mkLoadable(import("pages/coming-soon/index"));
+// const HomePage = mkLoadable(import("pages/home/index"));
+// const AboutPage = mkLoadable(import("pages/about/index"));
+// const SubscribePage = mkLoadable(import("pages/subscribe/index"));
+// const Prop1 = mkLoadable(import("pages/1/index"));
 // const Prop2 = mkLoadable(import("pages/2/index"));
 // const Prop3 = mkLoadable(import("pages/3/index"));
 // const Prop4 = mkLoadable(import("pages/4/index"));
@@ -61,11 +62,7 @@ const Prop1 = mkLoadable(import("pages/1/index"));
 const Page404 = mkLoadable(import("pages/404/index"));
 
 try {
-  GA.initialize([
-    {
-      trackingId: 'UA-83939332-1',
-    },
-  ]);
+  GA.initialize([{trackingId: 'UA-83939332-1'}]);
 } catch(e) {
   console.error("GA initialize error:", e.message);
 }

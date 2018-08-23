@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link, NavLink } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 import Color from 'layout/colors'
-import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
+// import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 
 const Container = styled.div`
   position: fixed;
@@ -41,22 +41,27 @@ const Sticky = styled.div`
   width: 100%;
 `
 
-const NavBar = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
-`
-const NavWrapper = styled(NavLink)`
-  color: ${Color('black')};
-  text-decoration: none;
-`
-
-const NavItem = styled.h3`
-  display: block;
-  padding: 5px 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-`
+// const NavBar = styled.div`
+//   display: flex;
+//   justify-content: flex-end;
+//   margin-right: 30px;
+// `
+// const NavWrapper = styled(NavLink)`
+//   color: ${Color('black')};
+//   text-decoration: none;
+// `
+//
+// const NavItem = styled.h3`
+//   display: block;
+//   padding: 5px 10px;
+//   margin-left: 15px;
+//   margin-right: 15px;
+// `
+//
+// const Secret = styled.h2`
+//   z-index: 4;
+//   background-color: teal;
+// `
 
 // const Secret = styled.h2`
 //   z-index: 4;
@@ -87,35 +92,33 @@ class Header extends React.Component {
   }
 
   render() {
-    const navItems = nav.map((item,i) => {
-      return(
-        <NavWrapper key={i} to={item.to} activeClassName="activeNavLink">
-          <NavItem>{item.label}</NavItem>
-        </NavWrapper>
-      );
-    });
+    // const navItems = nav.map((item,i) => {
+    //   return(
+    //     <NavWrapper key={i} to={item.to} activeClassName="activeNavLink">
+    //       <NavItem>{item.label}</NavItem>
+    //     </NavWrapper>
+    //   );
+    // });
 
-    const isXsScreen = this.state.windowWidth < 767;
+    // const isXsScreen = this.state.windowWidth < 767;
     return(
       <Container>
         <Sticky>
           <LogoLink to="/">
             <Logo>ballot.fyi</Logo>
           </LogoLink>
-          <NavBar>
-            {isXsScreen ? <MenuDrawerButton items={nav}/> : navItems}
-          </NavBar>
+
         </Sticky>
       </Container>
     )
   }
 }
 
-const nav = [
-  { to:"/home/", label:"Props"},
-  // { to:"/races/", label:"Races"},
-  { to:"/about/", label:"About"},
-  { to:"/subscribe/", label:"Follow us"},
-];
+// const nav = [
+//   { to:"/home/", label:"Props"},
+//   // { to:"/races/", label:"Races"},
+//   { to:"/about/", label:"About"},
+//   { to:"/subscribe/", label:"Follow us"},
+// ];
 
 export default Header;
