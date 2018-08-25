@@ -65,7 +65,7 @@ const Data = {
 			data: {
 				title: "Nonpartisan guide to the 2018 election",
 				subtitle: "(Just for California's stuff, though.)",
-				body: <span> We're tired of constant news about Trump. Luckily, California gives us 11 semi-ridiculous ballot initiatives to vote and make fun of. We'll break them down for you, what the different sides are saying, and why your vote is actually important. <br/><br/>This is still a work in progress, but you can stay in touch by <Link to="/subscribe">subscribing</Link> to our newsletter. And! please, for fuck's sake, make sure you're <a target="_blank" rel="noopener noreferrer" href="https://www.vote.org/">registered to vote</a> for November 6, 2018.</span>,
+				body: <span> We're tired of constant news about Trump. Luckily, California gives us 11 semi-ridiculous ballot initiatives to vote on and make fun of. We'll break them down for you, what the different sides are saying, and why your vote is actually important. <br/><br/>This is still a work in progress, but you can stay in touch by <Link to="/subscribe">subscribing</Link> to our newsletter. And! please, for fuck's sake, make sure you're <a target="_blank" rel="noopener noreferrer" href="https://www.vote.org/">registered to vote</a> for November 6, 2018.</span>,
 			}
 		},
 		{
@@ -74,8 +74,8 @@ const Data = {
       data: {
     		propNum: "1",
     		color: 'blue',
-        header: "Prop 1 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+        header: "Prop 1 buys us $4B for housing programs",
+    		description: "...",
     		linksTo: "/prop-1/",
     		img: {
     			_1x: Prop1Img,
@@ -91,8 +91,8 @@ const Data = {
       data: {
     		propNum: "2",
     		color: 'pink',
-    		header: "Prop 2 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
+    		description: "The revenue is supposed to go to helping the mentally ill, but lawsuits have stopped it from using it on housing",
     		linksTo: "/prop-2/",
     		img: {
     			_1x: Prop2Img,
@@ -108,8 +108,8 @@ const Data = {
       data: {
     		propNum: "3",
     		color: 'purple',
-    		header: "Prop 3 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 3 buys us ~$9B for water-y projects",
+    		description: "It comes down to fish, really",
     		linksTo: "/prop-3/",
     		img: {
     			_1x: Prop3Img,
@@ -125,8 +125,8 @@ const Data = {
       data: {
     		propNum: "4",
     		color: 'orange',
-    		header: "Prop 4 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 4 buys us $1.5B for children's hospitals",
+    		description: "Renovations and new construction",
     		linksTo: "/prop-4/",
     		img: {
     			_1x: Prop4Img,
@@ -142,8 +142,8 @@ const Data = {
       data: {
     		propNum: "5",
     		color: 'blue',
-    		header: "Prop 5 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 5 allows seniors to transfer their property tax assessment when they move",
+    		description: "Some argue this would free up houses; others say it further limits California's revenue from property taxes",
     		linksTo: "/prop-5/",
     		img: {
     			_1x: Prop5Img,
@@ -159,8 +159,8 @@ const Data = {
       data: {
     		propNum: "6",
     		color: 'pink',
-    		header: "Prop 6 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 6 repeals the recent gas tax",
+    		description: "And! it requires that future gas tax increases be approved by voters",
     		linksTo: "/prop-6/",
     		img: {
     			_1x: Prop6Img,
@@ -176,8 +176,8 @@ const Data = {
       data: {
     		propNum: "7",
     		color: 'yellow',
-    		header: "Prop 7 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 7 makes Daylight Savings Time year-round in California",
+				description:"If passed, we'd need Congressional approval to make it so",
     		linksTo: "/prop-7/",
     		img: {
     			_1x: Prop7Img,
@@ -193,8 +193,8 @@ const Data = {
       data: {
     		propNum: "8",
     		color: 'orange',
-    		header: "Prop 8 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
+    		description: "A complicated way of trying to raise wages for clinic workers",
     		linksTo: "/prop-8/",
     		img: {
     			_1x: Prop8Img,
@@ -210,8 +210,8 @@ const Data = {
       data: {
     		propNum: "10",
     		color: 'blue',
-    		header: "Prop 10 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 10 legalizes rent control again",
+    		description: "Would repeal Costa-Hawkins, allowing cities to regulate what landlords can charge renters",
     		linksTo: "/prop-10/",
     		img: {
     			_1x: Prop10Img,
@@ -227,8 +227,8 @@ const Data = {
       data: {
     		propNum: "11",
     		color: 'orange',
-    		header: "Prop 11 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 11 requires EMTs to be on-call during breaks",
+				description: "An attempt to exempt EMTs from a recent California ruling",
     		linksTo: "/prop-11/",
     		img: {
     			_1x: Prop11Img,
@@ -244,8 +244,8 @@ const Data = {
       data: {
     		propNum: "12",
     		color: 'yellow',
-    		header: "Prop 12 bans the sales of flavored tobacco in SF.",
-    		description: "Seems like a good idea, so why are many against it?",
+    		header: "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes",
+    		description: "Guess what 1 square foot looks like relative to a chicken",
     		linksTo: "/prop-12/",
     		img: {
     			_1x: Prop12Img,
