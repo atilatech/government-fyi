@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {Link, NavLink } from 'react-router-dom'
 import Color from 'layout/colors'
 import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
+import {Spacer} from 'layout/util'
 
 const Container = styled.div`
   position: fixed;
@@ -97,16 +98,19 @@ class Header extends React.Component {
 
     const isXsScreen = this.state.windowWidth < 767;
     return(
-      <Container>
-        <Sticky>
-          <LogoLink to="/">
-            <Logo>ballot.fyi</Logo>
-          </LogoLink>
-          <NavBar>
-            {isXsScreen ? <MenuDrawerButton items={nav}/> : navItems}
-          </NavBar>
-        </Sticky>
-      </Container>
+      <React.Fragment>
+        <Spacer height={45}/>
+        <Container>
+          <Sticky>
+            <LogoLink to="/">
+              <Logo>ballot.fyi</Logo>
+            </LogoLink>
+            <NavBar>
+              {isXsScreen ? <MenuDrawerButton items={nav}/> : navItems}
+            </NavBar>
+          </Sticky>
+        </Container>
+      </React.Fragment>
     )
   }
 }

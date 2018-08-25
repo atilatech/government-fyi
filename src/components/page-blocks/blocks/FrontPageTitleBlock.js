@@ -60,7 +60,7 @@ const PageTitleBlock = (props) => {
 	const {title, subtitle, body} = props.data;
 	return(
     <React.Fragment>
-      <Spacer height={70}/>
+      <Spacer height={35}/>
       <Row>
         <Col
           xsOffset={1} xs={10}
