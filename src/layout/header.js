@@ -57,6 +57,7 @@ const NavItem = styled.h3`
   padding: 5px 10px;
   margin-left: 15px;
   margin-right: 15px;
+  font-size: 12px;
 `
 
 // const Secret = styled.h2`
