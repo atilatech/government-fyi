@@ -80,7 +80,7 @@ const Img = styled(MultisourceImage)`
 	width: ${props=>props.bottomOut?"":"70%"};
 	object-fit: contain;
 	max-height: 200px;
-  filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px  rgba(0,0,0,0.05));
+  filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px 2px rgba(0,0,0,0.05));
 `;
 
 const Text = styled.h3`

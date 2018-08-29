@@ -54,16 +54,16 @@ const Img = styled(MultisourceImage)`
 	user-select:none;
 	-webkit-user-select:none;
   transition: all 180ms ease-out;
-  filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px  rgba(0,0,0,0.05));
+  filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px 2px rgba(0,0,0,0.05));
 	@media not all and (hover: none) {
 		&:hover {
 			transform: translate(0,-5px);
-			filter: drop-shadow(14px 15px 0px rgba(0,0,0,0.1)) drop-shadow(-23px 19px rgba(0,0,0,0.03));
+			filter: drop-shadow(14px 15px 0px rgba(0,0,0,0.1)) drop-shadow(-23px 19px 3px rgba(0,0,0,0.03));
 		}
 	}
 	&:active {
 		transform: translate(0,2px);
-		filter: drop-shadow(8px 3px 0px rgba(0,0,0,0.2)) drop-shadow(-4px 6px rgba(0,0,0,0.1));
+		filter: drop-shadow(8px 3px 0px rgba(0,0,0,0.2)) drop-shadow(-4px 6px 0 rgba(0,0,0,0.1));
 	}
 	@media screen and (max-width: 1023px) {
 		width: 70%;
