@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'

@@ -27,6 +27,12 @@ const NavLabel = styled.span`
     }
   }
 `
+const SocialButtons = styled.div`
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 10px;
+`
 
 const Footer = (props) => {
   const navItems = nav.map((item,i) => {
@@ -45,6 +51,10 @@ const Footer = (props) => {
       </LineContainer>
       <Spacer height={30}/>
       <FooterContainer>
+        <SocialButtons>
+          <div className="fb-like" data-href="https://www.ballot.fyi/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+          <a className="twitter-share-button" href="https://twitter.com/intent/tweet?text=A%20nonpartisan%20voter%20guide%20to%20California%27s%20propositions%20this%20election" data-size="large">Tweet</a>
+        </SocialButtons>
         <div>
           Site designed, built, and written by Amir & Erica © 2018 <span role="img" aria-label="US flag">🇺🇸</span>
           <br/>Until Nov. 7, 2018, we will continually update the site. Please e-send us correctións.
