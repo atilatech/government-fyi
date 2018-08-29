@@ -44,6 +44,7 @@ const PropPageBuilder = (props) => {
         }}
       />
 		 	{bodySections}
+			<Spacer height={45}/>
       <BottomNavBlock
         data = {{
           color: PropBgColor(propNum),
