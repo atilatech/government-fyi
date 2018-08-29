@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {Spacer} from 'layout/util'
 import {Link} from 'react-router-dom'
-import Color from 'constants/colors'
+import Color from 'layout/colors'
 import {NavArrow} from 'components/static/icons'
+import MultisourceImage from 'components/static/multisource-image'
 
 /*
 Bottom navigation buttons
@@ -44,7 +45,8 @@ const Container = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 	box-sizing: border-box;
-	background-color: ${props=>props.color?Color(props.color):Color('pink')};
+  align-items: center;
+	background-color: ${props=>props.color?Color(props.color+'2'):Color('pink2')};
   @media screen and (max-width: 767px) {
   	flex-direction: column;
   	align-items: center;
@@ -60,7 +62,7 @@ const TileInteraction = styled.div`
 	cursor: pointer;
   @media not all and (hover: none) {
     &:hover {
-      background-color: rgba(255,255,255,0.4);
+      background-color: ${props=>props.color?Color(props.color+'1'):Color('pink1')};
       transition: background-color 150ms ease-out;
     }
   }
@@ -74,10 +76,11 @@ const Tile = styled(Link)`
 	color: black;
 `;
 
-const Img = styled.img`
-	width: ${props=>props.bottomOut?"":"40%"};
+const Img = styled(MultisourceImage)`
+	width: ${props=>props.bottomOut?"":"70%"};
 	object-fit: contain;
 	max-height: 200px;
+  filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px  rgba(0,0,0,0.05));
 `;
 
 const Text = styled.h3`
@@ -85,6 +88,7 @@ const Text = styled.h3`
 	display: block;
 	box-sizing: border-box;
 	width: 70%;
+  font-size: 12px;
 	order: ${props=>props.evenOdd%2===0?1:0};
 	text-align: ${props=>props.evenOdd%2===0?"left":"right"};
 `;
@@ -99,11 +103,11 @@ const BottomNav = (props) => {
 	const nav = props.data.tiles.map( (tile, i) => {
 		const {img, text, to} = tile;
 		return (
-			<TileInteraction bottomOut={props.bottomOut} key={i} >
+			<TileInteraction bottomOut={props.bottomOut} key={i} color={props.data.color}>
 				<Tile to={to}>
-					<ArrowStyle evenOdd={i}><NavArrow color="#333"/></ArrowStyle>
+					<ArrowStyle evenOdd={i}><NavArrow color={Color('black')}/></ArrowStyle>
 					<Text evenOdd={i}>{text}</Text>
-					<Img bottomOut={props.bottomOut} src={img} alt={`Navigate to ${text}`}/>
+					<Img bottomOut={props.bottomOut} imageHandles={img} alt={`Navigate to ${text}`}/>
 				</Tile>
 			</TileInteraction>
 
@@ -125,7 +129,7 @@ BottomNav.propTypes = {
     color: PropTypes.string,
     tiles: PropTypes.arrayOf(
       PropTypes.shape({
-        img: PropTypes.string.isRequired,
+        img: PropTypes.object.isRequired,
         text: PropTypes.string.isRequired,
         to: PropTypes.string.isRequired,
       })

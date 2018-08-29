@@ -38,8 +38,6 @@ const PageBuilder = (props) => {
 PageBuilder.propTypes = {
   data: PropTypes.shape({
     meta: PropTypes.shape({
-      canonicalUrl: PropTypes.string.isRequired,
-      documentTitle: PropTypes.string.isRequired,
       socialHeadline: PropTypes.string.isRequired,
       socialDescription: PropTypes.string.isRequired,
       socialImage: PropTypes.string.isRequired,
