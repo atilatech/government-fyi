@@ -10,6 +10,8 @@ const Container = styled.div`
 const Message = styled.div`
 	width: 320px;
 	border: 2px solid #333;
+	background-color: white;
+	filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px  rgba(0,0,0,0.05));
 	padding: 30px 40px;
   border-radius: 2px;
 	text-align: center;

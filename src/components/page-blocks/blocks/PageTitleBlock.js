@@ -29,12 +29,6 @@ const Title = styled.h1`
 	}
 `;
 
-// transform: rotate(-1.8deg);
-const Tilt = styled.div`
-	@media screen and (max-width: 1023px) {
-		transform: none;
-	}
-`
 
 const Subheadline = styled.div`
 	width: 80%;
@@ -74,11 +68,9 @@ const PageTitleBlock = (props) => {
 	      mdOffset={1} md={8}
 	      lgOffset={1} lg={8}
       >
-				<Tilt>
-					<Title>{title}</Title>
-					{subtitle && <Subheadline>{subtitle}</Subheadline>}
-				</Tilt>
-      </Col>
+				<Title>{title}</Title>
+				{subtitle && <Subheadline>{subtitle}</Subheadline>}
+				</Col>
 		</Row>
 	)
 }
