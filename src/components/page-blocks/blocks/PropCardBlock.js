@@ -53,9 +53,7 @@ const Img = styled(MultisourceImage)`
 	padding-bottom: 25px;
 	user-select:none;
 	-webkit-user-select:none;
-  transition-property: all;
-  transition-duration: 120ms;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 180ms ease-out;
   filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.15)) drop-shadow(-20px 16px  rgba(0,0,0,0.05));
 	@media not all and (hover: none) {
 		&:hover {
