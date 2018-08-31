@@ -20,7 +20,7 @@ const Body = (props) => {
       <Header location={props.location}/>
       <Route component={logView}/>
       <Switch>
-        <Route exact path='/' component={TempHomePage}/>
+        <Route exact path='/' component={HomePage}/>
         {/* <Route path='/home' component={TempHomePage}/> */}
         {/* <Route path='/subscribe' component={SubscribePage}/> */}
         {/* <Route path='/prop-1' component={Prop1}/> */}
@@ -44,19 +44,12 @@ const Body = (props) => {
     )
 };
 
-<<<<<<< HEAD
-const TempHomePage = mkLoadable(import("pages/coming-soon/index"));
-// const HomePage = mkLoadable(import("pages/home/index"));
-// const AboutPage = mkLoadable(import("pages/about/index"));
-// const SubscribePage = mkLoadable(import("pages/subscribe/index"));
-// const Prop1 = mkLoadable(import("pages/1/index"));
-=======
+
 const HomePage = mkLoadable(import("pages/home/index"));
 const AboutPage = mkLoadable(import("pages/about/index"));
 const TermsPage = mkLoadable(import("pages/terms/index"));
 const SubscribePage = mkLoadable(import("pages/subscribe/index"));
 const Prop1 = mkLoadable(import("pages/1/index"));
->>>>>>> dev
 // const Prop2 = mkLoadable(import("pages/2/index"));
 // const Prop3 = mkLoadable(import("pages/3/index"));
 // const Prop4 = mkLoadable(import("pages/4/index"));
@@ -71,13 +64,7 @@ const Prop1 = mkLoadable(import("pages/1/index"));
 const Page404 = mkLoadable(import("pages/404/index"));
 
 try {
-<<<<<<< HEAD
   GA.initialize([{trackingId: 'UA-83939332-1'}]);
-=======
-  GA.initialize([
-    { trackingId: 'UA-83939332-1'},
-  ]);
->>>>>>> dev
 } catch(e) {
   console.error("GA initialize error:", e.message);
 }
