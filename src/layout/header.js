@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link } from 'react-router-dom'
+import {Link, NavLink } from 'react-router-dom'
 import Color from 'layout/colors'
 import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 import {Spacer} from 'layout/util'
@@ -89,15 +89,15 @@ class Header extends React.Component {
   }
 
   render() {
-    // const navItems = nav.map((item,i) => {
-    //   return(
-    //     <NavWrapper key={i} to={item.to} activeClassName="activeNavLink">
-    //       <NavItem>{item.label}</NavItem>
-    //     </NavWrapper>
-    //   );
-    // });
+    const navItems = nav.map((item,i) => {
+      return(
+        <NavWrapper key={i} to={item.to} activeClassName="activeNavLink">
+          <NavItem>{item.label}</NavItem>
+        </NavWrapper>
+      );
+    });
 
-    // const isXsScreen = this.state.windowWidth < 767;
+    const isXsScreen = this.state.windowWidth < 767;
     return(
       <React.Fragment>
         <Spacer height={45}/>
@@ -116,11 +116,11 @@ class Header extends React.Component {
   }
 }
 
-// const nav = [
-//   { to:"/home/", label:"Props"},
-//   // { to:"/races/", label:"Races"},
-//   { to:"/about/", label:"About"},
-//   { to:"/subscribe/", label:"Follow us"},
-// ];
+const nav = [
+  { to:"/home/", label:"Props"},
+  // { to:"/races/", label:"Races"},
+  { to:"/about/", label:"About"},
+  { to:"/subscribe/", label:"Follow us"},
+];
 
 export default Header;

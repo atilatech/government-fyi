@@ -21,7 +21,7 @@ const Body = (props) => {
       <Route component={logView}/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
-        {/* <Route path='/home' component={TempHomePage}/> */}
+        <Route path='/home' component={HomePage}/>
         {/* <Route path='/subscribe' component={SubscribePage}/> */}
         {/* <Route path='/prop-1' component={Prop1}/> */}
         {/* <Route path='/prop-2' component={Prop2}/> */}
