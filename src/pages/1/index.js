@@ -1,29 +1,18 @@
 import React from 'react'
-import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
-import WallpaperBannerImg from 'components/page-blocks/blocks/WallpaperBannerImg'
+import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-
-import BannerImg from 'pages/home/images/prop-1@2x.png'
 
 const Data = {
 	pageId:"ballot-fyi-props",
+	propNum: 1,
 	meta: {
-		canonicalUrl:"https://www.ballot.fyi/prop-#",
-		documentTitle:"Prop # | California state | ballot.fyi",
-		socialHeadline:"Prop # ",
-		socialDescription:"Prop #",
+		socialHeadline:"Prop 1",
+		socialDescription:"Prop 1",
 		socialImage:"general.png",
+		dateCreated: new Date('September 15, 2018 10:00:00'),
+		dateModified: new Date('September 15, 2018 10:00:00')
 	},
 	blocks: [
-    {
-    	id:"000",
-    	component: WallpaperBannerImg,
-    	data: {
-    		color: "blue",
-    		image: BannerImg,
-        title: "Prop 1"
-    	}
-    },
     {
     	id: "020",
     	component: TextWithTitleBlock,
@@ -34,4 +23,4 @@ const Data = {
     },
   ]
 }
-export default () => (<PageBuilder data={Data}/>);
+export default () => (<PropPageBuilder data={Data}/>);

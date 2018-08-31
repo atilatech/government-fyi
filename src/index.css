@@ -79,3 +79,7 @@ b {
 .activeNavLink {
   background-color: #eee;
 }
+
+.twitter-share-button {
+  margin-left: 3px;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Color from 'layout/colors'
 
 const Container = styled.div`
 	width: 100%;
@@ -12,7 +13,7 @@ const Line = styled.div`
 	box-sizing: border-box;
 	height: 0;
 	width: ${props => props.lineWidth < 0 ? '100%' : props.lineWidth + 'px'};
-	border: 3px solid black;
+	border: 3px solid ${Color('black')};
 	border-radius: 3px;
 	margin-left: ${props=> props.isReversed ? 0 : (props.lineWidth < 0 || props.isEmpty ? 0 : 20)}px;
 	margin-right: ${props=> props.isReversed ? (props.lineWidth < 0 || props.isEmpty ? 0 : 20) : 0}px;
