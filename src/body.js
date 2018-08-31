@@ -64,9 +64,7 @@ const Page404 = mkLoadable(import("pages/404/index"));
 
 try {
   GA.initialize([
-    {
-      trackingId: 'UA-83939332-1',
-    },
+    { trackingId: 'UA-83939332-1'},
   ]);
 } catch(e) {
   console.error("GA initialize error:", e.message);

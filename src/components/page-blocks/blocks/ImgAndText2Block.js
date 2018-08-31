@@ -23,6 +23,14 @@ import Color from 'layout/colors'
 	}
 },
 */
+const Line = styled.div`
+	width: 100%;
+	height: 0;
+	border: 2px solid ${Color('black')};
+	border-radius: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+`
 
 const Container = styled.div`
 	display: flex;
@@ -42,8 +50,6 @@ const TextContainer = styled.div`
 `
 const Title = styled.h2`
 	display: block;
-	border-top: 3px solid ${Color('black')};
-	padding-top: 10px;
 	margin-bottom: 10px;
 	text-transform: lowercase;
 `
@@ -53,6 +59,7 @@ const ImgAndTextBlock = (props) => {
 	const offset = Math.floor((12-nWidth)/2)
 	const TextBlock =
 		<TextContainer>
+			<Line/>
 			<Title>{title}</Title>
 			{body}
 		</TextContainer>
