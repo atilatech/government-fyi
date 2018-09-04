@@ -90,16 +90,16 @@ class ImgAndTextBlock extends React.Component {
 					<Col
 						xsOffset={1} xs={10}
 						smOffset={2} sm={8}
-						mdOffset={offset} md={nWidth}
-						lgOffset={offset} lg={nWidth}
+						mdOffset={offset} md={nWidth/2}
+						lgOffset={offset} lg={nWidth/2}
 					>
 						{flipped || this.state.isSm ? <Image src={image} alt={alt} /> : TextBlock}
 					</Col>
 					<Col
 						xsOffset={1} xs={10}
 						smOffset={2} sm={8}
-						mdOffset={0} md={nWidth}
-						lgOffset={0} lg={nWidth}
+						mdOffset={0} md={nWidth/2}
+						lgOffset={0} lg={nWidth/2}
 					>
 						{flipped  || this.state.isSm ? TextBlock: <Image src={image} alt={alt} /> }
 					</Col>
