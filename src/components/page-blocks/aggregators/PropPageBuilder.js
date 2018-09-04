@@ -21,7 +21,7 @@ const PropPageBuilder = (props) => {
     )
 	});
 
-	const {socialHeadline, socialDescription, socialImage, pageType, dateCreated, dateModified} = meta;
+	const {socialHeadline, socialDescription, pageType, dateCreated, dateModified} = meta;
   const adjacentProps = GetNextAndPrevNum(propNum);
   return(
 		<div>
@@ -30,7 +30,7 @@ const PropPageBuilder = (props) => {
 				title={`Prop ${propNum} | California Propositions | ballot.fyi`}
 	      headline={socialHeadline}
 	      description={socialDescription}
-	      image={socialImage}
+	      image={`Prop-${propNum}.png`}
 				pageType={pageType || 'article'}
 				dateCreated={dateCreated}
 				dateModified={dateModified}

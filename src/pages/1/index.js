@@ -8,7 +8,6 @@ const Data = {
 	meta: {
 		socialHeadline:"Prop 1",
 		socialDescription:"Prop 1",
-		socialImage:"general.png",
 		dateCreated: new Date('September 15, 2018 10:00:00'),
 		dateModified: new Date('September 15, 2018 10:00:00')
 	},

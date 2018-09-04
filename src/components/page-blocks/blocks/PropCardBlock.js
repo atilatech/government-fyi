@@ -28,7 +28,7 @@ const Background = styled.div`
 
 
 const PropNumber = styled.div`
-	font-family: ${props=>props.theme.fonts.h5};
+	font-family: ${props=>props.theme.fonts.helvetica};
 	align-self: flex-end;
 	color: rgba(0,0,0,0.4);
 	font-size: 42px;
