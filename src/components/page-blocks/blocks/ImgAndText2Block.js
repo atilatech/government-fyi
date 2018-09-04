@@ -43,44 +43,70 @@ const Image = styled.img`
 	margin-right: 30px;
 	margin-left: 30px;
 	box-sizing: border-box;
-	width: 50%;
 `
 const TextContainer = styled.div`
-	width: 50%;
 `
 const Title = styled.h2`
 	display: block;
 	margin-bottom: 10px;
 	text-transform: lowercase;
 `
-const ImgAndTextBlock = (props) => {
-	const { alt, image, nColWidth, title, body, flipped} = props.data;
-	const nWidth = nColWidth || 8;
-	const offset = Math.floor((12-nWidth)/2)
-	const TextBlock =
-		<TextContainer>
-			<Line/>
-			<Title>{title}</Title>
-			{body}
-		</TextContainer>
-	return(
-		<React.Fragment>
-			<Spacer height={70}/>
-			<Row>
-				<Col
-					xsOffset={0} xs={12}
-					smOffset={2} sm={8}
-					mdOffset={offset} md={nWidth}
-					lgOffset={offset} lg={nWidth}
-				>
-					<Container>
-						{flipped ? <Image src={image} alt={alt} /> : TextBlock}
-						{flipped ? TextBlock: <Image src={image} alt={alt} /> }
-					</Container>
-				</Col>
-			</Row>
-		</React.Fragment>
-	);
+class ImgAndTextBlock extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state={isSm: false};
+	}
+
+	componentDidMount() {
+		window.addEventListener("resize", this.handleResize);
+		this.handleResize();
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener("resize", this.handleResize);
+	}
+
+	handleResize = () => {
+		const width = (window.innerWidth || document.documentElement.clientWidth)
+		this.setState({
+			isSm: width < 1023
+		})
+	}
+
+	render() {
+		const { alt, image, nColWidth, title, body, flipped} = this.props.data;
+		const nWidth = nColWidth || 8;
+		const offset = Math.floor((12-nWidth)/2)
+		const TextBlock =
+			<TextContainer>
+				<Line/>
+				<Title>{title}</Title>
+				{body}
+			</TextContainer>
+		return(
+			<React.Fragment>
+				<Spacer height={70}/>
+				<Row>
+					<Col
+						xsOffset={1} xs={10}
+						smOffset={2} sm={8}
+						mdOffset={offset} md={nWidth}
+						lgOffset={offset} lg={nWidth}
+					>
+						{flipped || this.state.isSm ? <Image src={image} alt={alt} /> : TextBlock}
+					</Col>
+					<Col
+						xsOffset={1} xs={10}
+						smOffset={2} sm={8}
+						mdOffset={0} md={nWidth}
+						lgOffset={0} lg={nWidth}
+					>
+						{flipped  || this.state.isSm ? TextBlock: <Image src={image} alt={alt} /> }
+					</Col>
+				</Row>
+			</React.Fragment>
+		);
+	}
 }
 
 ImgAndTextBlock.propTypes = {
