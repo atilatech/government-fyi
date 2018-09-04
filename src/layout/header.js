@@ -117,10 +117,10 @@ class Header extends React.Component {
 }
 
 const nav = [
-  { to:"/home/", label:"Props"},
+  { to:"/home/", label:"Props", longLabel: "CA Propositions"},
   // { to:"/races/", label:"Races"},
-  { to:"/about/", label:"About"},
-  { to:"/subscribe/", label:"Follow us"},
+  { to:"/about/", label:"About", longLabel:"About us"},
+  { to:"/subscribe/", label:"Follow us", icon:""},
 ];
 
 export default Header;

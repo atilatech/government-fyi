@@ -32,20 +32,13 @@ const Line = styled.div`
 	margin-bottom: 10px;
 `
 
-const Container = styled.div`
-	display: flex;
-	align-items: center;
-
-`
-
 const Image = styled.img`
 	display: block;
 	margin-right: 30px;
 	margin-left: 30px;
 	box-sizing: border-box;
 `
-const TextContainer = styled.div`
-`
+
 const Title = styled.h2`
 	display: block;
 	margin-bottom: 10px;
@@ -78,11 +71,11 @@ class ImgAndTextBlock extends React.Component {
 		const nWidth = nColWidth || 8;
 		const offset = Math.floor((12-nWidth)/2)
 		const TextBlock =
-			<TextContainer>
+			<div>
 				<Line/>
 				<Title>{title}</Title>
 				{body}
-			</TextContainer>
+			</div>
 		return(
 			<React.Fragment>
 				<Spacer height={70}/>

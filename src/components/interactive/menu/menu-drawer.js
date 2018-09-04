@@ -52,7 +52,13 @@ class MenuDrawer extends React.Component {
   render() {
     const {toggleVisibility} = this.props;
     const drawerItems = this.props.items.map( (item, i) => (
-      <DrawerItem key={i} toggleVisibility={toggleVisibility} text={item.label} to={item.to} link={item.link}/>
+      <DrawerItem
+        key={i}
+        toggleVisibility={toggleVisibility}
+        text={item.longLabel || item.label}
+        to={item.to}
+        link={item.link}
+      />
     ));
     return(
       <div id='menu-transition' ref={(el) => this.menu = el} style={styles.drawerPosition}>

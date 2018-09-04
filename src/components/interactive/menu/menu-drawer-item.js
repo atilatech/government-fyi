@@ -34,15 +34,11 @@ const DrawerItem = (props) => {
   return(
     to ?
       <Link onClick={()=>{toggleVisibility(false)}} style={{textDecoration:'none'}} to={to}>
-        <Item>
-          {text}
-        </Item>
+        <Item>{text}</Item>
       </Link>
     :
     <a href={link} style={{textDecoration:'none'}} >
-      <Item>
-        {text}
-      </Item>
+      <Item>{text}</Item>
     </a>
   )
 }
