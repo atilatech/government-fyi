@@ -23,6 +23,13 @@ import Color from 'layout/colors'
 	}
 },
 */
+
+const Center = styled.div`
+	display: flex;
+	align-items: center;
+	height: 100%;
+`
+
 const Line = styled.div`
 	width: 100%;
 	height: 0;
@@ -34,6 +41,7 @@ const Line = styled.div`
 
 const Image = styled.img`
 	display: block;
+	width: 100%;
 	margin-right: 30px;
 	margin-left: 30px;
 	box-sizing: border-box;
@@ -86,7 +94,9 @@ class ImgAndTextBlock extends React.Component {
 						mdOffset={offset} md={nWidth/2}
 						lgOffset={offset} lg={nWidth/2}
 					>
-						{flipped || this.state.isSm ? <Image src={image} alt={alt} /> : TextBlock}
+						<Center>
+							{flipped || this.state.isSm ? <Image src={image} alt={alt} /> : TextBlock}
+						</Center>
 					</Col>
 					<Col
 						xsOffset={1} xs={10}
@@ -94,8 +104,10 @@ class ImgAndTextBlock extends React.Component {
 						mdOffset={0} md={nWidth/2}
 						lgOffset={0} lg={nWidth/2}
 					>
-						{flipped  || this.state.isSm ? TextBlock: <Image src={image} alt={alt} /> }
-					</Col>
+						<Center>
+							{flipped  || this.state.isSm ? TextBlock: <Image src={image} alt={alt} /> }
+						</Center>
+						</Col>
 				</Row>
 			</React.Fragment>
 		);
