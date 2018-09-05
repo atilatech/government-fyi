@@ -50,6 +50,8 @@ const NavBar = styled.div`
 const NavWrapper = styled(NavLink)`
   color: ${Color('black')};
   text-decoration: none;
+  border-radius: 15px;
+
 `
 
 const NavItem = styled.h3`

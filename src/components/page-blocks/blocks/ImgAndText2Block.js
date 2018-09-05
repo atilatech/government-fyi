@@ -107,7 +107,7 @@ class ImgAndTextBlock extends React.Component {
 						<Center>
 							{flipped  || this.state.isSm ? TextBlock: <Image src={image} alt={alt} /> }
 						</Center>
-						</Col>
+					</Col>
 				</Row>
 			</React.Fragment>
 		);
