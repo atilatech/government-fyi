@@ -3,7 +3,7 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 
 const Data = {
-	pageId:"ballot-fyi-props",
+	pageId:"prop-1",
 	propNum: 1,
 	meta: {
 		socialHeadline:"Prop 1",
