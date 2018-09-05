@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components'
-import FillRestWithLine from 'pages/election-blocks/components/TextAndLine'
+import FillRestWithLine from 'components/static/TextAndLine'
 import {Spacer} from 'layout/util'
 
 /*
@@ -23,6 +23,7 @@ usage
 
 const SectionTitle = styled.h2`
 	display: inline;
+	text-transform: none;
 	margin: 20px 0 3px 0;
 	@media screen and (max-width: 767px) {
 		text-align: center;

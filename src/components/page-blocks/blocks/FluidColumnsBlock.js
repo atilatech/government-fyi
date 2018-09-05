@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import MultisourceImage from 'components/static/multisource-image'
 import styled from 'styled-components'
 import { Row, Col } from 'react-flexbox-grid';
 import {Spacer} from 'layout/util'
@@ -47,13 +48,24 @@ const SummaryContainer = styled.div`
 
 const SummaryTitle = styled.h3`
 	text-align: center;
+	font-weight: bold;
 	margin-bottom: 4px;
 `;
+
+const Image = styled(MultisourceImage)`
+	display: block;
+	width: 130px;
+	margin: 10px auto;
+	filter: drop-shadow(6px 6px 0 rgba(0,0,0,0.15)) drop-shadow(-10px 8px 2px rgba(0,0,0,0.05));
+`
 
 const TextBlocksColumns = (props) => {
 	const summaries = props.data.blocks.map( (item, i) => {
 		return(
 			<SummaryContainer key={i}>
+				{item.img &&
+					<Image imageHandles={item.img} alt={item.alt}/>
+				}
 				<SummaryTitle>{item.title}</SummaryTitle>
 				{item.body}
 			</SummaryContainer>
@@ -82,7 +94,7 @@ TextBlocksColumns.propTypes = {
 		blocks: PropTypes.arrayOf(
 			PropTypes.shape({
 				title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-				body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+				body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 			})
 		).isRequired
 	}).isRequired

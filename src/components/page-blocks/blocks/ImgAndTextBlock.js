@@ -51,6 +51,7 @@ const TextBlock = styled.div`
 `
 const InlineBold = styled.h3`
 	display: inline;
+	font-weight:bold;
 `
 const ImgAndTextBlock = (props) => {
 	const { alt, src, nColWidth, title, body} = props.data;

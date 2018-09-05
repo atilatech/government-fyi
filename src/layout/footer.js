@@ -76,7 +76,7 @@ const Footer = (props) => {
 const nav = [
   { to:"/about/", label:"about"},
   { to:"/about#contact", label:"contact"},
-  { to:"/subscribe/", label:"subscribe"},
+  { to:"/follow/", label:"subscribe"},
   { to:"/terms/", label:"terms of service"},
 ];
 

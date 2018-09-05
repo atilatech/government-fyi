@@ -120,7 +120,7 @@ const nav = [
   { to:"/home/", label:"Props", longLabel: "CA Propositions"},
   // { to:"/races/", label:"Races"},
   { to:"/about/", label:"About", longLabel:"About us"},
-  { to:"/subscribe/", label:"Follow us", icon:""},
+  { to:"/follow/", label:"Follow us", icon:""},
 ];
 
 export default Header;

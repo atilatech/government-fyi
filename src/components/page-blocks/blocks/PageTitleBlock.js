@@ -19,13 +19,14 @@ import { Row, Col } from 'react-flexbox-grid';
 
 
 const Title = styled.h1`
-	font-size: 70px;
-	line-height: 65px;
-	letter-spacing: 0.9px;
 	margin-bottom: 0;
+	text-rendering: optimizeLegibility;
+	letter-spacing: -2.6px;
+	text-align: center;
 	@media screen and (max-width: 767px) {
-		font-size: 60px;
-		line-height: 62px;
+		font-size: 38px;
+		line-height: 46px;
+		letter-spacing: -1.6px;
 	}
 `;
 
@@ -65,8 +66,8 @@ const PageTitleBlock = (props) => {
 	    <Col
 	    	xsOffset={1} xs={10}
 	      smOffset={2} sm={8}
-	      mdOffset={1} md={8}
-	      lgOffset={1} lg={8}
+	      mdOffset={2} md={8}
+	      lgOffset={2} lg={8}
       >
 				<Title>{title}</Title>
 				{subtitle && <Subheadline>{subtitle}</Subheadline>}

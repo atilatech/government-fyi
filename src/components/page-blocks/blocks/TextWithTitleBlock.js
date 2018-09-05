@@ -25,6 +25,7 @@ const Title = styled.h2`
 	display: inline-block;
 	color: #333;
 	margin: 10px 0;
+	text-transform: none;
 `;
 
 const Text = styled.div`

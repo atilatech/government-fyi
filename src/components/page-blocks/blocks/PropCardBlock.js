@@ -8,7 +8,7 @@ import MultisourceImage from 'components/static/multisource-image'
 // import shadowPattern from 'components/static/shadowPattern.png'
 import {Spacer} from 'layout/util';
 import {withRouter} from 'react-router-dom'
-import NoiseSVG from 'components/static/noise.svg'
+// import NoiseSVG from 'components/static/noise.svg'
 
 const BannerLink = styled(Link)`
 	text-decoration: none;
@@ -27,16 +27,16 @@ const Background = styled.div`
 	box-sizing: border-box;
 	position:relative;
 `;
-const NoiseOverlay = styled.div`
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: url(${NoiseSVG});
-	background-repeat: repeat;
-	height: 100%;
-	width: 100%;
-	mix-blend-mode: overlay;
-`
+// const NoiseOverlay = styled.div`
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	background: url(${NoiseSVG});
+// 	background-repeat: repeat;
+// 	height: 100%;
+// 	width: 100%;
+// 	mix-blend-mode: overlay;
+// `
 
 const PropNumber = styled.div`
 	font-family: ${props=>props.theme.fonts.helvetica};
@@ -135,7 +135,6 @@ const PropCardBlock = (props) => {
 		<BannerLink to={linksTo}>
 			<Spacer height={2}/>
 			<Background color1={Color(color+'1')} color2={Color(color+'2')}>
-				<NoiseOverlay/>
 				<Overflow>
 					<Col
 						xsOffset={0} xs={12}
