@@ -5,7 +5,7 @@ import {Spacer} from 'layout/util'
 
 import WallpaperBannerImg from 'components/page-blocks/blocks/WallpaperBannerImg'
 import BottomNavBlock from 'components/page-blocks/blocks/BottomNavBlock'
-import {PropBgColor, PropImageSet, GetNextAndPrevNum, PropShortTitles} from 'pages/prop-attributes'
+import {PropMetaData, GetNextAndPrevNum} from 'pages/prop-attributes'
 
 /*
 takes the block components and puts them together on a page
@@ -21,7 +21,8 @@ const PropPageBuilder = (props) => {
     )
 	});
 
-	const {socialHeadline, socialDescription, pageType, dateCreated, dateModified} = meta;
+	const {dateCreated, dateModified, pageType} = meta;
+	const {color, imageSet, title, shortTitle, socialHeadline, socialDescription} = PropMetaData(propNum)
   const adjacentProps = GetNextAndPrevNum(propNum);
   return(
 		<div>
@@ -38,26 +39,26 @@ const PropPageBuilder = (props) => {
 			<Spacer height={45}/>
       <WallpaperBannerImg
         data={{
-          color: PropBgColor(propNum),
-          image: PropImageSet(propNum)._2x,
-          title: PropShortTitles(propNum)
+          color: color,
+          image: imageSet._2x,
+          title: shortTitle,
         }}
       />
 		 	{bodySections}
 			<Spacer height={45}/>
       <BottomNavBlock
         data = {{
-          color: PropBgColor(propNum),
+          color: color,
           tiles: [
           {
-            img: PropImageSet(adjacentProps.prev),
+            img: PropMetaData(adjacentProps.prev).imageSet,
             to: `/prop-${adjacentProps.prev}`,
-            text: PropShortTitles(adjacentProps.prev),
+            text: PropMetaData(adjacentProps.prev).shortTitle,
           },
           {
-            img: PropImageSet(adjacentProps.next),
+            img: PropMetaData(adjacentProps.next).imageSet,
             to: `/prop-${adjacentProps.next}`,
-            text: PropShortTitles(adjacentProps.next),
+            text: PropMetaData(adjacentProps.next).shortTitle,
           }
           ],
         }}

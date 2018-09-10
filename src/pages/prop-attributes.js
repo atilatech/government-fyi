@@ -45,7 +45,6 @@ import Prop12Img_2x from './home/images/prop-12@2x.png'
 import Prop12Img_2x_w from './home/images/prop-12@2x.webp'
 
 const colors = [
-  '', // 0 index
   'blue',
   'pink',
   'purple',
@@ -54,14 +53,13 @@ const colors = [
   'pink',
   'yellow',
   'orange',
-  '', //nonexistant
+  'gray',
   'blue',
   'orange',
   'yellow'
 ]
 
 const images = [
-  {},
   {
     _1x: Prop1Img,
     _1x_webp: Prop1Img_w,
@@ -110,7 +108,7 @@ const images = [
     _2x: Prop8Img_2x,
     _2x_webp: Prop8Img_2x_w,
   },
-  {},
+  {}, //prop 9, nonexistant
   {
     _1x: Prop10Img,
     _1x_webp: Prop10Img_w,
@@ -132,7 +130,6 @@ const images = [
 ]
 
 const titles = [
-  "",
   "Prop 1 buys us $4B for housing programs",
   "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
   "Prop 3 buys us ~$9B for water-y projects",
@@ -141,15 +138,67 @@ const titles = [
   "Prop 6 repeals the recent gas tax",
   "Prop 7 makes Daylight Savings Time year-round in California",
   "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
-  "",
+  "Prop 9 would've split CA into three states",
   "Prop 10 legalizes rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
   "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes"
 ]
 
-export const PropBgColor = (n) => (colors[n]);
-export const PropImageSet = (n) => (images[n]);
-export const PropShortTitles = (n) => (titles[n]);
+const shortTitles = [
+  "Prop 1 buys us $4B for housing programs",
+  "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
+  "Prop 3 buys us ~$9B for water-y projects",
+  "Prop 4 buys us $1.5B for children's hospitals",
+  "Prop 5 allows seniors to transfer their property tax assessment when they move",
+  "Prop 6 repeals the recent gas tax",
+  "Prop 7 makes Daylight Savings Time year-round in California",
+  "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
+  "Prop 9 would've split CA",
+  "Prop 10 legalizes rent control again",
+  "Prop 11 requires EMTs to be on-call during breaks",
+  "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes"
+]
+
+const headlines = [
+  "Prop 1 buys us $4B for housing programs",
+  "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
+  "Prop 3 buys us ~$9B for water-y projects",
+  "Prop 4 buys us $1.5B for children's hospitals",
+  "Prop 5 allows seniors to transfer their property tax assessment when they move",
+  "Prop 6 repeals the recent gas tax",
+  "Prop 7 makes Daylight Savings Time year-round in California",
+  "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
+  "Prop 9 would have split California",
+  "Prop 10 legalizes rent control again",
+  "Prop 11 requires EMTs to be on-call during breaks",
+  "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes"
+]
+
+const descriptions = [
+  "[Prop 1 description]",
+  "The revenue is supposed to go to helping the mentally ill, but lawsuits have stopped it from using it on housing",
+  "It comes down to fish, really",
+  "Renovations and new construction",
+  "Some argue this would free up houses; others say it further limits California's revenue from property taxes",
+  "And! it requires that future gas tax increases be approved by voters",
+  "If passed, we'd need Congressional approval to make it so",
+  "A complicated way of trying to raise wages for clinic workers",
+  "But it got removed from the ballot by the CA Supreme Court",
+  "Would repeal Costa-Hawkins, allowing cities to regulate what landlords can charge renters",
+  "An attempt to exempt EMTs from a recent California ruling",
+  "Guess what 1 square foot looks like relative to a chicken"
+]
+
+export const PropMetaData = (n) => (
+  {
+    color: colors[n-1],
+    imageSet: images[n-1],
+    title: titles[n-1],
+    shortTitle: shortTitles[n-1],
+    socialHeadline: headlines[n-1],
+    socialDescription: descriptions[n-1]
+  }
+);
 
 export const GetNextAndPrevNum = (n) => {
   let adj = {next: n+1, prev: n-1};

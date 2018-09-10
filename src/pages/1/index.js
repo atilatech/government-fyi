@@ -8,8 +8,6 @@ const Data = {
 	pageId:"prop-1",
 	propNum: 1,
 	meta: {
-		socialHeadline:"Prop 1",
-		socialDescription:"Prop 1",
 		dateCreated: new Date('September 15, 2018 10:00:00'),
 		dateModified: new Date('September 15, 2018 10:00:00')
 	},
