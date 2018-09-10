@@ -23,7 +23,7 @@ const Data = {
     	id: "000",
     	component: PageTitleBlock,
     	data: {
-    		title: "We're three things",
+    		title: "We do your election homework",
     	}
     },
     {
