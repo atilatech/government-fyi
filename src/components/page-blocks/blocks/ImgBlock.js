@@ -19,7 +19,6 @@ creates a centered image of an even number of columns
 		},
 		alt: "Image of partner logos",
 		nColWidth: 8,
-		noBorder: true,
 	}
 },
 
@@ -28,7 +27,6 @@ creates a centered image of an even number of columns
 const Img = styled(MultisourceImage)`
 	width: 100%;
 	object-fit: contain;
-	border: ${props=>props.noBorder?"none":"6px solid black"};
 	box-sizing: border-box;
 	border-radius: 6px;
 	@media not all and (hover: none) {
@@ -65,7 +63,13 @@ const ImgBlock = (props) => {
 	      lgOffset={offset} lg={nWidth}
 	    >
 				<Spacer height={20}/>
-				{link ? <a target="_blank" rel="noopener noreferrer" href={link}><Img isLink imageHandles={src} alt={alt || caption || ""}/></a> : <Img noBorder={noBorder} imageHandles={src} alt=""/>}
+				{link ?
+					<a target="_blank" rel="noopener noreferrer" href={link}>
+						<Img isLink imageHandles={src} alt={alt || caption || ""}/>
+					</a>
+				:
+				<Img imageHandles={src} alt=""/>
+				}
 				{caption && <Caption>{caption}</Caption>}
 				<Spacer height={40}/>
 			</Col>
@@ -85,7 +89,6 @@ ImgBlock.propTypes = {
 		caption: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		nColWidth: PropTypes.number,
 		link: PropTypes.string,
-		noBorder: PropTypes.bool,
 	})
 }
 
