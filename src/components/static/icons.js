@@ -15,12 +15,13 @@ CloseIcon.propTypes = {color: PropTypes.string}
 CloseIcon.defaultProps = {color: '#000'}
 
 export const LinkOutIcon = () => (
-	<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M34.3 71.8c-1.57 1.56-1.36 3.84.5 5.04 0 0-1.06-.6.13.07a30 30 0 1 0-11.35-11.32l.04.07a3.14 3.14 0 0 0 5.04.5l17.73-17.73c.4-.4.26-.7-.3-.7 0 0-4.57 0-6.23.02-5.38 0-5.36-7.98-.04-8l17.23.05c1.93 0 3.5 1.57 3.53 3.5l.11 17.33c0 5.33-8 5.34-7.98.02l.02-6.29c0-.55-.32-.68-.7-.3z" fillRule="evenodd"/></svg>
+	<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M34.3 71.8c-1.57 1.56-1.36 3.84.5 5.04 0 0-1.06-.6.13.07a30 30 0 1 0-11.35-11.32l.04.07a3.14 3.14 0 0 0 5.04.5l17.73-17.73c.4-.4.26-.7-.3-.7 0 0-4.57 0-6.23.02-5.38 0-5.36-7.98-.04-8l17.23.05c1.93 0 3.5 1.57 3.53 3.5l.11 17.33c0 5.33-8 5.34-7.98.02l.02-6.29c0-.55-.32-.68-.7-.3z" fill="#323232" fillRule="evenodd"/></svg>
 )
 
 export const LinkOutStyle = styled.div`
 	display: inline-block;
 	height: 20px;
+	min-width: 20px;
 	width: 20px;
 	transform: translateY(5px);
 `;

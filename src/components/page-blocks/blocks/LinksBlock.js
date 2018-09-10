@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { Row, Col } from 'react-flexbox-grid';
-import Color from 'constants/colors'
+import styled from 'styled-components'
+import Color from 'layout/colors'
 import {LinkOutIcon, LinkOutStyle} from 'components/static/icons'
 import {Spacer} from 'layout/util'
 
@@ -62,24 +62,28 @@ example usage:
 */
 
 
-const SubsectionTitle = styled.h4`
+const SubsectionTitle = styled.h3`
+	display: block;
 	color: #666;
 	margin-bottom: 10px;
+	font-size: 12px;
 `;
 
+const LinkWrapper = styled.h4`
+	display: flex;
+`
+
 const ExternalLink = styled.a`
-	font-family: ${props=>props.theme.fonts.h3};
-	display: block;
-	color: ${Color('purple')};
-	margin-top: 8px;
+	margin-top: 4px;
+	font-size: 12px;
+	@media screen and (max-width: 767px) {
+		font-size: 16px;
+	}
 `;
 
 const SectionWrapper = styled.div`
 	margin: 0 auto;
 	margin-bottom: 30px;
-	@media screen and (max-width: 767px) {
-		text-align: center;
-	}
 `;
 
 const HideOnPrint = styled.div`
@@ -92,9 +96,12 @@ const HideOnPrint = styled.div`
 const LinksChunk = (props) => {
 	const links = props.data.links.map( (link, j) => {
 		return(
-			<React.Fragment key={j}>
-			 <ExternalLink target="_blank" rel="noopener noreferrer" href={link.url}><LinkOutStyle><LinkOutIcon/></LinkOutStyle>{link.text}</ExternalLink>
-			</React.Fragment>
+			<LinkWrapper key={j}>
+				<LinkOutStyle><LinkOutIcon/></LinkOutStyle>
+				<ExternalLink target="_blank" rel="noopener noreferrer" href={link.url}>
+					{link.text}
+				</ExternalLink>
+			</LinkWrapper>
 		)
 	})
 	return(

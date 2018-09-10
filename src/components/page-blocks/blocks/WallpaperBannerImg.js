@@ -35,11 +35,14 @@ const AbsoluteUnderBleed = styled.div`
 const Relative = styled.div`
 	position: relative;
 	min-height: 206px;
+	width: 100%;
 `;
 
 const Title = styled.h1`
-	position: absolute;
-	width: 100%;
+	font-size: 48px;
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
 	text-align: center;
 `
 

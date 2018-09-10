@@ -34,7 +34,7 @@ const Data = {
         alt: "Venn diagram of a debate and politifact",
         title: "nonpartisan",
         flipped: true,
-        body: <span>ballot.fyi does your election homework for you. Unlike most election material you'll get though, we won't tell you how to vote. We'll give you the facts and arguments about the propositions, concisely, so you can make your own conclusion. We cite all our sources, and try to argue for all perspectives – that's what we mean when we say nonpartisan. We strive to challenge your views, no matter where you stand. But, we know we don't know everything, so if you know something we didn't cover, please email us at fax@ballot.fyi with sources cited.</span>
+        body: <span>We're tired of pamphlets telling us how to vote. ballot.fyi does not give any recommendations. We'll give you the facts and arguments about the propositions, concisely, so you can make your own conclusion. We cite all our sources, and try to argue for all perspectives – that's what we mean when we say nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, please email us at fax@ballot.fyi (with sources cited!)</span>
       }
     },
     {
@@ -55,7 +55,7 @@ const Data = {
         title: "a tool",
         flipped: true,
         alt: "Venn diagram of The more you know and you'll never guess what",
-        body: <span>We want you to feel empowered on Election Day, and we want you to give you ammo to make your own decisions. We also hope that you'll want your friends to feel empowered as well, because this site has no other purpose other than to provide useful information. Making your friends smarter is the most important thing you can do this election.<Spacer height={70}/></span>,
+        body: <span>We want you to feel empowered on Election Day, and we want you to give you ammo to make your own decisions. We also hope that you'll want your friends to feel empowered as well, because this site's only purpose is to get more folks voting. Making your friends smarter is the most important thing you can do this election.<Spacer height={70}/></span>,
       }
     },
     {
@@ -65,7 +65,7 @@ const Data = {
         title: "About Amir & Erica",
         text: <span>Amir & Erica was created by Jimmy Chion (a designer and engineer) and Yvonne Leow (a journalist) with the help and balance of many friends, left and right. We first made ballot.fyi in <a target="_blank" rel="noopener noreferrer" href="https://original.ballot.fyi/">2016</a>. It reached a million people in one month, and in 2017, we received a generous grant from The John S. and James L. Knight Foundation to continue ballot.fyi into 2018. <a href="https://knightfoundation.org/" target="_blank" rel="noopener noreferrer">The Knight Foundation</a> promotes informed and engaged communities through funding in journalism, arts, and technology.
 					<br/><br/>
-					We believe local politics is more important than national politics, so we created <a>By The Bay</a> to cover issues in San Francisco, building on what we learned with ballot.fyi in 2016. If you live in San Francisco or San Jose, go to bythebay.cool to check out our coverage of SF and SJ's local elections. </span>,
+					We believe local politics is more important than national politics, so we created <a href="https://www.bythebay.cool/" target="_blank" rel="noopener noreferrer">By The Bay</a> to cover issues in San Francisco, building on what we learned with ballot.fyi in 2016. If you live in San Francisco or San Jose, go to <a href="https://www.bythebay.cool/" target="_blank" rel="noopener noreferrer">bythebay.cool</a> to check out our coverage of SF and SJ's local elections. </span>,
         nColWidth: 6,
       }
     },
