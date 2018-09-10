@@ -39,7 +39,8 @@ const Relative = styled.div`
 `;
 
 const Title = styled.h1`
-	font-size: 48px;
+	font-size: 36px;
+	line-height: 44px;
 	position: relative;
 	width: 60%;
 	margin: 0 auto;
