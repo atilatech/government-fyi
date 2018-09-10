@@ -31,6 +31,10 @@ import Prop8Img from './home/images/prop-8.png'
 import Prop8Img_w from './home/images/prop-8.webp'
 import Prop8Img_2x from './home/images/prop-8@2x.png'
 import Prop8Img_2x_w from './home/images/prop-8@2x.webp'
+import Prop9Img from './home/images/prop-9.png'
+import Prop9Img_w from './home/images/prop-9.webp'
+import Prop9Img_2x from './home/images/prop-9@2x.png'
+import Prop9Img_2x_w from './home/images/prop-9@2x.webp'
 import Prop10Img from './home/images/prop-10.png'
 import Prop10Img_w from './home/images/prop-10.webp'
 import Prop10Img_2x from './home/images/prop-10@2x.png'
@@ -108,7 +112,12 @@ const images = [
     _2x: Prop8Img_2x,
     _2x_webp: Prop8Img_2x_w,
   },
-  {}, //prop 9, nonexistant
+  {
+    _1x: Prop9Img,
+    _1x_webp: Prop9Img_w,
+    _2x: Prop9Img_2x,
+    _2x_webp: Prop9Img_2x_w,
+  },
   {
     _1x: Prop10Img,
     _1x_webp: Prop10Img_w,
