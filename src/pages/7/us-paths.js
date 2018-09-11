@@ -6,10 +6,9 @@ import {feature} from "topojson";
 
 let UsaMap = {};
 
-
 UsaMap.draw = function(id, data, toolTip) {
-  const width = 900;
-  const height = 600;
+  // const width = 900;
+  // const height = 600;
 
   // json('../mapdata/us-states-topo.json', function(error, topoData) {
   json('../mapdata/states-topo.json', function(error, topoData) {
