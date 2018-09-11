@@ -23,69 +23,89 @@ creates a centered image of an even number of columns
 },
 
 */
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+`
+const ImgContainer = styled.div`
+  width: calc(100% - 10px);
+  padding-left: 5px;
+  padding-right: 5px;
+`
 
 const Img = styled(MultisourceImage)`
-	width: 100%;
+  width: 100%;
 	object-fit: contain;
-	box-sizing: border-box;
-	border-radius: 6px;
-	@media not all and (hover: none) {
-		&:hover {
-			cursor: ${props=>props.isLink?"pointer":"auto"};
-		}
-	}
+	border-radius: 4px;
+  margin: 0;
+  @media screen and (max-width: 767px) {
+    margin-top: 5px;
+  }
+
 `;
 
 const Caption = styled.div`
+  width: 80%;
+  margin: 10px auto 0 auto;
 	font-size: 14px;
 	line-height: 18px;
 	font-style: italic;
 	color: #666;
 	padding-left: 5px;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    width: 95%;
+  }
 `;
 
-const StyledRow = styled(Row)`
-	@media print {
-		display: none;
-	}
-`;
 
 const ImgBlock = (props) => {
-	const {src, caption, nColWidth, link , alt} = props.data;
-	const nWidth = nColWidth || 8;
+	const {images, caption, nColWidth} = props.data;
+	const nWidth = nColWidth || 10;
 	const offset = Math.floor((12-nWidth)/2)
+  const imageSet = images.map((img, i)=>{
+    return(
+      <ImgContainer key={i}>
+        <Img imageHandles={img.src} alt={img.alt}/>
+      </ImgContainer>
+    )
+  })
+
 	return(
-		<StyledRow>
+		<Row>
 	    <Col
 	    	xsOffset={0} xs={12}
 	      smOffset={2} sm={8}
 	      mdOffset={offset} md={nWidth}
 	      lgOffset={offset} lg={nWidth}
-	    >
-				<Spacer height={20}/>
-				{link ?
-					<a target="_blank" rel="noopener noreferrer" href={link}>
-						<Img isLink imageHandles={src} alt={alt || caption || ""}/>
-					</a>
-				:
-				<Img imageHandles={src} alt={alt || ""}/>
-				}
+     >
+        <Spacer height={20}/>
+        <Container>
+          {imageSet}
+        </Container>
 				{caption && <Caption>{caption}</Caption>}
 				<Spacer height={40}/>
 			</Col>
-		</StyledRow>
+		</Row>
 	);
 }
 
 ImgBlock.propTypes = {
 	data: PropTypes.shape({
-		src: PropTypes.shape({
-			_1x:PropTypes.string.isRequired,
-			_2x:PropTypes.string,
-			_1x_webp:PropTypes.string,
-			_2x_webp:PropTypes.string,
-		}),
-		alt: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(
+      PropTypes.shape({
+        src: PropTypes.shape({
+    			_1x:PropTypes.string.isRequired,
+    			_2x:PropTypes.string,
+    			_1x_webp:PropTypes.string,
+    			_2x_webp:PropTypes.string,
+    		}).isRequired,
+    		alt: PropTypes.string.isRequired,
+      })
+    ),
 		caption: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		nColWidth: PropTypes.number,
 		link: PropTypes.string,

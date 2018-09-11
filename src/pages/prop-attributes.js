@@ -165,7 +165,7 @@ const shortTitles = [
   "Prop 9 would've split CA",
   "Prop 10 legalizes rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
-  "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes"
+  "Prop 12 sets minimum space requirements for farm animals"
 ]
 
 const headlines = [
