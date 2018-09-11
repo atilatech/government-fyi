@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components'
-import Color from 'layout/colors'
 import {LinkOutIcon, LinkOutStyle} from 'components/static/icons'
 import {Spacer} from 'layout/util'
 
@@ -10,7 +9,7 @@ import {Spacer} from 'layout/util'
 example usage:
 
 {
-	
+
 	component: LinksBlock,
 	data: {
 		subsections:[

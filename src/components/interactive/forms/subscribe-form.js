@@ -5,10 +5,10 @@ import React from 'react'
 
 import {
   TextField,
-  ErrorMessage,
-  SuccessStyle,
+  // ErrorMessage,
+  // SuccessStyle,
   SubmitButtonWithStyle,
-  SubmittingStyle
+  // SubmittingStyle
 } from './form-styles';
 
 /*

@@ -10,7 +10,7 @@ import MultisourceImage from 'components/static/multisource-image'
 creates a centered image of an even number of columns
 
 {
-	
+
 	component: ImgBlock,
 	data: {
 		src: {
@@ -51,7 +51,7 @@ const StyledRow = styled(Row)`
 `;
 
 const ImgBlock = (props) => {
-	const {src, caption, nColWidth, link, noBorder, alt} = props.data;
+	const {src, caption, nColWidth, link , alt} = props.data;
 	const nWidth = nColWidth || 8;
 	const offset = Math.floor((12-nWidth)/2)
 	return(

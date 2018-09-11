@@ -22,7 +22,7 @@ const PropPageBuilder = (props) => {
 	});
 
 	const {dateCreated, dateModified, pageType} = meta;
-	const {color, imageSet, title, shortTitle, socialHeadline, socialDescription} = PropMetaData(propNum)
+	const {color, imageSet, shortTitle, socialHeadline, socialDescription} = PropMetaData(propNum)
   const adjacentProps = GetNextAndPrevNum(propNum);
   return(
 		<div>
