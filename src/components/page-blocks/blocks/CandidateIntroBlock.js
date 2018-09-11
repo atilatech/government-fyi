@@ -9,7 +9,7 @@ import {Spacer} from 'layout/util'
 
 /*
 {
-	id: "000",
+	
 	component: CandidateIntroBlock,
 	data: {
 		candidateName: "Gavin Newsom",

@@ -8,7 +8,7 @@ import Color from 'layout/colors'
 usage
 
 {
-	id: "000",
+	
 	component: SummaryListBlock,
 	data: {
 		listNItems: 3, //optional

@@ -7,7 +7,7 @@ import Color from 'constants/colors'
 usage
 
 {
-	id: "000",
+	
 	component: RatingsBlock,
 	data: {
 		ratings: [

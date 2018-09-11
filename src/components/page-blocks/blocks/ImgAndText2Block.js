@@ -9,7 +9,7 @@ import Color from 'layout/colors'
 
 /*
 {
-	id: "000",
+	
 	component: ImgAndTextBlock,
 	data: {
 		src: {

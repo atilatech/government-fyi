@@ -3,6 +3,7 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
+import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 
 const Data = {
 	pageId:"prop-1",
@@ -13,7 +14,6 @@ const Data = {
 	},
 	blocks: [
     {
-    	id: "010",
     	component: TextWithTitleBlock,
     	data: {
     		title: "A quickie",
@@ -21,7 +21,6 @@ const Data = {
     	},
     },
     {
-    	id: "020",
     	component: SectionTitleBlock,
     	data: {
     		title: "Breakdown of funds",
@@ -29,7 +28,13 @@ const Data = {
     	},
     },
     {
-    	id: "030",
+    	component: SectionTitleBlock,
+    	data: {
+    		title: "Breakdown of funds",
+				nColWidth: 6,
+    	},
+    },
+    {
     	component: TextWithTitleBlock,
     	data: {
     		title: "Who's against it?",
@@ -37,14 +42,12 @@ const Data = {
     	},
     },
 		{
-			id: "040",
 			component: SectionTitleBlock,
 			data: {
 				title: "More reading",
 			},
 		},
 		{
-			id: "050",
 			component: LinksBlock,
 			data: {
 				subsections:[

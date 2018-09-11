@@ -38,35 +38,30 @@ const Data = {
 	},
 	blocks: [
     {
-    	id: "000",
     	component: PageTitleBlock,
     	data: {
     		title: "Let's make this obligatory sense of civic duty last",
     	}
     },
     {
-      id: "010",
       component: SectionTitleBlock,
       data: {
         title: "📥 Sign up for updates",
       }
     },
     {
-      id: "020",
       component: SubscribeBlock,
       data: {
         title: null,
       }
     },
     {
-      id: "030",
       component: SectionTitleBlock,
       data: {
         title: "🍟 Or follow us on these electronic media",
       }
     },
     {
-      id: "040",
       component: FluidColumnsBlock,
       data: {
         blocks: [
@@ -98,7 +93,6 @@ const Data = {
       }
     },
     {
-      id: "050",
       component: TextWithTitleBlock,
       data: {
         nColWidth: 8,

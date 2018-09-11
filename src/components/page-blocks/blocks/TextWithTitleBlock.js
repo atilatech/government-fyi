@@ -11,7 +11,7 @@ takes a title and body of text
 
 usage in data.js file:
 {
-	id: "000",
+	
 	component: TextWithTitleBlock,
 	data: {
 		title: "",

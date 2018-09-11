@@ -6,7 +6,7 @@ import { Row, Col } from 'react-flexbox-grid';
 
 /*
 {
-	id: "000",
+	
 	component: PageTitleBlock,
 	data: {
 		title: "June 5, 2018 election guide",

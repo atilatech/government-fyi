@@ -17,7 +17,6 @@ let Data = {
 	},
 	blocks: [
 		{
-			id: "010",
 			component: FrontPageTitleBlock,
 			data: {
 				title: "Nonpartisan guide to California's 2018 election",
@@ -30,7 +29,6 @@ let Data = {
 for (let i = 1; i < 13; i++){
 	const {color, imageSet, title, socialDescription} = PropMetaData(i)
 	Data.blocks.push({
-		id: "0" + (i+1)*10,
 		component: PropCardBlock,
 		data: {
 			propNum: i + "",

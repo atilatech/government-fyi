@@ -9,7 +9,7 @@ import {Spacer} from 'layout/util'
 multiple columns of text with a title on each column, fluid
 
 {
-	id:"000",
+	
 	component: FluidColumnsBlock,
 	data: {
 		blocks: [

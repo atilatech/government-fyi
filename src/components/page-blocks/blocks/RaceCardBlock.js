@@ -10,7 +10,7 @@ import MultisourceImg from 'components/static/multisource-image'
 usage:
 
 {
-	id: "000",
+	
 	component: RaceCardBlock,
 	data: {
 		title:"Governor of California",

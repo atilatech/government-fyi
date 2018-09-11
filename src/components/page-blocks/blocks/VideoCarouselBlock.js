@@ -7,7 +7,7 @@ import {NavArrow} from 'components/static/icons'
 /*
 usage:
 {
-	id: "000",
+	
 	component: VideoCarouselBlock,
 	data: {
 		videos: [

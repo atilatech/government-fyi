@@ -8,7 +8,7 @@ import {Spacer} from 'layout/util'
 
 example usage for data.js:
 {
-	id: "000",
+	
 	component: QuoteBlock,
 	data: {
 		author: "Bay Guardian – Tim Redmond",

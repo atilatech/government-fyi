@@ -6,7 +6,7 @@ import {ExpandButtonLabel, ExpandButton} from './SummaryListBlock'
 usage
 
 {
-	id: "000",
+	
 	component: SummaryListBlock,
 	data: {
 		listNItems: 3, //optional

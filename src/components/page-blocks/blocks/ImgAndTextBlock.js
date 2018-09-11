@@ -9,7 +9,7 @@ import MultisourceImage from 'components/static/multisource-image'
 
 /*
 {
-	id: "000",
+	
 	component: ImgAndTextBlock,
 	data: {
 		src: {

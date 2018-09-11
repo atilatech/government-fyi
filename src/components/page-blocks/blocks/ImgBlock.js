@@ -10,7 +10,7 @@ import MultisourceImage from 'components/static/multisource-image'
 creates a centered image of an even number of columns
 
 {
-	id: "000",
+	
 	component: ImgBlock,
 	data: {
 		src: {

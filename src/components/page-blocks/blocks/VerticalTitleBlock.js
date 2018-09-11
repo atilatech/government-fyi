@@ -7,7 +7,7 @@ import styled from 'styled-components'
 usage
 
 {
-	id:"000",
+	
 	component: VerticalTitleBlock,
 	data: {
 		title:"title about something",

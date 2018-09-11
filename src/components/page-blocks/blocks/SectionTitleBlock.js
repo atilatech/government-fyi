@@ -9,7 +9,7 @@ import {Spacer} from 'layout/util'
 usage
 
 {
-	id:"000",
+	
 	component: SectionTitleBlock,
 	data: {
 		title:"title about something",

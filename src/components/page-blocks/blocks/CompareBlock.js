@@ -10,7 +10,7 @@ creates a psuedo-table that compares two lists of things
 like in Prop H from the June 5 election
 
 {
-	id:"000",
+	
 	component: CompareBlock,
 	data: {
 		title: "Comparison between the existing Police Commission's policy and SFPOA's Prop H",

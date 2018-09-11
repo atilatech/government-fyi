@@ -12,7 +12,7 @@ const Data = {
 	},
 	blocks: [
     {
-    	id: "010",
+
     	component: TextWithTitleBlock,
     	data: {
     		// title: "",
@@ -20,7 +20,7 @@ const Data = {
     	},
     },
 		{
-			id: "020",
+
 			component: LinksBlock,
 			data: {
 				subsections:[

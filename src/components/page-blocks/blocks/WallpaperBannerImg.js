@@ -9,7 +9,7 @@ on the proposition pages
 
 usage for file:
 {
-	id:"000",
+	
 	component: WallpaperBannerImg,
 	data: {
 		color: "pink",

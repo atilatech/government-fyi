@@ -20,14 +20,12 @@ const Data = {
 	},
 	blocks: [
     {
-    	id: "000",
     	component: PageTitleBlock,
     	data: {
     		title: "We do your election homework",
     	}
     },
     {
-      id:"010",
       component: ImgAndText2Block,
       data: {
         image: nonpartisanImg,
@@ -38,7 +36,6 @@ const Data = {
       }
     },
     {
-      id:"020",
       component: ImgAndText2Block,
       data: {
         image: conciseImg,
@@ -48,7 +45,6 @@ const Data = {
       }
     },
     {
-      id:"030",
       component: ImgAndText2Block,
       data: {
         image: toolImg,
@@ -59,7 +55,6 @@ const Data = {
       }
     },
     {
-      id:"040",
       component: TextWithTitleBlock,
       data: {
         title: "About Amir & Erica",
@@ -70,7 +65,6 @@ const Data = {
       }
     },
     {
-      id:"050",
       component: TextWithTitleBlock,
       data: {
         title: "Contact",

@@ -8,7 +8,7 @@ import {Spacer} from 'layout/util'
 
 /* UPDATE
 {
-	id: "000",
+	
 	component: PageTitleBlock,
 	data: {
 		title: "June 5, 2018 election guide",

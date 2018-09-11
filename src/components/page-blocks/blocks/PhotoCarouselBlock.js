@@ -7,7 +7,7 @@ import { Spacer } from 'layout/util'
 /*
 example usage in data files
 {
-	id: "000",
+	
 	component: PhotoCarouselBlock,
 	data: {
 		images: [

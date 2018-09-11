@@ -9,7 +9,7 @@ an iMessage conversation block
 
 example usage for data.js
 {
-	id: "000",
+	
 	component: IMessageBlock,
 	data: {
 		messages: [

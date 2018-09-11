@@ -13,7 +13,7 @@ usually two tiles with images and text that point to the next and prev posts
 
 example usage for data.js:
 {
-  id: "000",
+  
   component: BottomNavBlock,
   data: {
     color:

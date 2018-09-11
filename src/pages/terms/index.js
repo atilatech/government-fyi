@@ -19,7 +19,6 @@ const Data = {
 	},
 	blocks: [
     {
-    	id: "000",
     	component: PageTitleBlock,
     	data: {
     		title: "Terms of Service",
@@ -27,7 +26,6 @@ const Data = {
     	}
     },
 		{
-			id: "010",
 			component: TextWithTitleBlock,
 			data: {
 				title: null,
@@ -36,7 +34,6 @@ const Data = {
 			},
 		},
 		{
-			id: "020",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Content rights & responsibilities",
@@ -51,7 +48,6 @@ const Data = {
 			},
 		},
 		{
-			id: "030",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Your Content and Conduct",
@@ -66,7 +62,6 @@ const Data = {
 			},
 		},
 		{
-			id: "040",
 			component: TextWithTitleBlock,
 			data: {
 				title: "General Use of Services",
@@ -91,7 +86,6 @@ const Data = {
 			},
 		},
 		{
-			id: "050",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Your use of content",
@@ -105,7 +99,6 @@ const Data = {
 			},
 		},
 		{
-			id: "060",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Our content & services",
@@ -125,7 +118,6 @@ const Data = {
 			},
 		},
 		{
-			id: "070",
 			component: TextWithTitleBlock,
 			data: {
 				title: "No children",
@@ -133,7 +125,6 @@ const Data = {
 			},
 		},
 		{
-			id: "080",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Incorporated rules & policies",
@@ -147,7 +138,6 @@ const Data = {
 			},
 		},
 		{
-			id: "090",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Miscellaneous",
@@ -168,7 +158,6 @@ const Data = {
 			},
 		},
 		{
-			id: "100",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Copyright & DMCA policy",
@@ -198,7 +187,6 @@ const Data = {
 			},
 		},
 		{
-			id: "110",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Filing a counter-notice",
@@ -216,7 +204,6 @@ const Data = {
 			},
 		},
 		{
-			id: "120",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Filing a counter-notice",
@@ -234,7 +221,6 @@ const Data = {
 			},
 		},
 		{
-			id: "120",
 			component: TextWithTitleBlock,
 			data: {
 				title: "Learn more about DMCA",

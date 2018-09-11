@@ -10,7 +10,7 @@ import {Spacer} from 'layout/util'
 example usage:
 
 {
-	id: "000",
+	
 	component: LinksBlock,
 	data: {
 		subsections:[

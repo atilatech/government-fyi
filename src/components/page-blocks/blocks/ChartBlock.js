@@ -8,7 +8,7 @@ creates a table
 
 usage for data.js file:
 {
-	id:"000",
+	
 	component: ChartBlock,
 	data: {
 		title: "Thanks for making this easy, SF!",
