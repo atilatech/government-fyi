@@ -9,10 +9,10 @@ takes the block components and puts them together on a page
 const PageBuilder = (props) => {
 	const { meta, blocks } = props.data;
 
-	const bodySections = blocks.map( (block ) => {
+	const bodySections = blocks.map( (block,i ) => {
     const Block = block.component;
     return(
-      <Block key={block.id} data={block.data}/>
+      <Block key={i} data={block.data}/>
     )
 	});
 
@@ -47,7 +47,6 @@ PageBuilder.propTypes = {
     }).isRequired,
     blocks: PropTypes.arrayOf(
       PropTypes.shape({
-        id: PropTypes.string.isRequired,
         component: PropTypes.func.isRequired,
         data: PropTypes.object.isRequired,
       }).isRequired

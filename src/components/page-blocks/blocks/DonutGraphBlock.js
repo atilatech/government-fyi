@@ -104,23 +104,38 @@ class DonutGraph extends React.Component {
 
 		const centerToLabelDist = radius;
 		//-- move text labels to outside
+		const text = this.arcs
+			.append('text')
+				.attr('class', 'labels')
+				.attr('dy', '0.3em')
+				.attr("transform", function(d) {
+					var pos = outerArc.centroid(d);
+					pos[0] = centerToLabelDist * (midAngle(d) < Math.PI ? 1 : -1);
+					return "translate("+ pos +")";
+				})
+				.style('text-anchor', function(d){
+					return midAngle(d) < Math.PI ? "start":"end";
+				})
+				.text(function(d) {
+					return d.data.label;
+				})
 
-		const text = this.arcs.append('text')
-			.attr('class', 'labels')
-			.attr('dy', '0.3em')
-			.attr("transform", function(d) {
-				var pos = outerArc.centroid(d);
-				pos[0] = centerToLabelDist * (midAngle(d) < Math.PI ? 1 : -1);
-				return "translate("+ pos +")";
-			})
-			.style('text-anchor', function(d){
-				return midAngle(d) < Math.PI ? "start":"end";
-			})
-			.text(function(d) {
-				return d.data.label;
-			})
 
-			text.call(wrapText, 240)
+			// this.arcs.append('text')
+			// 	.attr("transform", function(d) {
+			// 		var pos = outerArc.centroid(d);
+			// 		pos[0] = centerToLabelDist * (midAngle(d) < Math.PI ? 1 : -1);
+			// 		return "translate("+ pos +")";
+			// 	})
+			// 	.style('text-anchor', function(d){
+			// 		return midAngle(d) < Math.PI ? "start":"end";
+			// 	})
+			// 	.attr('dy','1.6em')
+			// 	.text(function(d) {
+			// 		return d.data.description;
+			// 	})
+
+		text.call(wrapText, 240)
 		//-- create a polyline from centroid of arc to label
 		this.arcs.append("polyline")
 			.attr("points", function(d){
@@ -142,8 +157,7 @@ class DonutGraph extends React.Component {
 				let word;
 				let line = [];
 				let lineNumber = 0;
-				let lineHeight = 1.3; // em
-				let trans = text.attr("transform");
+				const lineHeight = 1.3; // em
 				const dy = parseFloat(text.attr("dy"));
 				const y = text.attr("y") || 0
 				let tspan = text.text(null)

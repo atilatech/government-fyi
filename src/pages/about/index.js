@@ -68,7 +68,7 @@ const Data = {
       component: TextWithTitleBlock,
       data: {
         title: "Contact",
-        text: <span id="contact">Know something we don't?<br/><br/>Perfect. Email us the goods at fax@ballot.fyi with cited sources.</span>,
+        text: <span id="contact">Know something we don't?<br/><br/>Perfect. Email us the goods at fax@ballot.fyi with your sources cited.</span>,
         nColWidth: 6,
       }
     },
