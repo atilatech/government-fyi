@@ -14,31 +14,53 @@ const Container = styled.div`
 	display:flex;
 	align-items: center;
 	justify-content:center;
-	background-color: whitesmoke;
+	@media screen and (max-width: 767px) {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 `
 const CenterLabel = styled.h1`
 	position: absolute;
+	@media screen and (max-width: 767px) {
+		font-size: 30px;
+	}
 `
 
 class DonutGraph extends React.Component {
+	constructor(props) {
+		super(props);
+		this.width = 1080;
+		this.height = 600;
+		this.arcs = null
+	}
 	componentDidMount() {
 		this.drawGraph('#donut-graph');
+		// window.addEventListener("resize", this.handleResize);
 	}
+	componentWillUnmount() {
+		// window.removeEventListener("resize", this.handleResize);
+	}
+	// handleResize =() => {
+	// 	if(this.arcs) {
+	// 		this.arcs.selectAll('tspan').call(this.wrapText, 240)
+	// 	}
+	// }
+
 
 	drawGraph = (graphId) => {
 		const {src, colorRangeStart, colorRangeEnd} = this.props.data;
 		//-- setup
-		const width = 960;
-		const height = 600
-		const radius = 300;
+		const width = this.width;
+		const height = this.height;
+		const radius = 280;
 
 		const arc = d3arc()
-			.outerRadius(radius*0.85)
+			.outerRadius(radius*0.8)
 			.innerRadius(radius*0.4);
 
 		const outerArc = d3arc()
-			.innerRadius(radius * 0.95)
-			.outerRadius(radius * 0.95)
+			.innerRadius(radius * 0.88)
+			.outerRadius(radius * 0.88)
 
 		const pie = d3pie()
 			.sort(null)
@@ -67,12 +89,12 @@ class DonutGraph extends React.Component {
 		.range([colorRangeStart, colorRangeEnd]);
 
 		//-- attach elements, style them
-		const g = svg.selectAll('.arc')
+		this.arcs = svg.selectAll('.arc')
 			.data(pie(loadedData)).enter()
 			.append('g')
 			.attr('class','arc');
 
-		g.append('path')
+		this.arcs.append('path')
 			.attr('d', arc)
 			.attr('stroke', '#fff')
 			.attr('stroke-width', '1')
@@ -80,50 +102,86 @@ class DonutGraph extends React.Component {
 				return colorRange(d.data.amount)
 			})
 
+		const centerToLabelDist = radius;
 		//-- move text labels to outside
-		g.append('text')
+
+		const text = this.arcs.append('text')
 			.attr('class', 'labels')
 			.attr('alignment-baseline', 'middle')
 			.attr("transform", function(d) {
 				var pos = outerArc.centroid(d);
-				pos[0] = radius * (midAngle(d) < Math.PI ? 1 : -1);
+				pos[0] = centerToLabelDist * (midAngle(d) < Math.PI ? 1 : -1);
 				return "translate("+ pos +")";
-			})
-			.text(function(d) {
-				return d.data.label;
 			})
 			.style('text-anchor', function(d){
 				return midAngle(d) < Math.PI ? "start":"end";
 			})
+			.text(function(d) {
+				return d.data.label;
+			})
 
+			text.call(wrapText, 240)
 		//-- create a polyline from centroid of arc to label
-		g.append("polyline")
+		this.arcs.append("polyline")
 			.attr("points", function(d){
 				var pos = outerArc.centroid(d);
-				pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+				pos[0] = centerToLabelDist * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
 				return [arc.centroid(d), outerArc.centroid(d), pos];
 			})
+			.attr('stroke-width', '3')
+			.attr('stroke-linejoin','round')
+			.attr('stroke-linecap','round')
 
 		function midAngle(d){
 			return (d.startAngle+d.endAngle)/2
+		}
+		function wrapText(text, width){
+			text.each(function() {
+				const text = select(this);
+				let words = text.text().split(/\s+/).reverse();
+				let word;
+				let line = [];
+				let lineNumber = 0;
+				let lineHeight = 1.3; // em
+				let trans = text.attr("transform");
+				const y = text.attr("y") || 0
+				let tspan = text.text(null)
+					.append("tspan")
+					.attr('y', y)
+				while (word = words.pop()) {
+					console.log(word)
+					line.push(word);
+					tspan.text(line.join(" "));
+					if (tspan.node().getComputedTextLength() > width) {
+						line.pop();
+						tspan.text(line.join(" "));
+						line = [word];
+						tspan = text.append("tspan")
+							.attr('x', '0')
+							.attr('y', y)
+							.attr("dy", ++lineNumber * lineHeight + "em")
+							.text(word);
+					}
+				}
+			});
 		}
 	}
 
 	render() {
 		const {nColWidth} = this.props.data;
-		const nWidth = nColWidth || 8;
+		const nWidth = nColWidth || 10;
 		const offset = Math.floor((12-nWidth)/2)
 		return(
 			<Row>
 		    <Col
 		    	xsOffset={0} xs={12}
-		      smOffset={2} sm={8}
+		      smOffset={0} sm={12}
 		      mdOffset={offset} md={nWidth}
 		      lgOffset={offset} lg={nWidth}
 				>
 					<Spacer height={10}/>
 					<Container>
-						<svg width="100%" height="100%" viewBox="0 0 960 600" id="donut-graph"></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id="donut-graph"></svg>
 						<CenterLabel>$4M</CenterLabel>
 					</Container>
 					<Spacer height={30}/>

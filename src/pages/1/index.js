@@ -34,8 +34,8 @@ const Data = {
     	component: DonutGraphBlock,
     	data: {
     		src: BondData,
-				colorRangeStart: Color('blue1'),
-				colorRangeEnd: Color('blue2'),
+				colorRangeStart: Color('orange1'),
+				colorRangeEnd: Color('pink2'),
     	},
     },
     {

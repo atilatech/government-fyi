@@ -133,7 +133,7 @@ const LinksBlock = (props) => {
 			<Row>
 		    <Col
 		    	xsOffset={1} xs={10}
-		      smOffset={4} sm={4}
+		      smOffset={1} sm={5}
 		      mdOffset={3} md={3}
 		      lgOffset={3} lg={3}
 		    >
@@ -141,7 +141,7 @@ const LinksBlock = (props) => {
 				</Col>
 		    <Col
 		    	xsOffset={1} xs={10}
-		      smOffset={4} sm={4}
+		      smOffset={0} sm={5}
 		      mdOffset={0} md={3}
 		      lgOffset={0} lg={3}
 		    >
