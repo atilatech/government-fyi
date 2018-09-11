@@ -71,8 +71,6 @@ PropPageBuilder.propTypes = {
   data: PropTypes.shape({
 		propNum: PropTypes.number.isRequired,
     meta: PropTypes.shape({
-      socialHeadline: PropTypes.string.isRequired,
-      socialDescription: PropTypes.string.isRequired,
       pageType: PropTypes.string,
       dateCreated: PropTypes.instanceOf(Date),
       dateModified: PropTypes.instanceOf(Date),

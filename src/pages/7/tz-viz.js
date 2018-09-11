@@ -6,12 +6,12 @@ import {feature} from "topojson";
 
 let UsaMap = {};
 
-UsaMap.draw = function(id, data, toolTip) {
+UsaMap.draw = function(id, usMapPath, tzMapPath) {
   // const width = 900;
   // const height = 600;
 
   // json('../mapdata/us-states-topo.json', function(error, topoData) {
-  json('../mapdata/states-topo.json', function(error, topoData) {
+  json(usMapPath, function(error, topoData) {
     const us = feature(topoData, topoData.objects.states);
     select(id).selectAll(".region")
       .data(us.features).enter()
@@ -24,7 +24,7 @@ UsaMap.draw = function(id, data, toolTip) {
         .style("opacity","0.4")
   });
 
-  json('../mapdata/timezones-topo.json', function(error, topoData) {
+  json(tzMapPath, function(error, topoData) {
     const tz = feature(topoData, topoData.objects.timezones);
     select(id).selectAll(".zones")
       .data(tz.features).enter()

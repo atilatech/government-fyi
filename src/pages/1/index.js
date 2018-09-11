@@ -4,6 +4,9 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
+import BondData from './bond-data.json'
+import Color from 'layout/colors'
+
 
 const Data = {
 	pageId:"prop-1",
@@ -28,10 +31,11 @@ const Data = {
     	},
     },
     {
-    	component: SectionTitleBlock,
+    	component: DonutGraphBlock,
     	data: {
-    		title: "Breakdown of funds",
-				nColWidth: 6,
+    		src: BondData,
+				colorRangeStart: Color('blue1'),
+				colorRangeEnd: Color('blue2'),
     	},
     },
     {

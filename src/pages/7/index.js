@@ -1,13 +1,17 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import {Row, Col} from 'react-flexbox-grid'
-import UsaMap from './us-paths'
+import TimezoneViz from './tz-viz'
 import './map-styles.css'
+
+// had to remove extension from files otherwise webpack parses them into an object
+import UsMap from './topojson/states-topo'
+import TzMap from './topojson/timezones-topo'
 
 
 class Prop7Page extends React.Component{
 	componentDidMount() {
-		UsaMap.draw("#chart", null, null);
+		TimezoneViz.draw("#chart", UsMap, TzMap);
 	}
 	render() {
 		return(
