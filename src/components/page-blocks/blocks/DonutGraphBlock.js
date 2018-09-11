@@ -107,7 +107,7 @@ class DonutGraph extends React.Component {
 
 		const text = this.arcs.append('text')
 			.attr('class', 'labels')
-			.attr('alignment-baseline', 'middle')
+			.attr('dy', '0.3em')
 			.attr("transform", function(d) {
 				var pos = outerArc.centroid(d);
 				pos[0] = centerToLabelDist * (midAngle(d) < Math.PI ? 1 : -1);
@@ -144,12 +144,12 @@ class DonutGraph extends React.Component {
 				let lineNumber = 0;
 				let lineHeight = 1.3; // em
 				let trans = text.attr("transform");
+				const dy = parseFloat(text.attr("dy"));
 				const y = text.attr("y") || 0
 				let tspan = text.text(null)
 					.append("tspan")
 					.attr('y', y)
 				while (word = words.pop()) {
-					console.log(word)
 					line.push(word);
 					tspan.text(line.join(" "));
 					if (tspan.node().getComputedTextLength() > width) {
@@ -159,7 +159,7 @@ class DonutGraph extends React.Component {
 						tspan = text.append("tspan")
 							.attr('x', '0')
 							.attr('y', y)
-							.attr("dy", ++lineNumber * lineHeight + "em")
+							.attr("dy", ++lineNumber * lineHeight + dy +"em")
 							.text(word);
 					}
 				}
