@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components'
 import CitationCard from './citation-card'
 /*
-When a PopupContainer is clicked, a popover appears over 
-the highlighted text. It will show the direct quote 
-from which By The Bay's text is derived from. 
+When a PopupContainer is clicked, a popover appears over
+the highlighted text. It will show the direct quote
+from which By The Bay's text is derived from.
 The article is then directly linked.
 
 PROPS:
@@ -33,7 +33,7 @@ const PopupPosition = styled.span`
 	position: absolute;
 	left: 20px;
 	z-index: 3;
-	transform: translateY(-${popupDimensions.height}px);
+	transform: translateY(-${popupDimensions.height-100}px);
 	@media screen and (max-width: 767px) {
 		position: static;
 		width: 100%;
@@ -76,7 +76,7 @@ class PopupContainer extends React.Component {
 			doneScrolling: false,
 		}
 	}
-  
+
   componentDidMount() {
     window.addEventListener("keydown", this.handleKeyDown);
     window.addEventListener("resize", this.handleResize);
@@ -85,13 +85,13 @@ class PopupContainer extends React.Component {
   	//-- scroll to center the highlighted text
    	if( this.state.isXsScreen ) {
 	  	window.scroll({
-			  top: this.props.clickPos-(window.innerHeight || document.documentElement.clientHeight)/4, 
-			  behavior: 'smooth' 
+			  top: this.props.clickPos-(window.innerHeight || document.documentElement.clientHeight)/4,
+			  behavior: 'smooth'
 			});
   	} else {
   		window.scroll({
-			  top: this.props.clickPos-(window.innerHeight || document.documentElement.clientHeight)/2, 
-			  behavior: 'smooth' 
+			  top: this.props.clickPos-(window.innerHeight || document.documentElement.clientHeight)/2,
+			  behavior: 'smooth'
 			});
   	}
    	//-- delay start of recording bc otherwise our scroll-into-focus will autocancel it
@@ -110,7 +110,7 @@ class PopupContainer extends React.Component {
   }
 
   removeScrollListener = () => {
-    window.removeEventListener('scroll', this.handleScroll);  	
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleKeyDown = (event) => {
@@ -130,13 +130,13 @@ class PopupContainer extends React.Component {
   	this.props.toggleVisibility(false);
   }
   handleScroll = () => {
-  	let currentY = (window.pageYOffset || document.documentElement.scrollTop)	
+  	let currentY = (window.pageYOffset || document.documentElement.scrollTop)
 		//-- dismiss after user scrolls 20% of the screen height in either direction
 		let height = (window.innerHeight || document.documentElement.clientHeight)
 		if(this.state.doneScrolling && Math.abs(currentY - this.state.initialScrollY) > height/6) {this.props.toggleVisibility(false)}
   }
 
-  
+
 	render() {
 		return(
 			<PopupPosition>
