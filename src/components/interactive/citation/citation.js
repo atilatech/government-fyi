@@ -44,7 +44,7 @@ here's a blank to copy:
 
 const styles = {
 	selectText: {
-		backgroundColor: Color('pink1'),
+		backgroundColor: Color('yellow1'),
 		transition: 'background-color 150ms ease-in',
 		borderRadius: 5,
 	},
@@ -52,7 +52,7 @@ const styles = {
 		backgroundColor: 'transparent',
 	},
 	hoverText: {
-		backgroundColor: Color('pink1',0,20,0.7),
+		backgroundColor: Color('yellow1',0,20,0.7),
 	},
 }
 class Citation extends React.Component {

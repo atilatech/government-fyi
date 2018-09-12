@@ -8,19 +8,19 @@ const Card = styled.span`
 	display: block;
 	padding: 10px;
 	background-color: white;
-	color: black;
-	border: 4px solid black;
-	border-radius: 4px;
+	color: ${Color('black')};
+	border: 2px solid ${Color('black')};
+	border-radius: 2px;
 	width: 100%;
 `;
 
 const CardLabel = styled.span`
 	display: block;
-	font-family: ${props=>props.theme.fonts.h5};
+	font-family: ${props=>props.theme.fonts.helvetica};
 	font-weight: bold;
 	text-align: center;
 	font-size: 16px;
-	color: black;
+	color: ${Color('black')};
 `;
 
 const SourcePublication = styled.span`
@@ -38,7 +38,7 @@ const SourcePublication = styled.span`
 
 const SourceHeadline = styled.span`
 	display: block;
-	font-family: ${props=>props.theme.fonts.h5};
+	font-family: ${props=>props.theme.fonts.helvetica};
 	text-transform: none;
 	font-weight: bold;
 	font-size: 14px;
@@ -78,11 +78,11 @@ const Button = styled.div`
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	font-family: ${props=>props.theme.fonts.h5};
+	font-family: ${props=>props.theme.fonts.helvetica};
 	font-weight: bold;
-	border: 4px solid black;
+	border: 2px solid ${Color('black')};
 	font-size: 12px;
-	color: black;
+	color: ${Color('black')};
 	text-align: center;
 	padding: 6px 9px 6px 5px;
 	border-radius: 4px;
@@ -91,7 +91,7 @@ const Button = styled.div`
 
 	@media not all and (hover: none) {
 		&:hover {
-			background-color: ${Color('blue1')};
+			background-color: ${Color('yellow1')};
 			text-decoration: underline;
 			outline: none;
 		}

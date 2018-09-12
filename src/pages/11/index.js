@@ -20,7 +20,7 @@ const Data = {
     	data: {
     		text: <span>Prop 11 would require (or allow, depending on your stance) <Acronym data={Acronyms.EMTs}/> to remain on-call during their breaks, as is the current practice in that industry. A recent ruling by the California Supreme Court, regarding security workers, mandated that breaks must be off-duty and uninterruptible. Although it hasn't been explicitly applied to emergency personnel, it is likely to be. Some lawsuits have already been filed.
 					<br/><br/>
-					We get to vote whether private-sector <Acronym data={Acronyms.EMTs}/> should be required to be on-duty and interruptible during their mandatory meal and rest breaks (and be paid their normal rate while doing so).
+					We get to vote whether private-sector <Acronym data={Acronyms.EMTs}/> should be required to be on-duty and interruptible during their mandatory meal and rest breaks (<Citation data={Citations['4']}>and be paid their normal rate while doing so</Citation>).
 					<br/><br/>
 					Prop 11 would also require ambulance companies to provide mental health services to employees. It would also absolve any liability ambulance companies might have incurred since the court ruling.
 				</span>
@@ -32,7 +32,7 @@ const Data = {
 				title:"On the ambulance company's side",
 				text:
 				<span>
-					Except for providing mental health services and training, it is in ambulance companies' best business interests to make sure Prop 11 passes.
+					Except for the much smaller cost of providing mental health services and training, it is in ambulance companies' best business interests to make sure Prop 11 passes.
 					<br/><br/>
 					Cities contract with private ambulances to be able to respond within a certain time in an area. When a 911 call comes in, the nearest ambulance rushes over, becoming occupied. To meet their contractually-obligated response time, the remaining ambulances must redistribute themselves to cover the area.
 					<br/><br/>
@@ -46,7 +46,7 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				title:"On the EMT's side",
-				text: <span>Even though it is the industry norm to always be on-duty, the </span>
+				text: <span>It's a little harder to understand what EMTs want. Even though it is the industry norm to always be on-duty, lawsuits have already been filed  </span>
 			}
 		},
 		{

@@ -11,5 +11,9 @@ export const Acronyms = {
 
 export const Citations = {
   '1': {
+		link:'',
+		publication: "",
+		headline: "",
+		directQuote:""
   }
 }

@@ -9,7 +9,7 @@ const Icon = styled.span`
 	line-height: 0;
 	height: 14px;
 	margin-left: 3px;
-	background-color: ${props=>props.isActive?Color('pink1'):"#eee"};
+	background-color: ${props=>props.isActive?Color('yellow1'):"#eee"};
 	border-radius: 1px;
 	pointer-events: auto;
 	cursor: pointer;
@@ -17,7 +17,7 @@ const Icon = styled.span`
 	@media not all and (hover: none) {
 		&:hover {
 			border-color: transparent;
-			background-color: ${Color('pink1')};
+			background-color: ${Color('yellow1')};
 		}
 	}
 `;
