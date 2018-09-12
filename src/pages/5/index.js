@@ -12,15 +12,15 @@ const Data = {
 	},
 	blocks: [
     {
-    	
+
     	component: TextWithTitleBlock,
     	data: {
     		// title: "",
-    		text: "",
+    		text: "Prop 5 ",
     	},
     },
 		{
-			
+
 			component: LinksBlock,
 			data: {
 				subsections:[

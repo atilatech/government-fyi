@@ -140,61 +140,61 @@ const images = [
 
 const titles = [
   "Prop 1 buys us $4B for housing programs",
-  "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
+  "Prop 2 changes how to use the Millionaire's tax",
   "Prop 3 buys us ~$9B for water-y projects",
   "Prop 4 buys us $1.5B for children's hospitals",
-  "Prop 5 allows seniors to transfer their property tax assessment when they move",
-  "Prop 6 repeals the recent gas tax",
+  "Prop 5 lets older folk move with their property tax assessments",
+  "Prop 6 repeals last year's gas tax",
   "Prop 7 makes Daylight Savings Time year-round in California",
-  "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
-  "Prop 9 would've split CA into three states",
-  "Prop 10 legalizes rent control again",
-  "Prop 11 requires EMTs to be on-call during breaks",
-  "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes"
-]
-
-const shortTitles = [
-  "Prop 1 buys us $4B for housing programs",
-  "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
-  "Prop 3 buys us ~$9B for water-y projects",
-  "Prop 4 buys us $1.5B for children's hospitals",
-  "Prop 5 allows seniors to transfer their property tax assessment when they move",
-  "Prop 6 repeals the recent gas tax",
-  "Prop 7 makes Daylight Savings Time year-round in California",
-  "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
-  "Prop 9 would've split CA",
+  "Prop 8 limits dialysis clinics' profits",
+  "Prop 9 would have split CA into three states",
   "Prop 10 legalizes rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
   "Prop 12 sets minimum space requirements for farm animals"
 ]
 
+const shortTitles = [
+  "1 issues $4B for housing",
+  "2 diverts revenue from Millionaire's tax",
+  "3 issues $9B for water projects",
+  "4 issues $1.5B for children's hospitals",
+  "5 lets older folk move with their property tax assesments",
+  "6 repeals last year's gas tax",
+  "7 makes Daylight Savings permanent",
+  "8 caps dialysis clinics' profits",
+  "9 would've split CA, literally",
+  "10 legalizes rent control again",
+  "11 requires EMTs be on-call during breaks",
+  "12 sets sizes for meat animals"
+]
+
 const headlines = [
-  "Prop 1 buys us $4B for housing programs",
-  "Prop 2 allows revenue from the Millionaire's tax to be spent on housing for the mentally ill",
-  "Prop 3 buys us ~$9B for water-y projects",
-  "Prop 4 buys us $1.5B for children's hospitals",
-  "Prop 5 allows seniors to transfer their property tax assessment when they move",
-  "Prop 6 repeals the recent gas tax",
-  "Prop 7 makes Daylight Savings Time year-round in California",
-  "Prop 8 requires dialysis clinics to issue refunds if they make too much profit",
-  "Prop 9 would have split California",
+  "Prop 1 issues $4B for housing",
+  "Prop 2 diverts revenue from Millionaire's tax",
+  "Prop 3 issues $9B for water projects",
+  "Prop 4 issues $1.5B for children's hospitals",
+  "Prop 5 lets older folk move with their property tax assesments",
+  "Prop 6 repeals last year's gas tax",
+  "Prop 7 makes Daylight Savings permanent",
+  "Prop 8 caps dialysis clinics' profits",
+  "Prop 9 would've split CA, literally",
   "Prop 10 legalizes rent control again",
-  "Prop 11 requires EMTs to be on-call during breaks",
-  "Prop 12 bans the sales of meat from animals raised in spaces below certain sizes"
+  "Prop 11 requires EMTs be on-call during breaks",
+  "Prop 12 sets sizes for meat animals"
 ]
 
 const descriptions = [
-  "[Prop 1 description]",
-  "The revenue is supposed to go to helping the mentally ill, but lawsuits have stopped it from using it on housing",
+  "One of many housing measures on the ballot",
+  "The revenue is intended to help the mentally ill, but lawsuits say not housing",
   "It comes down to fish, really",
   "Renovations and new construction",
-  "Some argue this would free up houses; others say it further limits California's revenue from property taxes",
-  "And! it requires that future gas tax increases be approved by voters",
-  "If passed, we'd need Congressional approval to make it so",
-  "A complicated way of trying to raise wages for clinic workers",
-  "But it got removed from the ballot by the CA Supreme Court",
-  "Would repeal Costa-Hawkins, allowing cities to regulate what landlords can charge renters",
-  "An attempt to exempt EMTs from a recent California ruling",
+  "The idea is to free up houses. Will it work?",
+  "And! future gas tax increases must be approved by voters",
+  "Even if passes, Congress needs to approve it",
+  "But the story is multi-layered",
+  "A wild proposition from a VC. It has been removed from the ballot.",
+  "Does it hurt or help to have cities regulate what landlords can charge?",
+  "An attempt to exempt paramedics from a recent ruling",
   "Guess what 1 square foot looks like relative to a chicken"
 ]
 

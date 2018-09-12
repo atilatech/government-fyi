@@ -34,16 +34,16 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		// title: "",
-    		text: "Prop 12 would set minimum space requirements for farm-raised animals intended for food. It would ban the sales of meat and eggs from animals in square footages less than these requirements, even if they're raised outside California. In addition, Prop 12 would require that all egg-laying hens be cage-free by 2022. Opponents of Prop 12 say this will increase prices for consumers."
+    		text: "Prop 12 would set minimum space requirements for farm-raised animals intended for food. It would ban the sales of meat and eggs from animals in floor spaces less than these requirements, even if they're raised outside California. In addition, Prop 12 would require that all egg-laying hens be (literally) cage-free by 2022. Opponents of Prop 12 say this will increase prices for consumers, and oddly, PETA is against this."
 	    }
 		},
     {
     	component: TextWithTitleBlock,
     	data: {
     		title: "But first, some history",
-    		text: <span>A decade ago, we passed Prop 2, written by the same authors of Prop 12, the Human Society of US (HSUS). Prop 2 said that animals raised for meat must have enough space to "allow these animals to lie down, stand up, fully extend their limbs and turn around freely."
+    		text: <span>A decade ago, we passed Prop 2, written by the Humane Society of US (HSUS), the same authors of Prop 12. Prop 2 said that animals raised for meat must have enough space to "to lie down, stand up, fully extend their limbs and turn around freely."
 					<br/><br/>
-					After it passed, cage-free eggs (which <Acronym data={Acronyms.btw}/> doesn't necessarily mean sans cage) became more readily available, and major food sellers like McDonalds, Safeway, Taco Bell, Starbucks, and Walmart committed to only buying cage-free eggs, starting a trend.
+					After it passed, cage-free eggs (which <Acronym data={Acronyms.btw}/> doesn't necessarily mean sans cage) became more readily available, and major food sellers like McDonalds, Safeway, Taco Bell, Starbucks, and Walmart committed to only buying cage-free eggs.
 				</span>
 			}
     },
@@ -51,11 +51,11 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "If that passed, then why Prop 12?",
-    		text: <span>Because of the vague requirements and because it was left to local law enforcement, Prop 2 has been difficult to enforce. As a result, the <Acronym data={Acronyms.HSUS}/> gathered enough signatures to put Prop 12 on this year's ballot, setting specific sizes and changing the enforcing department to the CA Dept of Public Health.
+    		text: <span>On top of the vague wording, Prop 2 did not specify a department to enforce it, meaning it was up to local authorities. Compliance was low.[citation needed] As a result, the <Acronym data={Acronyms.HSUS}/> wrote Prop 12 and gathered enough signatures to get it on this year's ballot, setting specific sizes and donning the California Department of Food and Agriculture responsible for its enforcement. This additional oversight is estimated to cost the state $10M annually.
 					<br/><br/>
 					Specifically, Prop 12 bans the sales of
 					<ul>
-						<li>Eggs from hens raised in areas smaller than 144 square inches (currently 116in2)</li>
+						<li>Eggs from hens raised in areas smaller than 144 square inches (currently 116 in<sup>2</sup>)</li>
 						<li>Veal from cows raised in areas smaller than 43 square feet</li>
 						<li>Pork from pigs raised in areas smaller than 24 square feet</li>
 					</ul>
@@ -102,7 +102,7 @@ const Data = {
 						alt: "A pig in 24 sq. ft. Art by David Goligorsky",
 					},
 				],
-				caption: <span>We wanted to know what Prop 12's specific areas looked like relative to animals. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old veal calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>. <br/>(Art by David Goligorsky)<sup>3</sup>.</span>
+				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we commissioned an artist to visualize it. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>. <br/>(Art by David Goligorsky)<sup>3</sup></span>
 			}
     },
 		{
