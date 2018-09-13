@@ -4,6 +4,7 @@ import Color from 'layout/colors'
 import {LinkOutIcon} from 'components/static/icons'
 
 const Card = styled.span`
+	font-family: ${props=>props.theme.fonts.helvetica};
 	box-sizing: border-box;
 	display: block;
 	padding: 10px;
@@ -16,7 +17,6 @@ const Card = styled.span`
 
 const CardLabel = styled.span`
 	display: block;
-	font-family: ${props=>props.theme.fonts.helvetica};
 	font-weight: bold;
 	text-align: center;
 	font-size: 16px;
@@ -24,10 +24,8 @@ const CardLabel = styled.span`
 `;
 
 const SourcePublication = styled.span`
-	font-family: ${props=>props.theme.fonts.h3};
-	display: block;
+	display: inline-block;
   font-size: 14px;
-  text-transform: uppercase;
   font-weight: normal;
 	margin-top: 10px;
 	line-height: 14px;
@@ -37,8 +35,7 @@ const SourcePublication = styled.span`
 `;
 
 const SourceHeadline = styled.span`
-	display: block;
-	font-family: ${props=>props.theme.fonts.helvetica};
+	display: inline-block;
 	text-transform: none;
 	font-weight: bold;
 	font-size: 14px;
@@ -78,7 +75,6 @@ const Button = styled.div`
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	font-family: ${props=>props.theme.fonts.helvetica};
 	font-weight: bold;
 	border: 2px solid ${Color('black')};
 	font-size: 12px;

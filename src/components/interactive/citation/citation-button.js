@@ -5,12 +5,13 @@ import Color from 'layout/colors'
 const Icon = styled.span`
 	display: inline-block;
 	position: relative;
-	top: -5px;
+	top: -4.5px;
 	line-height: 0;
 	height: 14px;
-	margin-left: 3px;
+	width: 14px;
+	margin-left: 4px;
 	background-color: ${props=>props.isActive?Color('yellow1'):"#eee"};
-	border-radius: 1px;
+	border-radius: 7px;
 	pointer-events: auto;
 	cursor: pointer;
 
@@ -24,9 +25,9 @@ const Icon = styled.span`
 
 const DotContainer = styled.span`
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
-	width: 14px;
+	justify-content: space-evenly;
+	width: 100%;
 	height: 100%;
 `;
 
@@ -34,7 +35,7 @@ const Dot = styled.span`
 	display: block;
 	width: 2px;
 	height: 2px;
-	background-color: black;
+	background-color: #323232;
 	border-radius: 1px;
 `;
 

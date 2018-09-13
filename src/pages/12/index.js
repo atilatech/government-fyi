@@ -114,6 +114,12 @@ const Data = {
 			}
 		},
 		{
+			component: SectionTitleBlock,
+			data: {
+				title: "More reading",
+			},
+		},
+		{
 			component: LinksBlock,
 			data: {
 				subsections:[
@@ -141,6 +147,23 @@ const Data = {
 								text: "Humane Farming Association",
 								url: "https://www.hfa.org/",
 							},
+						]
+					},
+					{
+						subsectionTitle: "Impartial analyses",
+						links: [
+							{
+								text: "Legislative Analyst's Office analysis",
+								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=12&year=2018",
+							},
+							{
+								text: "Official voter guide digest",
+								url: "http://voterguide.sos.ca.gov/propositions/12/"
+							},
+							{
+								text: "Ballotpedia",
+								url:""
+							}
 						]
 					}
 				]

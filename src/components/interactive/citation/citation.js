@@ -46,13 +46,12 @@ const styles = {
 	selectText: {
 		backgroundColor: Color('yellow1'),
 		transition: 'background-color 150ms ease-in',
-		borderRadius: 5,
 	},
 	deselectText: {
 		backgroundColor: 'transparent',
 	},
 	hoverText: {
-		backgroundColor: Color('yellow1',0,20,0.7),
+		backgroundColor: Color('yellow1',0,10,0.8),
 	},
 }
 class Citation extends React.Component {
