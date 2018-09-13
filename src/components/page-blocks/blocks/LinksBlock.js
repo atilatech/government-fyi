@@ -91,6 +91,13 @@ const HideOnPrint = styled.div`
 	}
 `;
 
+const Disclaimer = styled.h4`
+	font-size: 12px;
+	line-height: 17px;
+	padding: 10px 20px;
+	background-color: whitesmoke;
+`
+
 
 const LinksChunk = (props) => {
 	const links = props.data.links.map( (link, j) => {
@@ -146,6 +153,16 @@ const LinksBlock = (props) => {
 		      lgOffset={0} lg={3}
 		    >
 		    	{oddSections}
+				</Col>
+			</Row>
+			<Row>
+				<Col
+					xsOffset={1} xs={10}
+					smOffset={1} sm={10}
+					mdOffset={4} md={4}
+					lgOffset={4} lg={4}
+				>
+					<Disclaimer><b>Note</b>: We intentionally omit links to the arguments & rebuttals found in the official voter guide. We believe they exaggerate claims, mislead through emotions, and use ALL CAPS irresponsibly.</Disclaimer>
 				</Col>
 			</Row>
 		</HideOnPrint>

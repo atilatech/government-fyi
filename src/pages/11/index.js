@@ -22,7 +22,7 @@ const Data = {
 				title:"The quickie",
     		text: <span>Prop 11 would require (or allow, depending on your stance) <Acronym data={Acronyms.EMTs}/> to remain on-call during their breaks, as is the current practice in that industry. <Citation data={Citations['1']}>A recent ruling by the California Supreme Court (<em>Augustus v. ABM Security</em>), regarding security workers, mandated that breaks must be off-duty and uninterruptible</Citation>. Although it hasn't been explicitly applied to emergency personnel, it likely will.
 					<br/><br/>
-					Prop 11 asks us whether private-sector <Acronym data={Acronyms.EMTs}/> should be required to be on-duty and interruptible during their mandatory meal and rest breaks (<Citation data={Citations['4']}>and be paid their normal rate while doing so</Citation>).
+					Prop 11 asks us whether private-sector <Acronym data={Acronyms.EMTs}/> should be required to be on-duty and interruptible, like listening and responding to their dispatch radio, during their mandatory meal and rest breaks (<Citation data={Citations['4']}>and be paid their normal rate while doing so</Citation>).
 					<br/><br/>
 					Prop 11 would also require ambulance companies to provide mental health services to employees. It would also absolve any liability ambulance companies might have incurred since the court ruling. <span role='img' aria-label="thinking">🤔</span>
 				</span>
