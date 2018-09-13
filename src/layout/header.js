@@ -4,16 +4,18 @@ import {Link, NavLink } from 'react-router-dom'
 import Color from 'layout/colors'
 import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 import {Spacer} from 'layout/util'
+import shadowPattern from 'components/static/shadowPattern.png'
 
 const Container = styled.div`
   position: fixed;
-  top: -100px;
+  top: -115px;
   left: 0;
   width: 100%;
-  height: 145px;
+  height: 160px;
   display: flex;
   align-items: flex-end;
-  background-color: ${Color('yellow2')};
+  background: url('${shadowPattern}') repeat;
+  background-size: 5px 5px;
   z-index: 3;
 `
 const LogoLink = styled(Link)`

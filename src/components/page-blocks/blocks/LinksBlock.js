@@ -96,6 +96,7 @@ const Disclaimer = styled.h4`
 	line-height: 17px;
 	padding: 10px 20px;
 	background-color: whitesmoke;
+	border-radius: 2px;
 `
 
 
