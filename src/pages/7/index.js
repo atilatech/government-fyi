@@ -94,7 +94,7 @@ const Data = {
 							},
 							{
 								text: "Ballotpedia",
-								url:""
+								url:"https://ballotpedia.org/California_Proposition_7,_Permanent_Daylight_Saving_Time_Measure_(2018)"
 							}
 						]
 					}

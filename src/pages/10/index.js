@@ -1,6 +1,7 @@
 import React from 'react'
 import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
+import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 
 const Data = {
@@ -12,7 +13,7 @@ const Data = {
 	},
 	blocks: [
     {
-    	
+
     	component: TextWithTitleBlock,
     	data: {
     		// title: "",
@@ -20,7 +21,12 @@ const Data = {
     	},
     },
 		{
-			
+			component: SectionTitleBlock,
+			data:{
+				title: "More reading"
+			}
+		},
+		{
 			component: LinksBlock,
 			data: {
 				subsections:[
@@ -40,6 +46,23 @@ const Data = {
 								text: "",
 								url: "",
 							},
+						]
+					},
+					{
+						subsectionTitle: "Impartial analyses",
+						links: [
+							{
+								text: "Legislative Analyst's Office analysis",
+								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=10&year=2018",
+							},
+							{
+								text: "Official voter guide digest",
+								url: "http://voterguide.sos.ca.gov/propositions/10/"
+							},
+							{
+								text: "Ballotpedia",
+								url:"https://ballotpedia.org/California_Proposition_10,_Local_Rent_Control_Initiative_(2018)"
+							}
 						]
 					}
 				]

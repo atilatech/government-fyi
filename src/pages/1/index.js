@@ -7,6 +7,9 @@ import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 import BondData from './bond-data.json'
 import Color from 'layout/colors'
 
+// import Citation from 'components/interactive/citation/citation'
+// import Acronym from 'components/interactive/acronym'
+// import {Acronyms, Citations} from './expandables'
 
 const Data = {
 	pageId:"prop-1",
@@ -47,9 +50,9 @@ const Data = {
     },
 		{
 			component: SectionTitleBlock,
-			data: {
-				title: "More reading",
-			},
+			data:{
+				title: "More reading"
+			}
 		},
 		{
 			component: LinksBlock,
@@ -59,12 +62,8 @@ const Data = {
 						subsectionTitle: "Arguments in favor",
 						links: [
 							{
-								text: "Prop 1 is a waste to society",
-								url: "https://www.a.com/"
-							},
-							{
-								text: "Prop 1 is a waste to society",
-								url: "https://www.a.com/"
+								text: "",
+								url: ""
 							},
 						]
 					},
@@ -72,13 +71,26 @@ const Data = {
 						subsectionTitle: "Arguments against",
 						links: [
 							{
-								text: "Prop 1 would favor the rich in the best case",
-								url: "/",
+								text: "",
+								url: "",
+							},
+						]
+					},
+					{
+						subsectionTitle: "Impartial analyses",
+						links: [
+							{
+								text: "Legislative Analyst's Office analysis",
+								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=1&year=2018",
 							},
 							{
-								text: "Prop 1 is no bueno yo",
-								url: "/",
+								text: "Official voter guide digest",
+								url: "http://voterguide.sos.ca.gov/propositions/1/"
 							},
+							{
+								text: "Ballotpedia",
+								url:"https://ballotpedia.org/California_Proposition_1,_Housing_Programs_and_Veterans%27_Loans_Bond_(2018)"
+							}
 						]
 					}
 				]

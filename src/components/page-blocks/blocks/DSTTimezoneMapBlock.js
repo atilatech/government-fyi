@@ -17,7 +17,6 @@ class DSTMap extends React.Component{
   }
 	componentDidMount() {
     const {stateMap, timezoneMap} = this.props.data;
-    console.log(timezoneMap)
     this.draw("#tz-map", stateMap, timezoneMap);
 	}
 

@@ -2,6 +2,11 @@ import React from 'react'
 import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
+import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
+
+// import Citation from 'components/interactive/citation/citation'
+// import Acronym from 'components/interactive/acronym'
+// import {Acronyms, Citations} from './expandables'
 
 const Data = {
 	pageId:"prop-4",
@@ -12,7 +17,7 @@ const Data = {
 	},
 	blocks: [
     {
-    	
+
     	component: TextWithTitleBlock,
     	data: {
     		// title: "",
@@ -20,7 +25,12 @@ const Data = {
     	},
     },
 		{
-			
+			component: SectionTitleBlock,
+			data:{
+				title: "More reading"
+			}
+		},
+		{
 			component: LinksBlock,
 			data: {
 				subsections:[
@@ -40,6 +50,23 @@ const Data = {
 								text: "",
 								url: "",
 							},
+						]
+					},
+					{
+						subsectionTitle: "Impartial analyses",
+						links: [
+							{
+								text: "Legislative Analyst's Office analysis",
+								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=4&year=2018",
+							},
+							{
+								text: "Official voter guide digest",
+								url: "http://voterguide.sos.ca.gov/propositions/4/"
+							},
+							{
+								text: "Ballotpedia",
+								url:"https://ballotpedia.org/California_Proposition_4,_Children%27s_Hospital_Bonds_Initiative_(2018)"
+							}
 						]
 					}
 				]
