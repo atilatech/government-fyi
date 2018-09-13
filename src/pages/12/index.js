@@ -158,7 +158,7 @@ const Data = {
 							},
 							{
 								text: "Official voter guide digest",
-								url: "http://voterguide.sos.ca.gov/propositions/12/"
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop12-title-summ-analysis.pdf"
 							},
 							{
 								text: "Ballotpedia",

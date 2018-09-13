@@ -26,7 +26,7 @@ const Data = {
     	data: {
     		title: "Some caveats",
     		text: <span>
-					If Prop 7 passes, it gives the California state legislature the power to change Daylight Savings Time, with two-thirds vote, as long as it's in accordance with federal law. Currently, federal law only allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – spring forward, fall back), or not at all (as <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/> do). If we wanted to move to <Acronym data={Acronyms.DST}/> year-round, which is what's being argued about, we'd need Congress to amend the Time Act of 1951.
+					If Prop 7 passes, it gives the California state legislature the power to change Daylight Savings Time, with two-thirds vote, as long as it's in accordance with federal law. <Citation data={Citations['1']}>Currently, federal law only allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – spring forward, fall back), or not at all (as <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/> do) </Citation>. If we wanted to move to <Acronym data={Acronyms.DST}/> year-round, which is what's being argued about, we'd need Congress to amend the Time Act of 1951.
 					<br/><br/>
 					<em>Again, passing Prop 7 does not immediately change anything regarding <Acronym data={Acronyms.DST}/></em>. It merely points us down the path of year-round DST.
 				</span>

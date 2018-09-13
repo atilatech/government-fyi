@@ -163,7 +163,9 @@ class DonutGraph extends React.Component {
 				let tspan = text.text(null)
 					.append("tspan")
 					.attr('y', y)
-				while (word = words.pop()) {
+				while (true) {
+					word = words.pop()
+					if(!word) {break;}
 					line.push(word);
 					tspan.text(line.join(" "));
 					if (tspan.node().getComputedTextLength() > width) {

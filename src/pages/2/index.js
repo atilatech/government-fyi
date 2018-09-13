@@ -61,7 +61,7 @@ const Data = {
 							},
 							{
 								text: "Official voter guide digest",
-								url: "http://voterguide.sos.ca.gov/propositions/2/"
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop2-title-summ-analysis.pdf"
 							},
 							{
 								text: "Ballotpedia",

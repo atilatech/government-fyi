@@ -56,14 +56,6 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
-								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=9&year=2018",
-							},
-							{
-								text: "Official voter guide digest",
-								url: "http://voterguide.sos.ca.gov/propositions/9/"
-							},
-							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_9,_Three_States_Initiative_(2018)"
 							}

@@ -110,7 +110,7 @@ const Data = {
 							},
 							{
 								text: "Official voter guide digest",
-								url: "http://voterguide.sos.ca.gov/propositions/11/"
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop10-title-summ-analysis.pdf"
 							},
 							{
 								text: "Ballotpedia",
