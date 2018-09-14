@@ -13,7 +13,7 @@ class DSTMap extends React.Component{
   constructor(props) {
     super(props);
     this.width = 900;
-    this.height = 600;
+    this.height = 520;
   }
 	componentDidMount() {
     const {stateMap, timezoneMap} = this.props.data;
@@ -57,7 +57,7 @@ class DSTMap extends React.Component{
 					mdOffset={2} md={8}
 					lgOffset={2} lg={8}
     >
-					<div id="tooltip"/>
+					{/* <div id="tooltip"/> */}
 					<svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id="tz-map"></svg>
 				</Col>
 			</Row>
