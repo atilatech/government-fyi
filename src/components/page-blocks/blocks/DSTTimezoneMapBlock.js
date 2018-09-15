@@ -29,10 +29,9 @@ class DSTMap extends React.Component{
         .append("path")
           .attr("d", geoPath())
           .attr("class","region")
-          .style("fill", "#000")
-          .style("stroke", "#fff")
+          .style("fill", "none")
+          .style("stroke", "#999")
           .style("stroke-width", "0.5px")
-          .style("opacity","0.4")
     });
 
     json(tzMapPath, function(error, topoData) {
