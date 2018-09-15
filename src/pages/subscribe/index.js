@@ -8,6 +8,10 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import btbImg from './images/btb.png'
 import btbImg_w from './images/btb.webp'
+import ZuckImg from './images/zuck.png'
+import ZuckImg_w from './images/zuck.webp'
+import ZuckImg_2x from './images/zuck@2x.png'
+import ZuckImg_2x_w from './images/zuck@2x.webp'
 import MockImg from 'pages/home/images/prop-7.png'
 import MockImg_w from 'pages/home/images/prop-7.webp'
 import MultisourceImage from 'components/static/multisource-image'
@@ -67,11 +71,14 @@ const Data = {
         blocks: [
     			{
             img: {
-              _1x: MockImg,
-              _1x_webp: MockImg_w,
+              _1x: ZuckImg,
+              _1x_webp: ZuckImg_w,
+              _2x: ZuckImg_2x,
+              _2x:ZuckImg_2x_w
             },
             alt: "Facebook",
     				title: "Mark's Big F",
+            url:"https://www.faceboook.com/bythebaydotcool"
     			},
     			{
             img: {
@@ -80,6 +87,7 @@ const Data = {
             },
             alt: "Twitter",
     				title: "US Press Secretary",
+            url:"https://www.twitter.com/bythebaydotcool"
     			},
     			{
             img: {
@@ -88,6 +96,7 @@ const Data = {
             },
             alt: "Instagram",
     				title: "Instagram",
+            url:"https://www.instagram.com/bythebaydotcool"
     			},
     		],
       }
@@ -101,7 +110,7 @@ const Data = {
         <div>
           <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer"><Image imageHandles={{_1x:btbImg, _1x_webp: btbImg_w}} alt="By The Bay"/></a>
           <CenteredText>
-            <Attrib>Art by Stephanie Davidson</Attrib>
+            <Attrib>Art by Stephanie Davidson @asiwillit</Attrib>
             Read more about your ballot on our Bay-specific site: <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer">By The Bay</a>.
           </CenteredText>
         </div>

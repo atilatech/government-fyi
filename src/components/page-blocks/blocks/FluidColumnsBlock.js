@@ -9,7 +9,7 @@ import {Spacer} from 'layout/util'
 multiple columns of text with a title on each column, fluid
 
 {
-	
+
 	component: FluidColumnsBlock,
 	data: {
 		blocks: [
@@ -56,15 +56,26 @@ const Image = styled(MultisourceImage)`
 	display: block;
 	width: 130px;
 	margin: 10px auto;
+	user-select:none;
+	-webkit-user-select:none;
+	transition: all 180ms ease-out;
 	filter: drop-shadow(6px 6px 0 rgba(0,0,0,0.15)) drop-shadow(-10px 8px 2px rgba(0,0,0,0.05));
+	@media not all and (hover: none) {
+		&:hover {
+			transform: translate(0,-5px);
+			filter: drop-shadow(14px 15px 0px rgba(0,0,0,0.1)) drop-shadow(-23px 19px 3px rgba(0,0,0,0.03));
+		}
+	}
 `
 
-const TextBlocksColumns = (props) => {
+const FluidColumnsBlock = (props) => {
 	const summaries = props.data.blocks.map( (item, i) => {
 		return(
 			<SummaryContainer key={i}>
-				{item.img &&
-					<Image imageHandles={item.img} alt={item.alt}/>
+				{(item.img && item.url) &&
+					<a href={item.url} rel="noopener noreferrer" target="_blank">
+						<Image imageHandles={item.img} alt={item.alt}/>
+					</a>
 				}
 				<SummaryTitle>{item.title}</SummaryTitle>
 				{item.body}
@@ -89,15 +100,18 @@ const TextBlocksColumns = (props) => {
 	)
 }
 
-TextBlocksColumns.propTypes = {
+FluidColumnsBlock.propTypes = {
 	data: PropTypes.shape({
 		blocks: PropTypes.arrayOf(
 			PropTypes.shape({
 				title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 				body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+				img: PropTypes.string,
+				alt: PropTypes.string,
+				url: PropTypes.string,
 			})
 		).isRequired
 	}).isRequired
 }
 
-export default TextBlocksColumns
+export default FluidColumnsBlock
