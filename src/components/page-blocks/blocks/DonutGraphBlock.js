@@ -184,7 +184,7 @@ class DonutGraph extends React.Component {
 	}
 
 	render() {
-		const {nColWidth} = this.props.data;
+		const {nColWidth, centerLabel} = this.props.data;
 		const nWidth = nColWidth || 10;
 		const offset = Math.floor((12-nWidth)/2)
 		return(
@@ -198,7 +198,7 @@ class DonutGraph extends React.Component {
 					<Spacer height={10}/>
 					<Container>
 						<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id="donut-graph"></svg>
-						<CenterLabel>$4M</CenterLabel>
+						<CenterLabel>{centerLabel}</CenterLabel>
 					</Container>
 					<Spacer height={30}/>
 				</Col>

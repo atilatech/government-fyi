@@ -74,7 +74,7 @@ const Data = {
               _1x: ZuckImg,
               _1x_webp: ZuckImg_w,
               _2x: ZuckImg_2x,
-              _2x:ZuckImg_2x_w
+              _2x_webp:ZuckImg_2x_w
             },
             alt: "Facebook",
     				title: "Mark's Big F",

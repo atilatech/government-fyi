@@ -37,6 +37,7 @@ const Data = {
     	component: DonutGraphBlock,
     	data: {
     		src: BondData,
+				centerLabel: "$4M",
 				colorRangeStart: Color('orange1'),
 				colorRangeEnd: Color('pink2'),
     	},

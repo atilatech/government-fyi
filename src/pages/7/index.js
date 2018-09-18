@@ -11,8 +11,10 @@ import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 
+//-- data for visualizations
 import UsMap from './topojson/states-topo'
 import TzMap from './topojson/timezones-topo'
+import LASunTimes from './suntimes/sf.js'
 
 const Data = {
 	pageId:"prop-7",
@@ -77,13 +79,13 @@ const Data = {
 		{
 			component: SubsectionTitleBlock,
 			data: {
-				title: "Permanent DST means later sunrises and sunsets during winter"
+				title: "Sunrise and sunset times in San Francisco"
 			}
 		},
 		{
 			component: DSTSunInteractiveBlock,
 			data: {
-				src: "source for dst"
+				src: LASunTimes
 			}
 		},
 		{
