@@ -9,7 +9,7 @@ on the proposition pages
 
 usage for file:
 {
-	
+
 	component: WallpaperBannerImg,
 	data: {
 		color: "pink",
@@ -45,6 +45,10 @@ const Title = styled.h1`
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
+	@media screen and (max-width: 767px) {
+		width: 95%;
+		filter: drop-shadow(2px 2px 0 white);
+	}
 `
 
 const Wallpaper = styled.div`

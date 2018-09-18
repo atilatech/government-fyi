@@ -8,7 +8,7 @@ import {Spacer} from 'layout/util'
 
 /* UPDATE
 {
-	
+
 	component: PageTitleBlock,
 	data: {
 		title: "June 5, 2018 election guide",
@@ -56,7 +56,7 @@ const Subheadline = styled.div`
 `
 
 
-const PageTitleBlock = (props) => {
+const FrontPageTitle = (props) => {
 	const {title, subtitle, body} = props.data;
 	return(
     <React.Fragment>
@@ -88,7 +88,7 @@ const PageTitleBlock = (props) => {
 	)
 }
 
-PageTitleBlock.propTypes = {
+FrontPageTitle.propTypes = {
 	data: PropTypes.shape({
 		title: PropTypes.string.isRequired,
 		subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
@@ -96,4 +96,4 @@ PageTitleBlock.propTypes = {
 	}).isRequired
 }
 
-export default PageTitleBlock;
+export default FrontPageTitle;

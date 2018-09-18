@@ -14,13 +14,15 @@ class DSTMap extends React.Component{
     super(props);
     this.width = 900;
     this.height = 520;
+    this.graphId = "tz-map";
   }
 	componentDidMount() {
     const {stateMap, timezoneMap} = this.props.data;
-    this.draw("#tz-map", stateMap, timezoneMap);
+    this.draw(stateMap, timezoneMap);
 	}
 
-  draw = (graphId, mapPath, tzMapPath) => {
+  draw = (mapPath, tzMapPath) => {
+    const graphId = "#"+this.graphId
     // json('../mapdata/us-states-topo.json', function(error, topoData) {
     json(mapPath, function(error, topoData) {
       const us = feature(topoData, topoData.objects.states);
@@ -44,6 +46,7 @@ class DSTMap extends React.Component{
           .style("fill", "none")
           .style("stroke", "#000")
           .style("stroke-width", "1px")
+
     });
   }
 
@@ -57,7 +60,7 @@ class DSTMap extends React.Component{
 					lgOffset={2} lg={8}
     >
 					{/* <div id="tooltip"/> */}
-					<svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id="tz-map"></svg>
+					<svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id={this.graphId}></svg>
 				</Col>
 			</Row>
 		)
