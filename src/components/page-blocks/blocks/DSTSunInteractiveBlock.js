@@ -13,13 +13,13 @@ const Container = styled.div`
   display: flex;
   @media screen and (max-width: 767px){
     flex-direction: column;
+    background-color: whitesmoke;
   }
 `
 const SelectorContainer = styled.div`
   position: relative;
   display: flex;
-  background-color: #ddd;
-  width: 180px;
+  width: 160px;
   @media screen and (max-width: 767px){
     justify-content: center;
     width: 100%;
@@ -28,26 +28,38 @@ const SelectorContainer = styled.div`
 `
 const DateSelectInput = styled.input`
   position: absolute;
-  width: 200px;
+  width: 100%;
   top: 40%;
-  right: 20%;
+  right: 50%;
   transform: rotate(90deg);
   @media screen and (max-width: 767px){
+    width: 200px;
     top: 0;
     right: unset;
     transform: none;
   }
 `
 
+const SelectorLabel = styled.div`
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  position: relative;
+  top: ${props => props.top}px;
+  left: 10px;
+  @medai screen and (max-width: 767px) {
+    position: block;
+  }
+`
 
 class DSTSun extends React.Component{
   constructor(props) {
     super(props);
-    this.width = 1200;
-    this.height = 400;
+    this.width = 1000;
+    this.height = 250;
     this.loadedData = []
     this.padding= 50;
-    this.barHeight= 70;
+    this.barHeight= 60;
     this.graphId = 'sun-viz'
     this.state = {
       risePercentX: 21,
@@ -68,7 +80,7 @@ class DSTSun extends React.Component{
 
   handleResize = () => {
     const w = (window.innerWidth || document.documentElement.clientWidth);
-    this.barHeight = (w < 767) ? 150 : 70;
+    this.barHeight = (w < 767) ? 140 : 60;
     this.reDimension();
   }
 
@@ -104,7 +116,7 @@ class DSTSun extends React.Component{
     const xAxis = axisBottom(this.xScale)
       .tickSize(10)
       .ticks(timeHour.every(6))
-      .tickFormat(d3TimeFormat("%I %p"))//12 hour clock
+      .tickFormat(d3TimeFormat("%-I %p"))//12 hour clock
 
     const graph = select("#"+this.graphId)
     const midY = (this.height+this.barHeight)/2
@@ -146,27 +158,24 @@ class DSTSun extends React.Component{
       .attr("id","set-label")
       .attr("text-anchor","start")
       .attr("class", "time-label")
-
-
-    //-- label for slider
-    select('#date-select-label')
-      .append('text')
-      .attr('class', "slider-selected-date")
   }
-
+  //-------------------------------------
   //-- redraw graph
   draw = (selectedDateIndex) => {
     //-- d3 formaters and parsers
-    const timeParse = d3TimeParse("%H:%M");
-    const timeFormat = d3TimeFormat("%I:%M %p");
-    // -------- make static
+    const timeParse = d3TimeParse("%-H:%M");
+    const timeFormat = d3TimeFormat("%-I:%M %p");
 
     //-- change label on input
     const selectedDate = d3TimeParse("%Y-%m-%d")(this.loadedData[selectedDateIndex].date);
+    const selectorHeight = this.inputSlider.getBoundingClientRect().height;
 
-    select('#date-select-label text')
-      .text(d3TimeFormat("%b %d, 2018")(selectedDate))
-      .attr('transform','translate(40,'+(190*selectedDateIndex/364+20)+')')
+    // change label text and position
+    this.setState({
+      selectorLabel: (d3TimeFormat("%b %-d, 2018")(selectedDate)),
+      labelTop: selectedDateIndex/365 * (selectorHeight-14) + 20
+    })
+
 
     //-- change lines on graph
     const sunriseTime = timeParse(this.loadedData[selectedDateIndex].sunrise)
@@ -206,8 +215,8 @@ class DSTSun extends React.Component{
 				<Col
 					xsOffset={0} xs={12}
 					smOffset={1} sm={10}
-					mdOffset={1} md={10}
-					lgOffset={1} lg={10}
+					mdOffset={2} md={9}
+					lgOffset={2} lg={9}
     >
           <Container>
             <svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id={this.graphId}>
@@ -227,10 +236,11 @@ class DSTSun extends React.Component{
             <SelectorContainer>
               <DateSelectInput
                 type="range" id="date-select-input" name="date-select"
+                innerRef={el=>this.inputSlider=el}
                 min="0" max="364"
                 onChange={this.handleSliderChange}
               />
-              <svg width="100%" height="100%" id="date-select-label"></svg>
+              <SelectorLabel top={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
             </SelectorContainer>
           </Container>
 				</Col>

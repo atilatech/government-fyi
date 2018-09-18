@@ -1,13 +1,3 @@
-#sun-viz {
-  background-color: #eee;
-}
-
-#date-select-label {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-style: italic;
-}
-
 .time-label {
   fill: white;
   stroke: none;
