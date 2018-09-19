@@ -8,7 +8,7 @@ import Color from 'layout/colors'
 usage
 
 {
-	
+
 	component: SummaryListBlock,
 	data: {
 		listNItems: 3, //optional
@@ -54,15 +54,13 @@ const TitleContainer = styled.div`
 	margin-right: 30px;
 	text-align: right;
 	min-width: 130px;
+	max-width: 130px;
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		border: none;
 		margin: 0;
 		text-align: center;
 	}
-`;
-
-export const Body = styled.div`
 `;
 
 export const ExpandButton = styled.div`
@@ -76,18 +74,18 @@ export const ExpandButton = styled.div`
 	border-radius: 4px;
 	@media not all and (hover: none) {
     &:hover{
-      background-color: ${Color('purple')};
+      background-color: ${Color('pink2')};
       cursor: pointer;
     }
   }
 `;
 
 const StyledH3 = styled.h3`
-	font-size: 16px;
 `
 
 
-export const ExpandButtonLabel = styled.h4`
+export const ExpandButtonLabel = styled.h2`
+	font-size: 14px;
 	text-align: center;
 	color: white;
 `;
@@ -97,7 +95,7 @@ const Snippet = (props) => (
 		<TitleContainer noBorder={props.noBorder}>
 			<StyledH3>{props.title}</StyledH3>
 		</TitleContainer>
-		<Body>{props.description}</Body>
+		{props.description}
 	</Container>
 )
 

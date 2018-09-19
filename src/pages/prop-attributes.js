@@ -160,7 +160,7 @@ const shortTitles = [
   "4 issues $1.5B for children's hospitals",
   "5 lets older folk move with their property tax assesments",
   "6 repeals last year's gas tax",
-  "7 helps allow making Daylight Saving permanent",
+  "7 helps allow make Daylight Saving permanent",
   "8 caps dialysis clinics' profits",
   "9 would've split CA, literally",
   "10 legalizes rent control again",

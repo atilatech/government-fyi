@@ -9,7 +9,7 @@ import {Spacer} from 'layout/util'
 usage
 
 {
-	
+
 	component: SectionTitleBlock,
 	data: {
 		title:"title about something",
@@ -25,10 +25,6 @@ const SectionTitle = styled.h2`
 	display: inline;
 	text-transform: none;
 	margin: 20px 0 3px 0;
-	@media screen and (max-width: 767px) {
-		text-align: center;
-		display: inline-block;
-	}
 `;
 const SectionSubtitle = styled.div`
 	font-style: italic;

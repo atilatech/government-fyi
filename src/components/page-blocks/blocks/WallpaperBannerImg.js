@@ -39,15 +39,15 @@ const Relative = styled.div`
 `;
 
 const Title = styled.h1`
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 46px;
+	line-height: 54px;
 	position: relative;
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
+	filter: drop-shadow(2px 2px 0 white);
 	@media screen and (max-width: 767px) {
 		width: 95%;
-		filter: drop-shadow(2px 2px 0 white);
 	}
 `
 
