@@ -76,7 +76,9 @@ const ExternalLink = styled.a`
 	margin-top: 4px;
 	font-size: 12px;
 	@media screen and (max-width: 767px) {
+		margin-top: 8px;
 		font-size: 16px;
+		line-height: 21px;
 	}
 `;
 

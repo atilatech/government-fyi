@@ -40,6 +40,7 @@ const Caption = styled.div`
 	font-size: 14px;
 	line-height: 18px;
 	font-style: italic;
+	margin-top: 5px;
 	color: #666;
 	padding-left: 5px;
 `;
@@ -71,7 +72,7 @@ const ImgBlock = (props) => {
 				<Img imageHandles={src} alt={alt || ""}/>
 				}
 				{caption && <Caption>{caption}</Caption>}
-				<Spacer height={40}/>
+				<Spacer height={30}/>
 			</Col>
 		</StyledRow>
 	);

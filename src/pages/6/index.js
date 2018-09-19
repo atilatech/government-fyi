@@ -74,21 +74,15 @@ const Data = {
     		title: "And where does the money go?",
     		text: <span>
 					Road Maintenance and Rehabilitation Program – $3.24 billion a year on average: Off the top, the program allocates several hundred million dollars to various endeavors:
-
-					▪ $400 million to maintain and repair state bridges and culverts
-
-					▪ $200 million for Sacramento and 23 other counties with local transportation taxes
-
-					▪ $100 million to increase the number of trips by bike and on foot
-
-					▪ $25 million for the freeway service patrol program
-
-					▪ $25 million for sustainable communities planning grants to local governments
-
-					▪ $7 million total for transportation-related research and education at UC ($5 million) and CSU ($2 million)
-
-					▪ $5 million in workforce development grants to local agencies
-
+					<ul>
+						<li>$400 million to maintain and repair state bridges and culverts</li>
+						<li>$200 million for Sacramento and 23 other counties with local transportation taxes</li>
+						<li>$100 million to increase the number of trips by bike and on foot</li>
+						<li>$25 million for the freeway service patrol program</li>
+						<li>$25 million for sustainable communities planning grants to local governments</li>
+						<li>$7 million total for transportation-related research and education at UC ($5</li> million) and CSU ($2 million)
+						<li>$5 million in workforce development grants to local agencies</li>
+					</ul>
 				Of the roughly $2.48 billion remaining, half would go to Caltrans for state highway maintenance and rehabilitation. The other half would go to cities and counties for road maintenance and repair projects and railroad grade separations. It also pays for an emphasis on “complete streets” that are safer for walkers and bikers, capture stormwater, and include other features.</span>,
     	},
 		},

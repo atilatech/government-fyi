@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
-// import AnnotationsList from 'components/interactive/annotation/AnnotationsList';
 import {FromThem, FromMe, Clear, Section} from 'components/static/iMessageStyles'
 
 /*
@@ -9,7 +8,7 @@ an iMessage conversation block
 
 example usage for data.js
 {
-	
+
 	component: IMessageBlock,
 	data: {
 		messages: [
@@ -36,7 +35,6 @@ example usage for data.js
 
 const IMessageBlock = (props) => {
 	const {messages} = props.data;
-	// const { showAnnos, pageId, loggedInUserId, authorUserId, sectionId } = props.annoData;
 	let lastSender = null;
 	const conversation = messages.map( (message, i) => {
 		let conditionalClear = null;

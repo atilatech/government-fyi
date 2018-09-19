@@ -12,7 +12,8 @@ const ColorMap = new Map([
 	['blue2', 'hsla(210, 100%, 77%, 1)'], // #8BC5FF
   ['black', 'hsla(0, 0%, 20%, 1)'], // #323232
   ['red', 'hsla(358,100%,64%,1)'], // #FF454C
-  ['gray1', 'hsla(0, 0%, 40%, 1)'],
+  ['gray1', 'hsla(0, 0%, 70%, 1)'],
+  ['gray2', 'hsla(0, 0%, 70%, 1)'],
 ])
 
 const Color = (name, deltaSaturation=0, deltaTint=0, opacity=1) => {
