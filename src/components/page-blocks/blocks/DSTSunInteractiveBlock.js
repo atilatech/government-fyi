@@ -7,6 +7,7 @@ import {timeParse as d3TimeParse, timeFormat as d3TimeFormat} from "d3-time-form
 import {timeHour, timeMinute} from "d3-time"
 import {axisBottom} from 'd3-axis'
 import {scaleTime} from 'd3-scale'
+import Color from 'layout/colors'
 import 'components/static/dst-sun-styles.css'
 
 const Container = styled.div`
@@ -29,19 +30,53 @@ const SelectorContainer = styled.div`
     height: 50px;
   }
 `
-const DateSelectInput = styled.input`
-  position: relative;
-  left: calc(50% - 1px);
-  top: 7.5px;
-  width: 100%;
+
+const Vert = styled.div`
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
   transform: rotate(90deg);
-  transform-origin: left center;
+  transform-origin: center center;
+  height: 100%;
   @media screen and (max-width: 767px){
     width: 200px;
-    left: unset;
     transform: none;
     top: 10px;
   }
+`
+const DateSelectInput = styled.input`
+  position: relative;
+  top: 10px;
+  width: 100%;
+  z-index: 3;
+`
+const DSTLabel = styled.div`
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  position:absolute;
+  bottom: 35px;
+  transform: rotate(180deg) translateX(-3px);
+  @media screen and (max-width: 767px){
+    transform: none;
+  }
+
+`
+const DSTLine = styled.div.attrs({
+  style: props => ({
+    width: props.lineHeight,
+    left: props.yOffset,
+    backgroundColor: props.sliderIsInDST ? Color('blue2'): Color('blue2',0,0,0.6)
+  })
+})`
+  height: 20px;
+  border-radius: 2px;
+  position:relative;
+  bottom: 6px;
+  transition: width 150ms ease-out;
+  border-radius: 2px;
 `
 const EndLabel = styled.div`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -63,7 +98,7 @@ const SelectorLabel = styled.div.attrs({
   font-size: 12px;
   font-style: italic;
   position: relative;
-  left: 50px;
+  left: 34px;
   @media screen and (max-width: 767px) {
     position: static;
     left: 0;
@@ -91,12 +126,13 @@ class DSTSun extends React.Component{
     this.padding= 50;
     this.barHeight= 60;
     this.graphId = 'sun-viz'
-    this.DSTToggle = false; // duplicated bc state doesn't update quickly enough
+    this.isDSTToggled = false; // duplicated bc state doesn't update quickly enough
     this.state = {
       risePercentX: 21,
       setPercentX: 80,
-      isDSTToggled: false,
-      sliderValue: 42
+      isDSTToggled: false, // and using state to keep it controlled
+      sliderValue: 42,
+      sliderHeight: 160,
     }
   }
 	componentDidMount() {
@@ -118,7 +154,7 @@ class DSTSun extends React.Component{
   }
   handleToggleChange = (e) => {
     this.setState({isDSTToggled: e.target.checked});
-    this.DSTToggle = e.target.checked;
+    this.isDSTToggled = e.target.checked;
     this.draw(parseInt(document.querySelector('#date-select-input').value,10))
   }
   handleSliderChange = (e) => {
@@ -215,15 +251,14 @@ class DSTSun extends React.Component{
     // change label text and position
     this.setState({
       selectorLabel: (d3TimeFormat("%b %-d")(selectedDate)),
-      labelTop: selectedDateIndex/364 * (selectorHeight-14) - 5.5
+      labelTop: selectedDateIndex/364 * (selectorHeight-14)+6
     })
 
 
     //if DST toggled and in winter, add an hour
     let addTime = 0;
-    if (this.DSTToggle) {
+    if (this.isDSTToggled) {
       if(selectedDateIndex < 69 || selectedDateIndex > 306){
-        console.log('toggled')
         addTime = 1;
       }
     }
@@ -260,7 +295,10 @@ class DSTSun extends React.Component{
 
 
 	render() {
-    const {risePercentX, setPercentX} = this.state;
+    const {risePercentX, setPercentX, sliderHeight, isDSTToggled, sliderValue} = this.state;
+    const labelLineHeight = isDSTToggled ? sliderHeight : 237/364*(sliderHeight-12);
+    const labelLineOffset = isDSTToggled ? 0 : 3;
+    const isInLabelLine = isDSTToggled ? true : (sliderValue >= 69 && sliderValue < 307);
 		return(
 			<Row>
 				<Col
@@ -289,15 +327,19 @@ class DSTSun extends React.Component{
               </defs>
             </svg>
             <SelectorContainer>
-              <EndLabel>January</EndLabel>
-              <DateSelectInput
-                type="range" id="date-select-input" name="date-select"
-                innerRef={el=>this.inputSlider=el}
-                min="0" max="364"
-                value={this.state.sliderValue}
-                onChange={this.handleSliderChange}
-              />
-              <EndLabel style={{transform:`translateY(${this.state.sliderHeight+23}px)`}}>December</EndLabel>
+              <EndLabel style={{transform:"translateY(-4px)"}}>January</EndLabel>
+              <Vert>
+                <DateSelectInput
+                  type="range" id="date-select-input" name="date-select"
+                  innerRef={el=>this.inputSlider=el}
+                  min="0" max="364"
+                  value={this.state.sliderValue}
+                  onChange={this.handleSliderChange}
+                />
+                <DSTLabel>DST</DSTLabel>
+                <DSTLine lineHeight={labelLineHeight} yOffset={labelLineOffset} sliderIsInDST={isInLabelLine}/>
+              </Vert>
+              <EndLabel style={{transform:`translateY(${this.state.sliderHeight+16}px)`}}>December</EndLabel>
               <SelectorLabel topOffset={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
             </SelectorContainer>
           </Container>

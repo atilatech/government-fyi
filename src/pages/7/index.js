@@ -81,7 +81,7 @@ const Data = {
 		{
 			component: SubsectionTitleBlock,
 			data: {
-				title: "Sunrise and sunset times in San Francisco"
+				title: "Sunrise and sunset times in San Francisco (2018)"
 			}
 		},
 		{
