@@ -214,7 +214,7 @@ class DSTSun extends React.Component{
     this.setState({sliderHeight: selectorHeight})
     // change label text and position
     this.setState({
-      selectorLabel: (d3TimeFormat("%b %-d, 2018")(selectedDate)),
+      selectorLabel: (d3TimeFormat("%b %-d")(selectedDate)),
       labelTop: selectedDateIndex/364 * (selectorHeight-14) - 5.5
     })
 

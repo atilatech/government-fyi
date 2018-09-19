@@ -162,8 +162,8 @@ const LinksBlock = (props) => {
 				<Col
 					xsOffset={1} xs={10}
 					smOffset={1} sm={10}
-					mdOffset={4} md={4}
-					lgOffset={4} lg={4}
+					mdOffset={3} md={6}
+					lgOffset={3} lg={6}
 				>
 					<Disclaimer><b>Note</b>: We intentionally omit links to the arguments & rebuttals found in the official voter guide. We believe they exaggerate claims, mislead through emotions, and use ALL CAPS irresponsibly.</Disclaimer>
 				</Col>
