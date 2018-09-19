@@ -31,7 +31,7 @@ const Data = {
     	data: {
     		title: "Some caveats",
     		text: <span>
-					If Prop 7 passes, it gives the California state legislature the power to change Daylight Saving Time, with two-thirds vote, as long as it's cool with federal law. <Citation data={Citations['2']}>Currently, federal law only allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back," or something), or opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>) </Citation>. If we wanted to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what's being argued for, <Citation data={Citations['1']}>California needs Congress to amend the Uniform Time Act of 1966</Citation>.
+					If Prop 7 passes, it gives the California state legislature the power to change Daylight Saving Time, with two-thirds vote, as long as it's cool with federal law. <Citation data={Citations['2']}>Currently, federal law only allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – or something), or opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>) </Citation>. If we wanted to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what's being argued for, <Citation data={Citations['1']}>California needs Congress to amend the Uniform Time Act of 1966</Citation>.
 					<br/><br/>
 					<em>Again, passing Prop 7 does not immediately change anything regarding <Acronym data={Acronyms.DST}/></em>. It gives them the power to change things, voices our public opinion to our  legislators, and points us down the path of year-round DST.
 					<br/><br/>
