@@ -3,21 +3,26 @@ import PropTypes from 'prop-types'
 import DrawerItem from './menu-drawer-item'
 import {CloseIcon} from 'components/static/icons'
 import styled from 'styled-components'
-import './menu.css'
 
 
-const styles = {
-  drawerPosition : {
-    position: 'fixed',
-    top: 0,
-    right: 0,
-    width: 300,
-    height: '100%',
-    background: 'linear-gradient(-45deg, #ddd, #eee)',
-    backgroundColor: 'azure',
-    zIndex: 4,
-  },
-}
+const DrawerPosition = styled.div.attrs({
+  style: props => ({
+    transform: `translateX(${props.activated?0:100}%)`,
+    opacity: props.activated?1:0
+  })
+})`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background:linear-gradient(-45deg, #ddd, #eee);
+  background-color: azure;
+  z-index: 5;
+  transition-property: opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+`
 
 const TopBar = styled.div`
   display: flex;
@@ -44,9 +49,13 @@ const CloseWrapper = styled.div`
 
 
 class MenuDrawer extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {activated: false}
+  }
 
   componentDidMount() {
-    this.menu.classList.add('visible');
+    this.setState({activated:true})
   }
 
   render() {
@@ -61,7 +70,7 @@ class MenuDrawer extends React.Component {
       />
     ));
     return(
-      <div id='menu-transition' ref={(el) => this.menu = el} style={styles.drawerPosition}>
+      <DrawerPosition activated={this.state.activated}>
         <TopBar>
           <More>We must go deeper</More>
           <CloseWrapper onClick={()=>{toggleVisibility(false)}}>
@@ -69,7 +78,7 @@ class MenuDrawer extends React.Component {
           </CloseWrapper>
         </TopBar>
         {drawerItems}
-      </div>
+      </DrawerPosition>
     )
   }
 }
