@@ -15,6 +15,8 @@ import ZuckImg_2x_w from './images/zuck@2x.webp'
 import MockImg from 'pages/home/images/prop-7.png'
 import MockImg_w from 'pages/home/images/prop-7.webp'
 import MultisourceImage from 'components/static/multisource-image'
+import TwitImg from './images/twit.png'
+import TwitImg_w from './images/twit.webp'
 
 const CenteredText = styled.div`
   text-align: center;
@@ -82,11 +84,11 @@ const Data = {
     			},
     			{
             img: {
-              _1x: MockImg,
-              _1x_webp: MockImg_w,
+              _1x: TwitImg,
+              _1x_webp: TwitImg_w,
             },
             alt: "Twitter",
-    				title: "US Press Secretary",
+    				title: "The collective megaphone",
             url:"https://www.twitter.com/bythebaydotcool"
     			},
     			{

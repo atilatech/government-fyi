@@ -54,8 +54,8 @@ const SummaryTitle = styled.h3`
 
 const Image = styled(MultisourceImage)`
 	display: block;
-	width: 130px;
 	margin: 10px auto;
+	height: 130px;
 	user-select:none;
 	-webkit-user-select:none;
 	transition: all 180ms ease-out;
