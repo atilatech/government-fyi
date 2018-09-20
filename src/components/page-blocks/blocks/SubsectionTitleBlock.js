@@ -20,16 +20,18 @@ usage
 */
 
 const SectionTitle = styled.h3`
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: bold;
 	display: block;
 	text-align: center;
 	@media screen and (max-width: 767px) {
+		font-weight: 400;
 	}
 `;
 
 const SubsectionTitle = (props) => {
 	const {title, nColWidth} = props.data;
-	const nWidth = nColWidth || 8;
+	const nWidth = nColWidth || 6;
 	const offset = Math.floor((12-nWidth)/2)
 	return(
 		<Row>

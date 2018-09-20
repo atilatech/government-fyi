@@ -49,6 +49,15 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
+  line-height: 16px;
+}
+
 /*For FullScreenModal and overlay*/
 .stopscroll {
   height: 100%;

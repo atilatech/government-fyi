@@ -8,6 +8,7 @@ import {timeHour, timeMinute} from "d3-time"
 import {axisBottom} from 'd3-axis'
 import {scaleTime} from 'd3-scale'
 import Color from 'layout/colors'
+import {Spacer} from 'layout/util'
 import 'components/static/dst-sun-styles.css'
 
 const Container = styled.div`
@@ -70,12 +71,19 @@ const DSTLabel = styled.div.attrs({
   z-index: 3;
   @media screen and (max-width: 767px){
     transform: none;
+    bottom: -11px;
   }
-
 `
-const DSTLine = styled.div.attrs({
+const DataAttribution = styled.h5`
+  font-size: 11px;
+  color: #666;
+  text-align: right;
+  display: block;
+`
+
+const DSTMarking = styled.div.attrs({
   style: props => ({
-    width: props.lineHeight-2,
+    width: props.lineHeight-2, //-2px for the width of the borders
     left: props.yOffset,
   })
 })`
@@ -89,10 +97,7 @@ const DSTLine = styled.div.attrs({
   border-right: 1px solid #666;
   border-left: 1px solid #666;
 `
-const EndLabel = styled.div`
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  font-style: italic;
+const EndLabel = styled.h5`
   line-height: 12px;
   position: absolute;
   @media screen and (max-width: 767px){
@@ -132,12 +137,13 @@ class DSTSun extends React.Component{
   constructor(props) {
     super(props);
     this.width = 1000;
-    this.height = 250;
+    this.height = 300;
     this.loadedData = []
     this.padding= 50;
-    this.barHeight= 60;
+    this.graphHeight= 60;
     this.graphId = 'sun-viz'
-    this.isDSTToggled = false; // duplicated bc state doesn't update quickly enough
+    this.isDSTToggled = false; // duplicated bc state doesn't update quickly enough or I'm stupid or both
+    this.isXs = false;
     this.state = {
       risePercentX: 21,
       setPercentX: 80,
@@ -160,8 +166,9 @@ class DSTSun extends React.Component{
 
   handleResize = () => {
     const w = (window.innerWidth || document.documentElement.clientWidth);
-    this.barHeight = (w < 767) ? 140 : 60;
-    this.reDimension();
+    this.graphHeight = (w < 767) ? 140 : 60;
+    this.isXs = (w < 767);
+    this.redimensionGraph();
   }
   handleToggleChange = (e) => {
     this.setState({isDSTToggled: e.target.checked});
@@ -173,16 +180,16 @@ class DSTSun extends React.Component{
     this.draw(parseInt(e.target.value,10));
   }
 
-  reDimension = () => {
+  redimensionGraph = () => {
     const graph = select("#"+this.graphId)
-    const midY = (this.height+this.barHeight)/2
+    const midY = (this.height+this.graphHeight)/2
 
     graph.select("rect")
-    .attr("y",midY - this.barHeight)
-    .attr("height",this.barHeight)
+    .attr("y",midY - this.graphHeight)
+    .attr("height",this.graphHeight)
     graph.selectAll(".sunline")
     .attr("y1", midY)
-    .attr("y2", midY-this.barHeight)
+    .attr("y2", midY-this.graphHeight)
     graph.select("g")
     .attr("transform", "translate("+this.padding+","+midY+")")
 
@@ -208,14 +215,14 @@ class DSTSun extends React.Component{
     .tickFormat(d3TimeFormat("%-I %p"))//12 hour clock
 
     const graph = select("#"+this.graphId)
-    const midY = (this.height+this.barHeight)/2
+    const midY = (this.height+this.graphHeight)/2
     //-- gradient
     graph.append("rect")
     .attr("fill","url(#day-grad)")
     .attr("x",this.padding)
-    .attr("y",midY-this.barHeight)
+    .attr("y",midY-this.graphHeight)
     .attr("width",this.width-this.padding*2+1)
-    .attr("height",this.barHeight)
+    .attr("height",this.graphHeight)
 
     graph.append("g")
     .attr("transform", "translate("+this.padding+","+midY+")")
@@ -227,14 +234,14 @@ class DSTSun extends React.Component{
     .attr("id", "rise-line")
     .attr("class","sunline")
     .attr("y1", midY)
-    .attr("y2", midY-this.barHeight)
+    .attr("y2", midY-this.graphHeight)
     .attr("stroke","white")
     .attr("stroke-width", "2")
     graph.append("line")
     .attr("id", "set-line")
     .attr("class","sunline")
     .attr("y1", midY)
-    .attr("y2", midY-this.barHeight)
+    .attr("y2", midY-this.graphHeight)
     .attr("stroke","white")
     .attr("stroke-width", "2")
 
@@ -258,15 +265,15 @@ class DSTSun extends React.Component{
     //-- change label on input
     const selectedDate = d3TimeParse("%Y-%m-%d")(this.loadedData[selectedDateIndex].date);
     const selectorHeight = this.inputSlider.getBoundingClientRect().height;
-    this.setState({sliderHeight: selectorHeight})
+    this.setState({sliderHeight: this.isXs ? 199 : selectorHeight}) // width of slider changes when on mobiles
     // change label text and position
     this.setState({
       selectorLabel: (d3TimeFormat("%b %-d")(selectedDate)),
-      labelTop: selectedDateIndex/364 * (selectorHeight-14)+6
+      labelTop: selectedDateIndex/364 * (selectorHeight-14)+6 //some magic numbers
     })
 
 
-    //if DST toggled and in winter, add an hour
+    //if DST toggled and in winter, add an hour (69th and 306th day are march 11, nov 4)
     let addTime = 0;
     if (this.isDSTToggled) {
       if(selectedDateIndex < 69 || selectedDateIndex > 306){
@@ -308,7 +315,7 @@ class DSTSun extends React.Component{
 	render() {
     const {risePercentX, setPercentX, sliderHeight, isDSTToggled, sliderValue} = this.state;
     const labelLineHeight = isDSTToggled ? sliderHeight : 237/364*(sliderHeight-12);
-    const labelLineOffset = isDSTToggled ? 0 : 3;
+    const labelLineOffset = isDSTToggled ? 0: 3;
     const isInLabelLine = isDSTToggled ? true : (sliderValue >= 69 && sliderValue < 307);
 		return(
 			<Row>
@@ -348,12 +355,14 @@ class DSTSun extends React.Component{
                   onChange={this.handleSliderChange}
                 />
                 <DSTLabel sliderIsInDST={isInLabelLine}>DST</DSTLabel>
-                <DSTLine lineHeight={labelLineHeight} yOffset={labelLineOffset}/>
+                <DSTMarking lineHeight={labelLineHeight} yOffset={labelLineOffset}/>
               </Vert>
               <EndLabel style={{transform:`translateY(${this.state.sliderHeight+16}px)`}}>December</EndLabel>
               <SelectorLabel topOffset={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
             </SelectorContainer>
           </Container>
+          <Spacer height={0} xsHeight={30}/>
+          <DataAttribution>Data: timeanddate.com (<a href="https://www.timeanddate.com/sun/usa/san-francisco" target="_blank" rel="noreferrer noopener">link</a>)</DataAttribution>
 				</Col>
 			</Row>
 		)

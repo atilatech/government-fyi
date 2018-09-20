@@ -81,13 +81,14 @@ const Data = {
 		{
 			component: SubsectionTitleBlock,
 			data: {
-				title: "Sunrise and sunset times in San Francisco (2018)"
+				title: "Sunrise and sunset times in Los Angeles (2018)"
 			}
 		},
 		{
 			component: DSTSunInteractiveBlock,
 			data: {
-				src: LASunTimes
+				src: LASunTimes,
+				// src: SFSunTimes
 			}
 		},
 		{
