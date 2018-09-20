@@ -50,6 +50,15 @@ const Data = {
 				caption:"The proposal would have given the new states the power to choose their own names."
 			}
 		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: "Why?",
+				text: <span>Billionaire Tim Draper, the main force behind this initiative, says that California is too large to govern, has high costs but poor social services.
+					<br/><br/>
+				Others suspect political reasons. Of the many ramifications of dividing California up, the US would have 52 states, leading to four new US senators. Northern California and California, which house SF and LA, would most likely lean left, giving Democrats an advantage.</span>,
+			},
+		},
 		// {
 		// 	component: IMessageBlock,
 		// 	data:{

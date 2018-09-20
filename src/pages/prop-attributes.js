@@ -165,7 +165,7 @@ const shortTitles = [
   "9 would've split CA, literally",
   "10 legalizes rent control again",
   "11 requires EMTs be on-call during breaks",
-  "12 sets sizes for meat animals"
+  "12 sets floor space requirements for meat animals"
 ]
 
 const headlines = [
@@ -180,7 +180,7 @@ const headlines = [
   "Prop 9 would've split CA, literally",
   "Prop 10 legalizes rent control again",
   "Prop 11 requires EMTs be on-call during breaks",
-  "Prop 12 sets sizes for meat animals"
+  "Prop 12 sets floor space requirements for meat animals"
 ]
 
 const descriptions = [
@@ -192,8 +192,8 @@ const descriptions = [
   "And! future gas tax increases must be approved by voters",
   "Even if passes, Congress needs to approve it",
   "But the story is multi-layered",
-  "A wild proposition from a VC. It has been removed from the ballot.",
-  "Does it hurt or help to have cities regulate what landlords can charge?",
+  "A wild proposition from a VC. Alas, it's been removed from the ballot.",
+  "Does it help or hurt to have cities regulate what landlords can charge?",
   "An attempt to exempt paramedics from a recent ruling",
   "Guess what 1 square foot looks like relative to a chicken"
 ]

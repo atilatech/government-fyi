@@ -48,7 +48,7 @@ const Data = {
 				<span>
 					It's clear that ambulance <em>companies</em> want Prop 11 to pass. <Citation>The main funder of the measure is American Medical Response (AMR), of which a lawsuit has been brought up against</Citation>. Not only would Prop 11 save them much money over the long-term, but it would also absolve them of the liability they've incurred by not paying EMTs during breaks that have been interrupted – as the lawsuit accuses them of.
 					<br/><br/>
-					Ambulance workers, of which there are 17,000 of them in the state, have been less vocal.
+					Ambulance workers, of which there are 17,000 of them in the state, have been less vocal. [To be continued...]
 				</span>
 			}
 		},
