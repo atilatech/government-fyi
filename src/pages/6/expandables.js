@@ -1,6 +1,6 @@
 export const Acronyms = {
   RRAA: {
-    expanded:"Road Repair and Accountability Act",
+    expanded:"the Road Repair and Accountability Act",
     acronym:"RRAA"
   }
 }
@@ -35,5 +35,11 @@ export const Citations = {
     publication:"Ballotpedia",
     headline:"Proposition 6",
     directQuote:"In California, the total tax on a gallon of gasoline, including federal and state taxes, was 73.62 cents, as of July 1, 2018. California had the second-highest gasoline tax rate in the United States. Pennsylvania had the highest at 77.10 cents per gallon."
+  },
+  '6':{
+    link:"https://www.usnews.com/news/best-states/california",
+    publication:"US News & World Report",
+    headline:"Best States ranking",
+    directQuote:"Transportation (overall) #41; Bridge Quality #11; Commute Time #46; Public Transit Usage #9; Road Quality #49",
   }
 }

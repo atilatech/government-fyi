@@ -19,6 +19,10 @@ const Container = styled.div`
     background-color: whitesmoke;
   }
 `
+const ToggleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
 const SelectorContainer = styled.div`
   position: relative;
   display: flex;
@@ -325,10 +329,12 @@ class DSTSun extends React.Component{
 					mdOffset={2} md={9}
 					lgOffset={2} lg={9}
     >
-          <label htmlFor="dst-toggle">
-            <Toggle onChange={this.handleToggleChange} name="dst-toggle" type="checkbox"/>
-            Year-round Daylight Saving Time?
-          </label>
+          <ToggleContainer>
+            <label htmlFor="dst-toggle">
+              <Toggle onChange={this.handleToggleChange} name="dst-toggle" type="checkbox"/>
+              Year-round Daylight Saving Time?
+            </label>
+          </ToggleContainer>
           <Container>
             <svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id={this.graphId}>
               <defs>

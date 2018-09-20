@@ -47,7 +47,7 @@ const Data = {
 				},
 				nColWidth: 4,
 				alt: "Map of Cal3's proposed split of California",
-				caption:"The proposal would have given the new states the power to choose their own name."
+				caption:"The proposal would have given the new states the power to choose their own names."
 			}
 		},
 		// {
