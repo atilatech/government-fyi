@@ -52,13 +52,22 @@ const DateSelectInput = styled.input`
   width: 100%;
   z-index: 3;
 `
-const DSTLabel = styled.div`
+const DSTLabel = styled.div.attrs({
+  style: props => ({
+    color: props.sliderIsInDST ? Color('orange2'): 'black'
+  })
+})`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   letter-spacing: 0.5px;
   font-size: 12px;
+  font-weight:bold;
+  color: #000;
   position:absolute;
-  bottom: 35px;
+  bottom: 38px;
+  background-color: white;
   transform: rotate(180deg) translateX(-3px);
+  padding: 0 3px;
+  z-index: 3;
   @media screen and (max-width: 767px){
     transform: none;
   }
@@ -66,17 +75,19 @@ const DSTLabel = styled.div`
 `
 const DSTLine = styled.div.attrs({
   style: props => ({
-    width: props.lineHeight,
+    width: props.lineHeight-2,
     left: props.yOffset,
-    backgroundColor: props.sliderIsInDST ? Color('blue2'): Color('blue2',0,0,0.6)
   })
 })`
-  height: 20px;
+  height: 16px;
   border-radius: 2px;
   position:relative;
-  bottom: 6px;
+  bottom: -7px;
   transition: width 150ms ease-out;
   border-radius: 2px;
+  border-bottom: 1px solid #666;
+  border-right: 1px solid #666;
+  border-left: 1px solid #666;
 `
 const EndLabel = styled.div`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -336,8 +347,8 @@ class DSTSun extends React.Component{
                   value={this.state.sliderValue}
                   onChange={this.handleSliderChange}
                 />
-                <DSTLabel>DST</DSTLabel>
-                <DSTLine lineHeight={labelLineHeight} yOffset={labelLineOffset} sliderIsInDST={isInLabelLine}/>
+                <DSTLabel sliderIsInDST={isInLabelLine}>DST</DSTLabel>
+                <DSTLine lineHeight={labelLineHeight} yOffset={labelLineOffset}/>
               </Vert>
               <EndLabel style={{transform:`translateY(${this.state.sliderHeight+16}px)`}}>December</EndLabel>
               <SelectorLabel topOffset={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
