@@ -1,8 +1,8 @@
 import React from 'react'
+import styled from 'styled-components'
 // import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 // import { STATUS } from "state/requestStatus/reducer";
-
 import {
   TextField,
   // ErrorMessage,
@@ -10,6 +10,10 @@ import {
   SubmitButtonWithStyle,
   // SubmittingStyle
 } from './form-styles';
+
+const Form = styled.form`
+  display: flex;
+`
 
 /*
 <SubscribeForm longform/>
@@ -26,10 +30,7 @@ class SubscribeForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: '',
-      lastName: '',
       email: '',
-      zip: '',
     };
   }
 
@@ -94,47 +95,17 @@ class SubscribeForm extends React.Component {
 
 		return (
 			<div action="" method="GET">
-				<form onSubmit={this.handleSubmit}>
+				<Form onSubmit={this.handleSubmit}>
 			    <TextField
             required={true}
             type="email"
             name="email"
             id="MERGE0"
-            placeholder='Email address*'
+            placeholder='email address'
             value={this.state.email}
             onChange={this.handleInputChange}
        />
-          <TextField
-            required={true}
-            type="text"
-            name="firstName"
-            id="MERGE1"
-            placeholder='First name*'
-            style={{marginRight: 20, width:'calc(50% - 20px)'}}
-            onChange={this.handleInputChange}
-            value={this.state.firstName}
-          />
 
-          <TextField
-            required={true}
-            type="text"
-            name="lastName"
-            id="MERGE2"
-            placeholder='Last name*'
-            style={{width:'calc(50%'}}
-            onChange={this.handleInputChange}
-            value={this.state.lastName}
-          />
-
-          <TextField
-            type="text"
-            name="zip"
-            id="MERGE3"
-            placeholder='Zip code'
-            size='5'
-            onChange={this.handleInputChange}
-            value={this.state.zip}
-          />
 					{button}
 
 			    <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
@@ -147,7 +118,7 @@ class SubscribeForm extends React.Component {
 		        <label htmlFor="b_comment">Comment: </label>
 		        <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
 			    </div>
-			  </form>
+			  </Form>
 			</div>
 		)
 	}

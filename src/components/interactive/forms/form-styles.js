@@ -15,8 +15,8 @@ export const TextField = styled(InputField)`
   width: 100%;
   font-size: 16px;
   padding-left: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 9px;
   margin-bottom: 9px;
   border-left: none;
@@ -96,9 +96,8 @@ export const SubmitButtonWithStyle = styled(SubmitButton)`
 
   text-align:center;
   display: block;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 10px 25px;
   color: ${Color('pink2')};
   border: 2px solid ${Color('pink2')};
