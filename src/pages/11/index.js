@@ -33,7 +33,7 @@ const Data = {
 			data: {
 				title:"Why not just give EMTs real breaks?",
 				text: <span>
-					In short, costs would be too high. A union representing 4,000 ambulance workers agrees that applying the <em>Augustus</em> ruling to the ambulance industry would be problematic. They even tried to resolve this in the state legislature, but the union and companies couldn't reach an agreement.<br/><br/>
+					In short, costs would be too high. <Citation data={Citations['5']}>A union representing 4,000 ambulance workers agrees that applying the <em>Augustus</em> ruling to the ambulance industry would be problematic</Citation>, even though they formally oppose Prop 11. They even tried to resolve this in the state legislature, but the union and companies couldn't reach an agreement.<br/><br/>
 					<Citation data={Citations['3']}>Currently, the industry norm is for EMTs to be on-duty during their entire shift. If EMTs are eating lunch and an emergency call comes in, they'll put down their avocado sandos, respond to the call, and resume nomming while idling later (ideally).</Citation>
 					<br/><br/>
 					If Prop 11 fails, and courts rule that paramedics' breaks can't be interrupted, then private ambulance companies (which make up 74% of ambulance coverage) will have much higher costs to cover the same area with the same response time (which must meet a certain standard set by the Department of Public Health). The LAO estimates they'd need to hire 25% more emergency personnel. Surprisingly, <Citation data={Citations['2']}>the Legislative Analyst Office estimates that the burden of these increased costs (~$100M) will likely fall on local governments</Citation>
@@ -43,12 +43,11 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title:"What do ambulance workers think?",
+				title:"And what do workers want?",
 				text:
 				<span>
 					It's clear that ambulance <em>companies</em> want Prop 11 to pass. <Citation>The main funder of the measure is American Medical Response (AMR), of which a lawsuit has been brought up against</Citation>. Not only would Prop 11 save them much money over the long-term, but it would also absolve them of the liability they've incurred by not paying EMTs during breaks that have been interrupted – as the lawsuit accuses them of.
-					<br/><br/>
-					Ambulance workers, of which there are 17,000 of them in the state, have been less vocal. [To be continued...]
+
 				</span>
 			}
 		},
@@ -68,6 +67,10 @@ const Data = {
 							{
 								text: "Mercury News & East Bay Times Editorial Board",
 								url: "https://www.mercurynews.com/2018/08/10/editorial-prop-11/"
+							},
+							{
+								text: "Press Enterprise Editorial Board",
+								url: "https://www.pe.com/2018/09/13/yes-on-proposition-11-for-more-sensible-911-services/"
 							},
 						]
 					},

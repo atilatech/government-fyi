@@ -40,15 +40,6 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
-						links: [
-							{
-								text: "",
-								url: "",
-							},
-						]
-					},
-					{
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{

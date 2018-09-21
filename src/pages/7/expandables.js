@@ -74,5 +74,17 @@ export const Citations = {
     headline:"Daylight saving time linked to heart attacks: study",
     directQuote:"Switching over to daylight saving time, and losing one hour of sleep, raised the risk of having a heart attack the following Monday by 25 percent, compared to other Mondays during the year, according to a new U.S. study released on Saturday."
   },
+  '9': {
+    link:"https://file.wikileaks.org/file/crs/RS22284.pdf",
+    publication:"CRS Report for Congress",
+    headline:"Daylight Saving Time",
+    directQuote:"Congress then asked the National Bureau of Standards (NBS) to evaluate the DOT report. ... NBS found no significant energy savings or differences in traffic fatalities. It did find statistically significant evidence of increased fatalities among school-age children in the mornings during the four-month period January-April 1974 as compared with the same period (non-DST) of 1973. NBS stated that it was impossible to determine, what if any of this increase was due to DST. When this same data was compared between 1973 and 1974 for the individual months of March and April, no significant difference was found for fatalities among school-age children in the mornings."
+  },
+  '10':{
+    link:"http://content.time.com/time/nation/article/0,8599,1596686,00.html",
+    publication:"Time",
+    headline:"Saving Even More Daylight",
+    directQuote:"Even the Department of Energy (DOE) isn't convinced changing the clocks will make a dent in energy consumption. \"The jury on the potential national energy-savings of extending daylight saving time is still out,\" Craig Stevens, press secretary for the Department of Energy, wrote to TIME in e-mail. \"Our preliminary report, based on decades-old information, indicates a very small amount of energy savings.\""
+  }
 
 }

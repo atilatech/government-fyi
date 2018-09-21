@@ -1,5 +1,8 @@
 export const Acronyms = {
-
+  SEIU: {
+    expanded: "SEIU United Healthcare Workers",
+    acronym: "SEIU-UHW"
+  }
 }
 
 export const Citations = {

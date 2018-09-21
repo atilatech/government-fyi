@@ -95,7 +95,8 @@ const DSTMarking = styled.div.attrs({
   border-radius: 2px;
   position:relative;
   bottom: -7px;
-  transition: width 150ms ease-out;
+  transition: all 230ms ease-out;
+  transition-delay: 200ms;
   border-radius: 2px;
   border-bottom: 1px solid #666;
   border-right: 1px solid #666;

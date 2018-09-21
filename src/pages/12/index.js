@@ -34,7 +34,7 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		// title: "",
-    		text: "Prop 12 would set minimum space requirements for farm-raised animals intended for food. It would ban the sales of meat and eggs from animals in floor spaces less than these requirements, even if they're raised outside California. In addition, Prop 12 would require that all egg-laying hens be (literally) cage-free by 2022. Opponents of Prop 12 say this will increase prices for consumers. It turns out PETA is against this."
+    		text: "Prop 12 would set minimum space requirements for farm-raised animals intended for food. It would ban the sales of meat and eggs from animals in floor spaces less than these requirements, even if they're raised outside California. In addition, Prop 12 would require that all egg-laying hens be (literally) cage-free by 2022. Opponents of Prop 12 say this will increase prices for consumers. PETA also happens to be against this."
 	    }
 		},
     {
@@ -43,7 +43,7 @@ const Data = {
     		title: "Prop 12 is the new Prop 2",
     		text: <span>A decade ago, we passed Prop 2, written by the Humane Society of US (HSUS), the same authors of Prop 12. <Citation data={Citations['1']}>Prop 2 said that animals raised for meat must have enough space to "to lie down, stand up, fully extend their limbs and turn around freely."</Citation>
 					<br/><br/>
-					After it passed, cage-free eggs (which <Acronym data={Acronyms.btw}/> doesn't necessarily mean sans cage) became more readily available, and major food sellers like McDonalds, Safeway, Taco Bell, Starbucks, and Walmart committed to only buying cage-free eggs.
+					After it passed, cage-free eggs (which <Acronym data={Acronyms.btw}/> <Citation data={Citations['']}>doesn't necessarily mean sans cage) became more readily available</Citation>, and <Citation data={Citations['']}>major food sellers like McDonalds, Safeway, Taco Bell, Starbucks, and Walmart committed to only buying cage-free eggs</Citation>.
 				</span>
 			}
     },
@@ -109,7 +109,9 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				title: "Why does PETA disagree?",
-				text: <span>Perhaps the most confusing part is who the proponents and opponents are.
+				text:
+				<span>
+					This proposition is particularly confusing because interest groups that sound like they should be aligned aren’t. PETA for example claims that Prop 2 didn’t lead to actually cage-free eggs, and Prop 12 allows these harsh conditions to continue until 2022.
 				</span>
 			}
 		},
@@ -140,11 +142,15 @@ const Data = {
 						subsectionTitle: "Statements from interest groups",
 						links: [
 							{
-								text: "Peninsula Humane Society & SPCA",
+								text: "Peninsula Humane Society & SPCA say no",
 								url: "https://peninsulahumanesociety.org/proposition-12/",
 							},
 							{
-								text: "Humane Farming Association",
+								text: "PETA says no",
+								url: "https://www.peta.org/blog/why-we-oppose-californias-farmed-animal-initiative-and-you-should-too/",
+							},
+							{
+								text: "Humane Farming Association say no",
 								url: "https://www.hfa.org/",
 							},
 						]

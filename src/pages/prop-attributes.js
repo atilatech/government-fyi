@@ -165,7 +165,7 @@ const shortTitles = [
   "9 would've split CA, literally",
   "10 legalizes rent control again",
   "11 requires EMTs be on-call during breaks",
-  "12 sets floor space requirements for meat animals"
+  "12 sets floor space requirements for farmed animals"
 ]
 
 const headlines = [
@@ -180,7 +180,7 @@ const headlines = [
   "Prop 9 would've split CA, literally",
   "Prop 10 legalizes rent control again",
   "Prop 11 requires EMTs be on-call during breaks",
-  "Prop 12 sets floor space requirements for meat animals"
+  "Prop 12 sets floor space requirements for farmed animals"
 ]
 
 const descriptions = [

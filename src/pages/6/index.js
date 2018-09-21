@@ -61,7 +61,7 @@ const Data = {
 					},
 					{
 						title: "Vehicle Registration fees",
-						description: <span>Depending on the value of your car, a <em>transportation improvement fee</em> of $25 to $175 is added to your vehicle regisration costs. Rakes in $1.6B.</span>,
+						description: <span>Depending on the value of your car, a <em>transportation improvement fee</em> of $25 to $175 is added to your vehicle registration costs. Rakes in $1.6B.</span>,
 					},
 					{
 						title: "Zero-emission vehicle fee",

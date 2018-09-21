@@ -24,9 +24,9 @@ export const Citations = {
 	},
 	'3':{
 		link:'http://www.sandiegouniontribune.com/opinion/commentary/sd-utbg-prop11-ambulance-workers-20180822-story.html',
-    publication: "",
-    headline: "",
-    directQuote:""
+    publication: "San Diego Union Tribune",
+    headline: "Op-ed | Prop. 11 will skirt pay for ambulance workers and put them at risk",
+    directQuote:"Since we do not have designated rest/meal spaces, you might have seen us taking our breaks on street corners, in a restaurant, or in our ambulances, all the while listening to our radios for an emergency. When we are dispatched for an emergency call, we’re legally entitled to receive compensation for the interruption."
 	},
 	'4':{
 		link:'https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf',
@@ -34,5 +34,11 @@ export const Citations = {
     headline: "Text of proposed laws: Prop 11, pg 85",
     directQuote:"Emergency ambulance employees shall be compensated at their regular hourly rate of pay during meal and rest periods."
 	},
+	'5':{
+		link:"https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-No-on-California-Prop-11-13216457.php",
+		publication:"SF Chronicle",
+		headline:"The Chronicle recommends: No on California Prop.11",
+		directQuote:"Here is what you need to know: The union representing 4,000 ambulance workers agrees with the need for a fix. In fact, it supported AB263, which spelled out that employees could be required to monitor pagers, radios, station and alert boxes, intercoms, cell phones and other communications devices during their breaks",
+	}
 
 }

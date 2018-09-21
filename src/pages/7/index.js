@@ -16,7 +16,7 @@ import {Acronyms, Citations} from './expandables'
 import UsMap from './topojson/states-topojson'
 import TzMap from './topojson/timezones-2'
 import LASunTimes from './suntimes/la.js'
-// import SFSunTimes from './suntimes/sf.js'
+import SFSunTimes from './suntimes/sf.js'
 
 const Data = {
 	pageId:"prop-7",
@@ -31,18 +31,16 @@ const Data = {
     	data: {
     		title: "Some caveats",
     		text: <span>
-					If Prop 7 passes, it gives the California state legislature the power to change Daylight Saving Time, with two-thirds vote, as long as it's cool with federal law. <Citation data={Citations['2']}>Currently, federal law only allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – or something), or opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>) </Citation>. If we wanted to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what's being argued for, <Citation data={Citations['1']}>California needs Congress to amend the Uniform Time Act of 1966</Citation>.
+					If Prop 7 passes, it gives the California state legislature the power to change Daylight Saving Time, with two-thirds vote, as long as it's cool with federal law. <Citation data={Citations['2']}>Currently, the Uniform Time Act of 1966 only allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – or something), or opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we wanted to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what's being argued for, <Citation data={Citations['1']}>California needs Congress to amend federal law.</Citation>
 					<br/><br/>
 					<em>Again, passing Prop 7 does not immediately change anything regarding <Acronym data={Acronyms.DST}/></em>. It gives them the power to change things, voices our public opinion to our  legislators, and points us down the path of year-round DST.
-					<br/><br/>
-					With that in mind...
 				</span>
     	}
     },
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "Let's say we were on DST all year",
+				title: "Let's suppose we were on DST all year",
 				text: "Let's pretend Prop 7 passes, the state legislature moves California to DST permanently, and Congress approves it. Here's what it'd look like.",
 				nColWidth: 6
 			}
@@ -63,41 +61,47 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				text:<span>If Congress allows states move to permanent DST, but most other states continue switching their clocks twice a year, California would be two hours from NY in the winter, and three hours in the summer. <Citation data={Citations['3']}>Good news though. Florida just passed legislation to move to permanent DST</Citation>, so we'd always be in sync and three hours from Florida Man.</span>
+				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress allowed us to have our own time zone, the time difference between CA and NY would be two hours in the winter, but three hours in the summer. Coincidentally, California and Arizona would be on the same time, all the time. <Citation data={Citations['3']}>Florida just passed legislation to move to permanent DST, so we'd always be three hours from Florida Man.</Citation></span>
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
 				title:"Darker mornings or longer afternoons?",
-				text:<span>Moving to DST year-round would be most noticeable in winter, when on <Acronym data={Acronyms.xmas}/> in <Acronym data={Acronyms.LA}/>, the sun would rise at 7:56am. In SF, 8:23am. <Citation data={Citations['5']}>Opponents of Prop 7 argue that children would go to school in the dark during winter, and traffic accidents during rush hour would worsen</Citation>.
+				text:
+				<span>
+					Moving to DST year-round would be most noticeable in winter, when on <Acronym data={Acronyms.xmas}/> in <Acronym data={Acronyms.LA}/>, the sun would rise at 7:56am. In SF, 8:23am. <Citation data={Citations['5']}>Opponents of Prop 7 argue that children would go to school in the dark during winter, and traffic accidents during rush hour would worsen.</Citation>
 					<br/><br/>
-					On the bright side, the earliest the sun would set is 5:43pm in LA, 5:50pm in SF. <Citation data={Citations['6']}>Proponents argue that later sunsets result in electricity savings from reduced evening lighting</Citation>, but <Citation data={Citations['7']}>this may be negated by increased <Acronym data={Acronyms.AC}/> usage</Citation>. (Not a concern in SF). Overall, it seems inconclusive<Citation data={Citations['8']}>Those who just want to get rid of the clock-switching costs argue that there would be less car accidents at night and heart attacks</Citation>, or simply want longer daylight at the end of the day.
+					On the bright side, the earliest the sun would set is 5:43pm in LA, rather than the current low of 4:43pm. <Citation data={Citations['6']}>Proponents argue that later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>And, crazily, less clock switching reduces heart attacks the following day.</Citation>
 					<br/><br/>
-					Luckily, everyone has an opinion about daylight savings.
+					Some simply want brighter mornings, and others want longer afternoons. Luckily, everyone has an opinion.
 				</span>
 			}
 		},
 		{
 			component: SubsectionTitleBlock,
 			data: {
-				title: "Sunrise and sunset times in Los Angeles (2018)"
+				title: "Sunrise and sunset times in SF (2018)"
 			}
 		},
 		{
 			component: DSTSunInteractiveBlock,
 			data: {
-				src: LASunTimes,
-				// src: SFSunTimes
+				// src: LASunTimes,
+				src: SFSunTimes
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
 				title:"Not the first time",
-				text:<span><Citation data={Citations['4']}>The US has moved to permanent Daylight Saving thrice in the past, in an effort to save energy by having longer afternoons.</Citation>
+				text:
+				<span>
+					<Citation data={Citations['4']}>The US has moved to permanent Daylight Saving thrice in the past, all in efforts to save energy. The first was in WWI (where Congress repealed it soon after), the second in WWII, and the third during the oil embargo, from 1973-75.</Citation>
 					<br/><br/>
-					We can't find any surveys on public opinion on the change, but several articles talk about people being grumpy.
+					<Citation data={Citations['9']}>In the case of 1973-75, the act was hotly debated, with many of the same arguments used today. After the nation-wide experiment was finished, DoT and NIST conducted a study and found no significant differences in traffic fatalities or energy savings. But when the data was sliced in a certain way, they found a significant difference in fatalities among school-aged children in the mornings during Jan - April 1974, compared to the year earlier (non-DST).</Citation>
+					<br/><br/>
+					But as others have shown with electricity savings, differences found nationally may not apply locally, though.
 				</span>
 			}
 		},

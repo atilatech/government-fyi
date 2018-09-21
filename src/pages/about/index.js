@@ -22,7 +22,7 @@ const Data = {
     {
     	component: PageTitleBlock,
     	data: {
-    		title: "We do your election homework",
+    		title: "We do your election homework for you",
     	}
     },
     {

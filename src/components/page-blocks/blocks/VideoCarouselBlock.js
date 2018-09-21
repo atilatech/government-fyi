@@ -7,7 +7,7 @@ import {NavArrow} from 'components/static/icons'
 /*
 usage:
 {
-	
+
 	component: VideoCarouselBlock,
 	data: {
 		videos: [
@@ -151,6 +151,7 @@ class VideoCarouselBlock extends React.Component {
 		const iFrameWidth = this.state.isXsScreen ? "330" : "560";
 		const iFrameHeight = this.state.isXsScreen ? "185" : "315";
 		const {videos} = this.props.data;
+		const showNav = videos.length > 1;
 		const videoBlocks = videos.map ( (video, i) => (
 			<VideoBlock key={i}>
 				<iframe
@@ -174,16 +175,20 @@ class VideoCarouselBlock extends React.Component {
 				<Spacer height={30}/>
 				<CarouselContainer>
 					<OuterWindow>
-						<NavButton onClick={()=>this.navVideos(-1)} style={{transform:'rotate(180deg)'}}><NavArrow color="#fff"/></NavButton>
+						{showNav &&
+							<NavButton onClick={()=>this.navVideos(-1)} style={{transform:'rotate(180deg)'}}><NavArrow color="#fff"/></NavButton>
+						}
 						<Window>
 							<InnerReel isXs={this.state.isXsScreen} carouselIndex={this.state.carouselIndex}>
 								{videoBlocks}
 							</InnerReel>
 						</Window>
-						<NavButton onClick={()=>this.navVideos(1)}><NavArrow color="#fff"/></NavButton>
+						{showNav &&
+							<NavButton onClick={()=>this.navVideos(1)}><NavArrow color="#fff"/></NavButton>
+						}
 					</OuterWindow>
 				</CarouselContainer>
-				{this.state.isXsScreen &&
+				{(this.state.isXsScreen && showNav) && 
 					<NavBar>
 						<MobileNavButton onClick={()=>this.navVideos(-1)}>Prev</MobileNavButton>
 						<MobileNavButton onClick={()=>this.navVideos(1)}>Next</MobileNavButton>
