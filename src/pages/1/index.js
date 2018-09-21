@@ -4,6 +4,7 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import SummaryListBlock from 'components/page-blocks/blocks/SummaryListBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
+import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 import BondData from './bond-data.json'
 import Color from 'layout/colors'
@@ -97,10 +98,62 @@ const Data = {
 					<Citation data={Citations['3']}>Opponents argue that with a state budget surprlus of $16B and already-high taxes, legislators should be making structural reforms rather than creating more debt for another band-aid.</Citation> <Citation data={Citations['4']}>They point to <Acronym data={Acronyms.CEQA}/>, rent control, and prevailing wages as examples of regulation that drives up the cost of construction</Citation>, a factor that has lead to a shortage in housing.
 					<br/><br/>
 					Nearly everyone agrees housing affordability is an issue in California. It's how we get through it that's contentious.
-
 				</span>
     	},
     },
+		{
+			component: SectionTitleBlock,
+			data: {
+				title: "A debate"
+			}
+		},
+		{
+			component: IMessageBlock,
+			data: {
+				messages: [
+					{
+						from: "me",
+						body: <span>California doesn't need to add more bond debt. <Citation data={Citations['5']}>We already have the one of the highest taxes per person</Citation></span>,
+					},
+					{
+						from: "them",
+						body: "It doesn't necessarily lead to higher taxes. General obligation bond debt is paid out of the general fund, which depends both on how much we tax and how much we spend"
+					},
+					{
+						from: "me",
+						body: "Yes, California is going to spend less. 😒"
+					},
+					{
+						from: "me",
+						body: "We have a surplus, why don't we spend that? Or why not make actual lasting reform to help solve housing."
+					},
+					{
+						from: "them",
+						body: <span><Citation data={Citations['6']}>14 of the $16 billion is our rainy day fund, for the next recession</Citation>, expected soon.</span>
+					},
+					{
+						from: "them",
+						body: "And I agree that we should make real changes, but you know those take time, both to pass and for people to actually feel the effects."
+					},
+					{
+						from: "me",
+						body: <span>If you want to save time, reform CEQA. <Citation data={Citations['7']}>It could add 18 months in construction delays.</Citation>, or don't, <Citation data={Citations['9']}>and reduce local government review of projects, like this Berkeley study suggests.</Citation></span>
+					},
+					{
+						from: "me",
+						body: <span><Citation data={Citations['8']}>Prop 1 might only build us 15,000 units</Citation>. We need 180K a year. Voting no sends a message to politicians that we need more than just a temporary fix.</span>
+					},
+					{
+						from: "them",
+						body: <Citation data={Citations['10']}>CEQA isn't the problem.</Citation>
+					},
+					{
+						from: "them",
+						body: <span>We can debate forever on housing. Real people need this assistance now, and this is the fastest way to help them.</span>
+					}
+				]
+			}
+		},
 		{
 			component: SectionTitleBlock,
 			data:{

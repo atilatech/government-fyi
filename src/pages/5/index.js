@@ -56,6 +56,10 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
+								text: "KQED Forum debate",
+								url: "https://www.kqed.org/forum/2010101867263/election-2018-proposition-5-property-tax-break"
+							},
+							{
 								text: "Legislative Analyst's Office analysis",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=5&year=2018",
 							},
