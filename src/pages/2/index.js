@@ -12,8 +12,8 @@ const Data = {
 	pageId:"prop-2",
 	propNum: 2,
 	meta: {
-		dateCreated: new Date('September 15, 2018 10:00:00'),
-		dateModified: new Date('September 15, 2018 10:00:00')
+		dateCreated: new Date('October 8, 2018 10:00:00'),
+		dateModified: new Date('October 8, 2018 10:00:00')
 	},
 	blocks: [
     {
@@ -37,6 +37,10 @@ const Data = {
 					{
 						subsectionTitle: "Arguments in favor",
 						links: [
+							{
+								text: "SF Chronicle Editorial Board",
+								url: "https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Yes-on-California-Prop-1-13231141.php"
+							},
 							{
 								text: "",
 								url: ""

@@ -53,8 +53,8 @@ const TitleContainer = styled.div`
 	margin-top: ${props=>props.noBorder ?6:3}px;
 	margin-right: 30px;
 	text-align: right;
-	min-width: 130px;
-	max-width: 130px;
+	min-width: 180px;
+	max-width: 180px;
 	@media screen and (max-width: 767px) {
 		width: 100%;
 		border: none;
@@ -81,6 +81,7 @@ export const ExpandButton = styled.div`
 `;
 
 const StyledH3 = styled.h3`
+	font-size: 14px;
 `
 
 

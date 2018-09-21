@@ -26,8 +26,8 @@ const Data = {
 	pageId:"prop-12",
 	propNum: 12,
 	meta: {
-		dateCreated: new Date('September 15, 2018 10:00:00'),
-		dateModified: new Date('September 15, 2018 10:00:00')
+		dateCreated: new Date('October 8, 2018 10:00:00'),
+		dateModified: new Date('October 8, 2018 10:00:00')
 	},
 	blocks: [
     {
@@ -43,7 +43,7 @@ const Data = {
     		title: "Prop 12 is the new Prop 2",
     		text: <span>A decade ago, we passed Prop 2, written by the Humane Society of US (HSUS), the same authors of Prop 12. <Citation data={Citations['1']}>Prop 2 said that animals raised for meat must have enough space to "to lie down, stand up, fully extend their limbs and turn around freely."</Citation>
 					<br/><br/>
-					After it passed, cage-free eggs (which <Acronym data={Acronyms.btw}/> <Citation data={Citations['']}>doesn't necessarily mean sans cage) became more readily available</Citation>, and <Citation data={Citations['']}>major food sellers like McDonalds, Safeway, Taco Bell, Starbucks, and Walmart committed to only buying cage-free eggs</Citation>.
+					After it passed, cage-free eggs (which <Acronym data={Acronyms.btw}/> <Citation data={Citations['2']}>doesn't necessarily mean sans cage</Citation>) became more readily available, and <Citation data={Citations['1']}>major food sellers like McDonalds, Safeway, Taco Bell, Starbucks, and Walmart committed to only buying cage-free eggs</Citation>.
 				</span>
 			}
     },
