@@ -146,6 +146,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_2,_Use_Millionaire%27s_Tax_Revenue_for_Homelessness_Prevention_Housing_Bonds_Measure_(2018)"
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop2"
 							}
 						]
 					}

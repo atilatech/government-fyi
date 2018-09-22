@@ -164,6 +164,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_8,_Limits_on_Dialysis_Clinics%27_Revenue_and_Required_Refunds_Initiative_(2018)"
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop8"
 							}
 						]
 					}

@@ -53,6 +53,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_10,_Local_Rent_Control_Initiative_(2018)"
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop10"
 							}
 						]
 					}

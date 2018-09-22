@@ -118,6 +118,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_11,_Ambulance_Employees_Paid_On-Call_Breaks,_Training,_and_Mental_Health_Services_Initiative_(2018)#cite_note-11"
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop11"
 							}
 						]
 					}

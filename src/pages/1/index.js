@@ -104,7 +104,8 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data: {
-				title: "A debate"
+				title: "A debate",
+				nColWidth: 6
 			}
 		},
 		{
@@ -208,6 +209,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_1,_Housing_Programs_and_Veterans%27_Loans_Bond_(2018)"
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop1"
 							}
 						]
 					}

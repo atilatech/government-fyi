@@ -70,6 +70,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_5,_Property_Tax_Transfer_Initiative_(2018)",
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop5"
 							}
 						]
 					}

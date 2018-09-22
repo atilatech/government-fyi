@@ -38,8 +38,8 @@ const Data = {
 						subsectionTitle: "Arguments in favor",
 						links: [
 							{
-								text: "",
-								url: ""
+								text: "Fresno Bee Editorial Board",
+								url: "https://www.fresnobee.com/opinion/editorials/article217097890.html"
 							},
 						]
 					},
@@ -47,8 +47,16 @@ const Data = {
 						subsectionTitle: "Arguments against",
 						links: [
 							{
-								text: "",
-								url: "",
+								text: "San Diego Union-Tribune Editorial Board",
+								url: "http://www.sandiegouniontribune.com/opinion/endorsements/sd-proposition-3-water-bond-20180911-story.html",
+							},
+							{
+								text: "Mercury News & East Bay Times Editorial Board",
+								url: "https://www.mercurynews.com/2018/09/19/editorial-reject-prop-3-8-9-billion-pay-to-play-water-bond/",
+							},
+							{
+								text: "Santa Cruz Sentinel Editorial Board",
+								url: "http://www.santacruzsentinel.com/opinion/20180918/editorial-vote-no-on-water-bond-prop-3-yes-on-prop-4-childrens-hospitals",
 							},
 						]
 					},
@@ -66,6 +74,10 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_3,_Water_Infrastructure_and_Watershed_Conservation_Bond_Initiative_(2018)"
+							},
+							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop3"
 							}
 						]
 					}
