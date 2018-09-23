@@ -39,6 +39,24 @@ export const Citations = {
 		publication:"SF Chronicle",
 		headline:"The Chronicle recommends: No on California Prop.11",
 		directQuote:"Here is what you need to know: The union representing 4,000 ambulance workers agrees with the need for a fix. In fact, it supported AB263, which spelled out that employees could be required to monitor pagers, radios, station and alert boxes, intercoms, cell phones and other communications devices during their breaks",
+	},
+	'6': {
+		link:"http://www.latimes.com/politics/la-pol-ca-road-map-proposition-11-ambulance-workers-20180916-story.html",
+		publication: "LA Times",
+		headline:"California lawmakers didn't act. Now the private ambulance industry is asking voters to change workplace rules",
+		directQuote:"And so the industry — seeking not only to close off its exposure to lawsuits, but also to avoid future efforts by organized labor to enshrine the work rules in state law — decided to take its chances with voters. American Medical Response, one of the country’s largest ambulance companies, spent $2.8 million to gather the voter signatures needed to qualify for what became Proposition 11."
+	},
+	'7': {
+		link:"http://www.latimes.com/politics/la-pol-ca-road-map-proposition-11-ambulance-workers-20180916-story.html",
+		publication: "LA Times",
+		headline:"California lawmakers didn't act. Now the private ambulance industry is asking voters to change workplace rules",
+		directQuote:"As for opponents, they’ve largely been silent. The California Democratic Party voted to formally oppose Proposition 11, but there’s been little else said. Perhaps the most surprising moment came when no one — not even a member of the public — submitted any written argument against the measure to be included in the statewide voter information guide.",
+	},
+	'8':{
+		link:"",
+		publication:"LA Times archives",
+		headline:"The Lone Dissenter Rides Again",
+		directQuote:"That was 1978. But Wesley persisted in later years and made the ballot with two opposing arguments in 1980, applied but failed to make the ballot with arguments in 1982 and 1984, and this year scored his biggest success by having six of his arguments accepted.\"Voters deserve arguments on both sides,\" said the 33-year-old Wesley in an interview in his downtown law office here."
 	}
 
 }

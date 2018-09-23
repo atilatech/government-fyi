@@ -69,11 +69,11 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: "But you agree we need more housing? This is a way to do it without adding debt, and Prop 63 makes 2 billion a year!"
+						body: "But you agree we need more housing? This is a way to do it without adding debt, and Prop 63 makes 2 billion a year. $120M is just a small portion of that."
 					},
 					{
 						from: "me",
-						body: "$120 million a year will go to a lot of administrative fees and interest from the bonds. There's better ways to solve housing, if that's your goal."
+						body: "$120 million a year would go to a lot of administrative fees and interest from the bonds. There's better ways to solve housing, if that's your goal."
 					}
 				]
 			}

@@ -43,11 +43,12 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title:"And what do workers want?",
+				title:"And what do workers think?",
 				text:
 				<span>
-					It's clear that ambulance <em>companies</em> want Prop 11 to pass. <Citation>The main funder of the measure is American Medical Response (AMR), of which a lawsuit has been brought up against</Citation>. Not only would Prop 11 save them much money over the long-term, but it would also absolve them of the liability they've incurred by not paying EMTs during breaks that have been interrupted – as the lawsuit accuses them of.
-
+					An EMT labor union representing 4,000 EMTs has spoken out against Prop 11, but other than that, <Citation data={Citations['7']}>no other EMTs or orgs have expressed themselves. Nobody, not even <Citation data={Citations['8']}>Gary Wesley</Citation>, submitted an official ballot arguments submitted against Prop 11.</Citation>
+						<br/><br/>
+					It's clear that ambulance <em>companies</em> want Prop 11 to pass. <Citation data={Citations['6']}>The main funder of the measure is American Medical Response (AMR), of which a lawsuit has been brought up against</Citation>. Not only would Prop 11 save them much money over the long-term, but it would also absolve them of the liability they've incurred by not paying EMTs during breaks that have been interrupted – as the lawsuit accuses them of.
 				</span>
 			}
 		},
@@ -72,6 +73,15 @@ const Data = {
 								text: "Press Enterprise Editorial Board",
 								url: "https://www.pe.com/2018/09/13/yes-on-proposition-11-for-more-sensible-911-services/"
 							},
+							{
+								text: "San Diego Union Tribune Editorial Board",
+								url: "http://www.sandiegouniontribune.com/opinion/editorials/sd-proposition-11-paramedics-emts-breaks-20180921-story.html"
+							},
+							{
+								text: "Press Democrat Editorial Board",
+								url: "https://www.pressdemocrat.com/opinion/8713606-181/pd-editorial-yes-on-prop?sba=AAS"
+							},
+
 						]
 					},
 					{

@@ -141,7 +141,7 @@ const images = [
 const titles = [
   "Prop 1 buys us $4B for housing programs",
   "Prop 2 changes how to use the Millionaire's tax",
-  "Prop 3 buys us ~$9B for water-y projects",
+  "Prop 3 buys us $8.9B for water projects",
   "Prop 4 buys us $1.5B for children's hospitals",
   "Prop 5 lets older folk move with their property tax assessments",
   "Prop 6 repeals last year's gas tax",
@@ -156,7 +156,7 @@ const titles = [
 const shortTitles = [
   "1 issues $4B for housing",
   "2 diverts revenue from Millionaire's tax",
-  "3 issues $9B for water projects",
+  "3 issues $8.9B for water projects",
   "4 issues $1.5B for children's hospitals",
   "5 lets older folk move with their property tax assesments",
   "6 repeals last year's gas tax",
