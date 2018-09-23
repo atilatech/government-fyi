@@ -24,7 +24,7 @@ const CardLabel = styled.span`
 `;
 
 const SourcePublication = styled.span`
-	display: inline-block;
+	display: block;
   font-size: 14px;
   font-weight: normal;
 	margin-top: 10px;
