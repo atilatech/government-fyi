@@ -25,7 +25,7 @@ const Data = {
 					Prop 3 would issue $8.9B in general obligation bonds for water projects throughout California. <Citation data={Citations['5']}>Yes, we just passed a water bond in June, but that one was placed on the ballot by the state legislature. Prop 3 is voter-initiated. Its opponents say that this is the main reason to vote no – it funds projects of those who gave money to its campaign.</Citation> <Citation data={Citations['4']}>Supporters of Prop 3 say Prop 68 focused on water problems of the coastal, urban Democrat, whereas Prop 3 focuses on inland California.</Citation>
 					<br/><br/>
 					Separate from the bond, Prop 3 would also divert part of the revenue from Cap and Trade to four water agencies that have higher electricty bills as a result of Cap and Trade. <Citation data={Citations['7']}>The four agencies would receive an amount equal to the additional electricity costs, but would have to use it on activities such as water conservation programs.</Citation>
-					</span>,
+				</span>,
     	},
     },
     {
@@ -140,6 +140,10 @@ const Data = {
 								text: "Fresno Bee Editorial Board",
 								url: "https://www.fresnobee.com/opinion/editorials/article217097890.html"
 							},
+							{
+								text:"Article: Officials kick off Prop. 3 campaign",
+								url:"https://hanfordsentinel.com/news/local/officials-kick-off-prop-campaign/article_4b04e7e1-89d7-5c2d-ac28-6e0cd60d7798.html"
+							}
 						]
 					},
 					{

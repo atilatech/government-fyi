@@ -60,10 +60,17 @@ const Caption = styled.div`
     width: 95%;
   }
 `;
+const Attrib = styled.h3`
+  display: block;
+  font-size: 10px;
+  color: #999;
+  margin-bottom: 20px
+  text-align: right;
+`
 
 
 const ImgBlock = (props) => {
-	const {images, caption, nColWidth} = props.data;
+	const {images, caption, nColWidth, attribution} = props.data;
 	const nWidth = nColWidth || 10;
 	const offset = Math.floor((12-nWidth)/2)
   const imageSet = images.map((img, i)=>{
@@ -86,6 +93,7 @@ const ImgBlock = (props) => {
         <Container>
           {imageSet}
         </Container>
+        {attribution && <Attrib>{attribution}</Attrib>}
 				{caption && <Caption>{caption}</Caption>}
 				<Spacer height={40}/>
 			</Col>
@@ -109,6 +117,7 @@ ImgBlock.propTypes = {
 		caption: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		nColWidth: PropTypes.number,
 		link: PropTypes.string,
+    attribution: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 	})
 }
 

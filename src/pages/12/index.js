@@ -49,12 +49,12 @@ const Data = {
     		title: "Prop 12 is the new Prop 2",
     		text:
 				<span>
-					A decade ago, we passed Prop 2, written by the Humane Society of US (HSUS), the same authors of today's Prop 12. <Citation data={Citations['1']}>Prop 2 banned the confinement of animals sold for meat and eggs that don't have enough space "to lie down, stand up, fully extend their limbs and turn around."</Citation> Soon afterwards, legislation passed that applied Prop 2 to all eggs sold in the state, regardless of where they were laid.
+					A decade ago, we passed Prop 2, written by the Humane Society of the US (HSUS), the same authors of this election's Prop 12. <Citation data={Citations['1']}>Prop 2 banned the confinement of animals sold for meat and eggs that don't have enough space "to lie down, stand up, fully extend their limbs and turn around."</Citation> Soon afterwards, legislation passed that applied Prop 2 to all eggs sold in CA, regardless of where they were laid.
 					<br/><br/>
 					Haters gonna hate. (We wouldn't be America otherwise.) We've compiled the list of reasons Prop 2 is still shat on.
 					<ul>
-						<li>It's <b>unconsitutional</b> – because it violates the interstate commerce clause by requiring other states that sell eggs in California to comply. <Citation data={Citations['2']}> 13 states have filed a suit with the US Supreme Court to argue this.</Citation></li>
-						<li>It's <b>too vague</b> – and therefore unenforcable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
+						<li>It's <b>unconstitutional</b> – because it violates the interstate commerce clause by requiring other states that sell eggs in California to comply. <Citation data={Citations['2']}> 13 states have filed a suit with the US Supreme Court to argue this.</Citation></li>
+						<li>It's <b>too vague</b> – and therefore unenforceable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
 						<li>It <b>cost farmers a lot</b> – <Citation data={Citations['7']}>It cost all CA farmers several hundred million to convert out of battery cages</Citation>, but <Citation data={Citations['8']}>it seems they would have done that anyway because of salmonella outbreaks</Citation> and <Citation data={Citations['9']}>shifting public opinion.</Citation></li>
 						<li>It <b>raised egg prices, hurt production</b> – <Citation data={Citations['14']}>Some estimates say egg production dropped by 35%</Citation>, and <Citation data={Citations['10']}>prices rose by 33%.</Citation> <Citation data={Citations['11']}>One analyst says it spiked in 2008, and has since gone back down.</Citation> </li>
 						<li>It <b>didn't do enough</b> - because the law didn't specify an enforcing authority, it fell on localities. <Citation data={Citations['13']}>The Chronicle says two-thirds of hens are still in cages, </Citation> <Citation data={Citations['16']}>perhaps just less crowded than before to comply with Prop 2</Citation>.</li>
@@ -106,7 +106,8 @@ const Data = {
 						alt: "A pig in 24 sq. ft. Art by David Goligorsky",
 					},
 				],
-				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we commissioned an artist to visualize it. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>. <br/>(Art by David Goligorsky)<sup>3</sup></span>
+				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we hired some animals on the internet to model for us. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>.</span>,
+				attribution:<span>(Art by David Goligorsky)<sup>3</sup></span>
 			}
 		},
 		{
@@ -133,11 +134,11 @@ const Data = {
 				title: "Why does PETA disagree?",
 				text:
 				<span>
-					This proposition is particularly confusing because interest groups that sound like they should be aligned, are not. <Citation data={Citations['19']}>For example, <Acronym data={Acronyms.PETA}/> claims that Prop 2 didn’t lead to actually cage-free eggs, and Prop 12 allows these harsh conditions to legally continue until 2022.</Citation> In other words, <Acronym data={Acronyms.PETA}/> is saying it will take too long.
+					<Citation data={Citations['19']}><Acronym data={Acronyms.PETA}/> says that Prop 2 didn’t really lead to cage-free eggs, and Prop 12 allows these harsh conditions to legally continue until 2022.</Citation> In other words, <Acronym data={Acronyms.PETA}/> says it will take too long.
 					<br/><br/>
-					Others say it's not enough time for farmers and sellers. <Citation data={Citations['20']}>In a way, <Acronym data={Acronyms.HSUS}/> is breaking their agreement with many of these corporations who have pledged to go cage-free by 2025, forcing them to go cage-free three years early.</Citation>
+					Other dissenters say it's not enough time for farmers and sellers to transition. <Citation data={Citations['20']}>In a way, <Acronym data={Acronyms.HSUS}/> is breaking their agreement with the many corporations who have pledged to go cage-free by 2025, forcing them to go cage-free three years early.</Citation>
 					<br/><br/>
-					<Citation data={Citations['21']}>We know it's a lot to take in, but to many, it's a tender subject. Now that you're eggstra knowledgable on this eggstremely meaty proposition, we hope you might be able to eggsplain it to all your seggsy friends.</Citation>
+					<Citation data={Citations['21']}>We know it's a lot to take in, but to many, it's a tender subject. Now that you're eggstra knowledgeable on this meaty proposition, we hope you might be able to eggsplain it to all your seggsy friends.</Citation>
 				</span>
 			}
 		},

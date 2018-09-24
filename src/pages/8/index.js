@@ -20,15 +20,51 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		// title: "",
+    		title: "Wait, what's dialysis?",
     		text:
 				<span>
-					Prop 8 would limit dialysis clinics’ revenue to 115% of the combined “direct patient care service costs” and “health care quality improvement costs”, and require clinics to issue refunds to patients for any amount over that. It’s a roundabout way to try to force these businesses to spend their revenue on these two categories.
-					<br/><br/>
-					Dialysis clinics provide vital treatments for the 80,000 Californians with kidney disease, by hooking them up to dialysis machines, filtering and cleaning their blood.
+					<Citation>About 80K Californians live with kidney disease.</Citation> Dialysis is a vital treatment that performs what a healthy kidney would do. Three times a week, patients sit in a chair for four hour sessions while a machine cleans their blood.
 				</span>
     	},
     },
+    {
+    	component: TextWithTitleBlock,
+    	data: {
+    		title: "What about profits?",
+    		text:
+				<span>
+					Prop 8 would limit dialysis clinics’ revenue to 115% of the costs for “direct patient care" and “health care quality improvements.” It would require clinics to issue refunds for any revenue exceeding that amount. Really, it’s a roundabout way to try to force these businesses to spend their revenue on these two categories. Depending on how it’s interpreted and implement, it could change these 80K patients’ lives.
+				</span>
+    	},
+    },
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: "Seems kinda obscure to vote on this",
+				text:
+				<span>
+					The dispute between a labor union and for-profit dialysis clinics runs deep. The union, <Acronym data={Acronyms.SEIU}/> West, has previously used the ballot initiative process as leverage in legislative negotiations, and the union has failed to unionize dialysis healthcare workers. <Acronym data={Acronyms.SEIU}/> West says they want to increase patient care in these highly-profitable clinics, and point to reports of bug infestations, run-down equipment, and unsterile conditions. A former worker who was fired for trying to get others to unionize said workers were told to get through as many patients as possible.
+					<br/><br/>
+					Opponents claim Prop 11 is a way for <Acronym data={Acronyms.SEIU}/> West to add union members, and its passage would put people’s lives at risk by potentially closing clinics.
+					<br/><br/>
+					Either way, both sides are spending tens of millions of dollars in ads fighting this until November.
+				</span>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: "It may come down to definitions",
+				text:
+				<span>
+					The profit limit would could cause clinics to increase spending on “direct patient care services” and “healthcare improvements” which includes “non-managerial” clinic workers salaries, pharmaceuticals, equipment, technology, training, and patient education.
+					<br/><br/>
+					Opponents argue that because these categories do not include spending on medical directors, clinic coordinators, regulatory compliance, or facility security, it could force clinics to close. It’s unclear how Prop 8 would financially impact dialysis clinics.
+					<br/><br/>
+					It's also not clear what costs apply to these categories. For example, federal law requires clinics to have certain positions, in order to receive Medicare payments – like a medical director and nurse manager. They perform managerial functions, but they also perform direct patient care. Can their salaries be counted towards this spending? If so, the profit limit is higher.
+				</span>
+			}
+		},
 		{
 			component: SectionTitleBlock,
 			data: {
@@ -51,34 +87,6 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				text: "The segment talks about some of the clinics that Prop 8 targets. If you acknowledge the issues Oliver brings up, does Prop 8 help solve them?"
-			}
-		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				title: "Seems kinda obscure to vote on this",
-				text:
-				<span>
-					The dispute between a labor union and for-profit dialysis clinics runs deep. The union, <Acronym data={Acronyms.SEIU}/> West, has previously used the ballot initiative process as leverage in legislative negotiations, and the union has failed to unionize dialysis healthcare workers. <Acronym data={Acronyms.SEIU}/> West says they want to increase patient care in these highly-profitable clinics, and point to reports of bug infestations, run-down equipment, and unsterile conditions. In John Oliver's segment, one former worker (who was fired for trying to get others to unionize), explained that workers were told to get through as many patients as possible.
-					<br/><br/>
-					Opponents claim Prop 11 is a way for <Acronym data={Acronyms.SEIU}/> West to add union members, and its passage would put people’s lives at risk by potentially closing clinics.
-					<br/><br/>
-					Either way, both sides are spending tens of millions of dollars in ads fighting this until November.
-				</span>
-			}
-		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				title: "It may come down to definitions",
-				text:
-				<span>
-					The requirement to issue refunds would incentivize dialysis clinics to “direct patient care services” and “healthcare improvements” which includes “non-managerial” clinic workers salaries, pharmaceuticals, equipment, technology, training, and patient education.
-					<br/><br/>
-					Opponents argue that because these categories do not include spending on medical directors, clinic coordinators, regulatory compliance, or facility security, it could force clinics to close. It’s also unclear exactly how dialysis clinics would financially deal with Prop 8's constraints.
-					<br/><br/>
-					What constitutes an allowable cost is also not clear-cut. For example, federal law requires clinics to have certain positions, in order to receive Medicare payments – like a medical director and nurse manager. They perform managerial functions, but they are also involved in direct patient care. Are their wages allowable costs?
-				</span>
 			}
 		},
 		{

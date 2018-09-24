@@ -12,7 +12,7 @@ export const Acronyms = {
     acronym: "HI"
   },
   xmas: {
-    expanded: "Christ-Santa Day",
+    expanded: "Christ-Santa",
     acronym: "Xmas"
   },
   LA: {

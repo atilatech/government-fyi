@@ -25,9 +25,9 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "This one is cut & dry",
-    		text: <span>At least, on what it intends to do. How to vote, not so much. Prop 1 would issue $4 billion in general obligation bonds to fund housing programs.
+    		text: <span>Yep, at least on what the prop intends to do. How you should vote, however, not so much. Prop 1 would issue $4B in general obligation bonds to fund housing programs.
 					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B of that money is housing loans to veterans, which are of no cost to the state. <Citation data={Citations['1']}>The rest of the money ($3B) will cost the state $5.9B over their lifetime, or $170M annually (roughly 0.1% of the annual budget).</Citation></span>,
+					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans to veterans, which are of no cost to the state. <Citation data={Citations['1']}>The rest of the money ($3B) would cost the state $5.9B, or $170M annually, which is roughly 0.1% of our annual budget.</Citation></span>,
     	},
     },
     {
@@ -90,14 +90,14 @@ const Data = {
 		{
     	component: TextWithTitleBlock,
     	data: {
-    		title: "No stupid-complicated backstory?",
+    		title: "Is there a super complicated backstory?",
 				text:
 				<span>
-					Not with this proposition. Prop 1 comes as part of a package of bills that's intended to increase housing production and lower costs for residents. By law, we have to / get to vote on any bonds over $300K.
+					Not with this proposition. Prop 1 is part of a package of bills that intends to increase housing production and lower housing costs for residents. By law, we have to approve, aka vote, on bonds that cost more than $300K.
 					<br/><br/>
-					<Citation data={Citations['3']}>Opponents argue that with a state budget surprlus of $16B and already-high taxes, legislators should be making structural reforms rather than creating more debt for another band-aid.</Citation> <Citation data={Citations['4']}>They point to <Acronym data={Acronyms.CEQA}/>, rent control, and prevailing wages as examples of regulation that drives up the cost of construction</Citation>, a factor that has lead to a shortage in housing.
+					<Citation data={Citations['3']}>Opponents argue that with a state budget surplus of $16B and already high taxes, legislators should make structural reforms rather than create more debt. It’s another band-aid.</Citation> <Citation data={Citations['4']}>They point to <Acronym data={Acronyms.CEQA}/>, rent control, and  labor wages as examples of regulation that have driven up construction costs and created a housing shortage.</Citation>
 					<br/><br/>
-					Nearly everyone agrees housing affordability is an issue in California. It's how we get through it that's contentious.
+					Almost everyone agrees that housing affordability in CA is a critical issue. How we decide to resolve it is contentious.
 				</span>
     	},
     },
@@ -114,27 +114,27 @@ const Data = {
 				messages: [
 					{
 						from: "me",
-						body: <span>California doesn't need to add more bond debt. <Citation data={Citations['5']}>We already have the one of the highest taxes per person</Citation></span>,
+						body: <span>CA doesn't need to add more debt. <Citation data={Citations['5']}>We already pay some of the highest taxes in the country</Citation></span>,
 					},
 					{
 						from: "them",
-						body: "It doesn't necessarily lead to higher taxes. General obligation bond debt is paid out of the general fund, which depends both on how much we tax and how much we spend"
+						body: "Prop 1 doesn't necessarily mean higher taxes. It depends on how much we tax and spend on other stuff"
 					},
 					{
 						from: "me",
-						body: "Yes, California is going to spend less. 😒"
+						body: "Oh right, CA is gonna spend less. 😒"
 					},
 					{
 						from: "me",
-						body: "We have a surplus, why don't we spend that? Or why not make actual lasting reform to help solve housing."
+						body: "We have a surplus so why don't we spend it? Housing is crazy expensive here so why don’t we build more?"
 					},
 					{
 						from: "them",
-						body: <span><Citation data={Citations['6']}>14 of the $16 billion is our rainy day fund, for the next recession</Citation>, expected soon.</span>
+						body: <span><Citation data={Citations['6']}>Or we can save it for our rainy day fund. Recessions are real.</Citation></span>
 					},
 					{
 						from: "them",
-						body: "And I agree that we should make real changes, but you know those take time, both to pass and for people to actually feel the effects."
+						body: "If we want to build more housing, we should reform CEQA. It’ll make it easier to approve housing projects"
 					},
 					{
 						from: "me",
@@ -142,15 +142,11 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: <span><Citation data={Citations['8']}>Prop 1 might only build us 15,000 units</Citation>. We need 180K a year. Voting no sends a message to politicians that we need more than just a temporary fix.</span>
+						body: <span><Citation data={Citations['8']}>Prop 1 would only build us 15K units</Citation>. We need 180K a year. Voting no tells pols that we need more than a temporary fix.</span>
 					},
 					{
 						from: "them",
-						body: <Citation data={Citations['10']}>CEQA isn't the problem.</Citation>
-					},
-					{
-						from: "them",
-						body: <span>We can debate forever on housing. Real people need this assistance now, and this is the fastest way to help them.</span>
+						body: "We can debate housing issues forever. Real people need homes now. Prop 1 is the fastest way to help them"
 					}
 				]
 			}
