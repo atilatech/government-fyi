@@ -105,11 +105,16 @@ const Disclaimer = styled.h4`
 const LinksChunk = (props) => {
 	const links = props.data.links.map( (link, j) => {
 		return(
+			link.url ?
 			<LinkWrapper key={j}>
 				<LinkOutStyle><LinkOutIcon/></LinkOutStyle>
 				<ExternalLink target="_blank" rel="noopener noreferrer" href={link.url}>
 					{link.text}
 				</ExternalLink>
+			</LinkWrapper>
+			:
+			<LinkWrapper key={j}>
+				{link.text}
 			</LinkWrapper>
 		)
 	})
