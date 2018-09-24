@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Color from 'layout/colors'
 import {Link} from 'react-router-dom'
 import {Spacer} from 'layout/util'
+import Acronym from 'components/interactive/acronym'
 import Line from 'components/static/rounded-line'
 
 const LineContainer = styled.div`
@@ -64,7 +65,7 @@ const Footer = (props) => {
         </SocialButtons>
         <TextContainer>
           Site designed, built, and written by Amir & Erica © 2018 <span role="img" aria-label="US flag">🇺🇸</span>
-          <br/>Until Nov. 7, 2018, we will continually update the site. Please e-send us suggestions and correctións with supporting sources.
+          <br/>Until Nov. 7, 2018, we will continually update the site. Please <Acronym singleClick highlightOnClick expanded="fax@ballot.fyi" acronym="e-send us"/> suggestions and correctións with supporting sources.
         </TextContainer>
         <div>{navItems}</div>
       </FooterContainer>
