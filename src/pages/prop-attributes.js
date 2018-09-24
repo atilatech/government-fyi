@@ -140,10 +140,10 @@ const images = [
 
 const titles = [
   "Prop 1 buys us $4B for housing programs",
-  "Prop 2 changes how to use the Millionaire's tax",
+  "Prop 2 changes how we spend the Millionaire's tax",
   "Prop 3 buys us $8.9B for water projects",
   "Prop 4 buys us $1.5B for children's hospitals",
-  "Prop 5 lets older folk move with their property tax assessments",
+  "Prop 5 gives old folks a property tax discount when they move",
   "Prop 6 repeals last year's gas tax",
   "Prop 7 helps allow Daylight Saving Time to be year-round",
   "Prop 8 limits dialysis clinics' profits",
@@ -158,9 +158,9 @@ const shortTitles = [
   "2 diverts revenue from Millionaire's tax",
   "3 issues $8.9B for water projects",
   "4 issues $1.5B for children's hospitals",
-  "5 lets older folk move with their property tax assesments",
+  "5 gives older folks a property tax discount when they move",
   "6 repeals last year's gas tax",
-  "7 helps allow make Daylight Saving permanent",
+  "7 helps make Daylight Saving permanent",
   "8 caps dialysis clinics' profits",
   "9 would've split CA, literally",
   "10 legalizes rent control again",
@@ -186,7 +186,7 @@ const headlines = [
 const descriptions = [
   "One of many housing measures on the ballot",
   "The revenue is intended to help the mentally ill, but lawsuits say not housing",
-  "It comes down to fish, really",
+  "But it's different from the last water bond",
   "Renovations and new construction",
   "The idea is to free up houses. Will it work?",
   "And! future gas tax increases must be approved by voters",
