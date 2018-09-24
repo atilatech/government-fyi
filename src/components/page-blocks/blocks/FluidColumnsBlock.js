@@ -67,6 +67,11 @@ const Image = styled(MultisourceImage)`
 		}
 	}
 `
+const Subtitle = styled.div`
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+`
 
 const FluidColumnsBlock = (props) => {
 	const summaries = props.data.blocks.map( (item, i) => {
@@ -78,6 +83,7 @@ const FluidColumnsBlock = (props) => {
 					</a>
 				}
 				<SummaryTitle>{item.title}</SummaryTitle>
+				<Subtitle>{item.subtitle}</Subtitle>
 				{item.body}
 			</SummaryContainer>
 		);
@@ -105,6 +111,7 @@ FluidColumnsBlock.propTypes = {
 		blocks: PropTypes.arrayOf(
 			PropTypes.shape({
 				title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
+				subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 				body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 				img: PropTypes.string,
 				alt: PropTypes.string,

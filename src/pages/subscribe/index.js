@@ -8,15 +8,13 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import btbImg from './images/btb.png'
 import btbImg_w from './images/btb.webp'
-import ZuckImg from './images/zuck.png'
-import ZuckImg_w from './images/zuck.webp'
-import ZuckImg_2x from './images/zuck@2x.png'
-import ZuckImg_2x_w from './images/zuck@2x.webp'
-import MockImg from 'pages/home/images/prop-12.png'
-import MockImg_w from 'pages/home/images/prop-12.webp'
+import TwitImg from 'pages/home/images/prop-12.png'
+import TwitImg_w from 'pages/home/images/prop-12.webp'
 import MultisourceImage from 'components/static/multisource-image'
-import TwitImg from './images/twit.png'
-import TwitImg_w from './images/twit.webp'
+import IGImg from './images/insta.png'
+import IGImg_w from './images/insta.webp'
+import IGImg_2x from './images/insta@2x.png'
+import IGImg_2x_w from './images/insta@2x.webp'
 
 const CenteredText = styled.div`
   text-align: center;
@@ -64,7 +62,7 @@ const Data = {
     {
       component: SectionTitleBlock,
       data: {
-        title: "🍟 Or follow us on these electronic media",
+        title: "🍟 Or get updates via these electronic media",
       }
     },
     {
@@ -73,32 +71,25 @@ const Data = {
         blocks: [
     			{
             img: {
-              _1x: ZuckImg,
-              _1x_webp: ZuckImg_w,
-              _2x: ZuckImg_2x,
-              _2x_webp:ZuckImg_2x_w
-            },
-            alt: "Facebook",
-    				title: "Mark's Big F",
-            url:"https://www.faceboook.com/bythebaydotcool"
-    			},
-    			{
-            img: {
               _1x: TwitImg,
               _1x_webp: TwitImg_w,
             },
             alt: "Twitter",
-    				title: "The collective megaphone",
-            url:"https://www.twitter.com/bythebaydotcool"
+    				title: "Twitter",
+            subtitle: "Our collective microphone",
+            url:"https://www.twitter.com/ballotfyi"
     			},
     			{
             img: {
-              _1x: MockImg,
-              _1x_webp: MockImg_w,
+              _1x: IGImg,
+              _1x_webp: IGImg_w,
+              _2x: IGImg_2x,
+              _2x_webp: IGImg_2x_w,
             },
             alt: "Instagram",
     				title: "Instagram",
-            url:"https://www.instagram.com/bythebaydotcool"
+            subtitle: "The happiest place on Earth",
+            url:"https://www.instagram.com/ballotfyi"
     			},
     		],
       }
