@@ -49,21 +49,19 @@ const Data = {
     		title: "Prop 12 is the new Prop 2",
     		text:
 				<span>
-					A decade ago, we passed Prop 2, written by the Humane Society of the US (HSUS), the same authors of this election's Prop 12. <Citation data={Citations['1']}>Prop 2 banned the confinement of animals sold for meat and eggs that don't have enough space "to lie down, stand up, fully extend their limbs and turn around."</Citation> Soon afterwards, legislation passed that applied Prop 2 to all eggs sold in CA, regardless of where they were laid.
+					A decade ago, we passed Prop 2, written by the Humane Society of the US (HSUS), the same authors of this election's Prop 12. <Citation data={Citations['1']}>With its passage, Prop 2 banned the confinement of animals sold for meat and eggs that don't have enough space "to lie down, stand up, fully extend their limbs and turn around."</Citation> Soon afterwards, legislation passed that applied Prop 2 to all eggs sold in CA, regardless of where they were laid.
 					<br/><br/>
-					Haters gonna hate. (We wouldn't be America otherwise.) We've compiled the list of reasons Prop 2 is still shat on.
+					We've compiled a list of ways Prop 2 haters have been hating on Prop 2 since 2008.
 					<ul>
 						<li>It's <b>unconstitutional</b> – because it violates the interstate commerce clause by requiring other states that sell eggs in California to comply. <Citation data={Citations['2']}> 13 states have filed a suit with the US Supreme Court to argue this.</Citation></li>
 						<li>It's <b>too vague</b> – and therefore unenforceable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
 						<li>It <b>cost farmers a lot</b> – <Citation data={Citations['7']}>It cost all CA farmers several hundred million to convert out of battery cages</Citation>, but <Citation data={Citations['8']}>it seems they would have done that anyway because of salmonella outbreaks</Citation> and <Citation data={Citations['9']}>shifting public opinion.</Citation></li>
 						<li>It <b>raised egg prices, hurt production</b> – <Citation data={Citations['14']}>Some estimates say egg production dropped by 35%</Citation>, and <Citation data={Citations['10']}>prices rose by 33%.</Citation> <Citation data={Citations['11']}>One analyst says it spiked in 2008, and has since gone back down.</Citation> </li>
-						<li>It <b>didn't do enough</b> - because the law didn't specify an enforcing authority, it fell on localities. <Citation data={Citations['13']}>The Chronicle says two-thirds of hens are still in cages, </Citation> <Citation data={Citations['16']}>perhaps just less crowded than before to comply with Prop 2</Citation>.</li>
+						<li>It <b>didn't do enough</b> - because the law didn't specify an enforcing authority, it fell on localities. <Citation data={Citations['13']}>The LA Times says two-thirds of hens are still in cages, </Citation> <Citation data={Citations['16']}>perhaps just less crowded than before to comply with Prop 2</Citation>.</li>
 					</ul>
 					Of course, Prop 2 did have its proponents.
 					<br/><br/>
-					<Citation data={Citations['15']}>Most companies</Citation>, <Citation data={Citations['3']}>including McDonald’s, Target, Starbuck, Safeway, Costco, and Walmart, have all set policy to transition to sellings cage-free eggs in their products by 2025.</Citation>
-					<br/><br/>
-					Salmonella outbreaks from eggs have decreased in California since 2015. It's unknown how much was a result of Prop 2.[look this up]
+					<Citation data={Citations['15']}>Most companies</Citation>, <Citation data={Citations['3']}>including McDonald’s, Target, Starbuck, Safeway, Costco, and Walmart, have all set policy to transition to sellings cage-free eggs in their products within the next 5-10 years</Citation>
 				</span>
 			}
 		},
@@ -106,7 +104,7 @@ const Data = {
 						alt: "A pig in 24 sq. ft. Art by David Goligorsky",
 					},
 				],
-				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we hired some animals on the internet to model for us. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>.</span>,
+				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we hired some models on the internet for a photoshoot. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>.</span>,
 				attribution:<span>(Art by David Goligorsky)<sup>3</sup></span>
 			}
 		},
@@ -114,13 +112,13 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				title: "So what does Prop 12 do differently?",
-				text: <span>Haters are still highly likely to hate. Prop 12 sets specific sizes and <Citation data={Citations['17']}>dons the California Department of Food and Agriculture responsible for its enforcement. This additional oversight is estimated to cost the state $10M annually.</Citation>
+				text: <span>Prop 12 sets specific sizes and <Citation data={Citations['17']}>names the California Department of Food and Agriculture responsible for its enforcement. This additional oversight is estimated to cost the state $10M annually.</Citation>
 					<br/><br/>
 					Specifically, Prop 12 bans the sales of
 					<ul>
-						<li>Eggs from hens raised in areas smaller than 1 square foot</li>
-						<li>Veal from cows raised in areas smaller than 43 square feet</li>
-						<li>Pork from pigs raised in areas smaller than 24 square feet</li>
+						<li>Eggs from hens raised in areas smaller than 1 sq. ft.</li>
+						<li>Veal from cows raised in areas smaller than 43 sq. ft.</li>
+						<li>Pork from pigs raised in areas smaller than 24 sq. ft.</li>
 					</ul>
 					By 2022, the state must adopt the United Egg Producers' guidelines for cage-free: <Citation data={Citations['18']}>egg-laying hens must be (actually) cage-free, which includes housing systems that have 1 to 1.5 square feet per hen and allow hens to move around inside a building.</Citation>
 					<br/><br/>
@@ -136,7 +134,7 @@ const Data = {
 				<span>
 					<Citation data={Citations['19']}><Acronym data={Acronyms.PETA}/> says that Prop 2 didn’t really lead to cage-free eggs, and Prop 12 allows these harsh conditions to legally continue until 2022.</Citation> In other words, <Acronym data={Acronyms.PETA}/> says it will take too long.
 					<br/><br/>
-					Other dissenters say it's not enough time for farmers and sellers to transition. <Citation data={Citations['20']}>In a way, <Acronym data={Acronyms.HSUS}/> is breaking their agreement with the many corporations who have pledged to go cage-free by 2025, forcing them to go cage-free three years early.</Citation>
+					Other dissenters say it's not enough time for farmers and sellers to transition. <Citation data={Citations['20']}>In a way, <Acronym data={Acronyms.HSUS}/> would be breaking their agreement with the many corporations who have pledged to go cage-free in 5-10 years, forcing them to go cage-free early.</Citation>
 					<br/><br/>
 					<Citation data={Citations['21']}>We know it's a lot to take in, but to many, it's a tender subject. Now that you're eggstra knowledgeable on this meaty proposition, we hope you might be able to eggsplain it to all your seggsy friends.</Citation>
 				</span>

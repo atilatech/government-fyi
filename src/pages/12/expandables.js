@@ -23,10 +23,10 @@ export const Citations = {
 		directQuote:"In a lawsuit filed directly to the high court, the states allege that California's law has cost consumers nationwide up to $350 million annually because of higher egg prices since it took effect in 2015. The lawsuit argues that California's requirements violate the U.S. Constitution's interstate commerce clause and are pre-empted by federal law."
   },
   '3': {
-		link:'http://www.sandiegouniontribune.com/opinion/commentary/sd-utbg-prop12-animal-cruelty-20180912-story.html',
-		publication: "San Diego Union-Tribune",
-		headline: "Why Prop 12 is needed to fight animal cruelty",
-		directQuote:"Enacting that law was a massive success. Many California egg companies eliminated cages, instead housing hens on cage-free farms. Companies like McDonald’s, Safeway, Costco, IHOP and Walmart enacted policies to switch to cage-free eggs."
+		link:'http://cagefreefuture.com/wp/commitments/',
+		publication: "Cage Free Future",
+		headline: "Corporate Commitments on Farm Animal Confinement Issues",
+		directQuote:"[Click Read More to see full list]",
   },
 	'4': {
 		link:"https://www.ams.usda.gov/publications/qa-shell-eggs",
@@ -59,10 +59,10 @@ export const Citations = {
 		directQuote:"By the time the initial proposition went into effect in 2015, concerns about transmitting salmonella already had egg farmers moving away from battery cages and toward operations that keep hens crowded into enormous “cage-free” barns.",
 	},
 	'9': {
-		link:"https://www.pressdemocrat.com/opinion/8735947-181/pd-editorial-no-on-prop?sba=AAS",
-		publication:"Press Democrat",
-		headline:"PD Editorial: No on Prop 12: Let consumers choose their eggs",
-		directQuote:"The market already is moving in the direction sought by the Humane Society, with a growing number of shoppers choosing cage-free and free-range eggs, despite the higher cost."
+		link:"http://www.eatingwell.com/article/289956/are-cage-free-eggs-really-better/",
+		publication:"Eating Well",
+		headline:"Are Cage-Free Eggs Really Better?",
+		directQuote:"Consumers want eggs from hens that don't live in inhumane-seeming cages. A 2014 poll showed that 62 percent of Cali­fornians said they'd be more likely to eat at a restaurant that served only cage-free eggs. And a 2014 Farm Animal Welfare Survey from the American Humane Association found that 76 percent of Americans are willing to pay more for ­humanely raised meat, dairy and eggs. The industry listened."
 	},
 	'10': {
 		link:"https://www.sfchronicle.com/opinion/editorials/article/Editorial-The-Chronicle-recommends-no-on-13248637.php",

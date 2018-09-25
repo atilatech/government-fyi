@@ -44,6 +44,19 @@ const Data = {
 			}
 		},
 		{
+			component: SubsectionTitleBlock,
+			data: {
+				title: "Sunrise and sunset times in SF (2018)"
+			}
+		},
+		{
+			component: DSTSunInteractiveBlock,
+			data: {
+				// src: LASunTimes,
+				src: SFSunTimes
+			}
+		},
+		{
 			component: TextWithTitleBlock,
 			data: {
 				title:"Darker mornings or longer afternoons?",
@@ -74,19 +87,6 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress did allow us to have our own time zone, the time difference between CA and NY would be two hours during winter, but three hours in the summer (when other states observe DST). Coincidentally, CA and AZ would be on the same time, all the time. <Citation data={Citations['3']}>FL just passed legislation to move to permanent DST so we'd always be three hours from Florida Man</Citation></span>
-			}
-		},
-		{
-			component: SubsectionTitleBlock,
-			data: {
-				title: "Sunrise and sunset times in SF (2018)"
-			}
-		},
-		{
-			component: DSTSunInteractiveBlock,
-			data: {
-				// src: LASunTimes,
-				src: SFSunTimes
 			}
 		},
 		{

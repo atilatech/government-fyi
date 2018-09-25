@@ -23,14 +23,14 @@ const Data = {
     		title: "Wait, what's dialysis?",
     		text:
 				<span>
-					<Citation>About 80K Californians live with kidney disease.</Citation> Dialysis is a vital treatment that performs what a healthy kidney would do. Three times a week, patients sit in a chair for four hour sessions while a machine cleans their blood.
+					<Citation data={Citations['1']}>About 80K Californians live with kidney disease.</Citation> Dialysis is a vital treatment that performs what a healthy kidney would do. Three times a week, patients sit in a chair for four hour sessions while a machine cleans their blood.
 				</span>
     	},
     },
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "What about profits?",
+    		title: "What didya say about profits?",
     		text:
 				<span>
 					Prop 8 would limit dialysis clinics’ revenue to 115% of the costs for “direct patient care" and “health care quality improvements.” It would require clinics to issue refunds for any revenue exceeding that amount. Really, it’s a roundabout way to try to force these businesses to spend their revenue on these two categories. Depending on how it’s interpreted and implement, it could change these 80K patients’ lives.
@@ -45,7 +45,7 @@ const Data = {
 				<span>
 					The dispute between a labor union and for-profit dialysis clinics runs deep. The union, <Acronym data={Acronyms.SEIU}/> West, has previously used the ballot initiative process as leverage in legislative negotiations, and the union has failed to unionize dialysis healthcare workers. <Acronym data={Acronyms.SEIU}/> West says they want to increase patient care in these highly-profitable clinics, and point to reports of bug infestations, run-down equipment, and unsterile conditions. A former worker who was fired for trying to get others to unionize said workers were told to get through as many patients as possible.
 					<br/><br/>
-					Opponents claim Prop 11 is a way for <Acronym data={Acronyms.SEIU}/> West to add union members, and its passage would put people’s lives at risk by potentially closing clinics.
+					Opponents claim Prop 8 is a way for <Acronym data={Acronyms.SEIU}/> West to add union members, and its passage would put people’s lives at risk by potentially closing clinics.
 					<br/><br/>
 					Either way, both sides are spending tens of millions of dollars in ads fighting this until November.
 				</span>

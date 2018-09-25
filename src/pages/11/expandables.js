@@ -14,7 +14,7 @@ export const Citations = {
 		link:'https://www.laboremploymentlawblog.com/2017/01/articles/california-employment-legislation/supreme-court-holds-that-rest-periods-must-be-free-from-duties-and-employer-control/',
     publication: "Labor Employment Law Blog",
     headline: "Proposition 11",
-    directQuote:""
+    directQuote:"The California Supreme Court declared that state law prohibits on-duty and on-call rest periods.  It stated that employers must (1) relieve their employees of all duties during rest periods and (2) relinquish any control over how employees spend their break time. "
 	},
 	'2':{
 		link:'https://lao.ca.gov/BallotAnalysis/Proposition?number=11&year=2018',
@@ -57,6 +57,18 @@ export const Citations = {
 		publication:"LA Times archives",
 		headline:"The Lone Dissenter Rides Again",
 		directQuote:"That was 1978. But Wesley persisted in later years and made the ballot with two opposing arguments in 1980, applied but failed to make the ballot with arguments in 1982 and 1984, and this year scored his biggest success by having six of his arguments accepted.\"Voters deserve arguments on both sides,\" said the 33-year-old Wesley in an interview in his downtown law office here."
+	},
+	'9':{
+		link:"https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-No-on-California-Prop-11-13216457.php",
+		publication:"SF Chronicle",
+		headline:"The Chronicle recommends: No on California Prop.11",
+		directQuote:"However, that bill stalled in the state Senate over two key issues: One was whether the interruptions could include less serious calls; the other was whether the legislation should effectively void pending labor-related lawsuits against American Medical Response, which also happens to be the funder of Prop. 11. "
+	},
+	'10':{
+		link:"https://law.justia.com/cases/california/court-of-appeal/2017/a143784.html",
+		publication:"Justia",
+		headline:"Bartoni v. American Medical Response West",
+		directQuote:"Plaintiffs, four current or former employees, claimed that AMR failed to provide the meal and rest periods to which they were entitled under Labor Code sections 226.7 and 512 and the applicable wage orders issued by the California Industrial Welfare Commission."
 	}
 
 }
