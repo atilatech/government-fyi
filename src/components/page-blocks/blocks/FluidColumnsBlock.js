@@ -113,7 +113,7 @@ FluidColumnsBlock.propTypes = {
 				title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 				subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 				body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-				img: PropTypes.string,
+				img: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 				alt: PropTypes.string,
 				url: PropTypes.string,
 			})

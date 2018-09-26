@@ -12,7 +12,7 @@ export const TextField = styled(InputField)`
   line-height: 20px;
   text-transform: none;
   letter-spacing: none;
-  width: 100%;
+  width: 70%;
   font-size: 16px;
   padding-left: 4px;
   padding-top: 5px;
@@ -39,25 +39,8 @@ export const TextField = styled(InputField)`
     font-size: 16px;
     border-radius: 0;
   }
-
 `;
 
-
-
-export const ErrorMessage = styled.div`
-  margin-top: 5px;
-  font-family: ${props=>props.theme.fonts.helvetica};
-  text-align: center;
-  color: ${Color('orange2')};
-`;
-
-export const MoreFields = styled.div`
-  font-family: ${props=>props.theme.fonts.helvetica};
-  margin-top: 20px;
-  font-size: 13px;
-  outline: none;
-  display: block;
-`;
 
 export const FieldSet = styled.fieldset`
   border: none;
@@ -65,29 +48,38 @@ export const FieldSet = styled.fieldset`
   margin: 0;
 `;
 
-export const SuccessStyle = styled.div`
+const buttonStyle = styled.div`
+  width: 30%;
   font-family: ${props=>props.theme.fonts.avant};
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5em;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 7px 25px;
+  -webkit-appearance: none;
+  border-radius: 2px;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+`
+export const ErrorMessage = styled(buttonStyle)`
+  color: ${Color('orange2')};
+  border: 4px solid ${Color('orange2')};
 
-  display: block;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 25px;
+`;
+
+export const SuccessStyle = styled(buttonStyle)`
   background-color: #C9FFF3;
   color: #333;
   border: 4px solid #C9FFF3;
-  -webkit-appearance: none;
-  border-radius: 3px;
-  text-align: center;
 `;
 
 export const SubmitButtonWithStyle = styled(SubmitButton)`
-  font-family: ${props=>props.theme.fonts.h2};
+  font-family: ${props=>props.theme.fonts.avant};
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5em;
@@ -120,27 +112,11 @@ export const SubmitButtonWithStyle = styled(SubmitButton)`
   }
 `;
 
-export const SubmittingStyle = styled.div`
-  font-family: ${props=>props.theme.fonts.h2};
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5em;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-
-  text-align:center;
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 25px;
-  box-shadow: none;
+export const SubmittingStyle = styled(buttonStyle)`
   background-color: #999;
   color: #666;
   border: 2px solid #999;
-  -webkit-appearance: none;
-  border-radius: 3px;
+
 `;
 
 export const FormContainer = styled.div`
