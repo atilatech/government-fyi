@@ -38,7 +38,7 @@ class SubscribeForm extends React.Component {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({[target.name]: value});
-    if(this.state.subscribeStatus === 'error') {
+    if(this.state.subscribeStatus !== null) { // if typing again 
       this.setState({subscribeStatus:null})
     }
   }
@@ -84,7 +84,7 @@ class SubscribeForm extends React.Component {
         button = <SubmittingStyle>Maybe...</SubmittingStyle>
         break;
       case "success":
-        button = <SuccessStyle>You're in</SuccessStyle>;
+        button = <SuccessStyle>You're in!</SuccessStyle>;
         break;
       case "error":
       default:
