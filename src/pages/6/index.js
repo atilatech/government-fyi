@@ -29,11 +29,11 @@ const Data = {
     	data: {
     		title: "Left vs Right",
     		text: <span>
-					The debate over Prop 6 is split along party lines. In 2017, <Acronym data={Acronyms.RRAA}/> narrowly passed, with two Dems voting no and one Republican voting yes (<Citation data={Citations['1']}>thanks to some side deals</Citation>). Since it's passage, Republicans have used it <Citation data={Citations['2']}>to recall a state senator</Citation> and to put Prop 6 on the ballot, <Citation data={Citations['3']}>with a specific goal of increasing Republican voter turnout.</Citation>.
+					Prop 6 is predictably split along party lines. Last year, <Acronym data={Acronyms.RRAA}/> narrowly passed, with two Dems voting no and one Republican voting yes (<Citation data={Citations['1']}>thanks to some side deals</Citation>). Since its passage, Republicans have used the gas tax to <Citation data={Citations['2']}>recall a state senator</Citation> and put Prop 6 on the ballot, <Citation data={Citations['3']}>with a specific goal of increasing Republican voter turnout.</Citation>
 					<br/><br/>
-					Conservatives argue that the taxes are regressive, and <Citation data={Citations['5']}>CA already has the second-highest gas taxes in the country.</Citation> They also point to the state's $16B surplus, of which (<Citation data={Citations['4']}> about $14B is for weathering the next recession.</Citation>)
+					Conservatives argue that the taxes are regressive, and <Citation data={Citations['5']}>CA already has the second-highest gas taxes in the country.</Citation> They also point to the state's $16B surplus, <Citation data={Citations['4']}>which about $14B is for weathering the next recession.</Citation>
 					<br/><br/>
-					Democrats point to our lacking infrastructure. <Citation data={Citations['6']}>CA ranks #11 in bridge quality, but #49 in road quality.</Citation> They also explain that a gas tax that pays for transportation infrastructure is like a usage fee. Those who pay the most are also the biggest users.
+					Democrats point to our lacking transportation infrastructure. <Citation data={Citations['6']}>CA ranks 11th in bridge quality, but 49th in road quality</Citation> They also explain that a gas tax that pays for transportation infrastructure is like a usage fee. Those who pay the most are also the biggest users.
 				</span>,
     	},
 		},
@@ -75,13 +75,13 @@ const Data = {
     	data: {
     		title: "And where does the money go?",
     		text: <span>
-					~$3.2B a year on average in revenue
+					~$3.2B a year on average in total revenue
 					<ul>
 						<li>$400M for state bridges and culverts</li>
 						<li>$200M for counties with local transportation taxes</li>
-						<li>$100M to increase biking and walking</li>
-						<li>$25M for freeway service</li>
-						<li>$25M for grants to local governments for sustainable communities</li>
+						<li>$100M to improve biking and walking projects</li>
+						<li>$25M for servicing freeways</li>
+						<li>$25M for sustainable community grants</li>
 						<li>$7M total for transportation-related research and education</li>
 						<li>$5M in workforce development grants</li>
 					</ul>
@@ -101,10 +101,11 @@ const Data = {
 				blocks: [
 					{
 						title: "'Yes' means repeal",
-						body: <span><br/>A <em>Yes</em> vote on Prop 6 means you would like
+						body: <span>
+							<br/>A <em>Yes</em> vote on Prop 6 means you would like
 							<ul>
-							<li>to get rid of the <Acronym data={Acronyms.RRAA}/> and its associated gas tax increases and transportation improvements.</li>
-							<li>to put all future gas tax increases, after being passed by the Legislature and signed by the Governor, on the ballot for CA voters to decide.</li>
+								<li>to get rid of the <Acronym data={Acronyms.RRAA}/> and its associated gas tax increases and transportation improvements.</li>
+								<li>to put all future gas tax increases, after being passed by the Legislature and signed by the Governor, on the ballot for CA voters to decide.</li>
 						</ul></span>,
 					},
 					{
@@ -131,8 +132,7 @@ const Data = {
 						subsectionTitle: "Arguments in favor",
 						links: [
 							{
-								text: "",
-								url: ""
+								text: "We could not find any editorial boards that support Prop 6",
 							},
 						]
 					},

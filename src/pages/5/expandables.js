@@ -12,12 +12,12 @@ export const Citations = {
     headline:"Prop 5",
     directQuote:"Current law requires the state to provide more funding to most schools to cover their property tax losses. As a result, state costs for schools would increase by over $100 million per year in the first few years. Over time, these increased state costs for schools would grow to about $1 billion per year in today’s dollars."
   },
-  '2': {
-    link:"https://lao.ca.gov/BallotAnalysis/Proposition?number=5&year=2018",
-    publication:"Legislative Analyst's Office",
-    headline:"Prop 5",
-    directQuote:"The typical property owner’s property tax rate is 1.1 percent. In the year a property is purchased, its taxable value is its purchase price",
-  },
+  // '2': {
+  //   link:"https://lao.ca.gov/BallotAnalysis/Proposition?number=5&year=2018",
+  //   publication:"Legislative Analyst's Office",
+  //   headline:"Prop 5",
+  //   directQuote:"The typical property owner’s property tax rate is 1.1 percent. In the year a property is purchased, its taxable value is its purchase price",
+  // },
   '3': {
     link:"https://ballotpedia.org/California_Proposition_60,_Property_Tax_Assessments_for_Older_Homeowners_(1986)",
     publication:"Ballotpedia",

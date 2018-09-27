@@ -185,7 +185,7 @@ const headlines = [
 
 const descriptions = [
   "One of many housing measures on the ballot",
-  "The revenue is intended to help the mentally ill, but lawsuits say not housing",
+  "The revenue is supposed to help the mentally ill, but does housing count?",
   "But it's different from the last water bond",
   "Renovations and new construction",
   "The idea is to free up houses. Will it work?",

@@ -21,31 +21,31 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		text: <span>
-					Prop 3 would issue $8.9B in general obligation bonds for water projects throughout California. <Citation data={Citations['5']}>Yes, we just passed a water bond in June, but that one was placed on the ballot by the state legislature. Prop 3 is voter-initiated. Its opponents say that this is the main reason to vote no – it funds projects of those who gave money to its campaign.</Citation> <Citation data={Citations['4']}>Supporters of Prop 3 say Prop 68 focused on water problems of the coastal, urban Democrat, whereas Prop 3 focuses on inland California.</Citation>
-					<br/><br/>
-					Separate from the bond, Prop 3 would also divert part of the revenue from Cap and Trade to four water agencies that have higher electricty bills as a result of Cap and Trade. <Citation data={Citations['7']}>The four agencies would receive an amount equal to the additional electricity costs, but would have to use it on activities such as water conservation programs.</Citation>
-				</span>,
-    	},
-    },
-    {
-    	component: TextWithTitleBlock,
-    	data: {
-    		title: "Where the money is coming from",
-    		text: <span>
-					About $3.4M has been contributed so far to campaigns supporting Prop 3. <Citation data={Citations['1']}>A majority of the donors come from agriculture and conservation.</Citation> Some of the biggest contributors include Ducks Unlimited (a hunter-conservationist organization), California Waterfowl Association, California Wildlife Foundation, and American Pistachio Growers.
-					<br/><br/>
-					Notable contributors include Land O' Lakes (based in Minnesota) and Wonderful Orchards. <Citation data={Citations['2']}>If you haven't heard of The Wonderful Company, you probably know some of their products: Cuties (Halos, nowadays), FIJI water, POM juice. Wonderful's owners are billionaire farmers of almonds, citrus, and grapes, and whose farm land sits in Kern County</Citation>, of which <Citation data={Citations['6']}>$750M of Prop 3 will go towards fixing a damaged canal that waters the region.</Citation>
-				</span>,
-    	},
-    },
-		{
-			component: TextWithTitleBlock,
-			data:{
-				title: "Where the money is going",
-				text: <span>Supporters of Prop 3 say that these projects, and water infrastructure in California needs this infusion of money. This includes conservation for forests, cleaning drinking water, protecting fish and wildlife habitats, water infrastructure upgrades, groundwater storage, and flood protection.</span>
+				title: "Have we met before?",
+				text: "Possibly. In June, we passed Prop 68, a $4.1B bond measure that funds water and environmental projects in CA. Prop 3 is another $8.9B general obligation bond measure that funds water-related improvements across the state. Both measures add up to a grand total of about $13B."
 			}
 		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title:"Wow, we really care about our water",
+    		text: <span>
+					Oh definitely, and especially farmers and agricultural water suppliers. Prop 3 would specifically improve the conditions of watershed lands ($2.5B), drinking water ($2.1B), fish and wildlife habitats ($1.4B), canals and water facilities ($1.2B), groundwater ($1.1B), and flood protection ($500M). The Legislative Analyst’s Office estimates that repaying Prop 3 would cost about $430M a year for the next 40 years, totaling $17.3B with interest, which is about 1/3 of one percent of CA’s General Fund budget.
+				</span>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title:"Still sounds like a lot of money",
+				text:
+				<span>
+					Critics of Prop 3 agree. Unlike Prop 68, which was put on the ballot by the state legislature,<Citation data={Citations['3']}> Prop 3 is on the ballot because the authors gathered enough signatures.</Citation> <Citation data={Citations['5']}>Opponents say it's a “pay-to-play” ballot measure that not only lacks administrative oversight, but also funds projects that directly benefit those who backed the campaign.</Citation> Prop 3 has raised about $3.4M from notable donors, including Land O' Lakes and Wonderful Orchards (the producers of POM juice and FIJI water). <Citation data={Citations['2']}>The owners of Wonderful Orchards, for instance, have farmland that sits in Kern County, of which $750M of Prop 3 would go towards fixing a damaged canal that waters the region.</Citation>
+					<br/><br/>
+					On the other hand, <Citation data={Citations['4']}>supporters argue that Prop 3 is a bipartisan initiative that doesn’t just focus on urban, coastal water problems like Prop 68, but commits significant funding and resources to inland California.</Citation> Local water authorities along with agriculture and conservation groups also support Prop 3 saying it’s a critical step to upgrading CA’s water system.
+				</span>,
+    	},
+    },
 		// {
 		// 	component: DonutGraphBlock,
 		// 	data:{

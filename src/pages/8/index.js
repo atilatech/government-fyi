@@ -23,17 +23,17 @@ const Data = {
     		title: "Wait, what's dialysis?",
     		text:
 				<span>
-					<Citation data={Citations['1']}>About 80K Californians live with kidney disease.</Citation> Dialysis is a vital treatment that performs what a healthy kidney would do. Three times a week, patients sit in a chair for four hour sessions while a machine cleans their blood.
+					<Citation data={Citations['1']}>About 80K Californians live with kidney disease. Every month about 80K Californians living with kidney disease go to a dialysis clinic for treatment.</Citation> Dialysis performs what a healthy kidney would do, and for three times a week, patients sit in a chair for four-hour sessions while a machine filters their blood.
 				</span>
     	},
     },
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "What didya say about profits?",
+    		title: "Why do we want to limit revenue?",
     		text:
 				<span>
-					Prop 8 would limit dialysis clinics’ revenue to 115% of the costs for “direct patient care" and “health care quality improvements.” It would require clinics to issue refunds for any revenue exceeding that amount. Really, it’s a roundabout way to try to force these businesses to spend their revenue on these two categories. Depending on how it’s interpreted and implement, it could change these 80K patients’ lives.
+					Prop 8 would limit dialysis clinics’ revenue to 115% of “direct patient care service costs” and “health care quality improvement costs,” and require clinics to issue refunds for anything exceeding that amount. Really, Prop 8 is a roundabout way to legislatively compel these businesses to invest in staff wages, benefits, training and development, and other costs that fall within these two categories.
 				</span>
     	},
     },
@@ -43,25 +43,21 @@ const Data = {
 				title: "Seems kinda obscure to vote on this",
 				text:
 				<span>
-					The dispute between a labor union and for-profit dialysis clinics runs deep. The union, <Acronym data={Acronyms.SEIU}/> West, has previously used the ballot initiative process as leverage in legislative negotiations, and the union has failed to unionize dialysis healthcare workers. <Acronym data={Acronyms.SEIU}/> West says they want to increase patient care in these highly-profitable clinics, and point to reports of bug infestations, run-down equipment, and unsterile conditions. A former worker who was fired for trying to get others to unionize said workers were told to get through as many patients as possible.
+					No kidding. Prop 8 is the result of ongoing disputes between a labor organization, <Acronym data={Acronyms.SEIU}/> West, and CA’s two largest dialysis businesses, <em>DaVita</em> and <em>Fresenius Medical Care</em>. <Acronym data={Acronyms.SEIU}/> West has been trying to unionize dialysis healthcare workers since 2016, but have so far been unsuccessful. They’ve used the ballot initiative process to leverage negotiations in the past, and Prop 8 is their latest effort.
 					<br/><br/>
-					Opponents claim Prop 8 is a way for <Acronym data={Acronyms.SEIU}/> West to add union members, and its passage would put people’s lives at risk by potentially closing clinics.
-					<br/><br/>
-					Either way, both sides are spending tens of millions of dollars in ads fighting this until November.
+					<Acronym data={Acronyms.SEIU}/> West say they want to improve the quality of patient care in these highly-profitable clinics, while opponents claim they’re simply trying to recruit more union members. Both sides have already spent tens of millions of dollars campaigning over Prop 8.
 				</span>
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "It may come down to definitions",
+				title: "What’s the impact on the clinics?",
 				text:
 				<span>
-					The profit limit would could cause clinics to increase spending on “direct patient care services” and “healthcare improvements” which includes “non-managerial” clinic workers salaries, pharmaceuticals, equipment, technology, training, and patient education.
+					It’s unclear. Prop 8’s revenue cap could cause clinics to increase spending on “direct patient care services” and “healthcare improvements,” but critics argue that these categories don’t include spending on medical directors, clinic coordinators, regulatory compliance, or other costs. 115% of a lesser amount means some clinics could shutdown, endangering patients’ lives.
 					<br/><br/>
-					Opponents argue that because these categories do not include spending on medical directors, clinic coordinators, regulatory compliance, or facility security, it could force clinics to close. It’s unclear how Prop 8 would financially impact dialysis clinics.
-					<br/><br/>
-					It's also not clear what costs apply to these categories. For example, federal law requires clinics to have certain positions, in order to receive Medicare payments – like a medical director and nurse manager. They perform managerial functions, but they also perform direct patient care. Can their salaries be counted towards this spending? If so, the profit limit is higher.
+					The Legislative Analyst Office, however, reports that the financial impact on dialysis clinics is generally unknown because they can't predict what clinics will do.
 				</span>
 			}
 		},
@@ -103,8 +99,7 @@ const Data = {
 						subsectionTitle: "Arguments in favor",
 						links: [
 							{
-								text: "",
-								url: ""
+								text: "No editorial boards support Prop 8",
 							},
 						]
 					},

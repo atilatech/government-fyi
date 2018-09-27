@@ -24,10 +24,11 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "This one is cut & dry",
-    		text: <span>Yep, at least on what the prop intends to do. How you should vote, however, not so much. Prop 1 would issue $4B in general obligation bonds to fund housing programs.
+    		title: "This seems pretty cut & dry",
+    		text: <span>
+					Yep, at least on what the proposition intends to do. How you should vote, however, not so much. Essentially, Prop 1 would issue $4B in general obligation bonds to fund housing programs.
 					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans to veterans, which are of no cost to the state. <Citation data={Citations['1']}>The rest of the money ($3B) would cost the state $5.9B, or $170M annually, which is roughly 0.1% of our annual budget.</Citation></span>,
+					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans for veterans, which are of no cost to the state, and <Citation data={Citations['1']}>the rest of the money ($3B) would cost the state $5.9B, or $170M annually, to repay. It adds up to roughly 0.1% of our annual budget.</Citation></span>,
     	},
     },
     {
@@ -93,9 +94,9 @@ const Data = {
     		title: "Is there a super complicated backstory?",
 				text:
 				<span>
-					Not with this proposition. Prop 1 is part of a package of bills that intends to increase housing production and lower housing costs for residents. By law, we have to approve, aka vote, on bonds that cost more than $300K.
+					Nope! Prop 1 is part of a package of bills that intends to increase housing production and lower housing costs for residents. By law, every resident has to approve, aka vote, on bonds that cost more than $300K.
 					<br/><br/>
-					<Citation data={Citations['3']}>Opponents argue that with a state budget surplus of $16B and already high taxes, legislators should make structural reforms rather than create more debt. It’s another band-aid.</Citation> <Citation data={Citations['4']}>They point to <Acronym data={Acronyms.CEQA}/>, rent control, and  labor wages as examples of regulation that have driven up construction costs and created a housing shortage.</Citation>
+					<Citation data={Citations['3']}>Opponents argue that with high taxes and a state budget surplus of $16B, legislators should make structural reforms rather than create more debt. Prop 1 is another band-aid, they claim, not a solution.</Citation> <Citation data={Citations['4']}>Critics point to <Acronym data={Acronyms.CEQA}/>, rent control, and  labor wages as examples of regulation that have driven up construction costs and contributed to CA’s housing shortage</Citation>
 					<br/><br/>
 					Almost everyone agrees that housing affordability in CA is a critical issue. How we decide to resolve it is contentious.
 				</span>
@@ -134,19 +135,19 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: "If we want to build more housing, we should reform CEQA. It’ll make it easier to approve housing projects"
+						body: <span>If we want to build more housing, we should reform CEQA. <Citation data={Citations['7']}>It’ll make it easier to approve housing projects</Citation></span>
 					},
 					{
 						from: "me",
-						body: <span>If you want to save time, reform CEQA. <Citation data={Citations['7']}>It could add 18 months in construction delays.</Citation>, or don't, <Citation data={Citations['9']}>and reduce local government review of projects, like this Berkeley study suggests.</Citation></span>
+						body: <span>If you want to save time, reform CEQA. <Citation data={Citations['7']}>It could add 18 months in construction delays.</Citation></span>
 					},
 					{
 						from: "me",
-						body: <span><Citation data={Citations['8']}>Prop 1 would only build us 15K units</Citation>. We need 180K a year. Voting no tells pols that we need more than a temporary fix.</span>
+						body: <span><Citation data={Citations['9']}>It might not be CEQA,</Citation> but point taken. <Citation data={Citations['8']}>Prop 1 would only build us 15K units</Citation>. We need 180K a year. Voting no tells pols that we need more than a temporary fix.</span>
 					},
 					{
 						from: "them",
-						body: "We can debate housing issues forever. Real people need homes now. Prop 1 is the fastest way to help them"
+						body: "We can debate housing forever. People need homes now. Prop 1 is the fastest way to help them."
 					}
 				]
 			}

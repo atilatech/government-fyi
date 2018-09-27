@@ -26,7 +26,7 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "You can't vote on this (for now)",
-    		text: <span>You cannot vote on Prop 9. <Citation data={Citations['1']}>The state supreme court removed it from the 2018 ballot, pending a suit that questions its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
+    		text: <span><b>You cannot vote on Prop 9</b>. <Citation data={Citations['1']}>The California supreme court removed it from the 2018 ballot, pending a suit that questions its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
     	},
     },
     {
@@ -53,10 +53,12 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "Why?",
-				text: <span>Billionaire Tim Draper, the main force behind this initiative, says that California is too large to govern, has high costs but poor social services.
+			title: "WHYYYYY",
+				text: <span>
+					Billionaire Tim Draper, the main force behind this initiative, says that California is too large to govern. It has high costs but poor social services.
 					<br/><br/>
-				Others suspect political reasons. Of the many ramifications of dividing California up, the US would have 52 states, leading to four new US senators. Northern California and California, which house SF and LA, would most likely lean left, giving Democrats an advantage.</span>,
+					Others suspect political reasons. Of the many ramifications from dividing California up, the US would have 52 states, leading to four new US senators. Northern California and California, which house SF and LA, would most likely lean left, giving Democrats an advantage in the national scene.
+				</span>,
 			},
 		},
 		// {

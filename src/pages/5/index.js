@@ -20,75 +20,59 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "A big deal",
+    		title: "Another perk for seniors?",
     		text:
 				<span>
-					Prop 5 would let people who are over 55 or severely disabled to get a discounted rate on their new property tax when they move homes. This measure will affect nearly everyone living in California, by potentially increasing the number of houses for sale, and by <Citation data={Citations['1']}>reducing the state's property tax revenue by an estimated $1 billion, most of which goes to education.</Citation>
+					Yes, but it impacts many more than just the elderly. Prop 5 would give homeowners who are over 55 or severely disabled a discounted property tax rate when they decide to move to a new home. The measure matters because it incentivizes homeowners to move, potentially increasing the number of houses available for sale, but <Citation data={Citations['1']}> also eventually reducing the state's property tax revenue by an estimated $1B a year, which is mostly used to fund public education.</Citation>
 				</span>
     	},
     },
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "But first, some complicated history",
+				title: "Whoa, why are we doing this?",
 				text:<span>
-					If you own a home, you pay property taxes every year. In California, a home's property tax is capped at 1% of the <em>purchase</em> price of the home, with the home's value adjusted up to 2% each year for inflation. A typical <Citation data={Citations['2']}>Californian pays 1.1% in property taxes.</Citation> So say your neighbor bought her home in 1980 for $110K, and you just bought the place next door for $1M. Even though you live in very similar houses, she'll pay $2,200 in taxes this year while you pay $11,000. This is Prop 13.
-					<br/><br/>
-					Put yourself in your neighbor's shoes now. Would you move? Even though Junior has gone to college and you have way too much space, there's a strong financial incentive not to move.
-					<br/><br/>
-					Enter Prop 60 (passed in 1986). <Citation data={Citations['3']}>Prop 60 lets people over age 55 to move to a home of <em>lesser or equal value</em> and transfer the Prop 13 value of their old home. Two restrictions though: (1) you can only do it once and (2) you have to move within the same county.</Citation>
-					<br/><br/>
-					Enter Prop 90 (passed in 1988). Prop 90 loosens that last restriction and lets people that invoke Prop 60 to move to another county, as long as the new county of residence allows it. <Citation data={Citations['4']}>As of today, 11 counties allow this inter-county tax assessment transfer.</Citation>
+					Prop 5 is an amendment to Prop 13. As a homeowner, you pay property taxes every year, but under Prop 13, your property tax is capped at 1% of the home’s <em>purchase</em> price, with the home value adjusted up to 2% each year for inflation. (This is in contrast to many other states, where property tax is based on the home's current market value.) It’s nice for you, yes, but since Prop 13 was passed in 1978, the state has lost billions of dollars in lost tax revenue. Double whammy: and because homeowners are disincentivized from moving, CA's housing supply has been stunted.
 				</span>
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "I definitely didn't read that last part",
-				text: <span><Acronym data={Acronyms.TLDR}/>: Because people who've lived in their home a while have low property taxes, it's difficult for them to move. However, current law does let old folks move to a home of lesser value and transfer their property value assessment exactly as is, with restrictions.</span>
-			}
-		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				title: "And what's Prop 5 again?",
-				text: <span>
-					Prop 5 expands Prop 13 to let seniors move with their property value assessment, across county lines, any number of times, and regardless of whether it's a more expensive home or less expensive home.
+				title: "How does this happen?",
+				text:<span>
+					Say your 56-year-old neighbor bought her home in 1980 for $110K, and you just bought the place next door for $1M (aka a steal in SF). Even though you live in very similar homes, she'll pay $2,200 in taxes this year while you pay $11,000. <Citation data={Citations['3']}>Also under Prop 60 and 90 (passed years after Prop 13), your neighbor is allowed to transfer her old property tax assessment to a less expensive home, but restrictions apply.</Citation> She can only do it once in her lifetime and has to move within the same county. If she moves across county lines, <Citation data={Citations['4']}>there are only 11 counties that recognize her former property tax assessment.</Citation>
+					<br/><br/>
+					Now, put yourself in your neighbor's shoes. Would you move? Even though everyone’s gone to college and you have way too much space, you have a strong financial incentive to stay put, pay a lower less on property taxes, and save money.
 				</span>
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "What's the new assessed value?",
-				text: <span>Depending on whether it's a more expensive home, or a less expensive home, it's calculated differently. If it's more expensive, the new taxable value is the old taxable value + the difference in market values between the two homes. If it's less expensive, the new taxable value is the old taxable value multiplied by the ratio of the two market values.<br/><br/>In both cases,the mover saves more money than if Prop 5 does not pass.</span>
-			}
-		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				title: "What's the problem?",
-				text: <span>
-					<Citation data={Citations['6']}>Basically, local governments and schools would get about $1B less <em>each</em> a year.</Citation>
+				title: "Okay, take me back to Prop 5",
+				text:
+				<span>
+					This election's Prop 5 basically gets rid of the previous restrictions and lets Californians over 55 pay a discounted property tax regardless of where they move to in California, how many times they move, or whether it’s into a more or less expensive home. In every case, the mover saves more money on property taxes than if Prop 5 does not pass. <Citation data={Citations['']}>Supporters argue the measure would incentivize long-time homeowners to move and free up CA’s limited housing supply.</Citation>
 					<br/><br/>
-					Counties use property taxes to pay for schools, fire, and police, but <Citation data={Citations['1']}>the state covers the schools missed out revenue from property taxes. To pay for the decreased revenue from Prop 5, CA would have to pay an estimated $100M a year at first, eventually growing to $1B a year.</Citation>
+					<Citation data={Citations['']}>But critics claim CA’s housing shortage won’t be solved by simply making more homes available. Elderly property owners already benefit from a tax break when they want to move to a less expensive home. Prop 5 would be another property tax discount that would burden local governments.</Citation>
 					<br/><br/>
-					<Citation data={Citations['5']}>The nonpartisan Legislative Analyst's Office also estimates that the revenue losses from people who would have moved anyway would be bigger than the gains from higher home values and home building.</Citation>
+					If Prop 5 passes, <Citation data={Citations['6']}>the nonpartisan Legislative Analyst’s Office estimates that CA schools and local governments would lose a total of over $100M a year in property taxes for the first few years and eventually lose about a $1B a year.</Citation> <Citation data={Citations['5']}>This takes into account the fact the <em>new</em> homeowners that replace the 55+ year-olds would be paying property taxes on market-price homes.</Citation>
+
 				</span>
 			}
 		},
-		{
-			component: IMessageBlock,
-			data: {
-				messages: [
-					{
-						from:"me",
-						body:""
-					}
-				]
-			}
-		},
+		// {
+		// 	component: IMessageBlock,
+		// 	data: {
+		// 		messages: [
+		// 			{
+		// 				from:"me",
+		// 				body:""
+		// 			}
+		// 		]
+		// 	}
+		// },
 		{
 			component: SectionTitleBlock,
 			data:{

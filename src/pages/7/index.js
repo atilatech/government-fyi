@@ -29,9 +29,9 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "Some caveats",
+    		title: "Is this really possible?",
     		text: <span>
-					If Prop 7 passes, it empowers the state to change Daylight Saving Time (DST), as long as they have a two-thirds vote and if it's cool with federal law. <Citation data={Citations['2']}>Currently, the national Uniform Time Act of 1966 allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – or something like that), or to opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we want to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what Prop 7 is implicitly asking, <Citation data={Citations['1']}>CA needs Congress to amend federal law.</Citation>
+					Okay, there are a few caveats. If Prop 7 passes, CA can change Daylight Saving Time (DST), as long as the legislature gives it we have a two-thirds vote and Congress says, "Sure, yea." <Citation data={Citations['2']}>Currently, the national Uniform Time Act of 1966 allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – something like that), or to opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we want to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what Prop 7 is implicitly asking, <Citation data={Citations['1']}>CA needs Congress to amend federal law.</Citation>
 				</span>
     	}
     },
@@ -41,6 +41,25 @@ const Data = {
 				title: "But let's say we were on DST all year",
 				text: "Let's pretend Prop 7 passes, the state legislature moves California to DST permanently, and Congress approves it.",
 				nColWidth: 8
+			}
+		},
+		{
+			component: SubsectionTitleBlock,
+			data: {
+				title: "California would be sometimes 3 hours from New York, sometimes 2"
+			}
+		},
+		{
+			component: DSTTimezoneMapBlock,
+			data: {
+				stateMap: UsMap,
+				timezoneMap: TzMap
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress did allow us to have our own time zone, the time difference between CA and NY would be two hours during winter, but three hours in the summer (when other states observe DST). Coincidentally, CA and AZ would be on the same time, all the time. <Citation data={Citations['3']}>FL just passed legislation to move to permanent DST so we'd always be three hours from Florida Man</Citation></span>
 			}
 		},
 		{
@@ -71,35 +90,13 @@ const Data = {
 			}
 		},
 		{
-			component: SubsectionTitleBlock,
-			data: {
-				title: "California would be 3 hours from New York, sometimes"
-			}
-		},
-		{
-			component: DSTTimezoneMapBlock,
-			data: {
-				stateMap: UsMap,
-				timezoneMap: TzMap
-			}
-		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress did allow us to have our own time zone, the time difference between CA and NY would be two hours during winter, but three hours in the summer (when other states observe DST). Coincidentally, CA and AZ would be on the same time, all the time. <Citation data={Citations['3']}>FL just passed legislation to move to permanent DST so we'd always be three hours from Florida Man</Citation></span>
-			}
-		},
-		{
 			component: TextWithTitleBlock,
 			data: {
 				title:"Not the first time",
 				text:
 				<span>
-					<Citation data={Citations['4']}>The US has moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during WWI (Congress repealed it soon after), the second was in WWII, and the third was during the oil embargo from 1973-75.</Citation>
-					<br/><br/>
-					<Citation data={Citations['9']}>In the case of 1973-75, the act was hotly debated, with many of the same arguments that are mentioned today. After the nation-wide experiment was finished, DoT and NIST conducted a study and found no significant differences in traffic fatalities or energy savings. But when the data was sliced in a certain way, they found a significant difference in fatalities among school-aged children in the mornings during January - April 1974, compared to the year earlier (non-DST).</Citation>
-					<br/><br/>
-					But as others have shown with electricity savings, differences found nationally may not apply locally, though.
+					<Citation data={Citations['4']}>The US has moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during WWI (Congress repealed it soon after), the second was in WWII, and the third was during the oil embargo from 1973-75.</Citation> <Citation data={Citations['9']}>In the third case, the government studied its effects and found mixed or inconclusive data.</Citation> (Read for yourself)
+
 				</span>
 			}
 		},
@@ -117,8 +114,7 @@ const Data = {
 						subsectionTitle: "Arguments in favor",
 						links: [
 							{
-								text: "",
-								url: ""
+								text: "We could not find any editorial boards in favor of Prop 7",
 							},
 						]
 					},
