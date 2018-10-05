@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const CrossOutContainer = styled.div.attrs({
   style: props => ({
-    backgroundColor: props.isOn?"rgba(190,190,190,0)":"rgba(190,190,190,0.4)",
+    backgroundColor: props.isOn?"rgba(255,255,255,0)":"rgba(255,255,255,0.5)",
   })
 })`
 	position: absolute;

@@ -47,7 +47,7 @@ const Data = {
     		title: "How did we get here?",
     		text:
 				<span>
-					The origins of Prop 12 actually began a decade ago with Prop 2. <Citation data={Citations['1']}>In 2008, we passed Prop 2 which said animals sold for meat and eggs must be able "to lie down, stand up, fully extend their limbs and turn around."</Citation> The policy was later expanded to include all eggs sold in CA, regardless of where they were laid.
+					The origins of Prop 12 actually began a decade ago with Prop 2. <Citation data={Citations['1']}>In 2008, we passed Prop 2 which said animals sold for meat and eggs must be able <em>&ldquo;to lie down, stand up, fully extend their limbs and turn around.&rdquo;</em></Citation> The policy was later expanded to include all eggs sold in CA, regardless of where they were laid.
 					<br/><br/>
 					Farmers were pissed. Some of the reasons they've been fighting Prop 2 are relevant to Prop 12 today. They claimed Prop 2 was:
 					<ul>
