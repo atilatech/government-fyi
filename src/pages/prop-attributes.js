@@ -57,7 +57,7 @@ const colors = [
   'pink',
   'yellow',
   'orange',
-  'gray',
+  'yellow',
   'blue',
   'orange',
   'yellow'

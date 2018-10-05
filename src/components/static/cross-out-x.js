@@ -3,13 +3,14 @@ import styled from 'styled-components'
 
 const CrossOutContainer = styled.div.attrs({
   style: props => ({
-    backgroundColor: props.isOn?"rgba(255,255,255,0)":"rgba(255,255,255,0.5)",
+    backgroundColor: props.isOn?"rgba(190,190,190,0)":"rgba(190,190,190,0.4)",
   })
 })`
 	position: absolute;
 	z-index: 2;
 	width: 100%;
 	height: 100%;
+  transition: background-color 250ms ease-out;
 `
 
 class CrossOutX extends React.Component {
@@ -45,7 +46,7 @@ class CrossOutX extends React.Component {
     return(
       <CrossOutContainer isOn={this.state.isHovered}>
         <svg id="cross-out" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} opacity="0.6" height="100%" viewBox="0 0 400 100" strokeWidth="10" stroke="#fff" strokeLinecap="round" xmlns="http://www.w3.org/2000/svg">
-          <g><path d="M0,0 L400,100"></path><path d="M0,100 L400,0"></path></g>
+          <g><path opacity="1" d="M0,0 L400,100"></path><path opacity="0.7" d="M0,100 L400,0"></path></g>
         </svg>
       </CrossOutContainer>
     )
