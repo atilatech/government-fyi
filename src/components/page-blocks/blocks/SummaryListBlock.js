@@ -57,8 +57,9 @@ const TitleContainer = styled.div`
 	max-width: 180px;
 	@media screen and (max-width: 767px) {
 		width: 100%;
+		max-width: unset;
 		border: none;
-		margin: 0;
+		margin: 0 0 10px 0;
 		text-align: center;
 	}
 `;

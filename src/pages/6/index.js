@@ -40,7 +40,7 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data:{
-				title: "Walker taxes ranger",
+				title: "A breakdown",
 				subtitle: "A breakdown of taxes brought to you by RRAA",
 				nColWidth: 6,
 			}
