@@ -8,6 +8,7 @@ import MultisourceImage from 'components/static/multisource-image'
 // import shadowPattern from 'components/static/shadowPattern.png'
 import {Spacer} from 'layout/util';
 import {withRouter} from 'react-router-dom'
+import CrossOutX from 'components/static/cross-out-x'
 // import NoiseSVG from 'components/static/noise.svg'
 
 const BannerLink = styled(Link)`
@@ -129,13 +130,15 @@ const Description = styled.h2`
 	}
 `
 
+
 const PropCardBlock = (props) => {
 	const {propNum, color, header, description, linksTo, img} = props.data;
 	return (
 		<BannerLink to={linksTo}>
 			<Spacer height={2}/>
-			<Background color1={Color(color+'1')} color2={Color(color+'2')}>
+			<Background id={`bg-${propNum}`} color1={Color(color+'1')} color2={Color(color+'2')}>
 				<Overflow>
+					{propNum === "9" && <CrossOutX />}
 					<Col
 						xsOffset={0} xs={12}
 						smOffset={1} sm={10}

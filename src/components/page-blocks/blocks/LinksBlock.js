@@ -185,7 +185,7 @@ LinksBlock.propTypes = {
 				links: PropTypes.arrayOf(
 					PropTypes.shape({
 						text: PropTypes.string.isRequired,
-						url: PropTypes.string.isRequired
+						url: PropTypes.string
 					}).isRequired
 				)
 			})

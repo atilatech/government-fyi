@@ -4,6 +4,10 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 
+import Citation from 'components/interactive/citation/citation'
+// import Acronym from 'components/interactive/acronym'
+import { Citations} from './expandables'
+
 const Data = {
 	pageId:"prop-10",
 	propNum: 10,
@@ -18,7 +22,7 @@ const Data = {
     		title: "Seems gnarly",
     		text:
 				<span>
-					Prop 10 would repeal the Costa-Hawkins Rental Housing Act, a state law passed in 1995 that prohibits cities from regulating rent on housing built since then.  Some cities, like LA, SF, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any new buildings.
+					Prop 10 would repeal the Costa-Hawkins Rental Housing Act, <Citation data={Citations['1']}>a state law passed in 1995 that prohibits cities from regulating rent on housing built since then.</Citation> <Citation data={Citations['2']}>Some cities, like LA, SF, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any new buildings.</Citation>
 					<br/><br/>
 					By repealing Costa-Hawkins, Prop 10 would give cities the <em>power</em> to create rent control laws; it's then up to each local government to determine what regulation of rent, if any, it wants.
 				</span>,
@@ -30,14 +34,14 @@ const Data = {
     		title: "Isn’t rent control a good thing?",
     		text:
 				<span>
-					Not necessarily. Because <em>how</em> rent control is implemented matters, let's talk about rent control abstractly.
+					Not necessarily. Because <em>how</em> rent control is implemented matters, we'll talk about rent control in the abstract for the rest of the article.
 					<br/><br/>Prop 10 critics say rent control is problematic for CA’s housing shortage because:
 					<ul>
-						<li>It’s not "means-tested", meaning residents who live in rent controlled apartments aren’t necessarily the people who need it most.</li>
-						<li>It disincentivizes landlords from maintaining or improving their properties (because they no longer need to attract the higher-paying renters).</li>
-						<li>It discourages developers from building apartments because it limits what they can make on each apartment.</li>
+						<li><Citation data={Citations['3']}>It’s not "means-tested", meaning residents who live in rent controlled apartments aren’t necessarily the people who need it most.</Citation></li>
+						<li><Citation data={Citations['4']}>It disincentivizes landlords from maintaining or improving their properties (because they no longer need to attract the higher-paying renters).</Citation></li>
+						<li><Citation data={Citations['5']}>It discourages developers from building apartments because it limits what they can make on each apartment.</Citation></li>
 					</ul>
-					Economists generally agree that any restrictions on rental prices leads to less available housing.
+					<Citation data={Citations['6']}>Economists generally agree that any restrictions on rental prices leads to less available housing.</Citation>
 				</span>
 				}
 			},
@@ -47,8 +51,8 @@ const Data = {
 					title: "Fine. Rent control is the devil",
 					text:
 					<span>
-						Not so fast. Prop 10 supporters say the lack of affordable housing has led to more evictions, displacement, and homelessness across the state. Rent controlled apartments help residents afford to live in increasingly expensive cities. Plus, local governments are the best advocates for their residents. Passing Prop 10 would empower cities and counties to start the conversation to decide how much rent control they need and give them the flexibility to respond to local housing needs.
-				</span>,
+						Not so fast. <Citation data={Citations['7']}>Prop 10 supporters say the lack of affordable housing has led to more evictions, displacement, and homelessness across the state.</Citation> Rent controlled apartments help residents afford to live in increasingly expensive cities. Plus, local governments are the best advocates for their residents. <Citation data={Citations['8']}>Passing Prop 10 would empower cities and counties to start the conversation to decide how much rent control they need and give them the flexibility to respond to local housing needs.</Citation>
+					</span>,
     	},
     },
 		{

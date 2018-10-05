@@ -1,13 +1,12 @@
 import React from 'react'
 import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 
 import Citation from 'components/interactive/citation/citation'
-import Acronym from 'components/interactive/acronym'
-import {Acronyms, Citations} from './expandables'
+// import Acronym from 'components/interactive/acronym'
+import {Citations} from './expandables'
 
 const Data = {
 	pageId:"prop-5",

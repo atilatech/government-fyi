@@ -1,9 +1,3 @@
-export const Acronyms = {
-  TLDR: {
-    expanded: "Too long! Didn't Read",
-    acronym:"TL;DR"
-  }
-}
 
 export const Citations = {
   '1': {

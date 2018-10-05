@@ -38,7 +38,7 @@ class SubscribeForm extends React.Component {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({[target.name]: value});
-    if(this.state.subscribeStatus !== null) { // if typing again 
+    if(this.state.subscribeStatus !== null) { // if typing again
       this.setState({subscribeStatus:null})
     }
   }
@@ -76,7 +76,6 @@ class SubscribeForm extends React.Component {
         value="join"
         name="subscribe"
       />
-    const { subscriber } = this.props;
     switch(this.state.subscribeStatus) {
       case null:
         break;

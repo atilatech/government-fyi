@@ -7,8 +7,8 @@ import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 
 import Citation from 'components/interactive/citation/citation'
-import Acronym from 'components/interactive/acronym'
-import {Acronyms, Citations} from './expandables'
+// import Acronym from 'components/interactive/acronym'
+import {Citations} from './expandables'
 
 const Data = {
 	pageId:"prop-3",
