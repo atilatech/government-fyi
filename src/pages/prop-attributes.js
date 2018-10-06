@@ -191,7 +191,7 @@ const descriptions = [
   "The idea is to free up housing. Will it work?",
   "And future gas tax increases must be approved by voters.",
   "If this passes, Congress still needs to approve it.",
-  "Of course, there's a backstory to this one.",
+  "Is this for patients or is it political?",
   "A wild proposition by a VC. Alas, it's been removed from the ballot.",
   "Does it help or hurt to have cities regulate rents?",
   "Should paramedics get paid, off-duty breaks?",
