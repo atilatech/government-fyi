@@ -14,7 +14,7 @@ const CrossOutContainer = styled.div.attrs({
 	width: 100%;
 	height: 100%;
   background-color: rgba(255,255,255,0.5);
-  transition: opacity 150ms ease-out;
+  transition: opacity 200ms ease-out;
 `
 
 class CrossOutX extends React.Component {
@@ -23,11 +23,11 @@ class CrossOutX extends React.Component {
     this.state = {isHovered: false}
   }
 
-  onMouseEnter = (e) => {
+  onMouseEnter = () => {
     this.setState({isHovered: true})
   }
 
-  onMouseLeave = (e) => {
+  onMouseLeave = () => {
     this.setState({isHovered: false})
   }
 
@@ -37,7 +37,7 @@ class CrossOutX extends React.Component {
         onMouseEnter={this.onMouseEnter}
         onMouseLeave={this.onMouseLeave}
         isOn={this.state.isHovered}>
-        <img src={CrossOut}/>
+        <img src={CrossOut} alt="prop 9 removed from ballot"/>
       </CrossOutContainer>
     )
   }
