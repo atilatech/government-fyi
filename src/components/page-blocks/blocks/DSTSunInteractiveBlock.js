@@ -59,7 +59,8 @@ const DateSelectInput = styled.input`
 `
 const DSTLabel = styled.div.attrs({
   style: props => ({
-    color: props.sliderIsInDST ? Color('orange2'): 'black'
+    color: props.sliderIsInDST ? 'white' : 'black',
+    backgroundColor: props.sliderIsInDST ? Color('blue2') : 'white'
   })
 })`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -68,14 +69,20 @@ const DSTLabel = styled.div.attrs({
   font-weight:bold;
   color: #000;
   position:absolute;
-  bottom: 38px;
+  bottom: 29px;
   background-color: white;
   transform: rotate(180deg) translateX(-3px);
-  padding: 0 3px;
+  padding: 0 5px;
+  border-radius: 4px;
   z-index: 3;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transition-delay: 200ms;
+
   @media screen and (max-width: 767px){
     transform: none;
-    bottom: -11px;
+    bottom: -18px;
   }
 `
 const DataAttribution = styled.h5`
