@@ -2,6 +2,10 @@ export const Acronyms = {
   RRAA: {
     expanded:"the Road Repair and Accountability Act",
     acronym:"RRAA"
+  },
+    ZEV: {
+    expanded:"zero-emission vehicle",
+    acronym:"ZEV"
   }
 }
 

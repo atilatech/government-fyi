@@ -31,7 +31,7 @@ const Data = {
     	data: {
     		title: "Is this really possible?",
     		text: <span>
-					Okay, there are a few caveats. If Prop 7 passes, CA can change Daylight Saving Time (DST), as long as the legislature gives it a two-thirds vote and Congress says, "Fine, whatever." <Citation data={Citations['2']}>Currently, the national Uniform Time Act of 1966 allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – something like that), or to opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we want to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what Prop 7 is implicitly asking, <Citation data={Citations['1']}>CA needs Congress to amend federal law.</Citation>
+					Okay, there are a few caveats. If Prop 7 passes, CA can change Daylight Saving Time (DST), as long as the legislature gives it a two-thirds vote and Congress says "Fine, whatever." <Citation data={Citations['2']}>Currently, the national Uniform Time Act of 1966 allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – something like that), or opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we want to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what Prop 7 is implicitly asking, <Citation data={Citations['1']}>CA needs Congress to amend federal law.</Citation>
 				</span>
     	}
     },
@@ -78,12 +78,12 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title:"Darker mornings or longer afternoons?",
+				title:"Brighter mornings or longer afternoons?",
 				text:
 				<span>
-					Moving to DST year-round would be most noticeable in the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23am, rather than 7:23am. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents would worsen during rush hour in the winter.</Citation>
+					If we moved to DST year-round, the difference would be most noticeable during the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23am rather than 7:23am. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents during rush hour would worsen in the winter.</Citation>
 					<br/><br/>
-					On the bright side, the earliest the sun would set is 5:50pm in SF, rather than the current low of 4:50pm. <Citation data={Citations['6']}>Prop 7 supporters say that later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently less clock switching also seems to reduce heart attacks the day after.</Citation>
+					On the bright side, the earliest the sun would set is 5:50pm rather than the current time of 4:50pm. <Citation data={Citations['6']}>Prop 7 supporters say later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently, less clock switching also reduces heart attacks the day after.</Citation>
 					<br/><br/>
 					Some people simply want brighter mornings; others want longer afternoons. Luckily, everyone has an opinion.
 				</span>
@@ -92,11 +92,10 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title:"Not the first time",
+				title:"Would this be a first?",
 				text:
 				<span>
-					<Citation data={Citations['4']}>The US has moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during WWI (Congress repealed it soon after), the second was in WWII, and the third was during the oil embargo from 1973-75.</Citation> <Citation data={Citations['9']}>In the third case, the government studied its effects and found mixed or inconclusive data.</Citation> (Read for yourself)
-
+					Naw, <Citation data={Citations['4']}>the US moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during WWI (Congress repealed it soon after), the second was in WWII, and the third was during the oil embargo from 1973-75.</Citation> <Citation data={Citations['9']}>In the third case, the government studied its effects and found mixed or inconclusive data.</Citation>
 				</span>
 			}
 		},
@@ -111,7 +110,7 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 7",
 						links: [
 							{
 								text: "We could not find any editorial boards in favor of Prop 7",
@@ -119,16 +118,16 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 7",
 						links: [
 							{
-								text: "Mercury News & East Bay Times Editorial Boards",
+								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/08/18/editorial-for-kids-safety-vote-no-on-year-around-daylight-saving-time/",
 							},
 						]
 					},
 					{
-						subsectionTitle: "Other",
+						subsectionTitle: "Related coverage",
 						links: [
 							{
 								text: "Time: When Daylight Saving Time Was Year-Round",
@@ -148,7 +147,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=7&year=2018",
 							},
 							{
@@ -156,13 +155,13 @@ const Data = {
 								url: "http://voterguide.sos.ca.gov/propositions/7/"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop7"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_7,_Permanent_Daylight_Saving_Time_Measure_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop7"
-							}
 						]
 					}
 				]
