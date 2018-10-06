@@ -25,15 +25,15 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "You can't vote on this (for now)",
-    		text: <span><b>You cannot vote on Prop 9</b>. <Citation data={Citations['1']}>The California supreme court removed it from the 2018 ballot, pending a suit that questions its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
+    		title: "You can't vote on this",
+    		text: <span><b>You can't vote on Prop 9</b>. <Citation data={Citations['1']}>The CA Supreme Court removed it from the 2018 ballot due to a lawsuit that questioned its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
     	},
     },
     {
     	component: TextWithTitleBlock,
     	data: {
     		title: "But real quick",
-    		text: <span>Because you can't vote on it, we won't get into it too deeply.<br/><br/>If passed, Prop 9 would have directed the Governor to ask the United States Congress to split California into three states. If Congress approved, the California Legislature would then have to go about splitting the state.</span>,
+    		text: <span>We won't get into it too deeply,<br/><br/> but if Prop 9 passed, it would have directed the Governor to ask the US Congress to split CA into three states. If Congress approved, the CA Legislature would then have to go about splitting the state.</span>,
     	},
     },
 		{
@@ -55,9 +55,9 @@ const Data = {
 			data: {
 			title: "WHYYYYY",
 				text: <span>
-					Billionaire Tim Draper, the main force behind this initiative, says that California is too large to govern. It has high costs but poor social services.
+					Billionaire Tim Draper, the main force behind this initiative, says that California is too large to govern. It has high costs but poorly implemented social services.
 					<br/><br/>
-					Others suspect political reasons. Of the many ramifications from dividing California up, the US would have 52 states, leading to four new US senators. Northern California and California, which house SF and LA, would most likely lean left, giving Democrats an advantage in the national scene.
+					Others suspect Prop 9 was a political move. If we had divvied up CA, the US would have 52 states, which would four new US senators to Congress. Northern California and California, which house SF and LA, would most likely swing left, giving Democrats an advantage in national politics.
 				</span>,
 			},
 		},
@@ -95,7 +95,7 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Articles",
+						subsectionTitle: "News coverage",
 						links: [
 							{
 								text:"LA Times: Radical plan to split California into three states earns spot on November ballot",
