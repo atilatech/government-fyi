@@ -34,7 +34,7 @@ const Data = {
     {
     	component: SectionTitleBlock,
     	data: {
-    		title: "Breakdown of fund usage",
+    		title: "How will funds be spent?",
 				nColWidth: 6,
     	},
     },
@@ -42,7 +42,7 @@ const Data = {
     	component: DonutGraphBlock,
     	data: {
     		src: BondData,
-				centerLabel: "$4M",
+				centerLabel: "$4B",
 				colorRangeStart: Color('orange1'),
 				colorRangeEnd: Color('pink2'),
     	},
