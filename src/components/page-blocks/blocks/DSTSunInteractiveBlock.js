@@ -8,7 +8,6 @@ import {timeHour, timeMinute} from "d3-time"
 import {axisBottom} from 'd3-axis'
 import {scaleTime} from 'd3-scale'
 import Color from 'layout/colors'
-import {Spacer} from 'layout/util'
 import 'components/static/dst-sun-styles.css'
 
 const Container = styled.div`
@@ -369,7 +368,6 @@ class DSTSun extends React.Component{
               <SelectorLabel topOffset={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
             </SelectorContainer>
           </Container>
-
 				</Col>
 			</Row>
 		)
