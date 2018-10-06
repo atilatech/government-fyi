@@ -66,6 +66,14 @@ const Data = {
 						]
 					},
 					{
+						subsectionTitle: "No on Prop 4",
+						links: [
+							{
+								text: "No editorial boards have written against Prop 4",
+							},
+						]
+					},
+										{
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
@@ -83,14 +91,6 @@ const Data = {
 							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_4,_Children%27s_Hospital_Bonds_Initiative_(2018)"
-							},
-						]
-					},
-					{
-						subsectionTitle: "No on Prop 4",
-						links: [
-							{
-								text: "No editorial boards have written against Prop 4",
 							},
 						]
 					},
