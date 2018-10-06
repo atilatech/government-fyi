@@ -20,7 +20,7 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "Wait, what's dialysis?",
+    		title: "Wait. What's dialysis?",
     		text:
 				<span>
 					<Citation data={Citations['1']}>About 80K Californians live with kidney disease. Every month about 80K Californians living with kidney disease go to a dialysis clinic for treatment.</Citation> Dialysis performs what a healthy kidney would do, and for three times a week, patients sit in a chair for four-hour sessions while a machine filters their blood.
@@ -30,7 +30,7 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "Why do we want to limit revenue?",
+    		title: "Got it. What's Prop 8?",
     		text:
 				<span>
 					Prop 8 would limit dialysis clinics’ revenue to 115% of “direct patient care service costs” and “health care quality improvement costs,” and require clinics to issue refunds for anything exceeding that amount. Really, Prop 8 is a roundabout way to legislatively compel these businesses to invest in staff wages, benefits, training and development, and other costs that fall within these two categories.
@@ -40,7 +40,7 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "Seems kinda obscure to vote on this",
+				title: "Seems kinda obscure to vote on this.",
 				text:
 				<span>
 					No kidding. Prop 8 is the result of ongoing disputes between a labor organization, <Acronym data={Acronyms.SEIU}/> West, and CA’s two largest dialysis businesses, <em>DaVita</em> and <em>Fresenius Medical Care</em>. <Acronym data={Acronyms.SEIU}/> West has been trying to unionize dialysis healthcare workers since 2016, but have so far been unsuccessful. They’ve used the ballot initiative process to leverage negotiations in the past, and Prop 8 is their latest effort.
@@ -57,15 +57,15 @@ const Data = {
 				<span>
 					It’s unclear. Prop 8’s revenue cap could cause clinics to increase spending on “direct patient care services” and “healthcare improvements,” but critics argue that these categories don’t include spending on medical directors, clinic coordinators, regulatory compliance, or other costs. 115% of a lesser amount means some clinics could shutdown, endangering patients’ lives.
 					<br/><br/>
-					The Legislative Analyst Office, however, reports that the financial impact on dialysis clinics is generally unknown because they can't predict what clinics will do.
+					The Legislative Analyst's Office, however, reports that the financial impact on dialysis clinics is generally unknown because they can't predict what clinics will do.
 				</span>
 			}
 		},
 		{
 			component: SectionTitleBlock,
 			data: {
-				title:"For more context",
-				subtitle:"John Oliver dives deeper into for-profit dialysis clinics."
+				title:"Additional context",
+				subtitle:<span>Not everyone likes John Oliver, but he dedicated an entire episode explaining dialysis and DaVita, one of the largest for-profit dialysis companies in the US.</span>
 			}
 		},
 		{
@@ -73,16 +73,10 @@ const Data = {
 			data: {
 				videos: [
 					{
-						caption: "John Oliver's Last Week Tonight",
+						caption: <span>John Oliver's <em>Last Week Tonight</em> dialysis episode. Aired on May 14, 2017.</span>,
 						link:"https://www.youtube-nocookie.com/embed/yw_nqzVfxFQ",
 					},
 				]
-			}
-		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				text: "The segment talks about some of the clinics that Prop 8 targets. If you acknowledge the issues Oliver brings up, does Prop 8 help solve them?"
 			}
 		},
 		{
@@ -96,15 +90,15 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 8",
 						links: [
 							{
-								text: "No editorial boards support Prop 8",
+								text: "We couldn't find any editorial boards that support Prop 8.",
 							},
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 8",
 						links: [
 							{
 								text: "LA Times Editorial Board",
@@ -115,7 +109,7 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/A-measure-that-does-not-belong-on-the-state-13216454.php"
 							},
 							{
-								text: "Mercury News Editorial Board",
+								text: "San Jose Mercury News Editorial Board",
 								url: "https://www.mercurynews.com/2018/08/23/editorial-reject-prop-8-capping-kidney-dialysis-firms-profits/",
 							},
 							{
@@ -137,7 +131,7 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Opinion",
+						subsectionTitle: "Opinionated stuff",
 						links: [
 							{
 								text: "John Oliver's Last Week Tonight",
@@ -157,7 +151,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=8&year=2018",
 							},
 							{
@@ -165,13 +159,13 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop8-title-summ-analysis.pdf"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop8"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_8,_Limits_on_Dialysis_Clinics%27_Revenue_and_Required_Refunds_Initiative_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop8"
-							}
 						]
 					}
 				]
