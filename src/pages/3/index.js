@@ -22,7 +22,7 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
 				title: "Have we met before?",
-				text: "Possibly. In June, we passed Prop 68, a $4.1B bond measure that funds water and environmental projects in CA. Prop 3 is another $8.9B general obligation bond measure that funds water-related improvements across the state. Both measures add up to a grand total of about $13B."
+				text: "Possibly. This June, we passed Prop 68, a $4.1B bond measure that funds water and environmental projects in CA. Prop 3 is another $8.9B general obligation bond measure that funds water-related improvements across the state. Both measures add up to a grand total of about $13B."
 			}
 		},
 		{
@@ -40,9 +40,9 @@ const Data = {
 				title:"Still sounds like a lot of money",
 				text:
 				<span>
-					Critics of Prop 3 agree. Unlike Prop 68, which was put on the ballot by the state legislature,<Citation data={Citations['3']}> Prop 3 is on the ballot because the authors gathered enough signatures.</Citation> <Citation data={Citations['5']}>Opponents say it's a “pay-to-play” ballot measure that not only lacks administrative oversight, but also funds projects that directly benefit those who backed the campaign.</Citation> Prop 3 has raised about $3.4M from notable donors, including Land O' Lakes and Wonderful Orchards (the producers of POM juice and FIJI water). <Citation data={Citations['2']}>The owners of Wonderful Orchards, for instance, have farmland that sits in Kern County, of which $750M of Prop 3 would go towards fixing a damaged canal that waters the region.</Citation>
+					Critics of Prop 3 agree. Unlike Prop 68, which was put on the ballot by the state legislature,<Citation data={Citations['3']}> Prop 3 is on the ballot because the authors gathered enough signatures</Citation>. <Citation data={Citations['5']}>Opponents say it's a “pay-to-play” ballot measure that not only lacks administrative oversight, but also funds projects that directly benefit those who backed the campaign</Citation>. Prop 3 has raised about $3.4M from notable donors, including Land O' Lakes and Wonderful Orchards (the producers of POM juice and FIJI water). <Citation data={Citations['2']}>The owners of Wonderful Orchards, for instance, have farmland that sits in Kern County, of which $750M of Prop 3 would go towards fixing a damaged canal that waters the region</Citation>.
 					<br/><br/>
-					On the other hand, <Citation data={Citations['4']}>supporters argue that Prop 3 is a bipartisan initiative that doesn’t just focus on urban, coastal water problems like Prop 68, but commits significant funding and resources to inland California.</Citation> Local water authorities along with agriculture and conservation groups also support Prop 3 saying it’s a critical step to upgrading CA’s water system.
+					On the other hand, <Citation data={Citations['4']}>supporters argue that Prop 3 is a bipartisan initiative that doesn’t just focus on urban, coastal water problems like Prop 68, but commits significant funding and resources to inland California</Citation>. Local water authorities along with agriculture and conservation groups also support Prop 3 saying it’s a critical step to upgrading CA’s water system.
 				</span>,
     	},
     },
@@ -65,60 +65,68 @@ const Data = {
 				messages: [
 					{
 						from: "them",
-						body:"California's water is fucked"
-					},
-					{
-						from: "them",
-						body:"When it rains, we get wildfires. When it droughts, avocado prices skyrocket"
+						body:"Drought, wildfires, earthquakes, CA has got so many issues, man."
 					},
 					{
 						from: "me",
-						body:"Do you think Prop 3 would help?"
+						body:"Chillll. Did you read about Prop 3?"
 					},
 					{
 						from: "them",
-						body:<span>Not sure. We just voted on another prop about water in June, but somebody said <Citation data={Citations['3']}>it was placed on the ballot to deter voters from Prop 3.</Citation></span>
-					},
-					{
-						from: "me",
-						body:"June's prop was from the legislature. This prop got on the ballot by gathering enough signatures from the public."
-					},
-					{
-						from:"them",
-						body:"Perfect. Who paid for this one"
+						body:"Yea, who paid for it?"
 					},
 					{
 						from:"me",
-						body:"Lots in agriculture support it financially"
-					},
-					{
-						from:"me",
-						body:<span>Some oppose it because it's "pay to play", like farmers getting their canal fixed, and <Citation data={Citations['9']}>because it doesn't go through the annual budgetary process</Citation>, even though it's $17B in state debt.</span>
+						body:"Lots of agribusinesses (Yes, that's a word)"
 					},
 					{
 						from: "them",
-						body:<Citation data={Citations['11']}>The prop does require an independent audit on spending every three years though.</Citation>
-					},
-					{
-						from:"them",
-						body:"And doesn't that canal need fixing? The Oroville dam definitely does."
+						body:"🤓"
 					},
 					{
 						from:"me",
-						body:<Citation data={Citations['10']}>Yea, but usually the users of the resource pay for its repair, not all of California.</Citation>
-					},
-					{
-						from:"them",
-						body:"Clean drinking water is important"
-					},
-					{
-						from:"me",
-						body:<Citation data={Citations['8']}>Prop 3's author said, “Typically, in polling usually what polls well is safe drinking water, clean water in rivers and streams and water supply that’s resistant to drought".</Citation>
+						body:<span>Some are calling it "pay to play", like farmers paying for Prop 3 to get their canal fixed.<Citation data={Citations['9']}>Did you see that it doesn't go through CA's annual budgetary process either</Citation>. Kinda sketch.</span>
 					},
 					{
 						from: "them",
-						body:"You gotta admit though, our water is fucked."
-					}
+						body:<Citation data={Citations['11']}>Yea, but the prop requires an independent spending audit every three years.</Citation>
+					},
+					{
+						from:"them",
+						body:"And doesn't that Friant-Kern canal need fixing? The Oroville dam definitely does."
+					},
+					{
+						from:"me",
+						body:<Citation data={Citations['10']}>Why do I have to pay for a canal in central valley?</Citation>
+					},
+										{
+						from:"them",
+						body:"People pay for things that don't directly affect them all the time."
+					},
+					{
+						from:"them",
+						body:"I mean, clean drinking water is important"
+					},
+					{
+						from:"me",
+						body:<Citation data={Citations['10']}>Yea, but usually people who use the resource pay for its repair, not all of CA.</Citation>
+					},
+					{
+						from:"me",
+						body:<Citation data={Citations['8']}>Prop 3 authors: “Typically, in polling usually what polls well is safe drinking water, clean water in rivers and streams and water supply that’s resistant to drought".</Citation>
+					},
+					{
+						from: "them",
+						body:"Fine. You know what else is important?"
+					},
+										{
+						from: "them",
+						body:"In n’ Out. Wanna grab a double-double?"
+					},
+					{
+						from:"me",
+						body:"I see you, girl"
+					},
 
 				]
 			}
@@ -134,20 +142,28 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 3",
 						links: [
 							{
 								text: "Fresno Bee Editorial Board",
 								url: "https://www.fresnobee.com/opinion/editorials/article217097890.html"
 							},
 							{
-								text:"Article: Officials kick off Prop. 3 campaign",
-								url:"https://hanfordsentinel.com/news/local/officials-kick-off-prop-campaign/article_4b04e7e1-89d7-5c2d-ac28-6e0cd60d7798.html"
-							}
+								text: "The Press Democrat Editorial Board",
+								url: "https://www.pressdemocrat.com/opinion/8803779-181/yes-on-prop-3-protecting"
+							},
+							{
+								text: "SF Chronicle Editorial Board",
+								url: "https://www.sfchronicle.com/opinion/openforum/article/California-Prop-3-vote-yes-to-pay-for-13273251.php"
+							},
+							{
+								text: "Op-Ed: Prop. 3 will provide clean, safe, reliable water",
+								url: "https://www.mercurynews.com/2018/09/14/opinion-prop-3-will-provide-clean-safe-reliable-water/"
+							},
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 3",
 						links: [
 							{
 								text:"SF Chronicle Editorial Board",
@@ -165,27 +181,30 @@ const Data = {
 								text: "Santa Cruz Sentinel Editorial Board",
 								url: "http://www.santacruzsentinel.com/opinion/20180918/editorial-vote-no-on-water-bond-prop-3-yes-on-prop-4-childrens-hospitals",
 							},
+							{
+								text:"CA Sierra Club",
+								url:"https://www.sierraclub.org/sites/www.sierraclub.org/files/sce/sierra-club-california/PDFs/FactSheet_Proposition3_Opposition-July18.pdf"
+							},
 						]
 					},
 					{
-						subsectionTitle: "Interest groups",
+						subsectionTitle: "Related coverage",
 						links: [
 							{
-								text:"Sierra Club says no",
-								url:"https://www.sierraclub.org/sites/www.sierraclub.org/files/sce/sierra-club-california/PDFs/FactSheet_Proposition3_Opposition-July18.pdf"
+								text:"Officials kick off Prop. 3 campaign",
+								url:"https://hanfordsentinel.com/news/local/officials-kick-off-prop-campaign/article_4b04e7e1-89d7-5c2d-ac28-6e0cd60d7798.html"
 							},
-							{
-								text: "Statement from the author of Prop 3",
-								url: "https://www.mercurynews.com/2018/09/14/opinion-prop-3-will-provide-clean-safe-reliable-water/"
+														{
+								text:"Valadao, Costa, other Valley leaders rally in support of California water ballot prop",
+								url:"https://www.fresnobee.com/news/politics-government/election/local-election/article218738990.html"
 							},
-
 						]
 					},
 					{
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=3&year=2018",
 							},
 							{
