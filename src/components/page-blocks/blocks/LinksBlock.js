@@ -170,7 +170,7 @@ const LinksBlock = (props) => {
 					mdOffset={3} md={6}
 					lgOffset={3} lg={6}
 				>
-					<Disclaimer><b>Note</b>: We intentionally omit links to the arguments & rebuttals found in the official voter guide. We believe they exaggerate claims, mislead through emotions, and use ALL CAPS irresponsibly.</Disclaimer>
+					<Disclaimer><b>Note</b>: We intentionally omit links to arguments & rebuttals found in CA's official voter guide. We believe they exaggerate claims, mislead with emotions, and use ALL CAPS irresponsibly.</Disclaimer>
 				</Col>
 			</Row>
 		</HideOnPrint>
