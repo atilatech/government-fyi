@@ -196,7 +196,7 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop1-title-summ-analysis.pdf"
 							},
 							{
-								text: "Official legislative text",
+								text: "Legal text of proposition",
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop1"
 							},
 														{

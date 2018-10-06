@@ -19,9 +19,9 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "What's going on ",
+    		title: "What's going on?",
     		text: <span>
-					<Citation data={Citations['5']}>California children’s hospitals receive a majority of their funding from Medi-Cal, the state’s insurance program for low-income residents, which means they often lack the funds to keep up with their infrastructure costs.</Citation>
+					<Citation data={Citations['5']}>California's children’s hospitals receive a majority of their funding from Medi-Cal, the state’s insurance program for low-income residents, which means they often lack the funds to keep up with their infrastructure costs</Citation>.
 					<br/><br/>
 					Prop 4 would issue $1.5B in general obligation bonds to renovate and upgrade CA’s children's hospitals, specifically eight private, nonprofit hospitals ($135M each), five <Acronym data={Acronyms.UC}/> medical centers ($54M each), and other hospitals that treat children in specialized wings ($150M).
 					<br/><br/>
@@ -49,7 +49,7 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 4",
 						links: [
 							{
 								text:"Mercury News & East Bay Times Editorial Board",
@@ -69,7 +69,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=4&year=2018",
 							},
 							{
@@ -77,20 +77,20 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop4-title-summ-analysis.pdf"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop4"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_4,_Children%27s_Hospital_Bonds_Initiative_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop4"
-							}
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 4",
 						links: [
 							{
-								text: "No editorial boards are against this",
+								text: "No editorial boards have written against Prop 4",
 							},
 						]
 					},
