@@ -3,7 +3,7 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
+// import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 
 import Citation from 'components/interactive/citation/citation'

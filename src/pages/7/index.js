@@ -4,6 +4,7 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import SubsectionTitleBlock from 'components/page-blocks/blocks/SubsectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
+import AttributionBlock from 'components/page-blocks/blocks/AttributionBlock'
 import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
 import DSTSunInteractiveBlock from 'components/page-blocks/blocks/DSTSunInteractiveBlock'
 
@@ -15,7 +16,7 @@ import {Acronyms, Citations} from './expandables'
 //-- removed extensions so it imports as static url, not as object
 import UsMap from './topojson/states-topojson'
 import TzMap from './topojson/timezones-2'
-import LASunTimes from './suntimes/la.js'
+// import LASunTimes from './suntimes/la.js'
 import SFSunTimes from './suntimes/sf.js'
 
 const Data = {
@@ -165,6 +166,17 @@ const Data = {
 						]
 					}
 				]
+			}
+		},
+		{
+			component: AttributionBlock,
+			data: {
+				nColWidth: 6,
+				text:
+					<span>
+						Data for map visualization from Timezone Boundary Builder project (<a href="https://github.com/evansiroky/timezone-boundary-builder" target="_blank" rel="noreferrer noopener">link</a>). Note that proposed new timezones (California, Florida) are estimated from state boundaries, and not from any legally proposed specification.<br/>
+						Data for sunrise/sunset visualization from timeanddate.com (<a href="https://www.timeanddate.com/sun/usa/san-francisco" target="_blank" rel="noreferrer noopener">link</a>)
+					</span>
 			}
 		}
   ]

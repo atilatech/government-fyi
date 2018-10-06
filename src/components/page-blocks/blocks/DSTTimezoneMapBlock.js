@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {Spacer} from 'layout/util'
 import {Row, Col} from 'react-flexbox-grid'
 import 'components/static/tz-map-styles.css'
@@ -9,19 +8,6 @@ import {json} from "d3-request";
 import {feature} from "topojson";
 
 // code adapted from this example gist: https://gist.github.com/NPashaP/a74faf20b492ad377312
-
-const AttributionContainer = styled.div`
-  width: 100%;
-  display:flex;
-  justify-content: flex-end;
-`
-const DataAttribution = styled.h5`
-  font-size: 11px;
-  color: #666;
-  text-align: right;
-  display: block;
-  max-width: 40%;
-`
 
 class DSTMap extends React.Component{
   constructor(props) {
@@ -75,9 +61,6 @@ class DSTMap extends React.Component{
             lgOffset={2} lg={8}
           >
             <svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id={this.graphId}></svg>
-            <AttributionContainer>
-              <DataAttribution>Boundary data: Timezone Boundary Builder project (<a href="https://github.com/evansiroky/timezone-boundary-builder" target="_blank" rel="noreferrer noopener">link</a>). Note that proposed new timezones (California, Florida) are estimated from state boundaries, and not from any legally proposed specification.</DataAttribution>
-            </AttributionContainer>
           </Col>
         </Row>
         <Spacer height={30}/>

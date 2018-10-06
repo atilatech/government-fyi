@@ -85,12 +85,6 @@ const DSTLabel = styled.div.attrs({
     bottom: -18px;
   }
 `
-const DataAttribution = styled.h5`
-  font-size: 11px;
-  color: #666;
-  text-align: right;
-  display: block;
-`
 
 const DSTMarking = styled.div.attrs({
   style: props => ({
@@ -375,8 +369,7 @@ class DSTSun extends React.Component{
               <SelectorLabel topOffset={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
             </SelectorContainer>
           </Container>
-          <Spacer height={0} xsHeight={30}/>
-          <DataAttribution>Data: timeanddate.com (<a href="https://www.timeanddate.com/sun/usa/san-francisco" target="_blank" rel="noreferrer noopener">link</a>)</DataAttribution>
+
 				</Col>
 			</Row>
 		)
