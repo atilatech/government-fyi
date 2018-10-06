@@ -27,7 +27,7 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
     	data: {
-    		title: "Left vs Right",
+    		title: "What's the debate?",
     		text: <span>
 					Prop 6 is predictably split along party lines. Last year, <Acronym data={Acronyms.RRAA}/> narrowly passed, with two Dems voting no and one Republican voting yes (<Citation data={Citations['1']}>thanks to some side deals</Citation>). Since its passage, Republicans have used the gas tax to <Citation data={Citations['2']}>recall a state senator</Citation> and put Prop 6 on the ballot, <Citation data={Citations['3']}>with a specific goal of increasing Republican voter turnout.</Citation>
 					<br/><br/>
@@ -40,8 +40,8 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data:{
-				title: "A breakdown",
-				subtitle: "A breakdown of taxes brought to you by RRAA",
+				title: "How would it affect me?",
+				subtitle: "The taxes brought to you by RRAA.",
 				nColWidth: 6,
 			}
 		},
@@ -52,20 +52,20 @@ const Data = {
 				buttonText: "Two more", //optional
 				stories: [
 					{
-						title: "Gasolina tax",
+						title: "Gasoline tax",
 						description: <span><Acronym data={Acronyms.RRAA}/> raised the gas tax from $0.28/gal to $0.30/gal, and will raise it again in 2019 to $0.47/gal to raise $2.4B in revenue.</span>,
 					},
 					{
 						title: "Diesel tax",
-						description: <span><Acronym data={Acronyms.RRAA}/> raised the diesel tax from $0.16/gal to $0.36/gal and increases the diesel fuel sales tax to 5.75% to generate $1.1B.</span>,
+						description: <span><Acronym data={Acronyms.RRAA}/> more than doubled the diesel tax from $0.16/gal to $0.36/gal and increases the diesel fuel sales tax to 5.75% to generate $1.1B.</span>,
 					},
 					{
-						title: "Vehicle Registration fees",
-						description: <span>Depending on the value of your car, a <em>transportation improvement fee</em> of $25 to $175 is added to your vehicle registration costs. Rakes in $1.6B.</span>,
+						title: "Vehicle registration fees",
+						description: <span>Depending on the value of your car, a <em>transportation improvement fee</em> of $25 to $175 is added to the cost of your vehicle registration. It rakes in $1.6B.</span>,
 					},
 					{
 						title: "Zero-emission vehicle fee",
-						description: <span><Acronym data={Acronyms.RRAA}/> introduced a new $100 fee for ZEVs, which is expected to raise $20M.</span>,
+						description: <span><Acronym data={Acronyms.RRAA}/> introduced a new $100 fee for <Acronym data={Acronyms.ZEV}/>s, which is expected to raise $20M.</span>,
 					},
 				],
 			}
@@ -75,17 +75,17 @@ const Data = {
     	data: {
     		title: "And where does the money go?",
     		text: <span>
-					~$3.2B a year on average in total revenue
+					CA’s gas tax would generate about $3.2B a year in revenue. Here’s how it'd be spent: 
 					<ul>
 						<li>$400M for state bridges and culverts</li>
 						<li>$200M for counties with local transportation taxes</li>
 						<li>$100M to improve biking and walking projects</li>
 						<li>$25M for servicing freeways</li>
 						<li>$25M for sustainable community grants</li>
-						<li>$7M total for transportation-related research and education</li>
-						<li>$5M in workforce development grants</li>
+						<li>$7M for transportation-related research and education</li>
+						<li>$5M for workforce development grants</li>
 					</ul>
-					With the remaining $2.5B, half would go to Caltrans for highway maintenance and repair. The other half would go to cities for local transportation infrastructure projects.
+					With the remaining $2.5B, half would go to Caltrans for highway maintenance and repair. The other half would go to cities with local transportation infrastructure projects.
 				</span>,
     	},
 		},
@@ -102,17 +102,17 @@ const Data = {
 					{
 						title: "'Yes' means repeal",
 						body: <span>
-							<br/>A <em>Yes</em> vote on Prop 6 means you would like
+							<br/>A <em>Yes</em> vote on Prop 6 means you'd like to:
 							<ul>
-								<li>to get rid of the <Acronym data={Acronyms.RRAA}/> and its associated gas tax increases and transportation improvements.</li>
-								<li>to put all future gas tax increases, after being passed by the Legislature and signed by the Governor, on the ballot for CA voters to decide.</li>
+								<li>get rid of the <Acronym data={Acronyms.RRAA}/> and its associated gas tax increases and transportation improvements.</li>
+								<li>have CA voters decide on future gas tax increases via future ballot propositions.</li>
 						</ul></span>,
 					},
 					{
 						title: "'No' means no-peal",
-						body: <span><br/>A <em>No</em> vote means that you wanna<ul>
+						body: <span><br/>A <em>No</em> vote means that you wanna:<ul>
 							<li>continue the tax increases and transportation improvements from <Acronym data={Acronyms.RRAA}/> as planned.</li>
-							<li>let future gas tax laws be passed with the current thresholds (two-thirds of state assembly, senate, and one whole governor's signature).</li>
+							<li>let future gas tax laws be settled by the state (aka two-thirds of the state assembly, senate, and one whole governor's signature).</li>
 						</ul></span>,
 					},
 				],
@@ -129,7 +129,7 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 6",
 						links: [
 							{
 								text: "We could not find any editorial boards that support Prop 6",
@@ -137,14 +137,14 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 6",
 						links: [
 							{
 								text: "SF Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-No-on-Proposition-6-cynical-13189410.php",
 							},
 							{
-								text: "Mercury News & East Bay Times Editorial Board",
+								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/09/04/editorial-no-on-prop-6-to-preserve-state-roads-transit-funds/"
 							},
 							{
@@ -154,7 +154,7 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Other",
+						subsectionTitle: "Related coverage",
 						links: [
 							{
 								text: "Breakdown of taxes and revenue from RRAA",
@@ -178,13 +178,13 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop6-title-summ-analysis.pdf"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop6"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_6,_Voter_Approval_for_Future_Gas_and_Vehicle_Taxes_and_2017_Tax_Repeal_Initiative_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop6"
-							}
 						]
 					}
 				]

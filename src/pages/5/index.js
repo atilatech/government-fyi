@@ -99,7 +99,7 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-Proposition-5-would-make-13242640.php"
 							},
 							{
-								text: "Mercury News & East Bay Times Editorial Boards",
+								text: "The San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/09/08/editorial-prop-5-worsens-already-broken-state-property-tax-system/",
 							},
 						]
