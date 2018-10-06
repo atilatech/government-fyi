@@ -21,11 +21,11 @@ const Data = {
     	data: {
     		title: "What's going on?",
     		text: <span>
-					<Citation data={Citations['5']}>California's children’s hospitals receive a majority of their funding from Medi-Cal, the state’s insurance program for low-income residents, which means they often lack the funds to keep up with their infrastructure costs</Citation>.
+					<Citation data={Citations['5']}>California's children’s hospitals receive a majority of their funding from Medi-Cal, the state’s insurance program for low-income residents, which means they often lack the funds to keep up with their infrastructure costs.</Citation>
 					<br/><br/>
 					Prop 4 would issue $1.5B in general obligation bonds to renovate and upgrade CA’s children's hospitals, specifically eight private, nonprofit hospitals ($135M each), five <Acronym data={Acronyms.UC}/> medical centers ($54M each), and other hospitals that treat children in specialized wings ($150M).
 					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. <Citation data={Citations['2']}>The $1.5B would cost us $2.9B over 35 years, or $80M annually (roughly 0.1% of our annual budget)</Citation>.
+					General obligation bonds are loans from investors that are repaid by the state over time with interest. <Citation data={Citations['2']}>The $1.5B would cost us $2.9B over 35 years, or $80M annually (roughly 0.1% of our annual budget).</Citation>
 				</span>,
     	},
     },
@@ -34,7 +34,7 @@ const Data = {
     	data: {
     		title: "Do we always fund private hospitals?",
     		text: <span>
-					Critics say we shouldn’t. <Citation data={Citations['4']}>They argue private hospitals should be primarily funded by private donations or pre-existing state funds, not new debt.</Citation> <Citation data={Citations['3']}>Since state funding for hospital infrastructure has been cut, hospitals have successfully relied on bond measures to fund their operations</Citation>. <Citation data={Citations['1']}>So far, the state’s eight private hospitals have contributed a total of more than $10M in support Prop 4</Citation>.
+					Critics say we shouldn’t. <Citation data={Citations['4']}>They argue private hospitals should be primarily funded by private donations or pre-existing state funds, not new debt.</Citation> <Citation data={Citations['3']}>Since state funding for hospital infrastructure has been cut, hospitals have successfully relied on bond measures to fund their operations.</Citation> <Citation data={Citations['1']}>So far, the state’s eight private hospitals have contributed a total of more than $10M in support Prop 4.</Citation>
 				</span>,
     	},
 	  },

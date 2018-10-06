@@ -40,9 +40,9 @@ const Data = {
 				title:"Still sounds like a lot of money",
 				text:
 				<span>
-					Critics of Prop 3 agree. Unlike Prop 68, which was put on the ballot by the state legislature,<Citation data={Citations['3']}> Prop 3 is on the ballot because the authors gathered enough signatures</Citation>. <Citation data={Citations['5']}>Opponents say it's a “pay-to-play” ballot measure that not only lacks administrative oversight, but also funds projects that directly benefit those who backed the campaign</Citation>. Prop 3 has raised about $3.4M from notable donors, including Land O' Lakes and Wonderful Orchards (the producers of POM juice and FIJI water). <Citation data={Citations['2']}>The owners of Wonderful Orchards, for instance, have farmland that sits in Kern County, of which $750M of Prop 3 would go towards fixing a damaged canal that waters the region</Citation>.
+					Critics of Prop 3 agree. Unlike Prop 68, which was put on the ballot by the state legislature,<Citation data={Citations['3']}> Prop 3 is on the ballot because the authors gathered enough signatures.</Citation> <Citation data={Citations['5']}>Opponents say it's a “pay-to-play” ballot measure that not only lacks administrative oversight, but also funds projects that directly benefit those who backed the campaign.</Citation> Prop 3 has raised about $3.4M from notable donors, including Land O' Lakes and Wonderful Orchards (the producers of POM juice and FIJI water). <Citation data={Citations['2']}>The owners of Wonderful Orchards, for instance, have farmland that sits in Kern County, of which $750M of Prop 3 would go towards fixing a damaged canal that waters the region.</Citation>
 					<br/><br/>
-					On the other hand, <Citation data={Citations['4']}>supporters argue that Prop 3 is a bipartisan initiative that doesn’t just focus on urban, coastal water problems like Prop 68, but commits significant funding and resources to inland California</Citation>. Local water authorities along with agriculture and conservation groups also support Prop 3 saying it’s a critical step to upgrading CA’s water system.
+					On the other hand, <Citation data={Citations['4']}>supporters argue that Prop 3 is a bipartisan initiative that doesn’t just focus on urban, coastal water problems like Prop 68, but commits significant funding and resources to inland California.</Citation> Local water authorities along with agriculture and conservation groups also support Prop 3 saying it’s a critical step to upgrading CA’s water system.
 				</span>,
     	},
     },
@@ -85,7 +85,7 @@ const Data = {
 					},
 					{
 						from:"me",
-						body:<span>Some are calling it "pay to play", like farmers paying for Prop 3 to get their canal fixed.<Citation data={Citations['9']}>Did you see that it doesn't go through CA's annual budgetary process either</Citation>. Kinda sketch.</span>
+						body:<span>Some are calling it "pay to play", like farmers paying for Prop 3 to get their canal fixed.<Citation data={Citations['9']}>Did you see that it doesn't go through CA's annual budgetary process either.</Citation> Kinda sketch.</span>
 					},
 					{
 						from: "them",

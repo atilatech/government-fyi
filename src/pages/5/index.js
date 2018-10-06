@@ -22,7 +22,7 @@ const Data = {
     		title: "Another perk for seniors?",
     		text:
 				<span>
-					Yes, but it doesn't just impact the elderly. Prop 5 would give homeowners who are over 55 or severely disabled a discounted property tax rate when they decide to move to a new home. The measure matters because it incentivizes homeowners to move, potentially increasing the number of houses available for sale, but <Citation data={Citations['1']}>it also potentially reduces the state's property tax revenue by an estimated $1B a year, which is mostly used to fund public schools</Citation>.
+					Yes, but it doesn't just impact the elderly. Prop 5 would give homeowners who are over 55 or severely disabled a discounted property tax rate when they decide to move to a new home. The measure matters because it incentivizes homeowners to move, potentially increasing the number of houses available for sale, but <Citation data={Citations['1']}>it also potentially reduces the state's property tax revenue by an estimated $1B a year, which is mostly used to fund public schools.</Citation>
 				</span>
     	},
     },
@@ -40,7 +40,7 @@ const Data = {
 			data: {
 				title: "How does this happen?",
 				text:<span>
-					Say your 56-year-old neighbor bought her home in 1980 for $110K, and you just bought the place next door for $1M (aka a steal in SF). Even though you live in very similar homes, she'll pay $2,200 in taxes this year while you pay $11,000. <Citation data={Citations['3']}>Also under Prop 60 and 90 (passed years after Prop 13), your neighbor is allowed to transfer her old property tax assessment to a less expensive home, but restrictions apply</Citation>. She can only do it once in her lifetime and has to move within the same county. If she moves across county lines, <Citation data={Citations['4']}>there are only 11 counties that recognize her former property tax assessment</Citation>.
+					Say your 56-year-old neighbor bought her home in 1980 for $110K, and you just bought the place next door for $1M (aka a steal in SF). Even though you live in very similar homes, she'll pay $2,200 in taxes this year while you pay $11,000. <Citation data={Citations['3']}>Also under Prop 60 and 90 (passed years after Prop 13), your neighbor is allowed to transfer her old property tax assessment to a less expensive home, but restrictions apply.</Citation> She can only do it once in her lifetime and has to move within the same county. If she moves across county lines, <Citation data={Citations['4']}>there are only 11 counties that recognize her former property tax assessment.</Citation>
 					<br/><br/>
 					Now, put yourself in your neighbor's shoes. Would you move? Even though everyone’s gone to college and you have way too much space, you have a strong financial incentive to stay put, pay a lower less on property taxes, and save money.
 				</span>
@@ -52,11 +52,11 @@ const Data = {
 				title: "Okay, take me back to Prop 5",
 				text:
 				<span>
-					Prop 5 basically gets rid of the previous restrictions and lets Californians over 55 pay a discounted property tax regardless of where they move to in California, how many times they move, or whether it’s into a more or less expensive home. <Citation data={Citations['']}>Supporters argue the measure would incentivize long-time homeowners to move and free up CA’s limited housing supply</Citation>.
+					Prop 5 basically gets rid of the previous restrictions and lets Californians over 55 pay a discounted property tax regardless of where they move to in California, how many times they move, or whether it’s into a more or less expensive home. <Citation data={Citations['']}>Supporters argue the measure would incentivize long-time homeowners to move and free up CA’s limited housing supply.</Citation>
 					<br/><br/>
-					<Citation data={Citations['']}>But critics claim CA’s housing shortage won’t be solved by simply making more homes available. Plus, elderly property owners already benefit from a tax break when they want to move to a less expensive home. Finally, Prop 5 would be another property tax discount that would burden local governments</Citation>.
+					<Citation data={Citations['']}>But critics claim CA’s housing shortage won’t be solved by simply making more homes available. Plus, elderly property owners already benefit from a tax break when they want to move to a less expensive home. Finally, Prop 5 would be another property tax discount that would burden local governments.</Citation>
 					<br/><br/>
-					If Prop 5 passes, <Citation data={Citations['6']}>the nonpartisan Legislative Analyst’s Office estimates that CA schools and local governments would lose a total of over $100M a year in property taxes for the first few years and eventually lose about a $1B a year</Citation>. <Citation data={Citations['5']}>This even takes into account potentially <em>new</em> homeowners paying market-price property taxes</Citation>.
+					If Prop 5 passes, <Citation data={Citations['6']}>the nonpartisan Legislative Analyst’s Office estimates that CA schools and local governments would lose a total of over $100M a year in property taxes for the first few years and eventually lose about a $1B a year.</Citation> <Citation data={Citations['5']}>This even takes into account potentially <em>new</em> homeowners paying market-price property taxes.</Citation>
 
 				</span>
 			}

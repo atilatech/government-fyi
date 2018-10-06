@@ -28,7 +28,7 @@ const Data = {
     		text: <span>
 					Yep, at least on what the proposition intends to do. How you should vote, however, not so much. Essentially, Prop 1 would issue $4B in general obligation bonds to fund housing programs.
 					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans for veterans, which are of no cost to the state, and <Citation data={Citations['1']}>the rest of the money ($3B) would cost the state $5.9B, or $170M annually, to repay. It adds up to roughly 0.1% of our annual budget</Citation>.</span>,
+					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans for veterans, which are of no cost to the state, and <Citation data={Citations['1']}>the rest of the money ($3B) would cost the state $5.9B, or $170M annually, to repay. It adds up to roughly 0.1% of our annual budget.</Citation></span>,
     	},
     },
     {
@@ -135,7 +135,7 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: <span><Citation data={Citations['8']}>But CA needs 180K homes a year and Prop 1 would only build 15K units</Citation>. Voting 'no' tells pols that we need more than a temporary fix.</span>
+						body: <span><Citation data={Citations['8']}>But CA needs 180K homes a year and Prop 1 would only build 15K units.</Citation> Voting 'no' tells pols that we need more than a temporary fix.</span>
 					},
 					{
 						from: "them",
