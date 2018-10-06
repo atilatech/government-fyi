@@ -28,17 +28,6 @@ const Background = styled.div`
 	box-sizing: border-box;
 	position:relative;
 `;
-// const NoiseOverlay = styled.div`
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	background: url(${NoiseSVG});
-// 	background-repeat: repeat;
-// 	height: 100%;
-// 	width: 100%;
-// 	mix-blend-mode: overlay;
-// `
-
 const PropNumber = styled.div`
 	font-family: ${props=>props.theme.fonts.helvetica};
 	align-self: flex-end;
