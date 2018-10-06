@@ -55,31 +55,31 @@ const Data = {
 				stories: [
 					{
 						title:"CalVet Home Loan Program",
-						description:"$1B which offers loans to veterans for the purchase of homes, farms, and mobile homes"
+						description:"$1B to help military veterans buy homes, farms, or mobile homes."
 					},
 					{
-						title:"Multifamily Housing Program",
-						description:"$1.5B which offers loans to low-income people for the construction and maintenance of rental housing"
+						title:"Multi-family Housing Program",
+						description:"$1.5B to build and maintain rental housing for low-income families."
 					},
 					{
 						title:"Transit-Oriented Development",
-						description:"$150M which offers loans and grants to local governments and developers for housing projects near transit stations"
+						description:"$150M to encourage local governments and developers to build more housing near public transit areas."
 					},
 					{
 						title:"Infill Incentive",
-						description:"$300M which offers grants for infill infrastructure that supports high-density affordable and mixed-income housing"
+						description:"$300M to offer infill grants that support high-density affordable and mixed-income housing."
 					},
 					{
 						title:"Home Purchase Assistance Program",
-						description:"$150M which offers loans low to moderate-income homebuyers"
+						description:"$150M to help low- and moderate-income residents buy homes."
 					},
 					{
 						title:"Farmworker Housing Grant Fund",
-						description:"$150M which offers grants and loans for farmworker housing"
+						description:"$150M to build housing for farmworkers."
 					},
 					{
 						title:"Local Housing Trust Matching Grant Program",
-						description:"$300M which offers matching grants to local housing trust funds for \"pilot programs to demonstrate innovative, cost-saving approaches to creating or preserving affordable housing\""
+						description:"$300M to offer matching grants for local housing pilot programs that \"demonstrate innovative, cost-saving approaches to creating or preserving affordable housing.\""
 					},
 					{
 						title:"Self-Help Housing Fund",
@@ -94,11 +94,11 @@ const Data = {
     		title: "Is there a super complicated backstory?",
 				text:
 				<span>
-					Nope! Prop 1 is part of a package of bills that intends to increase housing production and lower housing costs for residents. By law, every resident has to approve, aka vote, on bonds that cost more than $300K.
+					Nope! Prop 1 is a part of a package of bills that intends to increase housing production and lower housing costs for residents. By law, every resident has to approve, aka vote, on bonds that cost more than $300K.
 					<br/><br/>
 					<Citation data={Citations['3']}>Opponents argue that with high taxes and a state budget surplus of $16B, legislators should make structural reforms rather than create more debt. Prop 1 is another band-aid, they claim, not a solution.</Citation> <Citation data={Citations['4']}>Critics point to <Acronym data={Acronyms.CEQA}/>, rent control, and  labor wages as examples of regulation that have driven up construction costs and contributed to CA’s housing shortage</Citation>
 					<br/><br/>
-					Almost everyone agrees that housing affordability in CA is a critical issue. How we decide to resolve it is contentious.
+					Almost everyone agrees that housing affordability in CA is a critical issue, but how we resolve it remains contentious.
 				</span>
     	},
     },
@@ -123,31 +123,23 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: "Oh right, CA is gonna spend less. 😒"
-					},
-					{
-						from: "me",
-						body: "We have a surplus so why don't we spend it? Housing is crazy expensive here so why don’t we build more?"
+						body: "We have a budget surplus so why don't we spend it on building more housing instead of issuing loans?"
 					},
 					{
 						from: "them",
-						body: <span><Citation data={Citations['6']}>Or we can save it for our rainy day fund. Recessions are real.</Citation></span>
+						body: <span><Citation data={Citations['6']}>Recessions are real and we should save our extra $$ for a rainy day.</Citation></span>
 					},
 					{
 						from: "them",
-						body: <span>If we want to build more housing, we should reform CEQA. <Citation data={Citations['7']}>It’ll make it easier to approve housing projects</Citation></span>
+						body: <span>Prop 1 would help 30K families + 7.5K farmworkers afford their homes, and 15.K people and 3K veterans buy new homes every year.</span>
 					},
 					{
 						from: "me",
-						body: <span>If you want to save time, reform CEQA. <Citation data={Citations['7']}>It could add 18 months in construction delays.</Citation></span>
-					},
-					{
-						from: "me",
-						body: <span><Citation data={Citations['9']}>It might not be CEQA,</Citation> but point taken. <Citation data={Citations['8']}>Prop 1 would only build us 15K units</Citation>. We need 180K a year. Voting no tells pols that we need more than a temporary fix.</span>
+						body: <span><Citation data={Citations['8']}>But CA needs 180K homes a year and Prop 1 would only build 15K units</Citation>. Voting 'no' tells pols that we need more than a temporary fix.</span>
 					},
 					{
 						from: "them",
-						body: "We can debate housing forever. People need homes now. Prop 1 is the fastest way to help them."
+						body: "We can debate housing forever. People need homes now. Prop 1 is the quickest way to help."
 					}
 				]
 			}
@@ -163,31 +155,31 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 1",
 						links: [
 							{
-								text: "SF Chronicle Editorial Board",
+								text: "San Francisco Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Yes-on-California-Prop-1-13231141.php"
 							},
 							{
-								text: "Sac Bee Editorial Board",
+								text: "The Sacramento Bee Editorial Board",
 								url: "https://www.sacbee.com/opinion/election-endorsements/article218406765.html"
 							},
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 1",
 						links: [
 							{
-								text: "San Diego Union-Tribune Editorial Board",
+								text: "The San Diego Union-Tribune Editorial Board",
 								url: "http://www.sandiegouniontribune.com/opinion/sd-proposition-1-california-housing-20180914-story.html"
 							},
 							{
-								text: "Press Enterprise Editorial Board",
+								text: "The Press-Enterprise Editorial Board",
 								url: "https://www.pe.com/2018/09/18/proposition-1-is-not-the-answer-to-our-housing-crisis-vote-no/",
 							},
 							{
-								text:"Op-ed: Proposition 1 is not the way to address affordable housing problem",
+								text:"Op-Ed: Proposition 1 is not the way to address affordable housing problem",
 								url: "http://www.sandiegouniontribune.com/opinion/commentary/sd-oe-prop1-housing-coupal-20180801-story.html"
 							}
 						]
@@ -196,7 +188,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "CA Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=1&year=2018",
 							},
 							{
@@ -204,13 +196,13 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop1-title-summ-analysis.pdf"
 							},
 							{
+								text: "Official legislative text",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop1"
+							},
+														{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_1,_Housing_Programs_and_Veterans%27_Loans_Bond_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop1"
-							}
 						]
 					}
 				]
