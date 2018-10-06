@@ -154,23 +154,23 @@ const titles = [
 ]
 
 const shortTitles = [
-  "1 issues $4B for housing",
-  "2 diverts revenue from Millionaire's tax",
-  "3 issues $8.9B for water projects",
-  "4 issues $1.5B for children's hospitals",
-  "5 gives older folks a property tax discount when they move",
-  "6 repeals last year's gas tax",
-  "7 helps make Daylight Saving permanent",
-  "8 caps dialysis clinics' revenue",
-  "9 would've split CA, literally",
-  "10 legalizes rent control again",
-  "11 requires EMTs be on-call during breaks",
-  "12 sets floor space requirements for farmed animals"
+  "Prop 1 issues $4B for housing",
+  "Prop 2 changes how we spend the Millionaire's tax",
+  "Prop 3 issues $8.9B for water projects",
+  "Prop 4 issues $1.5B for children's hospitals",
+  "Prop 5 gives older folks a property tax discount when they move",
+  "Prop 6 repeals last year's gas tax",
+  "Prop 7 helps make Daylight Saving permanent",
+  "Prop 8 caps dialysis clinics' revenue",
+  "Prop 9 would've split CA, literally",
+  "Prop 10 legalizes rent control again",
+  "Prop 11 requires EMTs be on-call during breaks",
+  "Prop 12 sets floor space requirements for farmed animals"
 ]
 
 const headlines = [
   "Prop 1 issues $4B for housing",
-  "Prop 2 diverts revenue from Millionaire's tax",
+  "Prop 2 changes how we spend the Millionaire's tax",
   "Prop 3 issues $9B for water projects",
   "Prop 4 issues $1.5B for children's hospitals",
   "Prop 5 lets older folk move with their property tax assesments",

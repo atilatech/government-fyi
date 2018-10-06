@@ -21,7 +21,7 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "A Millionaire’s tax, eh? 🤑",
-    		text:"Yep, Prop 2 would allow the state to use money from the \"Millionaire's tax\" – a 1% income tax for those earning $1M or more a year – to pay for housing for homeless people who are mentally ill."
+    		text:"Yep, it was new to us too. Prop 2 would allow the state to use revenue from the \"Millionaire's tax\" – a 1% income tax for residents earning $1M or more a year – to pay for housing for homeless people who are mentally ill."
 			}
 		},
 		{
@@ -30,18 +30,16 @@ const Data = {
 					title:"What’s the backstory?",
 					text:
 					<span>
-						<Citation data={Citations['1']}>The Millionaire’s tax was originally passed as Prop 63 in 2004, and it was intended to help counties create and expand mental health services with a "treatment-first" approach.</Citation> <Citation data={Citations['2']}>In 2016, however, the state legislature took a “housing-first” approach and passed a program called <em>No Place Like Home</em> to build permanent supportive housing for homeless people with mental illnesses. The one-time $2B program would have re-purposed funds from Prop 63</Citation>, <Citation data={Citations['3']}> but a lawsuit claimed Prop 63 didn’t specify housing costs, and the legislature can't change a Prop 63, a voter approved measure.</Citation>
+						<Citation data={Citations['1']}>The Millionaire’s tax was originally passed as Prop 63 in 2004, and it was intended to help counties create and expand mental health services with a "treatment-first" approach</Citation>. <Citation data={Citations['2']}>In 2016, however, the state legislature took a “housing-first” approach and passed a program called <em>No Place Like Home</em> to build permanent supportive housing for homeless people suffering from mental illness. The one-time $2B program would have re-purposed funds from Prop 63</Citation>, <Citation data={Citations['3']}> but a lawsuit claimed Prop 63 was a voter-approved measure that didn’t specify housing costs. The legislature couldn't modify Prop 63.</Citation>.
 						<br/><br/>
-						Now it's being thrown back to voters. If Prop 2 passes, the <em>No Place Like Home</em> program would receive $120M a year from the $2B generated annually by the Millionaire's tax.
-						<br/><br/>
-						If Prop 2 fails, we leave it up to the courts to decide whether <em>No Place Like Home</em> can use Prop 63's money.
+						Now it's back in our court. If Prop 2 passes, the <em>No Place Like Home</em> program would receive $120M a year from the $2B generated annually by the Millionaire's tax. If Prop 2 fails, we'd leave it up to the courts to decide whether <em>No Place Like Home</em> could use Prop 63's funds.
 				</span>,
     	},
     },
 		{
 			component: SectionTitleBlock,
 			data: {
-				title: "Housing-first, or treatment-first?",
+				title: "Housing-first or treatment-first?",
 				nColWidth: 6
 			}
 		},
@@ -95,15 +93,19 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 2",
 						links: [
 							{
-								text: "SF Chronicle Editorial Board",
+								text: "San Francisco Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-Chronicle-recommends-Yes-on-California-13242085.php"
 							},
 							{
 								text: "San Diego Union-Tribune Editorial Board",
 								url: "http://www.sandiegouniontribune.com/opinion/editorials/sd-proposition-two-help-homeless-menatl-health-utak-20180917-story.html"
+							},
+							{
+								text: "San Jose Mercury News & East Bay Times Editorial Board",
+								url:"https://www.mercurynews.com/2018/09/22/editorial-prop-2/"
 							},
 							{
 								text: "Sac Bee Editorial Board",
@@ -120,22 +122,22 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 2",
 						links: [
 							{
-								text: "No Editorial Boards have written against this",
+								text: "No editorial boards have written against Prop 2",
 							},
 						]
 					},
 					{
-						subsectionTitle: "Other",
+						subsectionTitle: "Related coverage",
 						links: [
 							{
-								text:"The lawsuit that's the root of this conflict",
+								text:"$2 billion to help house California's homeless isn't being spent — and no one knows when it will be",
 								url:"http://www.latimes.com/politics/la-pol-ca-homeless-housing-bond-stalled-20180301-story.html"
 							},
 							{
-								text: "Audit on Prop 63 spending",
+								text: "CA counties slow to spend mental health tax",
 								url:"https://www.sacbee.com/news/politics-government/capitol-alert/article202396749.html"
 							}
 						]
@@ -144,7 +146,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=2&year=2018",
 							},
 							{
