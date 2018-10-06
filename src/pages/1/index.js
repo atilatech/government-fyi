@@ -96,7 +96,7 @@ const Data = {
 				<span>
 					Nope! Prop 1 is a part of a package of bills that intends to increase housing production and lower housing costs for residents. By law, every resident has to approve, aka vote, on bonds that cost more than $300K.
 					<br/><br/>
-					<Citation data={Citations['3']}>Opponents argue that with high taxes and a state budget surplus of $16B, legislators should make structural reforms rather than create more debt. Prop 1 is another band-aid, they claim, not a solution.</Citation> <Citation data={Citations['4']}>Critics point to <Acronym data={Acronyms.CEQA}/>, rent control, and  labor wages as examples of regulation that have driven up construction costs and contributed to CA’s housing shortage</Citation>
+					<Citation data={Citations['3']}>Opponents argue that with high taxes and a state budget surplus of $16B, legislators should make structural reforms rather than create more debt. Prop 1 is another band-aid, they claim, not a solution.</Citation> <Citation data={Citations['4']}>Critics point to <Acronym data={Acronyms.CEQA}/>, rent control, and  labor wages as examples of regulation that have driven up construction costs and contributed to CA’s housing shortage.</Citation>
 					<br/><br/>
 					Almost everyone agrees that housing affordability in CA is a critical issue, but how we resolve it remains contentious.
 				</span>
