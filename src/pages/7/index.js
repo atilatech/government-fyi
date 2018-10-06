@@ -31,7 +31,7 @@ const Data = {
     	data: {
     		title: "Is this really possible?",
     		text: <span>
-					Okay, there are a few caveats. If Prop 7 passes, CA can change Daylight Saving Time (DST), as long as the legislature gives it we have a two-thirds vote and Congress says, "Sure, yea." <Citation data={Citations['2']}>Currently, the national Uniform Time Act of 1966 allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – something like that), or to opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we want to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what Prop 7 is implicitly asking, <Citation data={Citations['1']}>CA needs Congress to amend federal law.</Citation>
+					Okay, there are a few caveats. If Prop 7 passes, CA can change Daylight Saving Time (DST), as long as the legislature gives it a two-thirds vote and Congress says, "Fine, whatever." <Citation data={Citations['2']}>Currently, the national Uniform Time Act of 1966 allows states to follow <Acronym data={Acronyms.DST}/> exactly (you know – "Spring forward, November back" – something like that), or to opt-out (like <Acronym data={Acronyms.AZ}/> and <Acronym data={Acronyms.HI}/>). </Citation> If we want to move to <Acronym data={Acronyms.DST}/> <em>year-round</em>, which is what Prop 7 is implicitly asking, <Citation data={Citations['1']}>CA needs Congress to amend federal law.</Citation>
 				</span>
     	}
     },
