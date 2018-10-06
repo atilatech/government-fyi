@@ -211,21 +211,10 @@ export const PropMetaData = (n) => (
 
 export const GetNextAndPrevNum = (n) => {
   let adj = {next: n+1, prev: n-1};
-  switch(n) {
-    case 1:
-      adj.prev = 12;
-      break;
-    case 8:
-      adj.next = 10;
-      break;
-    case 10:
-      adj.prev = 8;
-      break;
-    case 12:
-      adj.next = 1;
-      break;
-    default:
-      break;
+  if(n === 1){
+    adj.prev = 12;
+  } else if (n === 12) {
+    adj.next = 1;
   }
   return adj;
 }
