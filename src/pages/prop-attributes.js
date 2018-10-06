@@ -139,14 +139,14 @@ const images = [
 ]
 
 const titles = [
-  "Prop 1 buys us $4B for housing programs",
+  "Prop 1 issues $4B for housing programs",
   "Prop 2 changes how we spend the Millionaire's tax",
-  "Prop 3 buys us $8.9B for water projects",
-  "Prop 4 buys us $1.5B for children's hospitals",
+  "Prop 3 issues $8.9B for water projects",
+  "Prop 4 issues $1.5B for children's hospitals",
   "Prop 5 gives old folks a property tax discount when they move",
   "Prop 6 repeals last year's gas tax",
-  "Prop 7 helps allow Daylight Saving Time to be year-round",
-  "Prop 8 limits dialysis clinics' profits",
+  "Prop 7 helps make Daylight Saving year-round",
+  "Prop 8 limits dialysis clinics' revenue",
   "Prop 9 would have split CA into three states",
   "Prop 10 legalizes rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
@@ -161,7 +161,7 @@ const shortTitles = [
   "5 gives older folks a property tax discount when they move",
   "6 repeals last year's gas tax",
   "7 helps make Daylight Saving permanent",
-  "8 caps dialysis clinics' profits",
+  "8 caps dialysis clinics' revenue",
   "9 would've split CA, literally",
   "10 legalizes rent control again",
   "11 requires EMTs be on-call during breaks",
@@ -184,18 +184,18 @@ const headlines = [
 ]
 
 const descriptions = [
-  "One of many housing measures on the ballot",
-  "The revenue is supposed to help the mentally ill, but does housing count?",
-  "But it's different from the last water bond",
-  "Renovations and new construction",
-  "The idea is to free up houses. Will it work?",
-  "And! future gas tax increases must be approved by voters",
-  "Even if passes, Congress needs to approve it",
-  "But the story is multi-layered",
-  "A wild proposition from a VC. Alas, it's been removed from the ballot.",
-  "Does it help or hurt to have cities regulate what landlords can charge?",
-  "An attempt to exempt paramedics from a recent ruling",
-  "Guess what 1 square foot looks like relative to a chicken"
+  "One of four housing measures on the ballot.",
+  "It's supposed to help the mentally ill, but does housing count?",
+  "A lot of Farmers are a fan.",
+  "funding for renovations and new construction.",
+  "The idea is to free up housing. Will it work?",
+  "And future gas tax increases must be approved by voters.",
+  "If this passes, Congress still needs to approve it.",
+  "Of course, there's a backstory to this one.",
+  "A wild proposition by a VC. Alas, it's been removed from the ballot.",
+  "Does it help or hurt to have cities regulate rents?",
+  "Should paramedics get paid, off-duty breaks?",
+  "Guess what 1 square foot looks like relative to a chicken."
 ]
 
 export const PropMetaData = (n) => (
