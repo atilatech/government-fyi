@@ -13,12 +13,13 @@ svg polyline {
 
 @media screen and (max-width: 1023px) {
   svg .labels {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 400;
   }
 }
 @media screen and (max-width: 767px) {
   svg .labels {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     text-transform: none;
   }
