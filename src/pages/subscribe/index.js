@@ -98,13 +98,13 @@ const Data = {
       component: TextWithTitleBlock,
       data: {
         nColWidth: 8,
-        title:"🌉 And if you live in SF or SJ",
+        title:"🌉 And if you live in San Francisco or San Jose",
         text:
         <div>
           <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer"><Image imageHandles={{_1x:btbImg, _1x_webp: btbImg_w}} alt="By The Bay"/></a>
           <CenteredText>
             <Attrib>Art by Stephanie Davidson @asiwillit</Attrib>
-            Read more about your ballot on our Bay-specific site: <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer">By The Bay</a>.
+            Check out your voter guide on our Bay Area-specific site <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer">By The Bay</a>.
           </CenteredText>
         </div>
       }
