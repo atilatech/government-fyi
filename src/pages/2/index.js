@@ -125,7 +125,7 @@ const Data = {
 						subsectionTitle: "No on Prop 2",
 						links: [
 							{
-								text: "No editorial boards have written against Prop 2",
+								text: "No editorial boards have written against Prop 2.",
 							},
 						]
 					},

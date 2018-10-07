@@ -55,7 +55,7 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data:{
-				title: "$8.9 billion",
+				title: "A typical IM convo",
 				nColWidth: 6,
 			}
 		},
