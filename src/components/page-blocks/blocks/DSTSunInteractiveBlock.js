@@ -53,20 +53,21 @@ const DSTLabel = styled.div.attrs({
   style: props => ({
     color: props.sliderIsInDST ? 'white' : 'black',
     backgroundColor: props.sliderIsInDST ? Color('blue2') : 'white',
-    left: props.isDSTToggled ? 0 : -1
+    left: props.isDSTToggled ? -7 : -1
   })
 })`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   letter-spacing: 0.5px;
   font-size: 12px;
   font-weight:bold;
+  text-align: center;
   position: relative;
   color: #000;
   background-color: white;
   padding: 0 5px;
   border-radius: 4px;
   z-index: 3;
-  transition-property: background-color, color;
+  transition-property: background-color, color, left;
   transition-duration: 150ms;
   transition-timing-function: ease-out;
   transition-delay: 200ms;
