@@ -29,7 +29,10 @@ const SelectorContainer = styled.div`
   width: 250px;
   @media screen and (max-width: 767px){
     width: 100%;
-    height: 50px;
+    height: 70px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 `
 
@@ -39,8 +42,7 @@ const Vert = styled.div`
   justify-content:center;
   width: 100%;
   @media screen and (max-width: 767px){
-    width: 200px;
-    transform: none;
+    width: 80%;
   }
 `
 const DateSelectInput = styled.input`
@@ -63,7 +65,6 @@ const DSTLabel = styled.div.attrs({
   text-align: center;
   position: relative;
   color: #000;
-  background-color: white;
   padding: 0 5px;
   border-radius: 4px;
   z-index: 3;
@@ -72,7 +73,8 @@ const DSTLabel = styled.div.attrs({
   transition-timing-function: ease-out;
   transition-delay: 200ms;
   @media screen and (max-width: 767px){
-
+    position: static;
+    margin-top: 10px;
   }
 `
 
@@ -88,17 +90,20 @@ const DSTMarking = styled.div.attrs({
   top: -28px;
   transition: all 230ms ease-out;
   transition-delay: 200ms;
-  border-radius: 2px;
+  border-radius: 1px;
   border-bottom: 1px solid #666;
   border-right: 1px solid #666;
   border-left: 1px solid #666;
+  @media screen and (max-width: 767px) {
+    top:-15px;
+  }
 `
 const EndLabel = styled.h5`
   display: block;
   line-height: 12px;
-  @media screen and (max-width: 767px){
-    display: none;
+  @media screen and (max-width: 767px) {
   }
+
 `
 
 const SelectorLabel = styled.div.attrs({
@@ -115,8 +120,7 @@ const SelectorLabel = styled.div.attrs({
 
   @media screen and (max-width: 767px) {
     position: static;
-    left: 0;
-    margin-top: 3px;
+    align-self: center;
   }
 `
 
@@ -124,6 +128,9 @@ const FormContainer = styled.div`
   display: flex;
   justify-content: center
   align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `
 const Form = styled.form`
   background-color: whitesmoke;
@@ -139,9 +146,7 @@ const ToggleLabel = styled.label`
 const ToggleContainer = styled.div`
   max-width: 280px;
 `
-const Toggle = styled.input`
 
-`
 
 class DSTSun extends React.Component{
   constructor(props) {
@@ -276,7 +281,7 @@ class DSTSun extends React.Component{
     //-- change label on input
     const selectedDate = d3TimeParse("%Y-%m-%d")(this.loadedData[selectedDateIndex].date);
     const selectorWidth = this.inputSlider.getBoundingClientRect().width;
-    this.setState({sliderWidth: this.isXs ? 199 : selectorWidth}) // width of slider changes when on mobiles
+    this.setState({sliderWidth: selectorWidth}) // width of slider changes when on mobiles
     // change label text and position
     this.setState({
       selectorLabel: (d3TimeFormat("%b %-d")(selectedDate)),
@@ -339,11 +344,11 @@ class DSTSun extends React.Component{
           <FormContainer>
             <Form>
               <ToggleContainer>
-                <Toggle onChange={this.handleToggleChange} name="dst-sometimes-toggle" id="dst-sometimes-toggle" type="radio" value="regular" checked={!isDSTToggled}/>
+                <input onChange={this.handleToggleChange} name="dst-sometimes-toggle" id="dst-sometimes-toggle" type="radio" value="regular" checked={!isDSTToggled}/>
                 <ToggleLabel htmlFor="dst-sometimes-toggle"><h4><Acronym data={Acronyms.DST}/> as currently observed</h4></ToggleLabel>
               </ToggleContainer>
               <ToggleContainer>
-                <Toggle onChange={this.handleToggleChange} name="dst-all-year-toggle" id="dst-all-year-toggle" type="radio" value="all-year" checked={isDSTToggled}/>
+                <input onChange={this.handleToggleChange} name="dst-all-year-toggle" id="dst-all-year-toggle" type="radio" value="all-year" checked={isDSTToggled}/>
                 <ToggleLabel htmlFor="dst-all-year-toggle"><h4><Acronym data={Acronyms.DST}/> all year</h4></ToggleLabel>
               </ToggleContainer>
             </Form>

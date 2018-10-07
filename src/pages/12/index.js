@@ -160,6 +160,10 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-The-Chronicle-recommends-no-on-13248637.php"
 							},
 							{
+								text:"Sac Bee Editorial Board",
+								url:"https://www.sacbee.com/opinion/election-endorsements/article218967200.html"
+							},
+							{
 								text: "Press Democrat Editorial Board",
 								url: "https://www.pressdemocrat.com/opinion/8735947-181/pd-editorial-no-on-prop?sba=AAS"
 							},
