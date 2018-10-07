@@ -33,7 +33,7 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "But real quick",
-    		text: <span>We won't get into it too deeply,<br/><br/> but if Prop 9 passed, it would have directed the Governor to ask the US Congress to split CA into three states. If Congress approved, the CA Legislature would then have to go about splitting the state.</span>,
+    		text: <span>We won't get into it too deeply, but if Prop 9 passed it would have directed the Governor to ask Congress to split CA into three states. If Congress approved, the CA legislature would then have to go about splitting up the state.</span>,
     	},
     },
 		{
@@ -47,7 +47,7 @@ const Data = {
 				},
 				nColWidth: 4,
 				alt: "Map of Cal3's proposed split of California",
-				caption:"The proposal would have given the new states the power to choose their own names."
+				caption:"The ballot initiative would have allowed each new state to choose their own name."
 			}
 		},
 		{
