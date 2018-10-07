@@ -85,7 +85,7 @@ const Data = {
 					},
 					{
 						from:"me",
-						body:<span>Some are calling it "pay to play," like farmers paying for Prop 3 to get their canal fixed.<Citation data={Citations['9']}>Did you see that it doesn't go through CA's annual budgetary process either.</Citation> Kinda sketch.</span>
+						body:<span>Some are calling it "pay to play", like farmers paying for Prop 3 to get their canal fixed.<Citation data={Citations['9']}>Did you see that it doesn't go through CA's annual budgetary process either.</Citation> Kinda sketch.</span>
 					},
 					{
 						from: "them",
