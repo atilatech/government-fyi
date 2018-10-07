@@ -5,18 +5,6 @@ export const Citations = {
     headline:"Legislature Deals Blow to Rent Control",
     directQuote:"With Republican solidarity--and some help from Democrats--the Legislature on Monday struck down a contentious rent control feature in five California cities, including Santa Monica and West Hollywood, that prohibits landlords from raising the rent for new tenants.",
   },
-  '2': {
-    link:"",
-    publication:"",
-    headline:"",
-    directQuote:"",
-  },
-  '3': {
-    link:"",
-    publication:"",
-    headline:"",
-    directQuote:"",
-  },
   '4': {
     link:"https://web.stanford.edu/~diamondr/DMQ.pdf",
     publication:"Stanford University",
@@ -40,11 +28,5 @@ export const Citations = {
     publication:"UC Berkeley Haas Institute",
     headline:"Opening the Door for Rent Control: Toward a Comprehensive Approach to Protecting California's Renters",
     directQuote:"Rising rents have pushed many residents into homelessness. California now has the largest number of people experiencing homelessness among all 50 states. ",
-  },
-  '8': {
-    link:"",
-    publication:"",
-    headline:"",
-    directQuote:"",
   },
 }

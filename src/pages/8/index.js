@@ -43,7 +43,7 @@ const Data = {
 				title: "Seems kinda obscure to vote on this",
 				text:
 				<span>
-					No kidding. Prop 8 is the result of ongoing disputes between a labor organization, <Acronym data={Acronyms.SEIU}/> West, and CA’s two largest dialysis businesses, <em>DaVita</em> and <em>Fresenius Medical Care</em>. <Acronym data={Acronyms.SEIU}/> West has been trying to unionize dialysis healthcare workers since 2016, but have so far been unsuccessful. They’ve used the ballot initiative process to leverage negotiations in the past, and Prop 8 is their latest effort.
+					No kidding. Prop 8 is the result of ongoing disputes between a labor organization, <Acronym data={Acronyms.SEIU}/> West, and CA’s two largest dialysis businesses, <em>DaVita</em> and <em>Fresenius Medical Care</em>. <Acronym data={Acronyms.SEIU}/> <Citation data={Citations['7']}>West has been trying to unionize dialysis healthcare workers since 2016, but have so far been unsuccessful.</Citation> <Citation data={Citations['8']}>They’ve used the ballot initiative process to leverage negotiations in the past</Citation>, and Prop 8 is their latest effort.
 					<br/><br/>
 					<Citation data={Citations['5']}><Acronym data={Acronyms.SEIU}/> West say they want to improve the quality of patient care in these highly-profitable clinics, while opponents claim they’re simply trying to recruit more union members.</Citation> <Citation data={Citations['3']}>The aforementioned dialysis companies have raised $66M to fight the initiative and the labor union has spent more than $20M campaigning for Prop 8.</Citation>
 				</span>
@@ -55,7 +55,7 @@ const Data = {
 				title: "What’s the impact on the clinics?",
 				text:
 				<span>
-					It’s unclear. Prop 8’s revenue cap could cause clinics to increase spending on “direct patient care services” and “healthcare improvements,” but critics argue that these categories don’t include spending on medical directors, clinic coordinators, regulatory compliance, or other costs. 115% of a smaller cost total = less profit = some clinics could shutdown, endangering patients’ lives.
+					It’s unclear. Prop 8’s revenue cap could cause clinics to increase spending on “direct patient care services” and “healthcare improvements,” but <Citation data={Citations['6']}>critics argue that these categories don’t include spending on medical directors, clinic coordinators, regulatory compliance, or other costs.</Citation> 115% of a smaller cost total = less profit = some clinics could shutdown, endangering patients’ lives.
 					<br/><br/>
 					<Citation data={Citations['4']}>The Legislative Analyst's Office, however, reports that the financial impact on dialysis clinics is generally unknown because they can't predict what clinics will do.</Citation>
 				</span>
@@ -101,8 +101,8 @@ const Data = {
 						subsectionTitle: "No on Prop 8",
 						links: [
 							{
-								text: "LA Times Editorial Board",
-								url: "http://www.latimes.com/politics/la-pol-ca-dialysis-initiative-legislation-20170809-story.html",
+								text:"LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-endorsements-proposition-8-20180926-story.html"
 							},
 							{
 								text: "SF Chronicle Editorial Board",
@@ -150,6 +150,10 @@ const Data = {
 					{
 						subsectionTitle: "Impartial analyses",
 						links: [
+							{
+								text: "LA Times: labor dispute background",
+								url: "http://www.latimes.com/politics/la-pol-ca-dialysis-initiative-legislation-20170809-story.html",
+							},
 							{
 								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=8&year=2018",
