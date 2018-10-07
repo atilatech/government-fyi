@@ -63,6 +63,14 @@ const Data = {
 								text: "Santa Cruz Sentinel Editorial Board",
 								url: "http://www.santacruzsentinel.com/opinion/20180918/editorial-vote-no-on-water-bond-prop-3-yes-on-prop-4-childrens-hospitals"
 							},
+							{
+								text:"SF Chronicle Editorial Board",
+								url:"https://www.sfchronicle.com/opinion/editorials/article/Editorial-Chronicle-recommends-Yes-on-Prop-4-13257968.php"
+							},
+							{
+								text:"Sac Bee Editorial Board",
+								url:"https://www.sacbee.com/opinion/election-endorsements/article218967200.html",
+							}
 						]
 					},
 					{

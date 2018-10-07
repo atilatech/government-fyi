@@ -25,7 +25,7 @@ const SelectorContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 25px;
   width: 250px;
   @media screen and (max-width: 767px){
     width: 100%;
@@ -106,10 +106,11 @@ const SelectorLabel = styled.div.attrs({
     left: props.leftOffset + 28
   })
 })`
+  position:relative;
+  bottom: -6px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: italic;
-  position:relative;
   align-self: flex-start;
 
   @media screen and (max-width: 767px) {
@@ -125,7 +126,7 @@ const FormContainer = styled.div`
   align-items: center;
 `
 const Form = styled.form`
-  background-color: #eee;
+  background-color: whitesmoke;
   padding: 5px 10px;
   border-radius: 2px;
 `
@@ -139,13 +140,7 @@ const ToggleContainer = styled.div`
   max-width: 280px;
 `
 const Toggle = styled.input`
-  &:checked {
-    background-color: #2196F3;
-  }
 
-  &:focus {
-    background-color: #ddd;
-  }
 `
 
 class DSTSun extends React.Component{

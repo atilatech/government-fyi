@@ -40,7 +40,7 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				title: "But let's say we were on DST all year",
-				text: "Let's pretend Prop 7 passes, the state legislature moves California to DST permanently, and Congress approves it.",
+				text: <span>Let's pretend Prop 7 passes, the state legislature moves California to <Acronym data={Acronyms.DST}/> permanently, and Congress approves it.</span>,
 				nColWidth: 8
 			}
 		},
@@ -60,13 +60,13 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress did allow us to have our own time zone, the time difference between CA and NY would be two hours during winter, but three hours in the summer (when other states observe DST). Coincidentally, CA and AZ would be on the same time, all the time. <Citation data={Citations['3']}>FL just passed legislation to move to permanent DST so we'd always be three hours from Florida Man</Citation></span>
+				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress did allow us to have our own time zone, the time difference between CA and NY would be two hours during winter, but three hours in the summer (when other states observe DST). Coincidentally, CA and AZ would be on the same time, all the time. <Citation data={Citations['3']}>FL just passed legislation to move to permanent <Acronym data={Acronyms.DST}/> so we'd always be three hours from Florida Man</Citation></span>
 			}
 		},
 		{
 			component: SubsectionTitleBlock,
 			data: {
-				title: "Sunrise and sunset times in SF (2018)"
+				title: "Sunrise and sunset times in San Francisco"
 			}
 		},
 		{
@@ -96,7 +96,7 @@ const Data = {
 				title:"Would this be a first?",
 				text:
 				<span>
-					Naw, <Citation data={Citations['4']}>the US moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during WWI (Congress repealed it soon after), the second was in WWII, and the third was during the oil embargo from 1973-75.</Citation> <Citation data={Citations['9']}>In the third case, the government studied its effects and found mixed or inconclusive data.</Citation>
+					Naw, <Citation data={Citations['4']}>the US moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during <Acronym data={Acronyms.WWI}/> (Congress repealed it soon after), the second was in <Acronym data={Acronyms.WWII}/>, and the third was during the oil embargo from 1973-75.</Citation> <Citation data={Citations['9']}>In the third case, the government studied its effects and found mixed or inconclusive data.</Citation>
 				</span>
 			}
 		},
@@ -175,7 +175,7 @@ const Data = {
 				text:
 					<span>
 						Data for map visualization from Timezone Boundary Builder project (<a href="https://github.com/evansiroky/timezone-boundary-builder" target="_blank" rel="noreferrer noopener">link</a>). Note that proposed new timezones (California, Florida) are estimated from state boundaries, and not from any legally proposed specification.<br/>
-						Data for sunrise/sunset visualization from timeanddate.com (<a href="https://www.timeanddate.com/sun/usa/san-francisco" target="_blank" rel="noreferrer noopener">link</a>)
+						Data for sunrise/sunset visualization from timeanddate.com for 2018. (Exact date of DST switching varies year to year) (<a href="https://www.timeanddate.com/sun/usa/san-francisco" target="_blank" rel="noreferrer noopener">link</a>)
 					</span>
 			}
 		}

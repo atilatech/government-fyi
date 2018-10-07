@@ -116,6 +116,10 @@ const Data = {
 								url:"https://www.pressdemocrat.com/opinion/8665876-181/pd-editorial-yes-on-prop?sba=AAS"
 							},
 							{
+								text:"Fresno Bee Editorial Board",
+								url:"https://www.fresnobee.com/opinion/editorials/article218551355.html"
+							},
+							{
 								text: "California Chamber of Commerce",
 								url:"https://advocacy.calchamber.com/2018/09/12/calchamber-takes-positions-on-propositions-1-2-and-4-recaps-positions-on-all-ballot-measures/"
 							}

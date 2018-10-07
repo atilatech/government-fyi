@@ -158,12 +158,20 @@ const Data = {
 						subsectionTitle: "Yes on Prop 1",
 						links: [
 							{
-								text: "San Francisco Chronicle Editorial Board",
+								text: "SF Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Yes-on-California-Prop-1-13231141.php"
 							},
 							{
-								text: "The Sacramento Bee Editorial Board",
+								text: "Sac Bee Editorial Board",
 								url: "https://www.sacbee.com/opinion/election-endorsements/article218406765.html"
+							},
+							{
+								text: "Mercury News & East Bay Times Editorial Boards",
+								url: "https://www.mercurynews.com/2018/10/06/editorial-prop-1/"
+							},
+							{
+								text:"Fresno Bee Editorial Board",
+								url:"https://www.fresnobee.com/opinion/editorials/article218551355.html"
 							},
 						]
 					},
@@ -171,11 +179,11 @@ const Data = {
 						subsectionTitle: "No on Prop 1",
 						links: [
 							{
-								text: "The San Diego Union-Tribune Editorial Board",
+								text: "San Diego Union-Tribune Editorial Board",
 								url: "http://www.sandiegouniontribune.com/opinion/sd-proposition-1-california-housing-20180914-story.html"
 							},
 							{
-								text: "The Press-Enterprise Editorial Board",
+								text: "Press-Enterprise Editorial Board",
 								url: "https://www.pe.com/2018/09/18/proposition-1-is-not-the-answer-to-our-housing-crisis-vote-no/",
 							},
 							{

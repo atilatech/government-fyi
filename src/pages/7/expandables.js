@@ -22,6 +22,14 @@ export const Acronyms = {
   AC: {
     expanded: "air conditioning",
     acronym: "AC"
+  },
+  WWI: {
+    expanded: "World War 1",
+    acronym: "WWI"
+  },
+  WWII: {
+    expanded: "World War 2",
+    acronym: "WWII"
   }
 }
 
