@@ -35,9 +35,8 @@ const Data = {
     	data: {
     		text:
 				<span>
-					If you eat eggs or care about how your meat is farmed, then this is prop is for you.
-
-					Prop 12 would set minimum space requirements for egg-laying hens, pigs, and baby cows, and ban the sales of meat and eggs from animals that aren't in compliance, even if they're raised outside of California. <Citation data={Citations['12']}>Prop 12 would also require all egg-laying hens be literally cage-free by 2022.</Citation>
+					Prop  12 would set minimum space requirements for egg-laying hens, pigs, and baby cows, and ban the sales of meat and eggs from farmers that aren’t in compliance, even if they’re based outside of CA. <Citation data={Citations['12']}>Prop 12 would also require all egg-laying hens to be literally cage-free by 2022. </Citation> <br/>
+					<br/>It’s a lot to take in, but we want to make sure you’re eggstra knowledgeable on this meaty proposition so you’ll be able to eggsplain it to all of your seggsy friends.
 				</span>
 	    }
 		},
@@ -47,7 +46,7 @@ const Data = {
     		title: "How did we get here?",
     		text:
 				<span>
-					The origins of Prop 12 actually began a decade ago with Prop 2. <Citation data={Citations['1']}>In 2008, we passed Prop 2 which said animals sold for meat and eggs must be able <em>&ldquo;to lie down, stand up, fully extend their limbs and turn around.&rdquo;</em></Citation> The policy was later expanded to include all eggs sold in CA, regardless of where they were laid.
+					The origins of Prop 12 actually began a decade ago with Prop 2. <Citation data={Citations['1']}>In 2008, we passed Prop 2 which said animals sold for meat and eggs must be able "to lie down, stand up, fully extend their limbs and turn around."</Citation> The policy was later expanded to include all eggs sold in CA, regardless of where they were laid.
 					<br/><br/>
 					Farmers were pissed. Some of the reasons they've been fighting Prop 2 are relevant to Prop 12 today. They claimed Prop 2 was:
 					<ul>
@@ -55,18 +54,16 @@ const Data = {
 						<li><b>too vague</b> – and therefore unenforceable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
 						<li><b>expensive</b> – <Citation data={Citations['7']}>It cost CA farmers several hundred million to convert their hen housing systems</Citation>, but <Citation data={Citations['8']}>it seems they would have done that anyway because of salmonella outbreaks</Citation> and <Citation data={Citations['9']}>shifting public opinion.</Citation></li>
 						<li><b>hurtful to production</b> – <Citation data={Citations['14']}>By 2016, academics estimated say egg production dropped by 35%</Citation>, and <Citation data={Citations['10']}>prices rose by 33%.</Citation></li>
-						<li><b>ineffective</b> - Because the law didn't specify an enforcing authority, it fell on localities to enforce the law, and surprise (<span role="img" aria-label="surprise">🎉</span>), it didn’t happen. <Citation data={Citations['13']}>The LA Times says two-thirds of hens are still in cages, </Citation> <Citation data={Citations['16']}>perhaps just less cramped than before.</Citation></li>
+						<li><b>ineffective</b> - Because the law didn't specify an enforcing authority, it fell on localities to enforce the law, and surprise <span role="img" aria-label="surprise">🎉</span>, it didn’t happen. <Citation data={Citations['13']}>The LA Times says two-thirds of hens are still in cages, </Citation> <Citation data={Citations['16']}>perhaps just less cramped than before.</Citation></li>
 					</ul>
 					Despite these grievances, advocates say Prop 2 followed the tide of public opinion, and it resulted in cleaner and more humanely-raised food. Supporters also say it spurred <Citation data={Citations['3']}>many corporations like McDonald’s, Costco, and Walmart to pledge to sell cage-free eggs for the next 5-10 years.</Citation>
-					<br/><br/>
-					Well, Prop 12 pushes what Prop 2 started further.
 				</span>
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "So what does Prop 12 do differently?",
+				title: "So how's Prop 12 different?",
 				text:
 				<span>
 					For starters, Prop 12 sets specific space requirements and actually <Citation data={Citations['17']}>deems the CA Department of Food and Agriculture responsible for enforcing the law. This additional oversight is estimated to cost the state $10M annually.</Citation>
@@ -80,7 +77,7 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data: {
-				title: "How big is a calf anyways?",
+				title: "How much space do farm animals have?",
 				nColWidth: 6
 			}
 		},
@@ -116,21 +113,19 @@ const Data = {
 						alt: "A pig in 24 sq. ft. Art by David Goligorsky",
 					},
 				],
-				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we hired some models on the internet for a photoshoot. Left to right: a chicken in 1 ft<sup>2</sup>, an average-sized five-month old calf in 43 ft<sup>2</sup>, and a six-month old breeding pig in 24 ft<sup>2</sup>.</span>,
+				caption: <span>We were curious what Prop 12's floor space requirements actually looked like relative to animals, so we hired some models on the internet for a photoshoot. From left to right, Prop 12 would ban the sale of: eggs from chickens living in less than 1 ft<sup>2</sup>, veal from cows raised in areas smaller than 43 ft<sup>2</sup>, and pork from pigs raised in areas smaller than 24 ft<sup>2</sup>.</span>,
 				attribution:<span>(Art by David Goligorsky)<sup>3</sup></span>
 			}
 		},
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "And?",
+				title: "What are haters saying?",
 				text:
 				<span>
 					<Citation data={Citations['19']}> Prop 12 opponents criticize Prop 12 for all the same reasons (except "too vague") they criticized Prop 2.
 						<br/><br/>
-						<Acronym data={Acronyms.PETA}/> (of all people!) argue Prop 2 never led to cage-free hens, and criticize Prop 12 for allowing these poor conditions to continue until 2022.</Citation> <Citation data={Citations['20']}>And yet even more critics say it's not enough time for farmers and sellers to transition, which will only increase costs for consumers.</Citation>
-					<br/><br/>
-					We know it's a lot to take in, but to many, it's a tender subject. Now that you're eggstra knowledgeable on this meaty proposition, we hope you might be able to eggsplain it to all your seggsy friends.
+						<Acronym data={Acronyms.PETA}/> (of all people!) argue Prop 2 never led to cage-free hens, and criticize Prop 12 for allowing these poor conditions to continue until 2022.</Citation> <Citation data={Citations['20']}>Ironically, other Prop 12 critics say it's not enough time for farmers and sellers to transition to the requirements, which will only increase retail costs for consumers.</Citation>
 				</span>
 			}
 		},
@@ -145,20 +140,20 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 11",
 						links: [
 							{
 								text: "Monterey Herald Editorial Board",
 								url: "http://www.montereyherald.com/opinion/20180908/editorial-california-voters-should-approve-props-11-and-12"
 							},
 							{
-								text: "Mercury News & East Bay Times Editorial Boards",
+								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/09/01/editorial-prop-12/?clearUserState=true"
 							},
 						]
 					},
 					{
-						subsectionTitle:"Arguments against",
+						subsectionTitle:"No on Prop 11",
 						links: [
 							{
 								text: "SF Chronicle Editorial Board",
@@ -167,22 +162,17 @@ const Data = {
 							{
 								text: "Press Democrat Editorial Board",
 								url: "https://www.pressdemocrat.com/opinion/8735947-181/pd-editorial-no-on-prop?sba=AAS"
-							}
-						]
-					},
-					{
-						subsectionTitle: "Statements from interest groups",
-						links: [
+							},
 							{
-								text: "Peninsula Humane Society & SPCA say no",
+								text: "Peninsula Humane Society & SPCA",
 								url: "https://peninsulahumanesociety.org/proposition-12/",
 							},
 							{
-								text: "PETA says no",
+								text: "PETA",
 								url: "https://www.peta.org/blog/why-we-oppose-californias-farmed-animal-initiative-and-you-should-too/",
 							},
 							{
-								text: "Humane Farming Association say no",
+								text: "Humane Farming Association",
 								url: "https://www.hfa.org/",
 							},
 						]
@@ -199,13 +189,13 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop12-title-summ-analysis.pdf"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop12"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_12,_Farm_Animal_Confinement_Initiative_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop12"
-							}
 						]
 					}
 				]
