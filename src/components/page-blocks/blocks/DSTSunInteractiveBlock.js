@@ -9,6 +9,8 @@ import {axisBottom} from 'd3-axis'
 import {scaleTime} from 'd3-scale'
 import Color from 'layout/colors'
 import 'components/static/dst-sun-styles.css'
+import Acronym from 'components/interactive/acronym'
+import {Acronyms} from 'pages/7/expandables'
 
 const Container = styled.div`
   display: flex;
@@ -18,17 +20,13 @@ const Container = styled.div`
     background-color: whitesmoke;
   }
 `
-const FormContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`
+
 const SelectorContainer = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  margin-left: 15px;
+  width: 250px;
   @media screen and (max-width: 767px){
     width: 100%;
     height: 50px;
@@ -36,41 +34,35 @@ const SelectorContainer = styled.div`
 `
 
 const Vert = styled.div`
-  position:absolute;
   display:flex;
-  flex-direction:column;
   align-items:center;
   justify-content:center;
-  transform: rotate(90deg);
-  transform-origin: center center;
-  height: 100%;
+  width: 100%;
   @media screen and (max-width: 767px){
     width: 200px;
     transform: none;
-    top: 10px;
   }
 `
 const DateSelectInput = styled.input`
-  position: relative;
-  top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   width: 100%;
   z-index: 3;
 `
 const DSTLabel = styled.div.attrs({
   style: props => ({
     color: props.sliderIsInDST ? 'white' : 'black',
-    backgroundColor: props.sliderIsInDST ? Color('blue2') : 'white'
+    backgroundColor: props.sliderIsInDST ? Color('blue2') : 'white',
+    left: props.isDSTToggled ? 0 : -1
   })
 })`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   letter-spacing: 0.5px;
   font-size: 12px;
   font-weight:bold;
+  position: relative;
   color: #000;
-  position:absolute;
-  bottom: 29px;
   background-color: white;
-  transform: rotate(180deg) translateX(-3px);
   padding: 0 5px;
   border-radius: 4px;
   z-index: 3;
@@ -78,23 +70,21 @@ const DSTLabel = styled.div.attrs({
   transition-duration: 150ms;
   transition-timing-function: ease-out;
   transition-delay: 200ms;
-
   @media screen and (max-width: 767px){
-    transform: none;
-    bottom: -18px;
+
   }
 `
 
 const DSTMarking = styled.div.attrs({
   style: props => ({
-    width: props.lineHeight-2, //-2px for the width of the borders
-    left: props.yOffset,
+    width: props.lineWidth-2, //-2px for the width of the borders
+    left: props.xOffset,
   })
 })`
   height: 16px;
   border-radius: 2px;
   position:relative;
-  bottom: -7px;
+  top: -28px;
   transition: all 230ms ease-out;
   transition-delay: 200ms;
   border-radius: 2px;
@@ -103,8 +93,8 @@ const DSTMarking = styled.div.attrs({
   border-left: 1px solid #666;
 `
 const EndLabel = styled.h5`
+  display: block;
   line-height: 12px;
-  position: absolute;
   @media screen and (max-width: 767px){
     display: none;
   }
@@ -112,14 +102,15 @@ const EndLabel = styled.h5`
 
 const SelectorLabel = styled.div.attrs({
   style: props => ({
-    top: props.topOffset
+    left: props.leftOffset + 28
   })
 })`
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: italic;
-  position: relative;
-  left: 34px;
+  position:relative;
+  align-self: flex-start;
+
   @media screen and (max-width: 767px) {
     position: static;
     left: 0;
@@ -127,13 +118,24 @@ const SelectorLabel = styled.div.attrs({
   }
 `
 
+const FormContainer = styled.div`
+  display: flex;
+  justify-content: center
+  align-items: center;
+`
+const Form = styled.form`
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 2px;
+`
 const ToggleLabel = styled.label`
-  font-family: ${props=>props.theme.fonts.helvetica};
-  font-size: 14px;
-  color: ${Color('black')};
+  display: inline-block;
+  text-transform: none;
+  padding-left: 5px;
+  font-size: 12px;
 `
 const ToggleContainer = styled.div`
-
+  max-width: 280px;
 `
 const Toggle = styled.input`
   &:checked {
@@ -149,7 +151,7 @@ class DSTSun extends React.Component{
   constructor(props) {
     super(props);
     this.width = 1000;
-    this.height = 300;
+    this.height = 150;
     this.loadedData = []
     this.padding= 50;
     this.graphHeight= 60;
@@ -161,7 +163,8 @@ class DSTSun extends React.Component{
       setPercentX: 80,
       isDSTToggled: false, // and using state to keep it controlled
       sliderValue: 42,
-      sliderHeight: 160,
+      sliderWidth: 142,
+      labelLeft: 10,
     }
   }
 	componentDidMount() {
@@ -169,7 +172,6 @@ class DSTSun extends React.Component{
     this.initDraw();
     this.handleResize();
     this.draw(this.state.sliderValue); // starting point
-
 	}
 
   componentWillUnmount() {
@@ -183,9 +185,9 @@ class DSTSun extends React.Component{
     this.redimensionGraph();
   }
   handleToggleChange = (e) => {
-    this.setState({isDSTToggled: e.target.value});
-    console.log(e.target.value)
-    this.isDSTToggled = e.target.value;
+    const stateToSet = e.target.value === "all-year"
+    this.setState({isDSTToggled: stateToSet});
+    this.isDSTToggled = stateToSet;
     this.draw(parseInt(document.querySelector('#date-select-input').value,10))
   }
   handleSliderChange = (e) => {
@@ -277,12 +279,12 @@ class DSTSun extends React.Component{
 
     //-- change label on input
     const selectedDate = d3TimeParse("%Y-%m-%d")(this.loadedData[selectedDateIndex].date);
-    const selectorHeight = this.inputSlider.getBoundingClientRect().height;
-    this.setState({sliderHeight: this.isXs ? 199 : selectorHeight}) // width of slider changes when on mobiles
+    const selectorWidth = this.inputSlider.getBoundingClientRect().width;
+    this.setState({sliderWidth: this.isXs ? 199 : selectorWidth}) // width of slider changes when on mobiles
     // change label text and position
     this.setState({
       selectorLabel: (d3TimeFormat("%b %-d")(selectedDate)),
-      labelTop: selectedDateIndex/364 * (selectorHeight-14)+6 //some magic numbers
+      labelLeft: selectedDateIndex/364 * (selectorWidth-10)+6 //some magic numbers
     })
 
 
@@ -326,30 +328,47 @@ class DSTSun extends React.Component{
 
 
 	render() {
-    const {risePercentX, setPercentX, sliderHeight, isDSTToggled, sliderValue} = this.state;
-    const labelLineHeight = isDSTToggled ? sliderHeight : 237/364*(sliderHeight-12);
-    const labelLineOffset = isDSTToggled ? 0: 3;
+    const {risePercentX, setPercentX, sliderWidth, isDSTToggled, sliderValue} = this.state;
+    const labelLineWidth = isDSTToggled ? sliderWidth : 237/364*(sliderWidth-5);
+    const labelLineOffset = isDSTToggled ? -7: -3;
     const isInLabelLine = isDSTToggled ? true : (sliderValue >= 69 && sliderValue < 307);
 		return(
 			<Row>
-				<Col
-					xsOffset={0} xs={12}
-					smOffset={1} sm={10}
-					mdOffset={2} md={9}
-					lgOffset={2} lg={9}
-    >
+        <Col
+          xsOffset={0} xs={12}
+          smOffset={1} sm={10}
+          mdOffset={2} md={8}
+          lgOffset={2} lg={8}
+        >
           <FormContainer>
-            <form>
+            <Form>
               <ToggleContainer>
-                <Toggle onChange={this.handleToggleChange} name="dst-sometimes-toggle" id="dst-sometimes-toggle" type="radio" value={false} checked={!isDSTToggled}/>
-                <ToggleLabel htmlFor="dst-sometimes-toggle">Daylight Saving Time as currently observed</ToggleLabel>
+                <Toggle onChange={this.handleToggleChange} name="dst-sometimes-toggle" id="dst-sometimes-toggle" type="radio" value="regular" checked={!isDSTToggled}/>
+                <ToggleLabel htmlFor="dst-sometimes-toggle"><h4><Acronym data={Acronyms.DST}/> as currently observed</h4></ToggleLabel>
               </ToggleContainer>
               <ToggleContainer>
-                <Toggle onChange={this.handleToggleChange} name="dst-all-year-toggle" id="dst-all-year-toggle" type="radio" value={true} checked={isDSTToggled}/>
-                <ToggleLabel htmlFor="dst-all-year-toggle">Daylight Saving Time all year</ToggleLabel>
+                <Toggle onChange={this.handleToggleChange} name="dst-all-year-toggle" id="dst-all-year-toggle" type="radio" value="all-year" checked={isDSTToggled}/>
+                <ToggleLabel htmlFor="dst-all-year-toggle"><h4><Acronym data={Acronyms.DST}/> all year</h4></ToggleLabel>
               </ToggleContainer>
-            </form>
+            </Form>
+            <SelectorContainer>
+              <SelectorLabel leftOffset={this.state.labelLeft}>{this.state.selectorLabel}</SelectorLabel>
+              <Vert>
+                <EndLabel>January</EndLabel>
+                <DateSelectInput
+                  type="range" id="date-select-input" name="date-select"
+                  innerRef={el=>this.inputSlider=el}
+                  min="0" max="364"
+                  value={this.state.sliderValue}
+                  onChange={this.handleSliderChange}
+                />
+                <EndLabel>December</EndLabel>
+              </Vert>
+              <DSTLabel sliderIsInDST={isInLabelLine} isDSTToggled={isDSTToggled}>DST</DSTLabel>
+              <DSTMarking lineWidth={labelLineWidth} xOffset={labelLineOffset}/>
+            </SelectorContainer>
           </FormContainer>
+
           <Container>
             <svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id={this.graphId}>
               <defs>
@@ -365,22 +384,6 @@ class DSTSun extends React.Component{
                 </linearGradient>
               </defs>
             </svg>
-            <SelectorContainer>
-              <EndLabel style={{transform:"translateY(-4px)"}}>January</EndLabel>
-              <Vert>
-                <DateSelectInput
-                  type="range" id="date-select-input" name="date-select"
-                  innerRef={el=>this.inputSlider=el}
-                  min="0" max="364"
-                  value={this.state.sliderValue}
-                  onChange={this.handleSliderChange}
-                />
-                <DSTLabel sliderIsInDST={isInLabelLine}>DST</DSTLabel>
-                <DSTMarking lineHeight={labelLineHeight} yOffset={labelLineOffset}/>
-              </Vert>
-              <EndLabel style={{transform:`translateY(${this.state.sliderHeight+16}px)`}}>December</EndLabel>
-              <SelectorLabel topOffset={this.state.labelTop}>{this.state.selectorLabel}</SelectorLabel>
-            </SelectorContainer>
           </Container>
 				</Col>
 			</Row>
