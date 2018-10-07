@@ -21,7 +21,7 @@ const Data = {
     	data: {
 				title:"What’s up with EMTs?",
     		text: <span>
-					<Citation data={Citations['3']}>Today, if emergency medical technicians (EMTs) are eating lunch and a 911 call comes in, they have to put down their avocado sandos and respond to the call.</Citation> For private ambulance companies, it’s become common practice for their workers to be on duty during their unpaid meals and breaks. Prop 11 would make it a explicitly legal to interrupt <Acronym data={Acronyms.EMTs}/> on their breaks, <Citation data={Citations['4']}>and pay them for doing so.</Citation>
+					<Citation data={Citations['3']}>Today, if emergency medical technicians (EMTs) are eating lunch and a 911 call comes in, they have to put down their avocado sandos and respond to the call.</Citation> For private ambulance companies, it’s become common practice for their workers to be on duty during their unpaid meals and breaks. Prop 11 would make it totally legal to interrupt <Acronym data={Acronyms.EMTs}/> on their breaks, <Citation data={Citations['4']}>and pay them for doing so.</Citation>
 					</span>
 			}
 		},
@@ -54,10 +54,10 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title:"Why not just give EMTs real breaks",
+				title:"Why not just give EMTs real breaks?",
 				text:
 				<span>
-					It’d be too expensive. <Citation>The U.S. Department of Health mandates that ambulance service reach 75% of life-threatening calls within eight minutes.</Citation> <Citation>Ambulance companies would have to hire about 25% more EMTs to match their current coverage and response times.</Citation> <Citation data={Citations['11']}>The Legislative Analyst’s Office estimates that these increased costs – about $100M – would likely fall on local governments.</Citation>
+					It’d be too expensive. <Citation>The US Department of Health mandates that ambulance service reach 75% of life-threatening calls within eight minutes.</Citation> <Citation>Ambulance companies would have to hire about 25% more EMTs to match their current coverage and response times.</Citation> <Citation data={Citations['11']}>The Legislative Analyst’s Office estimates that these increased costs – about $100M – would likely fall to local governments.</Citation>
 				</span>
 			}
 		},
@@ -82,10 +82,10 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 10",
 						links: [
 							{
-								text: "Mercury News & East Bay Times Editorial Board",
+								text: "San Jose Mercury News & East Bay Times Editorial Board",
 								url: "https://www.mercurynews.com/2018/08/10/editorial-prop-11/"
 							},
 							{
@@ -104,7 +104,7 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 10",
 						links: [
 							{
 								text: "SF Chronicle Editorial Board",
@@ -117,7 +117,7 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Related cases and policy",
+						subsectionTitle: "Related legal cases and policies",
 						links: [
 							{
 								text: "State Supreme Court ruling (Augustus vs. ABM Security Services)",
@@ -137,7 +137,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=11&year=2018",
 							},
 							{
@@ -145,13 +145,13 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop10-title-summ-analysis.pdf"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop11"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_11,_Ambulance_Employees_Paid_On-Call_Breaks,_Training,_and_Mental_Health_Services_Initiative_(2018)#cite_note-11"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop11"
-							}
 						]
 					}
 				]
