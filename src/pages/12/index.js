@@ -140,7 +140,7 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Yes on Prop 11",
+						subsectionTitle: "Yes on Prop 12",
 						links: [
 							{
 								text: "Monterey Herald Editorial Board",
@@ -153,7 +153,7 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle:"No on Prop 11",
+						subsectionTitle:"No on Prop 12",
 						links: [
 							{
 								text: "SF Chronicle Editorial Board",

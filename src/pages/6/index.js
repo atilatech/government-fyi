@@ -140,6 +140,10 @@ const Data = {
 						subsectionTitle: "No on Prop 6",
 						links: [
 							{
+								text:"San Diego Union-Tribune Editorial Board",
+								url:"http://www.sandiegouniontribune.com/opinion/editorials/sd-prop-6-gas-tax-california-20180920-story.html"
+							},
+							{
 								text: "SF Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-No-on-Proposition-6-cynical-13189410.php",
 							},
@@ -151,6 +155,10 @@ const Data = {
 								text: "Press Democrat Editorial Board",
 								url: "https://www.pressdemocrat.com/opinion/8645902-181/pd-editorial-no-on-prop?sba=AAS"
 							},
+							{
+								text:"Sac Bee Editorial Board",
+								url:"http://www.sacbee.com/opinion/election-endorsements/article218727330.html"
+							}
 						]
 					},
 					{

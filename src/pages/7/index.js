@@ -82,7 +82,7 @@ const Data = {
 				title:"Brighter mornings or longer afternoons?",
 				text:
 				<span>
-					If we moved to DST year-round, the difference would be most noticeable during the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23am rather than 7:23am. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents during rush hour would worsen in the winter.</Citation>
+					If we moved to DST year-round, the difference would be most noticeable during the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23am rather than 7:23am. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents during morning rush hour would worsen in the winter.</Citation>
 					<br/><br/>
 					On the bright side, the earliest the sun would set is 5:50pm rather than the current low of 4:50pm. <Citation data={Citations['6']}>Prop 7 supporters say later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently, less clock switching also reduces heart attacks the day after.</Citation>
 					<br/><br/>
@@ -125,6 +125,18 @@ const Data = {
 								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/08/18/editorial-for-kids-safety-vote-no-on-year-around-daylight-saving-time/",
 							},
+							{
+								text:"Sac Bee Editorial Board",
+								url:"https://www.sacbee.com/opinion/election-endorsements/article218732660.html"
+							},
+							{
+								text:"SF Chronicle Editorial Board",
+								url:"https://www.sfchronicle.com/opinion/editorials/article/Chronicle-Recommends-No-on-Prop-7-13242628.php"
+							},
+							{
+								text:"Hold on says San Diego Union Tribune Editorial Board",
+								url:"http://www.sandiegouniontribune.com/opinion/editorials/sdut-daylight-saving-sleep-public-health-2016jun14-story.html"
+							},
 						]
 					},
 					{
@@ -142,6 +154,11 @@ const Data = {
 								text: "Reuters: Daylight saving time linked to heart attacks: study",
 								url: "https://www.reuters.com/article/us-heart-daylightsaving/daylight-saving-time-linked-to-heart-attacks-study-idUSBREA2S0D420140329",
 							},
+							{
+								text:"SF Chronicle",
+								url:"https://www.sfchronicle.com/bayarea/article/Prop-7-California-considers-full-time-daylight-13282662.php"
+							},
+
 						]
 					},
 					{

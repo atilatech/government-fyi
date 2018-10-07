@@ -71,11 +71,15 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Yes on Prop 10",
+						subsectionTitle: "Yes on Prop 11",
 						links: [
 							{
 								text: "San Jose Mercury News & East Bay Times Editorial Board",
 								url: "https://www.mercurynews.com/2018/08/10/editorial-prop-11/"
+							},
+							{
+								text: "Sac Bee Editorial Board",
+								url: "https://www.sacbee.com/opinion/election-endorsements/article218268990.html"
 							},
 							{
 								text: "Press Enterprise Editorial Board",
@@ -93,7 +97,7 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "No on Prop 10",
+						subsectionTitle: "No on Prop 11",
 						links: [
 							{
 								text: "SF Chronicle Editorial Board",

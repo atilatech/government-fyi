@@ -92,6 +92,10 @@ const Data = {
 								text:"San Diego Union-Tribune Editorial Board",
 								url:"http://www.sandiegouniontribune.com/opinion/editorials/sd-prop-10-rent-control-20180913-story.html"
 							},
+							{
+								text:"Fresno Bee Editorial Board",
+								url:"https://www.fresnobee.com/opinion/editorials/article219315885.html"
+							}
 						]
 					},
 					{
