@@ -65,7 +65,7 @@ const Data = {
 				messages: [
 					{
 						from: "them",
-						body:"Drought, wildfires, earthquakes, CA is F'd in the A"
+						body:"Drought, wildfires, earthquakes, CA is F'd"
 					},
 					{
 						from: "me",
