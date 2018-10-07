@@ -23,7 +23,7 @@ const Data = {
     		title: "Wait. What's dialysis?",
     		text:
 				<span>
-					<Citation data={Citations['1']}>About 80K Californians live with kidney disease. Every month about 80K Californians living with kidney disease visit a dialysis clinic for treatment.</Citation> Dialysis performs what a healthy kidney would do, and for three times a week, patients sit in a chair for four-hour sessions while a machine filters their blood.
+					<Citation data={Citations['1']}>About 80K Californians living with kidney disease go to a dialysis clinic for treatment.</Citation> Dialysis performs what a healthy kidney would do, and for three times a week, patients sit in a chair for four-hour sessions while a machine filters their blood.
 				</span>
     	},
     },
@@ -45,7 +45,7 @@ const Data = {
 				<span>
 					No kidding. Prop 8 is the result of ongoing disputes between a labor organization, <Acronym data={Acronyms.SEIU}/> West, and CA’s two largest dialysis businesses, <em>DaVita</em> and <em>Fresenius Medical Care</em>. <Acronym data={Acronyms.SEIU}/> West has been trying to unionize dialysis healthcare workers since 2016, but have so far been unsuccessful. They’ve used the ballot initiative process to leverage negotiations in the past, and Prop 8 is their latest effort.
 					<br/><br/>
-					<Citation data={Citations['5']}><Acronym data={Acronyms.SEIU}/> West say they want to improve the quality of patient care in these highly-profitable clinics, while opponents claim they’re simply trying to recruit more union members.</Citation><Citation data={Citations['3']}>The aforementioned dialysis companies have raised $66M to fight the initiative and the labor union has spent more than $20M campaigning for Prop 8.</Citation>
+					<Citation data={Citations['5']}><Acronym data={Acronyms.SEIU}/> West say they want to improve the quality of patient care in these highly-profitable clinics, while opponents claim they’re simply trying to recruit more union members.</Citation> <Citation data={Citations['3']}>The aforementioned dialysis companies have raised $66M to fight the initiative and the labor union has spent more than $20M campaigning for Prop 8.</Citation>
 				</span>
 			}
 		},
@@ -55,7 +55,7 @@ const Data = {
 				title: "What’s the impact on the clinics?",
 				text:
 				<span>
-					It’s unclear. Prop 8’s revenue cap could cause clinics to increase spending on “direct patient care services” and “healthcare improvements,” but critics argue that these categories don’t include spending on medical directors, clinic coordinators, regulatory compliance, or other costs. 115% of a lesser amount means some clinics could shutdown, endangering patients’ lives.
+					It’s unclear. Prop 8’s revenue cap could cause clinics to increase spending on “direct patient care services” and “healthcare improvements,” but critics argue that these categories don’t include spending on medical directors, clinic coordinators, regulatory compliance, or other costs. 115% of a smaller cost total = less profit = some clinics could shutdown, endangering patients’ lives.
 					<br/><br/>
 					<Citation data={Citations['4']}>The Legislative Analyst's Office, however, reports that the financial impact on dialysis clinics is generally unknown because they can't predict what clinics will do.</Citation>
 				</span>

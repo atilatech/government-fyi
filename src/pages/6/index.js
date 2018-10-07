@@ -31,7 +31,7 @@ const Data = {
     		text: <span>
 					Prop 6 is predictably split along party lines. Last year, <Acronym data={Acronyms.RRAA}/> narrowly passed, with two Dems voting no and one Republican voting yes (<Citation data={Citations['1']}>thanks to some side deals</Citation>). Since its passage, Republicans have used the gas tax to <Citation data={Citations['2']}>recall a state senator</Citation> and put Prop 6 on the ballot, <Citation data={Citations['3']}>with a specific goal of increasing Republican voter turnout.</Citation>
 					<br/><br/>
-					Conservatives argue that the taxes are regressive, and <Citation data={Citations['5']}>CA already has the second-highest gas taxes in the country.</Citation> They also point to the state's $16B surplus, <Citation data={Citations['4']}>which about $14B is for weathering the next recession.</Citation>
+					Conservatives argue that the taxes are regressive, and <Citation data={Citations['5']}>CA already has the second-highest gas taxes in the country.</Citation> They also point to the state's $16B surplus (<Citation data={Citations['4']}>which about $14B is for weathering the next recession.</Citation>)
 					<br/><br/>
 					Democrats point to our lacking transportation infrastructure. <Citation data={Citations['6']}>CA ranks 11th in bridge quality, but 49th in road quality</Citation> They also explain that a gas tax that pays for transportation infrastructure is like a usage fee. Those who pay the most are also the biggest users.
 				</span>,
@@ -75,7 +75,7 @@ const Data = {
     	data: {
     		title: "And where does the money go?",
     		text: <span>
-					CA’s gas tax would generate about $3.2B a year in revenue. Here’s how it'd be spent: 
+					CA’s gas tax would generate about $3.2B a year in revenue. Here’s how it'd be spent:
 					<ul>
 						<li>$400M for state bridges and culverts</li>
 						<li>$200M for counties with local transportation taxes</li>

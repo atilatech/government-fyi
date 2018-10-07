@@ -32,7 +32,7 @@ const Data = {
         alt: "Venn diagram of a debate and politifact",
         title: "nonpartisan",
         flipped: true,
-        body: <span>We're tired of fliers telling us how to vote. ballot.fyi doesn't tell you what to do, instead we give you the facts and arguments about each proposition so you can come to your own conclusion. We cite all of our sources and try to represent relevant perspectives – that's what we mean by nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, email us at fax@ballot.fyi (include sources please!)</span>
+        body: <span>We're tired of fliers telling us how to vote. ballot.fyi doesn't tell you what to do, instead we give you the facts and arguments about each proposition so you can come to your own conclusion. We cite all of our sources and try to represent all relevant perspectives – that's what we mean by nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, email us at fax@ballot.fyi (with sources cited)</span>
       }
     },
     {
@@ -41,7 +41,7 @@ const Data = {
         image: conciseImg,
         alt: "Venn diagram of CliffsNotes and Wikipedia",
         title: "concise",
-        body: <span>We've read the full text of the propositions, the official arguments of both sides, and many, many opinion articles so we can give you concise, but comprehensive digests of what's on the ballot. These are real issues that affect real <Link to="/prop-11/">animals</Link>, and we hope these summaries get you interested in what's happening in CA and make you feel ready to vote.</span>,
+        body: <span>We've read the full text of the propositions, the official arguments of both sides, and many, many opinion articles so we can give you concise but comprehensive digests of what's on the ballot. These are real issues that affect real <Link to="/prop-11/">animals</Link>, and we hope these summaries get you interested in what's happening in CA and make you feel ready to vote.</span>,
       }
     },
     {
@@ -51,7 +51,8 @@ const Data = {
         title: "a tool",
         flipped: true,
         alt: "Venn diagram of The more you know and you'll never believe",
-        body: <span>We want to give you the ammo to make your own decisions. We want to empower your friends to vote too. Our only goal is to get more folks to show up for the midterms. Make your friends feel smarter with ballot.fyi.<Spacer height={70}/></span>,
+        body: <span>We want you to feel good – amazing even – on Election Day, and we also hope that you'll want your friends to feel fantastic, because this site's only purpose is to get more folks voting. So do us a solid and tell your friends they get to vote on Daylight Saving Time this November.
+					<Spacer height={70}/></span>,
       }
     },
     {

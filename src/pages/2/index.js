@@ -30,9 +30,9 @@ const Data = {
 					title:"What’s the backstory?",
 					text:
 					<span>
-						<Citation data={Citations['1']}>The Millionaire’s tax was originally passed as Prop 63 in 2004, and it was intended to help counties create and expand mental health services with a "treatment-first" approach.</Citation> <Citation data={Citations['2']}>In 2016, however, the state legislature took a “housing-first” approach and passed a program called <em>No Place Like Home</em> to build permanent supportive housing for homeless people suffering from mental illness. The one-time $2B program would have re-purposed funds from Prop 63</Citation>, <Citation data={Citations['3']}> but a lawsuit claimed Prop 63 was a voter-approved measure that didn’t specify housing costs. The legislature couldn't modify Prop 63..</Citation>
+						<Citation data={Citations['1']}>The Millionaire’s tax was originally passed as Prop 63 in 2004, and it was intended to help counties create and expand mental health services with a "treatment-first" approach.</Citation> <Citation data={Citations['2']}>In 2016, however, the state legislature took a “housing-first” approach and passed a program called <em>No Place Like Home</em> to build permanent supportive housing for homeless people suffering from mental illness. The one-time $2B program would have re-purposed funds from Prop 63</Citation>, <Citation data={Citations['3']}> but a lawsuit claimed Prop 63 was a voter-approved measure that didn’t specify housing costs. The legislature couldn't modify Prop 63.</Citation>
 						<br/><br/>
-						Now it's back in our court. If Prop 2 passes, the <em>No Place Like Home</em> program would receive $120M a year from the $2B generated annually by the Millionaire's tax. If Prop 2 fails, we'd leave it up to the courts to decide whether <em>No Place Like Home</em> could use Prop 63's funds.
+						So it's thrown back to the voters. If Prop 2 passes, the <em>No Place Like Home</em> program would receive $120M a year from the $2B generated annually by the Millionaire's tax. If Prop 2 fails, we'd leave it up to the courts to decide whether <em>No Place Like Home</em> could use Prop 63's funds.
 				</span>,
     	},
     },

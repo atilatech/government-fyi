@@ -89,10 +89,10 @@ export const Citations = {
 		directQuote:"As a result, about two-thirds of egg-producing hens are currently confined in cages in California."
 	},
 	'14': {
-		link:"https://www.sandiegouniontribune.com/opinion/commentary/sd-utbg-prop12-consumers-egg-prices-20180912-story.html",
-		publication:"San Diego Union Tribune",
-		headline:"Commentary | Why Prop 12 hurts farmers and consumers",
-		directQuote:"The last time an egg initiative was enacted in California, egg prices rose 30 percent while egg production in the state shrunk by 35 percent, reducing the amount of California-grown eggs by 8 million hens."
+		link:"https://www.purdue.edu/newsroom/releases/2017/Q4/california-animal-welfare-laws-led-to-higher-egg-prices,-lower-production.html",
+		publication:"Purdue University",
+		headline:"California animal welfare laws led to higher egg prices, lower production",
+		directQuote:"By July of 2016, the number of egg-laying hens and eggs produced in California had dropped by 35 percent. Lusk and Mullally say that led to price increases as high as 33 percent per dozen. The average price for a dozen eggs was 22 percent higher from December 2014 to September 2016."
 	},
 	'15':{
 		link:"https://www.sandiegouniontribune.com/opinion/commentary/sd-utbg-prop12-consumers-egg-prices-20180912-story.html",

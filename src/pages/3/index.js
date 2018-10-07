@@ -65,7 +65,7 @@ const Data = {
 				messages: [
 					{
 						from: "them",
-						body:"Drought, wildfires, earthquakes, CA has got so many issues, man."
+						body:"Drought, wildfires, earthquakes, CA is F'd in the A"
 					},
 					{
 						from: "me",
@@ -73,7 +73,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body:"Yea, who paid for it?"
+						body:"Yea who paid for this one? 🙄"
 					},
 					{
 						from:"me",
@@ -117,15 +117,11 @@ const Data = {
 					},
 					{
 						from: "them",
-						body:"Fine. You know what else is important?"
-					},
-										{
-						from: "them",
-						body:"In n’ Out. Wanna grab a double-double?"
+						body:"You know what else polls well?"
 					},
 					{
 						from:"me",
-						body:"I see you, girl"
+						body:"Covfefe?"
 					},
 
 				]

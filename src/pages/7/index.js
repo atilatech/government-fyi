@@ -84,7 +84,7 @@ const Data = {
 				<span>
 					If we moved to DST year-round, the difference would be most noticeable during the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23am rather than 7:23am. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents during rush hour would worsen in the winter.</Citation>
 					<br/><br/>
-					On the bright side, the earliest the sun would set is 5:50pm rather than the current time of 4:50pm. <Citation data={Citations['6']}>Prop 7 supporters say later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently, less clock switching also reduces heart attacks the day after.</Citation>
+					On the bright side, the earliest the sun would set is 5:50pm rather than the current low of 4:50pm. <Citation data={Citations['6']}>Prop 7 supporters say later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently, less clock switching also reduces heart attacks the day after.</Citation>
 					<br/><br/>
 					Some people simply want brighter mornings; others want longer afternoons. Luckily, everyone has an opinion.
 				</span>
