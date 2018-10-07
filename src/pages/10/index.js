@@ -19,12 +19,12 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "Seems gnarly",
+    		title: "What's the dealio?",
     		text:
 				<span>
-					Prop 10 would repeal the Costa-Hawkins Rental Housing Act, <Citation data={Citations['1']}>a state law passed in 1995 that prohibits cities from regulating rent on housing built since then.</Citation> <Citation data={Citations['2']}>Some cities, like LA, SF, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any new buildings.</Citation>
+					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that prohibits cities from regulating rent on housing built after that year.</Citation> Some cities, like LA, SF, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any new buildings.
 					<br/><br/>
-					By repealing Costa-Hawkins, Prop 10 would give cities the <em>power</em> to create rent control laws; it's then up to each local government to determine what regulation of rent, if any, it wants.
+					By repealing <em>Costa-Hawkins</em>, Prop 10 would give cities the authority to implement local rent control laws. It'll then be up to each local government to determine what kind of regulation of rent, if any, it wants.
 				</span>,
     	},
     },
@@ -34,24 +34,23 @@ const Data = {
     		title: "Isn’t rent control a good thing?",
     		text:
 				<span>
-					Not necessarily. Because <em>how</em> rent control is implemented matters, we'll talk about rent control in the abstract for the rest of the article.
-					<br/><br/>Prop 10 critics say rent control is problematic for CA’s housing shortage because:
+					Not necessarily. Prop 10 critics say rent control is problematic for CA’s housing shortage because:
 					<ul>
-						<li><Citation data={Citations['3']}>It’s not "means-tested", meaning residents who live in rent controlled apartments aren’t necessarily the people who need it most.</Citation></li>
-						<li><Citation data={Citations['4']}>It disincentivizes landlords from maintaining or improving their properties (because they no longer need to attract the higher-paying renters).</Citation></li>
-						<li><Citation data={Citations['5']}>It discourages developers from building apartments because it limits what they can make on each apartment.</Citation></li>
+						<li>It often isn't "means-tested." Residents who live in rent controlled apartments aren’t always the people who need it the most.</li>
+						<li><Citation data={Citations['4']}>It causes displacement and gentrification as some landlords try to convert their units to more profitable real estate.</Citation></li>
+						<li><Citation data={Citations['5']}>It discourages real estate developers from building rental units because it affects their profit margins.</Citation></li>
 					</ul>
-					<Citation data={Citations['6']}>Economists generally agree that any restrictions on rental prices leads to less available housing.</Citation>
+					<Citation data={Citations['6']}>Economists generally agree that any restrictions on rental prices would lead to less available housing.</Citation>
 				</span>
 				}
 			},
 			{
 				component: TextWithTitleBlock,
 				data: {
-					title: "Fine. Rent control is the devil",
+					title: "Fine. Rent control is the devil.",
 					text:
 					<span>
-						Not so fast. <Citation data={Citations['7']}>Prop 10 supporters say the lack of affordable housing has led to more evictions, displacement, and homelessness across the state.</Citation> Rent controlled apartments help residents afford to live in increasingly expensive cities. Plus, local governments are the best advocates for their residents. <Citation data={Citations['8']}>Passing Prop 10 would empower cities and counties to start the conversation to decide how much rent control they need and give them the flexibility to respond to local housing needs.</Citation>
+						Not so fast. <Citation data={Citations['7']}>Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state. Rent controlled apartments would help residents afford to live in increasingly expensive cities. Plus, local governments are the best advocates for their residents. Passing Prop 10 would empower cities and counties to start the conversation to decide how much rent control they would need and give them the flexibility to respond to their housing needs.</Citation>
 					</span>,
     	},
     },
@@ -66,7 +65,7 @@ const Data = {
 			data: {
 				subsections:[
 					{
-						subsectionTitle: "Arguments in favor",
+						subsectionTitle: "Yes on Prop 10",
 						links: [
 							{
 								text: "LA Times Editorial Board",
@@ -79,14 +78,14 @@ const Data = {
 						]
 					},
 					{
-						subsectionTitle: "Arguments against",
+						subsectionTitle: "No on Prop 10",
 						links: [
 							{
 								text: "SF Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Chronicle-Recommends-No-on-Prop-10-13231228.php"
 							},
 							{
-								text:"Mercury News & East Bay Times Editorial Boards",
+								text:"San Jose Mercury News & East Bay Times Editorial Boards",
 								url:"https://www.mercurynews.com/2018/08/25/editorial-prop-10-would-exacerbate-californias-housing-crisis/?clearUserState=true"
 							},
 							{
@@ -99,7 +98,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "Legislative Analyst's Office analysis",
+								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=10&year=2018",
 							},
 							{
@@ -107,13 +106,13 @@ const Data = {
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/prop10-title-summ-analysis.pdf"
 							},
 							{
+								text: "Legal text of proposition",
+								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop10"
+							},
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_10,_Local_Rent_Control_Initiative_(2018)"
 							},
-							{
-								text: "Legal text of proposition",
-								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop10"
-							}
 						]
 					},
 					{
