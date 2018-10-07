@@ -63,6 +63,24 @@ export const Citations = {
 		publication:"Justia",
 		headline:"Bartoni v. American Medical Response West",
 		directQuote:"Plaintiffs, four current or former employees, claimed that AMR failed to provide the meal and rest periods to which they were entitled under Labor Code sections 226.7 and 512 and the applicable wage orders issued by the California Industrial Welfare Commission."
+	},
+	'11':{
+		link:"https://www.mercurynews.com/2018/08/10/editorial-prop-11/",
+		publication:"Mercury News",
+		headline:"Editorial: Prop. 11 will solve ambulance workers’ on-call issue",
+		directQuote:"The U.S. Department of Health requires that ambulance service reach 75 percent of life-threatening calls within eight minutes. Providers must adequately staff ambulances to meet those targets."
+	},
+	'12':{
+		link:"https://lao.ca.gov/BallotAnalysis/Proposition?number=11&year=2018",
+		publication:"Legislative Analyst's Office",
+		headline:"Prop 11",
+		directQuote:"Several groups of EMTs and paramedics have sued ambulance companies alleging these violations. These lawsuits are still active."
+	},
+	'13':{
+		link:"https://www.shrm.org/resourcesandtools/legal-and-compliance/state-and-local-updates/pages/california-emergency-medical-services-bill.aspx",
+		publication:"Society for Human Resource Management",
+		headline:"‘Bill of Rights’ Proposed to Improve California EMS Field",
+		directQuote:"A.B. 263 is intended to help private-sector EMS employees with many of the difficulties of the job. One goal of the bill is to clarify that the California Supreme Court's ruling in Augustus v. ABM Security Services applies to EMS workers, according to a document issued by Rodriguez's office. That ruling held that California workers need to have uninterrupted rest breaks, and the bill would codify the court's decision."
 	}
 
 }
