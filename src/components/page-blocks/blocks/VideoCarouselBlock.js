@@ -188,7 +188,7 @@ class VideoCarouselBlock extends React.Component {
 						}
 					</OuterWindow>
 				</CarouselContainer>
-				{(this.state.isXsScreen && showNav) && 
+				{(this.state.isXsScreen && showNav) &&
 					<NavBar>
 						<MobileNavButton onClick={()=>this.navVideos(-1)}>Prev</MobileNavButton>
 						<MobileNavButton onClick={()=>this.navVideos(1)}>Next</MobileNavButton>
@@ -204,7 +204,7 @@ VideoCarouselBlock.propTypes = {
 		videos: PropTypes.arrayOf(
 			PropTypes.shape({
 				link: PropTypes.string.isRequired,
-				caption: PropTypes.string,
+				caption: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 			})
 		).isRequired
 	}).isRequired

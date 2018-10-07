@@ -26,7 +26,7 @@ export const Citations = {
   },
   '4': {
     link:"http://www.sandiegouniontribune.com/opinion/commentary/sd-oe-prop1-housing-coupal-20180801-story.html",
-    publication:"San Diego Union Tribune Op-Ed",
+    publication:"San Diego Union Tribune Op-ed",
     headline:"Proposition 1 is not the way to address affordable housing problem",
     directQuote:"Rent control, prevailing wage on new home developments, and the imposition of solar panels on new developments (at a cost to taxpayers of $30,000 per unit) all make home ownership more expensive.",
   },
@@ -50,7 +50,7 @@ export const Citations = {
   },
   '8': {
     link:"http://www.sandiegouniontribune.com/opinion/commentary/sd-oe-prop1-housing-coupal-20180801-story.html",
-    publication:"San Diego Union Tribune Op-Ed",
+    publication:"San Diego Union Tribune Op-ed",
     headline:"Proposition 1 is not the way to address affordable housing problem",
     directQuote:"Currently, it costs an average of over $300,000 to build a unit of affordable housing in California. At that rate, less than 15,000 units will be built as a result of Proposition 1",
   },

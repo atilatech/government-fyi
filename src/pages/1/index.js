@@ -179,7 +179,7 @@ const Data = {
 								url: "https://www.pe.com/2018/09/18/proposition-1-is-not-the-answer-to-our-housing-crisis-vote-no/",
 							},
 							{
-								text:"Op-Ed: Proposition 1 is not the way to address affordable housing problem",
+								text:"Op-ed: Proposition 1 is not the way to address affordable housing problem",
 								url: "http://www.sandiegouniontribune.com/opinion/commentary/sd-oe-prop1-housing-coupal-20180801-story.html"
 							}
 						]

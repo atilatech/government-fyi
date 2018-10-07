@@ -18,7 +18,7 @@ const Container = styled.div`
     background-color: whitesmoke;
   }
 `
-const ToggleContainer = styled.div`
+const FormContainer = styled.div`
   display: flex;
   justify-content: center;
 `
@@ -127,8 +127,15 @@ const SelectorLabel = styled.div.attrs({
   }
 `
 
-const Toggle = styled.input`
+const ToggleLabel = styled.label`
+  font-family: ${props=>props.theme.fonts.helvetica};
+  font-size: 14px;
+  color: ${Color('black')};
+`
+const ToggleContainer = styled.div`
 
+`
+const Toggle = styled.input`
   &:checked {
     background-color: #2196F3;
   }
@@ -176,8 +183,9 @@ class DSTSun extends React.Component{
     this.redimensionGraph();
   }
   handleToggleChange = (e) => {
-    this.setState({isDSTToggled: e.target.checked});
-    this.isDSTToggled = e.target.checked;
+    this.setState({isDSTToggled: e.target.value});
+    console.log(e.target.value)
+    this.isDSTToggled = e.target.value;
     this.draw(parseInt(document.querySelector('#date-select-input').value,10))
   }
   handleSliderChange = (e) => {
@@ -330,12 +338,18 @@ class DSTSun extends React.Component{
 					mdOffset={2} md={9}
 					lgOffset={2} lg={9}
     >
-          <ToggleContainer>
-            <label htmlFor="dst-toggle">
-              <Toggle onChange={this.handleToggleChange} name="dst-toggle" type="checkbox"/>
-              Year-round Daylight Saving Time?
-            </label>
-          </ToggleContainer>
+          <FormContainer>
+            <form>
+              <ToggleContainer>
+                <Toggle onChange={this.handleToggleChange} name="dst-sometimes-toggle" id="dst-sometimes-toggle" type="radio" value={false} checked={!isDSTToggled}/>
+                <ToggleLabel htmlFor="dst-sometimes-toggle">Daylight Saving Time as currently observed</ToggleLabel>
+              </ToggleContainer>
+              <ToggleContainer>
+                <Toggle onChange={this.handleToggleChange} name="dst-all-year-toggle" id="dst-all-year-toggle" type="radio" value={true} checked={isDSTToggled}/>
+                <ToggleLabel htmlFor="dst-all-year-toggle">Daylight Saving Time all year</ToggleLabel>
+              </ToggleContainer>
+            </form>
+          </FormContainer>
           <Container>
             <svg width="100%" height="100%" viewBox={`0 0 ${this.width} ${this.height}`} id={this.graphId}>
               <defs>

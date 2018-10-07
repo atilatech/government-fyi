@@ -67,7 +67,7 @@ const Data = {
 				title: "What do EMTs think?",
 				text:
 				<span>
-					The EMT labor union spoke out against Prop 11, but other than that, <Citation data={Citations['7']}>it’s been kind of quiet.</Citation> No one even submitted an official ballot argument against Prop 11."
+					The EMT labor union spoke out against Prop 11, but other than that, <Citation data={Citations['7']}>it’s been kind of quiet.</Citation> No one even submitted an official ballot argument against Prop 11.
 				</span>
 			},
 		},

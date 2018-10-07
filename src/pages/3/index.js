@@ -157,7 +157,7 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/openforum/article/California-Prop-3-vote-yes-to-pay-for-13273251.php"
 							},
 							{
-								text: "Op-Ed: Prop. 3 will provide clean, safe, reliable water",
+								text: "Op-ed: Prop. 3 will provide clean, safe, reliable water",
 								url: "https://www.mercurynews.com/2018/09/14/opinion-prop-3-will-provide-clean-safe-reliable-water/"
 							},
 						]
