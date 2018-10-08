@@ -48,10 +48,10 @@ const Img = styled(MultisourceImage)`
 `;
 
 const Caption = styled.div`
-  width: 80%;
+  width: 70%;
   margin: 10px auto 0 auto;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 13px;
+	line-height: 20px;
 	font-style: italic;
 	color: #666;
 	padding-left: 5px;

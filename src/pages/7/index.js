@@ -5,17 +5,28 @@ import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import SubsectionTitleBlock from 'components/page-blocks/blocks/SubsectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import AttributionBlock from 'components/page-blocks/blocks/AttributionBlock'
-import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
+import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
+// import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
 import DSTSunInteractiveBlock from 'components/page-blocks/blocks/DSTSunInteractiveBlock'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 
+// -- import images
+import dstOn from './images/dst-on.png'
+import dstOn_w from './images/dst-on.webp'
+import dstOn_2x from './images/dst-on@2x.png'
+import dstOn_2x_w from './images/dst-on@2x.webp'
+import dstOff from './images/dst-off.png'
+import dstOff_w from './images/dst-off.webp'
+import dstOff_2x from './images/dst-off@2x.png'
+import dstOff_2x_w from './images/dst-off@2x.webp'
+
 //-- data for visualizations
 //-- removed extensions so it imports as static url, not as object
-import UsMap from './topojson/states-topojson'
-import TzMap from './topojson/timezones-2'
+// import UsMap from './topojson/states-topojson'
+// import TzMap from './topojson/timezones-2'
 // import LASunTimes from './suntimes/la.js'
 import SFSunTimes from './suntimes/sf.js'
 
@@ -51,12 +62,39 @@ const Data = {
 			}
 		},
 		{
-			component: DSTTimezoneMapBlock,
+			component: ImgLateralBlock,
 			data: {
-				stateMap: UsMap,
-				timezoneMap: TzMap
+				caption:<span>Left image: If California (and Florida) were allowed to remain on DST all year, during the months when other states <b>don't</b> observe DST (November – March), California would be an hour ahead of Pacific Time.
+					<br/>Right image: In the months when other states do observe DST (March – November), California and Florida would line up as they typically do.</span>,
+				images: [
+					{
+						src: {
+							_1x: dstOff,
+							_1x_webp: dstOff_w,
+							_2x: dstOff_2x,
+							_2x_webp: dstOff_2x_w
+						},
+						alt: "When DST is not observed in other states (Nov-Mar)",
+					},
+					{
+						src: {
+							_1x: dstOn,
+							_1x_webp: dstOn_w,
+							_2x: dstOn_2x,
+							_2x_webp: dstOn_2x_w
+						},
+						alt: "When DST is observed in other states (Mar-Nov)",
+					}
+				]
 			}
 		},
+		// {
+		// 	component: DSTTimezoneMapBlock,
+		// 	data: {
+		// 		stateMap: UsMap,
+		// 		timezoneMap: TzMap
+		// 	}
+		// },
 		{
 			component: TextWithTitleBlock,
 			data: {
