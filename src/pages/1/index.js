@@ -50,40 +50,28 @@ const Data = {
 		{
 			component: SummaryListBlock,
 			data: {
-				listNItems: 3,
+				listNItems: 2,
 				buttonText: "View the rest",
 				stories: [
 					{
-						title:"CalVet Home Loan Program",
-						description:"$1B to help military veterans buy homes, farms, or mobile homes."
+						title:"Affordable Multi-family housing programs",
+						description:"$1.8B to build or renovate rental housing projects, such as apartment buildings, in the form of low-interest loans to local governments."
 					},
 					{
-						title:"Multi-family Housing Program",
-						description:"$1.5B to build and maintain rental housing for low-income families."
+						title:"Veterans housing programs",
+						description:"$1B for home loan assistance to veterans for purchasing homes."
 					},
 					{
-						title:"Transit-Oriented Development",
-						description:"$150M to encourage local governments and developers to build more housing near public transit areas."
+						title:"Infrastructure Programs",
+						description:"$450M to build housing in existing urban areas, particularly near public transit. The funds also would provide loans and grants housing-related infrastructure like parks, sewage, and transportation."
 					},
 					{
-						title:"Infill Incentive",
-						description:"$300M to offer infill grants that support high-density affordable and mixed-income housing."
+						title:"Homeownership Programs",
+						description:"$450M to encourage  low- and moderate-income residents to buy homes. Most of the funds would be used to provide down payment assistance to first-time homebuyers through low-interest loans or grants."
 					},
 					{
-						title:"Home Purchase Assistance Program",
-						description:"$150M to help low- and moderate-income residents buy homes."
-					},
-					{
-						title:"Farmworker Housing Grant Fund",
-						description:"$150M to build housing for farmworkers."
-					},
-					{
-						title:"Local Housing Trust Matching Grant Program",
-						description:"$300M to offer matching grants for local housing pilot programs that \"demonstrate innovative, cost-saving approaches to creating or preserving affordable housing.\""
-					},
-					{
-						title:"Self-Help Housing Fund",
-						description:"$300M which provides forgivable loans for mortgage assistance, the development of multiple home ownership units, and manufactured homes"
+						title:"Farmworker Housing Program",
+						description:"$300M in loans and grants to build housing for farmworkers."
 					},
 				]
 			}
