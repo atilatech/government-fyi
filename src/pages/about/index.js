@@ -8,6 +8,7 @@ import conciseImg from './images/concise.svg'
 import nonpartisanImg from './images/nonpartisan.svg'
 import toolImg from './images/tool.svg'
 import {Spacer} from 'layout/util'
+import Citation from 'components/interactive/citation/citation'
 
 const Data = {
 	pageId: "about-page",
@@ -32,7 +33,7 @@ const Data = {
         alt: "Venn diagram of a debate and politifact",
         title: "nonpartisan",
         flipped: true,
-        body: <span>We're tired of fliers telling us how to vote. ballot.fyi doesn't tell you what to do, instead we give you the facts and arguments about each proposition so you can come to your own conclusion. We cite all of our sources and try to represent all relevant perspectives – that's what we mean by nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, email us at fax@ballot.fyi (with sources cited)</span>
+        body: <span>We're tired of fliers telling us how to vote. ballot.fyi doesn't tell you what to do, instead we give you the facts and arguments about each proposition so you can come to your own conclusion. <Citation publication="The trusted source" headline="that we fact-checked" directQuote="And we'll include an excerpt from the link so you can get just a little more context.">We cite all of our sources (try clicking this little circle </Citation>) and try to represent all relevant perspectives – that's what we mean by nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, email us at fax@ballot.fyi (with sources cited)</span>
       }
     },
     {
