@@ -58,7 +58,7 @@ const Data = {
 						description:"$1.8B to build or renovate rental housing projects, such as apartment buildings, in the form of low-interest loans to local governments."
 					},
 					{
-						title:"Veterans' housing loans",
+						title:"Veterans Housing Program",
 						description:"$1B to provide home loan assistance for veterans buying homes."
 					},
 					{
