@@ -50,22 +50,22 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "But let's say we were on DST all year",
-				text: <span>Let's pretend Prop 7 passes, the state legislature moves California to <Acronym data={Acronyms.DST}/> permanently, and Congress approves it.</span>,
+				title: "Imagine we were on DST all year",
+				text: <span>Let's pretend Prop 7 passes, the state legislature moves California to <Acronym data={Acronyms.DST}/> permanently, and Congress approves it. Here's what would happen:</span>,
 				nColWidth: 8
 			}
 		},
 		{
 			component: SubsectionTitleBlock,
 			data: {
-				title: "California would be sometimes 3 hours from New York, sometimes 2"
+				title: "California would be 2 or 3 hours off from New York"
 			}
 		},
 		{
 			component: ImgLateralBlock,
 			data: {
-				caption:<span>Left image: If California (and Florida) were allowed to remain on DST all year, during the months when other states <b>don't</b> observe DST (November – March), California would be an hour ahead of Pacific Time.
-					<br/>Right image: In the months when other states do observe DST (March – November), California and Florida would line up as they typically do.</span>,
+				caption:<span>Left: During the months when other states <b>don't</b> observe DST (November – March), CA would be one hour ahead of Pacific time.
+					<br/>Right: When other states do observe DST (March – November), CA would be on Pacific time.</span>,
 				images: [
 					{
 						src: {
@@ -98,7 +98,7 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				text:<span>Even though we wouldn’t have to switch our clocks twice a year, most other states still would. If Congress did allow us to have our own time zone, the time difference between CA and NY would be two hours during winter, but three hours in the summer (when other states observe DST). Coincidentally, CA and AZ would be on the same time, all the time. <Citation data={Citations['3']}>FL just passed legislation to move to permanent <Acronym data={Acronyms.DST}/> so we'd always be three hours from Florida Man</Citation></span>
+				text:<span>We wouldn’t have to switch our clocks twice a year, but most other states would. Coincidentally, if Congress allowed us to make <Acronym data={Acronyms.DST}/> permanent, CA would be on the same time as AZ, all the time. <Citation data={Citations['3']}>FL actually passed legislation to move to permanent <Acronym data={Acronyms.DST}/>, which means we'd always be three hours from Florida Man</Citation></span>
 			}
 		},
 		{
@@ -120,9 +120,9 @@ const Data = {
 				title:"Brighter mornings or longer afternoons?",
 				text:
 				<span>
-					If we moved to DST year-round, the difference would be most noticeable during the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23am rather than 7:23am. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents during morning rush hour would worsen in the winter.</Citation>
+					If we moved to DST year-round, the difference would be most noticeable during the winter. On <Acronym data={Acronyms.xmas}/> Day in SF, for instance, the sun would rise at 8:23AM rather than 7:23AM. <Citation data={Citations['5']}>Prop 7 critics argue that children would be going to school in the dark and traffic accidents during morning rush hour would worsen in the winter.</Citation>
 					<br/><br/>
-					On the bright side, the earliest the sun would set is 5:50pm rather than the current low of 4:50pm. <Citation data={Citations['6']}>Prop 7 supporters say later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently, less clock switching also reduces heart attacks the day after.</Citation>
+					On the bright side, the earliest the sun would set is 5:50PM rather than 4:50PM. <Citation data={Citations['6']}>Prop 7 supporters say later sunsets would result in electricity savings</Citation>, reduced traffic accidents, and less crime. <Citation data={Citations['8']}>Apparently, less clock switching also reduces heart attacks the day after.</Citation>
 					<br/><br/>
 					Some people simply want brighter mornings; others want longer afternoons. Luckily, everyone has an opinion.
 				</span>
