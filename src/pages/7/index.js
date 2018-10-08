@@ -50,7 +50,7 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-				title: "Imagine we were on DST all year",
+				title: "Imagine if we were on DST all year",
 				text: <span>Let's pretend Prop 7 passes, the state legislature moves California to <Acronym data={Acronyms.DST}/> permanently, and Congress approves it. Here's what would happen:</span>,
 				nColWidth: 8
 			}
