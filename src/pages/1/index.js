@@ -34,7 +34,7 @@ const Data = {
     {
     	component: SectionTitleBlock,
     	data: {
-    		title: "How will funds be spent?",
+    		title: "How will it be spent?",
 				nColWidth: 6,
     	},
     },
@@ -54,20 +54,20 @@ const Data = {
 				buttonText: "View the rest",
 				stories: [
 					{
-						title:"Affordable Multi-family housing programs",
+						title:"Affordable Multifamily housing programs",
 						description:"$1.8B to build or renovate rental housing projects, such as apartment buildings, in the form of low-interest loans to local governments."
 					},
 					{
-						title:"Veterans housing programs",
-						description:"$1B for home loan assistance to veterans for purchasing homes."
+						title:"Veterans' housing loans",
+						description:"$1B to provide home loan assistance for veterans buying homes."
 					},
 					{
 						title:"Infrastructure Programs",
-						description:"$450M to build housing in existing urban areas, particularly near public transit. The funds also would provide loans and grants housing-related infrastructure like parks, sewage, and transportation."
+						description:"$450M to build housing in existing urban areas, particularly near public transit. The funds also would provide loans and grants for housing-related infrastructure like parks, sewage, and transportation."
 					},
 					{
 						title:"Homeownership Programs",
-						description:"$450M to encourage  low- and moderate-income residents to buy homes. Most of the funds would be used to provide down payment assistance to first-time homebuyers through low-interest loans or grants."
+						description:"$450M to encourage low- and moderate-income residents to buy homes. Most of the funds would be used to provide down payment assistance to first-time homebuyers through low-interest loans or grants."
 					},
 					{
 						title:"Farmworker Housing Program",
