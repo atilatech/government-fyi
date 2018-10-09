@@ -148,7 +148,7 @@ const titles = [
   "Prop 7 helps make Daylight Saving year-round",
   "Prop 8 limits dialysis clinics' revenue",
   "Prop 9 would have split CA into three states",
-  "Prop 10 legalizes rent control again",
+  "Prop 10 allows rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
   "Prop 12 sets minimum space requirements for farm animals"
 ]
@@ -163,7 +163,7 @@ const shortTitles = [
   "Prop 7 helps make Daylight Saving permanent",
   "Prop 8 caps dialysis clinics' revenue",
   "Prop 9 would've split CA, literally",
-  "Prop 10 legalizes rent control again",
+  "Prop 10 allows rent control again",
   "Prop 11 requires EMTs be on-call during breaks",
   "Prop 12 sets floor space requirements for farmed animals"
 ]
@@ -178,7 +178,7 @@ const headlines = [
   "Prop 7 makes Daylight Saving permanent",
   "Prop 8 caps dialysis clinics' profits",
   "Prop 9 would've split CA, literally",
-  "Prop 10 legalizes rent control again",
+  "Prop 10 allows rent control again",
   "Prop 11 requires EMTs be on-call during breaks",
   "Prop 12 sets floor space requirements for farmed animals"
 ]

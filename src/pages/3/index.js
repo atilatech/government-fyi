@@ -149,7 +149,7 @@ const Data = {
 								url: "https://www.pressdemocrat.com/opinion/8803779-181/yes-on-prop-3-protecting"
 							},
 							{
-								text: "SF Chronicle Editorial Board",
+								text: "Op-ed: Prop 3 will clean drinking water",
 								url: "https://www.sfchronicle.com/opinion/openforum/article/California-Prop-3-vote-yes-to-pay-for-13273251.php"
 							},
 							{

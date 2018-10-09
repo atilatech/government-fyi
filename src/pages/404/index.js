@@ -29,7 +29,7 @@ export default ({location}) => (
 		/>
 		<Message>
 			<h1>Dang it.</h1>
-			We 404'd up. We tried to get you to <em>https://www.bythebay.cool{location.pathname}</em> but there was an error. (Sorry!) You can probably find what you’re looking for if you hit our logo (on the top left). If you end up back on this page, then we're so, so, so sorry. <br/><br/>If it's an emergency, send us a text at <em>(415) 617-5970</em> or shoot us an email at hi@bythebay.cool.
+			We 404'd up. We tried to get you to <em>https://www.ballot.fyi{location.pathname}</em> but there was an error. (Sorry!) You can probably find what you’re looking for if you hit our logo (on the top left). If you end up back on this page, then we're so, so, so sorry. <br/><br/>If it's an emergency, send us a text at <em>(415) 617-5970</em> or shoot us an email at fax@ballot.fyi.
 		</Message>
 	</Container>
 )

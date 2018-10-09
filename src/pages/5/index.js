@@ -40,7 +40,7 @@ const Data = {
 			data: {
 				title: "Explain that part to me",
 				text:<span>
-					Say your 56-year-old neighbor bought her home in 1980 for $110K, and you just bought the place next door for $1M (aka a steal in SF). Even though you live in very similar homes, she'll pay $2,200 in taxes this year while you pay $11,000. <Citation data={Citations['3']}>Also under Prop 60 and 90 (passed years after Prop 13), your neighbor is allowed to transfer her old property tax assessment to a less expensive home, but restrictions apply.</Citation> She can only do it once in her lifetime and has to move within the same county. If she moves across county lines, <Citation data={Citations['4']}>there are only 11 counties that recognize her former property tax assessment.</Citation>
+					Say your 56-year-old neighbor bought her home in 1980 for $110K, and you just bought the place next door for $1M (aka a steal in SF). Even though you live in very similar homes, she'll pay $2,200 in taxes this year while you pay $11,000. <Citation data={Citations['3']}>Also under Prop 60 and 90 (passed years after Prop 13), your neighbor is allowed to transfer her old property tax assessment if she moves to a less expensive home, but, restrictions apply.</Citation> She can only do it once in her lifetime and has to move within the same county. If she moves across county lines, <Citation data={Citations['4']}>there are only 11 counties that recognize her former property tax assessment.</Citation>
 					<br/><br/>
 					Now, put yourself in your neighbor's shoes. Would you move? Even though everyone’s gone to college and you have way too much space, you have a strong financial incentive to stay put, pay less on property taxes, and save money.
 				</span>

@@ -72,7 +72,7 @@ class Head extends React.Component{
             },
             "Publisher": {
               "@type": "Organization",
-              "name":"ballot.fyi,
+              "name":"ballot.fyi",
               "url":"https://www.ballot.fyi/",
               "logo": {
                 "@type": "ImageObject",
