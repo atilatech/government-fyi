@@ -22,7 +22,7 @@ const Data = {
     		title: "Another perk for seniors?",
     		text:
 				<span>
-					Yes, but it doesn't just impact the elderly. Prop 5 would give homeowners who are over 55 or severely disabled a discounted property tax rate when they decide to move to a new home. The measure matters because it incentivizes homeowners to move, potentially increasing the number of houses available for sale, but <Citation data={Citations['1']}>it also potentially reduces the state's property tax revenue by an estimated $1B a year, which is mostly used to fund public schools.</Citation>
+					Yes, but it doesn't just impact the elderly. Prop 5 would give homeowners who are over 55 or severely disabled a discounted property tax rate when they decide to move to a new home. The measure matters because it incentivizes homeowners to move, potentially increasing the number of houses available for sale, but <Citation data={Citations['1']}>it also potentially reduces the state's property tax revenue by eventually an estimated $1B a year, which is mostly used to fund public schools.</Citation>
 				</span>
     	},
     },
@@ -31,7 +31,7 @@ const Data = {
 			data: {
 				title: "Why are we doing this?",
 				text:<span>
-					Prop 5 is an amendment to Prop 13. As a homeowner, you pay property taxes every year, but under Prop 13, your property tax is capped at 1% of the home’s <em>purchase</em> price, with the home value adjusted up to 2% each year for inflation. (This is in contrast to other states where property tax is based on the home's current market value.) It’s nice for you, yes, but since Prop 13 was passed in 1978, CA has lost many billions of dollars in potential tax revenue.
+					CA's Association of Realtors authored Prop 5 as an amendment to Prop 13. As a homeowner, you pay property taxes every year, but under Prop 13, your property tax is capped at 1% of the home’s <em>purchase</em> price, with the home value adjusted up to 2% each year for inflation. (This is in contrast to other states where property tax is based on the home's current market value.) It’s nice for you, yes, but since Prop 13 was passed in 1978, CA has lost many billions of dollars in potential tax revenue.
 				</span>
 			}
 		},
