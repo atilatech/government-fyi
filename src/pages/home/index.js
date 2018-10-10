@@ -1,10 +1,8 @@
 import React from 'react'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import FrontPageTitleBlock from 'components/page-blocks/blocks/FrontPageTitleBlock'
-// import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import PropSection from 'components/page-blocks/sections/PropSection'
 import {Link} from 'react-router-dom'
-import {PropMetaData} from 'pages/prop-attributes'
 // import CAImg from './images/ca.png'
 
 
