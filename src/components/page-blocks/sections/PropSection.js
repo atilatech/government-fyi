@@ -19,6 +19,12 @@ const Button = styled.div`
   margin-left: 20px;
   box-shadow: 2px 3px 2px rgba(0,0,0,0.1);
   border-radius: 2px;
+  @media not all and (hover: none) {
+    &:hover {
+      background-color: ${Color('pink2',-3,-10)};
+      box-shadow: 2px 3px 2px rgba(0,0,0,0.2);
+    }
+  }
 `
 
 const ButtonContainer = styled.div`
@@ -41,16 +47,17 @@ class PropSection extends React.Component {
   }
 
   render() {
+    const isNumerical = (this.state.ordering[0] === 1);
     const orderingSelection =
       <ButtonContainer>
         <h3>Order the props by</h3>
         <Button
-          color={Color('pink2')}
+          color={isNumerical ? "#444": Color('pink2') }
           onClick={() => this.changeOrder(this.ordering.spicy)}>
           <ButtonLabel>Spiciness</ButtonLabel>
         </Button>
         <Button
-          color="#444"
+          color={isNumerical ? Color('pink2'):"#444"}
           onClick={() => this.changeOrder(this.ordering.numerical)}>
           <ButtonLabel>Number</ButtonLabel>
         </Button>
