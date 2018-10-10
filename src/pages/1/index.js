@@ -154,7 +154,7 @@ const Data = {
 								url: "https://www.sacbee.com/opinion/election-endorsements/article218406765.html"
 							},
 							{
-								text: "Mercury News & East Bay Times Editorial Boards",
+								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/10/06/editorial-prop-1/"
 							},
 							{

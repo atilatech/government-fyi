@@ -93,7 +93,7 @@ const Data = {
 						subsectionTitle: "Yes on Prop 8",
 						links: [
 							{
-								text: "We couldn't find any editorial boards that support Prop 8.",
+								text: "We couldn't find any editorial boards that support Prop 8",
 							},
 						]
 					},
@@ -151,7 +151,7 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
-								text: "LA Times: labor dispute background",
+								text: "LA Times: background on labor dispute",
 								url: "http://www.latimes.com/politics/la-pol-ca-dialysis-initiative-legislation-20170809-story.html",
 							},
 							{

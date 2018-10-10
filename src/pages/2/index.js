@@ -96,7 +96,7 @@ const Data = {
 						subsectionTitle: "Yes on Prop 2",
 						links: [
 							{
-								text: "San Francisco Chronicle Editorial Board",
+								text: "SF Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-Chronicle-recommends-Yes-on-California-13242085.php"
 							},
 							{
@@ -120,7 +120,7 @@ const Data = {
 								url:"https://www.fresnobee.com/opinion/editorials/article218551355.html"
 							},
 							{
-								text: "California Chamber of Commerce",
+								text: "CA Chamber of Commerce",
 								url:"https://advocacy.calchamber.com/2018/09/12/calchamber-takes-positions-on-propositions-1-2-and-4-recaps-positions-on-all-ballot-measures/"
 							}
 						]
@@ -129,7 +129,7 @@ const Data = {
 						subsectionTitle: "No on Prop 2",
 						links: [
 							{
-								text: "No editorial boards have written against Prop 2.",
+								text: "We couldn't find any editorial boards that have written against Prop 2.",
 							},
 						]
 					},
