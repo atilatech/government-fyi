@@ -149,11 +149,15 @@ const Data = {
 								url: "https://www.pressdemocrat.com/opinion/8803779-181/yes-on-prop-3-protecting"
 							},
 							{
+								text: "Official Yes on Prop 3 website",
+								url: "https://waterbond.org/"
+							},
+							{
 								text: "Op-ed: Prop 3 will clean drinking water",
 								url: "https://www.sfchronicle.com/opinion/openforum/article/California-Prop-3-vote-yes-to-pay-for-13273251.php"
 							},
 							{
-								text: "Op-ed: Prop. 3 will provide clean, safe, reliable water",
+								text: "Op-ed: Prop 3 will provide clean, safe, reliable water",
 								url: "https://www.mercurynews.com/2018/09/14/opinion-prop-3-will-provide-clean-safe-reliable-water/"
 							},
 						]
@@ -176,6 +180,10 @@ const Data = {
 							{
 								text: "Santa Cruz Sentinel Editorial Board",
 								url: "http://www.santacruzsentinel.com/opinion/20180918/editorial-vote-no-on-water-bond-prop-3-yes-on-prop-4-childrens-hospitals",
+							},
+							{
+								text:"Desert Sun Editorial Board",
+								url:"https://www.desertsun.com/story/opinion/editorials/2018/10/09/california-voters-reject-8-9-billion-proposition-3-giveaway-desert-sun-editorial-board-endorsement/1578538002/"
 							},
 							{
 								text:"CA Sierra Club",

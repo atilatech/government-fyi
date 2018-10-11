@@ -131,8 +131,9 @@ const Data = {
 					{
 						subsectionTitle: "Yes on Prop 6",
 						links: [
-							{
-								text: "We couldn't find any editorial boards that oppose Prop 6",
+						{
+								text:"LA Daily News Editorial Board",
+								url:"https://www.dailynews.com/2018/10/05/endorsement-voters-should-approve-prop-6-repeal-gas-tax/"
 							},
 						]
 					},
