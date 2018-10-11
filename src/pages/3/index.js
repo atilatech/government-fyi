@@ -178,6 +178,10 @@ const Data = {
 								url: "http://www.santacruzsentinel.com/opinion/20180918/editorial-vote-no-on-water-bond-prop-3-yes-on-prop-4-childrens-hospitals",
 							},
 							{
+								text:"Desert Sun Editorial Board",
+								url:"https://www.desertsun.com/story/opinion/editorials/2018/10/09/california-voters-reject-8-9-billion-proposition-3-giveaway-desert-sun-editorial-board-endorsement/1578538002/"
+							},
+							{
 								text:"CA Sierra Club",
 								url:"https://www.sierraclub.org/sites/www.sierraclub.org/files/sce/sierra-club-california/PDFs/FactSheet_Proposition3_Opposition-July18.pdf"
 							},
