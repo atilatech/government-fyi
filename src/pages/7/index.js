@@ -64,9 +64,12 @@ const Data = {
 		{
 			component: ImgLateralBlock,
 			data: {
-				caption:<span>
-					Left: During the months when other states <b>don't</b> observe DST (November – March), CA would be one hour ahead of Pacific time.
-					<br/>Right: When other states do observe DST (March – November), CA would be in line with Pacific time.</span>,
+				caption:
+				<span>
+					<Citation data={Citations['11']}>Left: During the months when other states <b>don't</b> observe DST (November – March), CA would be one hour ahead of Pacific time.
+						Right: When other states do observe DST (March – November), CA would be in line with Pacific time.
+					</Citation>
+				</span>,
 				images: [
 					{
 						src: {
@@ -112,7 +115,11 @@ const Data = {
 			component: DSTSunInteractiveBlock,
 			data: {
 				// src: LASunTimes,
-				src: SFSunTimes
+				src: SFSunTimes,
+				caption:
+				<span>
+					<Citation data={Citations['12']}>Explore how Daylight Saving Time affects sunrise and sunset time throughout the year, and what it would look like if we switched to year-round Daylight Saving.</Citation>
+				</span>
 			}
 		},
 		{
@@ -153,7 +160,8 @@ const Data = {
 						subsectionTitle: "Yes on Prop 7",
 						links: [
 							{
-								text: "We couldn't find any editorial boards that support Prop 7",
+								text: "LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-proposition-7-endorsement-20180929-story.html",
 							},
 						]
 					},
@@ -224,17 +232,6 @@ const Data = {
 				]
 			}
 		},
-		{
-			component: AttributionBlock,
-			data: {
-				nColWidth: 6,
-				text:
-					<span>
-						Data for map visualization from Timezone Boundary Builder project (<a href="https://github.com/evansiroky/timezone-boundary-builder" target="_blank" rel="noreferrer noopener">link</a>). Note that proposed new timezones (California, Florida) are estimated from state boundaries, and not from any legally proposed specification.<br/>
-						Data for sunrise/sunset visualization from timeanddate.com for 2018. (Exact date of DST switching varies year to year) (<a href="https://www.timeanddate.com/sun/usa/san-francisco" target="_blank" rel="noreferrer noopener">link</a>)
-					</span>
-			}
-		}
   ]
 }
 export default () => (<PropPageBuilder data={Data}/>);

@@ -148,6 +148,10 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-No-on-Proposition-6-cynical-13189410.php",
 							},
 							{
+								text: "LA Times Editorial Board",
+								url: "http://www.latimes.com/opinion/endorsements/la-ed-endorsement-proposition-6-20180922-story.html"
+							},
+							{
 								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/09/04/editorial-no-on-prop-6-to-preserve-state-roads-transit-funds/"
 							},
