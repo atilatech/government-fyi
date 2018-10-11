@@ -80,8 +80,9 @@ const Data = {
 					{
 						subsectionTitle: "No on Prop 4",
 						links: [
-							{
-								text: "We couldn't find any editorial boards that oppose Prop 2",
+						{
+								text:"LA Daily News Editorial Board",
+								url:"https://www.dailynews.com/2018/09/27/no-on-proposition-4-and-its-bond-debt/"
 							},
 						]
 					},
