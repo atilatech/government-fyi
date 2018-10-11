@@ -74,7 +74,11 @@ const Data = {
 							{
 								text:"Sac Bee Editorial Board",
 								url:"https://www.sacbee.com/opinion/election-endorsements/article218967200.html",
-							}
+							},
+													{
+								text:"Official Yes on Prop 4 website",
+								url:"http://www.yesonproposition4.org/?utm_source=BeeMedia&utm_medium=Search&gclid=Cj0KCQjw6fvdBRCbARIsABGZ-vTOA3WOCgKq_aPNpMvT8MR4Ku8Y5cXo7L9mwJ9cc9tzlyvM7PIiQfYaAgtuEALw_wcB"
+							},
 						]
 					},
 					{

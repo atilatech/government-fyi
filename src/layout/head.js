@@ -174,8 +174,8 @@ class Head extends React.Component{
 
 Head.defaultProps = {
   url: "https://www.ballot.fyi/",
-  title: "California State Propositions 2018 – ballot.fyi",
-  headline: "The quickest nonpartisan voter guide to this November",
+  title: "2018 California State Propositions – ballot.fyi",
+  headline: "The quickest nonpartisan voter guide for the midterms",
   description: "11 CA propositions including daylight savings, cage-free eggs, and housing",
   image: "general.png",
 }
