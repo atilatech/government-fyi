@@ -143,6 +143,10 @@ const Data = {
 						subsectionTitle: "Yes on Prop 12",
 						links: [
 							{
+								text:"LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-proposition12-20180928-story.html"
+							},
+							{
 								text: "Monterey Herald Editorial Board",
 								url: "http://www.montereyherald.com/opinion/20180908/editorial-california-voters-should-approve-props-11-and-12"
 							},

@@ -56,6 +56,10 @@ const Data = {
 								url:"https://www.mercurynews.com/2018/08/15/editorial-prop-4/"
 							},
 							{
+								text:"LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-yes-on-proposition-4-20180925-story.html"
+							},
+							{
 								text: "San Diego Union-Tribune Editorial Board",
 								url: "http://www.sandiegouniontribune.com/opinion/editorials/sd-prop-4-california-hospitals-20180919-story.html"
 							},

@@ -100,6 +100,10 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-Chronicle-recommends-Yes-on-California-13242085.php"
 							},
 							{
+								text: "LA Times Editorial Board",
+								url: "http://www.latimes.com/opinion/endorsements/la-ed-proposition-2-mentally-ill-housing-20181002-story.html",
+							},
+							{
 								text: "San Diego Union-Tribune Editorial Board",
 								url: "http://www.sandiegouniontribune.com/opinion/editorials/sd-proposition-two-help-homeless-menatl-health-utak-20180917-story.html"
 							},

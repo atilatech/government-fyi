@@ -78,6 +78,10 @@ const Data = {
 								url: "https://www.mercurynews.com/2018/08/10/editorial-prop-11/"
 							},
 							{
+								text:"LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-proposition-ll-endorsement-20180921-story.html"
+							},
+							{
 								text: "Sac Bee Editorial Board",
 								url: "https://www.sacbee.com/opinion/election-endorsements/article218268990.html"
 							},

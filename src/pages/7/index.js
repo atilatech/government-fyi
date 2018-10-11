@@ -64,7 +64,8 @@ const Data = {
 		{
 			component: ImgLateralBlock,
 			data: {
-				caption:<span>
+				caption:
+				<span>
 					<Citation data={Citations['11']}>Left: During the months when other states <b>don't</b> observe DST (November – March), CA would be one hour ahead of Pacific time.
 						Right: When other states do observe DST (March – November), CA would be in line with Pacific time.
 					</Citation>
@@ -159,7 +160,8 @@ const Data = {
 						subsectionTitle: "Yes on Prop 7",
 						links: [
 							{
-								text: "We couldn't find any editorial boards that support Prop 7",
+								text: "LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-proposition-7-endorsement-20180929-story.html",
 							},
 						]
 					},

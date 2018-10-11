@@ -150,6 +150,10 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Yes-on-California-Prop-1-13231141.php"
 							},
 							{
+								text: "LA Times Editorial Board",
+								url: "http://www.latimes.com/opinion/editorials/la-ed-proposition-1-endorsement-20181009-story.html"
+							},
+							{
 								text: "Sac Bee Editorial Board",
 								url: "https://www.sacbee.com/opinion/election-endorsements/article218406765.html"
 							},
