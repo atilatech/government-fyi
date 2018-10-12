@@ -172,10 +172,6 @@ const Data = {
 								url: "https://www.pressdemocrat.com/opinion/8735947-181/pd-editorial-no-on-prop?sba=AAS"
 							},
 							{
-								text: "Peninsula Humane Society & SPCA",
-								url: "https://peninsulahumanesociety.org/proposition-12/",
-							},
-							{
 								text: "PETA",
 								url: "https://www.peta.org/blog/why-we-oppose-californias-farmed-animal-initiative-and-you-should-too/",
 							},
