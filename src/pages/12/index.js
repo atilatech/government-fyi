@@ -50,7 +50,7 @@ const Data = {
 					<br/><br/>
 					Farmers were pissed. Some of the reasons they've been fighting Prop 2 are relevant to Prop 12 today. They claimed Prop 2 was:
 					<ul>
-						<li><b>unconstitutional</b> – It required out-of-state farmers selling eggs in CA to comply with its policies. Just last year, 13 states filed a lawsuit to repeal Prop 2 with the US Supreme Court. <Citation data={Citations['2']}> Last year, 13 states filed a suit with the US Supreme Court to repeal it.</Citation></li>
+						<li><b>unconstitutional</b> – It required out-of-state farmers selling eggs in CA to comply with its policies. <Citation data={Citations['2']}> Last year, 13 states filed a suit with the US Supreme Court to repeal it.</Citation></li>
 						<li><b>too vague</b> – and therefore unenforceable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
 						<li><b>expensive</b> – <Citation data={Citations['7']}>It cost CA farmers several hundred million to convert their hen housing systems</Citation>, but <Citation data={Citations['8']}>it seems they would have done that anyway because of salmonella outbreaks</Citation> and <Citation data={Citations['9']}>shifting public opinion.</Citation></li>
 						<li><b>hurtful to production</b> – <Citation data={Citations['14']}>By 2016, academics estimated say egg production dropped by 35%</Citation>, and <Citation data={Citations['10']}>prices rose by 33%.</Citation></li>
