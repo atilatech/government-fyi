@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {PropMetaData} from 'pages/prop-attributes'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import Color from 'layout/colors'
+import {OrderingContext} from 'ordering-context.js'
 
 const ButtonLabel = styled.h2`
   font-size: 16px;
@@ -33,57 +34,59 @@ const ButtonContainer = styled.div`
   padding: 20px;
 `
 class PropSection extends React.Component {
-  constructor(props) {
-    super(props)
-    this.ordering = {
-      spicy: [7,10,12,5,6,11,9,3,8,2,1,4],
-      numerical: [1,2,3,4,5,6,7,8,9,10,11,12]
-    }
-    this.state={ordering: this.ordering.spicy}
-  }
 
-  changeOrder = (arr) => {
-    this.setState({ordering:arr})
-  }
 
   render() {
-    const isNumerical = (this.state.ordering[0] === 1);
     const orderingSelection =
-      <ButtonContainer>
-        <h3>Order the props by</h3>
-        <Button
-          color={isNumerical ? "#444": Color('pink2') }
-          onClick={() => this.changeOrder(this.ordering.spicy)}>
-          <ButtonLabel>Spiciness</ButtonLabel>
-        </Button>
-        <Button
-          color={isNumerical ? Color('pink2'):"#444"}
-          onClick={() => this.changeOrder(this.ordering.numerical)}>
-          <ButtonLabel>Number</ButtonLabel>
-        </Button>
-      </ButtonContainer>
+    <OrderingContext.Consumer>
+      {(context) => (
+        <ButtonContainer>
+          <h3>Order the props by</h3>
+          <Button
+            color={context.ordering[0] === 1 ? "#444": Color('pink2') }
+            onClick={context.setToSpicy}>
+            <ButtonLabel>Spiciness</ButtonLabel>
+          </Button>
+          <Button
+            color={context.ordering[0] === 1 ? Color('pink2'):"#444"}
+            onClick={context.setToNumerical}>
+            <ButtonLabel>Number</ButtonLabel>
+          </Button>
+        </ButtonContainer>
+      )}
+    </OrderingContext.Consumer>
 
-    const propsInOrder = this.state.ordering.map( (propNum, i) => {
-      const {color, imageSet, title, socialDescription} = PropMetaData(propNum)
-      return(
-        <PropCardBlock
-          key={i}
-          data = {{
-            propNum: propNum + "",
-            header: title,
-            color: color,
-            description: socialDescription,
-            img: imageSet,
-            linksTo: `/prop-${propNum}`,
-          }}
-        />
-      );
-  	});
+
+
 
     return(
       <React.Fragment>
         {orderingSelection}
-        {propsInOrder}
+        <OrderingContext.Consumer>
+          {(context) => {
+            const propsInOrder = context.ordering.map( (propNum, i) => {
+              const {color, imageSet, title, socialDescription} = PropMetaData(propNum)
+              return(
+                <PropCardBlock
+                  key={i}
+                  data = {{
+                    propNum: propNum + "",
+                    header: title,
+                    color: color,
+                    description: socialDescription,
+                    img: imageSet,
+                  linksTo: `/prop-${propNum}`,
+                  }}
+                />
+              );
+            });
+            return(
+              <React.Fragment>
+                {propsInOrder}
+              </React.Fragment>
+            )
+          }}
+        </OrderingContext.Consumer>
       </React.Fragment>
     );
   }
