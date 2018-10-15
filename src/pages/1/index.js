@@ -107,7 +107,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: "Prop 1 doesn't necessarily mean higher taxes. It depends on how much we tax and spend on other stuff"
+						body: "Prop 1 doesn't mean higher taxes. It depends on how much we tax and spend on other stuff"
 					},
 					{
 						from: "me",
@@ -123,7 +123,7 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: <span><Citation data={Citations['8']}>But CA needs 180K homes a year and Prop 1 would only build 15K units.</Citation> Voting 'no' tells pols that we need more than a temporary fix.</span>
+						body: <span><Citation data={Citations['8']}>But CA needs 180K homes a year and Prop 1 would fall short of that.</Citation> Voting 'no' tells pols that we need more than a temporary fix.</span>
 					},
 					{
 						from: "them",
