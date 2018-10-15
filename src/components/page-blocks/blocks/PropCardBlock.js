@@ -9,7 +9,6 @@ import MultisourceImage from 'components/static/multisource-image'
 import {Spacer} from 'layout/util';
 import {withRouter} from 'react-router-dom'
 import CrossOutX from 'components/static/cross-out-x'
-// import NoiseSVG from 'components/static/noise.svg'
 
 const BannerLink = styled(Link)`
 	text-decoration: none;
@@ -115,8 +114,6 @@ const Description = styled.h2`
 	line-height: 20px;
 	margin-bottom: 45px;
 	color: ${Color('black')};
-	@media screen and (max-width: 767px) {
-	}
 `
 
 

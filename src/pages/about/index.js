@@ -42,7 +42,7 @@ const Data = {
         image: conciseImg,
         alt: "Venn diagram of CliffsNotes and Wikipedia",
         title: "concise",
-        body: <span>We've read the full text of the propositions, the official arguments of both sides, and many, many opinion articles so we can give you concise but comprehensive digests of what's on the ballot. These are real issues that affect real <Link to="/prop-11/">animals</Link>, and we hope these summaries get you interested in what's happening in CA and make you feel ready to vote.</span>,
+        body: <span>We've read the full text of the propositions, the official arguments of both sides, and many, many opinion articles so we can give you concise but comprehensive digests of what's on the ballot. These are real issues that affect real <Link to="/prop-12/">animals</Link>, and we hope these summaries get you interested in what's happening in CA and make you feel ready to vote.</span>,
       }
     },
     {

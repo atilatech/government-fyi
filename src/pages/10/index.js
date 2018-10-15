@@ -95,7 +95,11 @@ const Data = {
 							{
 								text:"Fresno Bee Editorial Board",
 								url:"https://www.fresnobee.com/opinion/editorials/article219315885.html"
-							}
+							},
+							{
+								text:"LA Daily News Editorial Board",
+								url:"https://www.dailynews.com/2018/09/28/no-on-proposition-10-the-wrong-fix-for-californias-housing-crisis/"
+							},
 						]
 					},
 					{

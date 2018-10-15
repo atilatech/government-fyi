@@ -28,7 +28,7 @@ const Data = {
     		text: <span>
 					Yep, at least on what the proposition intends to do. How you should vote, however, not so much. Essentially, Prop 1 would issue $4B in general obligation bonds to fund housing programs.
 					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans for veterans, which are of no cost to the state, and <Citation data={Citations['1']}>the rest of the money ($3B) would cost the state $5.9B, or $170M annually, to repay. It adds up to roughly 0.1% of our annual budget.</Citation></span>,
+					General obligation bonds are loans to investors that are repaid by the state over time with interest. $1B would be housing loans for veterans, which are of no cost to the state, and <Citation data={Citations['1']}>the rest of the money ($3B) would cost the state $5.9B, or $170M annually over the next 35 years, to repay. It adds up to roughly 0.1% of our annual budget.</Citation></span>,
     	},
     },
     {
@@ -150,11 +150,15 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Yes-on-California-Prop-1-13231141.php"
 							},
 							{
+								text: "LA Times Editorial Board",
+								url: "http://www.latimes.com/opinion/editorials/la-ed-proposition-1-endorsement-20181009-story.html"
+							},
+							{
 								text: "Sac Bee Editorial Board",
 								url: "https://www.sacbee.com/opinion/election-endorsements/article218406765.html"
 							},
 							{
-								text: "Mercury News & East Bay Times Editorial Boards",
+								text: "San Jose Mercury News & East Bay Times Editorial Boards",
 								url: "https://www.mercurynews.com/2018/10/06/editorial-prop-1/"
 							},
 							{

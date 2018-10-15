@@ -93,6 +93,16 @@ export const Citations = {
     publication:"Time",
     headline:"Saving Even More Daylight",
     directQuote:"Even the Department of Energy (DOE) isn't convinced changing the clocks will make a dent in energy consumption. \"The jury on the potential national energy-savings of extending daylight saving time is still out,\" Craig Stevens, press secretary for the Department of Energy, wrote to TIME in e-mail. \"Our preliminary report, based on decades-old information, indicates a very small amount of energy savings.\""
+  },
+  '11':{
+    link:"https://github.com/evansiroky/timezone-boundary-builder",
+    publication:"Timezone Boundary Builder project",
+    directQuote:"Data for map visualization from Timezone Boundary Builder project. Note that proposed new timezones (California, Florida) are estimated from state boundaries, and not from any legally proposed specification."
+  },
+  '12':{
+    link:"https://www.timeanddate.com/sun/usa/san-francisco",
+    publication:"timeanddate.com",
+    directQuote:"Data for sunrise/sunset visualization from timeanddate.com for 2018. (Exact date of DST switching varies year to year)"
   }
 
 }

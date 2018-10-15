@@ -26,13 +26,13 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "You can't vote on this",
-    		text: <span><b>You can't vote on Prop 9</b>. <Citation data={Citations['1']}>The CA Supreme Court removed it from the 2018 ballot due to a lawsuit that questioned its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
+    		text: <span><b>Correct, you can't vote on Prop 9</b>. <Citation data={Citations['1']}>The CA Supreme Court removed it from the 2018 ballot due to a lawsuit that questioned its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
     	},
     },
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "But real quick",
+    		title: "Do tell",
     		text: <span>We won't get into it too deeply, but if Prop 9 passed it would have directed the Governor to ask Congress to split CA into three states. If Congress approved, the CA legislature would then have to go about splitting up the state.</span>,
     	},
     },
@@ -53,7 +53,7 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-			title: "WHYYYYY",
+			title: "WHYYYYY?",
 				text: <span>
 					Billionaire Tim Draper, the main force behind this initiative, <Citation data={Citations['2']}>says that California is too large to govern. It has high costs but poorly implemented social services.
 					</Citation>

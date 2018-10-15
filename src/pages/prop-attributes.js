@@ -194,7 +194,7 @@ const descriptions = [
   "Is this for patients or is it political?",
   "A wild proposition by a VC. Alas, it's been removed from the ballot.",
   "Does it help or hurt to have cities regulate rents?",
-  "Should paramedics be required to be on-call during breaks?",
+  "Should paramedics be required to respond to calls if they're on break?",
   "Guess what 1 square foot looks like relative to a chicken."
 ]
 

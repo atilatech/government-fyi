@@ -23,9 +23,9 @@ const Data = {
     		text: <span>
 					<Citation data={Citations['5']}>California's children’s hospitals receive a majority of their funding from Medi-Cal, the state’s insurance program for low-income residents, which means they often lack the funds to keep up with their infrastructure costs.</Citation>
 					<br/><br/>
-					Prop 4 would issue $1.5B in general obligation bonds to renovate and upgrade CA’s children's hospitals, specifically eight private, nonprofit hospitals ($135M each), five <Acronym data={Acronyms.UC}/> medical centers ($54M each), and other hospitals that treat children in specialized wings ($150M).
+					Prop 4 would issue $1.5B in general obligation bonds to renovate and upgrade CA’s children's hospitals, specifically eight private, nonprofit hospitals ($135M each), five <Acronym data={Acronyms.UC}/> medical centers ($54M each), and other hospitals that treat children in specialized wings ($150M). The bond measure would be repaid from CA's General Fund.
 					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. <Citation data={Citations['2']}>The $1.5B would cost us $2.9B over 35 years, or $80M annually (roughly 0.1% of our annual budget).</Citation>
+					General obligation bonds are loans to investors that are repaid by the state over time with interest. <Citation data={Citations['2']}>The $1.5B would cost us $2.9B over 35 years, or $80M annually (roughly 0.1% of our annual budget).</Citation>
 				</span>,
     	},
     },
@@ -56,6 +56,10 @@ const Data = {
 								url:"https://www.mercurynews.com/2018/08/15/editorial-prop-4/"
 							},
 							{
+								text:"LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-yes-on-proposition-4-20180925-story.html"
+							},
+							{
 								text: "San Diego Union-Tribune Editorial Board",
 								url: "http://www.sandiegouniontribune.com/opinion/editorials/sd-prop-4-california-hospitals-20180919-story.html"
 							},
@@ -70,14 +74,19 @@ const Data = {
 							{
 								text:"Sac Bee Editorial Board",
 								url:"https://www.sacbee.com/opinion/election-endorsements/article218967200.html",
-							}
+							},
+													{
+								text:"Official Yes on Prop 4 website",
+								url:"http://www.yesonproposition4.org/?utm_source=BeeMedia&utm_medium=Search&gclid=Cj0KCQjw6fvdBRCbARIsABGZ-vTOA3WOCgKq_aPNpMvT8MR4Ku8Y5cXo7L9mwJ9cc9tzlyvM7PIiQfYaAgtuEALw_wcB"
+							},
 						]
 					},
 					{
 						subsectionTitle: "No on Prop 4",
 						links: [
-							{
-								text: "No editorial boards have written against Prop 4",
+						{
+								text:"LA Daily News Editorial Board",
+								url:"https://www.dailynews.com/2018/09/27/no-on-proposition-4-and-its-bond-debt/"
 							},
 						]
 					},

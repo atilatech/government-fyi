@@ -146,7 +146,19 @@ const ToggleLabel = styled.label`
 const ToggleContainer = styled.div`
   max-width: 280px;
 `
-
+const Caption = styled.div`
+  width: 70%;
+  margin: 10px auto 0 auto;
+	font-size: 13px;
+	line-height: 20px;
+	font-style: italic;
+	color: #666;
+	padding-left: 5px;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    width: 95%;
+  }
+`;
 
 class DSTSun extends React.Component{
   constructor(props) {
@@ -386,6 +398,7 @@ class DSTSun extends React.Component{
               </defs>
             </svg>
           </Container>
+          <Caption>{this.props.data.caption}</Caption>
 				</Col>
 			</Row>
 		)

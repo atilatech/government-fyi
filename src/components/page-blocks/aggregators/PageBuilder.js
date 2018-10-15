@@ -30,7 +30,7 @@ const PageBuilder = (props) => {
 				dateModified={dateModified}
 			/>
 			<Spacer height={45}/>
-		 	{bodySections}
+			{bodySections}
 		</div>
 	)
 }

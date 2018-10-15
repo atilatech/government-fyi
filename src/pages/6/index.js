@@ -131,8 +131,9 @@ const Data = {
 					{
 						subsectionTitle: "Yes on Prop 6",
 						links: [
-							{
-								text: "We could not find any editorial boards that support Prop 6",
+						{
+								text:"LA Daily News Editorial Board",
+								url:"https://www.dailynews.com/2018/10/05/endorsement-voters-should-approve-prop-6-repeal-gas-tax/"
 							},
 						]
 					},
@@ -146,6 +147,10 @@ const Data = {
 							{
 								text: "SF Chronicle Editorial Board",
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-No-on-Proposition-6-cynical-13189410.php",
+							},
+							{
+								text: "LA Times Editorial Board",
+								url: "http://www.latimes.com/opinion/endorsements/la-ed-endorsement-proposition-6-20180922-story.html"
 							},
 							{
 								text: "San Jose Mercury News & East Bay Times Editorial Boards",

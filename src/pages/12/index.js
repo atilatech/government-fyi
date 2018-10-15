@@ -50,7 +50,7 @@ const Data = {
 					<br/><br/>
 					Farmers were pissed. Some of the reasons they've been fighting Prop 2 are relevant to Prop 12 today. They claimed Prop 2 was:
 					<ul>
-						<li><b>unconstitutional</b> – It required out-of-state farmers selling eggs in CA to comply with its policies. Just last year, 13 states filed a lawsuit to repeal Prop 2 with the US Supreme Court. <Citation data={Citations['2']}> Last year, 13 states filed a suit with the US Supreme Court to repeal it.</Citation></li>
+						<li><b>unconstitutional</b> – It required out-of-state farmers selling eggs in CA to comply with its policies. <Citation data={Citations['2']}> Last year, 13 states filed a suit with the US Supreme Court to repeal it.</Citation></li>
 						<li><b>too vague</b> – and therefore unenforceable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
 						<li><b>expensive</b> – <Citation data={Citations['7']}>It cost CA farmers several hundred million to convert their hen housing systems</Citation>, but <Citation data={Citations['8']}>it seems they would have done that anyway because of salmonella outbreaks</Citation> and <Citation data={Citations['9']}>shifting public opinion.</Citation></li>
 						<li><b>hurtful to production</b> – <Citation data={Citations['14']}>By 2016, academics estimated say egg production dropped by 35%</Citation>, and <Citation data={Citations['10']}>prices rose by 33%.</Citation></li>
@@ -123,7 +123,7 @@ const Data = {
 				title: "What are haters saying?",
 				text:
 				<span>
-					Prop 12 opponents criticize Prop 12 for all the same reasons (except "too vague") they criticized Prop 2.
+					Opponents criticize Prop 12 for all the same reasons (except "too vague") they criticized Prop 2.
 					<br/><br/>
 					<Citation data={Citations['19']}> <Acronym data={Acronyms.PETA}/> (of all people!) argue Prop 2 never led to cage-free hens, and criticize Prop 12 for allowing these poor conditions to continue until 2022.</Citation> <Citation data={Citations['20']}>Ironically, other Prop 12 critics say it's not enough time for farmers and sellers to transition to the requirements, which will only increase retail costs for consumers.</Citation>
 				</span>
@@ -142,6 +142,10 @@ const Data = {
 					{
 						subsectionTitle: "Yes on Prop 12",
 						links: [
+							{
+								text:"LA Times Editorial Board",
+								url:"http://www.latimes.com/opinion/editorials/la-ed-proposition12-20180928-story.html"
+							},
 							{
 								text: "Monterey Herald Editorial Board",
 								url: "http://www.montereyherald.com/opinion/20180908/editorial-california-voters-should-approve-props-11-and-12"
@@ -166,10 +170,6 @@ const Data = {
 							{
 								text: "Press Democrat Editorial Board",
 								url: "https://www.pressdemocrat.com/opinion/8735947-181/pd-editorial-no-on-prop?sba=AAS"
-							},
-							{
-								text: "Peninsula Humane Society & SPCA",
-								url: "https://peninsulahumanesociety.org/proposition-12/",
 							},
 							{
 								text: "PETA",
