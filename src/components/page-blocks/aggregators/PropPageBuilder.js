@@ -23,7 +23,7 @@ const PropPageBuilder = (props) => {
 	});
 
 	const {dateCreated, dateModified, pageType} = meta;
-	const {color, imageSet, shortTitle, socialHeadline, socialDescription} = PropMetaData(propNum)
+	const {color, imageSet, title, socialHeadline, socialDescription} = PropMetaData(propNum)
   const adjacentProps = GetNextAndPrevNum(propNum);
   return(
 		<div>
@@ -42,7 +42,7 @@ const PropPageBuilder = (props) => {
         data={{
           color: color,
           image: imageSet._2x,
-          title: shortTitle,
+          title: title,
         }}
       />
 		 	{bodySections}
@@ -54,12 +54,12 @@ const PropPageBuilder = (props) => {
           {
             img: PropMetaData(adjacentProps.prev).imageSet,
             to: `/prop-${adjacentProps.prev}`,
-            text: PropMetaData(adjacentProps.prev).shortTitle,
+            text: PropMetaData(adjacentProps.prev).title,
           },
           {
             img: PropMetaData(adjacentProps.next).imageSet,
             to: `/prop-${adjacentProps.next}`,
-            text: PropMetaData(adjacentProps.next).shortTitle,
+            text: PropMetaData(adjacentProps.next).title,
           }
           ],
         }}

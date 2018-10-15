@@ -28,11 +28,11 @@ const Banner = styled.div`
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	align-items: center;
-  background-color: whitesmoke;
-	padding: 10px 0;
+	align-items: flex-start;
+	padding: 10px 20px 0 20px;
+	box-sizing: border-box;
 `
-const NavItemContainer = styled.div`
+const ImgContainer = styled.div`
 	transition: background-color 150ms ease-out;
 	background-color: ${props=>props.isActive?Color(props.color+'1'):'transparent'};
 	border-radius: 35px;
@@ -42,27 +42,42 @@ const NavItemContainer = styled.div`
 		}
 	}
 `
+const NavItemContainer = styled.div`
+	min-height: 95px;
+`
+const HoverTitle = styled.h4`
+	display: block
+	text-align: center;
+	max-width: 70px;
+	line-height: 14px;
+	margin-top: 3px;
+	font-weight: bold;
+	@media screen and (max-width: 1023px) {
+		max-width: 60px;
+	}
+	@media screen and (max-width: 767px) {
+		max-width: 50px;
+	}
+`
+
 
 const TopNavBlock = (props) => {
   // const {color, imageSet, shortTitle}
 	const navArr = [];
 	for (let i = 1; i < 13; i++){
-		const {color, imageSet, socialDescription} = PropMetaData(i)
+		const {color, imageSet, socialDescription, shortTitle} = PropMetaData(i)
 		navArr.push(
 			{
 				color:color,
 				images:imageSet,
-				desc:socialDescription
+				desc:socialDescription,
+				title: shortTitle,
 			}
 		)
 	}
 	const navItems = navArr.map( (item, i) => {
 		return(
-			<Link to={`/prop-${i+1}`} key={i}>
-				<NavItemContainer color={item.color} isActive={props.currentProp===i+1}>
-					<Img imageHandles={{_1x:item.images._1x, _1x_webp:item.images._1x_webp}} alt={item.desc}/>
-				</NavItemContainer>
-			</Link>
+			<NavItem key={i} isActive={props.currentProp === i+1} propNum={i} data={item}/>
 		)
 	})
   return(
@@ -77,3 +92,36 @@ TopNavBlock.propTypes = {
 }
 
 export default TopNavBlock;
+
+class NavItem extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state={
+			isHovered: false
+		}
+	}
+	handleMouseEnter = () => {
+		this.setState({isHovered: true})
+	}
+	handleMouseLeave = () => {
+		this.setState({isHovered: false})
+	}
+	render() {
+		const {color, images, title, desc} = this.props.data
+		return(
+			<NavItemContainer>
+				<Link to={`/prop-${this.props.propNum+1}`}>
+					<ImgContainer
+						onMouseEnter={this.handleMouseEnter}
+						onMouseLeave={this.handleMouseLeave}
+						color={color}
+						isActive={this.props.isActive}
+					>
+						<Img imageHandles={{_1x:images._1x, _1x_webp:images._1x_webp}} alt={desc}/>
+					</ImgContainer>
+				</Link>
+				{(this.state.isHovered || this.props.isActive) && <HoverTitle>{title}</HoverTitle>}
+			</NavItemContainer>
+		)
+	}
+}
