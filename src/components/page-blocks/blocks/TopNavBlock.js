@@ -65,13 +65,14 @@ const TopNavBlock = (props) => {
   // const {color, imageSet, shortTitle}
 	const navArr = [];
 	for (let i = 1; i < 13; i++){
-		const {color, imageSet, socialDescription, shortTitle} = PropMetaData(i)
+		const {color, imageSet, socialDescription, shortTitle, thumbSet} = PropMetaData(i)
 		navArr.push(
 			{
 				color:color,
 				images:imageSet,
 				desc:socialDescription,
 				title: shortTitle,
+				imageSet: thumbSet
 			}
 		)
 	}
@@ -107,7 +108,7 @@ class NavItem extends React.Component {
 		this.setState({isHovered: false})
 	}
 	render() {
-		const {color, images, title, desc} = this.props.data
+		const {color, images, title, desc, imageSet} = this.props.data
 		return(
 			<NavItemContainer>
 				<Link to={`/prop-${this.props.propNum+1}`}>
@@ -117,7 +118,9 @@ class NavItem extends React.Component {
 						color={color}
 						isActive={this.props.isActive}
 					>
-						<Img imageHandles={{_1x:images._1x, _1x_webp:images._1x_webp}} alt={desc}/>
+						<Img
+							imageHandles={imageSet}
+							alt={desc}/>
 					</ImgContainer>
 				</Link>
 				{(this.state.isHovered || this.props.isActive) && <HoverTitle>{title}</HoverTitle>}
