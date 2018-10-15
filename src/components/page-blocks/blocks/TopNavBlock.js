@@ -9,10 +9,18 @@ import {PropMetaData} from 'pages/prop-attributes'
 
 const Img = styled(MultisourceImage)`
 	display: block;
-	height: 60px;
-	width: 60px;
+	height: 70px;
+	width: 70px;
 	object-fit: contain;
 	filter: grayscale(100%);
+	@media screen and (max-width: 1023px) {
+		width: 60px;
+		height: 76px;
+	}
+	@media screen and (max-width: 767px) {
+		height: 50px;
+		width: 50px;
+	}
 `;
 
 const Banner = styled.div`
