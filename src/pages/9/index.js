@@ -26,7 +26,7 @@ const Data = {
     	component: TextWithTitleBlock,
     	data: {
     		title: "You can't vote on this",
-    		text: <span><b>Correct, you can't vote on Prop 9</b>. <Citation data={Citations['1']}>The CA Supreme Court removed it from the 2018 ballot due to a lawsuit that questioned its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
+    		text: <span><b>You can't vote on Prop 9</b>, for now. <Citation data={Citations['1']}>The CA Supreme Court removed it from the 2018 ballot due to a lawsuit that questioned its validity.</Citation> Depending on the outcome, you may be able to vote on it in 2020 though. <span role="img" aria-label="grinning with sweat emoji">😅</span></span>,
     	},
     },
     {
