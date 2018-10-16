@@ -29,7 +29,7 @@ export const Citations = {
     directQuote:"Since we do not have designated rest/meal spaces, you might have seen us taking our breaks on street corners, in a restaurant, or in our ambulances, all the while listening to our radios for an emergency. When we are dispatched for an emergency call, we’re legally entitled to receive compensation for the interruption."
 	},
 	'4':{
-		link:'https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf',
+		link:'https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop11',
     publication: "State of California",
     headline: "Text of proposed laws: Prop 11, pg 85",
     directQuote:"Emergency ambulance employees shall be compensated at their regular hourly rate of pay during meal and rest periods."
