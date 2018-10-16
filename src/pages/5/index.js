@@ -52,26 +52,15 @@ const Data = {
 				title: "Okay, take me back to Prop 5",
 				text:
 				<span>
-					Prop 5 basically gets rid of the previous restrictions and lets Californians over 55 pay a discounted property tax regardless of where they move to in California, how many times they move, or whether it’s into a more or less expensive home. <Citation data={Citations['']}>Supporters argue the measure would incentivize long-time homeowners to move and free up CA’s limited housing supply.</Citation>
+					Prop 5 basically gets rid of the previous restrictions and lets Californians over 55 pay a discounted property tax regardless of where they move to in California, how many times they move, or whether it’s into a more or less expensive home. <Citation data={Citations['7']}>Supporters argue the measure would incentivize long-time homeowners to move and free up CA’s limited housing supply.</Citation>
 					<br/><br/>
-					<Citation data={Citations['']}>But critics claim CA’s housing shortage won’t be solved by simply making more homes available. Plus, elderly property owners already benefit from a tax break when they want to move to a less expensive home. Prop 5 would be another property tax discount that would burden local governments.</Citation>
+					But critics claim CA’s housing shortage won’t be solved by simply making more homes available. <Citation data={Citations['8']}>Plus, elderly property owners already benefit from a tax break when they want to move to a less expensive home. Prop 5 would be another property tax discount that would burden local governments.</Citation>
 					<br/><br/>
 					If Prop 5 passes, <Citation data={Citations['6']}>the nonpartisan Legislative Analyst’s Office estimates that CA schools and local governments would lose a total of over $100M a year in property taxes for the first few years and eventually lose about a $1B a year.</Citation> <Citation data={Citations['5']}>This even takes into account potentially <em>new</em> homeowners paying market-price property taxes.</Citation>
 
 				</span>
 			}
 		},
-		// {
-		// 	component: IMessageBlock,
-		// 	data: {
-		// 		messages: [
-		// 			{
-		// 				from:"me",
-		// 				body:""
-		// 			}
-		// 		]
-		// 	}
-		// },
 		{
 			component: SectionTitleBlock,
 			data:{

@@ -357,11 +357,11 @@ class DSTSun extends React.Component{
             <Form>
               <ToggleContainer>
                 <input onChange={this.handleToggleChange} name="dst-sometimes-toggle" id="dst-sometimes-toggle" type="radio" value="regular" checked={!isDSTToggled}/>
-                <ToggleLabel htmlFor="dst-sometimes-toggle"><h4><Acronym data={Acronyms.DST}/> as currently observed</h4></ToggleLabel>
+                <ToggleLabel htmlFor="dst-sometimes-toggle"><h4>DST as currently observed</h4></ToggleLabel>
               </ToggleContainer>
               <ToggleContainer>
                 <input onChange={this.handleToggleChange} name="dst-all-year-toggle" id="dst-all-year-toggle" type="radio" value="all-year" checked={isDSTToggled}/>
-                <ToggleLabel htmlFor="dst-all-year-toggle"><h4><Acronym data={Acronyms.DST}/> all year</h4></ToggleLabel>
+                <ToggleLabel htmlFor="dst-all-year-toggle"><h4>DST all year</h4></ToggleLabel>
               </ToggleContainer>
             </Form>
             <SelectorContainer>

@@ -36,4 +36,16 @@ export const Citations = {
     headline:"Prop 5",
     directQuote:"This means the measure would reduce property taxes for local governments. In the first few years, schools and other local governments each probably would lose over $100 million per year. Over time, these losses would grow, resulting in schools and other local governments each losing about $1 billion per year (in today’s dollars)."
   },
+  '7': {
+    link:"http://www.sandiegouniontribune.com/opinion/sd-proposition-5-property-taxes-20180912-story.html",
+    publication: "San Diego Union-Tribune",
+    headline:"Editorial | Proposition 5: Good for homeowners over 55 and the housing market",
+    directQuote:"The sponsors of Proposition 5 — real estate agents — came up with the measure to pad their pockets. But it’s actually a smart idea that will both give older people more flexibility with their lives and introduce liquidity to a housing market that could badly use it."
+  },
+  '8':{
+    link:"https://www.sfchronicle.com/business/networth/article/How-older-CA-homeowners-can-get-property-tax-6778070.php",
+    publication:"SF Chronicle",
+    headline:"How older CA homeowners can get property tax break when they sell",
+    directQuote:"Under Prop. 60, homeowners who are older than 55 or permanently disabled can sell their primary residence and transfer its assessed value to a replacement home in the same county of equal or lesser value. Prop. 90 lets them transfer their assessed value to a replacement home of equal or lesser value in a different county, but only if that county accepts incoming transfers. Only 10 counties do, including San Mateo, Alameda and Santa Clara."
+  }
 }
