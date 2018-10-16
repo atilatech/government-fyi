@@ -37,7 +37,7 @@ const PropPageBuilder = (props) => {
 				dateCreated={dateCreated}
 				dateModified={dateModified}
 			/>
-			<TopNavBlock currentProp={propNum}/>
+			{/* <TopNavBlock currentProp={propNum}/> */}
       <WallpaperBannerImg
         data={{
           color: color,
