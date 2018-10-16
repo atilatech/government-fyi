@@ -188,6 +188,10 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
+								text:"KQED Forum debate",
+								url:"https://www.kqed.org/forum/2010101867768/proposition-1-would-authorize-4-billion-in-bonds-for-affordable-housing"
+							},
+							{
 								text: "CA Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=1&year=2018",
 							},

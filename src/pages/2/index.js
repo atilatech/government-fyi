@@ -141,6 +141,10 @@ const Data = {
 						subsectionTitle: "Related coverage",
 						links: [
 							{
+								text:"KQED Forum debate",
+								url:"https://www.kqed.org/forum/2010101867764/election-2018-proposition-2-would-use-revenue-from-millionaires-tax-to-fund-homeless-housing"
+							},
+							{
 								text:"$2 billion to help house California's homeless isn't being spent — and no one knows when it will be",
 								url:"http://www.latimes.com/politics/la-pol-ca-homeless-housing-bond-stalled-20180301-story.html"
 							},
