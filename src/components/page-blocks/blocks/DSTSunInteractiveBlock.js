@@ -9,8 +9,8 @@ import {axisBottom} from 'd3-axis'
 import {scaleTime} from 'd3-scale'
 import Color from 'layout/colors'
 import 'components/static/dst-sun-styles.css'
-import Acronym from 'components/interactive/acronym'
-import {Acronyms} from 'pages/7/expandables'
+// import Acronym from 'components/interactive/acronym'
+// import {Acronyms} from 'pages/7/expandables'
 
 const Container = styled.div`
   display: flex;
