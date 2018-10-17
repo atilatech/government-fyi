@@ -3,6 +3,7 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
+import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -59,6 +60,56 @@ const Data = {
 					The EMT labor union spoke out against Prop 11, but other than that, <Citation data={Citations['7']}>it’s been kind of quiet.</Citation> No one even submitted an official ballot argument against Prop 11.
 				</span>
 			},
+		},
+		{
+			component: SectionTitleBlock,
+			data: {
+				title:"An abridged KQED debate",
+				nColWidth: 6,
+			}
+		},
+		{
+			component: IMessageBlock,
+			data: {
+				messages: [
+					{
+						from: "me",
+						body: "Our beef is that Prop 11 gives immunity of liability to the authors of the prop.",
+					},
+					{
+						from: "them",
+						body: "Prop 11 ensures that the closest ambulance responds. We're codifing in law that these EMTs get paid if their break is interrupted.",
+					},
+					{
+						from: "them",
+						body: "This is the way it's been for 50 years, and how firefighters and police also operate",
+					},
+					{
+						from: "me",
+						body: "We agree they should be paid.",
+					},
+					{
+						from: "me",
+						body: "And btw, just because it's been the practice for 50 years doesn't mean it's legal.",
+					},
+					{
+						from: "me",
+						body: "Again, what we care about is the retroactive immunity clause.",
+					},
+					{
+						from: "them",
+						body: "So it's okay to absolve liability going forward, but not retroactively?",
+					},
+					{
+						from: "me",
+						body: "We were close to working it out in the legislature, but AMR didn't get full immunity, so here we are.",
+					},
+					{
+						from:"them",
+						body:"Look, this is a public health issue. We want to make sure we're getting ambulances to people as quickly as possible."
+					}
+				]
+			}
 		},
 		{
 			component: SectionTitleBlock,
