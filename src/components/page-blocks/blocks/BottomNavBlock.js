@@ -13,7 +13,7 @@ usually two tiles with images and text that point to the next and prev posts
 
 example usage for data.js:
 {
-  
+
   component: BottomNavBlock,
   data: {
     color:
@@ -107,7 +107,7 @@ const BottomNav = (props) => {
 				<Tile to={to}>
 					<ArrowStyle evenOdd={i}><NavArrow color={Color('black')}/></ArrowStyle>
 					<Text evenOdd={i}>{text}</Text>
-					<Img bottomOut={props.bottomOut} imageHandles={img} alt={`Navigate to ${text}`}/>
+					<Img bottomOut={props.bottomOut} imageHandles={{_1x:img._1x,_1x_webp:img._1x_webp}} alt={`Navigate to ${text}`}/>
 				</Tile>
 			</TileInteraction>
 
