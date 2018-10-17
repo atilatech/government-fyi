@@ -34,9 +34,9 @@ const Data = {
 					<br/><br/>
 					<Citation data={Citations['1']}>In 2016, the CA Supreme Court ruled that <em>security workers</em> were no longer required to keep their radios on during their scheduled breaks.</Citation> Suddenly, on-call breaks became illegal (but not explicitly for ambulances) and it <Citation data={Citations['10']}>prompted EMTs to file similar lawsuits against ambulance companies.</Citation> <Citation data={Citations['12']}>These suits are still ongoing.</Citation>
 					<br/><br/>
-					The following year, <Citation data={Citations['13']}>labor unions started promoting legislation requiring employers to provide uninterruptible breaks or pay employees for their breaks that are interrupted.</Citation> <Citation data={Citations['9']}>The legislation didn’t pan out</Citation>, and ambulance companies started to freak out. <Citation data={Citations['6']}>In an attempt to stave off more lawsuits and labor union policies, American Medical Response, the country’s largest ambulance company, spent $7.8M to put Prop 11 on the ballot.</Citation>
+					The following year, <Citation data={Citations['13']}>labor unions and private ambulance companies tried to work it out in the state legislature</Citation> <Citation data={Citations['9']}>, but the two sides couldn't reach an agreement.</Citation> <Citation data={Citations['6']}>In an attempt to stave off more lawsuits and labor union policies, American Medical Response, the country’s largest ambulance company, spent $7.8M to put Prop 11 on the ballot.</Citation>
 					<br/><br/>
-					Prop 11 happens to also absolve private ambulance companies from any liability they might have incurred since that CA Supreme Court ruling, such as not paying workers during their previously interrupted breaks.
+					Prop 11 would also absolve private ambulance companies from any liability they might have incurred since that CA Supreme Court ruling, such as not paying workers during their previously interrupted breaks.
 				</span>
 			}
 		},
@@ -114,6 +114,15 @@ const Data = {
 						]
 					},
 					{
+						subsectionTitle:"Other coverage",
+						links:[
+							{
+								text:"KQED Forum debate (audio)",
+								url:"https://www.kqed.org/forum/2010101867787/election-2018-proposition-11-would-require-emts-and-parmedics-to-be-on-call-during-breaks"
+							}
+						]
+					},
+					{
 						subsectionTitle: "Related legal cases and policies",
 						links: [
 							{
@@ -133,6 +142,7 @@ const Data = {
 					{
 						subsectionTitle: "Impartial analyses",
 						links: [
+
 							{
 								text: "Legislative Analyst's Office report",
 								url: "https://lao.ca.gov/BallotAnalysis/Proposition?number=11&year=2018",

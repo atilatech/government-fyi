@@ -103,6 +103,15 @@ const Data = {
 						]
 					},
 					{
+						subsectionTitle:"Other coverage",
+						links:[
+							{
+								text:"KQED Forum debate (audio)",
+								url:"https://www.kqed.org/forum/2010101867796/election-2018-prop-10-would-repeal-costa-hawkins-allow-rent-control-to-expand"
+							}
+						]
+					},
+					{
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
