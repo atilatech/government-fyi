@@ -34,12 +34,20 @@ const Container = styled.div`
   margin-top: 30px;
 `
 
-const DownloadLink = styled.div`
+const DownloadLink = styled.a`
+  display: block;
   background-color: #eee;
   width: 200px;
   border: 1px solid #ccc;
   margin: 0 30px;
   filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.10)) drop-shadow(-20px 16px 2px rgba(0,0,0,0.05));
+  transition: transform 200ms ease-in;
+  ${'' /* @media not all and (hover: none) {
+    &:hover{
+      transform: rotate3d(0,1,0,180deg);
+
+    }
+  } */}
 `
 const Image = styled(MultisourceImg)`
   display: block;
@@ -101,7 +109,7 @@ const Data = {
         nColWidth: 6,
         body:
       <Container>
-        <DownloadLink>
+        <DownloadLink href="https://www.ballot.fyi/downloads/ballotfyi-CA-voter-guide.pdf" download>
           <Image
             imageHandles={{
                 _1x: CA_back,
@@ -109,17 +117,17 @@ const Data = {
                 _2x: CA_back_2x,
                 _2x_webp: CA_back_2x_w
             }}
-          alt="Click to download our print guide"/>
+          alt="Click to download CA print guide"/>
         </DownloadLink>
-        <DownloadLink>
+        <DownloadLink href="https://www.ballot.fyi/downloads/ballotfyi-SF-voter-guide.pdf" download>
           <Image
             imageHandles={{
                 _1x: SF_front,
                 _1x_webp: SF_front_w,
                 _2x: SF_front_2x,
                 _2x_webp: SF_front_2x_w
-              }}
-            alt="Click to download our print guide"/>
+            }}
+          alt="Click to download SF print guide"/>
           </DownloadLink>
         </Container>
       }
