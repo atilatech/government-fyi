@@ -55,6 +55,7 @@ const ImgContainer = styled.div.attrs({
 	}
 `
 const NavItemContainer = styled.div`
+	max-width: 1000px;
 	min-height: 65px;
 `
 const HoverTitle = styled.h4`
