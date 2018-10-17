@@ -38,6 +38,7 @@ const PropPageBuilder = (props) => {
 				dateModified={dateModified}
 			/>
 			<TopNavBlock currentProp={propNum}/>
+			<Spacer height={30}/>
       <WallpaperBannerImg
         data={{
           color: color,
