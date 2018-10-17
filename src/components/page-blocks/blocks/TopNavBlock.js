@@ -7,19 +7,23 @@ import MultisourceImage from 'components/static/multisource-image'
 import Color from 'layout/colors'
 import {PropMetaData} from 'pages/prop-attributes'
 
-const Img = styled(MultisourceImage)`
+const Img = styled(MultisourceImage).attrs({
+  style: props => ({
+    filter: props.isActive?'none':'grayscale(100%)',
+		opacity: props.isActive||props.isHovered?1:0.5
+  })
+})`
 	display: block;
-	height: 70px;
-	width: 70px;
+	height: 60px;
+	width: 60px;
 	object-fit: contain;
-	filter: grayscale(100%);
 	@media screen and (max-width: 1023px) {
-		width: 60px;
-		height: 76px;
+		width: 50px;
+		height: 50px;
 	}
 	@media screen and (max-width: 767px) {
-		height: 50px;
-		width: 50px;
+		height: 40px;
+		width: 40px;
 	}
 `;
 
@@ -29,13 +33,21 @@ const Banner = styled.div`
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	padding: 10px 20px 0 20px;
+	padding: 10px 100px 0 100px;
 	box-sizing: border-box;
+	background-color: whitesmoke;
+	@media screen and (max-width: 767px) {
+		padding-left: 30px;
+		padding-right: 30px
+	}
 `
-const ImgContainer = styled.div`
+const ImgContainer = styled.div.attrs({
+  style: props => ({
+    backgroundColor: props.isActive?Color(props.color+'1'):'transparent'
+  })
+})`
 	transition: background-color 150ms ease-out;
-	background-color: ${props=>props.isActive?Color(props.color+'1'):'transparent'};
-	border-radius: 35px;
+	border-radius: 30px;
 	@media not all and (hover: none) {
 		&:hover{
 			background-color: ${props=>Color(props.color+'2')};
@@ -43,20 +55,22 @@ const ImgContainer = styled.div`
 	}
 `
 const NavItemContainer = styled.div`
-	min-height: 95px;
+	min-height: 65px;
 `
 const HoverTitle = styled.h4`
+	font-size: 10px;
 	display: block
 	text-align: center;
-	max-width: 70px;
+	max-width: 60px;
 	line-height: 14px;
 	margin-top: 3px;
 	font-weight: bold;
+	position: absolute;
 	@media screen and (max-width: 1023px) {
-		max-width: 60px;
+		max-width: 50px;
 	}
 	@media screen and (max-width: 767px) {
-		max-width: 50px;
+		max-width: 40px;
 	}
 `
 
@@ -119,6 +133,8 @@ class NavItem extends React.Component {
 						isActive={this.props.isActive}
 					>
 						<Img
+							isHovered={this.state.isHovered}
+							isActive={this.props.isActive}
 							imageHandles={imageSet}
 							alt={desc}/>
 					</ImgContainer>
