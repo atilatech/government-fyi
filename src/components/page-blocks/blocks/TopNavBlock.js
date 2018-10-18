@@ -123,7 +123,7 @@ class NavItem extends React.Component {
 		this.setState({isHovered: false})
 	}
 	render() {
-		const {color, images, title, desc, imageSet} = this.props.data
+		const {color, title, desc, imageSet} = this.props.data
 		return(
 			<NavItemContainer>
 				<Link to={`/prop-${this.props.propNum+1}`}>
