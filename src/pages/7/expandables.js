@@ -96,11 +96,13 @@ export const Citations = {
   },
   '11':{
     link:"https://github.com/evansiroky/timezone-boundary-builder",
+    headline:"",
     publication:"Timezone Boundary Builder project",
     directQuote:"Data for map visualization from Timezone Boundary Builder project. Note that proposed new timezones (California, Florida) are estimated from state boundaries, and not from any legally proposed specification."
   },
   '12':{
     link:"https://www.timeanddate.com/sun/usa/san-francisco",
+    headline:"",
     publication:"timeanddate.com",
     directQuote:"Data for sunrise/sunset visualization from timeanddate.com for 2018. (Exact date of DST switching varies year to year)"
   }
