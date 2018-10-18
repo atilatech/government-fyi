@@ -7,6 +7,7 @@ import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
 // import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
 import DSTSunInteractiveBlock from 'components/page-blocks/blocks/DSTSunInteractiveBlock'
+import {OrderingContext} from 'ordering-context.js'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -65,9 +66,14 @@ const Data = {
 			data: {
 				caption:
 				<span>
-					<Citation data={Citations['11']}>Left: During the months when other states <b>don't</b> observe DST (November – March), CA would be one hour ahead of Pacific time.
-						Right: When other states do observe DST (March – November), CA would be in line with Pacific time.
-					</Citation>
+					<OrderingContext.Consumer>
+						{({isXs}) => (
+							<Citation data={Citations['11']}>
+								{isXs?'Top':'Left'}: During the months when other states <b>don't</b> observe DST (November – March), CA would be one hour ahead of Pacific time.
+								{isXs?' Bottom':' Right'}: When other states do observe DST (March – November), CA would be in line with Pacific time.
+							</Citation>
+						)}
+					</OrderingContext.Consumer>
 				</span>,
 				images: [
 					{

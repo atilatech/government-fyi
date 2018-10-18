@@ -13,7 +13,22 @@ export class OrderingProvider extends React.Component {
       ordering : this.ordering.spicy,
       setToSpicy: () => { this.setState({ordering: this.ordering.spicy}) },
       setToNumerical: () => { this.setState({ordering: this.ordering.numerical}) },
+      isXs: false
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize",this.handleResize);
+    this.handleResize();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize",this.handleResize);
+  }
+
+  handleResize = () => {
+    const w = (window.innerWidth || document.documentElement.clientWidth);
+    this.setState({isXs: w <= 767})
   }
 
   render() {
