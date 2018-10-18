@@ -74,40 +74,28 @@ const Data = {
 				messages: [
 					{
 						from: "me",
-						body: "Our beef is that Prop 11 gives immunity of liability to the authors of the prop.",
+						body: "Our beef is that Prop 11 absolves private ambulance companies from ongoing lawsuits and liability.",
 					},
 					{
 						from: "them",
-						body: "Prop 11 ensures that the closest ambulance responds. We're codifing in law that these EMTs get paid if their break is interrupted.",
+						body: "It's a public health issue though. If EMTs have paid, on-call breaks, it ensures that the nearest ambulance can respond to emergencies. It's been this way for 50 years. Firefighters and po-po's work this way too.",
 					},
 					{
 						from: "them",
-						body: "This is the way it's been for 50 years, and how firefighters and police also operate",
+						body: "Prop 11 just codifies it into law.",
 					},
 					{
 						from: "me",
-						body: "We agree they should be paid.",
+						body: "Well, just because it's been that way for 50 years doesn't mean it's legal.",
 					},
 					{
 						from: "me",
-						body: "And btw, just because it's been the practice for 50 years doesn't mean it's legal.",
+						body: "This retroactive immunity clause still isn't fair.",
 					},
 					{
 						from: "me",
-						body: "Again, what we care about is the retroactive immunity clause.",
+						body: "We've been trying to amend it in the state legislature since 2016, but AMR wanted full immunity, so here we are.",
 					},
-					{
-						from: "them",
-						body: "So it's okay to absolve liability going forward, but not retroactively?",
-					},
-					{
-						from: "me",
-						body: "We were close to working it out in the legislature, but AMR didn't get full immunity, so here we are.",
-					},
-					{
-						from:"them",
-						body:"Look, this is a public health issue. We want to make sure we're getting ambulances to people as quickly as possible."
-					}
 				]
 			}
 		},
