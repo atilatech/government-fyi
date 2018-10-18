@@ -35,5 +35,17 @@ export const Citations = {
     publication: "Santa Cruz Sentinel",
     headline:"Editorial: Vote ‘no’ on water-bond Prop. 3; ‘Yes’ on Prop. 4, children’s hospitals",
     directQuote:"The issue is that children’s hospitals are dependent on low reimbursement rates from Medi-Cal, California’s public insurance program for lower-income residents. Because of that, the hospitals have trouble keeping current with improvements in medical technology."
+  },
+  '6':{
+    link:"https://ca.lp.org/votingguides/proposition-4-childrens-hospital-bond-act-of-2018/",
+    publication: "CA Libertarian Party",
+    headline: "No on 4",
+    directQuote:" In addition, although the children’s hospitals and medical facilities that would benefit from this money are non-profit organizations, the combined net income of the 13 hospitals is $276 million with over $4.6 billion in net assets which could easily be used for the necessary improvements"
+  },
+  '7':{
+    link:"https://fhop.ucsf.edu/sites/fhop.ucsf.edu/files/wysiwyg/ChildHospOutcomes.pdf",
+    publication:"CA Policy Research Center",
+    headline:"The Impact of Changing Public Policy on California's Hospital Infrastructure and Children's Hospital Outcomes - 1983-2000",
+    directQuote:"In 1987, the legislature suspended the Certificate of Need and related planning activities and permitted hospitals to close or consolidate without state review.... California deregulated its healthcare system, finding it \"indispensable that providers of health care be free to engage in voluntary, cooperative efforts with consumers, government, or other providers of health care to fulfill the purposes of the health planning laws.\""
   }
 }
