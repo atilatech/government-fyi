@@ -63,10 +63,6 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: "That children are the root of all evil?"
-					},
-					{
-						from: "me",
 						body: "Do Libertarians wear hats?"
 					},
 					{
@@ -75,23 +71,23 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: "But yea, why are we adding debt for something everybody seemingly agrees we ought to do?"
+						body: "Seriously, why are we adding debt for something everybody seemingly agrees we ought to do?"
 					},
 					{
 						from: "them",
-						body: <span>If that's the case, we should just squeeze it in our budget, or <Citation data={Citations['6']}>have the hospitals pay for it.</Citation></span>
+						body: <span>If that's the case, we should just squeeze it into our budget, or <Citation data={Citations['6']}>have the hospitals pay for it.</Citation></span>
 					},
 					{
 						from: "me",
-						body: "Do you think we could actually get it into our budget? "
+						body: "Easier said than done."
 					},
 					{
 						from: "me",
-						body: <span>Increasing spending raises the ire of the same opponents as passing bonds. <Citation data={Citations['7']}>And we cut children's hospital infrastructure programs back in the 90s.</Citation></span>
+						body: <span>Increasing spending pisses off taxpayers. <Citation data={Citations['7']}>And we cut children's hospital infrastructure programs back in the 90s.</Citation></span>
 					},
 					{
 						from: "them",
-						body: "The point is that we avoid the debt, and the debate would be good for us."
+						body: "The point is to avoid more debt. Kids are important, but the debate is good for us."
 					},
 					{
 						from: "me",
