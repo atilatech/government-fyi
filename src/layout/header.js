@@ -125,6 +125,8 @@ const nav = [
   // { to:"/races/", label:"Races"},
   { to:"/about/", label:"About", longLabel:"About us"},
   { to:"/follow/", label:"Follow us", icon:""},
+  { to:"/print/", label:"Print", longLabel: "Printed guide", icon:""},
+
 ];
 
 export default Header;

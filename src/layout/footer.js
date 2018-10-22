@@ -78,6 +78,7 @@ const nav = [
   { to:"/about/", label:"about"},
   { to:"/about#contact", label:"contact"},
   { to:"/follow/", label:"subscribe"},
+  { to:"/print/", label:"printed guide"},
   { to:"/terms/", label:"terms of service"},
 ];
 
