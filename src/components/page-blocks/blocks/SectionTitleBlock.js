@@ -49,7 +49,7 @@ const Img = styled.img`
 `;
 
 const TitleBar = (props) => {
-	const {img, title, subtitle, align, nColWidth} = props.data;
+	const {img, title, subtitle, align, nColWidth, paddingTop} = props.data;
 	const nWidth = nColWidth || 8;
 	const offset = Math.floor((12-nWidth)/2)
 	const isReversed = (align==="right");
@@ -61,7 +61,7 @@ const TitleBar = (props) => {
 				mdOffset={offset} md={nWidth}
 	      lgOffset={offset} lg={nWidth}
 			>
-				<Spacer height={70} xsHeight={35}/>
+				<Spacer height={paddingTop || 70} xsHeight={35}/>
 				<FillRestWithLine align={align}>
 					{img && !isReversed && <Img src={img} isReversed={isReversed} alt="title image"/>}
 					<SectionTitle>{title}</SectionTitle>
@@ -82,6 +82,7 @@ TitleBar.propTypes = {
 		title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 		subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		nColWidth: PropTypes.number,
+		paddingTop: PropTypes.number,
 		img: PropTypes.string,
 		align: PropTypes.string,
 	})
