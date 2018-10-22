@@ -27,6 +27,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    justify-content: space-around;
+  }
 `
 const LinkContainer = styled.div`
   display: flex;
@@ -41,10 +44,13 @@ const DownloadLink = styled.a`
   border: 1px solid #ccc;
   margin: 0 30px;
   filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.10)) drop-shadow(-20px 16px 2px rgba(0,0,0,0.05));
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
 `
 const Image = styled(MultisourceImg)`
   display: block;
-  width: 100%;
+  height: 100%;
   object-fit: contain;
 `
 const ImgLabel = styled.h3`
@@ -70,13 +76,13 @@ const DownloadBox = (props) => {
 }
 
 const Data = {
-	pageId:"subscribe-page",
+	pageId:"print-guide-page",
 	meta: {
 		canonicalUrl:"https://www.ballot.fyi/print/",
 		documentTitle:"Printed guide – ballot.fyi",
 		socialHeadline:"Prefer a physical voter guide?",
 		socialDescription:"Here's a beautiful guide you can print out.",
-		socialImage:"general.png",
+		socialImage:"printguide.png",
 	},
 	blocks: [
   {
