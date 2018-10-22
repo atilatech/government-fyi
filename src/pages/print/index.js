@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
-import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
+// import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
 import ImgAndTitleBlock from 'components/page-blocks/blocks/ImgAndTitleBlock'
 import CustomBlock from 'components/page-blocks/blocks/CustomBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
+// import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import BookletImg from './images/printguide.jpg'
 import BookletImg_2x from './images/printguide@2x.jpg'
 import BookletImg_w from './images/printguide.webp'
@@ -53,7 +53,7 @@ const ImgLabel = styled.h3`
 
 const DownloadBox = (props) => {
   const links = props.links.map( (link, i) => (
-    <LinkContainer>
+    <LinkContainer key={i}>
       <DownloadLink href={link.slug} download>
         <Image
           imageHandles={link.imageHandles}
