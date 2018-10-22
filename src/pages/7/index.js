@@ -195,6 +195,10 @@ const Data = {
 						subsectionTitle: "Related coverage",
 						links: [
 							{
+								text: "KQED Forum: hear from the Assemblyman who put this on the ballot",
+								url:"https://www.kqed.org/forum/2010101867860/election-2018-californias-proposition-7-could-make-daylight-saving-time-permanent"
+							},
+							{
 								text: "Time: When Daylight Saving Time Was Year-Round",
 								url: "http://time.com/3695333/daylight-saving-time-wwii/",
 							},
