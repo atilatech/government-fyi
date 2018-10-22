@@ -201,6 +201,15 @@ const Data = {
 								url:"https://ballotpedia.org/California_Proposition_12,_Farm_Animal_Confinement_Initiative_(2018)"
 							},
 						]
+					},
+					{
+						subsectionTitle: "Other coverage",
+						links: [
+							{
+								text: "KQED Forum (audio)",
+								url: "https://www.kqed.org/forum/2010101867842/election-2018-prop-12-the-farm-animal-confinement-initiative"
+							},
+						]
 					}
 				]
 			}
