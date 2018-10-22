@@ -91,9 +91,9 @@ const Data = {
       title: "Download our print guide",
       subtitle:
       <span>
-        Our friends at <a target="_blank" rel="noopener noreferrer" href="http://www.work-work-work.com/">Working Hard</a> designed two beautiful print voter guides for office ballot parties, GOTV events, and midterm election hangs. We have a CA and San Francisco version available as <Acronym expanded="Portable Document Format" acronym="PDF"/>s. They're meant to be printed on standard 8.5" x 11" paper, but you do you.
+        Our friends at <a target="_blank" rel="noopener noreferrer" href="http://www.work-work-work.com/">Working Hard</a> designed two beautiful print voter guides for office ballot parties, <Acronym expanded="Get Out The Vote" acronym="GOTV"/> events, and midterm election hangs. We have a California and San Francisco version available as <Acronym expanded="Portable Document Format" acronym="PDF"/>s. They're meant to be printed on standard 8.5" x 11" paper, but you do you.
 
-        <br/><br/>Keep in mind that our paper guides were last updated in early October, because, printing. So, refer to this very website 👇 and <a href="https://www.bythebay.cool">By The Bay</a> for the most up-to-date information.
+        <br/><br/>Keep in mind that our paper guides were last updated in early October, because, printing. So, refer to this very website <span role="img" aria-label="finger pointing down">👇</span> and <a href="https://www.bythebay.cool">By The Bay</a> for the most up-to-date information.
       </span>,
       src: {
           _1x: BookletImg,
