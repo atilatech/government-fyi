@@ -29,4 +29,28 @@ export const Citations = {
     headline:"Opening the Door for Rent Control: Toward a Comprehensive Approach to Protecting California's Renters",
     directQuote:"Rising rents have pushed many residents into homelessness. California now has the largest number of people experiencing homelessness among all 50 states. ",
   },
+  '8':{
+    link:"https://www.sacbee.com/news/politics-government/capitol-alert/article213328069.html",
+    publication:"Sac Bee",
+    headline:"Will stronger rent control spread across California? Here's what you need to know.",
+    directQuote:"But more than a dozen cities across the state, from Santa Monica and Los Angeles to San Francisco and Berkeley, had already in the late 1970s and early 1980s adopted local rent control ordinances. The 1995 law essentially froze those in place, preventing them from being changed."
+  },
+  '9':{
+    link:"https://lao.ca.gov/BallotAnalysis/Proposition?number=10&year=2018",
+    publication:"Legislative Analyst's Office",
+    headline:"Prop 10",
+    directQuote:"Overall, the measure likely would reduce state and local revenues in the long term, with the largest effect on property taxes. The amount of revenue loss would depend on many factors, most importantly how communities respond to this measure. If several communities expand moderate rent control to cover most of their rental housing, revenue losses could be in the tens of millions of dollars per year. If few communities make changes, revenue losses would be minor. If many communities pass strong rent control, revenue losses could be in the hundreds of millions of dollars per year."
+  },
+  '10':{
+    link:"https://lao.ca.gov/BallotAnalysis/Proposition?number=10&year=2018",
+    publication:"Legislative Analyst's Office",
+    headline:"Prop 10",
+    directQuote:"Renters in California typically pay 50 percent more for housing than renters in other states. In some parts of the state, rent costs are more than double the national average. Rent is high in California because the state does not have enough housing for everyone who wants to live here. People who want to live here must compete for housing, which increases rents."
+  },
+  '11':{
+    link:"https://haasinstitute.berkeley.edu/rent-control-key-neighborhood-stabilization",
+    publication:"UC Berkeley Haas Institute",
+    headline:"Rent Control: The Key to Neighborhood Stabilization?",
+    directQuote:"Our data indicates it’s not. When we looked at housing production numbers from 2007 to 2013, the six cities that had rent control in the Bay Area actually produced more housing units per capita than cities without rent control."
+  }
 }

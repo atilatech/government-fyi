@@ -32,7 +32,7 @@ const Data = {
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "Do tell",
+    		title: "🙉🙈🙊",
     		text: <span>We won't get into it too deeply, but if Prop 9 passed it would have directed the Governor to ask Congress to split CA into three states. If Congress approved, the CA legislature would then have to go about splitting up the state.</span>,
     	},
     },
@@ -53,7 +53,7 @@ const Data = {
 		{
 			component: TextWithTitleBlock,
 			data: {
-			title: "WHYYYYY?",
+			title: "WHYYYYY",
 				text: <span>
 					Billionaire Tim Draper, the main force behind this initiative, <Citation data={Citations['2']}>says that California is too large to govern. It has high costs but poorly implemented social services.
 					</Citation>

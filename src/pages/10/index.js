@@ -13,18 +13,18 @@ const Data = {
 	propNum: 10,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 8, 2018 10:00:00')
+		dateModified: new Date('October 22, 2018 10:00:00')
 	},
 	blocks: [
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "What's the dealio?",
+    		title: "Would rent control help the housing crisis?",
     		text:
 				<span>
-					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that prohibits cities from regulating rent on housing built after that year.</Citation> Some cities, like LA, SF, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any new buildings.
+					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that prohibits cities from regulating rent on housing built after that year.</Citation> In addition, it explicitly said that landlords could reset rents to market rate after a tenant moved out, ending the practice of "vacancy control." <Citation data={Citations['8']}>Fifteen cities, like LA, SF, Oakland, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any buildings after that.</Citation>
 					<br/><br/>
-					By repealing <em>Costa-Hawkins</em>, Prop 10 would give cities the authority to implement local rent control laws. It'll then be up to each local government to determine what kind of regulation of rent, if any, it wants.
+					By repealing <em>Costa-Hawkins</em>, Prop 10 would give cities the authority to implement local rent control laws, including vacany control. If and how a city implements rent regulation would be up to each individual city.
 				</span>,
     	},
     },
@@ -40,7 +40,7 @@ const Data = {
 						<li><Citation data={Citations['4']}>It causes displacement and gentrification as some landlords try to convert their units to more profitable real estate.</Citation></li>
 						<li><Citation data={Citations['5']}>It discourages real estate developers from building rental units because it affects their profit margins.</Citation></li>
 					</ul>
-					<Citation data={Citations['6']}>Economists generally agree that any restrictions on rental prices would lead to less available housing.</Citation>
+					<Citation data={Citations['6']}>Economists generally agree that any restrictions on rental prices would lead to less available housing.</Citation> The Legislative Analyst's Office estimates that renters would move less often, property values would decrease because landlords would earn less, and <Citation data={Citations['9']}>local governments would receive less money.</Citation>
 				</span>
 				}
 			},
@@ -50,10 +50,19 @@ const Data = {
 					title: "Fine. Rent control is the devil.",
 					text:
 					<span>
-						Not so fast. <Citation data={Citations['7']}>Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state. Rent controlled apartments would help residents afford to live in increasingly expensive cities. Plus, local governments are the best advocates for their residents. Passing Prop 10 would empower cities and counties to start the conversation to decide how much rent control they would need and give them the flexibility to respond to their housing needs.</Citation>
+						Not so fast, fella. We all know it's expensive to rent in California. <Citation data={Citations['10']}>Renters typically pay 50% more for housing than renters in other states, and sometimes double.</Citation> Rent control helps stabilize rent for people living in increasingly expensive cities. Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state. <Citation data={Citations['11']}>One study found that rent control in the Bay Area helped increase housing production</Citation>, contrary to what economists might predict.
+						<br/><br/>
+						<Citation data={Citations['7']}>Another argument for Prop 10 is to give the control back to cities. Supports say local governments are the best advocates for their residents, and passing Prop 10 would give cities an additional tool to help address their specific housing needs.</Citation>
 					</span>,
     	},
     },
+		// {
+		// 	component: TextWithTitleBlock,
+		// 	data: {
+		// 		title: "Hasn't somebody researched this by now?",
+		// 		text: "Yes. Because Costa-Hawkins is 23 years old, and some cities have had rent control laws for longer than that, we have some good data, but it's a bit nuanced. We've attempted to summarize many of the studies cited by proponents and opponents. We encourage you to dig deeper and read the actual studies. Rent control can get gnarly."
+		// 	}
+		// },
 		{
 			component: SectionTitleBlock,
 			data:{
@@ -139,7 +148,18 @@ const Data = {
 								text: "Stanford study analyzing SF rent control",
 								url: "https://www.gsb.stanford.edu/insights/rent-controls-winners-losers"
 							},
-
+							{
+								text:"Rent Control in Los Angeles",
+								url:"http://luskincenter.history.ucla.edu/wp-content/uploads/sites/66/2018/09/People-Are-Simply-Unable-to-Pay-the-Rent.pdf"
+							},
+							{
+								text:"Impacts of Rent Stabilization",
+								url:"https://dornsife.usc.edu/pere/rent-matters"
+							},
+							{
+								text:"Displacement and rent control in the Bay Area",
+								url:"https://haasinstitute.berkeley.edu/rent-control-key-neighborhood-stabilization"
+							}
 						]
 					}
 				]
