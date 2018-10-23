@@ -50,19 +50,19 @@ const Data = {
 					title: "Fine. Rent control is the devil.",
 					text:
 					<span>
-						Not so fast, fella. We all know it's expensive to rent in California. <Citation data={Citations['10']}>Renters typically pay 50% more for housing than renters in other states, and sometimes double.</Citation> Rent control helps stabilize rent for people living in increasingly expensive cities. Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state
+						Not so fast, fella. We all know it's expensive to rent in California. <Citation data={Citations['10']}>Renters typically pay 50% more for housing than renters in other states, and sometimes double.</Citation> Rent control helps stabilize rent for people living in increasingly expensive cities. Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state. <Citation data={Citations['11']}>One study found that rent control in the Bay Area helped increase housing production</Citation>, contrary to what economists might predict.
 						<br/><br/>
 						<Citation data={Citations['7']}>Another argument for Prop 10 is to give the control back to cities. Supports say local governments are the best advocates for their residents, and passing Prop 10 would give cities an additional tool to help address their specific housing needs.</Citation>
 					</span>,
     	},
     },
-		{
-			component: TextWithTitleBlock,
-			data: {
-				title: "Hasn't somebody researched this by now?",
-				text: "Yes. Because Costa-Hawkins is 23 years old, and some cities have had rent control laws for longer than that, we have some good data, but it's a bit nuanced. We've attempted to summarize many of the studies cited by proponents and opponents. We encourage you to dig deeper and read the actual studies. Rent control can get gnarly."
-			}
-		},
+		// {
+		// 	component: TextWithTitleBlock,
+		// 	data: {
+		// 		title: "Hasn't somebody researched this by now?",
+		// 		text: "Yes. Because Costa-Hawkins is 23 years old, and some cities have had rent control laws for longer than that, we have some good data, but it's a bit nuanced. We've attempted to summarize many of the studies cited by proponents and opponents. We encourage you to dig deeper and read the actual studies. Rent control can get gnarly."
+		// 	}
+		// },
 		{
 			component: SectionTitleBlock,
 			data:{
@@ -155,6 +155,10 @@ const Data = {
 							{
 								text:"Impacts of Rent Stabilization",
 								url:"https://dornsife.usc.edu/pere/rent-matters"
+							},
+							{
+								text:"Displacement and rent control in the Bay Area",
+								url:"https://haasinstitute.berkeley.edu/rent-control-key-neighborhood-stabilization"
 							}
 						]
 					}
