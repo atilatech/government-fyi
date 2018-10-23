@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
@@ -9,6 +10,40 @@ import nonpartisanImg from './images/nonpartisan.svg'
 import toolImg from './images/tool.svg'
 import {Spacer} from 'layout/util'
 import Citation from 'components/interactive/citation/citation'
+import Color from 'layout/colors'
+
+const Button = styled.a`
+	font-family: ${props=>props.theme.fonts.avant};
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.5em;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align:center;
+	display: block;
+	width: 40%;
+	margin: 20px auto;
+	padding: 10px 25px;
+	color: ${Color('pink2')};
+	border: 2px solid ${Color('pink2')};
+	-webkit-appearance: none;
+	border-radius: 3px;
+	cursor: pointer;
+
+	&:focus {
+		background-color: ${Color('pink2')};
+		color: white;
+		outline: none;
+	}
+
+	@media not all and (hover: none) {
+		&:hover{
+			background-color: ${Color('pink2')};
+			color: white;
+		}
+	}
+`
 
 const Data = {
 	pageId: "about-page",
@@ -71,6 +106,20 @@ const Data = {
       data: {
         title: "Contact",
         text: <span id="contact">Know something we don't?<br/><br/>Perfect. Email us the goods at fax@ballot.fyi.</span>,
+        nColWidth: 6,
+      }
+    },
+    {
+      component: TextWithTitleBlock,
+      data: {
+        title: "Support us",
+        text:
+					<span id="contact">
+						We've spent months researching and writing the content you see on this site. We're a small team, and we want to make sure we can do this again in 2020. If you like what you saw, please consider <a href="https://www.bythebay.cool/contribute/">making a contribution</a>. You can do so through our sister site at By The Bay.
+						<Button href="https://www.bythebay.cool/contribute/">
+							Make this happen again
+						</Button>
+					</span>,
         nColWidth: 6,
       }
     },
