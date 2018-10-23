@@ -27,6 +27,9 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    justify-content: space-around;
+  }
 `
 const LinkContainer = styled.div`
   display: flex;
@@ -41,10 +44,13 @@ const DownloadLink = styled.a`
   border: 1px solid #ccc;
   margin: 0 30px;
   filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.10)) drop-shadow(-20px 16px 2px rgba(0,0,0,0.05));
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
 `
 const Image = styled(MultisourceImg)`
   display: block;
-  width: 100%;
+  height: 100%;
   object-fit: contain;
 `
 const ImgLabel = styled.h3`
@@ -70,24 +76,24 @@ const DownloadBox = (props) => {
 }
 
 const Data = {
-	pageId:"subscribe-page",
+	pageId:"print-guide-page",
 	meta: {
 		canonicalUrl:"https://www.ballot.fyi/print/",
 		documentTitle:"Printed guide – ballot.fyi",
 		socialHeadline:"Prefer a physical voter guide?",
 		socialDescription:"Here's a beautiful guide you can print out.",
-		socialImage:"general.png",
+		socialImage:"printguide.png",
 	},
 	blocks: [
   {
     component: ImgAndTitleBlock,
     data: {
-      title: "Download the print guide",
+      title: "Download our print guide",
       subtitle:
       <span>
-        With content from our site, our friends at <a target="_blank" rel="noopener noreferrer" href="http://www.work-work-work.com/">Working Hard</a> designed us a beautiful print voter guide. We have two books available for your download as <Acronym expanded="Portable Document Format" acronym="PDF"/>s: the California and San Francisco elections. They're designed to be printed on standard 8.5" x 11" letter paper, but you do you.
+        Our friends at <a target="_blank" rel="noopener noreferrer" href="http://www.work-work-work.com/">Working Hard</a> designed two beautiful print voter guides for office ballot parties, <Acronym expanded="Get Out The Vote" acronym="GOTV"/> events, and midterm election hangs. We have a California and San Francisco version available as <Acronym expanded="Portable Document Format" acronym="PDF"/>s. They're meant to be printed on standard 8.5" x 11" paper, but you do you.
 
-        <br/><br/>Please keep in mind that the information in the books were last updated in early October, because printing. Please refer to this very website 👇 and <a href="https://www.bythebay.cool">By The Bay</a> for the most up-to-date information.
+        <br/><br/>Keep in mind that our paper guides were last updated in early October, because, printing. So, refer to this very website <span role="img" aria-label="finger pointing down">👇</span> and <a href="https://www.bythebay.cool">By The Bay</a> for the most up-to-date information.
       </span>,
       src: {
           _1x: BookletImg,
@@ -96,7 +102,7 @@ const Data = {
           _2x_webp: BookletImg_2x_w,
       },
         alt: "Image of printed voter guide",
-        caption: "Don't you just want to rub these against your face, lovingly? (Photo provided by Working Hard)",
+        caption: "Don't you just want to rub these pretty things against your face? (Photo provided by Working Hard)",
         nColWidth: 7,
     }
   },
@@ -104,7 +110,7 @@ const Data = {
     component: SectionTitleBlock,
     data: {
       nColWidth: 6,
-      title:"Click to download them",
+      title:"Click to download",
       paddingTop: 20,
     }
   },
@@ -123,7 +129,7 @@ const Data = {
                 _2x: CA_front_2x,
                 _2x_webp: CA_front_2x_w
               },
-              alt:"Click to download CA print guide",
+              alt:"Click to download a CA print guide",
               label:"California"
             },
             {
@@ -134,7 +140,7 @@ const Data = {
                 _2x: SF_front_2x,
                 _2x_webp: SF_front_2x_w
               },
-              alt:"Click to download SF print guide",
+              alt:"Click to download an SF print guide",
               label:"San Francisco"
             },
           ]}

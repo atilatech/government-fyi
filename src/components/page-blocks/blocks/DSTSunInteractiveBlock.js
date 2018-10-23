@@ -171,6 +171,7 @@ class DSTSun extends React.Component{
     this.graphId = 'sun-viz'
     this.isDSTToggled = false; // duplicated bc state doesn't update quickly enough or I'm stupid or both
     this.isXs = false;
+    this.src = props.data.src;
     this.state = {
       risePercentX: 21,
       setPercentX: 80,
@@ -189,6 +190,15 @@ class DSTSun extends React.Component{
 
   componentWillUnmount() {
     window.removeEventListener("resize",this.handleResize);
+  }
+  componentWillReceiveProps(nextProps) {
+    if (this.state.src !== nextProps.data.src) {
+      // this.setState({src: nextProps.data.src}) //too slow to update
+      this.src = nextProps.data.src;
+      this.removeAll();
+      this.initDraw();
+      this.draw(this.state.sliderValue); // starting point
+    }
   }
 
   handleResize = () => {
@@ -223,9 +233,17 @@ class DSTSun extends React.Component{
 
   }
 
+  removeAll =() => {
+    const graph = select("#"+this.graphId)
+    graph.selectAll('g').remove();
+    graph.selectAll('rect').remove();
+    graph.selectAll('text').remove();
+    graph.selectAll('line').remove();
+  }
+
   initDraw = () => {
     //-- load data
-    this.loadedData = csvParse(this.props.data.src, function(d) {
+    this.loadedData = csvParse(this.src, function(d) {
       return {
         date: d.date,
         sunrise: d.rise,
