@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
@@ -29,6 +30,10 @@ import dstOff_2x_w from './images/dst-off@2x.webp'
 // import TzMap from './topojson/timezones-2'
 import LASunTimes from './suntimes/la.js'
 import SFSunTimes from './suntimes/sf.js'
+
+const ToggleLink = styled.a`
+	cursor: pointer;
+`
 
 class DataWithState extends React.Component {
 	constructor(props) {
@@ -125,7 +130,7 @@ class DataWithState extends React.Component {
 				{
 					component: SubsectionTitleBlock,
 					data: {
-						title: <span>Sunrise and sunset times in {this.state.isCityLA?"Los Angeles":"San Francisco"} (<a onClick={this.toggleCity}>or, switch to {this.state.isCityLA?"SF":"LA"}</a>)</span>
+						title: <span>Sunrise and sunset times in {this.state.isCityLA?"Los Angeles":"San Francisco"} (or, <ToggleLink onClick={this.toggleCity}>switch to {this.state.isCityLA?"SF":"LA"}</ToggleLink>)</span>
 					}
 				},
 				{
