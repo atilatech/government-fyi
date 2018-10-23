@@ -58,7 +58,7 @@ const Data = {
 					Billionaire Tim Draper, the main force behind this initiative, <Citation data={Citations['2']}>says that California is too large to govern. It has high costs but poorly implemented social services.
 					</Citation>
 					<br/><br/>
-					<Citation data={Citations['3']}>Others suspect Prop 9 was a political move. If we had divvied up CA, the US would have 52 states, which would four new US senators to Congress. Northern California and California, which house SF and LA, would most likely swing left, giving Democrats an advantage in national politics.</Citation>
+					<Citation data={Citations['3']}>Others suspect Prop 9 was a political move. If we had divvied up CA, the US would have 52 states, which would add four new US senators to Congress. Northern California and California, which house SF and LA, would most likely swing left, giving Democrats an advantage in national politics.</Citation>
 				</span>,
 			},
 		},
