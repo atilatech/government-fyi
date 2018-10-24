@@ -6,7 +6,7 @@ import { Row, Col } from 'react-flexbox-grid';
 
 /*
 {
-	
+
 	component: PageTitleBlock,
 	data: {
 		title: "June 5, 2018 election guide",
@@ -32,7 +32,8 @@ const Title = styled.h1`
 
 
 const Subheadline = styled.div`
-	width: 80%;
+	text-align:center;
+	font-style: italic;
 	font-size: 14px;
 	line-height: 20px;
 	margin-top: 15px;
