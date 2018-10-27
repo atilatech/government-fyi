@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components';
 import Color from 'layout/colors'
-
+import {LinkOutIcon} from 'components/static/icons'
 /*
 usage
 
@@ -22,18 +22,6 @@ usage
 				title: <span>Passed universal health care in SF (2007)</span>,
 				description: "As mayor, Gavin implemented Healthy SF, a program that provided health care to all residents including undocumented immigrants",
 			},
-			{
-				title: "Was one of the first politicians to support legalizing marijuana",
-				description: "Gavin supported Prop 47, in 2014, and then was the main politician arguing for Prop 64, which passed in Nov 2016.",
-			},
-			{
-				title: "Was one of the first politicians to support legalizing marijuana",
-				description: "Gavin supported Prop 47, in 2014, and then was the main politician arguing for Prop 64, which passed in Nov 2016.",
-			},
-			{
-				title: "Was one of the first politicians to support legalizing marijuana",
-				description: "Gavin supported Prop 47, in 2014, and then was the main politician arguing for Prop 64, which passed in Nov 2016.",
-			},
 		],
 	}
 },
@@ -44,8 +32,8 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
+margin-bottom: 10px;
 	@media screen and (max-width: 767px) {
-		margin: 0 0 10px 0;
 		text-align: center;
 	}
 `;
@@ -68,26 +56,60 @@ export const ExpandButton = styled.div`
 `;
 
 const StyledH3 = styled.h3`
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
+	margin-bottom: 3px;
 
 `
-
-
 export const ExpandButtonLabel = styled.h2`
 	font-size: 14px;
 	text-align: center;
 	color: white;
 `;
+const LinkContainer = styled.div`
+	display: flex;
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
+`
+const StoryLink = styled.a`
+	display: block;
+	font-family: ${props=>props.theme.fonts.helvetica};
+	font-size: 12px;
+	margin-right: 20px;
+`
+const LinkOutStyle = styled.div`
+	height: 20px;
+	min-width: 20px;
+	width: 20px;
+	transform: translateY(2px);
+`
 
-const Snippet = (props) => (
-	<Container>
-		<TitleContainer>
-			<StyledH3>{props.title}</StyledH3>
-		</TitleContainer>
-		{props.description}
-	</Container>
-)
+const Snippet = (props) => {
+	const {title, description, links} = props.data;
+	let expandedLinks = null;
+ 	if(links) {
+		expandedLinks = links.map((link,i)=>{
+			return(
+				<React.Fragment key={i}>
+					<LinkOutStyle><LinkOutIcon color={Color('red')}/></LinkOutStyle>
+					<StoryLink href={link.url} target="_blank" rel="noreferred noopener">{link.label}</StoryLink>
+				</React.Fragment>
+			)
+		})
+	}
+	return(
+		<Container>
+			<TitleContainer>
+				<StyledH3>{title}</StyledH3>
+				{links &&
+					<LinkContainer>{expandedLinks}</LinkContainer>}
+			</TitleContainer>
+			{description}
+		</Container>
+	)
+}
+
 
 
 class VerticalSummaryListBlock extends React.Component  {
@@ -108,7 +130,7 @@ class VerticalSummaryListBlock extends React.Component  {
 		const snippets = stories.map( (story, i) => {
 			if(i < nItems) {
 				return(
-					<Snippet key={i} title={story.title} description={story.description}/>
+					<Snippet key={i} data={story}/>
 				);
 			} else {
 				return null
@@ -118,7 +140,7 @@ class VerticalSummaryListBlock extends React.Component  {
 		let restOfSnippets = stories.map( (story, i) => {
 			if(i >= nItems) {
 				return(
-					<Snippet key={i} title={story.title} description={story.description}/>
+					<Snippet key={i} data={story}/>
 				);
 			} else {
 				return null;
