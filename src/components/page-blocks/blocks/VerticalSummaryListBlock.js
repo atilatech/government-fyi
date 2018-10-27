@@ -39,7 +39,7 @@ margin-bottom: 10px;
 `;
 
 export const ExpandButton = styled.div`
-	margin: 40px auto 0 auto;
+	margin: 20px auto 0 auto;
 	padding: 10px 20px;
 	display: flex;
 	max-width: 200px;
@@ -85,29 +85,52 @@ const LinkOutStyle = styled.div`
 	transform: translateY(2px);
 `
 
-const Snippet = (props) => {
-	const {title, description, links} = props.data;
-	let expandedLinks = null;
- 	if(links) {
-		expandedLinks = links.map((link,i)=>{
-			return(
-				<React.Fragment key={i}>
-					<LinkOutStyle><LinkOutIcon color={Color('red')}/></LinkOutStyle>
-					<StoryLink href={link.url} target="_blank" rel="noreferred noopener">{link.label}</StoryLink>
-				</React.Fragment>
-			)
-		})
+class Snippet extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			expanded: false
+		}
 	}
-	return(
-		<Container>
-			<TitleContainer>
-				<StyledH3>{title}</StyledH3>
-				{links &&
-					<LinkContainer>{expandedLinks}</LinkContainer>}
-			</TitleContainer>
-			{description}
-		</Container>
-	)
+	expandContainer = () => {
+		this.setState({expanded: true})
+	}
+
+	render() {
+		const {title, description, links,buttonText,expandedContent} = this.props.data;
+		const textOnButton = buttonText || "View more"
+		let expandedLinks = null;
+	 	if(links) {
+			expandedLinks = links.map((link,i)=>{
+				return(
+					<React.Fragment key={i}>
+						<LinkOutStyle><LinkOutIcon color={Color('red')}/></LinkOutStyle>
+						<StoryLink href={link.url} target="_blank" rel="noreferred noopener">{link.label}</StoryLink>
+					</React.Fragment>
+				)
+			})
+		}
+		return(
+			<Container>
+				<TitleContainer>
+					<StyledH3>{title}</StyledH3>
+					{links &&
+						<LinkContainer>{expandedLinks}</LinkContainer>}
+				</TitleContainer>
+				{description}
+				{(!this.state.expanded && expandedContent) &&
+					<ExpandButton onClick={this.expandContainer}>
+						<ExpandButtonLabel>{textOnButton}</ExpandButtonLabel>
+					</ExpandButton>
+				}
+				{this.state.expanded &&
+					<div>
+						{expandedContent}
+					</div>
+				}
+			</Container>
+		)
+	}
 }
 
 
@@ -120,36 +143,15 @@ class VerticalSummaryListBlock extends React.Component  {
 		}
 	}
 
-	expandContainer = () => {
-		this.setState({expanded: true})
-	}
 
 	render() {
-		const { stories, listNItems, buttonText } = this.props.data;
-		const nItems = listNItems || 3;
+		const { stories } = this.props.data;
 		const snippets = stories.map( (story, i) => {
-			if(i < nItems) {
-				return(
-					<Snippet key={i} data={story}/>
-				);
-			} else {
-				return null
-			}
+			return(
+				<Snippet key={i} data={story}/>
+			);
 		});
-		//-- most readable, but stylistically inelegant way to do this
-		let restOfSnippets = stories.map( (story, i) => {
-			if(i >= nItems) {
-				return(
-					<Snippet key={i} data={story}/>
-				);
-			} else {
-				return null;
-			}
-		})
 
-		if (restOfSnippets[restOfSnippets.length-1] === null) {
-			restOfSnippets = null;
-		}
 		return(
 			<div>
 				<Row>
@@ -160,13 +162,6 @@ class VerticalSummaryListBlock extends React.Component  {
 			      lgOffset={3} lg={6}
 			    >
 						{snippets}
-						{(!this.state.expanded && restOfSnippets) &&
-							<ExpandButton onClick={this.expandContainer}>
-								<ExpandButtonLabel>{buttonText}</ExpandButtonLabel>
-							</ExpandButton>
-						}
-						{this.state.expanded && restOfSnippets}
-
 					</Col>
 				</Row>
 			</div>
