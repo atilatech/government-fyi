@@ -13,7 +13,7 @@ const Data = {
 	propNum: 10,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 22, 2018 10:00:00')
+		dateModified: new Date('October 25, 2018 10:00:00')
 	},
 	blocks: [
     {
@@ -149,7 +149,7 @@ const Data = {
 								url: "https://www.gsb.stanford.edu/insights/rent-controls-winners-losers"
 							},
 							{
-								text:"Rent Control in Los Angeles",
+								text:"History of rent control in Los Angeles",
 								url:"http://luskincenter.history.ucla.edu/wp-content/uploads/sites/66/2018/09/People-Are-Simply-Unable-to-Pay-the-Rent.pdf"
 							},
 							{

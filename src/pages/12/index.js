@@ -168,6 +168,10 @@ const Data = {
 								url:"https://www.sacbee.com/opinion/election-endorsements/article218967200.html"
 							},
 							{
+								text:"San Diego Union-Tribune Editorial Board",
+								url:"http://www.sandiegouniontribune.com/opinion/editorials/sd-prop-12-farm-animals-20181018-story.html"
+							},
+							{
 								text: "Press Democrat Editorial Board",
 								url: "https://www.pressdemocrat.com/opinion/8735947-181/pd-editorial-no-on-prop?sba=AAS"
 							},

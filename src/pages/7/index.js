@@ -184,6 +184,10 @@ class DataWithState extends React.Component {
 										text: "LA Times Editorial Board",
 										url:"http://www.latimes.com/opinion/editorials/la-ed-proposition-7-endorsement-20180929-story.html",
 									},
+									{
+										text:"San Diego Union Tribune Editorial Board: Yes, then end DST.",
+										url:"http://www.sandiegouniontribune.com/opinion/editorials/sd-proposition-7-california-time-switch-20181026-story.html"
+									},
 								]
 							},
 							{
@@ -202,8 +206,8 @@ class DataWithState extends React.Component {
 										url:"https://www.sfchronicle.com/opinion/editorials/article/Chronicle-Recommends-No-on-Prop-7-13242628.php"
 									},
 									{
-										text:"Hold on says San Diego Union Tribune Editorial Board",
-										url:"http://www.sandiegouniontribune.com/opinion/editorials/sdut-daylight-saving-sleep-public-health-2016jun14-story.html"
+										text: "Fresno Bee Editorial Board",
+										url:"https://www.fresnobee.com/opinion/editorials/article218937670.html" 
 									},
 								]
 							},
