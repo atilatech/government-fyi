@@ -6,6 +6,7 @@ import {Spacer} from 'layout/util'
 import WallpaperBannerImg from 'components/page-blocks/blocks/WallpaperBannerImg'
 import BottomNavBlock from 'components/page-blocks/blocks/BottomNavBlock'
 import TopNavBlock from 'components/page-blocks/blocks/TopNavBlock'
+import PublishDateBlock from 'components/page-blocks/blocks/PublishDateBlock'
 import {PropMetaData, GetNextAndPrevNum} from 'pages/prop-attributes'
 
 /*
@@ -44,11 +45,15 @@ const PropPageBuilder = (props) => {
           color: color,
           image: imageSet._2x,
           title: title,
-					dateCreated: dateCreated,
-					dateModified: dateModified
         }}
       />
 		 	{bodySections}
+			<PublishDateBlock
+				data={{
+					dateCreated: dateCreated,
+					dateModified: dateModified
+				}}
+			/>
 			<Spacer height={45}/>
       <BottomNavBlock
         data = {{
