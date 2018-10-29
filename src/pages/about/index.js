@@ -115,7 +115,7 @@ const Data = {
         title: "Support us",
         text:
 					<span id="contact">
-						We've spent months researching and writing the content you see on this site. We're a small team, and we want to make sure we can do this again in 2020. If you like what you saw, please consider <a href="https://www.bythebay.cool/contribute/">making a contribution</a>. You can do so through our sister site at By The Bay.
+						We've spent months researching and writing the content you see on this site. We're a small team, and we want to make sure we can do this again in 2020. If you like what you see, please consider <a href="https://www.bythebay.cool/contribute/">making a contribution</a>. You can do so through our sister site at By The Bay.
 						<Button href="https://www.bythebay.cool/contribute/">
 							Make this happen again
 						</Button>

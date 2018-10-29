@@ -62,23 +62,13 @@ const Data = {
     {
       component: SectionTitleBlock,
       data: {
-        title: "🍟 Or get updates via these electronic media",
+        title: "🍟 Or get updates via IG",
       }
     },
     {
       component: FluidColumnsBlock,
       data: {
         blocks: [
-    			{
-            img: {
-              _1x: TwitImg,
-              _1x_webp: TwitImg_w,
-            },
-            alt: "Twitter",
-    				title: "Twitter",
-            subtitle: "Our collective microphone",
-            url:"https://www.twitter.com/ballotfyi"
-    			},
     			{
             img: {
               _1x: IGImg,
