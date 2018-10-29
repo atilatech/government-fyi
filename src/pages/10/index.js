@@ -14,7 +14,7 @@ const Data = {
 	propNum: 10,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 28, 2018 19:32:00')
+		dateModified: new Date('October 29, 2018 15:39:00')
 	},
 	blocks: [
     {
@@ -37,7 +37,7 @@ const Data = {
 				<span>
 					Not necessarily. Prop 10 critics say rent control is problematic for CA’s housing shortage because:
 					<ul>
-						<li>It often isn't "means-tested." Residents who live in rent controlled apartments aren’t always the people who need it the most.</li>
+						<li>It often isn't "means-tested". Residents who live in rent controlled apartments aren’t necessarily the people who need it the most.</li>
 						<li><Citation data={Citations['4']}>It causes displacement and gentrification as some landlords try to convert their units to more profitable real estate.</Citation></li>
 						<li><Citation data={Citations['5']}>It discourages real estate developers from building rental units because it affects their profit margins.</Citation></li>
 					</ul>
@@ -51,9 +51,9 @@ const Data = {
 					title: "Fine. Rent control is the devil.",
 					text:
 					<span>
-						Not so fast, fella. We all know it's expensive to rent in California. <Citation data={Citations['10']}>Renters typically pay 50% more for housing than renters in other states, and sometimes double.</Citation> Rent control helps stabilize rent for people living in increasingly expensive cities. Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state. <Citation data={Citations['11']}>One study found that rent control in the Bay Area helped increase housing production</Citation>, contrary to what economists might predict.
+						Not so fast, fella. We all know it's expensive to rent in California. <Citation data={Citations['10']}>Renters typically pay 50% more for housing than renters in other states, and sometimes double.</Citation> Rent control helps reduce displacement for people living in increasingly expensive cities, the benefits of which are immeasurable. Prop 10 supporters argue the lack of affordable housing has led to more homelessness across the state. <Citation data={Citations['11']}>One study found that rent control in the Bay Area helped increase housing production</Citation>, contrary to what economists might predict.
 						<br/><br/>
-						<Citation data={Citations['7']}>Another argument for Prop 10 is to give the control back to cities. Supports say local governments are the best advocates for their residents, and passing Prop 10 would give cities an additional tool to help address their specific housing needs.</Citation>
+						<Citation data={Citations['7']}>Supporters also argue Prop 10 would give control back to cities. Local governments are the best advocates for their residents, and passing Prop 10 would give cities an additional tool to help address their specific housing needs, particularly in the short-term.</Citation>
 					</span>,
     	},
     },
@@ -70,12 +70,34 @@ const Data = {
 				listNItems: 3,
 				stories: [
 					{
+						title:"The impact of rent regulations, USC, meta-analysis (2018)",
+						buttonText:"More questions they tried to answer",
+						links:[
+							{
+								label:"Published paper",
+								url:"https://dornsife.usc.edu/assets/sites/242/docs/Rent_Matters_PERE_Report_Final_02.pdf"
+							}
+						],
+						description:<span>This very readable meta-analysis tries to address common questions about rent regulation by looking at the current literature. (Spoiler: it's nuanced.) It also discusses the intangible benefits of housing stability. We'll summarize what they say here.
+							<br/><br/>
+							<b>Does rent control increase rent in non-controlled units?</b> <Citation data={Citations['24']}>It appears not, but SF might have been an exception.</Citation>. The paper suggests that surrounding units' rental prices stay the same or are lower as a result of nearby rent controlled units.
+						</span>,
+						expandedContent:<span>
+							<br/>
+							<b>Does rent control decrease the buildings property value for landlords?</b> <Citation data={Citations['25']}>Research shows mixed answers. In Cambridge, MA, before rent control was removed in 1995, researchers found that property values for rent controlled buildings was indeed lower than non-rent controlled buildings. The removal of rent control mostly equalized it.</Citation><br/><br/><Citation data={Citations['26']}>That's just one city. Another study on many cities in NJ found that rent regulation had no significant impact on appreciation or foreclosures.</Citation>
+							<br/><br/>
+							<b>Does rent control decrease housing supply or production?</b> <Citation data={Citations['28']}>The paper suggest that it does not affect production</Citation>, but <Citation data={Citations['27']}> it may decrease existing supply of units if policy is not designed well.</Citation>. <Citation data={Citations['29']}>In particular, without regulation, more landlords will likely be convert their rental units to condos.</Citation>
+							<br/><br/>
+							<b>Does rent control affect "mom and pop" owners?</b> There is not enough research to suggest either way.
+						</span>
+					},
+					{
 						title: "Stanford study on SF rent control (2018)",
 						buttonText: "What they found",
 						links: [
 							{
 								label:"Summarized article",
-								url:"https://www.gsb.stanford.edu/insights/rent-controls-winners-losers"
+								url:"https://www.brookings.edu/research/what-does-economic-evidence-tell-us-about-the-effects-of-rent-control/"
 							},
 							{
 								label:"Research paper",
@@ -205,7 +227,7 @@ const Data = {
 						links: [
 							{
 								text: "Stanford study analyzing SF rent control",
-								url: "https://www.gsb.stanford.edu/insights/rent-controls-winners-losers"
+								url: "https://www.brookings.edu/research/what-does-economic-evidence-tell-us-about-the-effects-of-rent-control/"
 							},
 							{
 								text:"History of rent control in Los Angeles",
@@ -213,7 +235,7 @@ const Data = {
 							},
 							{
 								text:"Impacts of Rent Stabilization",
-								url:"https://dornsife.usc.edu/pere/rent-matters"
+								url:"https://dornsife.usc.edu/assets/sites/242/docs/Rent_Matters_PERE_Report_Final_02.pdf"
 							},
 							{
 								text:"Displacement and rent control in the Bay Area",

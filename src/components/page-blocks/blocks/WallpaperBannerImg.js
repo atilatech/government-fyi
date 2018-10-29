@@ -51,20 +51,6 @@ const Title = styled.h1`
 	}
 `
 
-const Timestamp = styled.h4`
-	text-align: right;
-	font-size: 12px;
-	color: #666;
-	letter-spacing: -0.2px;
-	padding-top: 10px;
-	margin-right: 30px;
-	margin-left: 30px;
-	@media screen and (max-width: 767px) {
-		height: 10px;
-		padding-top: 0;
-		text-align: center;
-	}
-`
 
 const Wallpaper = styled.div`
 	background-image: url('${props=>props.img}');
