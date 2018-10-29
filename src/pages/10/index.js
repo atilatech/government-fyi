@@ -23,9 +23,9 @@ const Data = {
     		title: "Would rent control help the housing crisis?",
     		text:
 				<span>
-					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that prohibits cities from regulating rent on housing built after that year.</Citation> In addition, it explicitly said that landlords could reset rents to market rate after a tenant moved out, ending the practice of "vacancy control." <Citation data={Citations['8']}>Fifteen cities, like LA, SF, Oakland, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any buildings after that.</Citation>
+					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that limits how cities can regulate rent on housing built after that year.</Citation> In addition, it explicitly said that landlords could reset rents to market rate after a tenant moved out, ending the practice of "vacancy control." <Citation data={Citations['8']}>Fifteen cities, like LA, SF, Oakland, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any buildings after that.</Citation>. Several cities this past year
 					<br/><br/>
-					By repealing <em>Costa-Hawkins</em>, Prop 10 would give cities the authority to implement local rent control laws, including vacany control. If and how a city implements rent regulation would be up to each individual city.
+					By repealing <em>Costa-Hawkins</em>, Prop 10 would give cities the authority to implement local rent control on buildings built after 1995 and also allow vacany control. If and how a city implements specific policy would be up to each individual city.
 				</span>,
     	},
     },
@@ -41,7 +41,7 @@ const Data = {
 						<li><Citation data={Citations['4']}>It causes displacement and gentrification as some landlords try to convert their units to more profitable real estate.</Citation></li>
 						<li><Citation data={Citations['5']}>It discourages real estate developers from building rental units because it affects their profit margins.</Citation></li>
 					</ul>
-					<Citation data={Citations['6']}>Economists generally agree that any restrictions on rental prices would lead to less available housing.</Citation> The Legislative Analyst's Office estimates that renters would move less often, property values would decrease because landlords would earn less, and <Citation data={Citations['9']}>local governments would receive less money.</Citation>
+					<Citation data={Citations['6']}>Economists generally agree that price ceilings on rental prices would lead to less available housing.</Citation> The Legislative Analyst's Office estimates that renters would move less often, property values would decrease because landlords would earn less, and <Citation data={Citations['9']}>local governments would receive less money.</Citation>
 				</span>
 				}
 			},
