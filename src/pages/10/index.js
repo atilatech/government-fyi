@@ -3,10 +3,11 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
+import VerticalSummaryListBlock from 'components/page-blocks/blocks/VerticalSummaryListBlock'
 
 import Citation from 'components/interactive/citation/citation'
-// import Acronym from 'components/interactive/acronym'
-import { Citations} from './expandables'
+import Acronym from 'components/interactive/acronym'
+import { Acronyms, Citations} from './expandables'
 
 const Data = {
 	pageId:"prop-10",
@@ -56,13 +57,71 @@ const Data = {
 					</span>,
     	},
     },
-		// {
-		// 	component: TextWithTitleBlock,
-		// 	data: {
-		// 		title: "Hasn't somebody researched this by now?",
-		// 		text: "Yes. Because Costa-Hawkins is 23 years old, and some cities have had rent control laws for longer than that, we have some good data, but it's a bit nuanced. We've attempted to summarize many of the studies cited by proponents and opponents. We encourage you to dig deeper and read the actual studies. Rent control can get gnarly."
-		// 	}
-		// },
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: "Hasn't somebody researched this by now?",
+				text: "Yes, but there's a lot. Rent control is both gnarly and well-studied. We've attempted to summarize many of the studies cited by proponents and opponents; we encourage you to dig deeper and read the actual papers."
+			}
+		},
+		{
+			component: VerticalSummaryListBlock,
+			data: {
+				listNItems: 3,
+				stories: [
+					{
+						title: "Stanford study on SF rent control (2018)",
+						buttonText: "What they found",
+						links: [
+							{
+								label:"Summarized article",
+								url:"https://www.gsb.stanford.edu/insights/rent-controls-winners-losers"
+							},
+							{
+								label:"Research paper",
+								url:"https://web.stanford.edu/~diamondr/DMQ.pdf"
+							},
+						],
+						description:
+							<span>Researchers took advantage of a unique "quasi-experimental" situation <Citation data={Citations['12']}>where in 1994, rent control in SF was suddenly applied to small multifamily homes (SMFH) built before 1980.</Citation> The researchers compared those <Acronym data={Acronyms.SMFH}/>s to <Acronym data={Acronyms.SMFH}/>s built after 1980 (not rent controlled) and studied how renters and landlords behaved after 1994.</span>,
+						expandedContent:
+							<span>
+								<br/>
+								A few findings: (1) <Citation data={Citations['13']}>People in rent controlled <Acronym data={Acronyms.SMFH}/>s were more likely to still be living at their 1994 addresses.</Citation> (Supporting what rent control advocates say.)
+								<br/><br/>
+								(2) <Citation data={Citations['16']}>Rent-controlled buildings were more likely to turn into condos or Tenancy in Common (TIC) buildings, effectively reducing the number of renters in buildings that were rent controlled.</Citation> (Supporting what rent control opponents say.)
+								<br/><br/>
+								(3) <Citation data={Citations['14']}>In areas where surrounding rents increased rapidly, being in a rent controlled apartment actually <em>decreased</em> the likelihood that renters remained at their address.</Citation> This is because landlords, who had a large incentive to remove tenants, <Citation data={Citations['15']}>could effectively do so through <Acronym data={Acronyms.variousMeans}/>.</Citation> (This is counter to rent control's intention)
+							</span>,
+					},
+					{
+						title: "Haas Institute, UC Berkeley, Policy/Research Brief (2018)",
+						buttonText: "More conclusions",
+						links: [
+							{
+								label:"Related post",
+								url:"https://haasinstitute.berkeley.edu/rent-control-key-neighborhood-stabilization"
+							},
+							{
+								label:"Policy/Research Brief",
+								url:"https://haasinstitute.berkeley.edu/sites/default/files/haasinstitute_rentcontrol.pdf"
+							},
+						],
+						description: <span>This research and policy brief describes the dire situation for California renters and says rent control would help. Stagnating wages + an overheated rental market primarily affects low-income families, people with disabilities, and people of color. Rent control would reduce displacement and generally improve localities.<br/><br/><Citation data={Citations['17']}>Perhaps the most surprising argument is that rent control has lead to <em>increased</em> housing production, citing the Bay Area and LA.</Citation></span>,
+						expandedContent:
+						<span>
+							<br/>
+							(1) <Citation data={Citations['19']}>Rent control preserves economic diversity in neighborhoods by allowing lower-paid workers (e.g. teachers, service workers, health workers) to live closer to their jobs.</Citation> <Citation data={Citations['18']}>This benefits everybody by reducing traffic, making more money available to be spent on local businesses, and increasing the cohesion of neighborhood communities.</Citation>
+							<br/><br/>
+							(2) <Citation data={Citations['21']}>The paper argues that rent control cannot be means tested (applying only to low-income individuals) because it would inevitably result in discrimination by landlords, who would now have a monetary incentive to turn down qualifying renters.</Citation>
+							<br/><br/>
+							(3) <Citation data={Citations['20']}>The paper cautions that rent control is not the solution to the housing problem in California. It is a first step, and it could immediately help reduce displacement, particularly for low-income residents. They also say that thoughtful policy design is required to reduce rent control's downsides, such as condo conversion.</Citation>
+						</span>
+					},
+
+				]
+			}
+		},
 		{
 			component: SectionTitleBlock,
 			data:{
@@ -159,6 +218,22 @@ const Data = {
 							{
 								text:"Displacement and rent control in the Bay Area",
 								url:"https://haasinstitute.berkeley.edu/rent-control-key-neighborhood-stabilization"
+							},
+							{
+								text:"An overview of types of rent control in California, commissioned by Fremont to help it decide",
+								url:"https://fremont.gov/DocumentCenter/View/35249/Fremont---Rent-Control-Just-Cause-Eviction-Report---final?bidId="
+							},
+							{
+								text:"What happened when rent control was removed in Cambridge, MA",
+								url:"https://economics.mit.edu/files/9760"
+							},
+							{
+								text:"Eric Fischer's statistical analysis of rents from 1950-now",
+								url:"https://observer.com/2016/05/a-guy-just-transcribed-30-years-of-for-rent-ads/"
+							},
+							{
+								text:"Berlin's rent control and its effects after one year",
+								url:"http://cityobservatory.org/does-rent-control-work-evidence-from-berlin/"
 							}
 						]
 					}

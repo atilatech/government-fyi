@@ -38,11 +38,15 @@ margin-bottom: 10px;
 	}
 `;
 
-export const ExpandButton = styled.div`
-	margin: 20px auto 0 auto;
-	padding: 10px 20px;
+const ButtonContainer = styled.div`
 	display: flex;
-	max-width: 200px;
+	justify-content: flex-start;
+`
+
+export const ExpandButton = styled.div`
+	margin-top: 20px;
+	padding: 5px 25px;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: black;
@@ -119,9 +123,11 @@ class Snippet extends React.Component {
 				</TitleContainer>
 				{description}
 				{(!this.state.expanded && expandedContent) &&
-					<ExpandButton onClick={this.expandContainer}>
-						<ExpandButtonLabel>{textOnButton}</ExpandButtonLabel>
-					</ExpandButton>
+					<ButtonContainer>
+						<ExpandButton onClick={this.expandContainer}>
+							<ExpandButtonLabel>{textOnButton}</ExpandButtonLabel>
+						</ExpandButton>
+					</ButtonContainer>
 				}
 				{this.state.expanded &&
 					<div>
