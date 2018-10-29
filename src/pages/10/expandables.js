@@ -4,7 +4,7 @@ export const Acronyms = {
     acronym: "SMFH"
   },
   variousMeans: {
-    expanded: "various means, such as evictions, buying the tenants out, or taking it off the rental market via the Ellis Act.",
+    expanded: "various means, such as evictions, buying tenants out, or taking it off the rental market via the Ellis Act.",
     acronym: "various means"
   }
 }
@@ -123,5 +123,11 @@ export const Citations = {
     publication:"Haas Institute",
     headline:"Opening the Door for Rent Control",
     directQuote:"A common critique of rent control is that it is not means-tested, and thus does not specifically target the renters that need it most. Proponents of rent control point out an important reality: that any means-testing would very likely lead to discrimination against low-income renters because landlords would be incentivized to evict eligible tenants or solely rent to non-qualifying tenants who could pay higher rents. "
+  },
+  '22': {
+    link:"https://haasinstitute.berkeley.edu/sites/default/files/haasinstitute_rentcontrol.pdf",
+    publication:"Haas Institute",
+    headline:"Opening the Door for Rent Control",
+    directQuote:"Although the evidence is mixed, some studies have found that in cities with rent regulations, even non-controlled units actually had slightly more affordable rents compared with units in cities without rent control."
   },
 }

@@ -107,13 +107,13 @@ const Data = {
 								url:"https://haasinstitute.berkeley.edu/sites/default/files/haasinstitute_rentcontrol.pdf"
 							},
 						],
-						description: <span>This research and policy brief describes the dire situation for California renters and says rent control would help. Stagnating wages + an overheated rental market primarily affects low-income families, people with disabilities, and people of color. Rent control would reduce displacement and generally improve localities.<br/><br/><Citation data={Citations['17']}>Perhaps the most surprising argument is that rent control has lead to <em>increased</em> housing production, citing the Bay Area and LA.</Citation></span>,
+						description: <span>This research and policy brief describes the dire situation for California renters and says rent control would help. Stagnating wages + an overheated rental market has led to a situation where government needs to step in. Rent control would reduce displacement, particularly for low-income families, people with disabilities, and people of color.<br/><br/><Citation data={Citations['17']}>Perhaps the most surprising argument is that rent control has lead to <em>increased</em> housing production, citing the Bay Area and LA.</Citation></span>,
 						expandedContent:
 						<span>
 							<br/>
-							(1) <Citation data={Citations['19']}>Rent control preserves economic diversity in neighborhoods by allowing lower-paid workers (e.g. teachers, service workers, health workers) to live closer to their jobs.</Citation> <Citation data={Citations['18']}>This benefits everybody by reducing traffic, making more money available to be spent on local businesses, and increasing the cohesion of neighborhood communities.</Citation>
+							(1) <Citation data={Citations['19']}>Rent control preserves economic diversity in neighborhoods by allowing lower-paid workers (e.g. teachers, service workers, health workers) to live closer to their jobs.</Citation> <Citation data={Citations['18']}>This benefits everybody by reducing traffic, making more money available to be spent on local businesses, increasing the cohesion of neighborhood communities,</Citation> <Citation data={Citations['22']}>and potentially decreasing rental prices for <em>non-controlled</em> units.</Citation>
 							<br/><br/>
-							(2) <Citation data={Citations['21']}>The paper argues that rent control cannot be means tested (applying only to low-income individuals) because it would inevitably result in discrimination by landlords, who would now have a monetary incentive to turn down qualifying renters.</Citation>
+							(2) <Citation data={Citations['21']}>The paper argues that rent control should not be means tested (applying only to low-income individuals) because it would inevitably result in discrimination by landlords, who would now have a monetary incentive to turn down qualifying renters.</Citation>
 							<br/><br/>
 							(3) <Citation data={Citations['20']}>The paper cautions that rent control is not the solution to the housing problem in California. It is a first step, and it could immediately help reduce displacement, particularly for low-income residents. They also say that thoughtful policy design is required to reduce rent control's downsides, such as condo conversion.</Citation>
 						</span>
