@@ -6,7 +6,7 @@ export class OrderingProvider extends React.Component {
   constructor(props) {
     super(props);
     this.ordering = {
-      spicy: [7,10,12,5,6,11,9,3,8,2,1,4],
+      spicy: [7,10,8,12,5,6,11,9,3,2,1,4],
       numerical: [1,2,3,4,5,6,7,8,9,10,11,12]
     };
     this.state = {
