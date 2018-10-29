@@ -51,6 +51,21 @@ const Title = styled.h1`
 	}
 `
 
+const Timestamp = styled.h4`
+	text-align: right;
+	font-size: 12px;
+	color: #666;
+	letter-spacing: -0.2px;
+	padding-top: 10px;
+	margin-right: 30px;
+	margin-left: 30px;
+	@media screen and (max-width: 767px) {
+		height: 10px;
+		padding-top: 0;
+		text-align: center;
+	}
+`
+
 const Wallpaper = styled.div`
 	background-image: url('${props=>props.img}');
 	background-repeat: ${props=>props.repeat} no-repeat;
@@ -60,10 +75,18 @@ const Wallpaper = styled.div`
 `;
 
 const WallpaperBannerImg = (props) => {
-	const {color, image, repeatType, title} = props.data;
+	const {color, image, repeatType, title, dateCreated, dateModified} = props.data;
 	const repeatX = repeatType || "space";
+	const dateOptions = {month: "2-digit", day: "2-digit", year: "2-digit", hour: '2-digit', minute:'2-digit'}
+	let publishDate = null;
+	if(dateCreated) {
+		publishDate = (dateCreated.getTime() !== dateModified.getTime()) ?
+			`Last updated on ${dateModified.toLocaleString([], dateOptions)}` :
+			`Published on ${dateCreated.toLocaleString([], dateOptions)}`;
+	}
 	return(
 		<React.Fragment>
+			<Timestamp>{publishDate}</Timestamp>
 			<Relative>
 				<Spacer height={30}/>
 				<AbsoluteOverBleed>
@@ -89,6 +112,8 @@ WallpaperBannerImg.propTypes = {
 		image: PropTypes.string.isRequired,
 		title: PropTypes.string,
 		repeatType: PropTypes.oneOf(["space", "repeat", "round"]),
+		dateCreated: PropTypes.instanceOf(Date),
+		dateModified: PropTypes.instanceOf(Date),
 	})
 }
 

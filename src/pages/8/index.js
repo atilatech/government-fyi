@@ -14,7 +14,7 @@ const Data = {
 	propNum: 8,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 8, 2018 10:00:00')
+		dateModified: new Date('October 28, 2018 21:42:00')
 	},
 	blocks: [
     {
@@ -65,7 +65,7 @@ const Data = {
 			component: SectionTitleBlock,
 			data: {
 				title:"Additional context",
-				subtitle:<span>Not everyone likes John Oliver, but he dedicated an entire episode explaining dialysis and DaVita, one of the largest for-profit dialysis companies in the US.</span>
+				subtitle:<span>We know John Oliver can be divisive, but he dedicated an entire episode explaining dialysis and DaVita, one of the largest for-profit dialysis companies in the US. After you watch the clip, you might ask yourself if Prop 8 would help solve any of the issues John Oliver brought up?</span>
 			}
 		},
 		{

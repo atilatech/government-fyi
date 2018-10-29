@@ -44,6 +44,8 @@ const PropPageBuilder = (props) => {
           color: color,
           image: imageSet._2x,
           title: title,
+					dateCreated: dateCreated,
+					dateModified: dateModified
         }}
       />
 		 	{bodySections}
@@ -52,16 +54,16 @@ const PropPageBuilder = (props) => {
         data = {{
           color: color,
           tiles: [
-          {
-            img: PropMetaData(adjacentProps.prev).imageSet,
-            to: `/prop-${adjacentProps.prev}`,
-            text: PropMetaData(adjacentProps.prev).title,
-          },
-          {
-            img: PropMetaData(adjacentProps.next).imageSet,
-            to: `/prop-${adjacentProps.next}`,
-            text: PropMetaData(adjacentProps.next).title,
-          }
+					{
+						img: PropMetaData(adjacentProps.prev).imageSet,
+	            to: `/prop-${adjacentProps.prev}`,
+						text: PropMetaData(adjacentProps.prev).title,
+					},
+					{
+						img: PropMetaData(adjacentProps.next).imageSet,
+	            to: `/prop-${adjacentProps.next}`,
+						text: PropMetaData(adjacentProps.next).title,
+					}
           ],
         }}
       />

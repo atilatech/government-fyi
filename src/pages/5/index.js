@@ -13,7 +13,7 @@ const Data = {
 	propNum: 5,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 8, 2018 10:00:00')
+		dateModified: new Date('October 26, 2018 17:07:00')
 	},
 	blocks: [
     {
