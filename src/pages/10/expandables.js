@@ -130,4 +130,10 @@ export const Citations = {
     headline:"Opening the Door for Rent Control",
     directQuote:"Although the evidence is mixed, some studies have found that in cities with rent regulations, even non-controlled units actually had slightly more affordable rents compared with units in cities without rent control."
   },
+  '23':{
+    link:"https://www.kqed.org/news/11159624/bay-area-cities-appear-to-split-on-multiple-rent-control-measures?fbclid=IwAR1Un0Z-3ZpeoXEF2dcBeF-ZdsCRjezERAYxaJKEDiZt6gDLMOXcHhzALkw",
+    publication:"KQED",
+    headline:"Bay Area Cities Split on Multiple Rent-Control Measures",
+    directQuote:"The measures vary slightly, but all of the tenant-backed proposals limit the amount that property owners can raise rents (roughly tied to the rate of inflation) on certain units, and they allow evictions only for specific reasons, like failure to pay rent or breaching contracts."
+  }
 }

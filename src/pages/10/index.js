@@ -23,7 +23,7 @@ const Data = {
     		title: "Would rent control help the housing crisis?",
     		text:
 				<span>
-					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that limits how cities can regulate rent on housing built after that year.</Citation> In addition, it explicitly said that landlords could reset rents to market rate after a tenant moved out, ending the practice of "vacancy control." <Citation data={Citations['8']}>Fifteen cities, like LA, SF, Oakland, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any buildings after that.</Citation>. Several cities this past year
+					Prop 10 would repeal the <em>Costa-Hawkins Rental Housing Act</em>, <Citation data={Citations['1']}>a state law passed in 1995 that limits how cities can regulate rent on housing built after that year.</Citation> In addition, it explicitly said that landlords could reset rents to market rate after a tenant moved out, ending the practice of "vacancy control." <Citation data={Citations['8']}>Fifteen cities, like LA, SF, Oakland, and San Jose, already had local rent control laws in 1995, but Costa-Hawkins prevented them from regulating rents on any buildings after that.</Citation>. (Cities can implement rent control today under Costa-Hawkins, but only on buildings built before 1995. <Citation data={Citations['23']}>Three Bay Area cities did so in 2016.</Citation>)
 					<br/><br/>
 					By repealing <em>Costa-Hawkins</em>, Prop 10 would give cities the authority to implement local rent control on buildings built after 1995 and also allow vacany control. If and how a city implements specific policy would be up to each individual city.
 				</span>,
@@ -228,7 +228,7 @@ const Data = {
 								url:"https://economics.mit.edu/files/9760"
 							},
 							{
-								text:"Eric Fischer's statistical analysis of rents from 1950-now",
+								text:"Eric Fischer's statistical analysis of SF rents from 1950-now",
 								url:"https://observer.com/2016/05/a-guy-just-transcribed-30-years-of-for-rent-ads/"
 							},
 							{
