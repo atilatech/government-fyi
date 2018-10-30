@@ -10,9 +10,9 @@ let Data = {
 	pageId:"home-page",
 	meta: {
 		canonicalUrl:"https://www.ballot.fyi/",
-		documentTitle:"California State Propositions 2018 – ballot.fyi",
+		documentTitle:"California State Propositions 2018 – a nonpartisan guide",
 		socialHeadline:"The quickest nonpartisan voter guide for the midterms",
-		socialDescription:"Learn about California's 11 propositions, including daylight saving, cage-free eggs, and rent control",
+		socialDescription:"A nonpartisan guide to California's 11 propositions, including daylight saving, cage-free eggs, and rent control",
 		socialImage:"general.png",
 	},
 	blocks: [

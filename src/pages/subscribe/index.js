@@ -50,6 +50,7 @@ const Data = {
     {
       component: SectionTitleBlock,
       data: {
+        nColWidth: 6,
         title: "📥 Sign up for updates",
       }
     },
@@ -62,6 +63,7 @@ const Data = {
     {
       component: SectionTitleBlock,
       data: {
+        nColWidth: 6,
         title: "🍟 Or get updates via IG",
       }
     },
@@ -87,7 +89,7 @@ const Data = {
     {
       component: TextWithTitleBlock,
       data: {
-        nColWidth: 8,
+        nColWidth: 6,
         title:"🌉 And if you live in San Francisco or San Jose",
         text:
         <div>
