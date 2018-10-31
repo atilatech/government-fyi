@@ -218,5 +218,11 @@ export const Citations = {
     headline:"What are the impacts of rent stabilization?",
     directQuote:"In short, there is not much evidence to support the notion that moderate rent stabilization impacts new construction, a pattern that makes sense given the ways in which moderate regimes tend to exclude new units from coverage."
   },
+  '37':{
+    link:USCLink,
+    publication:"USC",
+    headline:"What are the impacts of rent stabilization?",
+    directQuote:"On balance, rent regulations do not impact new housing construction. When such regulations allow for condo conversions and redevelopment that exempts the property from rent regulations, units are taken off the market. "
+  }
 
 }

@@ -186,7 +186,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body:<Citation data={Citations['']}>It's not totally clear whether rent control leads to less supply.</Citation>
+						body:<Citation data={Citations['37']}>It's not totally clear whether rent control leads to less supply.</Citation>
 					},
 					{
 						from:"me",
