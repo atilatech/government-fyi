@@ -26,7 +26,7 @@ const Data = {
 					<br/><br/>
 					Prop 4 would issue $1.5B in general obligation bonds to renovate and upgrade CA’s children's hospitals, specifically eight private, nonprofit hospitals ($135M each), five <Acronym data={Acronyms.UC}/> medical centers ($54M each), and other hospitals that treat children in specialized wings ($150M). The bond measure would be repaid from CA's General Fund.
 					<br/><br/>
-					General obligation bonds are loans to investors that are repaid by the state over time with interest. <Citation data={Citations['2']}>The $1.5B would cost us $2.9B over 35 years, or $80M annually (roughly 0.1% of our annual budget).</Citation>
+					General obligation bonds are loans from investors that are repaid by the state over time with interest. <Citation data={Citations['2']}>The $1.5B would cost us $2.9B over 35 years, or $80M annually (roughly 0.1% of our annual budget).</Citation>
 				</span>,
     	},
     },
