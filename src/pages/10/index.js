@@ -81,15 +81,15 @@ const Data = {
 						],
 						description:<span>This very readable meta-analysis tries to address common questions about rent regulation by looking at the current literature. (Spoiler: it's nuanced.) It also discusses the intangible benefits of housing stability. We'll summarize what they say here.
 							<br/><br/>
-							<b>Does rent control increase rent in non-controlled units?</b> <Citation data={Citations['24']}>It appears not, but SF might have been an exception.</Citation>. The paper suggests that surrounding units' rental prices stay the same or are lower as a result of nearby rent controlled units.
+							<b>Does rent control increase rent on units that aren't rent-controlled?</b> <Citation data={Citations['24']}>It appears not, but SF might have been an exception.</Citation> The paper suggests that surrounding units' rental prices stay the same or are lower as a result of nearby rent controlled units.
 						</span>,
 						expandedContent:<span>
 							<br/>
-							<b>Does rent control decrease the buildings property value for landlords?</b> <Citation data={Citations['25']}>Research shows mixed answers. In Cambridge, MA, before rent control was removed in 1995, researchers found that property values for rent controlled buildings was indeed lower than non-rent controlled buildings. The removal of rent control mostly equalized it.</Citation><br/><br/><Citation data={Citations['26']}>That's just one city. Another study on many cities in NJ found that rent regulation had no significant impact on appreciation or foreclosures.</Citation>
+							<b>Does rent control decrease the buildings property value for landlords?</b> <Citation data={Citations['25']}>The answers are mixed. In Cambridge, MA, before rent control was removed in 1995, researchers found that property values for rent controlled buildings was lower than non-rent controlled buildings. The removal of rent control mostly equalized it.</Citation><br/><br/><Citation data={Citations['26']}>But that's just one city. Another study on several cities in NJ found that rent regulation had no significant impact on appreciation or foreclosures.</Citation>
 							<br/><br/>
-							<b>Does rent control decrease housing supply or production?</b> <Citation data={Citations['28']}>The paper suggest that it does not affect production</Citation>, but <Citation data={Citations['27']}> it may decrease existing supply of units if policy is not designed well.</Citation>. <Citation data={Citations['29']}>In particular, without regulation, more landlords will likely be convert their rental units to condos.</Citation>
+							<b>Does rent control decrease housing supply or production?</b> <Citation data={Citations['28']}>The paper suggests that it does not affect production</Citation>, but <Citation data={Citations['27']}> it may decrease existing supply of units if policy is not designed well.</Citation>. <Citation data={Citations['29']}>In particular, without regulation, more landlords will likely be converting their rental units to condos.</Citation>
 							<br/><br/>
-							<b>Does rent control affect "mom and pop" owners?</b> There is not enough research to suggest either way.
+							<b>Does rent control affect "mom and pop" property owners?</b> There isn't enough research to suggest either way.
 						</span>
 					},
 					{
