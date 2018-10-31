@@ -81,15 +81,15 @@ const Data = {
 						],
 						description:<span>This very readable meta-analysis tries to address common questions about rent regulation by looking at the current literature. (Spoiler: it's nuanced.) It also discusses the intangible benefits of housing stability. We'll summarize what they say here.
 							<br/><br/>
-							<b>Does rent control increase rent in non-controlled units?</b> <Citation data={Citations['24']}>It appears not, but SF might have been an exception.</Citation>. The paper suggests that surrounding units' rental prices stay the same or are lower as a result of nearby rent controlled units.
+							<b>Does rent control increase rent on units that aren't rent-controlled?</b> <Citation data={Citations['24']}>It appears not, but SF might have been an exception.</Citation> The paper suggests that surrounding units' rental prices stay the same or are lower as a result of nearby rent controlled units.
 						</span>,
 						expandedContent:<span>
 							<br/>
-							<b>Does rent control decrease the buildings property value for landlords?</b> <Citation data={Citations['25']}>Research shows mixed answers. In Cambridge, MA, before rent control was removed in 1995, researchers found that property values for rent controlled buildings was indeed lower than non-rent controlled buildings. The removal of rent control mostly equalized it.</Citation><br/><br/><Citation data={Citations['26']}>That's just one city. Another study on many cities in NJ found that rent regulation had no significant impact on appreciation or foreclosures.</Citation>
+							<b>Does rent control decrease the buildings property value for landlords?</b> <Citation data={Citations['25']}>The answers are mixed. In Cambridge, MA, before rent control was removed in 1995, researchers found that property values for rent controlled buildings was lower than non-rent controlled buildings. The removal of rent control mostly equalized it.</Citation><br/><br/><Citation data={Citations['26']}>But that's just one city. Another study found that rent regulation in several New Jersey cities had no significant impact on appreciation or foreclosures.</Citation>
 							<br/><br/>
-							<b>Does rent control decrease housing supply or production?</b> <Citation data={Citations['28']}>The paper suggest that it does not affect production</Citation>, but <Citation data={Citations['27']}> it may decrease existing supply of units if policy is not designed well.</Citation>. <Citation data={Citations['29']}>In particular, without regulation, more landlords will likely be convert their rental units to condos.</Citation>
+							<b>Does rent control decrease housing supply or production?</b> <Citation data={Citations['28']}>The paper suggests that it does not affect production</Citation>, but <Citation data={Citations['27']}> it may decrease existing supply of units if policy is not designed well.</Citation>. <Citation data={Citations['29']}>In particular, without regulation, more landlords will likely be converting their rental units to condos.</Citation>
 							<br/><br/>
-							<b>Does rent control affect "mom and pop" owners?</b> There is not enough research to suggest either way.
+							<b>Does rent control affect "mom and pop" property owners?</b> There isn't enough research to suggest either way.
 						</span>
 					},
 					{
@@ -126,19 +126,19 @@ const Data = {
 								url:"https://haasinstitute.berkeley.edu/rent-control-key-neighborhood-stabilization"
 							},
 							{
-								label:"Policy/Research Brief",
+								label:"Policy Brief",
 								url:"https://haasinstitute.berkeley.edu/sites/default/files/haasinstitute_rentcontrol.pdf"
 							},
 						],
-						description: <span>This research and policy brief describes the dire situation for California renters and says rent control would help. Stagnating wages + an overheated rental market has led to a situation where government needs to step in. Rent control would reduce displacement, particularly for low-income families, people with disabilities, and people of color.<br/><br/><Citation data={Citations['17']}>Perhaps the most surprising argument is that rent control has lead to <em>increased</em> housing production, citing the Bay Area and LA.</Citation></span>,
+						description: <span>This policy brief describes how rent control would help the dire housing situation for California renters. Stagnating wages and an overheated rental market has led to a situation where government needs to step in. Rent control would reduce displacement, particularly for low-income families, people with disabilities, and people of color.<br/><br/><Citation data={Citations['17']}>Perhaps the most surprising argument is that rent control has lead to <em>increased</em> housing production, citing the Bay Area and LA.</Citation></span>,
 						expandedContent:
 						<span>
 							<br/>
-							(1) <Citation data={Citations['19']}>Rent control preserves economic diversity in neighborhoods by allowing lower-paid workers (e.g. teachers, service workers, health workers) to live closer to their jobs.</Citation> <Citation data={Citations['18']}>This benefits everybody by reducing traffic, making more money available to be spent on local businesses, increasing the cohesion of neighborhood communities,</Citation> <Citation data={Citations['22']}>and potentially decreasing rental prices for <em>non-controlled</em> units.</Citation>
+							(1) <Citation data={Citations['19']}>Rent control preserves economic diversity in neighborhoods by allowing lower paid workers (e.g. teachers, service workers, health workers) to live closer to their jobs.</Citation> <Citation data={Citations['18']}>This benefits everybody because it reduces traffic, supports local businesses, increases the cohesion of neighborhood communities,</Citation> <Citation data={Citations['22']}>and potentially decreases rental prices for <em>non-controlled</em> units.</Citation>
 							<br/><br/>
-							(2) <Citation data={Citations['21']}>The paper argues that rent control should not be means tested (applying only to low-income individuals) because it would inevitably result in discrimination by landlords, who would now have a monetary incentive to turn down qualifying renters.</Citation>
+							(2) <Citation data={Citations['21']}>The paper argues that rent control shouldn't be means tested (aka applying only to low-income individuals) because it would inevitably result in discrimination by landlords, who would have a monetary incentive to turn down qualifying renters.</Citation>
 							<br/><br/>
-							(3) <Citation data={Citations['20']}>The paper cautions that rent control is not the solution to the housing problem in California. It is a first step, and it could immediately help reduce displacement, particularly for low-income residents. They also say that thoughtful policy design is required to reduce rent control's downsides, such as condo conversion.</Citation>
+							(3) <Citation data={Citations['20']}>The paper cautions that rent control is not the solution to CA's housing problem. It is the first step. They also say that thoughtful policy design is required to minimize the downsides of rent control.</Citation>
 						</span>
 					},
 
