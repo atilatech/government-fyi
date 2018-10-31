@@ -64,7 +64,7 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data:{
-				title: "More reading"
+				title: "Moving along, here's some reading"
 			}
 		},
 		{
