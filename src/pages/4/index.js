@@ -4,6 +4,7 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -94,6 +95,12 @@ const Data = {
 						body: "Sorry I couldn't hear you through my hat."
 					},
 				]
+			}
+		},
+		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3250",
 			}
 		},
 		{

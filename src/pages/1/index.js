@@ -6,6 +6,7 @@ import SummaryListBlock from 'components/page-blocks/blocks/SummaryListBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 import BondData from './bond-data.json'
 import Color from 'layout/colors'
 
@@ -133,6 +134,12 @@ const Data = {
 			}
 		},
 		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3247",
+			}
+		},
+		{
 			component: SectionTitleBlock,
 			data:{
 				title: "More reading"
@@ -208,7 +215,7 @@ const Data = {
 								text: "Legal text of proposition",
 								url: "https://vig.cdn.sos.ca.gov/2018/general/pdf/topl.pdf#Prop1"
 							},
-														{
+							{
 								text: "Ballotpedia",
 								url:"https://ballotpedia.org/California_Proposition_1,_Housing_Programs_and_Veterans%27_Loans_Bond_(2018)"
 							},
@@ -216,7 +223,8 @@ const Data = {
 					}
 				]
 			}
-		}
+		},
+
   ]
 }
 export default () => (<PropPageBuilder data={Data}/>);

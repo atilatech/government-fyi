@@ -4,6 +4,7 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -97,6 +98,12 @@ const Data = {
 						body: "We've been trying to amend it in the state legislature since 2016, but AMR wanted full immunity, so here we are.",
 					},
 				]
+			}
+		},
+		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3256",
 			}
 		},
 		{
