@@ -66,7 +66,7 @@ const Data = {
 			component: SectionTitleBlock,
 			data: {
 				title:"Additional context",
-				subtitle:<span>We know John Oliver can be divisive, but he dedicated an entire episode explaining dialysis and DaVita, one of the largest for-profit dialysis companies in the US. After you watch the clip, you might ask yourself if Prop 8 would help solve any of the issues John Oliver brought up?</span>
+				subtitle:<span>We know John Oliver can be divisive, but he dedicated an entire episode explaining dialysis and DaVita, one of the largest for-profit dialysis companies in the US. After you watch the clip, you might ask yourself if Prop 8 would help solve any of the issues John Oliver brought up.</span>
 			}
 		},
 		{
