@@ -16,7 +16,7 @@ const Data = {
 	propNum: 10,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 29, 2018 15:39:00')
+		dateModified: new Date('November 4, 2018 16:31:00')
 	},
 	blocks: [
     {
@@ -253,7 +253,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: <span><Citation data={Citations['32']}>A study in NJ of 74 cities with rent control found no evidence that regulation affected building appreciation.</Citation> <Citation data={Citations['11']}>Bay Area cities with rent control built more than other cities that didn't have rent control.</Citation></span>,
+						body: <span><Citation data={Citations['32']}>A study in NJ of 74 cities with rent control found that rent control did not change a building's value.</Citation> <Citation data={Citations['11']}>Also, Bay Area cities with rent control built more than other cities that didn't have rent control.</Citation></span>,
 					},
 					{
 						from: "me",
@@ -261,11 +261,11 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: <Citation data={Citations['27']}>This can be prevented with careful policy.</Citation>,
+						body: <Citation data={Citations['27']}>This can be prevented with good policy.</Citation>,
 					},
 					{
 						from: "them",
-						body: "Prop 10 merely gives city the option to put rent control on new buildings. Doesn't say if or how it will be done.",
+						body: "Prop 10 just gives city the option to put rent control on new buildings. It doesn't say if or how it will be done.",
 					},
 					{
 						from: "me",
@@ -277,7 +277,7 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: "And how can we trust that cities will pass good policy?",
+						body: "And how can we trust that cities will pass good policy? Costa Hawkins came into law for a reason.",
 					},
 					{
 						from:"them",
