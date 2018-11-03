@@ -5,6 +5,7 @@ import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import VerticalSummaryListBlock from 'components/page-blocks/blocks/VerticalSummaryListBlock'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -143,6 +144,12 @@ const Data = {
 					},
 
 				]
+			}
+		},
+		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3255",
 			}
 		},
 		{

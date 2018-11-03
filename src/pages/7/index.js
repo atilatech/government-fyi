@@ -13,6 +13,7 @@ import {OrderingContext} from 'ordering-context.js'
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 // -- import images
 import dstOn from './images/dst-on.png'
@@ -165,6 +166,12 @@ class DataWithState extends React.Component {
 						<span>
 							Nope. <Citation data={Citations['4']}>The US moved to permanent Daylight Saving Time thrice in the past, all in an effort to save energy. The first instance was during <Acronym data={Acronyms.WWI}/> (Congress repealed it soon after), the second was in <Acronym data={Acronyms.WWII}/>, and the third was during the oil embargo from 1973-75.</Citation> <Citation data={Citations['9']}>In the third case, the government studied its effects and found mixed or inconclusive data.</Citation>
 						</span>
+					}
+				},
+				{
+					component: KQEDFinanceBlock,
+					data:{
+						widgetId:"3253",
 					}
 				},
 				{

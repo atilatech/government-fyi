@@ -4,6 +4,7 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
 // import Acronym from 'components/interactive/acronym'
@@ -80,6 +81,12 @@ const Data = {
 						body: "The $120M a year will go to a lot of administrative fees and interest from the housing bonds. There are better ways to solve housing if that's your goal."
 					}
 				]
+			}
+		},
+		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3248",
 			}
 		},
 		{

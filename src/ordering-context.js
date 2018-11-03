@@ -10,7 +10,7 @@ export class OrderingProvider extends React.Component {
       numerical: [1,2,3,4,5,6,7,8,9,10,11,12]
     };
     this.state = {
-      ordering : this.ordering.spicy,
+      ordering : this.ordering.numerical,
       setToSpicy: () => { this.setState({ordering: this.ordering.spicy}) },
       setToNumerical: () => { this.setState({ordering: this.ordering.numerical}) },
       isXs: false
