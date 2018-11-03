@@ -7,6 +7,13 @@ import Helmet from 'react-helmet'
 const Widget = styled.div`
   margin-bottom: -70px;
 `
+const Attrib = styled.h3`
+  display: block;
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 20px
+  text-align: center;
+`
 
 const KQEDBlock = (props) => {
   const {nColWidth, widgetId} = props.data;
@@ -24,6 +31,7 @@ const KQEDBlock = (props) => {
           <script src='https://demo.kqed.org/dist/widgetsDemo.js' type='text/javascript'></script>
         </Helmet>
         <Widget data-kqed-widget data-widget-type='measureFinance' data-widget-id={widgetId}/>
+        <Attrib>Campaign finance graphic brought to you by KQED and Voter's Edge.</Attrib>
       </Col>
     </Row>
   )

@@ -79,7 +79,7 @@ const Data = {
 								url:"https://dornsife.usc.edu/assets/sites/242/docs/Rent_Matters_PERE_Report_Final_02.pdf"
 							}
 						],
-						description:<span>This very readable meta-analysis tries to address common questions about rent regulation by looking at the current literature. (Spoiler: it's nuanced.) It also discusses the intangible benefits of housing stability. We'll summarize what they say here.
+						description:<span>This meta-analysis tries to address common questions about rent regulation by looking at the current literature. (Spoiler: it's nuanced.) It also discusses the intangible benefits of housing stability.
 							<br/><br/>
 							<b>Does rent control increase rent in non-controlled units?</b> <Citation data={Citations['24']}>It appears not, but SF might have been an exception.</Citation>. The paper suggests that surrounding units' rental prices stay the same or are lower as a result of nearby rent controlled units.
 						</span>,
@@ -205,6 +205,10 @@ const Data = {
 							{
 								text:"KQED Forum debate (audio)",
 								url:"https://www.kqed.org/forum/2010101867796/election-2018-prop-10-would-repeal-costa-hawkins-allow-rent-control-to-expand"
+							},
+							{
+								text:"NYTimes: The expensive rent control battle",
+								url:"https://www.nytimes.com/2018/10/15/us/california-today-rent-control-prop-10.html"
 							}
 						]
 					},
