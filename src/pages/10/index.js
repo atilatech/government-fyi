@@ -6,7 +6,7 @@ import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import VerticalSummaryListBlock from 'components/page-blocks/blocks/VerticalSummaryListBlock'
 import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
-
+import {EmojiLg} from 'components/static/iMessageStyles'
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import { Acronyms, Citations} from './expandables'
@@ -156,7 +156,7 @@ const Data = {
 			component: SectionTitleBlock,
 			data:{
 				nColWidth: 6,
-				title: "Two informed friends",
+				title: "Two well-read roommates",
 			}
 		},
 		{
@@ -164,16 +164,32 @@ const Data = {
 			data: {
 				messages: [
 					{
-						from: "me",
-						body: <span><Citation data={Citations['6']}>Pretty much all economists agree rent control restricts housing supply.</Citation></span>,
+						from: "them",
+						body: "Hey make sure to vote Yes on 10. It'd nice to live in a rent controlled apartment.",
 					},
 					{
-						from: "them",
-						body: <span>Economists are primarily talking about rent ceilings. <Citation data={Citations['35']}>Moderate rent regulations cap how much a landlord can increase rent.</Citation></span>,
+						from:"me",
+						body:"It's not all peachy 🍑 If we were rent controlled, Frank probably wouldn't have fixed the building's washer."
+					},
+					{
+						from: "me",
+						body: <span><Citation data={Citations['6']}>I've been reading. Pretty much all economists agree rent control is bad.</Citation></span>,
 					},
 					{
 						from:"them",
-						body:"But regardless, economists mostly talk about things they can measure."
+						body:"What have you been reading?"
+					},
+					{
+						from:"me",
+						body:"Ballot.fyi"
+					},
+					{
+						from:"them-no-bg",
+						body:<EmojiLg>🙄</EmojiLg>
+					},
+					{
+						from: "them",
+						body: <span>Then you should know economists are primarily talking about a max on rent. <Citation data={Citations['35']}>Rent control nowadays is about limiting how much rent can increase by.</Citation></span>,
 					},
 					{
 						from: "them",
@@ -181,19 +197,19 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: "But that's not going to solve our housing problem.",
+						body: "But that's not going to solve CA's housing problem.",
 					},
 					{
 						from: "me",
-						body: <span>We need to build more. It's a supply problem, <Citation data={Citations['7']}>and Prop 10 would lead to more restricted supply.</Citation></span>,
+						body: <span>We need to build more, <Citation data={Citations['7']}>and Prop 10 would lead to less units available for rent.</Citation></span>,
 					},
 					{
 						from: "them",
-						body: "Agreed we need to build more. And while we spend the many years catching up on supply, cities need ways to help stabilize current renters.",
+						body: "Agreed we need to build more. And while we spend the many years catching up, cities need ways to help current renters not get priced out next month.",
 					},
 					{
 						from: "them",
-						body:<Citation data={Citations['37']}>It's not totally clear whether rent control leads to less supply.</Citation>
+						body:<Citation data={Citations['37']}>And people aren't totally sure that rent control leads to less units available.</Citation>
 					},
 					{
 						from:"me",
@@ -201,7 +217,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body:<Citation data={Citations['28']}>It depends how many apts get converted to condos, but it doesn't affect housing production, according to a study.</Citation>
+						body:<Citation data={Citations['28']}>It depends how many landlords decide to convert their apts to condos, but it doesn't affect the amount of rentals constructed. At least, I read one study that said that.</Citation>
 					},
 					{
 						from: "them",
@@ -209,19 +225,15 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: "Sure that's great if it doesn't backfire.",
+						body: "Sure that's great if it doesn't do more harm than good.",
 					},
 					{
 						from: "me",
-						body: <Citation data={Citations['31']}>Rent control is a blunt tool.</Citation>,
-					},
-					{
-						from: "me",
-						body: "Any rich techie could land a rent controlled apt. It's not only for the poor.",
+						body: <Citation data={Citations['31']}>Any rich techie could land a rent controlled apt. It's not only for the poor.</Citation>,
 					},
 					{
 						from: "them",
-						body: <Citation data={Citations['21']}>If we made rent control only for low-income people, they'd be discriminated against by landlords and would never land an apartment.</Citation>,
+						body: <Citation data={Citations['21']}>If we made rent control for low-income people only, landlords would discriminate against them. They'd never get an apt.</Citation>,
 					},
 					{
 						from: "me",
@@ -229,11 +241,11 @@ const Data = {
 					},
 					{
 						from: "me",
-						body: <span>It not only reduces their revenue, <Citation data={Citations['33']}>but lowers buildings' property values.</Citation></span>,
+						body: <span>Not only do they get less rent, <Citation data={Citations['33']}>but it also lowers buildings' property values.</Citation></span>,
 					},
 					{
 						from: "me",
-						body: <span><Citation data={Citations['25']}>A study in Cambridge found that when rent control was removed, even non-controlled buildings shot up in value.</Citation></span>,
+						body: <span><Citation data={Citations['25']}>A study in Cambridge found that when rent control was removed, even buldings that weren't rent controlled shot up in value.</Citation></span>,
 					},
 					{
 						from: "them",
@@ -241,11 +253,11 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: <span><Citation data={Citations['32']}>A study in NJ of 74 cities with rent control found no evidence that regulation affected building appreciation.</Citation> <Citation data={Citations['11']}>Another study found Bay Area cities with rent control had increased production.</Citation></span>,
+						body: <span><Citation data={Citations['32']}>A study in NJ of 74 cities with rent control found no evidence that regulation affected building appreciation.</Citation> <Citation data={Citations['11']}>Bay Area cities with rent control built more than other cities that didn't have rent control.</Citation></span>,
 					},
 					{
 						from: "me",
-						body: <span>Wouldn't we be more like Cambridge? <Citation data={Citations['16']}>Another study found that in SF, rentals were converted to condos. Again, reducing supply of rentals.</Citation></span>,
+						body: <span>Wouldn't we be more like Cambridge? <Citation data={Citations['16']}>In SF, rentals were converted to condos after rent control was placed.</Citation></span>,
 					},
 					{
 						from: "them",
@@ -253,7 +265,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: "Prop 10 merely gives city the option to implement rent regulations on new buildings. Doesn't say if or how it will be done.",
+						body: "Prop 10 merely gives city the option to put rent control on new buildings. Doesn't say if or how it will be done.",
 					},
 					{
 						from: "me",
@@ -261,7 +273,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: <span>Also can be prevented. <Citation data={Citations['36']}>It won't happen if cities don't apply it to new construction until a certain age.</Citation></span>,
+						body: <span>Also can be prevented. <Citation data={Citations['36']}>It won't happen if cities don't apply it to new construction until the building reaches a certain age.</Citation></span>,
 					},
 					{
 						from: "me",
