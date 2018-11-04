@@ -158,6 +158,19 @@ const Data = {
 						subsectionTitle: "Impartial analyses",
 						links: [
 							{
+								text:"KQED Forum debate (audio)",
+								url:"https://www.kqed.org/forum/2010101867951/election-2018-californias-proposition-8-put-spotlight-on-dialysis-clinics"
+							},
+							{
+								text:"ProPublica on dialysis conditions",
+								url:"https://www.propublica.org/article/in-dialysis-life-saving-care-at-great-risk-and-cost"
+							},
+						]
+					},
+					{
+						subsectionTitle: "Impartial analyses",
+						links: [
+							{
 								text: "LA Times: background on labor dispute",
 								url: "http://www.latimes.com/politics/la-pol-ca-dialysis-initiative-legislation-20170809-story.html",
 							},

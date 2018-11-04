@@ -6,7 +6,6 @@ import Helmet from 'react-helmet'
 
 
 const Attrib = styled.h3`
-  margin-top:-30px;
   display: block;
   font-size: 10px;
   color: #666;
@@ -30,7 +29,7 @@ const KQEDBlock = (props) => {
           <script src='https://demo.kqed.org/dist/widgetsDemo.js' type='text/javascript'></script>
         </Helmet>
         <div data-kqed-widget data-widget-type='measureFinance' data-widget-id={widgetId}/>
-        <Attrib>Campaign finance graphic brought to you by KQED and Voter's Edge.</Attrib>
+        <Attrib>Campaign finance graphic brought to you by <a href="https://www.kqed.org/elections/props" target="_blank" rel="noreferrer noopener">KQED</a> and Voter's Edge.</Attrib>
       </Col>
     </Row>
   )

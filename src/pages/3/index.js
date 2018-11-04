@@ -76,7 +76,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body:"Yea who paid for this one? 🙄"
+						body:<span>Yea who paid for this one? <span role="img" aria-label="eyes rolling up">🙄</span></span>
 					},
 					{
 						from:"me",
@@ -84,7 +84,7 @@ const Data = {
 					},
 					{
 						from: "them-no-bg",
-						body:<EmojiLg role="img" aria-label="nerd glasses emoji">🤓</EmojiLg>
+						body:<EmojiLg><span role="img" aria-label="nerd glasses emoji">🤓</span></EmojiLg>
 							},
 					{
 						from:"me",

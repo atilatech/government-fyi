@@ -37,7 +37,7 @@ const Data = {
     		title: "Isn’t rent control a good thing?",
     		text:
 				<span>
-					Not necessarily. Prop 10 critics say rent control is problematic for CA’s housing shortage because:
+					It's complicated. Prop 10 critics say rent control is problematic for CA’s housing shortage because:
 					<ul>
 						<li>It often isn't "means-tested". Residents who live in rent controlled apartments aren’t necessarily the people who need it the most.</li>
 						<li><Citation data={Citations['4']}>It causes displacement and gentrification as some landlords try to convert their units to more profitable real estate.</Citation></li>
@@ -169,7 +169,7 @@ const Data = {
 					},
 					{
 						from:"me",
-						body:"It's not all peachy 🍑 If we were rent controlled, Frank probably wouldn't have fixed the building's washer."
+						body:<span>It's not all peachy <span role="img" aria-label="peach">🍑 </span>If we were rent controlled, Frank probably wouldn't have fixed the building's washer.</span>
 					},
 					{
 						from: "me",
@@ -185,7 +185,7 @@ const Data = {
 					},
 					{
 						from:"them-no-bg",
-						body:<EmojiLg role="img" aria-label="eyes rolled up emoji">🙄</EmojiLg>
+						body:<EmojiLg><span role="img" aria-label="eyes rolled up emoji">🙄</span></EmojiLg>
 					},
 					{
 						from: "them",
