@@ -5,6 +5,8 @@ import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 // import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
+import {EmojiLg} from 'components/static/iMessageStyles'
+
 import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
@@ -81,9 +83,9 @@ const Data = {
 						body:"Lots of agribusinesses (Yes, that's a word)"
 					},
 					{
-						from: "them",
-						body:"🤓"
-					},
+						from: "them-no-bg",
+						body:<EmojiLg role="img" aria-label="nerd glasses emoji">🤓</EmojiLg>
+							},
 					{
 						from:"me",
 						body:<span>Some are calling it "pay to play", like farmers paying for Prop 3 to get their canal fixed.<Citation data={Citations['9']}>Did you see that it doesn't go through CA's annual budgetary process either.</Citation> Kinda sketch.</span>

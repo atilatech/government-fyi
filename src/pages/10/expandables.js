@@ -12,7 +12,7 @@ const USCLink = "https://dornsife.usc.edu/assets/sites/242/docs/Rent_Matters_PER
 const HaasLink = "https://haasinstitute.berkeley.edu/sites/default/files/haasinstitute_rentcontrol.pdf";
 const StanfordLink = "https://web.stanford.edu/~diamondr/DMQ.pdf";
 const StanfordTitle = "The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco";
-
+const USCTitle = "USC Dornsife Program for Environmental and Regional Quality";
 export const Citations = {
   '1': {
     link:"http://articles.latimes.com/1995-07-25/news/mn-27574_1_rent-control-feature",
@@ -142,37 +142,37 @@ export const Citations = {
   },
   '24':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"With the exception of the Stanford study, researchers found that rents stayed the same or were lowered in units without rent stabilization but in proximity to stabilized units. In a supercharged market like San Francisco, rents did increase..."
   },
   '25':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"Autor, Palmer, and Pathak’s (2012) analysis of residential buildings in Cambridge, MA, reveals that rentstabilized properties were valued at a discounted rate when compared with non-rent-stabilized properties and that the elimination of rent regulation helped make up part of the gap, increasing the value of formerly stabilized properties by 18 to 25 percent."
   },
   '26':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"These authors found that neither the presence nor the strength of rent stabilization had a significant impact on appreciation or foreclosure rates."
   },
   '27':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"The structure of rent regulations influences how units are taken off the market. Heskin, Levine, and Garrett’s (2000) study of Los Angeles found that the incentive to convert rental properties to ownership units was even more evident in places with vacancy control, where the unit remains at a price lower than would otherwise be the case after a tenant moved out."
   },
   '28':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"In short, there is not much evidence to support the notion that moderate rent stabilization impacts new construction, a pattern that makes sense given the ways in which moderate regimes tend to exclude new units from coverage."
   },
   '29':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"More recently, a Stanford study by Diamond, McQuade, and Qian (2018) found that rent stabilization incentivized landlords to convert rental units into condos, tenants in common (TICs), or owner occupied units; or redevelop the buildings to become exempt from rent stabilization."
   },
@@ -184,37 +184,37 @@ export const Citations = {
   },
   '31':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"Rent regulation is not a silver bullet and is a somewhat blunt policy tool that generally favors less advantaged populations but does not always target those who need it most. "
   },
   '32':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:" In contrast, Ambrosius and colleagues (2015) had a sample of 74 rent-stabilized cities and 87 non-rent-stabilized cities in New Jersey. These authors found that neither the presence nor the strength of rent stabilization had a significant impact on appreciation or foreclosure rates"
   },
   '33':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"Sims (2007) suggests that rent-stabilized buildings have more maintenance and habitability concerns and thus drive down surrounding rents and property values. "
   },
   '34':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"What this review of literature suggests to us is that rent regulations are one tool to deal with sharp upticks in rent. They have less deleterious effects than is often imagined—particularly if we are talking about more moderate rent stabilization measures—and they do seem to promote resident stability and can therefore help to slow the displacement dimension of gentrification. "
   },
   '35':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"They typically permit an automatic percent rent increase and include vacancy decontrol, which sets units back to market rate after a tenant leaves"
   },
   '36':{
     link:USCLink,
-    publication:"USC Dornsife Program for Environmental and Regional Quality",
+    publication:USCTitle,
     headline:"What are the impacts of rent stabilization?",
     directQuote:"In short, there is not much evidence to support the notion that moderate rent stabilization impacts new construction, a pattern that makes sense given the ways in which moderate regimes tend to exclude new units from coverage."
   },
