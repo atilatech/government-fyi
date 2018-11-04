@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
-import {FromThem, FromMe, Clear, Section} from 'components/static/iMessageStyles'
+import {FromThem, FromMe, Clear, Section, FromThemEmoji} from 'components/static/iMessageStyles'
 
 /*
 an iMessage conversation block
@@ -53,6 +53,9 @@ const IMessageBlock = (props) => {
 				break;
 			case "me-no-bg":
 				msg = <FromMe style={{background:'none'}}>{message.body}</FromMe>
+				break;
+			case "them-no-bg":
+				msg = <FromThemEmoji>{message.body}</FromThemEmoji>
 				break;
 			default:
 				break;

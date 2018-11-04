@@ -109,7 +109,7 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data: {
-				title: "More reading",
+				title: "Reading for your next break",
 			},
 		},
 		{

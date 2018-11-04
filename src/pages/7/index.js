@@ -177,7 +177,7 @@ class DataWithState extends React.Component {
 				{
 					component: SectionTitleBlock,
 					data:{
-						title: "More reading"
+						title: "If you have time"
 					}
 				},
 				{
