@@ -4,6 +4,7 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
+import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -127,6 +128,12 @@ const Data = {
 					<br/><br/>
 					<Citation data={Citations['19']}> <Acronym data={Acronyms.PETA}/> (of all people!) argue Prop 2 never led to cage-free hens, and criticize Prop 12 for allowing these poor conditions to continue until 2022.</Citation> <Citation data={Citations['20']}>Ironically, other Prop 12 critics say it's not enough time for farmers and sellers to transition to the requirements, which will only increase retail costs for consumers.</Citation>
 				</span>
+			}
+		},
+		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3257",
 			}
 		},
 		{
