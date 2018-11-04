@@ -185,7 +185,7 @@ const Data = {
 					},
 					{
 						from:"them-no-bg",
-						body:<EmojiLg>🙄</EmojiLg>
+						body:<EmojiLg role="img" aria-label="eyes rolled up emoji">🙄</EmojiLg>
 					},
 					{
 						from: "them",
@@ -221,7 +221,7 @@ const Data = {
 					},
 					{
 						from: "them",
-						body: <span>And isn't it a good thing to help tenants afford their apartment? <Citation data={Citations['']}>If people live near their work, there's less commuting, less traffic, cleaner air.</Citation><Citation data={Citations['7']}>That's ultimately how people don't end up on the streets.</Citation></span>,
+						body: <span>And isn't it a good thing to help tenants afford their apartment? If people live near their work, there's less commuting, less traffic, cleaner air. <Citation data={Citations['7']}>That's ultimately how people don't end up on the streets.</Citation></span>,
 					},
 					{
 						from: "me",

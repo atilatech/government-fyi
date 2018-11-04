@@ -87,6 +87,6 @@ export const FromThemEmoji = FromThem.extend`
 `;
 
 export const EmojiLg = styled.span`
-	font-size:60pt;
+	font-size:50pt;
 	line-height: 55pt;
 `;

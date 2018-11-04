@@ -28,7 +28,7 @@ const Data = {
 	propNum: 12,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 26, 2018 17:07:00')
+		dateModified: new Date('November 4, 2018 10:07:00')
 	},
 	blocks: [
     {
@@ -51,7 +51,7 @@ const Data = {
 					<br/><br/>
 					Farmers were pissed. Some of the reasons they've been fighting Prop 2 are relevant to Prop 12 today. They claimed Prop 2 was:
 					<ul>
-						<li><b>unconstitutional</b> – It required out-of-state farmers selling eggs in CA to comply with its policies. <Citation data={Citations['2']}> Last year, 13 states filed a suit with the US Supreme Court to repeal it.</Citation></li>
+						<li><b>unconstitutional</b> – It required out-of-state farmers selling eggs in CA to comply with its policies. <Citation data={Citations['2']}> Last year, 13 states filed a suit with the US Supreme Court to repeal it. (It has yet to be taken up by the court.)</Citation></li>
 						<li><b>too vague</b> – and therefore unenforceable. <Citation data={Citations['6']}>A salty judge disagreed</Citation>, and California did eventually land on a number for hens: <Citation data={Citations['5']}>116 square inches.</Citation></li>
 						<li><b>expensive</b> – <Citation data={Citations['7']}>It cost CA farmers several hundred million to convert their hen housing systems</Citation>, but <Citation data={Citations['8']}>it seems they would have done that anyway because of salmonella outbreaks</Citation> and <Citation data={Citations['9']}>shifting public opinion.</Citation></li>
 						<li><b>hurtful to production</b> – <Citation data={Citations['14']}>By 2016, academics estimated say egg production dropped by 35%</Citation>, and <Citation data={Citations['10']}>prices rose by 33%.</Citation></li>
@@ -70,15 +70,13 @@ const Data = {
 					For starters, Prop 12 sets specific space requirements and actually <Citation data={Citations['17']}>deems the CA Department of Food and Agriculture responsible for enforcing the law. This additional oversight is estimated to cost the state $10M annually.</Citation>
 					<br/><br/>
 					<Citation data={Citations['18']}>Prop 12 also outlines that egg-laying hens must be legitimately cage-free by 2022. This means farmers have to allocate 1 to 1.5 sq. feet per hen, and allow hens to freely move around inside a building.</Citation>
-					<br/><br/>
-					{/* <Acronym data={Acronyms.HSUS}/>, the authors of both Prop 2 <em>and</em> 12, say they want to... */}
 				</span>
 			}
 		},
 		{
 			component: SectionTitleBlock,
 			data: {
-				title: "How much space do farm animals have?",
+				title: "And how much space will each animal get?",
 				nColWidth: 6
 			}
 		},
@@ -124,9 +122,11 @@ const Data = {
 				title: "What are haters saying?",
 				text:
 				<span>
-					Opponents criticize Prop 12 for all the same reasons (except "too vague") they criticized Prop 2.
+					Opponents criticize Prop 12 for all the same reasons (except "too vague") that they said about Prop 2.
 					<br/><br/>
 					<Citation data={Citations['19']}> <Acronym data={Acronyms.PETA}/> (of all people!) argue Prop 2 never led to cage-free hens, and criticize Prop 12 for allowing these poor conditions to continue until 2022.</Citation> <Citation data={Citations['20']}>Ironically, other Prop 12 critics say it's not enough time for farmers and sellers to transition to the requirements, which will only increase retail costs for consumers.</Citation>
+					<br/><br/>
+					<Citation data={Citations['21']}>Supporters of Prop 12 say less crammed animals will mean less salmonella outbreaks,</Citation> thus making this a public safety issue, not simply an animal treatment issue.
 				</span>
 			}
 		},

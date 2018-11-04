@@ -131,9 +131,10 @@ export const Citations = {
 		directQuote:"Now — despite the commitments to go cage-free by the nation’s food, retail, hospitality, food service and food manufacturing businesses — HSUS has written Proposition 12 to require full compliance by the end of 2021 and, in doing so, is reneging on its own agreement with food retail, hospitality, food service and food manufacturing businesses.",
 	},
 	'21':{
-		publication:"Sorry",
-		headline:"Not sorry",
-		directQuote:"We don't understand. How have other articles been able to hold back?"
+		link:"https://www.huffingtonpost.com/john-robbins/are-your-eggs-safe-to-eat_b_696660.html",
+		publication:"HuffPo",
+		headline:"How Egg Industry Greed Caused the Salmonella Outbreak",
+		directQuote:"The study suggests that by switching to cage-free production systems the egg industry would likely reduce the risk of salmonella to the American public from bad eggs by 50 percent."
 	}
 
 }
