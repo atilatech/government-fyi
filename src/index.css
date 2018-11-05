@@ -70,6 +70,17 @@ h5 {
     text-rendering: optimizeLegibility;
 	}
 }
+@media screen and (max-width: 767px) {
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  html::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: transparent;
+  }
+}
 
 a {
 	color: #FF454C;
