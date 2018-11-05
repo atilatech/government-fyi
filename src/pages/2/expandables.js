@@ -39,4 +39,10 @@ export const Citations = {
     headline:"$2 billion to help house California's homeless isn't being spent — and no one knows when it will be",
     directQuote:"Hundreds of millions of dollars in treatment money could be diverted toward interest and administrative payments to support the bond, Bernard said. She also believes that cities and counties are often reluctant to approve homeless housing development, leading to fewer new homes funded by bond money than proponents suggest."
   },
+  '7':{
+    link:"http://www.sandiegouniontribune.com/opinion/commentary/sd-proposition-2-20180830-story.html",
+    publication:"LA Times",
+    headline:"Opinion: Proposition 2: First invest in our people",
+    directQuote:"Proposition 2 is unnecessary because in 2017, the Legislature, through Assembly Bill 727, allowed counties to accumulate MHSA capital funds up to 10 years, enabling them to “pay as you go” both to build housing and help pay rent subsidies for these clients. This proposition goes against the intent of the MHSA approved by the voters in 2004 to allow counties maximum “home rule” flexibility to best determine how to spend their MHSA allocated funds, whether for treatment and/or housing."
+  }
 }
