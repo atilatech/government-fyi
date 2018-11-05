@@ -147,12 +147,6 @@ const Data = {
 			}
 		},
 		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3255",
-			}
-		},
-		{
 			component: SectionTitleBlock,
 			data:{
 				nColWidth: 6,
@@ -285,6 +279,12 @@ const Data = {
 						body:"We don't have much of a choice. CA's housing situation is dire and cities need more options."
 					}
 				]
+			}
+		},
+		{
+			component: KQEDFinanceBlock,
+			data:{
+				widgetId:"3255",
 			}
 		},
 		{

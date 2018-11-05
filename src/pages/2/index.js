@@ -83,12 +83,12 @@ const Data = {
 				]
 			}
 		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3248",
-			}
-		},
+		// {
+		// 	component: KQEDFinanceBlock,
+		// 	data:{
+		// 		widgetId:"3248",
+		// 	}
+		// },
 		{
 			component: SectionTitleBlock,
 			data:{
