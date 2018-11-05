@@ -140,7 +140,8 @@ const Data = {
 						subsectionTitle: "No on Prop 2",
 						links: [
 							{
-								text: "We couldn't find any editorial boards that oppose Prop 2.",
+								text: "Op-ed: Invest in people first",
+								url:"http://www.sandiegouniontribune.com/opinion/commentary/sd-proposition-2-20180830-story.html"
 							},
 						]
 					},
