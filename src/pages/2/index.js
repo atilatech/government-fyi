@@ -15,7 +15,7 @@ const Data = {
 	propNum: 2,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 16, 2018 10:46:00')
+		dateModified: new Date('November 5, 2018 12:52:00')
 	},
 	blocks: [
     {
@@ -67,6 +67,10 @@ const Data = {
 					{
 						from: "me",
 						body: "They can't spend it all. They're providing a social service that's paid for as long as the economy is good. That might not last."
+					},
+					{
+						from:"me",
+						body:<Citation data={Citations['7']}>Also, they're allowed to hold the funds to give counties flexibility.</Citation>
 					},
 					{
 						from: "me",
