@@ -171,7 +171,7 @@ const Data = {
 								url: "https://www.sfchronicle.com/opinion/editorials/article/Editorial-The-Chronicle-recommends-no-on-13248637.php"
 							},
 							{
-								text:"Sac Bee Editorial Board",
+								text:"Sac Bee Editorial Board (scroll down)",
 								url:"https://www.sacbee.com/opinion/election-endorsements/article218967200.html"
 							},
 							{
