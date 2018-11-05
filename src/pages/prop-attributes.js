@@ -322,6 +322,21 @@ const descriptions = [
   "Guess what 1 square foot looks like relative to a chicken."
 ]
 
+const results = [
+  "Y",
+  "Y",
+  "N",
+  "Y",
+  "N",
+  "N",
+  "Y",
+  "N",
+  "NA",
+  "Y",
+  "N",
+  "Y"
+]
+
 export const PropMetaData = (n) => (
   {
     color: colors[n-1],
@@ -330,7 +345,8 @@ export const PropMetaData = (n) => (
     title: titles[n-1],
     shortTitle: shortTitles[n-1],
     socialHeadline: headlines[n-1],
-    socialDescription: descriptions[n-1]
+    socialDescription: descriptions[n-1],
+    result: results[n-1]
   }
 );
 

@@ -116,9 +116,21 @@ const Description = styled.h2`
 	color: ${Color('black')};
 `
 
+const ResultContainer = styled.div`
+	background-color: #eee;
+	height: 70px;
+`
+
+const mapToResult = {
+	"Y":"Passed",
+	"N":"Failed",
+	"U":"To be determined",
+	"NA":"Not applicable"
+}
+
 
 const PropCardBlock = (props) => {
-	const {propNum, color, header, description, linksTo, img} = props.data;
+	const {propNum, color, header, description, linksTo, img, result} = props.data;
 	return (
 		<BannerLink to={linksTo}>
 			<Spacer height={2}/>
@@ -133,6 +145,7 @@ const PropCardBlock = (props) => {
 					>
 						<Container>
 							<TextContainer>
+								<ResultContainer>{mapToResult[result]}</ResultContainer>
 								<Header>{header}</Header>
 								<Description>{description}</Description>
 							</TextContainer>
@@ -156,6 +169,7 @@ PropCardBlock.propTypes = {
 		color2: PropTypes.string,
 		header: PropTypes.string,
 		description: PropTypes.string,
+		result: PropTypes.oneOf(["Y","N","U","NA"]),
 		linksTo: PropTypes.string,
 		img: PropTypes.shape({
 			_1x: PropTypes.string.isRequired,
