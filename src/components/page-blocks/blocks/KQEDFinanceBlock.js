@@ -10,6 +10,8 @@ const Attrib = styled.h3`
   font-size: 10px;
   color: #666;
   margin-bottom: 20px
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
 `
 
