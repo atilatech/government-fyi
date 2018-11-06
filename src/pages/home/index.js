@@ -49,7 +49,7 @@ let Data = {
 					<span id="contact">
 						We've spent months researching and writing the content for this site. We're a small team (two people), and we want to make sure we can do this again in 2020. If you like what you see, please consider making a contribution.
 						<Button href="https://www.bythebay.cool/contribute/">
-							Let's do this
+							I can chip in a few $
 						</Button>
 						<Attrib>You'll be redirected to our sister site, By The Bay.</Attrib>
 					</span>,
