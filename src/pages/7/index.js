@@ -5,11 +5,11 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import SubsectionTitleBlock from 'components/page-blocks/blocks/SubsectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
+import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
 // import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
 import DSTSunInteractiveBlock from 'components/page-blocks/blocks/DSTSunInteractiveBlock'
 import {OrderingContext} from 'ordering-context.js'
-
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
@@ -169,6 +169,61 @@ class DataWithState extends React.Component {
 					}
 				},
 				{
+					component: IMessageBlock,
+					data: {
+						messages: [
+							{
+								from: "me",
+								body:"I really don't have an opinion on Daylight Savings Time"
+							},
+							{
+								from: "them",
+								body:"...Said no one, ever."
+							},
+							{
+								from: "them",
+								body:"Did you not wake up today groggy?"
+							},
+							{
+								from: "them",
+								body:"Or freak out for a split second when you looked at your microwave clock that you haven't changed yet."
+							},
+							{
+								from: "them",
+								body:"Or be sad when you left work and it was dark outside?",
+							},
+							{
+								from: "me",
+								body:"Nope. My smart microwave is connected to the cloud. #morepushnotifications"
+							},
+							{
+								from: "me",
+								body:"I don't see what the uproar is. Clock switching isn't THAT bad. I have to do it when I fly anyways."
+							},
+							{
+								from:"them",
+								body:"It's less about the switching. Why make the winter more dreary by having darker afternoons?"
+							},
+							{
+								from:"me",
+								body:"Time is just a social construct. It's the same depressing amount of sunlight in a winter day no matter what."
+							},
+							{
+								from:"me",
+								body:"Just depends if you want brighter mornings or brighter afternoons."
+							},
+							{
+								from: "me",
+								body:"Also, it's totally unclear how the federal government will react if we want to move to year-round DST. Maybe they'll allow each state to do it. Maybe they'll absolish DST."
+							},
+							{
+								from:"them",
+								body:"#abolishDST"
+							}
+						]
+					}
+				},
+				{
 					component: KQEDFinanceBlock,
 					data:{
 						widgetId:"3253",
@@ -177,7 +232,7 @@ class DataWithState extends React.Component {
 				{
 					component: SectionTitleBlock,
 					data:{
-						title: "If you have time"
+						title: "If you have more time"
 					}
 				},
 				{
