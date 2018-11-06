@@ -38,6 +38,7 @@ const Body = (props) => {
         <Route path='/about' component={AboutPage}/>
         <Route path='/terms' component={TermsPage}/>
         <Route path='/print' component={PrintedGuidePage}/>
+        <Route path='/procrastinators' component={ProcrastinatorsPage}/>
         <Route component={Page404}/>
       </Switch>
       <Footer />
@@ -51,6 +52,7 @@ const AboutPage = mkLoadable(import("pages/about/index"));
 const TermsPage = mkLoadable(import("pages/terms/index"));
 const SubscribePage = mkLoadable(import("pages/subscribe/index"));
 const PrintedGuidePage = mkLoadable(import("pages/print/index"));
+const ProcrastinatorsPage = mkLoadable(import("pages/procrastinators/index"));
 const Prop1 = mkLoadable(import("pages/1/index"));
 const Prop2 = mkLoadable(import("pages/2/index"));
 const Prop3 = mkLoadable(import("pages/3/index"));

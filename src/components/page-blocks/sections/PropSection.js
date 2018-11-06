@@ -75,13 +75,23 @@ class PropSection extends React.Component {
                     color: color,
                     description: socialDescription,
                     img: imageSet,
-                  linksTo: `/prop-${propNum}`,
+                    linksTo: `/prop-${propNum}`,
                   }}
                 />
               );
             });
             return(
               <React.Fragment>
+                <PropCardBlock
+                  data={{
+                    img: {},
+                    propNum: "",
+                    header:"Last minute, procrastinator's guide",
+                    description:"Are you waiting in line or at a voting booth right now? Here's a five minute guide.",
+                    linksTo:"/procrastinators/",
+                    color:"gray",
+                  }}
+                />
                 {propsInOrder}
               </React.Fragment>
             )
