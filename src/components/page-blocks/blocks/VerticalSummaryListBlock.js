@@ -63,7 +63,6 @@ const StyledH3 = styled.h3`
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 3px;
-
 `
 export const ExpandButtonLabel = styled.h2`
 	font-size: 14px;

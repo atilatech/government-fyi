@@ -4,6 +4,10 @@ import {PropMetaData} from 'pages/prop-attributes'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import Color from 'layout/colors'
 import {OrderingContext} from 'ordering-context.js'
+import LastMinImg from 'pages/home/images/lastmin.png'
+import LastMinImg_w from 'pages/home/images/lastmin.webp'
+import LastMinImg_2x from 'pages/home/images/lastmin@2x.png'
+import LastMinImg_2x_w from 'pages/home/images/lastmin@2x.webp'
 
 const ButtonLabel = styled.h2`
   font-size: 16px;
@@ -75,13 +79,28 @@ class PropSection extends React.Component {
                     color: color,
                     description: socialDescription,
                     img: imageSet,
-                  linksTo: `/prop-${propNum}`,
+                    linksTo: `/prop-${propNum}`,
                   }}
                 />
               );
             });
             return(
               <React.Fragment>
+                <PropCardBlock
+                  data={{
+                    img: {
+                      _1x: LastMinImg,
+                      _1x_webp: LastMinImg_w,
+                      _2x: LastMinImg_2x,
+                      _2x_webp: LastMinImg_2x_w,
+                    },
+                    propNum: "",
+                    header:"Last minute, procrastinator's guide",
+                    description:"Are you waiting in line or at a voting booth right now? Here's a five minute guide.",
+                    linksTo:"/procrastinators/",
+                    color:"gray",
+                  }}
+                />
                 {propsInOrder}
               </React.Fragment>
             )
