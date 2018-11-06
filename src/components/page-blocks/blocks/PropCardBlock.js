@@ -103,9 +103,9 @@ const TextContainer = styled.div`
 `
 
 const Header = styled.h2`
-	color: white;
+	color: #fff;
 	font-size: 20px;
-	margin-top: 30px;
+	margin-top: 20px;
 `
 
 const Description = styled.h2`
@@ -113,19 +113,42 @@ const Description = styled.h2`
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 45px;
+	margin-top: 10px;
 	color: ${Color('black')};
 `
 
 const ResultContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #eee;
-	height: 70px;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 2px;
+	border: 4px solid ${props=>(props.color===Color('green'))?Color('green'):'#fff'};
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+	background-color: ${props=>(props.color===Color('green'))?'white':props.color};
 `
 
-const mapToResult = {
+const ResultText = styled.h2`
+	color: ${props=>(props.color===Color('green'))?Color('green'):'#fff'};
+	font-size: 40px;
+	line-height: 45px;
+`
+
+const mapResultToText = {
 	"Y":"Passed",
 	"N":"Failed",
 	"U":"To be determined",
 	"NA":"Not applicable"
+}
+
+const mapResultToColor = {
+	"Y":Color('green'),
+	"N":Color('red'),
+	"U":Color('gray1'),
+	"NA":"#000"
 }
 
 
@@ -145,7 +168,11 @@ const PropCardBlock = (props) => {
 					>
 						<Container>
 							<TextContainer>
-								<ResultContainer>{mapToResult[result]}</ResultContainer>
+								{propNum !== "9" &&
+									<ResultContainer color={mapResultToColor[result]}>
+										<ResultText color={mapResultToColor[result]}>{mapResultToText[result]}</ResultText>
+									</ResultContainer>
+								}
 								<Header>{header}</Header>
 								<Description>{description}</Description>
 							</TextContainer>

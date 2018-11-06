@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 import MultisourceImage from 'components/static/multisource-image'
 import Color from 'layout/colors'
 import {PropMetaData} from 'pages/prop-attributes'
+import PassedIcon from 'components/static/approved.svg'
+import FailedIcon from 'components/static/failed.svg'
 
 const Img = styled(MultisourceImage).attrs({
   style: props => ({
@@ -48,6 +50,7 @@ const ImgContainer = styled.div.attrs({
 })`
 	transition: background-color 150ms ease-out;
 	border-radius: 30px;
+  display: flex;
 	@media not all and (hover: none) {
 		&:hover{
 			background-color: ${props=>Color(props.color+'2')};
@@ -75,19 +78,30 @@ const HoverTitle = styled.h4`
 	}
 `
 
+const ResultIconContainer = styled.div`
+  align-self: flex-start;
+  position: absolute;
+  background-color: #fff;
+  line-height: 0;
+  border-radius: 7.5px;
+  height: 15px;
+  width: 15px;
+`
+
 
 const TopNavBlock = (props) => {
   // const {color, imageSet, shortTitle}
 	const navArr = [];
 	for (let i = 1; i < 13; i++){
-		const {color, imageSet, socialDescription, shortTitle, thumbSet} = PropMetaData(i)
+		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i)
 		navArr.push(
 			{
 				color:color,
 				images:imageSet,
 				desc:socialDescription,
 				title: shortTitle,
-				imageSet: thumbSet
+				imageSet: thumbSet,
+        result: result
 			}
 		)
 	}
@@ -123,7 +137,16 @@ class NavItem extends React.Component {
 		this.setState({isHovered: false})
 	}
 	render() {
-		const {color, title, desc, imageSet} = this.props.data
+		const {color, title, desc, imageSet, result} = this.props.data;
+    let resultIcon = null;
+    if (result === "Y"){
+      resultIcon = PassedIcon;
+    } else if (result === "N") {
+      resultIcon = FailedIcon;
+    } else {
+      resultIcon = null;
+    }
+
 		return(
 			<NavItemContainer>
 				<Link to={`/prop-${this.props.propNum+1}`}>
@@ -132,12 +155,17 @@ class NavItem extends React.Component {
 						onMouseLeave={this.handleMouseLeave}
 						color={color}
 						isActive={this.props.isActive}
-					>
+     >
 						<Img
 							isHovered={this.state.isHovered}
 							isActive={this.props.isActive}
 							imageHandles={imageSet}
-							alt={desc}/>
+							alt={desc}
+      />
+            {resultIcon &&
+              <ResultIconContainer>
+                <img src={resultIcon} alt={result}/>
+              </ResultIconContainer>}
 					</ImgContainer>
 				</Link>
 				{(this.state.isHovered || this.props.isActive) && <HoverTitle>{title}</HoverTitle>}
