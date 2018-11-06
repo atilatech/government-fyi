@@ -5,6 +5,8 @@ import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
+import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from 'pages/prop-attributes'
 
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -18,6 +20,14 @@ const Data = {
 		dateModified: new Date('October 23, 2018 8:30:00')
 	},
 	blocks: [
+		// {
+		// 	component: ResultBlock,
+		// 	data: {
+		// 		result: PropMetaData(11).result,
+		// 		title: "This passed",
+		// 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		// 	},
+		// },
     {
     	component: TextWithTitleBlock,
     	data: {

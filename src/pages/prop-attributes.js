@@ -1,3 +1,5 @@
+import Color from 'layout/colors';
+
 //images
 import Prop1Img from './home/images/prop-1.png'
 import Prop1Img_w from './home/images/prop-1.webp'
@@ -325,10 +327,10 @@ const descriptions = [
 const results = [
   "Y",
   "Y",
-  "N",
+  "U",
   "Y",
-  "N",
-  "N",
+  "U",
+  "U",
   "Y",
   "N",
   "NA",
@@ -336,6 +338,21 @@ const results = [
   "N",
   "Y"
 ]
+
+export const mapResultToText = {
+	"Y":"Passed",
+	"N":"Failed",
+	"U":"TBD",
+	"NA":"Not applicable"
+}
+
+export const mapResultToColor = {
+	"Y":Color('green'),
+	"N":Color('red'),
+	"U":Color('gray2'),
+	"NA":"#000"
+}
+
 
 export const PropMetaData = (n) => (
   {

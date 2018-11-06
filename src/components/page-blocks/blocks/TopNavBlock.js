@@ -8,6 +8,7 @@ import Color from 'layout/colors'
 import {PropMetaData} from 'pages/prop-attributes'
 import PassedIcon from 'components/static/approved.svg'
 import FailedIcon from 'components/static/failed.svg'
+import UndeterminedIcon from 'components/static/undetermined.svg'
 
 const Img = styled(MultisourceImage).attrs({
   style: props => ({
@@ -144,7 +145,7 @@ class NavItem extends React.Component {
     } else if (result === "N") {
       resultIcon = FailedIcon;
     } else {
-      resultIcon = null;
+      resultIcon = UndeterminedIcon;
     }
 
 		return(

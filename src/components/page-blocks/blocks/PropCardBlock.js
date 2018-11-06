@@ -9,6 +9,7 @@ import MultisourceImage from 'components/static/multisource-image'
 import {Spacer} from 'layout/util';
 import {withRouter} from 'react-router-dom'
 import CrossOutX from 'components/static/cross-out-x'
+import {mapResultToText, mapResultToColor} from 'pages/prop-attributes'
 
 const BannerLink = styled(Link)`
 	text-decoration: none;
@@ -125,7 +126,7 @@ const ResultContainer = styled.div`
 	margin-top: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-radius: 2px;
+	border-radius: 8px;
 	border: 4px solid ${props=>(props.color===Color('green'))?Color('green'):'#fff'};
 	box-shadow: 0 0 10px rgba(0,0,0,0.05);
 	background-color: ${props=>(props.color===Color('green'))?'white':props.color};
@@ -136,21 +137,6 @@ const ResultText = styled.h2`
 	font-size: 40px;
 	line-height: 45px;
 `
-
-const mapResultToText = {
-	"Y":"Passed",
-	"N":"Failed",
-	"U":"To be determined",
-	"NA":"Not applicable"
-}
-
-const mapResultToColor = {
-	"Y":Color('green'),
-	"N":Color('red'),
-	"U":Color('gray1'),
-	"NA":"#000"
-}
-
 
 const PropCardBlock = (props) => {
 	const {propNum, color, header, description, linksTo, img, result} = props.data;
