@@ -12,7 +12,7 @@ import {Spacer} from 'layout/util'
 import Citation from 'components/interactive/citation/citation'
 import Color from 'layout/colors'
 
-const Button = styled.a`
+export const Button = styled.a`
 	font-family: ${props=>props.theme.fonts.avant};
 	font-weight: bold;
 	font-size: 14px;
