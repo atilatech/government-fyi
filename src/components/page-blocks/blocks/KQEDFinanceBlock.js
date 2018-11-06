@@ -31,7 +31,7 @@ const KQEDBlock = (props) => {
           <script src='https://www.kqed.org/dist/widgets.js' type='text/javascript'></script>
         </Helmet>
         <div data-kqed-widget data-widget-type='measureFinance' data-widget-id={widgetId}/>
-        <Attrib>Campaign finance graphic brought to you by <a href="https://www.kqed.org/elections/props" target="_blank" rel="noreferrer noopener">KQED</a> and Voter's Edge.</Attrib>
+        <Attrib>Campaign finance graphic brought to you by <a href="https://www.kqed.org/elections/props?ref=ballotfyi" target="_blank" rel="noreferrer noopener">KQED</a> and Voter's Edge.</Attrib>
       </Col>
     </Row>
   )
