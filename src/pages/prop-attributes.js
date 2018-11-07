@@ -325,9 +325,9 @@ const descriptions = [
 ]
 
 const results = [
-  "LY",
   "Y",
-  "LN",
+  "Y",
+  "N",
   "Y",
   "N",
   "N",
