@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Row, Col } from 'react-flexbox-grid';
-import {Spacer} from 'layout/util'
+// import {Spacer} from 'layout/util'
 import Color from 'layout/colors'
-import {mapResultToText, mapResultToColor} from 'pages/prop-attributes'
+import {mapResultToColor} from 'pages/prop-attributes'
 
 /*
 

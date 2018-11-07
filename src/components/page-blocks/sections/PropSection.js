@@ -4,10 +4,10 @@ import {PropMetaData} from 'pages/prop-attributes'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import Color from 'layout/colors'
 import {OrderingContext} from 'ordering-context.js'
-import LastMinImg from 'pages/home/images/lastmin.png'
-import LastMinImg_w from 'pages/home/images/lastmin.webp'
-import LastMinImg_2x from 'pages/home/images/lastmin@2x.png'
-import LastMinImg_2x_w from 'pages/home/images/lastmin@2x.webp'
+// import LastMinImg from 'pages/home/images/lastmin.png'
+// import LastMinImg_w from 'pages/home/images/lastmin.webp'
+// import LastMinImg_2x from 'pages/home/images/lastmin@2x.png'
+// import LastMinImg_2x_w from 'pages/home/images/lastmin@2x.webp'
 
 const ButtonLabel = styled.h2`
   font-size: 16px;
