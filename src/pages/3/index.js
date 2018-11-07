@@ -6,6 +6,8 @@ import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 // import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import {EmojiLg} from 'components/static/iMessageStyles'
+import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from 'pages/prop-attributes'
 
 import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
@@ -21,6 +23,14 @@ const Data = {
 		dateModified: new Date('October 26, 2018 17:07:00')
 	},
 	blocks: [
+		// {
+		// 	component: ResultBlock,
+		// 	data: {
+		// 		result: PropMetaData(3).result,
+		// 		title: "This passed",
+		// 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		// 	},
+		// },
     {
     	component: TextWithTitleBlock,
     	data: {

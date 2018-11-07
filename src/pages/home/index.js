@@ -31,9 +31,12 @@ let Data = {
 			component: FrontPageTitleBlock,
 			data: {
 				title: "A Nonpartisan guide to California's 2018 election",
-				body: <span>This election, California gives us 11 semi-ridiculous, yet very important, ballot initiatives to vote on and make fun of. We'll break them down for you, explain what different sides are saying and why your vote actually matters. <br/><br/>We'll be updating our guide up until Election Day on November 6th, but <Link to="/follow">subscribe</Link> to our newsletter to stay in touch
+				body:
+				<span>
+					This election, California gives us 11 semi-ridiculous, yet very important, ballot initiatives to vote on and make fun of. We'll break them down for you, explain what different sides are saying and why your vote actually matters.
 					<br/><br/>
-					P.S. If you live in SF or San Jose, we have you covered on your local ballot – visit <a href="https://www.bythebay.cool/" target="_blank" rel="noreferrer noopener">By The Bay</a>.</span>,
+					<b>Looking for results?</b> KQED provides <a href="https://www.kqed.org/elections/results?ref=ballotfyi" target="_blank" rel="noreferrer noopener">results</a> for everything local live on election night. We'll be updating ballot.fyi as the outcome is determined.<span role="img" aria-label="crossed-fingers">🤞</span> 
+				</span>,
 			}
 		},
 		{

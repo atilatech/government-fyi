@@ -69,7 +69,7 @@ class PropSection extends React.Component {
         <OrderingContext.Consumer>
           {(context) => {
             const propsInOrder = context.ordering.map( (propNum, i) => {
-              const {color, imageSet, title, socialDescription} = PropMetaData(propNum)
+              const {color, imageSet, title, socialDescription, result} = PropMetaData(propNum)
               return(
                 <PropCardBlock
                   key={i}
@@ -79,6 +79,7 @@ class PropSection extends React.Component {
                     color: color,
                     description: socialDescription,
                     img: imageSet,
+                    result: result,
                     linksTo: `/prop-${propNum}`,
                   }}
                 />

@@ -10,6 +10,12 @@ import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
 // import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
 import DSTSunInteractiveBlock from 'components/page-blocks/blocks/DSTSunInteractiveBlock'
 import {OrderingContext} from 'ordering-context.js'
+<<<<<<< HEAD
+=======
+import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from 'pages/prop-attributes'
+
+>>>>>>> results
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
@@ -56,6 +62,14 @@ class DataWithState extends React.Component {
 				dateModified: new Date('October 22, 2018 10:00:00')
 			},
 			blocks: [
+				// {
+				// 	component: ResultBlock,
+				// 	data: {
+				// 		result: PropMetaData(6).result,
+				// 		title: "This passed",
+				// 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				// 	},
+				// },
 		    {
 		    	component: TextWithTitleBlock,
 		    	data: {

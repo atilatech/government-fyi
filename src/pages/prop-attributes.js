@@ -1,3 +1,5 @@
+import Color from 'layout/colors';
+
 //images
 import Prop1Img from './home/images/prop-1.png'
 import Prop1Img_w from './home/images/prop-1.webp'
@@ -322,6 +324,36 @@ const descriptions = [
   "Guess what 1 square foot looks like relative to a chicken."
 ]
 
+const results = [
+  "U",
+  "U",
+  "U",
+  "U",
+  "U",
+  "U",
+  "U",
+  "U",
+  "NA",
+  "U",
+  "U",
+  "U"
+]
+
+export const mapResultToText = {
+	"Y":"Passed",
+	"N":"Failed",
+	"U":"TBD",
+	"NA":"Not applicable"
+}
+
+export const mapResultToColor = {
+	"Y":Color('green'),
+	"N":Color('red'),
+	"U":Color('gray2'),
+	"NA":"#000"
+}
+
+
 export const PropMetaData = (n) => (
   {
     color: colors[n-1],
@@ -330,7 +362,8 @@ export const PropMetaData = (n) => (
     title: titles[n-1],
     shortTitle: shortTitles[n-1],
     socialHeadline: headlines[n-1],
-    socialDescription: descriptions[n-1]
+    socialDescription: descriptions[n-1],
+    result: results[n-1]
   }
 );
 
