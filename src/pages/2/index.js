@@ -25,7 +25,7 @@ const Data = {
 			data: {
 				result: PropMetaData(2).result,
 				title: "Passed",
-				text: <span>We voted to divert funds from the "Millionaire's Tax" to fund housing for mentally ill homeless residents.</span>,
+				text: <span>We voted to divert funds about $120M a year from the revenue from the "Millionaire's Tax" to essentially fund <em>No Place Like Home</em> – a state program for housing for mentally ill homeless residents.</span>,
 			},
 		},
     {

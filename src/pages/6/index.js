@@ -18,7 +18,7 @@ const Data = {
 	propNum: 6,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 29, 2018 11:09:00')
+		dateModified: new Date('November 7, 2018 14:10:00')
 	},
 	blocks: [
 		{
@@ -26,7 +26,7 @@ const Data = {
 			data: {
 				result: PropMetaData(6).result,
 				title: "Failed",
-				text: "Voters decided to keep last year's gas tax to fund transportation-related improvement projects across the state."
+				text: "Voters decided to keep last year's gas tax to fund transportation-related improvement projects across the state. The gas tax increases and its projects will continue as originally planned."
 			},
 		},
     {

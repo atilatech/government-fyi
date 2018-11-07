@@ -16,7 +16,7 @@ const Data = {
 	propNum: 5,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 26, 2018 17:07:00')
+		dateModified: new Date('November 7, 2018 14:10:00')
 	},
 	blocks: [
 		{
@@ -24,7 +24,7 @@ const Data = {
 			data: {
 				result: PropMetaData(5).result,
 				title: "Failed",
-				text: "The majority of voters decided not to extend a property tax discount to homeowners 55 years or older or for those living with a disability."
+				text: "The majority of voters decided not to extend a property tax discount to homeowners 55 years or older or for those living with a disability. Prop 13 remains as is."
 			},
 		},
     {

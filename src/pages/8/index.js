@@ -17,7 +17,7 @@ const Data = {
 	propNum: 8,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 28, 2018 21:42:00')
+		dateModified: new Date('November 7, 2018 14:10:00')
 	},
 	blocks: [
 		{
@@ -25,7 +25,7 @@ const Data = {
 			data: {
 				result: PropMetaData(8).result,
 				title: "Failed",
-				text: "Californians decided not to cap dialysis clinics' revenue by 115%. This turned out to be one of the most expensive ballot proposition campaigns in U.S. history with both sides spending a total of $111M."
+				text: "Californians decided not to cap dialysis clinics' revenue by 115% of certain costs. This turned out to be one of the most expensive ballot proposition campaigns in U.S. history with both sides spending a total of $111M."
 			},
 		},
     {

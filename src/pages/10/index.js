@@ -18,7 +18,7 @@ const Data = {
 	propNum: 10,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('November 4, 2018 16:31:00')
+		dateModified: new Date('November 7, 2018 14:10:00')
 	},
 	blocks: [
 		{
@@ -26,7 +26,7 @@ const Data = {
 			data: {
 				result: PropMetaData(10).result,
 				title: "Failed",
-				text: <span>Voters decided not to repeal the Costa Hawkins Rental Housing Act, which would have allowed cities to implement rent control for housing built after 1995. <a href="http://www.latimes.com/politics/la-pol-ca-proposition-10-rent-control-20181106-story.html">Read the LA Times' take.</a></span>
+				text: <span>Voters decided not to repeal the <em>Costa Hawkins Rental Housing Act</em>, which would have expanded cities' ability to implement rent control, namely for single-fam homes and buildings built after 1995, and to control rents even when the apartment is vacant between tenants. <a target="_blank" rel="noreferrer noopener" href="http://www.latimes.com/politics/la-pol-ca-proposition-10-rent-control-20181106-story.html">Read the LA Times' take.</a></span>
 			},
 		},
     {

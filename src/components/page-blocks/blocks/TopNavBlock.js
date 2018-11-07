@@ -163,7 +163,7 @@ class NavItem extends React.Component {
 							imageHandles={imageSet}
 							alt={desc}
       />
-            {resultIcon &&
+            {(resultIcon && this.props.propNum+1 !== 9) &&
               <ResultIconContainer>
                 <img src={resultIcon} alt={result}/>
               </ResultIconContainer>}

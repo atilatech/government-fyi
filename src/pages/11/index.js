@@ -17,7 +17,7 @@ const Data = {
 	propNum: 11,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('October 23, 2018 8:30:00')
+		dateModified: new Date('November 7, 2018 14:10:00')
 	},
 	blocks: [
 		{
@@ -25,7 +25,7 @@ const Data = {
 			data: {
 				result: PropMetaData(11).result,
 				title: "Passed",
-				text: "Voters made it legal for private ambulance companies to require paramedics to have on call breaks."
+				text: "Voters made it legal for private ambulance companies to require paramedics to have on call breaks. In addition, all liability for private ambulance companies for unpaid breaks is absolved."
 			},
 		},
     {

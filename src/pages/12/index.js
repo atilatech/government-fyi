@@ -30,7 +30,7 @@ const Data = {
 	propNum: 12,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('November 4, 2018 10:07:00')
+		dateModified: new Date('November 7, 2018 14:10:00')
 	},
 	blocks: [
 		{
@@ -38,7 +38,7 @@ const Data = {
 			data: {
 				result: PropMetaData(12).result,
 				title: "Passed",
-				text: "Carnivore and vegetarian voters decided to implement minimum space requirements for farmed animals and ban cage-free eggs after 2022."
+				text: "Carnivore and vegetarian voters decided to implement minimum space requirements for chickens, pigs, and cows, and ban cage-free eggs by 2022."
 			},
 		},
     {
