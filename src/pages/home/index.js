@@ -35,7 +35,7 @@ let Data = {
 				<span>
 					This election, California gives us 11 semi-ridiculous, yet very important, ballot initiatives to vote on and make fun of. We'll break them down for you, explain what different sides are saying and why your vote actually matters.
 					<br/><br/>
-					<b>Looking for results?</b> KQED provides <a href="https://www.kqed.org/elections/results?ref=ballotfyi" target="_blank" rel="noreferrer noopener">results</a> for everything local live on election night. We'll be updating ballot.fyi as the outcome is determined.<span role="img" aria-label="crossed-fingers">🤞</span> 
+					<b>Looking for results?</b> Our friends at KQED provide <a href="https://www.kqed.org/elections/results?ref=ballotfyi" target="_blank" rel="noreferrer noopener">results</a> for everything local live on election night. We'll be updating ballot.fyi as the outcome is determined.<span role="img" aria-label="crossed-fingers">🤞</span> 
 				</span>,
 			}
 		},
