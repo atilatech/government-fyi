@@ -154,7 +154,7 @@ const PropCardBlock = (props) => {
 					>
 						<Container>
 							<TextContainer>
-								{propNum !== "9" &&
+								{propNum !== "9" && result &&
 									<ResultContainer color={mapResultToColor[result]}>
 										<ResultText color={mapResultToColor[result]}>{mapResultToText[result]}</ResultText>
 									</ResultContainer>

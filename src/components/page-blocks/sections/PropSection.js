@@ -87,13 +87,13 @@ class PropSection extends React.Component {
             });
             return(
               <React.Fragment>
-                <PropCardBlock
+                {/* <PropCardBlock
                   data={{
                     img: {
-                      _1x: LastMinImg,
-                      _1x_webp: LastMinImg_w,
-                      _2x: LastMinImg_2x,
-                      _2x_webp: LastMinImg_2x_w,
+                  _1x: LastMinImg,
+                  _1x_webp: LastMinImg_w,
+                  _2x: LastMinImg_2x,
+                  _2x_webp: LastMinImg_2x_w,
                     },
                     propNum: "",
                     header:"Last minute, procrastinator's guide",
@@ -101,7 +101,7 @@ class PropSection extends React.Component {
                     linksTo:"/procrastinators/",
                     color:"gray",
                   }}
-                />
+                /> */}
                 {propsInOrder}
               </React.Fragment>
             )
