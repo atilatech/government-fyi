@@ -10,12 +10,10 @@ import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
 // import DSTTimezoneMapBlock from 'components/page-blocks/blocks/DSTTimezoneMapBlock'
 import DSTSunInteractiveBlock from 'components/page-blocks/blocks/DSTSunInteractiveBlock'
 import {OrderingContext} from 'ordering-context.js'
-<<<<<<< HEAD
-=======
+
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from 'pages/prop-attributes'
 
->>>>>>> results
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
