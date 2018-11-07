@@ -64,8 +64,8 @@ class DataWithState extends React.Component {
 					component: ResultBlock,
 					data: {
 						result: PropMetaData(6).result,
-						title: "This passed",
-						text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						title: "Passed",
+						text: "Voters authorized the state legislature to possibly change Daylight Saving Time. CA would still need federal approval in order to alter DST."
 					},
 				},
 		    {

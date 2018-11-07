@@ -28,8 +28,8 @@ const Data = {
     	component: ResultBlock,
     	data: {
 				result: PropMetaData(1).result,
-    		title: "This passed",
-    		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    		title: "Passed",
+    		text: "CA voted to issue $4B in housing assistance bonds to help tens of thousands of military veterans, farmworkers, and families afford to live in their homes every year. It'll cost the state a total of $5.9B to repay."
     	},
     },
     {

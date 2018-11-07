@@ -27,8 +27,8 @@ const Data = {
 			component: ResultBlock,
 			data: {
 				result: PropMetaData(3).result,
-				title: "This passed",
-				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				title: "Failed",
+				text: "Voters rejected a $8.9B bond measure that would've funded water and environmental projects in inland CA."
 			},
 		},
     {

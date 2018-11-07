@@ -23,8 +23,8 @@ const Data = {
 			component: ResultBlock,
 			data: {
 				result: PropMetaData(5).result,
-				title: "This passed",
-				text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				title: "Failed",
+				text: "The majority of voters decided not to extend a property tax discount to homeowners 55 years or older or for those living with a disability."
 			},
 		},
     {
