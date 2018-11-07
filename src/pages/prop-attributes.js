@@ -326,17 +326,17 @@ const descriptions = [
 
 const results = [
   "U",
+  "Y",
   "U",
-  "U",
-  "U",
-  "U",
-  "U",
-  "U",
-  "U",
+  "Y",
+  "N",
+  "N",
+  "Y",
+  "N",
   "NA",
-  "U",
-  "U",
-  "U"
+  "N",
+  "Y",
+  "Y"
 ]
 
 export const mapResultToText = {
