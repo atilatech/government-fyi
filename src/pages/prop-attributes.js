@@ -325,9 +325,9 @@ const descriptions = [
 ]
 
 const results = [
-  "U",
+  "LY",
   "Y",
-  "U",
+  "LN",
   "Y",
   "N",
   "N",
@@ -342,13 +342,17 @@ const results = [
 export const mapResultToText = {
 	"Y":"Passed",
 	"N":"Failed",
+  "LY":"Leaning Yes",
+  "LN":"Leaning No",
 	"U":"TBD",
 	"NA":"Not applicable"
 }
 
 export const mapResultToColor = {
 	"Y":Color('green'),
+	"LY":Color('green',0,15),
 	"N":Color('red'),
+	"LN":Color('red',0,15),
 	"U":Color('gray2'),
 	"NA":"#000"
 }
