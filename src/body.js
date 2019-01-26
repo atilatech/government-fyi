@@ -20,9 +20,9 @@ const Body = (props) => {
       <Header location={props.location}/>
       <Route component={logView}/>
       <Switch>
-        <Route exact path='/' component={HomePage}/>
+        <Route exact path='/' component={BRBPage}/>
         <Route path='/home' component={HomePage}/>
-        <Route path='/follow' component={SubscribePage}/>
+        // <Route path='/follow' component={SubscribePage}/>
         <Route path='/prop-1' component={Prop1}/>
         <Route path='/prop-2' component={Prop2}/>
         <Route path='/prop-3' component={Prop3}/>
@@ -37,7 +37,7 @@ const Body = (props) => {
         <Route path='/prop-12' component={Prop12}/>
         <Route path='/about' component={AboutPage}/>
         <Route path='/terms' component={TermsPage}/>
-        <Route path='/print' component={PrintedGuidePage}/>
+        // <Route path='/print' component={PrintedGuidePage}/>
         <Route path='/procrastinators' component={ProcrastinatorsPage}/>
         <Route component={Page404}/>
       </Switch>
@@ -48,6 +48,7 @@ const Body = (props) => {
 
 
 const HomePage = mkLoadable(import("pages/home/index"));
+const BRBPage = mkLoadable(import("pages/coming-soon/index"));
 const AboutPage = mkLoadable(import("pages/about/index"));
 const TermsPage = mkLoadable(import("pages/terms/index"));
 const SubscribePage = mkLoadable(import("pages/subscribe/index"));

@@ -86,21 +86,21 @@ const Data = {
     		],
       }
     },
-    {
-      component: TextWithTitleBlock,
-      data: {
-        nColWidth: 6,
-        title:"🌉 And if you live in San Francisco or San Jose",
-        text:
-        <div>
-          <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer"><Image imageHandles={{_1x:btbImg, _1x_webp: btbImg_w}} alt="By The Bay"/></a>
-          <CenteredText>
-            <Attrib>Art by Stephanie Davidson @asiwillit</Attrib>
-            Check out your voter guide on our Bay Area-specific site <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer">By The Bay</a>.
-          </CenteredText>
-        </div>
-      }
-    }
+    // {
+    //   component: TextWithTitleBlock,
+    //   data: {
+    //     nColWidth: 6,
+    //     title:"🌉 And if you live in San Francisco or San Jose",
+    //     text:
+    //     <div>
+    //       <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer"><Image imageHandles={{_1x:btbImg, _1x_webp: btbImg_w}} alt="By The Bay"/></a>
+    //       <CenteredText>
+    //         <Attrib>Art by Stephanie Davidson @asiwillit</Attrib>
+    //         Check out your voter guide on our Bay Area-specific site <a href="https://www.bythebay.cool" target="_blank" rel="noopener noreferrer">By The Bay</a>.
+    //       </CenteredText>
+    //     </div>
+    //   }
+    // }
   ]
 }
 

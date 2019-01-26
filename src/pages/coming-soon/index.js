@@ -7,10 +7,13 @@ import CalImg_w from './images/california.webp'
 import Line from 'components/static/rounded-line'
 import Color from 'layout/colors'
 
-const LineContainer = styled.div`
-  max-width: 320px;
-  margin: 0 auto;
-`
+import SubscribeForm from 'components/interactive/forms/subscribe-form'
+import {FormContainer, Title} from 'components/interactive/forms/form-styles'
+
+// const LineContainer = styled.div`
+//   max-width: 320px;
+//   margin: 0 auto;
+// `
 
 const Container = styled.div`
   text-align: left;
@@ -22,12 +25,13 @@ const Container = styled.div`
 `
 const BigH1 = styled.h1`
   font-weight: bold;
-  letter-spacing: -6.3px;
+  letter-spacing: -4.3px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 110px;
   line-height: 100px;
+
   @media screen and (max-width: 767px) {
     font-size: 70px;
     line-height: 65px;
@@ -73,24 +77,22 @@ const TempHome = () => {
   return(
     <Container>
       <Spacer height={110}/>
-      <BigH1>Coming back <br/>soon.</BigH1>
-      <LineContainer>
-        <Line color={Color('blue1')}/>
-      </LineContainer>
+      <BigH1>2020 – see you soon enough</BigH1>
       <Spacer height={20}/>
       <RightJustify>
         <ImgWrapper>
           <Img imageHandles={{_1x:CalImg, _1x_webp: CalImg_w}} alt="California election"/>
         </ImgWrapper>
         <Description>
-          We're researching California's 11 ballot measures to give you the quickest nonpartisan voter guide for November 6, 2018. It will be waaay better than the one we made in <a href="https://original.ballot.fyi/">2016</a>. In the meantime, you can preview the <a href="https://www.bythebay.cool/ballot-preview/">California state propositions</a> and races on our sister site, covering San Francisco, <a href="https://www.bythebay.cool/">bythebay.cool</a>.<br/><br/>If you think you might forget about poor old me, <a rel='noopener noreferrer' href="https://tinyletter.com/ballotfyi" target="_blank">we can email you</a> when we're done.
+            <Spacer height={30}/>
+            <Title>We can let you know when we're back</Title>
+            <FormContainer>
+              <SubscribeForm/>
+            </FormContainer>
         </Description>
 
       </RightJustify>
       <Spacer height={20}/>
-      <LineContainer>
-        <Line color={Color('blue1')}/>
-      </LineContainer>
       <Spacer height={70} xsHeight={30}/>
     </Container>
   )

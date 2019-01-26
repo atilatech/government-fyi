@@ -64,8 +64,8 @@ const Footer = (props) => {
           <a className="twitter-share-button" href="https://twitter.com/intent/tweet?text=A%20nonpartisan%20voter%20guide%20to%20California%27s%20propositions%20this%20election" data-size="large">Tweet</a>
         </SocialButtons>
         <TextContainer>
-          Site designed, built, and written by Amir & Erica © 2018 <span role="img" aria-label="US flag">🇺🇸</span>
-          <br/>Until Nov. 7, 2018, we will continually update the site. Please <Acronym singleClick highlightOnClick expanded="fax@ballot.fyi" acronym="e-send us"/> suggestions and correctións with supporting sources.
+          Site designed, built, and written by Citizen & Citizens © 2016 – 2019 <span role="img" aria-label="US flag">🇺🇸</span>
+          <br/> We'll be back when California has more state propositions in 2020. Please send us any facts you'd like to fax@ballot.fyi.
         </TextContainer>
         <div>{navItems}</div>
       </FooterContainer>
@@ -77,8 +77,8 @@ const Footer = (props) => {
 const nav = [
   { to:"/about/", label:"about"},
   { to:"/about#contact", label:"contact"},
-  { to:"/follow/", label:"subscribe"},
-  { to:"/print/", label:"printed guide"},
+  // { to:"/follow/", label:"subscribe"},
+  // { to:"/print/", label:"printed guide"},
   { to:"/terms/", label:"terms of service"},
 ];
 

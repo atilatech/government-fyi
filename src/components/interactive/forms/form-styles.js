@@ -89,7 +89,7 @@ export const SubmitButtonWithStyle = styled(SubmitButton)`
   text-align:center;
   display: block;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 0;
   padding: 10px 25px;
   color: ${Color('pink2')};
   border: 2px solid ${Color('pink2')};
@@ -120,7 +120,7 @@ export const SubmittingStyle = styled(buttonStyle)`
 `;
 
 export const FormContainer = styled.div`
-  padding: 30px 70px;
+  padding: 30px 30px;
   box-sizing: border-box;
   border 2px solid black;
   border-radius: 3px;

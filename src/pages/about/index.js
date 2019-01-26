@@ -94,10 +94,11 @@ const Data = {
     {
       component: TextWithTitleBlock,
       data: {
-        title: "About Amir & Erica",
-        text: <span>Amir & Erica (you know, like "America") was created by Jimmy Chion (a designer and engineer) and Yvonne Leow (a journalist) with the help and balance of many friends, left and right. We first made ballot.fyi in <a target="_blank" rel="noopener noreferrer" href="https://original.ballot.fyi/">2016</a>. It reached a million people in one month, and in 2017, we received a $75K grant from The John S. and James L. Knight Foundation to continue ballot.fyi into 2018. <a href="https://knightfoundation.org/" target="_blank" rel="noopener noreferrer">The Knight Foundation</a> promotes informed and engaged communities through funding in journalism, arts, and technology.
-					<br/><br/>
-					If you live in San Francisco or San Jose, we created <a href="https://www.bythebay.cool/" target="_blank" rel="noopener noreferrer">By The Bay</a> to cover those local propositions. </span>,
+        title: "About Citizen & Citizens",
+        text: <span>Ballot.fyi is designed, coded, and written by Jimmy Chion, with the help of many friends, left and right. The first ballot.fyi, <a target="_blank" rel="noopener noreferrer" href="https://original.ballot.fyi/">2016 edition</a>, reached a million people in one month. Soon afterwards, we received a $75K grant to write ballot.fyi for 2018. The grant came from <a href="https://knightfoundation.org/" target="_blank" rel="noopener noreferrer">The John S. and James L. Knight Foundation</a> – a nonpartisan org that promotes informed communities through funding in journalism, technology, and the arts.
+				<br/><br/>
+				In addition to ballot.fyi, Jimmy Chion and Yvonne Leow started <em>By The Bay</em> in early 2018, a local media site for the Bay Area, covering local issues and elections. By The Bay was shut down in early 2019, but ballot.fyi – which will only cover state-wide ballot initiatives – will continue as a volunteer-led project for as long as California propositions need explaining.
+					</span>,
         nColWidth: 6,
       }
     },
@@ -109,20 +110,20 @@ const Data = {
         nColWidth: 6,
       }
     },
-    {
-      component: TextWithTitleBlock,
-      data: {
-        title: "Support us",
-        text:
-					<span id="contact">
-						We've spent months researching and writing the content you see on this site. We're a small team, and we want to make sure we can do this again in 2020. If you like what you see, please consider <a href="https://www.bythebay.cool/contribute/">making a contribution</a>. You can do so through our sister site at By The Bay.
-						<Button href="https://www.bythebay.cool/contribute/">
-							Make this happen again
-						</Button>
-					</span>,
-        nColWidth: 6,
-      }
-    },
+    // {
+    //   component: TextWithTitleBlock,
+    //   data: {
+    //     title: "Support us",
+    //     text:
+		// 			<span id="contact">
+		// 				We've spent months researching and writing the content you see on this site. We're a small team, and we want to make sure we can do this again in 2020. If you like what you see, please consider <a href="https://www.bythebay.cool/contribute/">making a contribution</a>. You can do so through our sister site at By The Bay.
+		// 				<Button href="https://www.bythebay.cool/contribute/">
+		// 					Make this happen again
+		// 				</Button>
+		// 			</span>,
+    //     nColWidth: 6,
+    //   }
+    // },
   ]
 }
 

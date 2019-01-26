@@ -73,7 +73,7 @@ class SubscribeForm extends React.Component {
       <SubmitButtonWithStyle
         id='submit-btn'
         type="submit"
-        value="join"
+        value="Cya later"
         name="subscribe"
       />
     switch(this.state.subscribeStatus) {
