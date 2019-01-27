@@ -84,6 +84,8 @@ const TempHome = () => {
           <Img imageHandles={{_1x:CalImg, _1x_webp: CalImg_w}} alt="California election"/>
         </ImgWrapper>
         <Description>
+            The Terminator – and former Governator – once fictionally said, "I'll be back." He said that to say he'll save the world, in the future. He proceeds to then drive a truck through a wall, thus returning to his original location. That quote aptly applies to this situation because in 2020, we'll be back to help you break down the tough California ballot propositions.
+            <br/><br/>Expect to vote on bonds in the billions, Prop 13, and whether electric scooters are cool or not.
             <Spacer height={30}/>
             <Title>We can let you know when we're back</Title>
             <FormContainer>
