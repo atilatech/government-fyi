@@ -70,8 +70,8 @@ const Img = styled(MultisourceImage)`
     margin-top: 30px;
     align-self: center;
   }
-
 `
+
 
 const TempHome = () => {
   return(
@@ -84,16 +84,17 @@ const TempHome = () => {
           <Img imageHandles={{_1x:CalImg, _1x_webp: CalImg_w}} alt="California election"/>
         </ImgWrapper>
         <Description>
-            The Terminator – and former Governator – once fictionally said, "I'll be back." He said that to say he'll save the world, in the future. He proceeds to then drive a truck through a wall, thus returning to his original location. That quote aptly applies to this situation because in 2020, we'll be back to help you break down the tough California ballot propositions.
-            <br/><br/>Expect to vote on bonds in the billions, Prop 13, and whether electric scooters are cool or not.
-            <Spacer height={30}/>
-            <Title>We can let you know when we're back</Title>
-            <FormContainer>
-              <SubscribeForm/>
-            </FormContainer>
+          Arnold Schwarzenegger, California's former governor and Earth's cybernetic savior, used to fictionally say, "I'll be back." (Go ahead, say it in your best male model German accent.) In one instance, he says this catchprhase, leaves the premises, and then drives a truck through the wall, thus returning. This quote aptly sums up ballot.fyi because in 2020, we'll be back, to help you break down the walls of text that are the California ballot propositions.
+          <br/><br/>
+          In 2020, expect to vote on what to do with billions of dollars, Prop 13 <a href="https://www.sacbee.com/news/politics-government/capitol-alert/article220077410.html" rel="noopener noreferrer" target="_blank">reform</a>, and inevitably much more. <span role="img" aria-label="grimmacing">😬</span>
+          <Spacer height={30}/>
+          <Title>We can let you know when we're back</Title>
+          <FormContainer>
+          <SubscribeForm/>
+          </FormContainer>
         </Description>
-
       </RightJustify>
+
       <Spacer height={20}/>
       <Spacer height={70} xsHeight={30}/>
     </Container>
