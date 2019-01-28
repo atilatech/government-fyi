@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Color from 'layout/colors'
 import {Link} from 'react-router-dom'
 import {Spacer} from 'layout/util'
-import Acronym from 'components/interactive/acronym'
+// import Acronym from 'components/interactive/acronym'
 import Line from 'components/static/rounded-line'
 
 const LineContainer = styled.div`

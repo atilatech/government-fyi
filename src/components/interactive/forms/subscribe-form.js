@@ -73,7 +73,7 @@ class SubscribeForm extends React.Component {
       <SubmitButtonWithStyle
         id='submit-btn'
         type="submit"
-        value="Cya later"
+        value="sign me up"
         name="subscribe"
       />
     switch(this.state.subscribeStatus) {
@@ -83,7 +83,7 @@ class SubscribeForm extends React.Component {
         button = <SubmittingStyle>Maybe...</SubmittingStyle>
         break;
       case "success":
-        button = <SuccessStyle>You're in!</SuccessStyle>;
+        button = <SuccessStyle>Signed up!</SuccessStyle>;
         break;
       case "error":
       default:

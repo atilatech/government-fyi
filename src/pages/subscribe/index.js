@@ -1,35 +1,35 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import SubscribeBlock from 'components/page-blocks/blocks/SubscribeBlock'
 import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import FluidColumnsBlock from 'components/page-blocks/blocks/FluidColumnsBlock'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
+// import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
-import btbImg from './images/btb.png'
-import btbImg_w from './images/btb.webp'
+// import btbImg from './images/btb.png'
+// import btbImg_w from './images/btb.webp'
 // import TwitImg from 'pages/home/images/prop-12.png'
 // import TwitImg_w from 'pages/home/images/prop-12.webp'
-import MultisourceImage from 'components/static/multisource-image'
+// import MultisourceImage from 'components/static/multisource-image'
 import IGImg from './images/insta.png'
 import IGImg_w from './images/insta.webp'
 import IGImg_2x from './images/insta@2x.png'
 import IGImg_2x_w from './images/insta@2x.webp'
 
-const CenteredText = styled.div`
-  text-align: center;
-`
-const Image = styled(MultisourceImage)`
-  display: block;
-  width: 150px;
-  margin: 10px auto;
-`
-const Attrib = styled.h3`
-  display: block;
-  font-size: 10px;
-  color: #999;
-  margin-bottom: 20px
-`
+// const CenteredText = styled.div`
+//   text-align: center;
+// `
+// const Image = styled(MultisourceImage)`
+//   display: block;
+//   width: 150px;
+//   margin: 10px auto;
+// `
+// const Attrib = styled.h3`
+//   display: block;
+//   font-size: 10px;
+//   color: #999;
+//   margin-bottom: 20px
+// `
 
 const Data = {
 	pageId:"subscribe-page",
