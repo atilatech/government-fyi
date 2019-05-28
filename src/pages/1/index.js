@@ -6,7 +6,6 @@ import SummaryListBlock from 'components/page-blocks/blocks/SummaryListBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 import BondData from './bond-data.json'
 import Color from 'layout/colors'
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
@@ -141,12 +140,6 @@ const Data = {
 						body: "We can debate housing forever. People need homes now. Prop 1 is the quickest way to help."
 					}
 				]
-			}
-		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3247",
 			}
 		},
 		{

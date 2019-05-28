@@ -5,7 +5,6 @@ import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
 import VerticalSummaryListBlock from 'components/page-blocks/blocks/VerticalSummaryListBlock'
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 import {EmojiLg} from 'components/static/iMessageStyles'
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
@@ -289,12 +288,6 @@ const Data = {
 						body:"We don't have much of a choice. CA's housing situation is dire and cities need more options."
 					}
 				]
-			}
-		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3255",
 			}
 		},
 		{

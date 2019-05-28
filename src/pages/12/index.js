@@ -4,7 +4,6 @@ import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import ImgLateralBlock from 'components/page-blocks/blocks/ImgLateralBlock'
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from 'pages/prop-attributes'
 
@@ -138,12 +137,6 @@ const Data = {
 					<br/><br/>
 					<Citation data={Citations['21']}>Supporters of Prop 12 say less crammed animals will mean less salmonella outbreaks,</Citation> thus making this a public safety issue, not simply an animal treatment issue.
 				</span>
-			}
-		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3257",
 			}
 		},
 		{

@@ -17,7 +17,6 @@ import {PropMetaData} from 'pages/prop-attributes'
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 // -- import images
 import dstOn from './images/dst-on.png'
@@ -233,12 +232,6 @@ class DataWithState extends React.Component {
 								body:"#abolishDST"
 							}
 						]
-					}
-				},
-				{
-					component: KQEDFinanceBlock,
-					data:{
-						widgetId:"3253",
 					}
 				},
 				{

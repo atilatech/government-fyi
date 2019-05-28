@@ -3,7 +3,6 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from 'pages/prop-attributes'
 
@@ -70,12 +69,6 @@ const Data = {
 					If Prop 5 passes, <Citation data={Citations['6']}>the nonpartisan Legislative Analyst’s Office estimates that CA schools and local governments would lose a total of over $100M a year in property taxes for the first few years and eventually lose about a $1B a year.</Citation> <Citation data={Citations['5']}>This even takes into account potentially <em>new</em> homeowners paying market-price property taxes.</Citation>
 
 				</span>
-			}
-		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3251",
 			}
 		},
 		{

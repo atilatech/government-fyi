@@ -5,7 +5,6 @@ import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import SummaryListBlock from 'components/page-blocks/blocks/SummaryListBlock'
 import FluidColumnsBlock from 'components/page-blocks/blocks/FluidColumnsBlock'
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from 'pages/prop-attributes'
 
@@ -128,12 +127,6 @@ const Data = {
 					},
 				],
 			},
-		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3252",
-			}
 		},
 		{
 			component: SectionTitleBlock,

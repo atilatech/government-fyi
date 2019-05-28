@@ -34,8 +34,6 @@ let Data = {
 				body:
 				<span>
 					This election, California gives us 11 semi-ridiculous, yet very important, ballot initiatives to vote on and make fun of. We'll break them down for you, explain what different sides are saying and why your vote actually matters.
-          <br/><br/>
-          Now that the election is over, please consider <a target="_blank" rel="noopener noreferrer" href="https://www.bythebay.cool/contribute/">making a contribution</a> to make sure we can do this again in 2020. <span role="img" aria-label="american flag">🇺🇸</span>
         </span>,
 			}
 		},

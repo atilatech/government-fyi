@@ -9,7 +9,6 @@ import {EmojiLg} from 'components/static/iMessageStyles'
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from 'pages/prop-attributes'
 
-import KQEDFinanceBlock from 'components/page-blocks/blocks/KQEDFinanceBlock'
 
 import Citation from 'components/interactive/citation/citation'
 // import Acronym from 'components/interactive/acronym'
@@ -138,12 +137,6 @@ const Data = {
 					},
 
 				]
-			}
-		},
-		{
-			component: KQEDFinanceBlock,
-			data:{
-				widgetId:"3249",
 			}
 		},
 		{
