@@ -65,7 +65,7 @@ const Footer = (props) => {
         </SocialButtons>
         <TextContainer>
           Site designed, built, and written by Citizen & Citizens © 2016 – 2019 <span role="img" aria-label="US flag">🇺🇸</span>
-          <br/> We'll be back when California has more state propositions in 2020. Please send us any facts you'd like to fax@ballot.fyi.
+          <br/> We'll be back when California has more state propositions in 2020.
         </TextContainer>
         <div>{navItems}</div>
       </FooterContainer>
