@@ -37,7 +37,7 @@ const Data = {
 			data: {
 				result: PropMetaData(12).result,
 				title: "Passed",
-				text: "Carnivore and vegetarian voters decided to implement minimum space requirements for chickens, pigs, and cows, and ban cage-free eggs by 2022."
+				text: "Carnivore and vegetarian voters decided to implement minimum space requirements for chickens, pigs, and cows, and require cage-free eggs by 2022."
 			},
 		},
     {
