@@ -62,7 +62,7 @@ class DataWithState extends React.Component {
 				{
 					component: ResultBlock,
 					data: {
-						result: PropMetaData(6).result,
+						result: PropMetaData(7).result,
 						title: "Passed",
 						text: <span>Voters authorized the state legislature to possibly change how we as a state observe Daylight Saving Time. With a two-thirds vote, it can now decide to take us off DST, like Hawaii and Arizona. (i.e. no clock changing, and we wouldn't observe DST in the summer.) Or, with a two-thirds vote <em>and</em> federal approval, CA could move to year-round DST, which is what's being talked about.</span>
 					},
