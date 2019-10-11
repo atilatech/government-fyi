@@ -1,6 +1,6 @@
 {
   "name": "ballotfyi",
-  "version": "0.1.0",
+  "version": "2.0.18",
   "private": true,
   "dependencies": {
     "d3-array": "^1.2.4",
