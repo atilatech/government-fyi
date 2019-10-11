@@ -29,7 +29,7 @@ const BigH1 = styled.h1`
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 110px;
+  font-size: 92px;
   line-height: 100px;
 
   @media screen and (max-width: 767px) {
