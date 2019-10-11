@@ -77,18 +77,18 @@ const TempHome = () => {
   return(
     <Container>
       <Spacer height={110}/>
-      <BigH1>2020 – see you soon enough</BigH1>
+      <BigH1>See you in 2020</BigH1>
       <Spacer height={20}/>
       <RightJustify>
         <ImgWrapper>
           <Img imageHandles={{_1x:CalImg, _1x_webp: CalImg_w}} alt="California election"/>
         </ImgWrapper>
         <Description>
-          Arnold Schwarzenegger, California's former governor and Earth's cybernetic savior, used to fictionally say, "I'll be back." (Go ahead, say it in your best male model German accent.) In one instance, he says this catchprhase, leaves the premises, and then drives a truck through the wall, thus returning. This quote aptly sums up ballot.fyi because in 2020, we'll be back, to help you break down the walls of text that are the California ballot propositions.
+          Arnold Schwarzenegger, California's former governor and Earth's cybernetic savior, used to fictionally say, "I'll be back." (Go ahead, say it in your best male model German accent.) In one instance, he says this catchphrase, leaves the premises, and then drives a truck through the wall, thus returning. This quote aptly sums up ballot.fyi because in 2020, we'll be back, to help you break down the walls of text that are the California ballot propositions.
           <br/><br/>
-          In 2020, expect to vote on what to do with billions of dollars, Prop 13 <a href="https://www.fresnobee.com/news/politics-government/politics-columns-blogs/political-notebook/article216680685.html" rel="noopener noreferrer" target="_blank">reform</a>, and inevitably much more. <span role="img" aria-label="grimmacing">😬</span>
+          Sorry we can't help this November, but in a year, expect to vote on what to do with billions of dollars, Prop 13 <a href="https://www.fresnobee.com/news/politics-government/politics-columns-blogs/political-notebook/article216680685.html" rel="noopener noreferrer" target="_blank">reform</a>, and inevitably much more. <span role="img" aria-label="grimmacing">😬</span>
           <Spacer height={30}/>
-          <Title>We can let you know when we're back</Title>
+          <Title>We can let you know when we're back.</Title>
           <FormContainer>
           <SubscribeForm/>
           </FormContainer>
