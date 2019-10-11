@@ -121,11 +121,11 @@ class Header extends React.Component {
 }
 
 const nav = [
-  { to:"/home/", label:"Props (2018)", longLabel: "CA Propositions (2018)"},
+  { to:"/home/", label:"Props", longLabel: "CA Propositions (2018)"},
   // { to:"/races/", label:"Races"},
   { to:"/about/", label:"About", longLabel:"About us"},
-  // { to:"/follow/", label:"Follow us", icon:""},
-  // { to:"/print/", label:"Print", longLabel: "Printed guide", icon:""},
+  { to:"/follow/", label:"Follow us", icon:""},
+  { to:"/print/", label:"Print", longLabel: "Printed guide", icon:""},
 
 ];
 
