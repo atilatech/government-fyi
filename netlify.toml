@@ -8,7 +8,7 @@ ID = "ballot_fyi"
 
 [build]
   publish = "build"
-  command = "yarn build"
+  command = "react-scripts build"
 
 [build.environment]
   YARN_VERSION = "1.9.4"
