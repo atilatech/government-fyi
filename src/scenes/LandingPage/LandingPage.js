@@ -28,7 +28,7 @@ class LandingPage extends React.Component {
     }
     render() {
         return (
-                <div className="LandingPage container p-">
+                <div>
                     <Banner isMobile={this.state.isMobile} />
                     <PropSection />
                 </div>

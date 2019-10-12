@@ -17,7 +17,7 @@ class Banner extends React.Component {
   render() {
 
     return (
-        <React.Fragment>
+        <div className="Banner container p-5">
           <QueueAnim type="alpha" delay={150}>
             <Row>
               <Col md={12} xs={24}>
@@ -42,26 +42,26 @@ class Banner extends React.Component {
                   </h2>
                 </QueueAnim>
               </Col>
-              <Col md={12} xs={24}>
+              <Col md={{span: 9, offset: 3}} xs={24} className="px-4">
                 <QueueAnim
                     className="text-wrapper responsive-text"
                     key="text"
                     type="bottom"
                 >
-                  <div className="col-sm-12 font-size-xl">
-                    <h4>Learn More About </h4>
-                    <ul>
-                      <li>Housing</li>
-                      <li>Jobs and Economy</li>
-                      <li>Education</li>
-                      <li>Energy and Environment</li>
+                  <div className="col-sm-12">
+                    <h2> What do the Different parties think about </h2>
+                    <ul className="col-sm-12 font-size-xl">
+                      <li><a href="/#prop-1">Housing</a></li>
+                      <li><a href="/#prop-1">Jobs and Economy</a></li>
+                      <li><a href="/#prop-1">Education</a></li>
+                      <li><a href="/#prop-1">Energy and Environment</a></li>
                     </ul>
                   </div>
                 </QueueAnim>
               </Col>
             </Row>
           </QueueAnim>
-        </React.Fragment>
+        </div>
     );
   }
 }

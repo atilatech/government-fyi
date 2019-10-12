@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.23.6",
+    "bootstrap": "^4.3.1",
     "d3-array": "^1.2.4",
     "d3-axis": "^1.0.12",
     "d3-dsv": "^1.0.10",
@@ -24,6 +25,7 @@
     "rc-scroll-anim": "^2.6.2",
     "rc-tween-one": "^2.6.5",
     "react": "^16.4.1",
+    "react-bootstrap": "^1.0.0-beta.14",
     "react-click-outside": "^3.0.1",
     "react-dom": "^16.4.1",
     "react-flexbox-grid": "^2.1.2",
