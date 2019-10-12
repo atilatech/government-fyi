@@ -56,7 +56,7 @@ class Head extends React.Component{
             "headline": "${headline && (headline).replace(/"/g, "'")}",
             "name": "${title && (title).replace(/"/g, "'")}",
             "url": "${url}",
-            "image": "${("https://www.ballot.fyi/socialimages/" + image) || ""}",
+            "image": "${("https://www.ourgovernment.fyi/socialimages/" + image) || ""}",
             "datePublished": "${dateCreated || ""}",
             "dateCreated": "${dateCreated || ""}",
             "dateModified": "${dateModified || dateCreated || ""}",
@@ -67,19 +67,19 @@ class Head extends React.Component{
             },
             "author": {
               "@type": "Organization",
-              "name":"ballot.fyi",
-              "url":"https://www.ballot.fyi/"
+              "name":"ourgovernment.fyi",
+              "url":"https://www.ourgovernment.fyi/"
             },
             "Publisher": {
               "@type": "Organization",
-              "name":"ballot.fyi",
-              "url":"https://www.ballot.fyi/",
+              "name":"ourgovernment.fyi",
+              "url":"https://www.ourgovernment.fyi/",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://www.ballot.fyi/touch-icon-512x512.png"
+                "url": "https://www.ourgovernment.fyi/touch-icon-512x512.png"
               },
-              "description": "ballot.fyi is a nonpartisan voter guide for California's statewide elections",
-              "email": "fax@ballot.fyi",
+              "description": "ourgovernment.fyi is a nonpartisan voter guide for California's statewide elections",
+              "email": "fax@ourgovernment.fyi",
               "founder": ["Jimmy Chion", "Yvonne Leow"],
               "sameAs": [
                 "https://www.facebook.com/ballotfyi/",
@@ -96,7 +96,7 @@ class Head extends React.Component{
         {
           "@context": "http://schema.org",
           "@type": "WebPage",
-          "name": "ballot.fyi",
+          "name": "ourgovernment.fyi",
           "alternateName": "ballotfyi",
           "headline":"${title}",
           "url": "${url}",
@@ -104,12 +104,12 @@ class Head extends React.Component{
           "copyrightYear":"2018",
           "creator":{
             "@type": "Organization",
-            "name": "ballot.fyi",
-            "description": "ballot.fyi is a nonpartisan voter guide for California elections",
-            "url": "https://www.ballot.fyi/",
-            "email": "fax@ballot.fyi",
+            "name": "ourgovernment.fyi",
+            "description": "ourgovernment.fyi is a nonpartisan voter guide for California elections",
+            "url": "https://www.ourgovernment.fyi/",
+            "email": "fax@ourgovernment.fyi",
             "founder": ["Jimmy Chion", "Yvonne Leow"],
-            "logo": "https://www.ballot.fyi/touch-icon-512x512.png",
+            "logo": "https://www.ourgovernment.fyi/touch-icon-512x512.png",
             "sameAs": [
               "https://www.facebook.com/ballotfyi/",
               "https://twitter.com/ballotfyi/",
@@ -118,7 +118,7 @@ class Head extends React.Component{
           },
           "image":{
             "@type":"ImageObject",
-            "URL": "https://s3.amazonaws.com/ballot.fyi/static/img/share-twit.png"
+            "URL": "https://s3.amazonaws.com/ourgovernment.fyi/static/img/share-twit.png"
           }
         }
         `
@@ -139,7 +139,7 @@ class Head extends React.Component{
         <meta prefix="og: http://ogp.me/ns#" property="og:type"         content="website" />
         <meta prefix="og: http://ogp.me/ns#" property="og:title"        content={headline} />
         <meta prefix="og: http://ogp.me/ns#" property="og:description"  content={description} />
-        <meta prefix="og: http://ogp.me/ns#" property="og:image"        content={"https://www.ballot.fyi/socialimages/" + image} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:image"        content={"https://www.ourgovernment.fyi/socialimages/" + image} />
         <meta prefix="og: http://ogp.me/ns#" property="og:locale"       content="en_US" />
         <meta prefix="og: http://ogp.me/ns#" property="fb:app_id"       content="1134187086655814" />
 
@@ -147,7 +147,7 @@ class Head extends React.Component{
         <meta name="twitter:site"        content="@ballotfyi" />
         <meta name="twitter:title"       content={headline} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image"       content={"https://www.ballot.fyi/socialimages/" + image} />
+        <meta name="twitter:image"       content={"https://www.ourgovernment.fyi/socialimages/" + image} />
 
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="mobile-web-app-capable" content="yes"/>
@@ -173,8 +173,8 @@ class Head extends React.Component{
 }
 
 Head.defaultProps = {
-  url: "https://www.ballot.fyi/",
-  title: "2018 California State Propositions – ballot.fyi",
+  url: "https://www.ourgovernment.fyi/",
+  title: "2018 California State Propositions – ourgovernment.fyi",
   headline: "The quickest nonpartisan voter guide for the midterms",
   description: "11 CA propositions including daylight savings, cage-free eggs, and housing",
   image: "general.png",

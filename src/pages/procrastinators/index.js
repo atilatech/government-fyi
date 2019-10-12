@@ -49,7 +49,7 @@ const Btn = (props) => (
 const Data = {
 	pageId: "procrastinators",
 	meta: {
-		canonicalUrl:"https://www.ballot.fyi/procrastinators/",
+		canonicalUrl:"https://www.ourgovernment.fyi/procrastinators/",
 		documentTitle:"Procrastinator's guide to the election",
 		socialHeadline:"Last-minute, procrastinators guide to CA's 11 props",
 		socialDescription:"Get smart about the ballot in five minutes.",

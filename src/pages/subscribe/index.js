@@ -34,9 +34,9 @@ import IGImg_2x_w from './images/insta@2x.webp'
 const Data = {
 	pageId:"subscribe-page",
 	meta: {
-		canonicalUrl:"https://www.ballot.fyi/follow/",
-		documentTitle:"Follow us – ballot.fyi",
-		socialHeadline:"Receive updates from ballot.fyi",
+		canonicalUrl:"https://www.ourgovernment.fyi/follow/",
+		documentTitle:"Follow us – ourgovernment.fyi",
+		socialHeadline:"Receive updates from ourgovernment.fyi",
 		socialDescription:"11 CA propositions including daylight savings, cage-free eggs, and housing",
 		socialImage:"general.png",
 	},

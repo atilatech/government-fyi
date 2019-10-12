@@ -48,8 +48,8 @@ export const Button = styled.a`
 const Data = {
 	pageId: "about-page",
 	meta: {
-		canonicalUrl:"https://www.ballot.fyi/about/",
-		documentTitle:"About | ballot.fyi",
+		canonicalUrl:"https://www.ourgovernment.fyi/about/",
+		documentTitle:"About | ourgovernment.fyi",
 		socialHeadline:"We make you smart, at least for voting",
 		socialDescription:"By breaking down all the state propositions for this November",
 		socialImage:"general.png",
@@ -68,7 +68,7 @@ const Data = {
         alt: "Venn diagram of a debate and politifact",
         title: "nonpartisan",
         flipped: true,
-        body: <span>We're tired of fliers telling us how to vote. ballot.fyi doesn't tell you what to do, instead we give you the facts and arguments about each proposition so you can come to your own conclusion. <Citation publication="The trusted source" headline="that we fact-checked" directQuote="And we'll include an excerpt from the link so you can get just a little more context.">We cite all of our sources (try clicking this little circle </Citation>) and try to represent all relevant perspectives – that's what we mean by nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, email us at fax@ballot.fyi (with sources cited)</span>
+        body: <span>We're tired of fliers telling us how to vote. ourgovernment.fyi doesn't tell you what to do, instead we give you the facts and arguments about each proposition so you can come to your own conclusion. <Citation publication="The trusted source" headline="that we fact-checked" directQuote="And we'll include an excerpt from the link so you can get just a little more context.">We cite all of our sources (try clicking this little circle </Citation>) and try to represent all relevant perspectives – that's what we mean by nonpartisan. But, we're human, and we don't know everything, so if you know something we didn't cover, email us at fax@ourgovernment.fyi (with sources cited)</span>
       }
     },
     {
@@ -95,9 +95,9 @@ const Data = {
       component: TextWithTitleBlock,
       data: {
         title: "About Citizen & Citizens",
-        text: <span>Ballot.fyi is designed, coded, and written by Jimmy Chion, with the help of many friends, left and right. The first ballot.fyi, <a target="_blank" rel="noopener noreferrer" href="https://original.ballot.fyi/">2016 edition</a>, reached a million people in one month. Soon afterwards, we received a $75K grant to write ballot.fyi for 2018. The grant came from <a href="https://knightfoundation.org/" target="_blank" rel="noopener noreferrer">The John S. and James L. Knight Foundation</a> – a nonpartisan org that promotes informed communities through funding in journalism, technology, and the arts.
+        text: <span>ourgovernment.fyi is designed, coded, and written by Jimmy Chion, with the help of many friends, left and right. The first ourgovernment.fyi, <a target="_blank" rel="noopener noreferrer" href="https://original.ourgovernment.fyi/">2016 edition</a>, reached a million people in one month. Soon afterwards, we received a $75K grant to write ourgovernment.fyi for 2018. The grant came from <a href="https://knightfoundation.org/" target="_blank" rel="noopener noreferrer">The John S. and James L. Knight Foundation</a> – a nonpartisan org that promotes informed communities through funding in journalism, technology, and the arts.
 				<br/><br/>
-				In addition to ballot.fyi, Jimmy Chion and Yvonne Leow started <em>By The Bay</em> in early 2018, a local media site for the Bay Area, covering local issues and elections. By The Bay was shut down in early 2019, but ballot.fyi – which will only cover state-wide ballot initiatives – will continue as a volunteer-led project for as long as California propositions need explaining.
+				In addition to ourgovernment.fyi, Jimmy Chion and Yvonne Leow started <em>By The Bay</em> in early 2018, a local media site for the Bay Area, covering local issues and elections. By The Bay was shut down in early 2019, but ourgovernment.fyi – which will only cover state-wide ballot initiatives – will continue as a volunteer-led project for as long as California propositions need explaining.
 					</span>,
         nColWidth: 6,
       }
@@ -106,7 +106,7 @@ const Data = {
       component: TextWithTitleBlock,
       data: {
         title: "Contact",
-        text: <span id="contact">Know something we don't?<br/><br/>Perfect. Email us the goods at fax@ballot.fyi.</span>,
+        text: <span id="contact">Know something we don't?<br/><br/>Perfect. Email us the goods at fax@ourgovernment.fyi.</span>,
         nColWidth: 6,
       }
     },

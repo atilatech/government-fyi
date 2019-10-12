@@ -78,8 +78,8 @@ const DownloadBox = (props) => {
 const Data = {
 	pageId:"print-guide-page",
 	meta: {
-		canonicalUrl:"https://www.ballot.fyi/print/",
-		documentTitle:"Printed guide – ballot.fyi",
+		canonicalUrl:"https://www.ourgovernment.fyi/print/",
+		documentTitle:"Printed guide – ourgovernment.fyi",
 		socialHeadline:"Prefer a physical voter guide?",
 		socialDescription:"Here's a beautiful guide you can print out.",
 		socialImage:"printguide.png",
