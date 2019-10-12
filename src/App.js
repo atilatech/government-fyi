@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 import Body from './body'
 import {OrderingProvider} from './ordering-context'
-
+import './styles.scss';
 
 const App = () => (
   <ThemeProvider theme={theme}>

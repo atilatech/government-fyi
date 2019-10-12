@@ -4,6 +4,7 @@ import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import FrontPageTitleBlock from 'components/page-blocks/blocks/FrontPageTitleBlock'
 // import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import PropSection from 'components/page-blocks/sections/PropSection'
+import LandingPage from "../../scenes/LandingPage/LandingPage";
 // import {Link} from 'react-router-dom'
 // import CAImg from './images/ca.png'
 // import {Button} from 'pages/about'
@@ -28,7 +29,7 @@ let Data = {
 	},
 	blocks: [
 		{
-			component: FrontPageTitleBlock,
+			component: LandingPage,
 			data: {
 				title: "A Nonpartisan guide to California's 2018 election",
 				body:

@@ -1,0 +1,182 @@
+@media only screen and (max-width: 767.99px) {
+  #header {
+    text-align: center;
+  }
+  #header #logo {
+    float: initial;
+  }
+  .home-page-wrapper .page h2 {
+    margin: 20px auto;
+  }
+  .home-page-wrapper .parallax-bg {
+    display: none;
+  }
+  .banner {
+    display: block;
+  }
+  .banner-bg-wrapper {
+    display: none;
+  }
+  .banner .img-wrapper,
+  .banner .text-wrapper {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+  }
+  .banner .img-wrapper {
+    position: initial;
+    margin-top: 20px;
+  }
+  .banner .img-wrapper svg {
+    width: 100%;
+    height: auto;
+    display: none !important;
+  }
+  .banner .text-wrapper {
+  }
+  .banner .text-wrapper p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .banner.page {
+    height: 700px;
+  }
+  .page1 {
+    min-height: 1538px;
+  }
+  .page1 .ant-row {
+    margin: 24px auto 64px;
+  }
+  .page1 .ant-row > div {
+    margin-bottom: 20px;
+  }
+  .page2 {
+    min-height: 840px;
+    background: #fff;
+  }
+  .page2-content {
+    box-shadow: none;
+  }
+  .page2-components {
+    display: none;
+  }
+  .page2-product {
+    min-height: auto;
+    padding: 0 16px;
+  }
+  .page2-product .product-block {
+    padding-bottom: 35px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid #EBEDF0;
+  }
+  .page2-product .product-block:last-child {
+    margin-bottom: 32px;
+    border-bottom: none;
+  }
+  .page2-product .product-block:last-child .block-text-wrapper {
+    height: auto;
+  }
+  .page2-product .product-block .block-image-wrapper {
+    height: 88px;
+  }
+  .page2-product .product-block .block-image-wrapper img {
+    height: 100%;
+  }
+  .page2-product .product-block .block-text-wrapper {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .page2-product .product-block .block-text-wrapper h4 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  .page2-product .product-block .block-text-wrapper p {
+    font-size: 12px;
+    margin-bottom: 8px;
+    line-height: 20px;
+  }
+  .page2-product .product-block .block-text-wrapper a {
+    line-height: 20px;
+  }
+  .page2-product .product-block .block-text-wrapper .components-button-wrapper {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .page2-product .product-block .block-text-wrapper .components-button-wrapper a {
+    display: block;
+  }
+  .page3 {
+    min-height: 688px;
+    background: url('https://gw.alipayobjects.com/zos/rmsportal/qICoJIqqQRMeRGhPHBBS.svg') no-repeat;
+    background-size: cover;
+  }
+  .page3 .ant-row {
+    margin: 0 8px;
+  }
+  .page3 .page3-block {
+    padding: 24px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(174, 185, 193, 0.3);
+    margin-bottom: 32px;
+  }
+  .page3 .page3-block:nth-child(2) .page3-img-wrapper img {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+  .page3 .page3-block p {
+    font-size: 12px;
+  }
+  .page3 .page3-block .page3-img-wrapper {
+    width: 20%;
+  }
+  .page3 .page3-block .page3-img-wrapper img {
+    width: 100%;
+  }
+  .page3 .page3-block .page3-text-wrapper {
+    width: 80%;
+    margin: 0;
+    max-width: initial;
+    padding-left: 16px;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer .footer-wrap {
+    padding: 40px;
+  }
+  #footer .footer-center {
+    text-align: center;
+  }
+  #footer h2 {
+    margin-top: 16px;
+  }
+  #footer .bottom-bar {
+    text-align: center;
+  }
+  #footer .bottom-bar .translate-button {
+    width: auto;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .home #footer .footer-wrap .ant-row {
+    padding: 0;
+  }
+  .home #footer .footer-wrap .ant-row > div:nth-child(2),
+  .home #footer .footer-wrap .ant-row > div:nth-child(4) {
+    display: none;
+  }
+  .home #footer .footer-wrap .ant-row > div a {
+    font-weight: 300;
+  }
+  .home #footer .bottom-bar > div > span {
+    display: block;
+  }
+  .home #footer .bottom-bar > div > span:nth-child(1),
+  .home #footer .bottom-bar > div > span:nth-child(2) {
+    display: none;
+  }
+}

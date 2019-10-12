@@ -20,7 +20,6 @@ const Body = (props) => {
     <div style={{backgroundColor: 'white'}}>
       <Header location={props.location}/>
       <Route component={logView}/>
-      <Route component={BottomWarning}/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/home' component={HomePage}/>
