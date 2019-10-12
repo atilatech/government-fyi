@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import './LandingPage.scss';
 import './Reponsive.scss';
 import PropSection from "../../components/page-blocks/sections/PropSection";
+import AboutPage from "../../pages/about/index"
 
 let isMobile = false;
 enquireScreen((b) => {
@@ -31,6 +32,7 @@ class LandingPage extends React.Component {
                 <div>
                     <Banner isMobile={this.state.isMobile} />
                     <PropSection />
+                    <AboutPage />
                 </div>
         );
     }
