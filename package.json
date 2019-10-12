@@ -1,7 +1,7 @@
 {
-  "name": "ballotfyi",
-  "author": "Jimmy Chion",
-  "version": "2.0.0",
+  "name": "government-fyi",
+  "author": "Tomiwa Ademidun",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "d3-array": "^1.2.4",
@@ -30,9 +30,21 @@
     "topojson": "^3.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
