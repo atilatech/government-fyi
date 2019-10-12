@@ -21,44 +21,23 @@ import LandingPage from "../../scenes/LandingPage/LandingPage";
 let Data = {
 	pageId:"home-page",
 	meta: {
-		canonicalUrl:"https://www.ballot.fyi/",
-		documentTitle:"California State Propositions 2018 – a nonpartisan guide",
-		socialHeadline:"The quickest nonpartisan voter guide for the midterms",
-		socialDescription:"A nonpartisan guide to California's 11 propositions, including daylight saving, cage-free eggs, and rent control",
+		canonicalUrl:"https://ourgovernment.fyi/",
+		documentTitle:"Canadian Federal Elections 2019 – a simple nonpartisan guide",
+		socialHeadline:"The simples nonpartisan voter guide for the Canadian federal elections",
+		socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, environment, housing",
 		socialImage:"general.png",
 	},
 	blocks: [
 		{
 			component: LandingPage,
-			data: {
-				title: "A Nonpartisan guide to California's 2018 election",
-				body:
-				<span>
-					This election, California gives us 11 semi-ridiculous, yet very important, ballot initiatives to vote on and make fun of. We'll break them down for you, explain what different sides are saying and why your vote actually matters.
-        </span>,
-			}
+			data: {}
 		},
 		{
 			component: PropSection,
 			data:{}
 		},
-		// {
-    //   component: TextWithTitleBlock,
-    //   data: {
-    //     title: "Like this stuff?",
-		// 		nColWidth: 8,
-    //     text:
-		// 			<span id="contact">
-		// 				We've spent months researching and writing the content for this site. We're a small team (two people), and we want to make sure we can do this again in 2020. If you like what you see, please consider making a contribution.
-		// 				<Button href="https://www.bythebay.cool/contribute/">
-		// 					I can chip in a few $
-		// 				</Button>
-		// 				<Attrib>You'll be redirected to our sister site, By The Bay.</Attrib>
-		// 			</span>,
-    //   }
-    // },
   ]
-}
+};
 
 
 

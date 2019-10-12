@@ -19,7 +19,7 @@ const BottomSticky = styled.div`
 const BottomWarning = () => {
   return(
     <BottomSticky>
-      You're viewing the 2018 guide. Here's how to&nbsp;<a href="https://www.ballot.fyi/">return to 2020</a>, when you're ready.
+      You're viewing the 2018 guide. Here's how to&nbsp;<a href="https://www.ourgovernment.fyi/">return to 2020</a>, when you're ready.
 
     </BottomSticky>
   )

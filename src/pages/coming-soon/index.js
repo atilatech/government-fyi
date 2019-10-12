@@ -84,7 +84,7 @@ const TempHome = () => {
           <Img imageHandles={{_1x:CalImg, _1x_webp: CalImg_w}} alt="California election"/>
         </ImgWrapper>
         <Description>
-          Arnold Schwarzenegger, California's former governor and Earth's cybernetic savior, used to fictionally say, "I'll be back." (Go ahead, say it in your best male model German accent.) In one instance, he says this catchphrase, leaves the premises, and then drives a truck through the wall, thus returning. This quote aptly sums up ballot.fyi because in 2020, we'll be back, to help you break down the walls of text that are the California ballot propositions.
+          Arnold Schwarzenegger, California's former governor and Earth's cybernetic savior, used to fictionally say, "I'll be back." (Go ahead, say it in your best male model German accent.) In one instance, he says this catchphrase, leaves the premises, and then drives a truck through the wall, thus returning. This quote aptly sums up ourgovernment.fyi because in 2020, we'll be back, to help you break down the walls of text that are the California ballot propositions.
           <br/><br/>
           Sorry we can't help this November, but in a year, expect to vote on what to do with billions of dollars, Prop 13 <a href="https://www.fresnobee.com/news/politics-government/politics-columns-blogs/political-notebook/article216680685.html" rel="noopener noreferrer" target="_blank">reform</a>, and inevitably much more. <span role="img" aria-label="grimmacing">😬</span>
           <Spacer height={30}/>
