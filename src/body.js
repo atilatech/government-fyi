@@ -4,7 +4,6 @@ import Header from "layout/header"
 import Footer from "layout/footer"
 import Loadable from 'loadable-components'
 import {LoadingAnimation, ErrorLoading} from 'components/static/loading'
-import GA from 'react-ga'
 
 const mkLoadable = (importStatement) => {
   const defaults = {
@@ -19,7 +18,6 @@ const Body = (props) => {
   return(
     <div style={{backgroundColor: 'white'}}>
       <Header location={props.location}/>
-      <Route component={logView}/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/home' component={HomePage}/>
@@ -69,20 +67,6 @@ const Prop10 = mkLoadable(import("pages/10/index"));
 const Prop11 = mkLoadable(import("pages/11/index"));
 const Prop12 = mkLoadable(import("pages/12/index"));
 const Page404 = mkLoadable(import("pages/404/index"));
-
-try {
-  GA.initialize([{trackingId: 'UA-83939332-1'}]);
-} catch(e) {
-  console.error("GA initialize error:", e.message);
-}
-
-const logView = () => {
-  if(process.env.NODE_ENV === 'production') {
-    GA.pageview(window.location.pathname + window.location.search);
-  }
-  return null;
-}
-
 
 
 export default withRouter(Body)
