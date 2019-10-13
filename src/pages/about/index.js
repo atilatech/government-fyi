@@ -8,8 +8,6 @@ import ImgAndText2Block from 'components/page-blocks/blocks/ImgAndText2Block'
 import conciseImg from './images/concise.svg'
 import nonpartisanImg from './images/nonpartisan.svg'
 import toolImg from './images/tool.svg'
-import {Spacer} from 'layout/util'
-import Citation from 'components/interactive/citation/citation'
 import Color from 'layout/colors'
 
 export const Button = styled.a`

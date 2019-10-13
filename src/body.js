@@ -5,7 +5,7 @@ import Footer from "layout/footer"
 import Loadable from 'loadable-components'
 import {LoadingAnimation, ErrorLoading} from 'components/static/loading'
 import GA from 'react-ga'
-import BottomWarning from 'layout/BottomWarning'
+
 const mkLoadable = (importStatement) => {
   const defaults = {
     LoadingComponent: LoadingAnimation,

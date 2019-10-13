@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import {PropMetaData} from 'pages/prop-attributes'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import {OrderingContext} from 'ordering-context.js'
