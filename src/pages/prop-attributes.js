@@ -295,7 +295,7 @@ const shortTitles = [
 ]
 
 const headlines = [
-  "Prop 1 issues $4B for housing",
+  "What do the parties think about Housing?",
   "Prop 2 changes how we spend the Millionaire's tax",
   "Prop 3 issues $9B for water projects",
   "Prop 4 issues $1.5B for children's hospitals",
