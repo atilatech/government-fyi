@@ -1,4 +1,4 @@
-# Governemnt-fyi
+# Government-fyi
 Inspired by [ballotfyi](https://github.com/cjimmy/ballotfyi/)
 
 We help you understand how our government works.
