@@ -10,4 +10,18 @@ $border-color: rgba(229, 231, 235, 100);
   display: flex;
   align-items: center;
   height: 632px;
+
+  ul {
+    line-height: 30px;
+    a{
+      color: #4080ff;
+      text-decoration: none;
+    }
+    a:hover {
+      font-weight: bold;
+    }
+  }
+  li {
+    padding: 0 10px;
+  }
 }
