@@ -1,7 +1,6 @@
 import React from 'react'
 // import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
-import FrontPageTitleBlock from 'components/page-blocks/blocks/FrontPageTitleBlock'
 // import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import PropSection from 'components/page-blocks/sections/PropSection'
 import LandingPage from "../../scenes/LandingPage/LandingPage";

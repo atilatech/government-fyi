@@ -28,21 +28,10 @@ const NavLabel = styled.span`
     }
   }
 `
-const SocialButtons = styled.div`
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  margin-bottom: 10px;
-  filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.1)) drop-shadow(-2px 5px 2px rgba(0,0,0,0.05));
-`
-const TextContainer = styled.div`
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-`
 
-const Footer = (props) => {
+
+
+const Footer = () => {
   const navItems = nav.map((item,i) => {
     return(
       <NavLink key={i} to={item.to}>

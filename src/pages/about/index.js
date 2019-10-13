@@ -8,8 +8,6 @@ import ImgAndText2Block from 'components/page-blocks/blocks/ImgAndText2Block'
 import conciseImg from './images/concise.svg'
 import nonpartisanImg from './images/nonpartisan.svg'
 import toolImg from './images/tool.svg'
-import {Spacer} from 'layout/util'
-import Citation from 'components/interactive/citation/citation'
 import Color from 'layout/colors'
 
 export const Button = styled.a`
@@ -150,8 +148,10 @@ const Data = {
                   we have on existing issues and add new ones.
               </li>
               <li>
-                  <strong>Donate 🤑!</strong> If you would like to support the website financially.
-                  You can visit our <Link to="/donate">donation page</Link>. Any amount is appreciated 🙂.
+                  <strong>Donate <span role="img" aria-label="money face emoji">🤑</span>!
+                  </strong> If you would like to support the website financially.
+                  You can visit our <Link to="/donate">donation page</Link>.
+                  Any amount is appreciated <span role="img" aria-label="smile emoji">🙂</span>.
               </li>
           </ol>
 
