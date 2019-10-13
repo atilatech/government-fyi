@@ -23,7 +23,7 @@ const Body = (props) => {
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/home' component={HomePage}/>
-        <Route path='/prop-1' component={Prop1}/>
+        <Route path='/housing' component={Prop1}/>
         <Route path='/prop-2' component={Prop2}/>
         <Route path='/prop-3' component={Prop3}/>
         <Route path='/prop-4' component={Prop4}/>

@@ -97,7 +97,7 @@ const Data = {
     {
       component: CustomBlock,
       data: {
-        body: <Btn to="/prop-1" label="Explain this more deeply"/>
+        body: <Btn to="/housing" label="Explain this more deeply"/>
       }
     },
     {

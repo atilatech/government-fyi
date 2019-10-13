@@ -16,7 +16,7 @@ import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 
 const Data = {
-	pageId:"prop-1",
+	pageId:"housing",
 	propNum: 1,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),
