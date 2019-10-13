@@ -111,3 +111,19 @@ b {
 .twitter-share-button {
   margin-left: 3px;
 }
+
+.conservative {
+  color: #04479d;
+}
+
+.liberal {
+  color: #d91820;
+}
+
+.ndp {
+  color: #f5821f;
+}
+
+.green {
+  color: #3d9b35;
+}

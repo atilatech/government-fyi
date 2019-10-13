@@ -27,18 +27,69 @@ const Data = {
     	component: ResultBlock,
     	data: {
 				result: PropMetaData(1).result,
-    		title: "Passed",
-    		text: "CA voted to issue $4B in housing assistance bonds to help tens of thousands of military veterans, farmworkers, and families afford to live in their homes every year. It'll cost the state a total of $5.9B to repay."
+    		title: "What's the Key Point?",
+    		text: `
+    		It's getting more expensive to own a home in certain parts of Canada.
+    		People who already own a home benefit because their houses are worth more.
+    		People who don't already own a home are disadvantaged because it's harder for them to afford a house.
+    		`
+    	},
+    },
+    {
+    	component: ResultBlock,
+    	data: {
+				result: PropMetaData(1).result,
+    		title: "What are the Key Questions?",
+			text: <ol>
+				<li>How much of a role should the government play in helping people afford a home?</li>
+				<li>How easy should it be to get a mortage for a home?</li>
+				<li>How easy should it be for builders to build new homes?</li>
+				<li>What do they think about foreigners buying Canadian homes?</li>
+			</ol>
+    	},
+    },
+	//	todo: tk how specifically will ease regulations?
+    {
+    	component: TextWithTitleBlock,
+    	data: {
+			title: <span className="conservative">
+				What do Conservatives think
+			</span>,
+    		text: <span>
+				<strong>How easy should it be for builders to build new homes?</strong><br />
+				Conservatives want to <Citation data={Citations['1']}>make it easier</Citation> to build new homes.
+				[tk how specifically will they do that?]<br />
+				</span>,
     	},
     },
     {
     	component: TextWithTitleBlock,
     	data: {
-    		title: "This seems pretty cut & dry",
+			title: <span className="liberal">
+				What do the Liberals think?
+			</span>,
     		text: <span>
-					Yep, at least on what the proposition intends to do. How you should vote, however, not so much. Essentially, Prop 1 would issue $4B in general obligation bonds to fund housing programs.
-					<br/><br/>
-					General obligation bonds are loans from investors that are repaid by the state over time with interest. $1B would be housing loans for veterans, which are of no cost to the state, and <Citation data={Citations['1']}>the rest of the money ($3B) would cost the state $5.9B, or $170M annually over the next 35 years, to repay. It adds up to roughly 0.1% of our annual budget.</Citation></span>,
+				<strong>What do they think about foreigners buying Canadian homes?</strong><br />
+				They want to make it harder for foreigners to speculate on Canadian real estate market.
+				through a <a href="https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217">
+					speculation tax</a>. <br />
+				<strong>How much of a role should the government play in helping people afford a home?</strong><br />
+				Liberals want to build 100,000 affordable homes over a decade and offer first-time home-buyer subsidies of 10 per cent on new home purchases and 5 per cent on resales — with restrictions.
+			</span>
+    	},
+    },
+    {
+    	component: TextWithTitleBlock,
+    	data: {
+			title: <span className="ndp">
+				What does the NDP think?
+			</span>,
+    		text: <span>
+				<strong>What do they think about foreigners buying Canadian homes?</strong><br />
+				NDP proposes a 15% extra tax on foreign buyers. <br />
+				<strong>How much of a role should the government play in helping people afford a home?</strong><br />
+				New Democrats want to build 500,000 affordable housing units over 10 years; until then, they propose a rental subsidy.
+			</span>
     	},
     },
     {

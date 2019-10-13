@@ -265,7 +265,7 @@ const thumbs = [
 ]
 
 const titles = [
-  "Prop 1 issues $4B for housing programs",
+  "Housing",
   "Prop 2 changes how we spend the Millionaire's tax",
   "Prop 3 issues $8.9B for water projects",
   "Prop 4 issues $1.5B for children's hospitals",
@@ -310,7 +310,7 @@ const headlines = [
 ]
 
 const descriptions = [
-  "One of four housing measures on the ballot.",
+  "A house is the most expensive thing most of us will ever buy. What are the different parties plan for housing?",
   "It's supposed to help the mentally ill, but does housing count?",
   "A lot of Farmers are a fan.",
   "funding for renovations and new construction.",
