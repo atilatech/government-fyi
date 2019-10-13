@@ -3,6 +3,9 @@ Inspired by [ballotfyi](https://github.com/cjimmy/ballotfyi/)
 
 We help you understand how our government works.
 
+[![Build Status](https://travis-ci.org/atilatech/government-fyi.svg?branch=master)](https://travis-ci.org/atilatech/government-fyi)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d06ff187-a109-45ac-bdab-7ba48b67b046/deploy-status)](https://app.netlify.com/sites/ourgovernment/deploys)
+
 
 ![Government FYI landing page](https://i.imgur.com/F4yeqfB.png)
 
