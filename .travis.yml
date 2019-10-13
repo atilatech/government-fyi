@@ -9,8 +9,8 @@ script:
   - npm run build
 deploy:
   provider: netlify
-  skip_cleanup: true
-  github_token: $github_token
-  local_dir: build
-  on:
-    branch: master
+  site: $NETLIFY_SITE_ID
+  auth: $NETLIFY_AUTH_TOKEN
+#  edge: true # opt in to dpl v2
+  local_dir: "build/"
+  prod: true
