@@ -13,7 +13,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./build -p -m $TRAVIS_COMMIT
+  script: netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./build --prod -m $TRAVIS_COMMIT
   skip_cleanup: true
   on:
     all_branches: true
