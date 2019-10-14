@@ -2,6 +2,7 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
 import $ from 'jquery';
+import {scrollToElement} from "../../pages/people/People";
 
 class Banner extends React.Component {
 
@@ -13,17 +14,6 @@ class Banner extends React.Component {
       searchQuery: '',
     }
   };
-
-  scrollToElement = (selector) => {
-
-    try {
-      $('html, body').animate({scrollTop: $(selector).offset().top}, 1000);
-    }
-    catch (e) {
-      // console.log('scrollToElement catch e',e);
-
-    }
-  }
 
   render() {
 
@@ -73,7 +63,7 @@ class Banner extends React.Component {
                     <ul className="col-sm-12 font-size-xl">
                       {topicsData.map((topic, index) => (
                           <li key={topic.title}><a href={`#bg-${index+1}`}
-                                 onClick={()=>{this.scrollToElement(`#bg-${index+1}`)}}>
+                                 onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
                             {topic.title}
                           </a></li>
                       ))}

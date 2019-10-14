@@ -84,7 +84,7 @@ h5 {
 
 a {
 	color: #FF454C;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:hover, a:active {
   text-decoration: none;
