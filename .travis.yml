@@ -11,8 +11,14 @@ before_deploy:
   - npm run build
 
 deploy:
-  provider: script
-  script: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./build --prod -m $TRAVIS_COMMIT
-  skip_cleanup: true
-  on:
-    all_branches: true
+  - provider: script
+    script: ./node_modules/.bin/netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./build -m $TRAVIS_COMMIT
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: script
+    script: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./build -m $TRAVIS_COMMIT
+    skip_cleanup: true
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH != master
