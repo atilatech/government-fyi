@@ -55,3 +55,6 @@ export const NDP_HOUSING = {
         }
     ],
 };
+
+
+export const HOUSING_PLATFORMS = [CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING];

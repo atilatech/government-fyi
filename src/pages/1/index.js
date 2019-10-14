@@ -15,7 +15,14 @@ import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
-import {CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING} from "../../data/PartyPlatformData";
+import {CONSERVATIVE_HOUSING, HOUSING_PLATFORMS, LIBERAL_HOUSING, NDP_HOUSING} from "../../data/PartyPlatformData";
+
+const housingPlatforms = HOUSING_PLATFORMS.map(PLATFORM => (
+	{
+		component: PartyPlatformBlock,
+		data: PLATFORM,
+	}
+));
 
 const Data = {
 	pageId:"housing",
@@ -50,18 +57,7 @@ const Data = {
 			</ol>
     	},
     },
-	{
-		component: PartyPlatformBlock,
-		data: CONSERVATIVE_HOUSING,
-	},
-	{
-		component: PartyPlatformBlock,
-		data: LIBERAL_HOUSING,
-	},
-    {
-    	component: PartyPlatformBlock,
-    	data: NDP_HOUSING,
-    },
+	...housingPlatforms,
     {
     	component: SectionTitleBlock,
     	data: {
