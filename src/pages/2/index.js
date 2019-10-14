@@ -10,6 +10,8 @@ import { PropMetaData } from 'pages/prop-attributes'
 import Citation from 'components/interactive/citation/citation'
 // import Acronym from 'components/interactive/acronym'
 import { Citations } from './expandables'
+import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
+import {CONSERVATIVE_JOBS_AND_ECONOMY} from "../../data/PartyPlatformData";
 
 const Data = {
 	pageId: "jobs-and-economy",
@@ -32,17 +34,8 @@ const Data = {
 			},
 		},
 		{
-			component: TextWithTitleBlock,
-			data: {
-				title: <span className="conservative">
-					What do the Conservatives think...
-			</span>,
-				text: <ul>
-					<li>improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.</li>
-					<li>end foreign oil imports and get pipelines built, including the Trans Mountain, which they claim will create “tens of thousands” of jobs.</li>
-					<li>tax credit for young graduates who move to Quebec, matching an existing provincial credit</li>
-				</ul>
-			}
+			component: PartyPlatformBlock,
+			data: CONSERVATIVE_JOBS_AND_ECONOMY,
 		},
 		{
 			component: TextWithTitleBlock,

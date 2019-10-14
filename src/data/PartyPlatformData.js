@@ -56,5 +56,20 @@ export const NDP_HOUSING = {
     ],
 };
 
+export const CONSERVATIVE_JOBS_AND_ECONOMY = {
+    party: "Conservative",
+    partyPlatforms: [
+        {
+            text: "Improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.",
+        },
+        {
+            text: "End foreign oil imports and get pipelines built, including the Trans Mountain, which they claim will create “tens of thousands” of jobs.",
+        },
+        {
+            text: "Tax credit for young graduates who move to Quebec, matching an existing provincial credit",
+        }
+    ],
+};
+
 
 export const HOUSING_PLATFORMS = [CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING];
