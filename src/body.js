@@ -22,7 +22,7 @@ const Body = (props) => {
         <Route exact path='/' component={HomePage}/>
         <Route path='/home' component={HomePage}/>
         <Route path='/housing' component={Prop1}/>
-        <Route path='/jobsEconomy' component={JobsAndEconomyPage}/>
+        <Route path='/jobs-and-economy' component={JobsAndEconomyPage}/>
         <Route path='/prop-3' component={Prop3}/>
         <Route path='/prop-4' component={Prop4}/>
         <Route path='/prop-5' component={Prop5}/>

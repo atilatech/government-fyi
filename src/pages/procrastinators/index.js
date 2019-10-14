@@ -120,7 +120,7 @@ const Data = {
     {
       component: CustomBlock,
       data: {
-        body: <Btn to="/jobsEconomy" label="Read more about it"/>
+        body: <Btn to="/jobs-and-economy" label="Read more about it"/>
       }
     },
     {

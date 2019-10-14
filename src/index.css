@@ -112,7 +112,7 @@ b {
   margin-left: 3px;
 }
 
-.conservative {
+.conservative, .bloc-quebecois, .peoples-party {
   color: #04479d;
 }
 
@@ -126,4 +126,8 @@ b {
 
 .green {
   color: #3d9b35;
+}
+
+.p-0-5 {
+  padding: .5rem;
 }

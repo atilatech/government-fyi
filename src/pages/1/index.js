@@ -14,6 +14,7 @@ import {PropMetaData} from 'pages/prop-attributes'
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
+import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 
 const Data = {
 	pageId:"housing",
@@ -48,48 +49,56 @@ const Data = {
 			</ol>
     	},
     },
-	//	todo: tk how specifically will ease regulations?
+	{
+		component: PartyPlatformBlock,
+		data: {
+			party: "Conservative",
+			partyPlatforms: [
+				{
+					question: "How easy should it be for builders to build new homes?",
+					text: (<span><Citation data={Citations['1']}>
+						Make it easier</Citation> to build new homes.
+			[tk how specifically will they do that?]</span>),
+				}
+			],
+		},
+	},
+	{
+		component: PartyPlatformBlock,
+		data: {
+			party: "Liberal",
+			partyPlatforms: [
+				{
+					question: "How easy should it be for builders to build new homes?",
+					text: "Make it harder for foreigners to speculate on Canadian real estate market through a speculation tax. [tk what is speculation tax?]",
+					source: "https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217",
+					demographics: [
+						'foreigners',
+						'investors',
+						'homeowners'
+					]
+				},
+				{
+					question: "How much of a role should the government play in helping people afford a home?",
+					text: "Build 100,000 affordable homes over a decade and offer first-time home-buyer subsidies of 10 per cent on new home purchases and 5 per cent on resales — with restrictions.",
+					source: "https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217",
+				}
+			],
+		},
+	},
     {
-    	component: TextWithTitleBlock,
+    	component: PartyPlatformBlock,
     	data: {
-			title: <span className="conservative">
-				What do Conservatives think
-			</span>,
-    		text: <span>
-				<strong>How easy should it be for builders to build new homes?</strong><br />
-				Conservatives want to <Citation data={Citations['1']}>make it easier</Citation> to build new homes.
-				[tk how specifically will they do that?]<br />
-				</span>,
-    	},
-    },
-    {
-    	component: TextWithTitleBlock,
-    	data: {
-			title: <span className="liberal">
-				What do the Liberals think?
-			</span>,
-    		text: <span>
-				<strong>What do they think about foreigners buying Canadian homes?</strong><br />
-				They want to make it harder for foreigners to speculate on Canadian real estate market.
-				through a <a href="https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217">
-					speculation tax</a>. <br />
-				<strong>How much of a role should the government play in helping people afford a home?</strong><br />
-				Liberals want to build 100,000 affordable homes over a decade and offer first-time home-buyer subsidies of 10 per cent on new home purchases and 5 per cent on resales — with restrictions.
-			</span>
-    	},
-    },
-    {
-    	component: TextWithTitleBlock,
-    	data: {
-			title: <span className="ndp">
-				What does the NDP think?
-			</span>,
-    		text: <span>
-				<strong>What do they think about foreigners buying Canadian homes?</strong><br />
-				NDP proposes a 15% extra tax on foreign buyers. <br />
-				<strong>How much of a role should the government play in helping people afford a home?</strong><br />
-				New Democrats want to build 500,000 affordable housing units over 10 years; until then, they propose a rental subsidy.
-			</span>
+			party: "NDP",
+			partyPlatforms: [
+				{
+					text: "New Democrats want to build 500,000 affordable housing units over 10 years;" +
+						" before then, they propose a rental subsidy.",
+				},
+				{
+					text: "NDP proposes a 15% extra tax on foreign buyers.",
+				}
+			],
     	},
     },
     {

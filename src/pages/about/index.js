@@ -100,10 +100,16 @@ const Data = {
       data: {
         title: "About ourgovernment.fyi",
         text: <span>ourgovernment.fyi is designed, coded, and written by
+            {' '}
             <a href="https://tomiwa.ca"
                target="_blank"
                rel="noopener noreferrer">
             Tomiwa Ademidun
+            </a> and {' '}
+            <a href="https://ca.linkedin.com/in/mding5692"
+               target="_blank"
+               rel="noopener noreferrer">
+            Michael Ding
             </a>,
             with the help of many friends, left and right.
             <br />
