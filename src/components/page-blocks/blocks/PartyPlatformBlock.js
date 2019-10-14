@@ -28,24 +28,16 @@ const Title = styled.h2`
 	margin: 20px 0 3px 0;
 	text-transform: none;
 `;
-const Subtitle = styled.div`
-	font-style: italic;
-	font-size: 14px;
-`;
-
-const Text = styled.div`
-	margin-top: 10px;
-`;
 
 
 export const PlatformBlock = (props) => {
-    const {text, source, demographics} = props.partyPlatform;
+    const {text, source, demographics, question} = props.partyPlatform;
 
     return(
         <React.Fragment>
-
-            <li>
-                <Text>{text}</Text>
+            {question && <strong>{question}</strong>}
+            <li className="p-0-5">
+                {text}
                 {source &&
                 <a href={source}>{' '}(source)</a>
                 }
@@ -66,7 +58,8 @@ export const PlatformBlock = (props) => {
 
 const PartyPlatformPropTypes = {
     text: PropTypes.string.isRequired,
-    source: PropTypes.string.isRequired,
+    source: PropTypes.string,
+    question: PropTypes.string,
     demographics: PropTypes.arrayOf(PropTypes.string),
 }
 
@@ -78,9 +71,9 @@ function partyToTileTransform(party){
     let title = null;
 
     switch(party) {
-        case "Liberals":
-        case "Conservatives":
-            title = `What do the ${party} think?`;
+        case "Liberal":
+        case "Conservative":
+            title = `What do the ${party}s think?`;
             break;
         case "NDP":
         case "Bloc Quebecois":
@@ -93,9 +86,14 @@ function partyToTileTransform(party){
     }
 
     return title;
+};
+
+export function partyToCssClassTransform(party){
+
+    return party.replace("'","").replace(" ", "-").toLowerCase();
 }
 const PartyPlatformBlock = (props) => {
-    const {party, partyPlatforms} = props.data;
+    const {party, partyPlatforms, nColWidth} = props.data;
 
     const nWidth = nColWidth || 6; // default hack
     const offset = Math.floor((12-nWidth)/2)
@@ -113,7 +111,9 @@ const PartyPlatformBlock = (props) => {
                 {title &&
                 <React.Fragment>
                     <FillRestWithLine >
-                        <Title className={party.toLowerCase()}>{title}</Title>
+                        <Title className={partyToCssClassTransform(party)}>
+                            {title}
+                        </Title>
                     </FillRestWithLine>
                 </React.Fragment>
                 }
@@ -129,6 +129,7 @@ PartyPlatformBlock.propTypes = {
     data: PropTypes.shape({
         party: PropTypes.string.isRequired,
         partyPlatforms: PropTypes.arrayOf(PropTypes.shape(PartyPlatformPropTypes)).isRequired,
+        nColWidth: PropTypes.number,
     })
 };
 
