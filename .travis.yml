@@ -13,7 +13,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: bash deploy.sh
+  script: bash ./deploy.sh
   skip_cleanup: true
   on:
     all_branches: true
