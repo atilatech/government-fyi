@@ -9,3 +9,8 @@ export const FOREIGNERS = 'foreigners';
 export const LOW_INCOME = 'low income';
 export const WOMEN = 'women';
 export const VISIBLE_MINORITY = 'visible minority';
+
+export const ALL_DEMOGRAPHICS = [
+    RECENT_GRADS, YOUNG_PEOPLE, STUDENTS,
+    SENIORS, IMMIGRANTS, HOMEOWNERS, OIL_WORKERS,
+FOREIGNERS, LOW_INCOME, WOMEN, VISIBLE_MINORITY];
