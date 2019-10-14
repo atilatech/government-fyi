@@ -91,7 +91,6 @@ const ResultIconContainer = styled.div`
 
 
 const TopNavBlock = (props) => {
-  // const {color, imageSet, shortTitle}
 	const navArr = [];
 	for (let i = 1; i < 13; i++){
 		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i)
@@ -102,7 +101,7 @@ const TopNavBlock = (props) => {
 				desc:socialDescription,
 				title: shortTitle,
 				imageSet: thumbSet,
-        result: result
+        		result: result
 			}
 		)
 	}
@@ -124,11 +123,13 @@ TopNavBlock.propTypes = {
 
 export default TopNavBlock;
 
+// TODO: Use actual links instead of propnums, suggest creating a dict in prop-attributes.js
 class NavItem extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state={
-			isHovered: false
+			isHovered: false,
+			pageLinks: ['/housing', '/jobsEconomy'],
 		}
 	}
 	handleMouseEnter = () => {
@@ -139,18 +140,20 @@ class NavItem extends React.Component {
 	}
 	render() {
 		const {color, title, desc, imageSet, result} = this.props.data;
-    let resultIcon = null;
+    	let resultIcon = null;
     if (result === "Y"){
       resultIcon = PassedIcon;
     } else if (result === "N") {
       resultIcon = FailedIcon;
     } else {
       resultIcon = UndeterminedIcon;
-    }
+	}
+	
+
 
 		return(
 			<NavItemContainer>
-				<Link to={`/prop-${this.props.propNum+1}`}>
+				<Link to={this.props.propNum <= 1? this.state.pageLinks[this.props.propNum]: `/prop-${this.props.propNum+1}`}>
 					<ImgContainer
 						onMouseEnter={this.handleMouseEnter}
 						onMouseLeave={this.handleMouseLeave}

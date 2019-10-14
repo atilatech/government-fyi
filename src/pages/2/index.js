@@ -35,12 +35,101 @@ const Data = {
 			component: TextWithTitleBlock,
 			data: {
 				title: <span className="conservative">
-					What do Conservatives think
+					What do the Conservatives think...
 			</span>,
 				text: <ul>
 					<li>improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.</li>
 					<li>end foreign oil imports and get pipelines built, including the Trans Mountain, which they claim will create “tens of thousands” of jobs.</li>
 					<li>tax credit for young graduates who move to Quebec, matching an existing provincial credit</li>
+				</ul>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: <span className="liberal">
+					What do the Liberals think…
+			</span>,
+				text: <ul>
+					<li>
+						Raise the federal minimum wage to $15 per hour.
+					</li>
+					<li>
+						Add an additional $9 million over three years to help more visible minority newcomer women find work
+					</li>
+					<li>
+						Create a new federal <Citation data={Citations['1']}> Family Day holiday</Citation>
+					</li>
+				</ul>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: <span className="ndp">
+					What does the NDP think…
+			</span>,
+				text: <ul>
+					<li>
+						Raise the federal minimum wage to $15 per hour.
+					</li>
+					<li>
+						Ban unpaid internships if they don’t count for school credit.
+					</li>
+				</ul>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: <span className="green">
+					What does the Green Party think…
+			</span>,
+				text: <ul>
+					<li>
+						Raise the federal minimum wage to $15 per hour.
+					</li>
+					<li>
+					ban unpaid internships that aren’t for school credits.
+					</li>
+					<li>
+					robot tax, which would force companies to pay a tax when they replace an employee with a machine.
+					</li>
+				</ul>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: <span className="conservative">
+					What does the Bloc Quebecois think…
+			</span>,
+				text: <ul>
+					<li>
+					tax credit for recent graduates or immigrants who move to rural areas for jobs
+					</li>
+					<li>
+					ban unpaid internships that aren’t for school credits.
+					</li>
+				</ul>
+			}
+		},
+		{
+			component: TextWithTitleBlock,
+			data: {
+				title: <span className="conservative">
+					What does the People's Party think…
+			</span>,
+				text: <ul>
+					<li>
+					claims getting rid of supply management would create “thousands of jobs.”
+					</li>
+					<li>
+					Privatize Canada Post
+					</li>
+					<li>
+					Privatize airports
+					</li>
 				</ul>
 			}
 		},
