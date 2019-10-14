@@ -3,7 +3,7 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
+
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import { PropMetaData } from 'pages/prop-attributes'
 
