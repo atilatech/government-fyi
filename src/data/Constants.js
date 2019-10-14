@@ -1,6 +1,7 @@
 export const RECENT_GRADS = 'recent grads';
 export const YOUNG_PEOPLE = 'young people';
 export const STUDENTS = 'students';
+export const CLIMATE_CONSCIOUS = 'climate conscious';
 export const SENIORS = 'seniors';
 export const IMMIGRANTS = 'immigrants';
 export const HOMEOWNERS = 'homeowners';
@@ -11,6 +12,6 @@ export const WOMEN = 'women';
 export const VISIBLE_MINORITY = 'visible minority';
 
 export const ALL_DEMOGRAPHICS = [
-    RECENT_GRADS, YOUNG_PEOPLE, STUDENTS,
-    SENIORS, IMMIGRANTS, HOMEOWNERS, OIL_WORKERS,
-FOREIGNERS, LOW_INCOME, WOMEN, VISIBLE_MINORITY];
+    RECENT_GRADS, YOUNG_PEOPLE, STUDENTS,SENIORS,
+    CLIMATE_CONSCIOUS, IMMIGRANTS, HOMEOWNERS, OIL_WORKERS,
+    FOREIGNERS, LOW_INCOME, WOMEN, VISIBLE_MINORITY];
