@@ -266,7 +266,7 @@ const thumbs = [
 
 const titles = [
   "Housing",
-  "Prop 2 changes how we spend the Millionaire's tax",
+  "Jobs and Economy",
   "Prop 3 issues $8.9B for water projects",
   "Prop 4 issues $1.5B for children's hospitals",
   "Prop 5 gives old folks a property tax discount when they move",
@@ -280,8 +280,8 @@ const titles = [
 ]
 
 const shortTitles = [
-  "Housing bond",
-  "Housing for mentally ill",
+  "Housing",
+  "Jobs and Economy",
   "Environmental bond",
   "Hospital bond",
   "Property tax discount",
@@ -296,7 +296,7 @@ const shortTitles = [
 
 const headlines = [
   "What do the parties think about Housing?",
-  "Prop 2 changes how we spend the Millionaire's tax",
+  "What do the parties think about our jobs and the economy?",
   "Prop 3 issues $9B for water projects",
   "Prop 4 issues $1.5B for children's hospitals",
   "Prop 5 lets older folk move with their property tax assesments",
@@ -311,7 +311,7 @@ const headlines = [
 
 const descriptions = [
   "A house is the most expensive thing most of us will ever buy. What are the different parties plan for housing?",
-  "It's supposed to help the mentally ill, but does housing count?",
+  "What is the federal minimum wage going to be?",
   "A lot of Farmers are a fan.",
   "funding for renovations and new construction.",
   "The idea is to free up housing. Will it work?",
