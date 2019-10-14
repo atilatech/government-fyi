@@ -3,8 +3,6 @@ import {PropMetaData} from 'pages/prop-attributes'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import {OrderingContext} from 'ordering-context.js'
 
-// todo: use a less HACKY way for propLink in linksTo
-
 class PropSection extends React.Component {
 
   render() {
@@ -13,9 +11,12 @@ class PropSection extends React.Component {
       <React.Fragment>
         <OrderingContext.Consumer>
           {(context) => {
-            const propsInOrder = context.ordering.map( (propNum, i) => {
-              const {color, imageSet, title, socialDescription, result} = PropMetaData(propNum);
-                const propLink = propNum === 1 ? '/housing' : `/prop-${propNum}`;
+            const propsInOrder = context.ordering.map( (pageLink, i) => {
+
+              // TODO: remove propNum once done converting to actual page names
+              const propNum = i + 1;
+              const {color, imageSet, title, socialDescription, result} = PropMetaData(propNum); 
+                const propLink = i <= 1 ? pageLink : `/prop-${pageLink}`;
                 return(
                 <PropCardBlock
                   key={i}
