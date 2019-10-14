@@ -63,7 +63,7 @@ PlatformBlock.propTypes = {
     partyPlatform: PropTypes.shape(PartyPlatformPropTypes),
 };
 
-function partyToTileTransform(party){
+function partyToTitleTransform(party){
     let title = null;
 
     switch(party) {
@@ -89,7 +89,7 @@ const PartyPlatformBlock = (props) => {
     const nWidth = nColWidth || 6; // default hack
     const offset = Math.floor((12-nWidth)/2)
 
-    const title = partyToTileTransform(party);
+    const title = partyToTitleTransform(party);
     return(
         <Row>
             <Col

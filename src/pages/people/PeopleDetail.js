@@ -5,18 +5,51 @@ import diversityImage from './images/diversity.png'
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import {slugify, unSlugify} from "../../services/Utils";
 import {withRouter} from "react-router-dom";
+import {ALL_PLATFORMS} from "../../data/PartyPlatformData";
+import Link from "react-router-dom/Link";
 
-function DemographicDetail ({demographic}){
+function DemographicDetail ({demographicIssues}){
 
     return (
-        <div id={slugify(demographic)}>
+        <div>
             <ol>
-                {[1,2,3].map(item => (
-                    <ol key={item}>Issues affecting {demographic} {item}</ol>
+                {demographicIssues.map(item => (
+                    <li key={item.text}>
+                        <Link to={`/${slugify(item.topic)}`}>
+                            <span className={slugify(item.party)}>
+                                {item.party} on {item.topic} <br />
+                            </span>
+                        </Link>
+                        {item.text}
+                    </li>
                 ))}
             </ol>
         </div>
     );
+}
+
+function demographicsToIssueQuery(demographic) {
+
+    const demographicIssues = [];
+
+    ALL_PLATFORMS.forEach(platform => {
+
+        platform.partyPlatforms
+            .filter(item=> item.demographics)
+            .forEach(item => {
+                console.log({platform, item});
+                const { party, topic } = platform;
+                const { text } = item;
+                if (item.demographics.includes(demographic)) {
+                    demographicIssues.push({
+                        party, topic, text
+                    })
+                }
+            });
+
+    });
+
+    return demographicIssues;
 }
 
 
@@ -24,6 +57,8 @@ function PeopleDetail(props) {
 
     const { match : { params : { demographic : demographicSlug }} } = props;
     const demographic = unSlugify(demographicSlug);
+
+    const demographicIssues = demographicsToIssueQuery(demographic);
 
     const Data = {
         pageId: `people/${demographic}`,
@@ -45,7 +80,7 @@ function PeopleDetail(props) {
             {
                 component: CustomBlock,
                 data: {
-                    body: <DemographicDetail demographic={demographic}/>
+                    body: <DemographicDetail demographicIssues={demographicIssues}/>
                 }
             },
         ]
