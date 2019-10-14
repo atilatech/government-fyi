@@ -7,9 +7,7 @@ import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
 import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
 import { PropMetaData } from 'pages/prop-attributes'
 
-import Citation from 'components/interactive/citation/citation'
 // import Acronym from 'components/interactive/acronym'
-import { Citations } from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {CONSERVATIVE_JOBS_AND_ECONOMY, LIBERAL_JOBS_AND_ECONOMY} from "../../data/PartyPlatformData";
 

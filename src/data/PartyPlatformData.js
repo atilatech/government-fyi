@@ -4,7 +4,6 @@ import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {
     FOREIGNERS,
-    IMMIGRANTS,
     LOW_INCOME,
     OIL_WORKERS,
     RECENT_GRADS,
