@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
-import ImgAndText2Block from 'components/page-blocks/blocks/ImgAndText2Block'
 import diversityImage from './images/diversity.png'
 import Color from 'layout/colors'
 import {ALL_DEMOGRAPHICS} from '../../data/Constants';

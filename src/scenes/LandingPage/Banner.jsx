@@ -1,7 +1,6 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
-import $ from 'jquery';
 import {scrollToElement} from "../../pages/people/People";
 
 class Banner extends React.Component {
