@@ -39,18 +39,20 @@ export const PlatformBlock = (props) => {
             <li className="p-0-5">
                 {text}
                 {source &&
-                <a href={source}>{' '}(source)</a>
-                }
-                {demographics &&
-                demographics.map(group => (
-                    <React.Fragment>
-                        <Link to={`/demographic/${group}`} className="chip">
-                            {group}
-                        </Link>
-                    </React.Fragment>
-                ))
+                <a href={source}>(source)</a>
                 }
             </li>
+            {demographics &&
+            <React.Fragment>
+                Groups Affected: {' '}
+            {demographics.map(group => (
+                    <Link to={`/demographic/${group}`} className="chip">
+                        {group}
+                    </Link>
+            ))}
+            </React.Fragment>
+            }
+            <br/>
         </React.Fragment>
     );
 }
