@@ -6,10 +6,10 @@ import diversityImage from './images/diversity.png'
 import Color from 'layout/colors'
 import {ALL_DEMOGRAPHICS} from '../../data/Constants';
 import TextWithTitleBlock from "../../components/page-blocks/blocks/TextWithTitleBlock";
-import $ from "jquery";
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
-import {slugify} from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import Link from "react-router-dom/Link";
+import {scrollToElement, slugify} from "../../services/Utils";
+
 export const Button = styled.a`
 	font-family: ${props=>props.theme.fonts.avant};
 	font-weight: bold;
@@ -43,16 +43,7 @@ export const Button = styled.a`
 	}
 `
 
-export function scrollToElement(selector){
-
-    try {
-        $('html, body').animate({scrollTop: $(selector).offset().top}, 1000);
-    }
-    catch (e) {
-        // console.log('scrollToElement catch e',e);
-
-    }
-};
+;
 
 const demographicsString = `How will the elections affect ${ALL_DEMOGRAPHICS.slice(0, 7).join(', ')} and more.`;
 
@@ -68,7 +59,7 @@ const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => (
                     [tk add code to query all the platform data from PlatformData.js.demographics that affects:
                     {demographic}
                 </li>
-                <Link to={`/people/${demographic}`}>
+                <Link to={`/people/${slugify(demographic)}`}>
                     Read more about... {demographic}
                 </Link>
             </ul>)

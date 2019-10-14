@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Row, Col } from 'react-flexbox-grid';
+import {Col, Row} from 'react-flexbox-grid';
 import {Spacer} from 'layout/util'
 import FillRestWithLine from 'components/static/TextAndLine'
 import Color from 'layout/colors'
 import {Link} from "react-router-dom";
 import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
+import {slugify} from "../../../services/Utils";
 /*
 A block of text
 takes a title and body of text
@@ -30,11 +31,6 @@ const Title = styled.h2`
 	text-transform: none;
 `;
 
-
-export function slugify(party){
-
-    return party.replace("'","").replace(" ", "-").toLowerCase();
-}
 
 export const PlatformBlock = (props) => {
     const {text, source, demographics, question} = props.partyPlatform;
