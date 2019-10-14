@@ -15,7 +15,7 @@ import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
-import {LIBERALS_HOUSING} from "../../data/PartyPlatformData";
+import {CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING} from "../../data/PartyPlatformData";
 
 const Data = {
 	pageId:"housing",
@@ -52,36 +52,15 @@ const Data = {
     },
 	{
 		component: PartyPlatformBlock,
-		data: {
-			party: "Conservative",
-			partyPlatforms: [
-				{
-					question: "How easy should it be for builders to build new homes?",
-					text: (<span><Citation data={Citations['1']}>
-						Make it easier</Citation> to build new homes.
-			[tk how specifically will they do that?]</span>),
-				}
-			],
-		},
+		data: CONSERVATIVE_HOUSING,
 	},
 	{
 		component: PartyPlatformBlock,
-		data: LIBERALS_HOUSING,
+		data: LIBERAL_HOUSING,
 	},
     {
     	component: PartyPlatformBlock,
-    	data: {
-			party: "NDP",
-			partyPlatforms: [
-				{
-					text: "New Democrats want to build 500,000 affordable housing units over 10 years;" +
-						" before then, they propose a rental subsidy.",
-				},
-				{
-					text: "NDP proposes a 15% extra tax on foreign buyers.",
-				}
-			],
-    	},
+    	data: NDP_HOUSING,
     },
     {
     	component: SectionTitleBlock,

@@ -6,7 +6,7 @@ import {Spacer} from 'layout/util'
 import FillRestWithLine from 'components/static/TextAndLine'
 import Color from 'layout/colors'
 import {Link} from "react-router-dom";
-import {PartyPlatformBlockPropTypes, PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
+import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
 /*
 A block of text
 takes a title and body of text
