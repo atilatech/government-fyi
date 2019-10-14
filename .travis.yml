@@ -14,7 +14,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: netlify deploy --dir=./build --prod --site $NETLIFY_SITE_ID_PROD --auth $NETLIFY_AUTH_TOKEN
+  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_AUTH_TOKEN -p ./build
   skip_cleanup: true
   on:
     all_branches: true
