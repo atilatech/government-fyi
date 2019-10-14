@@ -14,4 +14,5 @@ deploy:
 #  edge: true # opt in to dpl v2
   local_dir: "build/"
   prod: true
-  all_branches: true
+  on:
+    all_branches: true
