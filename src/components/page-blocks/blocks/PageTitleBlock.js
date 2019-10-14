@@ -87,8 +87,8 @@ const PageTitleBlock = (props) => {
 
 PageTitleBlock.propTypes = {
 	data: PropTypes.shape({
-		title: PropTypes.string.isRequired,
-		backgroundImage: PropTypes.shape({}),
+		title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+		backgroundImage: PropTypes.string,
 		subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		datePublished: PropTypes.instanceOf(Date),
 		dateModified: PropTypes.instanceOf(Date),

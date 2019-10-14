@@ -9,6 +9,8 @@ takes the block components and puts them together on a page
 const PageBuilder = (props) => {
 	const { meta, blocks } = props.data;
 
+	console.log({props});
+
 	const bodySections = blocks.map( (block,i ) => {
     const Block = block.component;
     return(

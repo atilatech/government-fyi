@@ -9,6 +9,7 @@ import TextWithTitleBlock from "../../components/page-blocks/blocks/TextWithTitl
 import $ from "jquery";
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import {slugify} from "../../components/page-blocks/blocks/PartyPlatformBlock";
+import Link from "react-router-dom/Link";
 export const Button = styled.a`
 	font-family: ${props=>props.theme.fonts.avant};
 	font-weight: bold;
@@ -67,6 +68,9 @@ const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => (
                     [tk add code to query all the platform data from PlatformData.js.demographics that affects:
                     {demographic}
                 </li>
+                <Link to={`/people/${demographic}`}>
+                    Read more about... {demographic}
+                </Link>
             </ul>)
         }
     }
@@ -89,7 +93,7 @@ const Data = {
         documentTitle:"People | ourgovernment.fyi",
         socialHeadline:"How will the Canadian Federal Elections affect you?",
         socialDescription: demographicsString,
-        socialImage:"diversiy.png",
+        socialImage:"diversity.png",
     },
     blocks: [
         {
