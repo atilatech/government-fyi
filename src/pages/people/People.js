@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
 import ImgAndText2Block from 'components/page-blocks/blocks/ImgAndText2Block'
-import diversity from './images/diversity.png'
+import diversityImage from './images/diversity.png'
 import Color from 'layout/colors'
 import {ALL_DEMOGRAPHICS} from '../../data/Constants';
 export const Button = styled.a`
@@ -55,13 +55,14 @@ const Data = {
             component: PageTitleBlock,
             data: {
                 title: "How Will these Issues Affect Me?",
-                subtitle: demographicsString
+                subtitle: demographicsString,
+                backgroundImage: diversityImage
             }
         },
         {
             component: ImgAndText2Block,
             data: {
-                image: diversity,
+                image: diversityImage,
                 alt: "Venn diagram of a debate and politifact",
                 title: "nonpartisan",
                 flipped: true,
