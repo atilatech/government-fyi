@@ -31,6 +31,11 @@ const Title = styled.h2`
 `;
 
 
+export function slugify(party){
+
+    return party.replace("'","").replace(" ", "-").toLowerCase();
+}
+
 export const PlatformBlock = (props) => {
     const {text, source, demographics, question} = props.partyPlatform;
 
@@ -47,7 +52,7 @@ export const PlatformBlock = (props) => {
             <React.Fragment>
                 Groups Affected: {' '}
             {demographics.map(group => (
-                    <Link to={`/demographic/${group}`} className="chip">
+                    <Link to={`/demographic/${slugify(group)}`} className="chip">
                         {group}
                     </Link>
             ))}
@@ -82,11 +87,6 @@ function partyToTileTransform(party){
 
     return title;
 };
-
-export function partyToCssClassTransform(party){
-
-    return party.replace("'","").replace(" ", "-").toLowerCase();
-}
 const PartyPlatformBlock = (props) => {
     const {party, partyPlatforms, nColWidth} = props.data;
 
@@ -106,7 +106,7 @@ const PartyPlatformBlock = (props) => {
                 {title &&
                 <React.Fragment>
                     <FillRestWithLine >
-                        <Title className={partyToCssClassTransform(party)}>
+                        <Title className={slugify(party)}>
                             {title}
                         </Title>
                     </FillRestWithLine>

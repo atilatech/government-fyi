@@ -11,7 +11,7 @@ import Citation from 'components/interactive/citation/citation'
 // import Acronym from 'components/interactive/acronym'
 import { Citations } from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
-import {CONSERVATIVE_JOBS_AND_ECONOMY} from "../../data/PartyPlatformData";
+import {CONSERVATIVE_JOBS_AND_ECONOMY, LIBERAL_JOBS_AND_ECONOMY} from "../../data/PartyPlatformData";
 
 const Data = {
 	pageId: "jobs-and-economy",
@@ -38,23 +38,8 @@ const Data = {
 			data: CONSERVATIVE_JOBS_AND_ECONOMY,
 		},
 		{
-			component: TextWithTitleBlock,
-			data: {
-				title: <span className="liberal">
-					What do the Liberals think…
-			</span>,
-				text: <ul>
-					<li>
-						Raise the federal minimum wage to $15 per hour.
-					</li>
-					<li>
-						Add an additional $9 million over three years to help more visible minority newcomer women find work
-					</li>
-					<li>
-						Create a new federal <Citation data={Citations['1']}> Family Day holiday</Citation>
-					</li>
-				</ul>
-			}
+			component: PartyPlatformBlock,
+			data: LIBERAL_JOBS_AND_ECONOMY,
 		},
 		{
 			component: TextWithTitleBlock,

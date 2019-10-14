@@ -2,6 +2,16 @@ import PropTypes from "prop-types";
 import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
+import {
+    FOREIGNERS,
+    IMMIGRANTS,
+    LOW_INCOME,
+    OIL_WORKERS,
+    RECENT_GRADS,
+    STUDENTS,
+    VISIBLE_MINORITY, WOMEN,
+    YOUNG_PEOPLE
+} from "./Constants";
 
 
 export const PartyPlatformPropTypes = {
@@ -52,6 +62,7 @@ export const NDP_HOUSING = {
         },
         {
             text: "NDP proposes a 15% extra tax on foreign buyers.",
+            demographics: [FOREIGNERS]
         }
     ],
 };
@@ -61,13 +72,33 @@ export const CONSERVATIVE_JOBS_AND_ECONOMY = {
     partyPlatforms: [
         {
             text: "Improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.",
+            demographics: ['immigrants', 'unemployed'],
         },
         {
             text: "End foreign oil imports and get pipelines built, including the Trans Mountain, which they claim will create “tens of thousands” of jobs.",
+            demographics: [OIL_WORKERS],
         },
         {
             text: "Tax credit for young graduates who move to Quebec, matching an existing provincial credit",
+            demographics: [RECENT_GRADS, STUDENTS, YOUNG_PEOPLE],
         }
+    ],
+};
+
+export const LIBERAL_JOBS_AND_ECONOMY = {
+    party: "Liberal",
+    partyPlatforms: [
+        {
+            text: "Raise the federal minimum wage to $15 per hour.",
+            demographics: [LOW_INCOME,],
+        },
+        {
+            text: "Add an additional $9 million over three years to help more visible minority newcomer women find work",
+            demographics: [WOMEN, VISIBLE_MINORITY]
+        },
+        {
+            text: (<span>Create a new federal <Citation data={Citations['1']}> Family Day holiday</Citation></span>),
+        },
     ],
 };
 
