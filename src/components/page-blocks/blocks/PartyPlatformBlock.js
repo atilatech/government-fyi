@@ -6,6 +6,7 @@ import {Spacer} from 'layout/util'
 import FillRestWithLine from 'components/static/TextAndLine'
 import Color from 'layout/colors'
 import {Link} from "react-router-dom";
+import {PartyPlatformBlockPropTypes, PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
 /*
 A block of text
 takes a title and body of text
@@ -55,14 +56,6 @@ export const PlatformBlock = (props) => {
             <br/>
         </React.Fragment>
     );
-}
-
-
-const PartyPlatformPropTypes = {
-    text: PropTypes.string.isRequired,
-    source: PropTypes.string,
-    question: PropTypes.string,
-    demographics: PropTypes.arrayOf(PropTypes.string),
 }
 
 PlatformBlock.propTypes = {
@@ -127,13 +120,15 @@ const PartyPlatformBlock = (props) => {
     );
 }
 
-PartyPlatformBlock.propTypes = {
+
+const PartyPlatformBlockPropTypes = {
     data: PropTypes.shape({
         party: PropTypes.string.isRequired,
         partyPlatforms: PropTypes.arrayOf(PropTypes.shape(PartyPlatformPropTypes)).isRequired,
         nColWidth: PropTypes.number,
     })
 };
+PartyPlatformBlock.propTypes = PartyPlatformBlockPropTypes;
 
 
 export default PartyPlatformBlock
