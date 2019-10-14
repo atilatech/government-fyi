@@ -77,7 +77,7 @@ export const CONSERVATIVE_JOBS_AND_ECONOMY = {
         },
         {
             text: "End foreign oil imports and get pipelines built, including the Trans Mountain, which they claim will create “tens of thousands” of jobs.",
-            demographics: [OIL_WORKERS, FOREIGNERS],
+            demographics: [OIL_WORKERS],
         },
         {
             text: "Tax credit for young graduates who move to Quebec, matching an existing provincial credit",
