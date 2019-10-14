@@ -6,7 +6,7 @@ cache:
     - node_modules
 script:
   - npm test
-  - echo $TRAVIS_COMMIT_MESSAGE $TRAVIS_BUILD_WEB_URL $TRAVIS_COMMIT_MESSAGE;
+  - echo $TRAVIS_COMMIT_MESSAGE $TRAVIS_BUILD_WEB_URL $TRAVIS_JOB_WEB_URL;
 
 before_deploy:
   - npm install netlify-cli -g
@@ -14,7 +14,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: netlify deploy --dir=./build --prod --site $NETLIFY_SITE_ID_PROD --auth $NETLIFY_AUTH_TOKEN  -m "${TRAVIS_COMMIT}"
+  script: netlify deploy --dir=./build --prod --site $NETLIFY_SITE_ID_PROD --auth $NETLIFY_AUTH_TOKEN
   skip_cleanup: true
   on:
     all_branches: true
