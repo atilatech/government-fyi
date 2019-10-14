@@ -46,9 +46,9 @@ export const PlatformBlock = (props) => {
             </li>
             {demographics &&
             <React.Fragment>
-                Groups Affected: {' '}
+                <strong>Groups Affected:</strong> {' '}
             {demographics.map(group => (
-                    <Link to={`/demographic/${slugify(group)}`} className="chip">
+                    <Link to={`/people/${slugify(group)}`} className="chip">
                         {group}
                     </Link>
             ))}
