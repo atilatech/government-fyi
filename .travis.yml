@@ -6,13 +6,14 @@ cache:
     - node_modules
 script:
   - npm test
+
+before_deploy:
+  - npm install netlify-cli -g
   - npm run build
+
 deploy:
-  provider: netlify
-  site: $NETLIFY_SITE_ID
-  auth: $NETLIFY_AUTH_TOKEN
-#  edge: true # opt in to dpl v2
-  local_dir: "build/"
-  prod: true
+  provider: script
+  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_AUTH_TOKEN -p ./build
+  skip_cleanup: true
   on:
     all_branches: true
