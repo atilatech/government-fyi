@@ -129,7 +129,7 @@ class NavItem extends React.Component {
 		super(props);
 		this.state={
 			isHovered: false,
-			pageLinks: ['/housing', '/jobsEconomy'],
+			pageLinks: ['/housing', '/jobs-and-economy'],
 		}
 	}
 	handleMouseEnter = () => {
