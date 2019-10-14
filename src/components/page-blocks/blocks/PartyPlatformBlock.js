@@ -6,6 +6,7 @@ import {Spacer} from 'layout/util'
 import FillRestWithLine from 'components/static/TextAndLine'
 import Color from 'layout/colors'
 import {Link} from "react-router-dom";
+import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
 /*
 A block of text
 takes a title and body of text
@@ -30,6 +31,11 @@ const Title = styled.h2`
 `;
 
 
+export function slugify(party){
+
+    return party.replace("'","").replace(" ", "-").toLowerCase();
+}
+
 export const PlatformBlock = (props) => {
     const {text, source, demographics, question} = props.partyPlatform;
 
@@ -46,7 +52,7 @@ export const PlatformBlock = (props) => {
             <React.Fragment>
                 Groups Affected: {' '}
             {demographics.map(group => (
-                    <Link to={`/demographic/${group}`} className="chip">
+                    <Link to={`/demographic/${slugify(group)}`} className="chip">
                         {group}
                     </Link>
             ))}
@@ -55,14 +61,6 @@ export const PlatformBlock = (props) => {
             <br/>
         </React.Fragment>
     );
-}
-
-
-const PartyPlatformPropTypes = {
-    text: PropTypes.string.isRequired,
-    source: PropTypes.string,
-    question: PropTypes.string,
-    demographics: PropTypes.arrayOf(PropTypes.string),
 }
 
 PlatformBlock.propTypes = {
@@ -89,11 +87,6 @@ function partyToTileTransform(party){
 
     return title;
 };
-
-export function partyToCssClassTransform(party){
-
-    return party.replace("'","").replace(" ", "-").toLowerCase();
-}
 const PartyPlatformBlock = (props) => {
     const {party, partyPlatforms, nColWidth} = props.data;
 
@@ -113,7 +106,7 @@ const PartyPlatformBlock = (props) => {
                 {title &&
                 <React.Fragment>
                     <FillRestWithLine >
-                        <Title className={partyToCssClassTransform(party)}>
+                        <Title className={slugify(party)}>
                             {title}
                         </Title>
                     </FillRestWithLine>
@@ -127,13 +120,15 @@ const PartyPlatformBlock = (props) => {
     );
 }
 
-PartyPlatformBlock.propTypes = {
+
+const PartyPlatformBlockPropTypes = {
     data: PropTypes.shape({
         party: PropTypes.string.isRequired,
         partyPlatforms: PropTypes.arrayOf(PropTypes.shape(PartyPlatformPropTypes)).isRequired,
         nColWidth: PropTypes.number,
     })
 };
+PartyPlatformBlock.propTypes = PartyPlatformBlockPropTypes;
 
 
 export default PartyPlatformBlock
