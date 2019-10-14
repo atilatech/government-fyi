@@ -67,7 +67,7 @@ const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => (
     }
 ));
 
-function PeopleNavigator (){
+function PeopleNavigatorScroll (){
 
     const demographicsLinks = ALL_DEMOGRAPHICS.map(demographic => (
         <li key={demographic}><a href={`#${slugify(demographic)}`}
@@ -77,6 +77,7 @@ function PeopleNavigator (){
     ));
     return demographicsLinks;
 }
+
 const Data = {
     pageId: "people",
     meta: {
@@ -98,7 +99,7 @@ const Data = {
         {
             component: CustomBlock,
             data: {
-                body: <PeopleNavigator/>
+                body: <PeopleNavigatorScroll/>
             }
         },
         ...demographicsBlocks,
