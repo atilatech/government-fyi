@@ -3,6 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
 import {scrollToElement, slugify, toTitleCase} from "../../services/Utils";
 import {ALL_DEMOGRAPHICS} from "../../data/Constants";
+import {ELECTION_TOPICS} from "../../data/PartyPlatformData";
 import Link from "react-router-dom/Link";
 
 class Banner extends React.Component {
@@ -18,15 +19,10 @@ class Banner extends React.Component {
 
   render() {
 
-    const topicsData = [
-      {title: 'Housing'},
-      {title: 'Jobs and Economy'},
-      {title: 'Healthcare'},
-      {title: 'Immigration'},
-      {title: 'Taxes'},
-      {title: 'Seniors'},
-      {title: 'Education'},
-    ]
+    const topicsData = ELECTION_TOPICS
+        .map(topic => ({
+          title: topic
+        }));
     return (
         <div className="Banner container p-5">
           <QueueAnim type="alpha" delay={150}>
