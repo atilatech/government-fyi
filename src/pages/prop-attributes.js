@@ -128,10 +128,10 @@ const images = [
     _2x_webp: Prop2Img_2x_w,
   },
   {
-    _1x: Prop3Img,
-    _1x_webp: Prop3Img_w,
-    _2x: Prop3Img_2x,
-    _2x_webp: Prop3Img_2x_w,
+    _1x: Prop6Img,
+    _1x_webp: Prop6Img_w,
+    _2x: Prop6Img_2x,
+    _2x_webp: Prop6Img_2x_w,
   },
   {
     _1x: Prop4Img,
@@ -267,7 +267,7 @@ const thumbs = [
 const titles = [
   "Housing",
   "Jobs and Economy",
-  "Prop 3 issues $8.9B for water projects",
+  "Energy and Climate",
   "Prop 4 issues $1.5B for children's hospitals",
   "Prop 5 gives old folks a property tax discount when they move",
   "Prop 6 repeals last year's gas tax",
@@ -282,7 +282,7 @@ const titles = [
 const shortTitles = [
   "Housing",
   "Jobs and Economy",
-  "Environmental bond",
+  "Energy and Environment",
   "Hospital bond",
   "Property tax discount",
   "Gas tax repeal",
@@ -295,9 +295,9 @@ const shortTitles = [
 ]
 
 const headlines = [
-  "What do the parties think about Housing?",
-  "What do the parties think about our jobs and the economy?",
-  "Prop 3 issues $9B for water projects",
+  "Canadian Elections on Housing: The most expensive thing you will ever buy",
+  "Canadian Elections on the Economy: What's the best way to make us wealthier?",
+  "What price are we willing to pay to save the earth?",
   "Prop 4 issues $1.5B for children's hospitals",
   "Prop 5 lets older folk move with their property tax assesments",
   "Prop 6 repeals last year's gas tax",
@@ -310,9 +310,9 @@ const headlines = [
 ]
 
 const descriptions = [
-  "A house is the most expensive thing most of us will ever buy. What are the different parties plan for housing?",
-  "What is the federal minimum wage going to be?",
-  "A lot of Farmers are a fan.",
+  "The most expensive thing you will ever buy",
+  "What's the best way to make us wealthier?",
+  "What price are we willing to pay to save the earth?",
   "funding for renovations and new construction.",
   "The idea is to free up housing. Will it work?",
   "And future gas tax increases must be approved by voters.",
@@ -322,7 +322,7 @@ const descriptions = [
   "Does it help or hurt to have cities regulate rents?",
   "Should paramedics be required to respond to calls if they're on break?",
   "Guess what 1 square foot looks like relative to a chicken."
-]
+];
 
 const results = [
   "Y",

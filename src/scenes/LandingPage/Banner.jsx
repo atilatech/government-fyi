@@ -25,7 +25,7 @@ class Banner extends React.Component {
           title: topic
         }));
     return (
-        <div className="Banner container p-5">
+        <div className="Banner container">
           <QueueAnim type="alpha" delay={150}>
             <Row>
               <Col md={12} xs={24}>
