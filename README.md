@@ -13,6 +13,8 @@ We help you understand how our government works.
 
 Anyone can join the Our Government FYI project.
 
+Read this [wiki on how to Contribute to Government FYI](https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI)
+
 1. If you want to research and write about a politcal topic on the webiste
 you can add it to [this google doc](https://docs.google.com/document/d/1r0bxUVZR_ernVrV0Jhwy7-1weESWNs4dJC-ZPKPyFwQ/edit?usp=sharing).
 
