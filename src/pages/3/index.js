@@ -1,6 +1,5 @@
 import React from 'react'
 import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
-import LinksBlock from '../../components/page-blocks/blocks/LinksBlock'
 import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
 import IMessageBlock from '../../components/page-blocks/blocks/IMessageBlock'
 import {EmojiLg} from '../../components/static/iMessageStyles'
