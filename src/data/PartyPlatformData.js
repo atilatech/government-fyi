@@ -3,12 +3,14 @@ import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {
-    FOREIGNERS, HOMEOWNERS,
+    FOREIGNERS,
+    HOMEOWNERS,
     LOW_INCOME,
     OIL_WORKERS,
     RECENT_GRADS,
     STUDENTS,
-    VISIBLE_MINORITY, WOMEN,
+    VISIBLE_MINORITY,
+    WOMEN,
     YOUNG_PEOPLE
 } from "./Constants";
 
@@ -21,6 +23,20 @@ export const PartyPlatformPropTypes = {
     question: PropTypes.string,
     demographics: PropTypes.arrayOf(PropTypes.string),
 };
+
+export const JOBS_AND_ECONOMY = "Jobs and Economy";
+export const ENERGY_AND_CLIMATE = "Energy and Climate";
+
+export const ELECTION_TOPICS = [
+    "Housing",
+    JOBS_AND_ECONOMY,
+    ENERGY_AND_CLIMATE,
+    "Healthcare",
+    "Immigration",
+    "Taxes",
+    "Seniors",
+    "Education",
+];
 
 export const LIBERAL_HOUSING = {
     party: "Liberal",
@@ -110,4 +126,3 @@ export const LIBERAL_JOBS_AND_ECONOMY = {
 export const HOUSING_PLATFORMS = [CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING];
 export const JOBS_ECONOMY_PLATFORMS = [LIBERAL_JOBS_AND_ECONOMY, CONSERVATIVE_JOBS_AND_ECONOMY];
 
-export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS];

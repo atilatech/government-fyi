@@ -41,7 +41,9 @@ export const PlatformBlock = (props) => {
             <li className="p-0-5">
                 {text}
                 {source &&
-                <a href={source}>(source)</a>
+                    <React.Fragment>
+                        {' '}<a href={source}>(source)</a>
+                    </React.Fragment>
                 }
             </li>
             {demographics &&
@@ -73,9 +75,9 @@ function partyToTitleTransform(party){
             break;
         case "NDP":
         case "Bloc Quebecois":
-        case "People's Party":
-        case "Green Party":
-            title = `What does the ${party} think?`;
+        case "People's":
+        case "Green":
+            title = `What does the ${party} Party think?`;
             break;
         default:
             break;

@@ -102,7 +102,7 @@ label {
 
 
 
-.conservative, .bloc-quebecois, .peoples-party {
+.conservative, .bloc-quebecois, .peoples {
   color: #04479d;
 }
 
@@ -118,7 +118,7 @@ label {
   color: #3d9b35;
 }
 
-.conservative, .bloc-quebecois, .peoples-party,
+.conservative, .bloc-quebecois, .peoples,
 .liberal, .ndp, .green {
   &:hover {
     color: #1890ff;
@@ -127,4 +127,10 @@ label {
 
 .p-0-5 {
   padding: .5rem;
+}
+
+.text-link {
+  &:hover {
+    color: #1890ff;
+  }
 }
