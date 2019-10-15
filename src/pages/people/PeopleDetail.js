@@ -37,7 +37,6 @@ function demographicsToIssueQuery(demographic) {
         platform.partyPlatforms
             .filter(item=> item.demographics)
             .forEach(item => {
-                console.log({platform, item});
                 const { party, topic } = platform;
                 const { text } = item;
                 if (item.demographics.includes(demographic)) {

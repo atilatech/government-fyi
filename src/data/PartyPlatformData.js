@@ -14,7 +14,9 @@ import {
 
 
 export const PartyPlatformPropTypes = {
-    text: PropTypes.string.isRequired,
+    text: PropTypes.PropTypes.oneOfType(
+        [PropTypes.string, PropTypes.object])
+        .isRequired,
     source: PropTypes.string,
     question: PropTypes.string,
     demographics: PropTypes.arrayOf(PropTypes.string),
@@ -109,5 +111,3 @@ export const HOUSING_PLATFORMS = [CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOU
 export const JOBS_ECONOMY_PLATFORMS = [LIBERAL_JOBS_AND_ECONOMY, CONSERVATIVE_JOBS_AND_ECONOMY];
 
 export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS];
-
-console.log({ALL_PLATFORMS});
