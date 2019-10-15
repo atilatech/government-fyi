@@ -5,8 +5,8 @@ import diversityImage from './images/diversity.png'
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import {slugify, unSlugify} from "../../services/Utils";
 import {withRouter} from "react-router-dom";
-import {ALL_PLATFORMS} from "../../data/PartyPlatformData";
 import Link from "react-router-dom/Link";
+import {ALL_PLATFORMS} from "../../data/PartyPlatformDataEnergyClimate";
 
 function DemographicDetail ({demographicIssues}){
 

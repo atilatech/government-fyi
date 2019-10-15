@@ -1,18 +1,24 @@
 import React from 'react'
-import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
-import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-// import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
-import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
-import {EmojiLg} from 'components/static/iMessageStyles'
-import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from 'pages/prop-attributes'
+import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
+import LinksBlock from '../../components/page-blocks/blocks/LinksBlock'
+import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
+import IMessageBlock from '../../components/page-blocks/blocks/IMessageBlock'
+import {EmojiLg} from '../../components/static/iMessageStyles'
+import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from '../../pages/prop-attributes'
 
 
-import Citation from 'components/interactive/citation/citation'
-// import Acronym from 'components/interactive/acronym'
+import Citation from '../../components/interactive/citation/citation'
 import {Citations} from './expandables'
+import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
+import {ENERGY_CLIMATE_PLATFORMS} from "../../data/PartyPlatformDataEnergyClimate";
+
+const energyClimatePlatforms = ENERGY_CLIMATE_PLATFORMS.map(PLATFORM => (
+	{
+		component: PartyPlatformBlock,
+		data: PLATFORM,
+	}
+));
 
 const Data = {
 	pageId:"energy-and-climate",
@@ -25,45 +31,80 @@ const Data = {
 		{
 			component: ResultBlock,
 			data: {
-				result: PropMetaData(3).result,
-				title: "Failed",
-				text: "Voters rejected a $8.9B bond measure that would've funded water and environmental projects in inland CA."
+				result: PropMetaData(1).result,
+				title: "What's the Key Point?",
+				text: <span>
+					Our climate is getting warmer.
+					One of the ways to fix this is by introducing a Carbon tax.
+				</span>
 			},
 		},
-    {
-    	component: TextWithTitleBlock,
-    	data: {
-				title: "Have we met before?",
-				text: "Possibly. This June, we passed Prop 68, a $4.1B bond measure that funds water and environmental projects in CA. Prop 3 is another $8.9B general obligation bond measure that funds water-related improvements across the state. Both measures add up to a grand total of about $13B."
+		{
+			component: SectionTitleBlock,
+			data:{
+				title: "A Casual Carbon Tax Conversation",
+				nColWidth: 6,
 			}
 		},
 		{
-			component: TextWithTitleBlock,
+			component: IMessageBlock,
 			data: {
-				title:"Wow, we really care about our water",
-    		text: <span>
-					Oh definitely, and especially farmers and agricultural water suppliers. Prop 3 would specifically improve the conditions of watershed lands ($2.5B), drinking water ($2.1B), fish and wildlife habitats ($1.4B), canals and water facilities ($1.2B), groundwater ($1.1B), and flood protection ($500M). The Legislative Analyst’s Office estimates that repaying Prop 3 would cost about $430M a year for the next 40 years, totaling $17.3B with interest, which is about 1/3 of one percent of CA’s General Fund budget.
-				</span>
+				messages: [
+					{
+						from: "them",
+						body:<span>
+							Hey so, apparently oil is
+								<Citation data={Citations['8']}> really bad for the environment </Citation>
+						</span>
+					},
+					{
+						from: "me",
+						body:"k."
+					},
+					{
+						from: "me",
+						body:"So what do you want me to do about it?"
+					},
+					{
+						from: "them",
+						body:<span>How about if you use things that damage the environment you have to pay
+						an extra tax?</span>
+					},
+					{
+						from:"me",
+						body:<span>woah, relax. That's going to cost me like
+							<Citation data={Citations['8']}> $200-$400 </Citation>
+						</span>
+					},
+					{
+						from:"me-no-bg",
+						body:<EmojiLg><span role="img" aria-label="money fly emoji">💸</span></EmojiLg>
+					},
+					{
+						from:"them",
+						body:<span>But if you don't
+							<Citation data={Citations['8']}>[tk add reasons why global warming is bad]</Citation>
+						</span>
+					},
+					{
+						from:"me",
+						body:<span>Wait, I thought some people said that.
+							Carbon taxes won't even make a difference. {' '}
+							<Citation data={Citations['8']}>It only reduces emissions by 1%</Citation>.
+						</span>
+					},
+					{
+						from:"them",
+						body:<span>
+							It depends how you look at it. Carbon tax is
+							<Citation data={Citations['8']}>the most effective way of lowering emissions.</Citation>.
+						</span>
+					},
+
+				]
 			}
 		},
-		{
-			component: TextWithTitleBlock,
-			data: {
-				title:"Still sounds like a lot of money",
-				text:
-				<span>
-					Critics of Prop 3 agree. Unlike Prop 68, which was put on the ballot by the state legislature,<Citation data={Citations['3']}> Prop 3 is on the ballot because the authors gathered enough signatures.</Citation> <Citation data={Citations['5']}>Opponents say it's a “pay-to-play” ballot measure that not only lacks administrative oversight, but also funds projects that directly benefit those who backed the campaign.</Citation> Prop 3 has raised about $3.4M from notable donors, including Land O' Lakes and Wonderful Orchards (the producers of POM juice and FIJI water). <Citation data={Citations['2']}>The owners of Wonderful Orchards, for instance, have farmland that sits in Kern County, of which $750M of Prop 3 would go towards fixing a damaged canal that waters the region.</Citation>
-					<br/><br/>
-					On the other hand, <Citation data={Citations['4']}>supporters argue that Prop 3 is a bipartisan initiative that doesn’t just focus on urban, coastal water problems like Prop 68, but commits significant funding and resources to inland California.</Citation> Local water authorities along with agriculture and conservation groups also support Prop 3 saying it’s a critical step to upgrading CA’s water system.
-				</span>,
-    	},
-    },
-		// {
-		// 	component: DonutGraphBlock,
-		// 	data:{
-		// 		src:""
-		// 	}
-		// },
+		...energyClimatePlatforms,
 		{
 			component: SectionTitleBlock,
 			data:{
@@ -137,12 +178,6 @@ const Data = {
 					},
 
 				]
-			}
-		},
-		{
-			component: SectionTitleBlock,
-			data:{
-				title: "More reading"
 			}
 		},
 		{
@@ -237,5 +272,5 @@ const Data = {
 			}
 		}
   ]
-}
+};
 export default () => (<PropPageBuilder data={Data}/>);

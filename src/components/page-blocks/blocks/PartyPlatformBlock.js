@@ -73,9 +73,9 @@ function partyToTitleTransform(party){
             break;
         case "NDP":
         case "Bloc Quebecois":
-        case "People's Party":
-        case "Green Party":
-            title = `What does the ${party} think?`;
+        case "People's":
+        case "Green":
+            title = `What does the ${party} Party think?`;
             break;
         default:
             break;

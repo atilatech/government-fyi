@@ -64,6 +64,7 @@ const IMessageBlock = (props) => {
 			<React.Fragment key={i}>
 				{conditionalClear}
 				{msg}
+				<br />
 			</React.Fragment>
 		)
 	})
