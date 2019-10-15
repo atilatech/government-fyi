@@ -282,7 +282,7 @@ const titles = [
 const shortTitles = [
   "Housing",
   "Jobs and Economy",
-  "Energy and Environment",
+  "Energy and Climate",
   "Hospital bond",
   "Property tax discount",
   "Gas tax repeal",
