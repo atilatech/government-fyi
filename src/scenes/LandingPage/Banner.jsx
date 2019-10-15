@@ -2,8 +2,7 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
 import {scrollToElement, slugify, toTitleCase} from "../../services/Utils";
-import {ALL_DEMOGRAPHICS} from "../../data/Constants";
-import {ELECTION_TOPICS} from "../../data/PartyPlatformData";
+import {ALL_DEMOGRAPHICS, ELECTION_TOPICS} from "../../data/Constants";
 import Link from "react-router-dom/Link";
 
 class Banner extends React.Component {

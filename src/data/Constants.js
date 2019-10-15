@@ -18,3 +18,16 @@ export const ALL_DEMOGRAPHICS = [
     CLIMATE_CONSCIOUS, IMMIGRANTS, HOMEOWNERS, OIL_WORKERS,
     ENTREPRENEURS_AND_SMALL_BUSINESS, UNEMPLOYED,
     FOREIGNERS, LOW_INCOME, WOMEN, VISIBLE_MINORITY];
+
+export const JOBS_AND_ECONOMY = "Jobs and Economy";
+export const ENERGY_AND_CLIMATE = "Energy and Climate";
+export const ELECTION_TOPICS = [
+    "Housing",
+    JOBS_AND_ECONOMY,
+    ENERGY_AND_CLIMATE,
+    "Healthcare",
+    "Immigration",
+    "Taxes",
+    // "Seniors",
+    "Education",
+];

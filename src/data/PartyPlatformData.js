@@ -24,20 +24,6 @@ export const PartyPlatformPropTypes = {
     demographics: PropTypes.arrayOf(PropTypes.string),
 };
 
-export const JOBS_AND_ECONOMY = "Jobs and Economy";
-export const ENERGY_AND_CLIMATE = "Energy and Climate";
-
-export const ELECTION_TOPICS = [
-    "Housing",
-    JOBS_AND_ECONOMY,
-    ENERGY_AND_CLIMATE,
-    "Healthcare",
-    "Immigration",
-    "Taxes",
-    "Seniors",
-    "Education",
-];
-
 export const LIBERAL_HOUSING = {
     party: "Liberal",
     topic: "Housing",
