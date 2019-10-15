@@ -41,7 +41,9 @@ export const PlatformBlock = (props) => {
             <li className="p-0-5">
                 {text}
                 {source &&
-                <a href={source}>(source)</a>
+                    <React.Fragment>
+                        {' '}<a href={source}>(source)</a>
+                    </React.Fragment>
                 }
             </li>
             {demographics &&

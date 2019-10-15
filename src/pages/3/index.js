@@ -34,8 +34,10 @@ const Data = {
 				result: PropMetaData(1).result,
 				title: "What's the Key Point?",
 				text: <span>
-					Our climate is getting warmer.
-					One of the ways to fix this is by introducing a Carbon tax.
+					Some of our energy sources are damaging the environment.
+					One perspective is that by pivoting to other sources of energy it will help the environment.
+					Another perspective is that the economic damage would be too much. e.g. People would lose jobs,
+					Canadian companies will be less competitive.
 				</span>
 			},
 		},
@@ -53,7 +55,7 @@ const Data = {
 					{
 						from: "them",
 						body:<span>
-							Hey so, apparently oil is
+							Hey so, oil is
 								<Citation data={Citations['8']}> really bad for the environment </Citation>
 						</span>
 					},
@@ -82,14 +84,13 @@ const Data = {
 					},
 					{
 						from:"them",
-						body:<span>But if you don't
+						body:<span>But this is earth we're talking about. We only get one.
 							<Citation data={Citations['8']}>[tk add reasons why global warming is bad]</Citation>
 						</span>
 					},
 					{
 						from:"me",
-						body:<span>Wait, I thought some people said that.
-							Carbon taxes won't even make a difference. {' '}
+						body:<span>Wait, I heard that carbon taxes won't even make a difference. {' '}
 							<Citation data={Citations['8']}>It only reduces emissions by 1%</Citation>.
 						</span>
 					},

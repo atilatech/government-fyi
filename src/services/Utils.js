@@ -12,7 +12,7 @@ export function scrollToElement(selector) {
 
 export function slugify(party) {
     // https://stackoverflow.com/questions/5649403/how-to-use-replaceall-in-javascript
-    return party.replace(/,/g, "").replace(/ /g, "-").toLowerCase();
+    return party.replace(/'/g, "").replace(/ /g, "-").toLowerCase();
 }
 
 export function unSlugify(str) {
