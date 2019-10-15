@@ -128,3 +128,9 @@ label {
 .p-0-5 {
   padding: .5rem;
 }
+
+.text-link {
+  &:hover {
+    color: #1890ff;
+  }
+}

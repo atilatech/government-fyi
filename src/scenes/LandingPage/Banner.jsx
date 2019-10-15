@@ -14,6 +14,7 @@ class Banner extends React.Component {
     this.state = {
       model: null,
       searchQuery: '',
+      demographicsToShow: 5,
     }
   };
 
@@ -55,9 +56,9 @@ class Banner extends React.Component {
                     key="text"
                     type="bottom"
                 >
-                  <div className="col-sm-12">
+                  <div>
                     <h2> What do the Different parties think about </h2>
-                    <ul className="col-sm-12 font-size-xl">
+                    <ul className="font-size-xl">
                       {topicsData.map((topic, index) => (
                           <li key={topic.title}><a href={`#bg-${index+1}`}
                                  onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
@@ -74,9 +75,13 @@ class Banner extends React.Component {
                     key="text"
                     type="bottom"
                 >
-                  <div className="col-sm-12">
-                    <h2> How Will These Issues Affect Me? </h2>
-                    <ul className="col-sm-12 font-size-xl">
+                  <Link to="/people">
+                  <h2 className="text-link">
+                    How Will These Issues Affect Me?
+                  </h2>
+                  </Link>
+                  <div style={{ maxHeight: '300px', overflowY: 'scroll', width: '275px'}}>
+                    <ul className="font-size-xl">
                       {ALL_DEMOGRAPHICS.map(demographic => (
                           <li key={demographic}><Link to={`/people/${slugify(demographic)}`}>
                             {toTitleCase(demographic)}
