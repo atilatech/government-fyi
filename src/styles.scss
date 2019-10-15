@@ -99,3 +99,38 @@ label {
   text-decoration: underline;
   font-weight: bold;
 }
+
+
+
+.conservative, .bloc-quebecois, .peoples {
+  color: #04479d;
+}
+
+.liberal {
+  color: #d91820;
+}
+
+.ndp {
+  color: #f5821f;
+}
+
+.green {
+  color: #3d9b35;
+}
+
+.conservative, .bloc-quebecois, .peoples,
+.liberal, .ndp, .green {
+  &:hover {
+    color: #1890ff;
+  }
+}
+
+.p-0-5 {
+  padding: .5rem;
+}
+
+.text-link {
+  &:hover {
+    color: #1890ff;
+  }
+}

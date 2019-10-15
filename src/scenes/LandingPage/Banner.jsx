@@ -1,7 +1,10 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
-import $ from 'jquery';
+import {scrollToElement, slugify, toTitleCase} from "../../services/Utils";
+import {ALL_DEMOGRAPHICS} from "../../data/Constants";
+import {ELECTION_TOPICS} from "../../data/PartyPlatformData";
+import Link from "react-router-dom/Link";
 
 class Banner extends React.Component {
 
@@ -11,33 +14,18 @@ class Banner extends React.Component {
     this.state = {
       model: null,
       searchQuery: '',
+      demographicsToShow: 5,
     }
   };
 
-  scrollToElement = (selector) => {
-
-    try {
-      $('html, body').animate({scrollTop: $(selector).offset().top}, 1000);
-    }
-    catch (e) {
-      // console.log('scrollToElement catch e',e);
-
-    }
-  }
-
   render() {
 
-    const topicsData = [
-      {title: 'Housing'},
-      {title: 'Jobs and Economy'},
-      {title: 'Healthcare'},
-      {title: 'Immigration'},
-      {title: 'Taxes'},
-      {title: 'Seniors'},
-      {title: 'Education'},
-    ]
+    const topicsData = ELECTION_TOPICS
+        .map(topic => ({
+          title: topic
+        }));
     return (
-        <div className="Banner container p-5">
+        <div className="Banner container">
           <QueueAnim type="alpha" delay={150}>
             <Row>
               <Col md={12} xs={24}>
@@ -62,20 +50,42 @@ class Banner extends React.Component {
                   </h2>
                 </QueueAnim>
               </Col>
-              <Col md={{span: 9, offset: 3}} xs={24} className="px-4">
+              <Col md={6} xs={24} className="px-4">
                 <QueueAnim
                     className="text-wrapper responsive-text"
                     key="text"
                     type="bottom"
                 >
-                  <div className="col-sm-12">
+                  <div>
                     <h2> What do the Different parties think about </h2>
-                    <ul className="col-sm-12 font-size-xl">
+                    <ul className="font-size-xl">
                       {topicsData.map((topic, index) => (
                           <li key={topic.title}><a href={`#bg-${index+1}`}
-                                 onClick={()=>{this.scrollToElement(`#bg-${index+1}`)}}>
+                                 onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
                             {topic.title}
                           </a></li>
+                      ))}
+                    </ul>
+                  </div>
+                </QueueAnim>
+              </Col>
+              <Col md={6} xs={24} className="px-4">
+                <QueueAnim
+                    className="text-wrapper responsive-text"
+                    key="text"
+                    type="bottom"
+                >
+                  <Link to="/people">
+                  <h2 className="text-link">
+                    How Will These Issues Affect Me?
+                  </h2>
+                  </Link>
+                  <div style={{ maxHeight: '300px', overflowY: 'scroll', width: '275px'}}>
+                    <ul className="font-size-xl">
+                      {ALL_DEMOGRAPHICS.map(demographic => (
+                          <li key={demographic}><Link to={`/people/${slugify(demographic)}`}>
+                            {toTitleCase(demographic)}
+                          </Link></li>
                       ))}
                     </ul>
                   </div>

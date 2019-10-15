@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Row, Col } from 'react-flexbox-grid';
+import {Col, Row} from 'react-flexbox-grid';
 import {Spacer} from 'layout/util'
 import FillRestWithLine from 'components/static/TextAndLine'
 import Color from 'layout/colors'
 import {Link} from "react-router-dom";
+import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
+import {slugify} from "../../../services/Utils";
 /*
 A block of text
 takes a title and body of text
@@ -39,14 +41,16 @@ export const PlatformBlock = (props) => {
             <li className="p-0-5">
                 {text}
                 {source &&
-                <a href={source}>(source)</a>
+                    <React.Fragment>
+                        {' '}<a href={source}>(source)</a>
+                    </React.Fragment>
                 }
             </li>
             {demographics &&
             <React.Fragment>
-                Groups Affected: {' '}
+                <strong>Groups Affected:</strong> {' '}
             {demographics.map(group => (
-                    <Link to={`/demographic/${group}`} className="chip">
+                    <Link to={`/people/${slugify(group)}`} className="chip">
                         {group}
                     </Link>
             ))}
@@ -57,19 +61,11 @@ export const PlatformBlock = (props) => {
     );
 }
 
-
-const PartyPlatformPropTypes = {
-    text: PropTypes.string.isRequired,
-    source: PropTypes.string,
-    question: PropTypes.string,
-    demographics: PropTypes.arrayOf(PropTypes.string),
-}
-
 PlatformBlock.propTypes = {
     partyPlatform: PropTypes.shape(PartyPlatformPropTypes),
 };
 
-function partyToTileTransform(party){
+function partyToTitleTransform(party){
     let title = null;
 
     switch(party) {
@@ -79,9 +75,9 @@ function partyToTileTransform(party){
             break;
         case "NDP":
         case "Bloc Quebecois":
-        case "People's Party":
-        case "Green Party":
-            title = `What does the ${party} think?`;
+        case "People's":
+        case "Green":
+            title = `What does the ${party} Party think?`;
             break;
         default:
             break;
@@ -89,18 +85,13 @@ function partyToTileTransform(party){
 
     return title;
 };
-
-export function partyToCssClassTransform(party){
-
-    return party.replace("'","").replace(" ", "-").toLowerCase();
-}
 const PartyPlatformBlock = (props) => {
     const {party, partyPlatforms, nColWidth} = props.data;
 
     const nWidth = nColWidth || 6; // default hack
     const offset = Math.floor((12-nWidth)/2)
 
-    const title = partyToTileTransform(party);
+    const title = partyToTitleTransform(party);
     return(
         <Row>
             <Col
@@ -113,7 +104,7 @@ const PartyPlatformBlock = (props) => {
                 {title &&
                 <React.Fragment>
                     <FillRestWithLine >
-                        <Title className={partyToCssClassTransform(party)}>
+                        <Title className={slugify(party)}>
                             {title}
                         </Title>
                     </FillRestWithLine>
@@ -127,13 +118,15 @@ const PartyPlatformBlock = (props) => {
     );
 }
 
-PartyPlatformBlock.propTypes = {
+
+const PartyPlatformBlockPropTypes = {
     data: PropTypes.shape({
         party: PropTypes.string.isRequired,
         partyPlatforms: PropTypes.arrayOf(PropTypes.shape(PartyPlatformPropTypes)).isRequired,
         nColWidth: PropTypes.number,
     })
 };
+PartyPlatformBlock.propTypes = PartyPlatformBlockPropTypes;
 
 
 export default PartyPlatformBlock

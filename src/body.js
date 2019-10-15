@@ -23,7 +23,7 @@ const Body = (props) => {
         <Route path='/home' component={HomePage}/>
         <Route path='/housing' component={Prop1}/>
         <Route path='/jobs-and-economy' component={JobsAndEconomyPage}/>
-        <Route path='/prop-3' component={Prop3}/>
+        <Route path='/energy-and-climate' component={EnergyAndClimatePage}/>
         <Route path='/prop-4' component={Prop4}/>
         <Route path='/prop-5' component={Prop5}/>
         <Route path='/prop-6' component={Prop6}/>
@@ -34,6 +34,8 @@ const Body = (props) => {
         <Route path='/prop-11' component={Prop11}/>
         <Route path='/prop-12' component={Prop12}/>
         <Route path='/about' component={AboutPage}/>
+        <Route path='/people/:demographic' component={PeopleDetail}/>
+        <Route path='/people' component={People}/>
         <Route path='/terms' component={TermsPage}/>
         <Route path='/procrastinators' component={ProcrastinatorsPage}/>
         <Route path='/print' component={PrintedGuidePage}/>
@@ -50,13 +52,15 @@ const Body = (props) => {
 const HomePage = mkLoadable(import("pages/home/index"));
 // const BRBPage = mkLoadable(import("pages/coming-soon/index"));
 const AboutPage = mkLoadable(import("pages/about/index"));
+const People = mkLoadable(import("pages/people/People"));
+const PeopleDetail = mkLoadable(import("pages/people/PeopleDetail"));
 const TermsPage = mkLoadable(import("pages/terms/index"));
 const SubscribePage = mkLoadable(import("pages/subscribe/index"));
 const PrintedGuidePage = mkLoadable(import("pages/print/index"));
 const ProcrastinatorsPage = mkLoadable(import("pages/procrastinators/index"));
 const Prop1 = mkLoadable(import("pages/1/index"));
 const JobsAndEconomyPage = mkLoadable(import("pages/2/index"));
-const Prop3 = mkLoadable(import("pages/3/index"));
+const EnergyAndClimatePage = mkLoadable(import("pages/3/index"));
 const Prop4 = mkLoadable(import("pages/4/index"));
 const Prop5 = mkLoadable(import("pages/5/index"));
 const Prop6 = mkLoadable(import("pages/6/index"));

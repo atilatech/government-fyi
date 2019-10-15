@@ -134,7 +134,9 @@ const Data = {
       component: TextWithTitleBlock,
       data: {
         text:<span>
-          Prop 3 provides clean drinking water for local communities, fixes dams and canals, maintains watershed lands, and funds a plethora of other water and environmental projects in CA. It’s similar to the $4B water and environmental bond measure (Prop 68) we passed in June, but Prop 3 is a voter-backed ballot initiative. That means it bypasses a lot of the budgetary review processes often in legislatively-backed initiatives, like Prop 68. Prop 3 would cost CA a total of $17.3B, after interest.
+          Prop 3 provides clean drinking water for local communities, fixes dams and canals, maintains watershed lands, and funds a plethora of other water and environmental projects in CA.
+            It’s similar to the $4B water and environmental bond measure (Prop 68) we passed in June,
+            but Prop 3 is a voter-backed ballot initiative. That means it bypasses a lot of the budgetary review processes often in legislatively-backed initiatives, like Prop 68. Prop 3 would cost CA a total of $17.3B, after interest.
           <br/><br/>
           Supporters say Prop 3 is a much-needed investment for areas in inland CA. Opponents call this a “pay-to-play” measure because the special interests that are funding it (e.g. billionaire owners of POM juice), would be the ones who directly benefit from some of the projects.
         </span>
@@ -143,7 +145,7 @@ const Data = {
     {
       component: CustomBlock,
       data: {
-        body: <Btn to="/prop-3" label="Dive in"/>
+        body: <Btn to="/energy-and-climate" label="Dive in"/>
       }
     },
     {

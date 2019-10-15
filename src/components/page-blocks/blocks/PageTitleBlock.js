@@ -54,7 +54,7 @@ const Subheadline = styled.div`
 
 
 const PageTitleBlock = (props) => {
-	const {title, subtitle} = props.data;
+	const {title, subtitle, backgroundImage} = props.data;
 	// const dateOptions = {month: "2-digit", day: "2-digit", year: "2-digit", hour: '2-digit', minute:'2-digit'}
 	// let status = null;
 	// if(datePublished) {
@@ -63,23 +63,32 @@ const PageTitleBlock = (props) => {
 	// 		`Published on ${datePublished.toLocaleString([], dateOptions)}`;
 	// }
 	return(
-		<Row>
-	    <Col
-	    	xsOffset={1} xs={10}
-	      smOffset={2} sm={8}
-	      mdOffset={2} md={8}
-	      lgOffset={2} lg={8}
-      >
-				<Title>{title}</Title>
-				{subtitle && <Subheadline>{subtitle}</Subheadline>}
+		<React.Fragment>
+			{backgroundImage &&
+			<Row>
+				<img src={backgroundImage} alt={title} style={{maxHeight: '300px'}}/>
+			</Row>
+			}
+			<Row>
+				<Col
+					xsOffset={1} xs={10}
+					smOffset={2} sm={8}
+					mdOffset={2} md={8}
+					lgOffset={2} lg={8}
+				>
+					<Title>{title}</Title>
+					{subtitle && <Subheadline>{subtitle}</Subheadline>}
 				</Col>
-		</Row>
+			</Row>
+
+		</React.Fragment>
 	)
 }
 
 PageTitleBlock.propTypes = {
 	data: PropTypes.shape({
-		title: PropTypes.string.isRequired,
+		title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+		backgroundImage: PropTypes.string,
 		subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		datePublished: PropTypes.instanceOf(Date),
 		dateModified: PropTypes.instanceOf(Date),

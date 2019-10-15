@@ -16,7 +16,7 @@ class PropSection extends React.Component {
               // TODO: remove propNum once done converting to actual page names
               const propNum = i + 1;
               const {color, imageSet, title, socialDescription, result} = PropMetaData(propNum); 
-                const propLink = i <= 1 ? pageLink : `/prop-${pageLink}`;
+                const propLink = i <= 2 ? pageLink : `/prop-${pageLink}`;
                 return(
                 <PropCardBlock
                   key={i}
