@@ -69,7 +69,7 @@ const TextWithTitleBlock = (props) => {
 
 TextWithTitleBlock.propTypes = {
 	data: PropTypes.shape({
-		title: PropTypes.string,
+		title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		subtitle: PropTypes.string,
 		text: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 		nColWidth: PropTypes.number,

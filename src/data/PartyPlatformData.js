@@ -3,7 +3,7 @@ import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {
-    FOREIGNERS,
+    FOREIGNERS, HOMEOWNERS,
     LOW_INCOME,
     OIL_WORKERS,
     RECENT_GRADS,
@@ -14,7 +14,9 @@ import {
 
 
 export const PartyPlatformPropTypes = {
-    text: PropTypes.string.isRequired,
+    text: PropTypes.PropTypes.oneOfType(
+        [PropTypes.string, PropTypes.object])
+        .isRequired,
     source: PropTypes.string,
     question: PropTypes.string,
     demographics: PropTypes.arrayOf(PropTypes.string),
@@ -22,16 +24,15 @@ export const PartyPlatformPropTypes = {
 
 export const LIBERAL_HOUSING = {
     party: "Liberal",
-    issue: "housing",
+    topic: "Housing",
     partyPlatforms: [
         {
             question: "How easy should it be for builders to build new homes?",
             text: "Make it harder for foreigners to speculate on Canadian real estate market through a speculation tax. [tk what is speculation tax?]",
             source: "https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217",
             demographics: [
-                'foreigners',
-                'investors',
-                'homeowners'
+                FOREIGNERS,
+                HOMEOWNERS,
             ]
         },
         {
@@ -43,6 +44,7 @@ export const LIBERAL_HOUSING = {
 };
 export const CONSERVATIVE_HOUSING = {
     party: "Conservative",
+    topic: "Housing",
     partyPlatforms: [
         {
             question: "How easy should it be for builders to build new homes?",
@@ -54,6 +56,7 @@ export const CONSERVATIVE_HOUSING = {
 };
 export const NDP_HOUSING = {
     party: "NDP",
+    topic: "Housing",
     partyPlatforms: [
         {
             text: "New Democrats want to build 500,000 affordable housing units over 10 years;" +
@@ -68,6 +71,7 @@ export const NDP_HOUSING = {
 
 export const CONSERVATIVE_JOBS_AND_ECONOMY = {
     party: "Conservative",
+    topic: "Jobs and Economy",
     partyPlatforms: [
         {
             text: "Improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.",
@@ -86,6 +90,7 @@ export const CONSERVATIVE_JOBS_AND_ECONOMY = {
 
 export const LIBERAL_JOBS_AND_ECONOMY = {
     party: "Liberal",
+    topic: "Jobs and Economy",
     partyPlatforms: [
         {
             text: "Raise the federal minimum wage to $15 per hour.",
@@ -103,3 +108,6 @@ export const LIBERAL_JOBS_AND_ECONOMY = {
 
 
 export const HOUSING_PLATFORMS = [CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING];
+export const JOBS_ECONOMY_PLATFORMS = [LIBERAL_JOBS_AND_ECONOMY, CONSERVATIVE_JOBS_AND_ECONOMY];
+
+export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS];

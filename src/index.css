@@ -84,7 +84,7 @@ h5 {
 
 a {
 	color: #FF454C;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:hover, a:active {
   text-decoration: none;
@@ -110,24 +110,4 @@ b {
 
 .twitter-share-button {
   margin-left: 3px;
-}
-
-.conservative, .bloc-quebecois, .peoples-party {
-  color: #04479d;
-}
-
-.liberal {
-  color: #d91820;
-}
-
-.ndp {
-  color: #f5821f;
-}
-
-.green {
-  color: #3d9b35;
-}
-
-.p-0-5 {
-  padding: .5rem;
 }

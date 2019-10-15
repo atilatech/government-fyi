@@ -124,6 +124,7 @@ const nav = [
   { to:"/home/", label:"Props", longLabel: "CA Propositions (2018)"},
   // { to:"/races/", label:"Races"},
   { to:"/about/", label:"About", longLabel:"About us"},
+  { to:"/people/", label:"How does this affect me?", longLabel:"How does this affect me?"},
   { to:"/follow/", label:"Follow us", icon:""},
   { to:"/print/", label:"Print", longLabel: "Printed guide", icon:""},
 

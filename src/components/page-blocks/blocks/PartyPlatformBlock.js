@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Row, Col } from 'react-flexbox-grid';
+import {Col, Row} from 'react-flexbox-grid';
 import {Spacer} from 'layout/util'
 import FillRestWithLine from 'components/static/TextAndLine'
 import Color from 'layout/colors'
 import {Link} from "react-router-dom";
 import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
+import {slugify} from "../../../services/Utils";
 /*
 A block of text
 takes a title and body of text
@@ -31,11 +32,6 @@ const Title = styled.h2`
 `;
 
 
-export function slugify(party){
-
-    return party.replace("'","").replace(" ", "-").toLowerCase();
-}
-
 export const PlatformBlock = (props) => {
     const {text, source, demographics, question} = props.partyPlatform;
 
@@ -50,9 +46,9 @@ export const PlatformBlock = (props) => {
             </li>
             {demographics &&
             <React.Fragment>
-                Groups Affected: {' '}
+                <strong>Groups Affected:</strong> {' '}
             {demographics.map(group => (
-                    <Link to={`/demographic/${slugify(group)}`} className="chip">
+                    <Link to={`/people/${slugify(group)}`} className="chip">
                         {group}
                     </Link>
             ))}
@@ -67,7 +63,7 @@ PlatformBlock.propTypes = {
     partyPlatform: PropTypes.shape(PartyPlatformPropTypes),
 };
 
-function partyToTileTransform(party){
+function partyToTitleTransform(party){
     let title = null;
 
     switch(party) {
@@ -93,7 +89,7 @@ const PartyPlatformBlock = (props) => {
     const nWidth = nColWidth || 6; // default hack
     const offset = Math.floor((12-nWidth)/2)
 
-    const title = partyToTileTransform(party);
+    const title = partyToTitleTransform(party);
     return(
         <Row>
             <Col

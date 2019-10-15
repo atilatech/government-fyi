@@ -1,7 +1,9 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
-import $ from 'jquery';
+import {scrollToElement, slugify, toTitleCase} from "../../services/Utils";
+import {ALL_DEMOGRAPHICS} from "../../data/Constants";
+import Link from "react-router-dom/Link";
 
 class Banner extends React.Component {
 
@@ -13,17 +15,6 @@ class Banner extends React.Component {
       searchQuery: '',
     }
   };
-
-  scrollToElement = (selector) => {
-
-    try {
-      $('html, body').animate({scrollTop: $(selector).offset().top}, 1000);
-    }
-    catch (e) {
-      // console.log('scrollToElement catch e',e);
-
-    }
-  }
 
   render() {
 
@@ -62,7 +53,7 @@ class Banner extends React.Component {
                   </h2>
                 </QueueAnim>
               </Col>
-              <Col md={{span: 9, offset: 3}} xs={24} className="px-4">
+              <Col md={6} xs={24} className="px-4">
                 <QueueAnim
                     className="text-wrapper responsive-text"
                     key="text"
@@ -73,9 +64,27 @@ class Banner extends React.Component {
                     <ul className="col-sm-12 font-size-xl">
                       {topicsData.map((topic, index) => (
                           <li key={topic.title}><a href={`#bg-${index+1}`}
-                                 onClick={()=>{this.scrollToElement(`#bg-${index+1}`)}}>
+                                 onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
                             {topic.title}
                           </a></li>
+                      ))}
+                    </ul>
+                  </div>
+                </QueueAnim>
+              </Col>
+              <Col md={6} xs={24} className="px-4">
+                <QueueAnim
+                    className="text-wrapper responsive-text"
+                    key="text"
+                    type="bottom"
+                >
+                  <div className="col-sm-12">
+                    <h2> How Will These Issues Affect Me? </h2>
+                    <ul className="col-sm-12 font-size-xl">
+                      {ALL_DEMOGRAPHICS.map(demographic => (
+                          <li key={demographic}><Link to={`/people/${slugify(demographic)}`}>
+                            {toTitleCase(demographic)}
+                          </Link></li>
                       ))}
                     </ul>
                   </div>
