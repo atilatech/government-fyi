@@ -2,7 +2,7 @@ import {EmojiLg} from "../components/static/iMessageStyles";
 import Citation from "../components/interactive/citation/citation";
 import {Citations} from "../pages/4/expandables";
 import React from "react";
-import {CLIMATE_CONSCIOUS, EDUCATION, OIL_WORKERS} from "./Constants";
+import {CLIMATE_CONSCIOUS, EDUCATION, OIL_WORKERS, STUDENTS} from "./Constants";
 
 export const EDUCATION_CONVERSATION_MESSAGES = [
     {
@@ -128,36 +128,16 @@ export const CONSERVATIVES_EDUCATION = {
     partyPlatforms: [
         {
             text: <span>
-                Increase Federal contribution to <Citation data={Citations.whatIsResp}>
+                Increase Federal contribution to <Citation data={Citations.RESP}>
 						RESP
                 </Citation> from 30 percent to 20 percent
 
             </span>,
             source: "https://www.bnnbloomberg.ca/conservatives-promise-to-boost-federal-contribution-to-resp-to-30-1.1317404",
             demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
+                STUDENTS,
             ],
         },
-        {
-            text: "End the shipping ban in British Columbia",
-            source: "https://www.conservative.ca/cpc/build-the-pipe/",
-            demographics: [
-                OIL_WORKERS,
-            ],
-        },
-        {
-            text: <span>
-                Cancel
-                <Citation data={Citations['1']}>
-						Bill C-69
-                </Citation>
-            </span>,
-            demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
-            ]
-        }
     ],
 };
 
@@ -166,23 +146,37 @@ export const LIBERALS_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "phase out coal power by 2030 to help exceed the Paris climate change agreement",
-            source: "https://www.liberal.ca/liberals-move-forward-to-legislate-net-zero-emissions-by-2050/",
+            text: <span>Increase <Citation data={Citations.CanadaStudentGrant}>
+						Canada Student Grant
+                </Citation> by 40% and increase maximum annual amount from $3,000 to $4,200</span>,
+            source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/33096593_EN.pdf?timestamp=1571158047327",
             demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
+                STUDENTS,
             ],
         },
         {
-            text: "Ban single use plastics",
+            text: <span>Increase the minimum income you need to qualify for
+                <Citation data={Citations.RepaymentAssistancePlan}>
+						Repayment Assistance Plan
+                </Citation>
+                from $25k to $35k for people with family size of one</span>,
             source: "https://www.liberal.ca/liberals-move-forward-to-legislate-net-zero-emissions-by-2050/",
         },
         {
-            text: "Plant two billion trees over ten years",
-            source: "https://www.liberal.ca/liberals-move-forward-to-plant-two-billion-trees/",
+            text: "Increase interest free non-repayment period from 6-months to 24-months for federal student loans",
             demographics: [
-                CLIMATE_CONSCIOUS,
+                STUDENTS,
             ]
+        },
+        {
+            text: "Provide student borrowers with federal student loans with children that are aged 4 and under, an interest free non-repayment period until their youngest child turns 5",
+            demographics: [
+                STUDENTS,
+            ]
+        },
+        {
+            text: "Total net cost of above programs: $170 million in 2020 to $1 billion in 2024",
+            source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/33096593_EN.pdf?timestamp=1571158047327",
         }
     ],
 };
@@ -192,32 +186,12 @@ export const NDP_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Electrify transit fleets by 2030",
-            source: "https://action.ndp.ca/page/-/2019/Q2/Power-to-change-full-announcement.pdf",
+            text: "Remove interest on all current and future student loans,",
+            source: "https://www.bnnbloomberg.ca/ndp-promises-to-remove-interest-on-federal-student-loans-1.1328344",
             demographics: [
-                CLIMATE_CONSCIOUS,
+                STUDENTS,
             ],
         },
-        {
-            text: "Eliminate fossil fuel subsidies immediately and get Canada powered by net carbon-free electricity by 2030",
-            demographics: [
-                OIL_WORKERS,
-            ],
-        },
-        {
-            text: "Reducing Canada’s greenhouse gas emissions to 450 Mt by 2030",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-                OIL_WORKERS,
-            ]
-        },
-        {
-            text: "Ban all single-use plastics by 2022",
-            source: "https://www.ndp.ca/news/ndp-lets-ban-single-use-plastics-2022",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-            ]
-        }
     ],
 };
 
@@ -226,36 +200,20 @@ export const GREEN_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Reduce greenhouse gas emissions by 60 percent by 2030, zero emissions by 2050",
-            source: "https://www.greenparty.ca/en/mission-possible",
+            text: "Make college and university tuition free for all Canadian students",
+            source: "https://www.greenparty.ca/en/platform/renew-social-contract#investing-in-post-secondary-education",
             demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
+                STUDENTS,
             ],
         },
         {
-            text: "Ban fracking",
+            text: "Forgive the federal government part of existing student loans for unemployed students or those earning less than $70k per year",
             demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
+                STUDENTS,
             ],
         },
         {
-            text: "Remove all fossil fuel generation from electrical grid by 3030",
-            demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
-            ],
-        },
-        {
-            text: "Replace all fuel cars with electric vehicles by 204",
-            demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
-            ],
-        },
-        {
-            text: "Build a cross-country electric vehicle charging system ",
+            text: "Remove the two per cent cap on increases in education funding for Indigenous students",
             demographics: [
                 OIL_WORKERS,
                 CLIMATE_CONSCIOUS,
@@ -269,17 +227,9 @@ export const BLOC_QUEBECOIS_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Reject the Energy East pipeline that would run through Quebec",
-            source: "https://www.bnnbloomberg.ca/2019-federal-election-platform-tracker-where-the-major-parties-stand-so-far-1.1308714#ENERGY%20&%20ENVIRONMENT",
+            text: "Create a French-speaking university in Ontario",
+            source: "https://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
         },
-        {
-            text: "Give Quebec veto over any pipeline that runs through the province",
-            source: "https://newsinteractives.cbc.ca/elections/federal/2019/party-platforms/",
-        },
-        {
-            text: "End fossil fuel subsidies",
-            source: "http://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
-        }
     ],
 };
 
@@ -288,22 +238,17 @@ export const PEOPLES_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Cancel Bill C-69",
-            source: "https://www.bnnbloomberg.ca/2019-federal-election-platform-tracker-where-the-major-parties-stand-so-far-1.1308714#ENERGY%20&%20ENVIRONMENT",
+            text: "No specific proposals to date. ",
         },
         {
-            text: "Give Quebec veto over any pipeline that runs through the province",
-            source: "https://newsinteractives.cbc.ca/elections/federal/2019/party-platforms/",
-        },
-        {
-            text: <span>
-                Privatize Trans Mountain.
-                <Citation data={Citations['1']}>
-						Why privatize Trans Mountain?
-                </Citation>
+            text: <span>If you know some you can
+                <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                contribute them here
+                </a>.
             </span>,
-            source: "https://www.peoplespartyofcanada.ca/pipelines_allowing_our_oil_and_gas_industry_to_grow",
-        }
+        },
     ],
 };
 
