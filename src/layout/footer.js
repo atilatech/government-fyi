@@ -67,7 +67,7 @@ const Footer = () => {
 
 const nav = [
   { to:"/about/", label:"about"},
-  { to:"/topics", label:"topics"},
+  { to:"/home", label:"topics"},
   { to:"/people", label:"people"},
   // { to:"/follow/", label:"subscribe"},
   // { to:"/print/", label:"printed guide"},
