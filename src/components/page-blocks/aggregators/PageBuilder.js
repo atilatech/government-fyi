@@ -16,11 +16,11 @@ const PageBuilder = (props) => {
     )
 	});
 
-	const {canonicalUrl, documentTitle, socialHeadline, socialDescription, socialImage, pageType, dateCreated, dateModified} = meta;
+	const {documentTitle, socialHeadline, socialDescription, socialImage, pageType, dateCreated, dateModified} = meta;
 	return(
 		<div>
 	    <Head
-	      url={canonicalUrl}
+	      url={window.location.href}
 	      title={documentTitle}
 	      headline={socialHeadline}
 	      description={socialDescription}

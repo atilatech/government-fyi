@@ -1,12 +1,7 @@
 import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
-import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
-import {HOUSING_PLATFORMS, JOBS_ECONOMY_PLATFORMS} from "./PartyPlatformData";
-import {EDUCATION_PLATFORMS} from "./PartyPlatformDataEducation";
-import {HEALTHCARE_PLATFORMS} from "./PartyPlatformDataHealthcare";
-import {IMMIGRATION_PLATFORMS} from "./PartyPlatformDataImmigration";
-import {TAXES_PLATFORMS} from "./PartyPlatformDataTaxes";
+import {CitationsMaster, CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
@@ -30,7 +25,7 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
         {
             text: <span>
                 Cancel
-                <Citation data={Citations['1']}>
+                <Citation data={CitationsMaster.BillC69}>
 						Bill C-69
                 </Citation>
             </span>,
@@ -194,6 +189,3 @@ export const ENERGY_CLIMATE_PLATFORMS = [
     GREEN_ENERGY_CLIMATE, BLOC_QUEBECOIS_ENERGY_CLIMATE,PEOPLES_ENERGY_CLIMATE
 
 ];
-export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS,
-    ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS, ...HEALTHCARE_PLATFORMS,
-    ...IMMIGRATION_PLATFORMS, ...TAXES_PLATFORMS];

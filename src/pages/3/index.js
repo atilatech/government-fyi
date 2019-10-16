@@ -8,9 +8,9 @@ import {PropMetaData} from '../../pages/prop-attributes'
 
 
 import Citation from '../../components/interactive/citation/citation'
-import {Citations} from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {ENERGY_CLIMATE_PLATFORMS} from "../../data/PartyPlatformDataEnergyClimate";
+import {CitationsMaster} from "../../data/Constants";
 
 const energyClimatePlatforms = ENERGY_CLIMATE_PLATFORMS.map(PLATFORM => (
 	{
@@ -54,8 +54,8 @@ const Data = {
 					{
 						from: "them",
 						body:<span>
-							Hey so, oil is
-								<Citation data={Citations['8']}> really bad for the environment </Citation>
+							Hey, so oil is
+								<Citation data={CitationsMaster.OilAndEnvironment}> really bad for the environment </Citation>
 						</span>
 					},
 					{
@@ -74,7 +74,7 @@ const Data = {
 					{
 						from:"me",
 						body:<span>woah, relax. That's going to cost me like
-							<Citation data={Citations['8']}> $200-$400 </Citation>
+							<Citation data={CitationsMaster.CarbonTaxCost}> $200-$400 </Citation>
 						</span>
 					},
 					{
@@ -83,22 +83,58 @@ const Data = {
 					},
 					{
 						from:"them",
-						body:<span>But this is earth we're talking about. We only get one.
-							<Citation data={Citations['8']}>[tk add reasons why global warming is bad]</Citation>
-						</span>
-					},
-					{
-						from:"me",
-						body:<span>Wait, I heard that carbon taxes won't even make a difference. {' '}
-							<Citation data={Citations['8']}>It only reduces emissions by 1%</Citation>.
+						body:<span>But this our planet we're talking about.
 						</span>
 					},
 					{
 						from:"them",
-						body:<span>
-							It depends how you look at it. Carbon tax is
-							<Citation data={Citations['8']}>the most effective way of lowering emissions.</Citation>.
+						body:<span>$200 is a small price to pay if it means saving our planet
 						</span>
+					},
+					{
+						from:"me",
+						body:<span>Wait, How do you even know it's going to save our planet?
+						</span>
+					},
+					{
+						from:"me",
+						body:<span>Apparently{' '}
+							<Citation data={CitationsMaster.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
+						</span>
+					},
+					{
+						from: "them",
+						body:"It depends how you look at it."
+					},
+					{
+						from:"them",
+						body:<span>
+							I mean
+							<Citation data={CitationsMaster.CarbonTaxIsEffective}>
+								27 Nobel Laureate economists released a statement saying that a Carbon tax
+								is the most effective way of lowering emissions
+							</Citation>.
+						</span>
+					},
+					{
+						from: "me",
+						body:"Wait isn't that just an appeal to authority? That's a logical fallacy!"
+					},
+					{
+						from: "them",
+						body:"I see what you mean but I think, it's an indication that very smart people have studied this."
+					},
+					{
+						from: "them",
+						body:"And realized that this is one of the best options we have to save the Earth."
+					},
+					{
+						from:"them-no-bg",
+						body:<span>Earth has entered the conversation</span>
+					},
+					{
+						from:"them-no-bg",
+						body:<EmojiLg><span role="img" aria-label="earth emoji">🌏</span></EmojiLg>
 					},
 
 				]

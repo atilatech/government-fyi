@@ -122,6 +122,7 @@ class Citation extends React.Component {
 		return(
 			<span>
 					<span style={taggedTextStyle}>
+						{' '}
 						{this.props.children}
 						<CitationButton
 							onTouchEnd={this.handleTouch}

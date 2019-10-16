@@ -111,7 +111,7 @@ const Data = {
                target="_blank"
                rel="noopener noreferrer">
             Michael Ding
-            </a>,
+            </a>.
             <br />
             The site was inspired by <a href="https://ballot.fyi"
                                         target="_blank"
@@ -148,14 +148,15 @@ const Data = {
                         Tomiwa Ademidun
                     </a>
                     </h3>
-                <p style={{fontSize: 'larger'}}>I'm a Software engineering and business student currently studying at Ivey
-                    Business School, Western University.
+                <p style={{fontSize: 'larger'}}>
+
+                    I'm the founder of <a href="https://atila.ca" target="_blank"
+                                              rel="noopener noreferrer">Atila</a>,
+                    an ed-tech startup that helps students easily find and apply to scholarships.
                     <br /><br />
 
-                    I'm also the founder of <a href="https://atila.ca" target="_blank"
-                                              rel="noopener noreferrer">Atila</a>,
-                    an ed-tech startup that helps students automatically find and apply to scholarships in one
-                    click.
+                    I'm also a Software engineering and business student currently studying at Ivey
+                    Business School, Western University.
                 </p>
             </div>
             <div>
@@ -169,12 +170,14 @@ const Data = {
                         Michael Ding
                     </a>
                 </h3>
-                <p style={{fontSize: 'larger'}}>I'm a recent graduate in Computer Science and business from Ivey
-                    Business School, Western University
-                    <br /><br />
-                    I'm also the founder of <a href="https://firstdate.co" target="_blank"
-                                              rel="noopener noreferrer">firstdate.co</a>,
+                <p style={{fontSize: 'larger'}}>
+
+                    I'm the co-founder of <a href="https://firstdate.co" target="_blank"
+                                                  rel="noopener noreferrer">firstdate.co</a>,
                     a dating application for young people.
+                    <br /><br />
+                    I'm also a recent graduate in Computer Science and business from Ivey
+                    Business School, Western University.
                 </p>
             </div>
         </React.Fragment>,
@@ -194,7 +197,7 @@ const Data = {
               {/*    Any amount is appreciated <span role="img" aria-label="smile emoji">🙂</span>.*/}
               {/*</li>*/}
               <li>
-                  <strong>Like to Code?</strong> Our website is completely
+                  <strong>Love coding?</strong> Our website is completely{' '}
                   <a href="https://github.com/atilatech/government-fyi/"
                      target="_blank"
                      rel="noopener noreferrer"
@@ -204,14 +207,23 @@ const Data = {
                   Visit our Github page and you can help write the code to build this content.
               </li>
               <li>
-                  <strong>Something missing?</strong> the content for this site is also crowd-sourced.
-                  You can add content to the site at this
+                  <strong>Love politics?</strong> the content for this site is also crowd-sourced.
+                  You can add content to the site at this{' '}
                   <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
                        target="_blank"
                        rel="noopener noreferrer"
                   >
                   wiki
                   </a>
+              </li>
+              <li>
+                  <strong>Love other stuff?</strong> tweet us{' '}
+                  <a href="https://twitter.com/atilatech"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                  >
+                  @atilatech
+                  </a> to let us know how you want to help
               </li>
           </ol>
 
