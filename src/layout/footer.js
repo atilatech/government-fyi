@@ -60,7 +60,6 @@ const nav = [
   { to:"/about#contact", label:"contact"},
   // { to:"/follow/", label:"subscribe"},
   // { to:"/print/", label:"printed guide"},
-  { to:"/terms/", label:"terms of service"},
 ];
 
 export default Footer;
