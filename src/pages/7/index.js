@@ -26,17 +26,6 @@ const Data = {
 	},
 	blocks: [
 		{
-			component: CustomBlock,
-			data: {
-				body: <small>You're probably wondering why there's a map of California there
-					<span role="img" aria-label="point up emoji">
-					👆🏿.
-					</span>
-					See <Link to="/about"> About</Link> page
-				</small>
-			}
-		},
-		{
 			component: SectionTitleBlock,
 			data:{
 				title: "A Casual Conversation About Taxes",
