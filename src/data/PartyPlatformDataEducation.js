@@ -2,7 +2,7 @@ import {EmojiLg} from "../components/static/iMessageStyles";
 import Citation from "../components/interactive/citation/citation";
 import {Citations} from "../pages/4/expandables";
 import React from "react";
-import {CLIMATE_CONSCIOUS, EDUCATION, OIL_WORKERS, STUDENTS} from "./Constants";
+import {CitationsMaster, CLIMATE_CONSCIOUS, EDUCATION, OIL_WORKERS, STUDENTS} from "./Constants";
 
 export const EDUCATION_CONVERSATION_MESSAGES = [
     {
@@ -36,8 +36,8 @@ export const EDUCATION_CONVERSATION_MESSAGES = [
     {
         from: "them",
         body: <span>
-							Most people graduate with about
-							<Citation data={Citations['7']}>$28,00 in student loans</Citation>.
+							Most people graduate with about{' '}
+							<Citation data={CitationsMaster.StudentLoansDebt}>$28,00 in student loans</Citation>.
 						</span>
     },
     {
@@ -128,7 +128,7 @@ export const CONSERVATIVES_EDUCATION = {
     partyPlatforms: [
         {
             text: <span>
-                Increase Federal contribution to <Citation data={Citations.RESP}>
+                Increase Federal contribution to <Citation data={CitationsMaster.RESP}>
 						RESP
                 </Citation> from 30 percent to 20 percent
 
@@ -146,7 +146,7 @@ export const LIBERALS_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: <span>Increase <Citation data={Citations.CanadaStudentGrant}>
+            text: <span>Increase <Citation data={CitationsMaster.CanadaStudentGrant}>
 						Canada Student Grant
                 </Citation> by 40% and increase maximum annual amount from $3,000 to $4,200</span>,
             source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/33096593_EN.pdf?timestamp=1571158047327",
@@ -156,7 +156,7 @@ export const LIBERALS_EDUCATION = {
         },
         {
             text: <span>Increase the minimum income you need to qualify for
-                <Citation data={Citations.RepaymentAssistancePlan}>
+                <Citation data={CitationsMaster.RepaymentAssistancePlan}>
 						Repayment Assistance Plan
                 </Citation>
                 from $25k to $35k for people with family size of one</span>,
