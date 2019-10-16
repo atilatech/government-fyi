@@ -4,13 +4,10 @@ import TextWithTitleBlock from '../../components/page-blocks/blocks/TextWithTitl
 import LinksBlock from '../../components/page-blocks/blocks/LinksBlock'
 import IMessageBlock from '../../components/page-blocks/blocks/IMessageBlock'
 import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
-import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from '../../pages/prop-attributes'
 
 import Citation from '../../components/interactive/citation/citation'
 import Acronym from '../../components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
-import {EmojiLg} from "../../components/static/iMessageStyles";
 import {EDUCATION_CONVERSATION_MESSAGES} from "../../data/PartyPlatformDataEducation";
 
 const Data = {

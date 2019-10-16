@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import {FromThem, FromMe, Clear, Section, FromThemEmoji} from '../../static/iMessageStyles'
-import {Button} from "antd";
 
 /*
 an iMessage conversation block
@@ -33,36 +32,12 @@ example usage for data.js
 	},
 },
 */
-const DEFAULT_MESSAGES_TO_SHOW = 7;
 
 class IMessageBlock extends React.Component {
-
-	constructor(props) {
-		super(props);
-
-		const {messages} = this.props.data;
-
-		this.state = {
-			hideMessages: messages.length > DEFAULT_MESSAGES_TO_SHOW,
-		}
-	}
-	showHideMoreMessagesToggle = () => {
-
-		const { hideMessages } = this.state;
-
-		this.setState({hideMessages : !hideMessages});
-
-	};
 
 	render ( ) {
 
 		let {messages} = this.props.data;
-		let {hideMessages} = this.state;
-
-		if (hideMessages) {
-			messages = messages.slice(0, DEFAULT_MESSAGES_TO_SHOW);
-		}
-
 
 		let lastSender = null;
 		const conversation = messages.map( (message, i) => {
@@ -99,7 +74,7 @@ class IMessageBlock extends React.Component {
 		})
 		return(
 			<React.Fragment>
-			<Row>
+			<Row className="fade-border">
 				<Col
 					xsOffset={1} xs={10}
 					smOffset={2} sm={8}
@@ -109,18 +84,6 @@ class IMessageBlock extends React.Component {
 					<Section>
 						{conversation}
 					</Section>
-				</Col>
-			</Row>
-			<Row className="mt-3">
-				<Col
-					xsOffset={1} xs={10}
-					smOffset={2} sm={8}
-					mdOffset={3} md={6}
-					lgOffset={3} lg={6}
-				>
-				<Button type="primary" onClick={this.showHideMoreMessagesToggle}>
-					Show {hideMessages ? 'More' : 'Less'} Messages
-				</Button>
 				</Col>
 			</Row>
 			</React.Fragment>
