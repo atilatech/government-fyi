@@ -163,16 +163,16 @@ const LinksBlock = (props) => {
 		    	{oddSections}
 				</Col>
 			</Row>
-			<Row>
-				<Col
-					xsOffset={1} xs={10}
-					smOffset={1} sm={10}
-					mdOffset={3} md={6}
-					lgOffset={3} lg={6}
-				>
-					<Disclaimer><b>Note</b>: We intentionally omit links to arguments & rebuttals found in CA's official voter guide. We believe they exaggerate claims, mislead with emotions, and use ALL CAPS irresponsibly.</Disclaimer>
-				</Col>
-			</Row>
+			{/*<Row>*/}
+			{/*	<Col*/}
+			{/*		xsOffset={1} xs={10}*/}
+			{/*		smOffset={1} sm={10}*/}
+			{/*		mdOffset={3} md={6}*/}
+			{/*		lgOffset={3} lg={6}*/}
+			{/*	>*/}
+			{/*		<Disclaimer><b>Note</b>: We intentionally omit links to arguments & rebuttals found in CA's official voter guide. We believe they exaggerate claims, mislead with emotions, and use ALL CAPS irresponsibly.</Disclaimer>*/}
+			{/*	</Col>*/}
+			{/*</Row>*/}
 		</HideOnPrint>
 	);
 }

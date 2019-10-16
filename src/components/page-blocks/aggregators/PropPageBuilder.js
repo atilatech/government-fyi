@@ -8,7 +8,7 @@ import BottomNavBlock from '../blocks/BottomNavBlock'
 import TopNavBlock from '../blocks/TopNavBlock'
 import PublishDateBlock from '../blocks/PublishDateBlock'
 import {PropMetaData, GetNextAndPrevNum} from 'pages/prop-attributes'
-import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
+import {PROP_NUM_TO_CATEGORY_DICT, ReferencesBlock} from "../../../data/Constants";
 import {unSlugify} from "../../../services/Utils";
 
 /*
@@ -17,6 +17,8 @@ takes the block components and puts them together on a page
 
 const PropPageBuilder = (props) => {
 	const { meta, blocks, propNum } = props.data;
+
+	blocks.push(...ReferencesBlock);
 
 	const bodySections = blocks.map( (block, i ) => {
 		const Block = block.component;
