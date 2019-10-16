@@ -71,4 +71,12 @@ export const Citations = {
     headline:"What is Canada Student Grant?",
     directQuote:"Money that the government gives you for school which you don't have to pay back."
   },
+  Pharmacare:{
+    link:"https://www.cbc.ca/news/health/pharmacare-faq-1.4554270",
+    publication:"CBC",
+    headline:"What is Pharmacare?",
+    directQuote:"If you go to the hospital, your visit and care is currently covered under health insurance." +
+        "If you need to get a prescription afterwards, health insurance doesn’t cover it for most people." +
+        "Having pharmacare would mean that your prescription medicine is also covered under health insurance."
+  },
 }

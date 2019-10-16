@@ -23,12 +23,13 @@ export const HOUSING = "Housing";
 export const JOBS_AND_ECONOMY = "Jobs and Economy";
 export const ENERGY_AND_CLIMATE = "Energy and Climate";
 export const EDUCATION = "Education";
+export const HEALTHCARE = "Healthcare";
 export const ELECTION_TOPICS = [
     HOUSING,
     JOBS_AND_ECONOMY,
     ENERGY_AND_CLIMATE,
     EDUCATION,
-    "Healthcare",
+    HEALTHCARE,
     "Immigration",
     "Taxes",
 ];
