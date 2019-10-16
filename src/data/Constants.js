@@ -43,4 +43,5 @@ export const PROP_NUM_TO_CATEGORY_DICT = {
     4: 'education',
     5: 'healthcare',
     6: 'immigration',
+    7: 'taxes',
 };

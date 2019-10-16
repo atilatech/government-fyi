@@ -135,11 +135,11 @@ const images = [
     _2x: Prop9Img_2x,
     _2x_webp: Prop9Img_2x_w,
   },
-  {
-    _1x: Prop7Img,
-    _1x_webp: Prop7Img_w,
-    _2x: Prop7Img_2x,
-    _2x_webp: Prop7Img_2x_w,
+  { // taxes
+    _1x: Prop10Img,
+    _1x_webp: Prop10Img_w,
+    _2x: Prop10Img_2x,
+    _2x_webp: Prop10Img_2x_w,
   },
   {
     _1x: Prop8Img,
@@ -210,11 +210,11 @@ const thumbs = [
     _2x: Prop9Img_thumb_2x,
     _2x_webp: Prop9Img_thumb_2x_w,
   },
-  {
-    _1x: Prop7Img_thumb,
-    _1x_webp: Prop7Img_thumb_w,
-    _2x: Prop7Img_thumb_2x,
-    _2x_webp: Prop7Img_thumb_2x_w,
+  { // taxes
+    _1x: Prop10Img_thumb,
+    _1x_webp: Prop10Img_thumb_w,
+    _2x: Prop10Img_thumb_2x,
+    _2x_webp: Prop10Img_thumb_2x_w,
   },
   {
     _1x: Prop8Img_thumb,
@@ -255,7 +255,7 @@ const titles = [
   "Education",
   "Healthcare",
   "Immigration",
-  "Prop 7 helps make Daylight Saving year-round",
+  "Taxes",
   "Prop 8 limits dialysis clinics' revenue",
   "Prop 9 would have split CA into three states",
   "Prop 10 allows broad rent control again",
@@ -273,7 +273,7 @@ const descriptions = [
   "How should we help the future of our country?",
   "Your health is the most important thing you have. How should we take care of it?",
   "Who gets to come to Canada?",
-  "If this passes, Congress still needs to approve it.",
+  "How much of your money should the government get?",
   "Is this for patients or is it political?",
   "A wild proposition by a VC. Alas, it's been removed from the ballot.",
   "Does it help or hurt to have cities regulate rents?",
