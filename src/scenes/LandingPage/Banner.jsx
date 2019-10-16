@@ -27,7 +27,7 @@ class Banner extends React.Component {
         <div className="Banner container">
           <QueueAnim type="alpha" delay={150}>
             <Row>
-              <Col md={12} xs={24}>
+              <Col md={18} xs={24}>
                 <QueueAnim
                     className="text-wrapper responsive-text"
                     key="text"
@@ -37,19 +37,16 @@ class Banner extends React.Component {
                     A NONPARTISAN GUIDE TO CANADA'S 2019 ELECTIONS
                   </h1>
                   <h2 key="h2">
-                    Politics is complicated {' '}
-                    <span role="img" aria-label="sad emoji">
-                😕
-              </span>
-                    <br />
-                    We  make it easy to understand {' '}
+                    The simplest guide to the upcoming Canadian Federal elections.
                     <span role="img" aria-label="happy emoji">
                 😃
               </span>
                   </h2>
                 </QueueAnim>
               </Col>
-              <Col md={6} xs={24} className="px-4">
+            </Row>
+            <Row>
+              <Col md={12} xs={24} className="px-4">
                 <QueueAnim
                     className="text-wrapper responsive-text"
                     key="text"
@@ -60,7 +57,7 @@ class Banner extends React.Component {
                     <ul className="font-size-xl">
                       {topicsData.map((topic, index) => (
                           <li key={topic.title}><a href={`#bg-${index+1}`}
-                                 onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
+                                                   onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
                             {topic.title}
                           </a></li>
                       ))}
@@ -68,16 +65,16 @@ class Banner extends React.Component {
                   </div>
                 </QueueAnim>
               </Col>
-              <Col md={6} xs={24} className="px-4">
+              <Col md={12} xs={24} className="px-4">
                 <QueueAnim
                     className="text-wrapper responsive-text"
                     key="text"
                     type="bottom"
                 >
                   <Link to="/people">
-                  <h2 className="text-link">
-                    How Will These Issues Affect Me?
-                  </h2>
+                    <h2 className="text-link">
+                      How Will These Issues Affect Me?
+                    </h2>
                   </Link>
                   <div style={{ maxHeight: '300px', overflowY: 'scroll', width: '275px'}}>
                     <ul className="font-size-xl">
