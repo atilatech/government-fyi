@@ -334,8 +334,8 @@ export const PropMetaData = (n) => (
 export const GetNextAndPrevNum = (n) => {
   let adj = {next: n+1, prev: n-1};
   if(n === 1){
-    adj.prev = 12;
-  } else if (n === 12) {
+    adj.prev = 7;
+  } else if (n === 7) {
     adj.next = 1;
   }
   return adj;

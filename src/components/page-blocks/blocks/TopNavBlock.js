@@ -93,7 +93,7 @@ const ResultIconContainer = styled.div`
 
 const TopNavBlock = (props) => {
 	const navArr = [];
-	for (let i = 1; i < 13; i++){
+	for (let i = 1; i < 8; i++){
 		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i)
 		navArr.push(
 			{
@@ -170,10 +170,6 @@ class NavItem extends React.Component {
 							imageHandles={imageSet}
 							alt={desc}
       />
-            {(resultIcon && this.props.propNum+1 !== 9) &&
-              <ResultIconContainer>
-                <img src={resultIcon} alt={result}/>
-              </ResultIconContainer>}
 					</ImgContainer>
 				</Link>
 				{(this.state.isHovered || this.props.isActive) && <HoverTitle>{title}</HoverTitle>}
