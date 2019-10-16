@@ -32,3 +32,11 @@ export const ELECTION_TOPICS = [
     "Immigration",
     "Taxes",
 ];
+
+export const PROP_NUM_TO_CATEGORY_DICT = {
+    1: 'housing',
+    2: 'jobs-and-economy',
+    3: 'energy-and-climate',
+    4: 'education',
+};
+console.log({PROP_NUM_TO_CATEGORY_SLUG: PROP_NUM_TO_CATEGORY_DICT});

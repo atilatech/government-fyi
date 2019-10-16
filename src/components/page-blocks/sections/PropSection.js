@@ -2,6 +2,7 @@ import React from 'react'
 import {PropMetaData} from 'pages/prop-attributes'
 import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
 import {OrderingContext} from 'ordering-context.js'
+import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 class PropSection extends React.Component {
 
@@ -16,7 +17,9 @@ class PropSection extends React.Component {
               // TODO: remove propNum once done converting to actual page names
               const propNum = i + 1;
               const {color, imageSet, title, socialDescription, result} = PropMetaData(propNum); 
-                const propLink = i <= 2 ? pageLink : `/prop-${pageLink}`;
+                const propLink = PROP_NUM_TO_CATEGORY_DICT[propNum] ?
+                    `/${PROP_NUM_TO_CATEGORY_DICT[propNum]}`:
+                    `/prop-${[i]||pageLink}`;
                 return(
                 <PropCardBlock
                   key={i}
