@@ -4,6 +4,8 @@ import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {IMMIGRATION_PLATFORMS} from "../../data/PartyPlatformDataImmigration";
+import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
+import {Link} from "react-router-dom";
 
 const partyPlatforms = IMMIGRATION_PLATFORMS.map(PLATFORM => (
 	{
@@ -21,11 +23,22 @@ const Data = {
 	},
 	blocks: [
 		{
+			component: CustomBlock,
+			data: {
+				body: <small>You're probably wondering why there's a map of California there
+					<span role="img" aria-label="point up emoji">
+					👆🏿.
+					</span>
+					See <Link to="/about"> About</Link> page
+				</small>
+			}
+		},
+		{
 			component: ResultBlock,
 			data: {
 				result: "Y",
 				title: "What's the key Issue?",
-				text: "Thousands of people want to come to Canda every year for a better life." +
+				text: "Thousands of people come to Canada every year for a better life." +
 					"How many people should be allowed to immigrate to Canada every year?" +
 					" What criteria should we use for allowing people to come into the country",
 			},

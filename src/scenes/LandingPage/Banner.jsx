@@ -34,12 +34,16 @@ class Banner extends React.Component {
                     type="bottom"
                 >
                   <h1 key="h1" className="mt-sm-5">
-                    A NONPARTISAN GUIDE TO CANADA'S 2019 ELECTIONS
+                    A NONPARTISAN GUIDE TO CANADA'S 2019 ELECTIONS {' '}
+
+                    <span role="img" aria-label="Canada emoji">
+                🇨🇦
+              </span>
                   </h1>
                   <h2 key="h2">
-                    The simplest guide to the upcoming Canadian Federal elections.
-                    <span role="img" aria-label="happy emoji">
-                😃
+                    The simplest guide to the upcoming Canadian Federal elections.{' '}
+                    <span role="img" aria-label="maple leaf emoji">
+                🍁
               </span>
                   </h2>
                 </QueueAnim>

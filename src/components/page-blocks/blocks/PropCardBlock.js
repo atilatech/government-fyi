@@ -141,6 +141,27 @@ const PropCardBlock = (props) => {
 							<PropNumber>{propNum}</PropNumber>
 						</Container>
 					</Col>
+					<Col
+						xsOffset={0} xs={12}
+						smOffset={1} sm={10}
+						mdOffset={2} md={8}
+						lgOffset={2} lg={8}
+					>
+						{
+							propNum === "6" &&
+							<div style={{color: 'black'}}>
+								You're probably wondering why there's a map of California there
+								<span role="img" aria-label="point up emoji">
+										👆🏿.
+									</span>
+								See <Link to="/about"
+										  style={{color: 'black',
+											  fontWeight: 'bold',}}>
+								About</Link>{' '}
+								page
+							</div>
+						}
+					</Col>
 				</Overflow>
 			</Background>
 		</BannerLink>
