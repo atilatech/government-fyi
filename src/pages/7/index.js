@@ -55,8 +55,8 @@ class DataWithState extends React.Component {
 			pageId:"prop-7",
 			propNum: 7,
 			meta: {
-				dateCreated: new Date('October 14, 2019 10:00:00'),
-				dateModified: new Date('October 22, 2018 10:00:00')
+				dateCreated: new Date('October 14, 2019 7:00:00'),
+				dateModified: new Date('October 22, 2018 7:00:00')
 			},
 			blocks: [
 				{
