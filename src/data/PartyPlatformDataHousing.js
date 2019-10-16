@@ -1,7 +1,21 @@
 import {CitationsMaster, FOREIGNERS, HOMEOWNERS} from "./Constants";
 import Citation from "../components/interactive/citation/citation";
-import {Citations} from "../pages/4/expandables";
 import React from "react";
+
+export const CONSERVATIVE_HOUSING = {
+    party: "Conservative",
+    topic: "Housing",
+    partyPlatforms: [
+        {
+            text: <span>Increase <Citation data={CitationsMaster.RESP}>mortgage term length</Citation> to 30 years for first-time homebuyers</span>,
+            source: "https://www.conservative.ca/andrew-scheer-announces-four-point-plan-to-make-home-ownership-more-affordable/",
+        },
+        {
+            text: "Reduce the number of criteria you have to qualify to buy a home. Remove the criteria for mortgage renewals",
+            source: "https://www.conservative.ca/andrew-scheer-announces-four-point-plan-to-make-home-ownership-more-affordable/"
+        }
+    ],
+};
 
 export const LIBERAL_HOUSING = {
     party: "Liberal",
@@ -18,16 +32,6 @@ export const LIBERAL_HOUSING = {
         {
             text: "Build 100,000 affordable homes over a decade and offer first-time home-buyer subsidies of 10 per cent on new home purchases and 5 per cent on resales — with restrictions.",
             source: "https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217",
-        }
-    ],
-};
-export const CONSERVATIVE_HOUSING = {
-    party: "Conservative",
-    topic: "Housing",
-    partyPlatforms: [
-        {
-            text: <span>Increase <Citation data={CitationsMaster.RESP}>mortgage term length</Citation> to 30 years for first-time homebuyers</span>,
-            source: "https://www.conservative.ca/andrew-scheer-announces-four-point-plan-to-make-home-ownership-more-affordable/",
         }
     ],
 };

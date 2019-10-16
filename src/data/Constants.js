@@ -133,4 +133,20 @@ export const CitationsMaster = {
             which means that studying in Germany is now completely free even for international students.
         </span>
     },
-}
+    MortgageTermCalculator:{
+        link:"https://itools-ioutils.fcac-acfc.gc.ca/MC-CH/MCCalc-CHCalc-eng.aspx",
+        publication:"Government of Canada",
+        headline:"Mortgage Calculator",
+        directQuote: <span>
+            Increasing the length of your mortgage reduces your monthly mortgage payment.
+            But you pay for a longer period of time and usually end up paying more money overall.
+            Use this
+            <a  target="_blank"
+                rel="noopener noreferrer"
+                href="https://itools-ioutils.fcac-acfc.gc.ca/MC-CH/MCCalc-CHCalc-eng.aspx">
+            mortgage calculator
+            </a>
+            linked below to see how this might affect you.
+        </span>
+    },
+};
