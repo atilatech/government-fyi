@@ -140,13 +140,23 @@ export const CitationsMaster = {
         directQuote: <span>
             Increasing the length of your mortgage reduces your monthly mortgage payment.
             But you pay for a longer period of time and usually end up paying more money overall.
-            Use this
+            Use this{' '}
             <a  target="_blank"
                 rel="noopener noreferrer"
                 href="https://itools-ioutils.fcac-acfc.gc.ca/MC-CH/MCCalc-CHCalc-eng.aspx">
             mortgage calculator
-            </a>
-            linked below to see how this might affect you.
+            </a> to see how this might affect you.
         </span>
     },
+    SpeculationTax: {
+
+        link: "https://vancouversun.com/news/local-news/b-c-speculation-tax-heres-what-you-need-to-know",
+        publication: "Vancouver Sun",
+        headline: "What is a Speculation Tax",
+        directQuote: <span>
+            Tax applied on properties that are not the primary residences of the owner — they’re not living there for more than six months per year — and that aren’t being occupied by a tenant when the owner isn’t there.
+            <br/>
+            Note: This is the plan for BC's provincial speculation tax. The Liberal's speculation tax might have slightly different details
+        </span>
+    }
 };

@@ -1,5 +1,4 @@
 import Citation from "../components/interactive/citation/citation";
-import {Citations} from "../pages/4/expandables";
 import React from "react";
 import {CitationsMaster, HEALTHCARE, LOW_INCOME} from "./Constants";
 

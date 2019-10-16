@@ -1,8 +1,7 @@
 import {EmojiLg} from "../components/static/iMessageStyles";
 import Citation from "../components/interactive/citation/citation";
-import {Citations} from "../pages/4/expandables";
 import React from "react";
-import {CitationsMaster, CLIMATE_CONSCIOUS, EDUCATION, OIL_WORKERS, STUDENTS} from "./Constants";
+import {CitationsMaster, EDUCATION, STUDENTS} from "./Constants";
 
 export const EDUCATION_CONVERSATION_MESSAGES = [
     {
@@ -139,9 +138,6 @@ export const CONSERVATIVES_EDUCATION = {
 
             </span>,
             source: "https://www.bnnbloomberg.ca/conservatives-promise-to-boost-federal-contribution-to-resp-to-30-1.1317404",
-            demographics: [
-                STUDENTS,
-            ],
         },
     ],
 };
@@ -155,9 +151,6 @@ export const LIBERALS_EDUCATION = {
 						Canada Student Grant
                 </Citation> by 40% and increase maximum annual amount from $3,000 to $4,200</span>,
             source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/33096593_EN.pdf?timestamp=1571158047327",
-            demographics: [
-                STUDENTS,
-            ],
         },
         {
             text: <span>Increase the minimum income you need to qualify for
@@ -193,9 +186,6 @@ export const NDP_EDUCATION = {
         {
             text: "Remove interest on all current and future student loans,",
             source: "https://www.bnnbloomberg.ca/ndp-promises-to-remove-interest-on-federal-student-loans-1.1328344",
-            demographics: [
-                STUDENTS,
-            ],
         },
     ],
 };
@@ -207,22 +197,12 @@ export const GREEN_EDUCATION = {
         {
             text: "Make college and university tuition free for all Canadian students",
             source: "https://www.greenparty.ca/en/platform/renew-social-contract#investing-in-post-secondary-education",
-            demographics: [
-                STUDENTS,
-            ],
         },
         {
             text: "Forgive the federal government part of existing student loans for unemployed students or those earning less than $70k per year",
-            demographics: [
-                STUDENTS,
-            ],
         },
         {
             text: "Remove the two per cent cap on increases in education funding for Indigenous students",
-            demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
-            ],
         },
     ],
 };
@@ -246,7 +226,7 @@ export const PEOPLES_EDUCATION = {
             text: "No specific proposals to date. ",
         },
         {
-            text: <span>If you know some you can
+            text: <span>If you know some you can{' '}
                 <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
                    target="_blank"
                    rel="noopener noreferrer">
@@ -262,3 +242,15 @@ export const EDUCATION_PLATFORMS = [
     CONSERVATIVES_EDUCATION, LIBERALS_EDUCATION, NDP_EDUCATION,
     GREEN_EDUCATION, BLOC_QUEBECOIS_EDUCATION,PEOPLES_EDUCATION
 ];
+EDUCATION_PLATFORMS
+    .filter(platform =>platform.party!=="People's")
+    .forEach(platform => {
+
+        platform.partyPlatforms.forEach( idea => {
+
+            if (!idea.demographics) {
+                idea.demographics = []
+            }
+            idea.demographics.push(STUDENTS)
+        })
+    });
