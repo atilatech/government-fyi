@@ -48,7 +48,7 @@ const PropPageBuilder = (props) => {
 				title={`${customTitle} | Canada Federal Elections 2019 | ourgovernment.fyi`}
 				headline={socialHeadline}
 				description={socialDescription}
-				image={`Prop-${propNum}.png`}
+				image={`${PROP_NUM_TO_CATEGORY_DICT[propNum]}.png`}
 				pageType={pageType || 'article'}
 				dateCreated={dateCreated}
 				dateModified={dateModified}
