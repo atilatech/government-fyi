@@ -1,14 +1,10 @@
 import React from 'react'
 import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
-import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {TAXES_CONVERSATION_MESSAGES, TAXES_PLATFORMS} from "../../data/PartyPlatformDataTaxes";
-import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
-import {Link} from "react-router-dom";
 import SectionTitleBlock from "../../components/page-blocks/blocks/SectionTitleBlock";
 import IMessageBlock from "../../components/page-blocks/blocks/IMessageBlock";
-import {EDUCATION_CONVERSATION_MESSAGES} from "../../data/PartyPlatformDataEducation";
 
 const partyPlatforms = TAXES_PLATFORMS.map(PLATFORM => (
 	{

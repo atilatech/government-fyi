@@ -1,7 +1,5 @@
-import Citation from "../components/interactive/citation/citation";
-import {Citations} from "../pages/4/expandables";
 import React from "react";
-import {CLIMATE_CONSCIOUS, IMMIGRANTS, TAXES, STUDENTS, ENTREPRENEURS_AND_SMALL_BUSINESS} from "./Constants";
+import {CLIMATE_CONSCIOUS, TAXES, ENTREPRENEURS_AND_SMALL_BUSINESS} from "./Constants";
 import {EmojiLg} from "../components/static/iMessageStyles";
 
 export const TAXES_CONVERSATION_MESSAGES = [
