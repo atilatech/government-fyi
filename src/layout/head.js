@@ -142,7 +142,7 @@ class Head extends React.Component{
         <meta prefix="og: http://ogp.me/ns#" property="og:type"         content="website" />
         <meta prefix="og: http://ogp.me/ns#" property="og:title"        content={headline} />
         <meta prefix="og: http://ogp.me/ns#" property="og:description"  content={description} />
-        <meta prefix="og: http://ogp.me/ns#" property="og:image"        content={`${dynamicUrl}/socialimages/${image}`} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:image"        content={`${dynamicUrl}socialimages/${image}`} />
         <meta prefix="og: http://ogp.me/ns#" property="og:image:secure_url"        content={"https://www.ourgovernment.fyi/socialimages/" + image} />
         <meta prefix="og: http://ogp.me/ns#" property="og:locale"       content="en_US" />
         <meta prefix="og: http://ogp.me/ns#" property="fb:app_id"       content="1134187086655814" />
