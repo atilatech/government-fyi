@@ -38,5 +38,5 @@ export const PROP_NUM_TO_CATEGORY_DICT = {
     2: 'jobs-and-economy',
     3: 'energy-and-climate',
     4: 'education',
+    5: 'healthcare',
 };
-console.log({PROP_NUM_TO_CATEGORY_SLUG: PROP_NUM_TO_CATEGORY_DICT});

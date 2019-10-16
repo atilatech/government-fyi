@@ -11,7 +11,7 @@ import Citation from 'components/interactive/citation/citation'
 import {Citations} from './expandables'
 
 const Data = {
-	pageId:"prop-5",
+	pageId:"healthcare",
 	propNum: 5,
 	meta: {
 		dateCreated: new Date('October 8, 2018 10:00:00'),

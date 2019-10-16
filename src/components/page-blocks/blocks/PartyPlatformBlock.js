@@ -50,7 +50,7 @@ export const PlatformBlock = (props) => {
             <React.Fragment>
                 <strong>Groups Affected:</strong> {' '}
             {demographics.map(group => (
-                    <Link to={`/people/${slugify(group)}`} className="chip">
+                    <Link key={group} to={`/people/${slugify(group)}`} className="chip">
                         {group}
                     </Link>
             ))}
@@ -111,7 +111,7 @@ const PartyPlatformBlock = (props) => {
                 </React.Fragment>
                 }
                 {partyPlatforms.map(partyPlatform => (
-                    <PlatformBlock partyPlatform={partyPlatform} />
+                    <PlatformBlock key={JSON.stringify(partyPlatform.text)} partyPlatform={partyPlatform} />
                 ))}
             </Col>
         </Row>
