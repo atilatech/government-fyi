@@ -174,7 +174,7 @@ class Head extends React.Component{
 
 Head.defaultProps = {
   url: "https://www.ourgovernment.fyi/",
-  title: "OurGovernment.FYI 🇨🇦 – A simple nonpartisan guide to Canada's 2019 Federal elections - ourgovernment.fyi",
+  title: "OurGovernment.FYI 🇨🇦 – The simplest nonpartisan guide to Canada's 2019 Federal elections 🍁 - ourgovernment.fyi",
   headline: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
   description: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
   image: "general-2.png",
