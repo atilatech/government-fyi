@@ -9,10 +9,6 @@ import Prop2Img from './home/images/prop-2.png'
 import Prop2Img_w from './home/images/prop-2.webp'
 import Prop2Img_2x from './home/images/prop-2@2x.png'
 import Prop2Img_2x_w from './home/images/prop-2@2x.webp'
-import Prop4Img from './home/images/prop-4.png'
-import Prop4Img_w from './home/images/prop-4.webp'
-import Prop4Img_2x from './home/images/prop-4@2x.png'
-import Prop4Img_2x_w from './home/images/prop-4@2x.webp'
 import Prop5Img from './home/images/prop-5.png'
 import Prop5Img_w from './home/images/prop-5.webp'
 import Prop5Img_2x from './home/images/prop-5@2x.png'
@@ -130,10 +126,10 @@ const images = [
     _2x_webp: Prop6Img_2x_w,
   },
   {
-    _1x: Prop4Img,
-    _1x_webp: Prop4Img_w,
-    _2x: Prop4Img_2x,
-    _2x_webp: Prop4Img_2x_w,
+    _1x: Prop7Img,
+    _1x_webp: Prop7Img_w,
+    _2x: Prop7Img_2x,
+    _2x_webp: Prop7Img_2x_w,
   },
   {
     _1x: Prop5Img,
@@ -264,7 +260,7 @@ const titles = [
   "Housing",
   "Jobs and Economy",
   "Energy and Climate",
-  "Prop 4 issues $1.5B for children's hospitals",
+  "Education",
   "Prop 5 gives old folks a property tax discount when they move",
   "Prop 6 repeals last year's gas tax",
   "Prop 7 helps make Daylight Saving year-round",
@@ -279,7 +275,7 @@ const shortTitles = [
   "Housing",
   "Jobs and Economy",
   "Energy and Climate",
-  "Hospital bond",
+  "Education",
   "Property tax discount",
   "Gas tax repeal",
   "Daylight Saving Time",
@@ -294,7 +290,7 @@ const headlines = [
   "Canadian Elections on Housing: The most expensive thing you will ever buy",
   "Canadian Elections on the Economy: What's the best way to make us wealthier?",
   "What price are we willing to pay to save the earth?",
-  "Prop 4 issues $1.5B for children's hospitals",
+  "How should we help the future of our country?",
   "Prop 5 lets older folk move with their property tax assesments",
   "Prop 6 repeals last year's gas tax",
   "Prop 7 makes Daylight Saving permanent",
@@ -309,7 +305,7 @@ const descriptions = [
   "The most expensive thing you will ever buy",
   "What's the best way to make us wealthier?",
   "What price are we willing to pay to save the earth?",
-  "funding for renovations and new construction.",
+  "How should we help the future of our country?",
   "The idea is to free up housing. Will it work?",
   "And future gas tax increases must be approved by voters.",
   "If this passes, Congress still needs to approve it.",
