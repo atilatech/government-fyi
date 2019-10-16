@@ -30,11 +30,7 @@ let Data = {
 		{
 			component: LandingPage,
 			data: {}
-		},
-		{
-			component: PropSection,
-			data:{}
-		},
+		}
   ]
 };
 
