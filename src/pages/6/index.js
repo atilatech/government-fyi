@@ -1,19 +1,19 @@
 import React from 'react'
-import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
-import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import SummaryListBlock from 'components/page-blocks/blocks/SummaryListBlock'
-import FluidColumnsBlock from 'components/page-blocks/blocks/FluidColumnsBlock'
-import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from 'pages/prop-attributes'
+import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
+import TextWithTitleBlock from '../../components/page-blocks/blocks/TextWithTitleBlock'
+import LinksBlock from '../../components/page-blocks/blocks/LinksBlock'
+import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
+import SummaryListBlock from '../../components/page-blocks/blocks/SummaryListBlock'
+import FluidColumnsBlock from '../../components/page-blocks/blocks/FluidColumnsBlock'
+import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from '../prop-attributes'
 
-import Citation from 'components/interactive/citation/citation'
-import Acronym from 'components/interactive/acronym'
+import Citation from '../../components/interactive/citation/citation'
+import Acronym from '../../components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 
 const Data = {
-	pageId:"prop-6",
+	pageId:"immigration",
 	propNum: 6,
 	meta: {
 		dateCreated: new Date('October 14, 2019 7:00:00'),

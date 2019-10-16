@@ -9,7 +9,7 @@ export class OrderingProvider extends React.Component {
       spicy: [7,10,8,12,5,6,11,9,3,2,1,4],
       // todo come here to change links from numerical to categorical
       pageLinks: ["/housing","/jobs-and-economy","/energy-and-climate","/education",
-        "/healthcare","6","7","8","9","10","11","12",],
+        "/healthcare","/immigration","7","8","9","10","11","12",],
     };
     this.state = {
       ordering: this.ordering.pageLinks,
