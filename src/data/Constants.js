@@ -158,5 +158,11 @@ export const CitationsMaster = {
             <br/>
             Note: This is the plan for BC's provincial speculation tax. The Liberal's speculation tax might have slightly different details
         </span>
+    },
+    OilAndEnvironment: {
+        link: "https://www.greenpeace.org/usa/global-warming/issues/oil/",
+        publication: "Green Peace",
+        headline: "Why is oil bad for the environment?",
+        directQuote: "Burning oil releases carbon dioxide into the atmosphere, contributing to the warming of our planet. In 2013, petroleum accounted for 41 percent of the U.S.’s carbon dioxide emissions from fossil fuels."
     }
 };
