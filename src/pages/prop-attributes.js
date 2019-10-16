@@ -96,7 +96,7 @@ const colors = [
   'blue',
   'orange',
   'yellow'
-]
+];
 
 const images = [
   {
@@ -171,7 +171,7 @@ const images = [
     _2x: Prop12Img_2x,
     _2x_webp: Prop12Img_2x_w,
   },
-]
+];
 
 const thumbs = [
   { // housing
@@ -246,7 +246,7 @@ const thumbs = [
     _2x: Prop12Img_thumb_2x,
     _2x_webp: Prop12Img_thumb_2x_w,
   },
-]
+];
 
 const titles = [
   "Housing",
@@ -261,7 +261,7 @@ const titles = [
   "Prop 10 allows broad rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
   "Prop 12 sets minimum space requirements for farm animals"
-]
+];
 
 const shortTitles = titles;
 
@@ -297,7 +297,7 @@ const results = [
   "N",
   "Y",
   "Y"
-]
+];
 
 export const mapResultToText = {
 	"Y":"Passed",
@@ -306,7 +306,7 @@ export const mapResultToText = {
   "LN":"Leaning No",
 	"U":"TBD",
 	"NA":"Not applicable"
-}
+};
 
 export const mapResultToColor = {
 	"Y":Color('green'),
@@ -315,7 +315,7 @@ export const mapResultToColor = {
 	"LN":Color('red',0,15),
 	"U":Color('gray2'),
 	"NA":"#000"
-}
+};
 
 
 export const PropMetaData = (n) => (
@@ -339,4 +339,4 @@ export const GetNextAndPrevNum = (n) => {
     adj.next = 1;
   }
   return adj;
-}
+};

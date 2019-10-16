@@ -54,7 +54,7 @@ const StyledRow = styled(Row)`
 const ImgBlock = (props) => {
 	const {src, caption, nColWidth, link , alt} = props.data;
 	const nWidth = nColWidth || 8;
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
 	return(
 		<StyledRow>
 	    <Col
@@ -76,7 +76,7 @@ const ImgBlock = (props) => {
 			</Col>
 		</StyledRow>
 	);
-}
+};
 
 ImgBlock.propTypes = {
 	data: PropTypes.shape({
@@ -91,7 +91,7 @@ ImgBlock.propTypes = {
 		nColWidth: PropTypes.number,
 		link: PropTypes.string,
 	})
-}
+};
 
 
 export default ImgBlock;

@@ -49,7 +49,7 @@ const Title = styled.h1`
 	@media screen and (max-width: 767px) {
 		width: 95%;
 	}
-`
+`;
 
 
 const Wallpaper = styled.div`
@@ -78,11 +78,11 @@ const WallpaperBannerImg = (props) => {
 			<Spacer height={35}/>
 		</React.Fragment>
 	);
-}
+};
 
 const Banner = (props) => (
 	<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><path d="M0 42.93L1440 .07v160.04L0 205.07z" fill="url(#Gradient1)" fillRule="evenodd"/><defs><linearGradient id="Gradient1"><stop stopColor={Color(props.color+'1')} offset="0%"/><stop stopColor={Color(props.color+'2')} offset="100%"/></linearGradient></defs></svg>
-	)
+	);
 
 WallpaperBannerImg.propTypes = {
 	data: PropTypes.shape({
@@ -91,6 +91,6 @@ WallpaperBannerImg.propTypes = {
 		title: PropTypes.string,
 		repeatType: PropTypes.oneOf(["space", "repeat", "round"]),
 	})
-}
+};
 
 export default WallpaperBannerImg;

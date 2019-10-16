@@ -11,7 +11,7 @@ import {
 
 const Form = styled.form`
   display: flex;
-`
+`;
 
 /*
 <SubscribeForm longform/>
@@ -41,12 +41,12 @@ class SubscribeForm extends React.Component {
     if(this.state.subscribeStatus !== null) { // if typing again
       this.setState({subscribeStatus:null})
     }
-  }
+  };
 
   handleSubmit = async (event) => {
     event.preventDefault(); //-- prevents page from refreshing
-    const gUrl = 'https://script.google.com/macros/s/AKfycbzIn-AFFt_C_bXkuZ9hKuOSc7fGPQlaFEoBw-NsY2LrGRDcIkZ0/exec'
-    const form = document.forms['subscribe']
+    const gUrl = 'https://script.google.com/macros/s/AKfycbzIn-AFFt_C_bXkuZ9hKuOSc7fGPQlaFEoBw-NsY2LrGRDcIkZ0/exec';
+    const form = document.forms['subscribe'];
     fetch(gUrl, {
       method: 'POST',
       body:new FormData(form)
@@ -62,11 +62,11 @@ class SubscribeForm extends React.Component {
     .catch(error => {
       this.setState({
         subscribeStatus:"error"
-      })
+      });
       window.setTimeout(()=>{this.setState({subscribeStatus:null})},6000);
-    })
+    });
     this.setState({subscribeStatus:"pending"})
-  }
+  };
 
 	render() {
     let button =
@@ -75,12 +75,12 @@ class SubscribeForm extends React.Component {
         type="submit"
         value="sign me up"
         name="subscribe"
-      />
+      />;
     switch(this.state.subscribeStatus) {
       case null:
         break;
       case "pending":
-        button = <SubmittingStyle>Maybe...</SubmittingStyle>
+        button = <SubmittingStyle>Maybe...</SubmittingStyle>;
         break;
       case "success":
         button = <SuccessStyle>Signed up!</SuccessStyle>;

@@ -39,7 +39,7 @@ const BodyContainer = styled.div`
     padding-left: 0;
   }
 
-`
+`;
 
 const BodyText = styled.div`
 	font-size: 14px;
@@ -53,7 +53,7 @@ const Subheadline = styled.div`
   font-style: italic;
   font-size: 14px;
   margin-top: 0;
-`
+`;
 
 
 const FrontPageTitle = (props) => {
@@ -86,7 +86,7 @@ const FrontPageTitle = (props) => {
       <Spacer height={55}/>
     </React.Fragment>
 	)
-}
+};
 
 FrontPageTitle.propTypes = {
 	data: PropTypes.shape({
@@ -94,6 +94,6 @@ FrontPageTitle.propTypes = {
 		subtitle: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 		body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 	}).isRequired
-}
+};
 
 export default FrontPageTitle;

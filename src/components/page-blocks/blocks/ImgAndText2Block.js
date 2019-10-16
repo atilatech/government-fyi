@@ -28,7 +28,7 @@ const Center = styled.div`
 	display: flex;
 	align-items: center;
 	height: 100%;
-`
+`;
 
 const Line = styled.div`
 	width: 100%;
@@ -37,7 +37,7 @@ const Line = styled.div`
 	border-radius: 2px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-`
+`;
 
 const Image = styled.img`
 	display: block;
@@ -45,13 +45,13 @@ const Image = styled.img`
 	margin-right: 30px;
 	margin-left: 30px;
 	box-sizing: border-box;
-`
+`;
 
 const Title = styled.h2`
 	display: block;
 	margin-bottom: 10px;
 	text-transform: lowercase;
-`
+`;
 class ImgAndTextBlock extends React.Component {
 	constructor(props) {
 		super(props);
@@ -68,22 +68,22 @@ class ImgAndTextBlock extends React.Component {
 	}
 
 	handleResize = () => {
-		const width = (window.innerWidth || document.documentElement.clientWidth)
+		const width = (window.innerWidth || document.documentElement.clientWidth);
 		this.setState({
 			isSm: width < 1023
 		})
-	}
+	};
 
 	render() {
 		const { alt, image, nColWidth, title, body, flipped} = this.props.data;
 		const nWidth = nColWidth || 8;
-		const offset = Math.floor((12-nWidth)/2)
+		const offset = Math.floor((12-nWidth)/2);
 		const TextBlock =
 			<div>
 				<Line/>
 				<Title>{title}</Title>
 				{body}
-			</div>
+			</div>;
 		return(
 			<React.Fragment>
 				<Spacer height={70}/>
@@ -122,6 +122,6 @@ ImgAndTextBlock.propTypes = {
     title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     body: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 	})
-}
+};
 
 export default ImgAndTextBlock

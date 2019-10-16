@@ -33,7 +33,7 @@ const PageBuilder = (props) => {
 			{bodySections}
 		</div>
 	)
-}
+};
 
 PageBuilder.propTypes = {
   data: PropTypes.shape({
@@ -52,6 +52,6 @@ PageBuilder.propTypes = {
       }).isRequired
     ).isRequired
   }).isRequired
-}
+};
 
 export default PageBuilder;

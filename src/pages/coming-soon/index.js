@@ -22,7 +22,7 @@ const Container = styled.div`
   @media screen and (max-width: 767px) {
     width: 80%;
   }
-`
+`;
 const BigH1 = styled.h1`
   font-weight: bold;
   letter-spacing: -4.3px;
@@ -37,14 +37,14 @@ const BigH1 = styled.h1`
     line-height: 65px;
     letter-spacing: -3.1px;
   }
-`
+`;
 const Description = styled.div`
   width: 60%;
   @media screen and (max-width: 767px) {
     width: 100%;
     order: 1;
   }
-`
+`;
 const RightJustify = styled.div`
   display: flex;
   flex-direction: row;
@@ -53,13 +53,13 @@ const RightJustify = styled.div`
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
-`
+`;
 const ImgWrapper = styled.div`
   @media screen and (max-width: 767px) {
     order: 2;
   }
 
-`
+`;
 
 const Img = styled(MultisourceImage)`
   width: 60%;
@@ -70,7 +70,7 @@ const Img = styled(MultisourceImage)`
     margin-top: 30px;
     align-self: center;
   }
-`
+`;
 
 
 const TempHome = () => {
@@ -99,6 +99,6 @@ const TempHome = () => {
       <Spacer height={70} xsHeight={30}/>
     </Container>
   )
-}
+};
 
 export default TempHome

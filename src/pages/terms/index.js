@@ -235,6 +235,6 @@ const Data = {
 			},
 		},
 	]
-}
+};
 
 export default () => (<PageBuilder data={Data}/>);

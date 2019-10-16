@@ -70,7 +70,7 @@ const SubsectionTitle = styled.h3`
 
 const LinkWrapper = styled.h4`
 	display: flex;
-`
+`;
 
 const ExternalLink = styled.a`
 	margin-top: 4px;
@@ -93,13 +93,7 @@ const HideOnPrint = styled.div`
 	}
 `;
 
-const Disclaimer = styled.h4`
-	font-size: 12px;
-	line-height: 17px;
-	padding: 10px 20px;
-	background-color: whitesmoke;
-	border-radius: 2px;
-`
+
 
 
 const LinksChunk = (props) => {
@@ -117,14 +111,14 @@ const LinksChunk = (props) => {
 				{link.text}
 			</LinkWrapper>
 		)
-	})
+	});
 	return(
 		<SectionWrapper>
 			<SubsectionTitle>{props.data.subsectionTitle}</SubsectionTitle>
 			{links}
 		</SectionWrapper>
 	);
-}
+};
 
 const LinksBlock = (props) => {
 	const evenSections = props.data.subsections.map( (section, i) => {
@@ -132,14 +126,14 @@ const LinksBlock = (props) => {
 			return( <LinksChunk key={i} data={section} /> );
 		}
 		return null;
-	})
+	});
 	//-- to make two columns
 	const oddSections = props.data.subsections.map( (section, i) => {
 		if(i%2===1) {
 			return( <LinksChunk key={i} data={section} /> );
 		}
 		return null;
-	})
+	});
 
 
 	return(
@@ -163,19 +157,9 @@ const LinksBlock = (props) => {
 		    	{oddSections}
 				</Col>
 			</Row>
-			<Row>
-				<Col
-					xsOffset={1} xs={10}
-					smOffset={1} sm={10}
-					mdOffset={3} md={6}
-					lgOffset={3} lg={6}
-				>
-					<Disclaimer><b>Note</b>: We intentionally omit links to arguments & rebuttals found in CA's official voter guide. We believe they exaggerate claims, mislead with emotions, and use ALL CAPS irresponsibly.</Disclaimer>
-				</Col>
-			</Row>
 		</HideOnPrint>
 	);
-}
+};
 
 LinksBlock.propTypes = {
 	data: PropTypes.shape({
@@ -191,7 +175,7 @@ LinksBlock.propTypes = {
 			})
 		).isRequired
 	}).isRequired
-}
+};
 
 
 export default LinksBlock

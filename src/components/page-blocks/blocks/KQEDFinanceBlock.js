@@ -13,12 +13,12 @@ const Attrib = styled.h3`
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-`
+`;
 
 const KQEDBlock = (props) => {
   const {nColWidth, widgetId} = props.data;
   const nWidth = nColWidth || 8;
-  const offset = Math.floor((12-nWidth)/2)
+  const offset = Math.floor((12-nWidth)/2);
   return(
     <Row>
       <Col
@@ -35,12 +35,12 @@ const KQEDBlock = (props) => {
       </Col>
     </Row>
   )
-}
+};
 KQEDBlock.propTypes = {
   data: PropTypes.shape({
     widgetId: PropTypes.string,
     nColWidth: PropTypes.number,
   })
-}
+};
 
 export default KQEDBlock;

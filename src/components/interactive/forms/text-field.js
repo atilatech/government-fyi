@@ -23,7 +23,7 @@ const InputField = (props) => {
       maxLength={props.maxLength}
     /> 
 	);
-}
+};
 
 
 InputField.propTypes = {
@@ -31,11 +31,11 @@ InputField.propTypes = {
 	name: PropTypes.string.isRequired,
 	placeholder: PropTypes.string.isRequired,
 	onChange: PropTypes.func,
-}
+};
 
 InputField.defaultProps = {
 	value: '',
 	onChange: ()=>{},
-}
+};
 
 export default InputField

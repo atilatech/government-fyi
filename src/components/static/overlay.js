@@ -33,7 +33,7 @@ class Overlay extends React.Component {
     if(event.key === 'Escape') {
       this.props.toggleVisibility(false)
     }
-  }
+  };
   render() {  
     return(
       <OverlayDiv onClick={()=>{this.props.toggleVisibility(false)}} />
@@ -43,6 +43,6 @@ class Overlay extends React.Component {
 
 Overlay.propTypes = {
   toggleVisibility: PropTypes.func.isRequired
-}
+};
 
 export default Overlay

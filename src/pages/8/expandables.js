@@ -3,7 +3,7 @@ export const Acronyms = {
     expanded: "SEIU United Healthcare Workers",
     acronym: "SEIU-UHW"
   }
-}
+};
 
 export const Citations = {
   '1': {
@@ -55,4 +55,4 @@ export const Citations = {
     directQuote:"The proposals closely resemble pending bills that have thrust for-profit dialysis centers, which treat more than 63,000 Californians with end-stage kidney disease, into the legislative fray. By dangling the prospect of a ballot measure as a backup plan, the union is following a well-worn path to spur legislative action.\"We see it as a two-pronged approach,\" said Sean Wherley, spokesman for SEIU-UHW. \"We want to be sure we have as many options available as possible.\""
   }
 
-}
+};

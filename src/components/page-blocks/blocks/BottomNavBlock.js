@@ -112,7 +112,7 @@ const BottomNav = (props) => {
 			</TileInteraction>
 
 		)
-	})
+	});
 
 	return(
 		<BlockWrapper>
@@ -122,7 +122,7 @@ const BottomNav = (props) => {
 			</Container>
 		</BlockWrapper>
 	);
-}
+};
 
 BottomNav.propTypes = {
   data: PropTypes.shape({
@@ -135,6 +135,6 @@ BottomNav.propTypes = {
       })
     ).isRequired
   }).isRequired
-}
+};
 
 export default BottomNav;

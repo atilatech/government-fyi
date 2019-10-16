@@ -6,8 +6,8 @@ let Data = {
 	pageId:"home-page",
 	meta: {
 		canonicalUrl:"https://ourgovernment.fyi/",
-		documentTitle:"Canadian Federal Elections 2019 – a simple nonpartisan guide",
-		socialHeadline:"The simples nonpartisan voter guide for the Canadian federal elections",
+		documentTitle:"Canadian Federal Elections 2019 – The simplest nonpartisan guide",
+		socialHeadline:"The simplest nonpartisan voter guide for the Canadian federal elections",
 		socialDescription:"A nonpartisan guide to Canada's Federal elections, taxes, climate, education, and more",
 		socialImage:"general-2.png",
 	},

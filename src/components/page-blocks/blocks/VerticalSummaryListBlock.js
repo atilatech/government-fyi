@@ -41,7 +41,7 @@ margin-bottom: 10px;
 const ButtonContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
-`
+`;
 
 export const ExpandButton = styled.div`
 	margin-top: 20px;
@@ -63,7 +63,7 @@ const StyledH3 = styled.h3`
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 3px;
-`
+`;
 export const ExpandButtonLabel = styled.h2`
 	font-size: 14px;
 	text-align: center;
@@ -74,19 +74,19 @@ const LinkContainer = styled.div`
 	@media screen and (max-width: 767px) {
 		justify-content: center;
 	}
-`
+`;
 const StoryLink = styled.a`
 	display: block;
 	font-family: ${props=>props.theme.fonts.helvetica};
 	font-size: 12px;
 	margin-right: 20px;
-`
+`;
 const LinkOutStyle = styled.div`
 	height: 20px;
 	min-width: 20px;
 	width: 20px;
 	transform: translateY(2px);
-`
+`;
 
 class Snippet extends React.Component {
 	constructor(props) {
@@ -97,11 +97,11 @@ class Snippet extends React.Component {
 	}
 	expandContainer = () => {
 		this.setState({expanded: true})
-	}
+	};
 
 	render() {
 		const {title, description, links,buttonText,expandedContent} = this.props.data;
-		const textOnButton = buttonText || "View more"
+		const textOnButton = buttonText || "View more";
 		let expandedLinks = null;
 	 	if(links) {
 			expandedLinks = links.map((link,i)=>{
@@ -185,6 +185,6 @@ VerticalSummaryListBlock.propTypes = {
 			})
 		),
 	})
-}
+};
 
 export default VerticalSummaryListBlock;

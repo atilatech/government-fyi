@@ -16,7 +16,7 @@ const ColorMap = new Map([
   ['gray2', 'hsla(0, 0%, 70%, 1)'],
 	['green', 'hsla(133,50%,69%,1)'],//#88D799
 	['green2', 'hsla(133,50%,50%,1)'],
-])
+]);
 
 const Color = (name, deltaSaturation=0, deltaTint=0, opacity=1) => {
 	if(!name) return '#000';
@@ -31,6 +31,6 @@ const Color = (name, deltaSaturation=0, deltaTint=0, opacity=1) => {
 	hsl[2] = (newLightness + '%');
 	hsl[3] = (opacity+')');
 	return hsl.join();
-}
+};
 
 export default Color;

@@ -29,12 +29,12 @@ const Container = styled.div`
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
-`
+`;
 const ImgContainer = styled.div`
   width: calc(100% - 10px);
   padding-left: 5px;
   padding-right: 5px;
-`
+`;
 
 const Img = styled(MultisourceImage)`
   width: 100%;
@@ -66,20 +66,20 @@ const Attrib = styled.h3`
   color: #999;
   margin-bottom: 20px
   text-align: right;
-`
+`;
 
 
 const ImgBlock = (props) => {
 	const {images, caption, nColWidth, attribution} = props.data;
 	const nWidth = nColWidth || 10;
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
   const imageSet = images.map((img, i)=>{
     return(
       <ImgContainer key={i}>
         <Img imageHandles={img.src} alt={img.alt}/>
       </ImgContainer>
     )
-  })
+  });
 
 	return(
 		<Row>
@@ -99,7 +99,7 @@ const ImgBlock = (props) => {
 			</Col>
 		</Row>
 	);
-}
+};
 
 ImgBlock.propTypes = {
 	data: PropTypes.shape({
@@ -119,7 +119,7 @@ ImgBlock.propTypes = {
 		link: PropTypes.string,
     attribution: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 	})
-}
+};
 
 
 export default ImgBlock;

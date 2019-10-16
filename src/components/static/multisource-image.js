@@ -53,7 +53,7 @@ const styles = {
 		opacity: 1,
 		transition: 'opacity 150ms ease-in',
 	},
-}
+};
 
 class MultisourceImage extends React.Component {
 	constructor(props) {
@@ -62,13 +62,13 @@ class MultisourceImage extends React.Component {
 	}
 	handleImageLoaded = () => {
 		this.setState({loadingStyle: styles.loaded})
-	}
+	};
 	handleImageErrored = () => {
 		console.warn('Error loading image')
-	}
+	};
 
 	render() {
-		const { imageHandles, img_webp_1x, img_webp_2x, style, alt, className } = this.props
+		const { imageHandles, img_webp_1x, img_webp_2x, style, alt, className } = this.props;
 		const webp_1x = (imageHandles) ? imageHandles._1x_webp : img_webp_1x;
 		const webp_2x = (imageHandles) ? imageHandles._2x_webp : img_webp_2x;
 		const img_1x = (imageHandles) ? imageHandles._1x : this.props.img_1x;
@@ -76,7 +76,7 @@ class MultisourceImage extends React.Component {
 
 		//-- if no webp's provided, return a plain img tag, maybe with @2x
 		if (webp_1x == null && webp_2x == null) {
-			let srcset = img_2x ? (img_1x + ' 1x,' + img_2x + ' 2x') : (img_1x + ' 1x,' + img_1x + ' 2x')
+			let srcset = img_2x ? (img_1x + ' 1x,' + img_2x + ' 2x') : (img_1x + ' 1x,' + img_1x + ' 2x');
 			return(
 				<span style={this.state.loadingStyle}>
 	  	 		<img

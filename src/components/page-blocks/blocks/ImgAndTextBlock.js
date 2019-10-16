@@ -32,7 +32,7 @@ const Container = styled.div`
 		display: block;
 		margin: 10px 30px;
 	}
-`
+`;
 const Image = styled(MultisourceImage)`
 	display: block;
 	width: 130px;
@@ -41,22 +41,22 @@ const Image = styled(MultisourceImage)`
 		float: left;
 		margin-bottom: 5px;
 	}
-`
+`;
 const TextBlock = styled.div`
 	width: calc(75% - 20px);
 	@media screen and (max-width: 767px) {
 		width: 100%
 	}
 
-`
+`;
 const InlineBold = styled.h3`
 	display: inline;
 	font-weight:bold;
-`
+`;
 const ImgAndTextBlock = (props) => {
 	const { alt, src, nColWidth, title, body} = props.data;
 	const nWidth = nColWidth || 6;
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
 	return(
     <Row>
       <Col
@@ -79,7 +79,7 @@ const ImgAndTextBlock = (props) => {
       </Col>
     </Row>
   );
-}
+};
 
 ImgAndTextBlock.propTypes = {
 	data: PropTypes.shape({
@@ -94,6 +94,6 @@ ImgAndTextBlock.propTypes = {
     title: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     body: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
 	})
-}
+};
 
 export default ImgAndTextBlock

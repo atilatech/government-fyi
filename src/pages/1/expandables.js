@@ -3,7 +3,7 @@ export const Acronyms = {
     acronym: "CEQA",
     expanded: "California Environmental Quality Act"
   }
-}
+};
 
 export const Citations = {
   '1': {
@@ -66,4 +66,4 @@ export const Citations = {
     headline: "CEQA in the 21st Century",
     directQuote:"Despite critics often citing CEQA as a “major barrier to development,” no evidence supports that assertion. There are no studies available which quantify the cost of CEQA compliance or its impact on development projects. "
   }
-}
+};

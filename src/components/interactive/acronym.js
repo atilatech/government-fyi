@@ -26,17 +26,17 @@ const styles = {
 		textDecoration: 'none',
 		cursor: 'auto',
 	}
-}
+};
 
 class Acronym extends React.Component {
 	constructor(props) {
-		super(props)
+		super(props);
 		const text = props.data ? props.data.acronym : props.acronym;
 		this.state = {
 			textToDisplay: text,
 			style: styles.acronym,
-		}
-		this.isExpanded = false
+		};
+		this.isExpanded = false;
 		this.didExpand = false
 	}
 
@@ -63,7 +63,7 @@ class Acronym extends React.Component {
 		} else {
 			this.setState({	style: {...styles.acronym, ...styles.hover} });
 		}
-	}
+	};
 
 	handleMouseLeave = () => {
 		if (this.props.singleClick && this.didExpand) {
@@ -71,22 +71,22 @@ class Acronym extends React.Component {
 		} else {
 			this.setState({ style: styles.acronym });
 		}
-	}
+	};
 
 	//-- toggle between expanded and acronym
 	handleClick = (e) => {
 		const dataSource = this.props.data ? this.props.data : this.props;
 		const {expanded, acronym, highlightOnClick, singleClick} = dataSource;
-		this.isExpanded = !this.isExpanded
+		this.isExpanded = !this.isExpanded;
 		if((singleClick || this.props.singleClick) && this.didExpand) {
 			this.isExpanded = true;
 		} //-- force it to stay expanded
 		this.isExpanded ?
 			this.setState({textToDisplay:expanded}) :
-			this.setState({textToDisplay:acronym})
+			this.setState({textToDisplay:acronym});
 		this.didExpand = true;
 		if(highlightOnClick){ this.selectText(e.target) }
-	}
+	};
 
 	render() {
 		return(
@@ -114,10 +114,10 @@ Acronym.propTypes = {
 		singleClick: PropTypes.bool,
 		highlightOnClick: PropTypes.bool,
 	})
-}
+};
 
 Acronym.defaultProps = {
 	singleClick: false,
 	highlightOnClick: false,
-}
+};
 export default Acronym

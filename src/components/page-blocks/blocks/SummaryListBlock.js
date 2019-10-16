@@ -83,7 +83,7 @@ export const ExpandButton = styled.div`
 
 const StyledH3 = styled.h3`
 	font-size: 14px;
-`
+`;
 
 
 export const ExpandButtonLabel = styled.h2`
@@ -99,7 +99,7 @@ const Snippet = (props) => (
 		</TitleContainer>
 		{props.description}
 	</Container>
-)
+);
 
 
 class SummaryListBlock extends React.Component  {
@@ -112,7 +112,7 @@ class SummaryListBlock extends React.Component  {
 
 	expandContainer = () => {
 		this.setState({expanded: true})
-	}
+	};
 
 	render() {
 		const { stories, listNItems, buttonText, noBorder } = this.props.data;
@@ -135,7 +135,7 @@ class SummaryListBlock extends React.Component  {
 			} else {
 				return null;
 			}
-		})
+		});
 
 		if (restOfSnippets[restOfSnippets.length-1] === null) {
 			restOfSnippets = null;
@@ -176,6 +176,6 @@ SummaryListBlock.propTypes = {
 			})
 		),
 	})
-}
+};
 
 export default SummaryListBlock;

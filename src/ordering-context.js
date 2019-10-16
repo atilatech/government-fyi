@@ -31,7 +31,7 @@ export class OrderingProvider extends React.Component {
   handleResize = () => {
     const w = (window.innerWidth || document.documentElement.clientWidth);
     this.setState({isXs: w <= 767})
-  }
+  };
 
   render() {
     return(

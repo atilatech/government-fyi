@@ -41,7 +41,7 @@ const DrawerItem = (props) => {
       <Item>{text}</Item>
     </a>
   )
-}
+};
 
 
 DrawerItem.propTypes = {
@@ -49,12 +49,12 @@ DrawerItem.propTypes = {
   link: PropTypes.string,
   text: PropTypes.string,
   toggleVisibility: PropTypes.func.isRequired,
-}
+};
 
 DrawerItem.defaultProps = {
   to: '/',
   text: 'example',
   toggleVisibility: ()=>{},
-}
+};
 
 export default DrawerItem

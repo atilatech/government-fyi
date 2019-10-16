@@ -7,7 +7,7 @@ export const Acronyms = {
     expanded: "People for the Ethical Treatment of Animals",
 		acronym: "PETA"
   },
-}
+};
 
 export const Citations = {
   '1': {
@@ -137,4 +137,4 @@ export const Citations = {
 		directQuote:"The study suggests that by switching to cage-free production systems the egg industry would likely reduce the risk of salmonella to the American public from bad eggs by 50 percent."
 	}
 
-}
+};

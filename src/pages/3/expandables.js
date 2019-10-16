@@ -69,4 +69,4 @@ export const Citations = {
     headline:"This time, a state water bond has real money intended to benefit the Valley",
     directQuote:"As for oversight, the proposition requires the state’s Natural Resources Agency to get an independent audit of spending every three years, and every six months regular updates would be posted on the agency’s website to let the public know how the projects are proceeding."
   },
-}
+};

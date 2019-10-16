@@ -6,7 +6,7 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-`
+`;
 const Message = styled.div`
 	width: 320px;
 	border: 2px solid #333;
@@ -17,7 +17,7 @@ const Message = styled.div`
 	text-align: center;
 	margin-bottom: 70px;
   margin-top: 70px;
-`
+`;
 
 export default ({location}) => (
 	<Container>

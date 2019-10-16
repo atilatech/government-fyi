@@ -51,7 +51,7 @@ const Img = styled.img`
 const TitleBar = (props) => {
 	const {img, title, subtitle, align, nColWidth, paddingTop} = props.data;
 	const nWidth = nColWidth || 8;
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
 	const isReversed = (align==="right");
 	return(
 		<Row>
@@ -75,7 +75,7 @@ const TitleBar = (props) => {
 			</Col>
 		</Row>
 	)
-}
+};
 
 TitleBar.propTypes = {
 	data: PropTypes.shape({
@@ -86,6 +86,6 @@ TitleBar.propTypes = {
 		img: PropTypes.string,
 		align: PropTypes.string,
 	})
-}
+};
 
 export default TitleBar;

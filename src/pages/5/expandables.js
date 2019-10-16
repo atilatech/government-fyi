@@ -48,4 +48,4 @@ export const Citations = {
     headline:"How older CA homeowners can get property tax break when they sell",
     directQuote:"Under Prop. 60, homeowners who are older than 55 or permanently disabled can sell their primary residence and transfer its assessed value to a replacement home in the same county of equal or lesser value. Prop. 90 lets them transfer their assessed value to a replacement home of equal or lesser value in a different county, but only if that county accepts incoming transfers. Only 10 counties do, including San Mateo, Alameda and Santa Clara."
   }
-}
+};

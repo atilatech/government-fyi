@@ -5,7 +5,7 @@ import { Row, Col } from 'react-flexbox-grid';
 
 const CustomBlock = (props) => {
   const nWidth = props.data.nColWidth || 6;
-  const offset = Math.floor((12-nWidth)/2)
+  const offset = Math.floor((12-nWidth)/2);
   return(
     <Row>
       <Col
@@ -18,12 +18,12 @@ const CustomBlock = (props) => {
       </Col>
     </Row>
   )
-}
+};
 CustomBlock.propTypes = {
   data: PropTypes.shape({
     body: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
     nColWidth: PropTypes.number,
   })
-}
+};
 
 export default CustomBlock;

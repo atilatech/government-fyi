@@ -76,7 +76,7 @@ const ImgAndTitle = (props) => {
 			<Title>{title}</Title>
 			<Spacer height={30} xsHeight={10}/>
 			{subtitle && <Subheadline>{subtitle}</Subheadline>}
-		</Col>
+		</Col>;
 
 	const imgCol =
 		<Col
@@ -88,7 +88,7 @@ const ImgAndTitle = (props) => {
 			<Img imageHandles={src} alt={alt || ""}/>
 			{caption && <Caption>{caption}</Caption>}
 			<Spacer height={30}/>
-		</Col>
+		</Col>;
 	return(
 		<Row>
 			<OrderingContext.Consumer>
@@ -110,7 +110,7 @@ const ImgAndTitle = (props) => {
 			</OrderingContext.Consumer>
 		</Row>
 	)
-}
+};
 
 ImgAndTitle.propTypes = {
 	data: PropTypes.shape({
@@ -128,6 +128,6 @@ ImgAndTitle.propTypes = {
     alt: PropTypes.string.isRequired,
     caption: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 	}).isRequired
-}
+};
 
 export default ImgAndTitle;

@@ -42,11 +42,11 @@ const Data = {
 				<li>How much of a role should the government play in helping people afford a home?</li>
 				<li>How easy should it be to get a mortage for a home?</li>
 				<li>How easy should it be for builders to build new homes?</li>
-				<li>What do they think about foreigners buying Canadian homes?</li>
+				<li>What easy or hard should for foreigners to buy Canadian homes?</li>
 			</ol>
     	},
     },
 	...partyPlatforms,
   ]
-}
+};
 export default () => (<PropPageBuilder data={Data}/>);

@@ -12,7 +12,7 @@ import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 const BannerLink = styled(Link)`
 	text-decoration: none;
-`
+`;
 const Overflow = styled(Row)`
 	overflow: hidden;
 	margin-left: 0;
@@ -34,7 +34,7 @@ const PropNumber = styled.div`
 	font-size: 42px;
 	margin-bottom: 45px;
 	font-weight: bold;
-`
+`;
 const ImgContainer = styled.div`
 	min-width: 400px;
 	display: flex;
@@ -43,7 +43,7 @@ const ImgContainer = styled.div`
 		justify-content: left;
 		min-width:90%;
 	}
-`
+`;
 
 const Img = styled(MultisourceImage)`
 	height: 250px;
@@ -83,7 +83,7 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	height: 100%;
-`
+`;
 
 const TextContainer = styled.div`
 	display: flex;
@@ -100,13 +100,13 @@ const TextContainer = styled.div`
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-`
+`;
 
 const Header = styled.h2`
 	color: #fff;
 	font-size: 20px;
 	margin-top: 20px;
-`
+`;
 
 const Description = styled.h2`
 	color: white;
@@ -115,7 +115,7 @@ const Description = styled.h2`
 	margin-bottom: 45px;
 	margin-top: 10px;
 	color: ${Color('black')};
-`
+`;
 
 const PropCardBlock = (props) => {
 	const {propNum, color, header, description, linksTo, img} = props.data;
@@ -170,7 +170,7 @@ const PropCardBlock = (props) => {
 			</Background>
 		</React.Fragment>
 	);
-}
+};
 
 
 PropCardBlock.propTypes = {
@@ -194,6 +194,6 @@ PropCardBlock.propTypes = {
 		// 	emoji: PropTypes.string,
 		// })
 	})
-}
+};
 
 export default withRouter(PropCardBlock);

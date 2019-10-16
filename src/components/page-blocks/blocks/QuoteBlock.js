@@ -49,13 +49,13 @@ const QuoteBlock = (props) => {
 			</Col>
 		</Row>
 	);
-}
+};
 
 QuoteBlock.propTypes = {
 	data: PropTypes.shape({
 		text: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 		author: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 	})
-}
+};
 
 export default QuoteBlock;

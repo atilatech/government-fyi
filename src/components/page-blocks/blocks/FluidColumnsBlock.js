@@ -66,12 +66,12 @@ const Image = styled(MultisourceImage)`
 			filter: drop-shadow(14px 15px 0px rgba(0,0,0,0.1)) drop-shadow(-23px 19px 3px rgba(0,0,0,0.03));
 		}
 	}
-`
+`;
 const Subtitle = styled.div`
 	font-size: 14px;
 	font-style: italic;
 	text-align: center;
-`
+`;
 
 const FluidColumnsBlock = (props) => {
 	const summaries = props.data.blocks.map( (item, i) => {
@@ -87,7 +87,7 @@ const FluidColumnsBlock = (props) => {
 				{item.body}
 			</SummaryContainer>
 		);
-	})
+	});
 
 	return(
 		<Row>
@@ -104,7 +104,7 @@ const FluidColumnsBlock = (props) => {
 			</Col>
 		</Row>
 	)
-}
+};
 
 FluidColumnsBlock.propTypes = {
 	data: PropTypes.shape({
@@ -119,6 +119,6 @@ FluidColumnsBlock.propTypes = {
 			})
 		).isRequired
 	}).isRequired
-}
+};
 
 export default FluidColumnsBlock

@@ -45,13 +45,13 @@ class CitationButton extends React.Component {
     if(!this.props.isActive) {
     	this.props.onHover();
     }
-  }
+  };
 
   handleMouseLeave = () => {
     if(!this.props.isActive) {
     	this.props.onMouseLeave();
     }
-  }
+  };
 
 
 	render(){
@@ -77,6 +77,6 @@ class CitationButton extends React.Component {
 
 CitationButton.defaultProps = {
 	isActive: false,
-}
+};
 
 export default CitationButton

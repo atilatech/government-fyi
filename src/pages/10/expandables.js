@@ -7,7 +7,7 @@ export const Acronyms = {
     expanded: "various means, such as evictions, buying tenants out, or taking it off the rental market via the Ellis Act.",
     acronym: "various means"
   }
-}
+};
 const USCLink = "https://dornsife.usc.edu/assets/sites/242/docs/Rent_Matters_PERE_Report_Final_02.pdf";
 const HaasLink = "https://haasinstitute.berkeley.edu/sites/default/files/haasinstitute_rentcontrol.pdf";
 const StanfordLink = "https://web.stanford.edu/~diamondr/DMQ.pdf";
@@ -225,4 +225,4 @@ export const Citations = {
     directQuote:"On balance, rent regulations do not impact new housing construction. When such regulations allow for condo conversions and redevelopment that exempts the property from rent regulations, units are taken off the market. "
   }
 
-}
+};

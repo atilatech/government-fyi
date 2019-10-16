@@ -7,7 +7,7 @@ export const Acronyms = {
 		expanded: "American Medical Response",
 		acronym: "AMR"
 	},
-}
+};
 
 export const Citations = {
 	'1':{
@@ -83,4 +83,4 @@ export const Citations = {
 		directQuote:"A.B. 263 is intended to help private-sector EMS employees with many of the difficulties of the job. One goal of the bill is to clarify that the California Supreme Court's ruling in Augustus v. ABM Security Services applies to EMS workers, according to a document issued by Rodriguez's office. That ruling held that California workers need to have uninterrupted rest breaks, and the bill would codify the court's decision."
 	}
 
-}
+};

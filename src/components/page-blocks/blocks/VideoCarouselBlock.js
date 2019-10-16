@@ -115,7 +115,7 @@ const MobileNavButton = styled.div`
 
 class VideoCarouselBlock extends React.Component {
 	constructor(props) {
-		super(props)
+		super(props);
 		this.state = {
 			isXsScreen: false,
 			width: 565,
@@ -133,19 +133,19 @@ class VideoCarouselBlock extends React.Component {
 	}
 
 	handleResize =() => {
-		const width = (window.innerWidth || document.documentElement.clientWidth)
+		const width = (window.innerWidth || document.documentElement.clientWidth);
 		const isXs = width < 767;
 		this.setState({
 			isXsScreen: isXs,
 			width: width,
 		});
-	}
+	};
 
 	navVideos = (delta=1) => {
-		const totalVids = this.props.data.videos.length
+		const totalVids = this.props.data.videos.length;
 		const newIndex = ((((this.state.carouselIndex+delta) % totalVids) + totalVids) % totalVids); // nthCard+delta % total
 		this.setState({carouselIndex:newIndex});
-	}
+	};
 
 	render() {
 		const iFrameWidth = this.state.isXsScreen ? "330" : "560";
@@ -208,6 +208,6 @@ VideoCarouselBlock.propTypes = {
 			})
 		).isRequired
 	}).isRequired
-}
+};
 
 export default VideoCarouselBlock;

@@ -14,10 +14,10 @@ export const Section = styled.div`
 	  margin-bottom: 10px;
 	  line-height: 22px;
   }
-`
+`;
 export const Clear = styled.div`
   clear: both;
-`
+`;
 export const FromMe = styled.div`
   position: relative;
   padding: 10px 20px;
@@ -78,7 +78,7 @@ export const FromThem = styled.div`
 	  border-bottom-right-radius: 10px;
 	  transform: translate(-30px, -2px);
 	}
-`
+`;
 export const FromThemEmoji = FromThem.extend`
 	background: none;
 	&:before {

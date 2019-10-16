@@ -16,11 +16,11 @@ const StyledLine = styled.div`
 
 const Line = (props) => (
 	<StyledLine color={props.color} width={props.width} />
-)
+);
 
 export default Line;
 
 Line.propTypes = {
 	color: PropTypes.string,
 	width: PropTypes.string,
-}
+};
