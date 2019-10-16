@@ -47,5 +47,11 @@ export const Citations = {
     publication:"CA Policy Research Center",
     headline:"The Impact of Changing Public Policy on California's Hospital Infrastructure and Children's Hospital Outcomes - 1983-2000",
     directQuote:"In 1987, the legislature suspended the Certificate of Need and related planning activities and permitted hospitals to close or consolidate without state review.... California deregulated its healthcare system, finding it \"indispensable that providers of health care be free to engage in voluntary, cooperative efforts with consumers, government, or other providers of health care to fulfill the purposes of the health planning laws.\""
+  },
+  whatIsResp:{
+    link:"https://www.moneysense.ca/save/investing/resp/what-is-resp-registered-education-savings-plan-explained/#whatis",
+    publication:"Money Sense Canada",
+    headline:"What is an RESP?",
+    directQuote:"What is an RESP? An investment account that parents can use to save towards their Child’s education. The major benefit is that the government will match 20% of each dollar you put in up to $2,500. So if you put $1,000 into your child’s RESP account, the government puts in another $200."
   }
 }

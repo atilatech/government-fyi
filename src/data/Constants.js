@@ -19,15 +19,16 @@ export const ALL_DEMOGRAPHICS = [
     ENTREPRENEURS_AND_SMALL_BUSINESS, UNEMPLOYED,
     FOREIGNERS, LOW_INCOME, WOMEN, VISIBLE_MINORITY];
 
+export const HOUSING = "Housing";
 export const JOBS_AND_ECONOMY = "Jobs and Economy";
 export const ENERGY_AND_CLIMATE = "Energy and Climate";
+export const EDUCATION = "Education";
 export const ELECTION_TOPICS = [
-    "Housing",
+    HOUSING,
     JOBS_AND_ECONOMY,
     ENERGY_AND_CLIMATE,
+    EDUCATION,
     "Healthcare",
     "Immigration",
     "Taxes",
-    // "Seniors",
-    "Education",
 ];
