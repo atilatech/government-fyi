@@ -1,15 +1,7 @@
 import React from 'react'
-import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
-import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from 'pages/prop-attributes'
+import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
+import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 
-import Citation from 'components/interactive/citation/citation'
-// import Acronym from 'components/interactive/acronym'
-import {Citations} from './expandables'
-import {EDUCATION_PLATFORMS} from "../../data/PartyPlatformDataEducation";
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {HEALTHCARE_PLATFORMS} from "../../data/PartyPlatformDataHealthcare";
 
