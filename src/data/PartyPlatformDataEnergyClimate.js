@@ -2,11 +2,12 @@ import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
-import {HOUSING_PLATFORMS, JOBS_ECONOMY_PLATFORMS} from "./PartyPlatformData";
+import {JOBS_ECONOMY_PLATFORMS} from "./PartyPlatformData";
 import {EDUCATION_PLATFORMS} from "./PartyPlatformDataEducation";
 import {HEALTHCARE_PLATFORMS} from "./PartyPlatformDataHealthcare";
 import {IMMIGRATION_PLATFORMS} from "./PartyPlatformDataImmigration";
 import {TAXES_PLATFORMS} from "./PartyPlatformDataTaxes";
+import {HOUSING_PLATFORMS} from "./PartyPlatformDataHousing";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",

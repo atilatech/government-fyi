@@ -4,9 +4,9 @@ import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from '../prop-attributes'
 
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
-import {HOUSING_PLATFORMS} from "../../data/PartyPlatformData";
+import {HOUSING_PLATFORMS} from "../../data/PartyPlatformDataHousing";
 
-const housingPlatforms = HOUSING_PLATFORMS.map(PLATFORM => (
+const partyPlatforms = HOUSING_PLATFORMS.map(PLATFORM => (
 	{
 		component: PartyPlatformBlock,
 		data: PLATFORM,
@@ -46,7 +46,7 @@ const Data = {
 			</ol>
     	},
     },
-	...housingPlatforms,
+	...partyPlatforms,
   ]
 }
 export default () => (<PropPageBuilder data={Data}/>);
