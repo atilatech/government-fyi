@@ -140,7 +140,7 @@ const Data = {
             <div>
                 <img className="rounded-circle img-fluid d-block mx-auto team-image"
                      src="https://tomiwa.ca/img/tomiwa-ivey-profile-picture.jpg"
-                     alt="Tomiwa Ademidun's Website Personal Picture" />
+                     alt="Tomiwa Ademidun's Website Personal" />
                 <h3>
                     <a href="https://tomiwa.ca"
                        target="_blank"

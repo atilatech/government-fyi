@@ -144,11 +144,8 @@ class NavItem extends React.Component {
 		const {color, title, desc, imageSet, result} = this.props.data;
     	let resultIcon = null;
     if (result === "Y"){
-      resultIcon = PassedIcon;
-    } else if (result === "N") {
-      resultIcon = FailedIcon;
-    } else {
-      resultIcon = UndeterminedIcon;
+	} else if (result === "N") {
+	} else {
 	}
 	
 
