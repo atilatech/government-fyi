@@ -282,7 +282,7 @@ const descriptions = [
 ];
 
 
-const headlines = titles.map((title,index) => (`Canadian Elections on ${title} ${descriptions[index]}`));
+const headlines = titles.map((title,index) => (`Canadian Elections on ${title} - ${descriptions[index]} | ourgovernment.fyi`));
 
 const results = [
   "Y",

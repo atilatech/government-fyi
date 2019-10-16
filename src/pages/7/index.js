@@ -37,16 +37,6 @@ const Data = {
 			}
 		},
 		{
-			component: ResultBlock,
-			data: {
-				result: "Y",
-				title: "What's the key Issue?",
-				text: "Thousands of people come to Canada every year for a better life." +
-					"How many people should be allowed to immigrate to Canada every year?" +
-					" What criteria should we use for allowing people to come into the country",
-			},
-		},
-		{
 			component: SectionTitleBlock,
 			data:{
 				title: "A Casual Conversation About Taxes",

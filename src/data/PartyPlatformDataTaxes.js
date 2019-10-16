@@ -1,100 +1,13 @@
 import Citation from "../components/interactive/citation/citation";
 import {Citations} from "../pages/4/expandables";
 import React from "react";
-import {CLIMATE_CONSCIOUS, IMMIGRANTS, TAXES, STUDENTS} from "./Constants";
+import {CLIMATE_CONSCIOUS, IMMIGRANTS, TAXES, STUDENTS, ENTREPRENEURS_AND_SMALL_BUSINESS} from "./Constants";
 import {EmojiLg} from "../components/static/iMessageStyles";
 
 export const TAXES_CONVERSATION_MESSAGES = [
     {
         from: "me",
-        body: <span>I'm graduating soon </span>,
-    },
-    {
-        from:"me-no-bg",
-        body:<EmojiLg><span role="img" aria-label="crying emoji">😭</span></EmojiLg>
-    },
-    {
-        from: "them",
-        body: "You should be celebrating. Why the crying face?",
-    },
-    {
-        from: "me",
-        body: "I realized that I'm graduating with over $20,000 in student loans"
-    },
-    {
-        from: "me",
-        body: "And I have to start paying it back 6 months after I graduate."
-    },
-    {
-        from: "me",
-        body: "Also, I don't have a job lined up for when I leave school."
-    },
-    {
-        from: "them",
-        body: "Well it could be worse"
-    },
-    {
-        from: "them",
-        body: <span>
-							Most people graduate with about
-							<Citation data={Citations['7']}>$28,00 in student loans</Citation>.
-						</span>
-    },
-    {
-        from: "me",
-        body: "Not helping 🙄"
-    },
-    {
-        from: "them",
-        body: "Look on the bright side, I heard that some parties were talking about forgiving student loans"
-    },
-    {
-        from: "me",
-        body: "Forgiving student loans? "
-    },
-    {
-        from: "me",
-        body: "I like the sound of that 😁"
-    },
-    {
-        from:"me-no-bg",
-        body:<EmojiLg><span role="img" aria-label="thinking emoji">🤔</span></EmojiLg>
-    },
-    {
-        from: "me",
-        body: "But Wait, what about the people that worked hard to pay their student loans"
-    },
-    {
-        from: "them",
-        body: "Unfortunately, we can't change the past."
-    },
-    {
-        from: "them",
-        body: "The most important thing now is making sure future students " +
-            "aren't crushed with debt when they graduate."
-    },
-    {
-        from: "me",
-        body: "hmm, I see what you mean"
-    },
-    {
-        from: "me",
-        body: "But what happens the next year. Back to square one?"
-    },
-    {
-        from: "me",
-        body: "Why not just make university tuition free?"
-    },
-    {
-        from: "them",
-        body: <span>chill, that would be way too expensive.
-
-							You have the <Citation data={Citations['7']}>$10.6 billion</Citation> to pay for that?
-						</span>
-    },
-    {
-        from: "them",
-        body: "You can't even afford your $20,000 student loan . 😂"
+        body: <span>today was payday</span>,
     },
     {
         from:"me-no-bg",
@@ -102,22 +15,75 @@ export const TAXES_CONVERSATION_MESSAGES = [
     },
     {
         from: "them",
-        body: "Sorry, I got carried away 😂"
+        body: "Nice, dinner is on you! 🎉",
     },
     {
         from: "them",
-        body: <span>
-							You have a point though. I mean <Citation data={Citations['7']}>Germany has free tuition.</Citation>
-							Even for international students.
-						</span>
+        body: "Wait. Why are you angry? ",
     },
     {
         from: "me",
-        body: "btw...One more thing..."
+        body: "You'd be sad too if you saw how much taxes they took from my salary"
+    },
+    {
+        from: "them",
+        body: "But those are the same taxes that paid for you to go to public school and free hospital visits when you're socl"
+    },
+    {
+        from:"me-no-bg",
+        body:<EmojiLg><span role="img" aria-label="rolls eye emoji">🙄</span></EmojiLg>
     },
     {
         from: "me",
-        body: "Can I have a job? 😁"
+        body: "well if I didn't pay so much in taxes maybe I could pay for my own hospital visit and pay for private school."
+    },
+    {
+        from: "them",
+        body: "Well not everyone is as privileged as you"
+    },
+    {
+        from: "them",
+        body: "A lot of people would end up not getting any medical treatment"
+    },
+    {
+        from: "me",
+        body: "but if you just give people free stuff, where's the incentive to work hard?"
+    },
+    {
+        from: "them",
+        body: "it's not just about \"working hard\", there are systemic barriers in place "
+    },
+    {
+        from: "me",
+        body: "you lost me at systemic barriers"
+    },
+    {
+        from: "them",
+        body: "What about things like roads and military. How do you privatize that?"
+    },
+    {
+        from: "me",
+        body: "hmmm...I see where you’re coming from..."
+    },
+    {
+        from: "me",
+        body: "But... I still don’t like taxes"
+    },
+    {
+        from: "them",
+        body: "most people don't but society is better off with a fair tax rate"
+    },
+    {
+        from: "me",
+        body: "true, so what's a \"fair tax rate\" "
+    },
+    {
+        from: "them",
+        body: "good question"
+    },
+    {
+        from: "them-no-bg",
+        body: <span>Chanel has left the conversation</span>
     },
 ];
 
@@ -126,32 +92,33 @@ export const CONSERVATIVES_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Put an end to illegal border crossings at unofficial points of entry like Roxham Road",
-            source: "https://www.conservative.ca/cpc/andrew-scheers-TAXES-plan/",
+            text: "Universal Tax Cut, the tax rate on income under $47,630 will be reduced from 15 per cent to 13.75 percent",
+            source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/32644536_EN.pdf?timestamp=1571166194063",
         },
         {
-            text: <span>
-                Close the loophole in the
-                <Citation data={Citations.SafeThirdCountryAct}>
-						Safe Third Country Act
-                </Citation>
-                that
-                "allows some people to skip the line and avoid the queue"
-            </span>
-            ,
+            text: "Single tax return for Quebecers",
+            source: "https://www.conservative.ca/andrew-scheer-announces-fives-measures-for-quebec/",
         },
         {
             text: "Work to reunite survivors of genocide, who have already resettled in Canada, more expeditiously",
         },
         {
-            text: "Bring back the Office of Religious Freedom so that we can protect our shared humanity and promote interest in the dignity of all people",
+            text: "remove federal income tax from Employment Insurance (EI) maternity and EI paternal/maternal" +
+                " benefits by providing a non-refundable tax credit of 15 percent for any income earned under these two programs",
+            source: "https://www.conservative.ca/scheer-to-make-maternity-benefits-tax-free/",
         },
         {
-            text: "Promote the private sponsorship of refugees",
+            text: "15 percent tax credit for weekly and monthly transit passes",
+            source: "https://www.conservative.ca/andrew-scheer-to-reduce-cost-of-public-transit/",
+
         },
         {
-            text: "Hire 250 additional border officers",
-            source: "https://www.bnnbloomberg.ca/scheer-pledges-to-close-roxham-road-loophole-in-TAXES-plan-1.1328932"
+            text: "remove the Goods and Services Tax (GST) from home heating and energy bills",
+            source: "https://www.conservative.ca/conservatives-to-remove-gst-from-home-heating/"
+        },
+        {
+            text: "Add a 3 per cent tax on revenues of large multinational tech companies",
+            source: "https://nationalpost.com/news/politics/election-2019/how-the-tories-plan-to-balance-the-budget-scheer-says-transfer-payments-core-services-safe-from-cuts"
         }
     ],
 };
@@ -161,17 +128,25 @@ export const LIBERALS_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Create a Municipal Nominee Program. Allow local community organizations to directly sponsor permanent immigrants.",
-            source: "https://2019.liberal.ca/our-platform/more-help-for-communities/",
+            text: "introduce a new 10 per cent tax on luxury cars, boats, and personal aircraft over $100,000",
+            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/Forward-A-real-plan-for-the-middle-class.pdf#page=79",
         },
         {
-            text: "Make the Atlantic TAXES Pilot (AIP) permanent." +
-                "AIP allows Atlantic provinces (Nova Scotia, New Brunswic, Newfoundland, PEI" +
-                " to hire foreigners for jobs they can't fill with a fast track application.",
+            text: "Place a  national tax on vacant houses owned by non-Canadians who don’t live in Canada",
         },
         {
-            text: "Make the application process for becoming a Canadian citizen free",
-            source: "https://2019.liberal.ca/our-platform/a-more-affordable-path-to-citizenship/",
+            text: "Decrease the amount of your income that you pay tax on by $15,000," +
+                " if you make less than $147,000 per year. " +
+                "For example, if you make $50,000 you will only be taxed on $35,000",
+            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/2019-backgrounder-tax-cut-ENG.pdf",
+        },
+        {
+            text: "Lower corporate taxes for small cleantech businesses from 9 to 4.5%," +
+                " and larger cleantech companies from 15 to 7.5%",
+            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/cutting-taxes-for-clean-tech-businesses.pdf#page=2",
+            demographics: [
+                CLIMATE_CONSCIOUS,
+            ]
         }
     ],
 };
@@ -181,16 +156,26 @@ export const NDP_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Suspend the Safe Third Country agreement with the United States",
-            source: "https://www.ndp.ca/communities?focus=13934157",
+            text: "Raise corporate taxes to 18% (from 15%) and tax capital gains at a rate of 75%",
+            source: "https://action.ndp.ca/page/-/2019/Q2/NDP-Commitments_EN.pdf#page=108",
         },
         {
-            text: "end the cap on applications to sponsor parents and grandparents",
+            text: "Maintain the small business tax rate at its current level",
+            demographics: [
+                ENTREPRENEURS_AND_SMALL_BUSINESS,
+            ]
         },
         {
-            text: "increase the TAXES transfer to Quebec by $73 million," +
-                " from $490 million to $563 million per year." +
-                " This Money will be used to help newcomers integrate into French language and Quebec culture",
+            text: "Ensure that multinational tech giants pay corporate tax on the revenue they generate in Canada",
+        },
+        {
+            text: "Increase the top marginal tax rate by two points to 35 percent for those making over $210,000",
+        },
+        {
+            text: "Increase the amount of investment profits that will be subject to a capital gains tax to 75 percent",
+        },
+        {
+            text: "Introduce one percent wealth tax on those with wealth over $20 million",
         },
     ],
 };
@@ -200,24 +185,26 @@ export const GREEN_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Create a new refugee category called “environmental refugees,”" +
-                " and accept an appropriate share of the world’s environmental refugees",
-            source: "https://www.greenparty.ca/en/platform/green-economy#TAXES",
+            text: "Apply a corporate tax on transnational e-commerce companies doing business in Canada",
+            source: "https://www.greenparty.ca/en/platform/green-economy#fair-taxation",
+        },
+        {
+            text: "Impose a financial transactions tax of 0.5 per cent in the finance sector",
+        },
+        {
+            text: "Increase the federal corporate tax rate from 15 to 21 per cent",
+        },
+        {
+            text: "Maintain the small business tax rate at its current level",
             demographics: [
-                CLIMATE_CONSCIOUS,
-            ],
-        },
-        {
-            text: "Establish a program to process the estimated 200,000 people living in Canada without official status, providing a pathway to permanent residency for those who qualify.",
-        },
-        {
-            text: "Terminate Canada’s Safe Third Country Agreement with the United States",
-        },
-        {
-            text: "Improve the pathway for international students and foreign workers to Canadian permanent residency and citizenship.",
-            demographics: [
-                STUDENTS
+                ENTREPRENEURS_AND_SMALL_BUSINESS
             ]
+        },
+        {
+            text: "Charge a five per cent surtax on commercial bank profits",
+        },
+        {
+            text: "Apply a one per cent tax on net (family) wealth above $20 million",
         },
     ],
 };
@@ -227,20 +214,10 @@ export const BLOC_QUEBECOIS_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Ensure that people applying for citizenship in Quebec have sufficient french knowledge",
-            source: "http://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
+            text: "Revenu Quebec to collect federal income taxes instead of Canada Revenu agency," +
+                "  so Quebecers only have to file one income tax return",
+            source: "https://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
         },
-        {
-            text: "Give Quebec final say on any federal decision to expel refugees",
-        },
-        {
-            text: "Allow Quebec to impose conditions on Granting permanent residence",
-            source: "http://www.blocquebecois.org/2019/10/des-mesures-pour-contrer-la-penurie-de-main-doeuvre-en-region/",
-        },
-        {
-            text: "Suspend Canada’s Safe Third Country Agreement with the U.S."
-        }
-
     ],
 };
 
@@ -249,15 +226,15 @@ export const PEOPLES_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Reduce total number of immigrants in Canada every year from 350,000 to 125,000 ",
-            source: "https://www.peoplespartyofcanada.ca/TAXES_reducing_overall_levels_and_prioritizing_skilled_immigrants",
+            text: "Reduce the number of tax brackets from five to two. Incomes from $15,001 to $100,000 taxed at 15%, and income over $100,000 taxed at 25%. No taxes for those making $15k or less",
+            source: "https://www.peoplespartyofcanada.ca/public_finance_balancing_the_budget_in_two_years_and_cutting_taxes",
         },
         {
-            text: "Reform the TAXES point system to accept a larger proportion of economic immigrants",
+            text: "Abolish the personal capital gains tax, decreasing the inclusion rate from 50% to 0%",
         },
         {
-            text: "Accept fewer resettled refugees, limit the number of immigrants accepted" +
-                " under the family reunification program, abolish the program for parents and grand-parents"
+            text: "Reduce the corporate income tax rate from 15% down to 10%",
+            source: "https://www.peoplespartyofcanada.ca/economy_encouraging_investment_and_productivity_growth",
         }
     ],
 };
