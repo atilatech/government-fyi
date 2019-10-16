@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
-import {FromThem, FromMe, Clear, Section, FromThemEmoji} from 'components/static/iMessageStyles'
+import {FromThem, FromMe, Clear, Section, FromThemEmoji} from '../../static/iMessageStyles'
 
 /*
 an iMessage conversation block

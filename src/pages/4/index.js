@@ -1,31 +1,152 @@
 import React from 'react'
-import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
-import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
-import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from 'pages/prop-attributes'
+import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
+import TextWithTitleBlock from '../../components/page-blocks/blocks/TextWithTitleBlock'
+import LinksBlock from '../../components/page-blocks/blocks/LinksBlock'
+import IMessageBlock from '../../components/page-blocks/blocks/IMessageBlock'
+import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
+import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from '../../pages/prop-attributes'
 
-import Citation from 'components/interactive/citation/citation'
-import Acronym from 'components/interactive/acronym'
+import Citation from '../../components/interactive/citation/citation'
+import Acronym from '../../components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
+import {EmojiLg} from "../../components/static/iMessageStyles";
 
 const Data = {
-	pageId:"prop-4",
+	pageId:"education",
 	propNum: 4,
 	meta: {
-		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('November 7, 2018 14:10:00')
+		dateCreated: new Date('October 14, 2019 10:00:00'),
+		dateModified: new Date('October 14, 2019 10:00:00')
 	},
 	blocks: [
 		{
-			component: ResultBlock,
+			component: SectionTitleBlock,
+			data:{
+				title: "A Casual Conversation About Education",
+				nColWidth: 6,
+			}
+		},
+		{
+			component: IMessageBlock,
 			data: {
-				result: PropMetaData(4).result,
-				title: "Passed",
-				text: "Voters decided to approve a $1.5B bond measure to help CA's children's hospitals improve their infrastructure and facilities."
-			},
+				messages: [
+					{
+						from: "me",
+						body: <span>I'm graduating soon </span>,
+					},
+					{
+						from:"me-no-bg",
+						body:<EmojiLg><span role="img" aria-label="crying emoji">😭</span></EmojiLg>
+					},
+					{
+						from: "them",
+						body: "You should be celebrating. Why the crying face?",
+					},
+					{
+						from: "me",
+						body: "I realized that I'm graduating with over $20,000 in student loans"
+					},
+					{
+						from: "me",
+						body: "And I have to start paying it back 6 months after I graduate."
+					},
+					{
+						from: "me",
+						body: "Also, I don't have a job lined up for when I leave school."
+					},
+					{
+						from: "them",
+						body: "Well it could be worse"
+					},
+					{
+						from: "them",
+						body: <span>
+							Most people graduate with about
+							<Citation data={Citations['7']}>$28,00 in student loans</Citation>.
+						</span>
+					},
+					{
+						from: "me",
+						body: "Not helping 🙄"
+					},
+					{
+						from: "them",
+						body: "Look on the bright side, I heard that some parties were talking about forgiving student loans"
+					},
+					{
+						from: "me",
+						body: "Forgiving student loans? "
+					},
+					{
+						from: "me",
+						body: "I like the sound of that 😁"
+					},
+					{
+						from:"me-no-bg",
+						body:<EmojiLg><span role="img" aria-label="thinking emoji">🤔</span></EmojiLg>
+					},
+					{
+						from: "me",
+						body: "But Wait, what about the people that worked hard to pay their student loans"
+					},
+					{
+						from: "them",
+						body: "Unfortunately, we can't change the past."
+					},
+					{
+						from: "them",
+						body: "The most important thing now is making sure future students " +
+							"aren't crushed with debt when they graduate."
+					},
+					{
+						from: "me",
+						body: "hmm, I see what you mean"
+					},
+					{
+						from: "me",
+						body: "But what happens the next year. Back to square one?"
+					},
+					{
+						from: "me",
+						body: "Why not just make university tuition free?"
+					},
+					{
+						from: "them",
+						body: <span>chill, that would be way too expensive.
+
+							You have the <Citation data={Citations['7']}>$10.6 billion</Citation> to pay for that?
+						</span>
+					},
+					{
+						from: "them",
+						body: "You can't even afford your $20,000 student loan . 😂"
+					},
+					{
+						from:"me-no-bg",
+						body:<EmojiLg><span role="img" aria-label="angry emoji">😡</span></EmojiLg>
+					},
+					{
+						from: "them",
+						body: "Sorry, I got carried away 😂"
+					},
+					{
+						from: "them",
+						body: <span>
+							You have a point though. I mean <Citation data={Citations['7']}>Germany has free tuition.</Citation>
+							Even for international students.
+						</span>
+					},
+					{
+						from: "me",
+						body: "btw...One more thing..."
+					},
+					{
+						from: "me",
+						body: "Can I have a job? 😁"
+					},
+				]
+			}
 		},
     {
     	component: TextWithTitleBlock,
@@ -53,57 +174,6 @@ const Data = {
 			component: SectionTitleBlock,
 			data:{
 				title: "Making fun and making points"
-			}
-		},
-		{
-			component: IMessageBlock,
-			data: {
-				messages: [
-					{
-						from: "me",
-						body: "Pretty much everybody is for this. I'm voting \"duh yes.\"",
-					},
-					{
-						from: "them",
-						body: "Put your Libertarian hat on – what would they say?",
-					},
-					{
-						from: "me",
-						body: "That we shouldn't add more debt?"
-					},
-					{
-						from: "me",
-						body: "Do Libertarians wear hats?"
-					},
-					{
-						from: "them",
-						body: "As long as the government isn't subsidizing those hats, yes."
-					},
-					{
-						from: "them",
-						body: "Seriously, why are we adding debt for something everybody seemingly agrees we ought to do?"
-					},
-					{
-						from: "them",
-						body: <span>If that's the case, we should just squeeze it into our budget, or <Citation data={Citations['6']}>have the hospitals pay for it.</Citation></span>
-					},
-					{
-						from: "me",
-						body: "Easier said than done."
-					},
-					{
-						from: "me",
-						body: <span>Increasing spending pisses off taxpayers. <Citation data={Citations['7']}>And we cut children's hospital infrastructure programs back in the 90s.</Citation></span>
-					},
-					{
-						from: "them",
-						body: "The point is to avoid more debt. Kids are important, but the debate is good for us."
-					},
-					{
-						from: "me",
-						body: "Sorry I couldn't hear you through my hat."
-					},
-				]
 			}
 		},
 		{
