@@ -14,7 +14,7 @@ function DemographicDetail ({demographicIssues}){
         <div>
             <ol>
                 {demographicIssues.map(item => (
-                    <li key={item.text}>
+                    <li key={JSON.stringify(item.text)}>
                         <Link to={`/${slugify(item.topic)}`}>
                             <span className={slugify(item.party)}>
                                 {item.party} on {item.topic} <br />
@@ -39,7 +39,7 @@ function demographicsToIssueQuery(demographic) {
             .forEach(item => {
                 const { party, topic } = platform;
                 const { text } = item;
-                if (item.demographics.includes(demographic)) {
+                if (item.demographics.includes(demographic.toLowerCase())) {
                     demographicIssues.push({
                         party, topic, text
                     })
@@ -47,7 +47,6 @@ function demographicsToIssueQuery(demographic) {
             });
 
     });
-
     return demographicIssues;
 }
 

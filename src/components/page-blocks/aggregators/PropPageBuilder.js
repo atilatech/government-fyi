@@ -8,7 +8,6 @@ import BottomNavBlock from '../blocks/BottomNavBlock'
 import TopNavBlock from '../blocks/TopNavBlock'
 import PublishDateBlock from '../blocks/PublishDateBlock'
 import {PropMetaData, GetNextAndPrevNum} from 'pages/prop-attributes'
-import {} from "../../../data/Constants";
 import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 import {unSlugify} from "../../../services/Utils";
 
