@@ -154,12 +154,12 @@ Citation.propTypes = {
 	link: PropTypes.string,
 	publication: PropTypes.string,
 	headline: PropTypes.string,
-	directQuote: PropTypes.string,
+	directQuote: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 	data: PropTypes.shape({
 		link: PropTypes.string,
 		publication: PropTypes.string.isRequired,
 		headline: PropTypes.string.isRequired,
-		directQuote: PropTypes.string.isRequired,
+		directQuote: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 	}),
 }
 
