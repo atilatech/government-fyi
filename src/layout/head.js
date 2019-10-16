@@ -126,19 +126,19 @@ class Head extends React.Component{
     }
   }
   render() {
-    const {title, url, description, headline, image, pageType} = this.props;
+    const {title, description, headline, image, pageType} = this.props;
 
     const dynamicUrl = window.location.href;
 
     return(
       <Helmet>
         <title>{title}</title>
-        <link rel="canonical"            href={url} />
+        <link rel="canonical"            href={dynamicUrl} />
         <meta name="viewport"            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description"         content={description} />
         <meta name="keywords"            content="CA, elections, propsitions" />
 
-        <meta prefix="og: http://ogp.me/ns#" property="og:url"          content={url} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:url"          content={dynamicUrl} />
         <meta prefix="og: http://ogp.me/ns#" property="og:type"         content="website" />
         <meta prefix="og: http://ogp.me/ns#" property="og:title"        content={headline} />
         <meta prefix="og: http://ogp.me/ns#" property="og:description"  content={description} />
