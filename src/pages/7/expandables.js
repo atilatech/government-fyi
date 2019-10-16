@@ -31,7 +31,7 @@ export const Acronyms = {
     expanded: "World War 2",
     acronym: "WWII"
   }
-}
+};
 
 export const Citations = {
   '1': {
@@ -107,4 +107,4 @@ export const Citations = {
     directQuote:"Data for sunrise/sunset visualization from timeanddate.com for 2018. (Exact date of DST switching varies year to year)"
   }
 
-}
+};

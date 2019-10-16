@@ -22,7 +22,7 @@ const DrawerPosition = styled.div.attrs({
   transition-property: opacity, transform;
   transition-duration: 150ms;
   transition-timing-function: ease-out;
-`
+`;
 
 const TopBar = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ const CloseWrapper = styled.div`
 
 class MenuDrawer extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {activated: false}
   }
 
@@ -86,6 +86,6 @@ class MenuDrawer extends React.Component {
 MenuDrawer.propTypes = {
   items: PropTypes.array.isRequired,
   toggleVisibility: PropTypes.func.isRequired
-}
+};
 
 export default MenuDrawer;

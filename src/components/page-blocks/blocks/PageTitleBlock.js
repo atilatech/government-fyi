@@ -83,7 +83,7 @@ const PageTitleBlock = (props) => {
 
 		</React.Fragment>
 	)
-}
+};
 
 PageTitleBlock.propTypes = {
 	data: PropTypes.shape({
@@ -93,6 +93,6 @@ PageTitleBlock.propTypes = {
 		datePublished: PropTypes.instanceOf(Date),
 		dateModified: PropTypes.instanceOf(Date),
 	}).isRequired
-}
+};
 
 export default PageTitleBlock;

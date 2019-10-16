@@ -4,5 +4,5 @@ const theme = {
   	p: "Georgia, Times New Roman, serif",
   	helvetica: "'Helvetica Neue', Helvetica, Arial, sans-serif",
   }
-}
+};
 export default theme

@@ -32,7 +32,7 @@ const SectionTitle = styled.h3`
 const SubsectionTitle = (props) => {
 	const {title, nColWidth} = props.data;
 	const nWidth = nColWidth || 6;
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
 	return(
 		<Row>
 			<Col
@@ -47,7 +47,7 @@ const SubsectionTitle = (props) => {
 			</Col>
 		</Row>
 	)
-}
+};
 
 SubsectionTitle.propTypes = {
 	data: PropTypes.shape({
@@ -55,6 +55,6 @@ SubsectionTitle.propTypes = {
 		nColWidth: PropTypes.number,
 
 	})
-}
+};
 
 export default SubsectionTitle;

@@ -28,7 +28,7 @@ const PropPageBuilder = (props) => {
 	});
 
 	const {dateCreated, dateModified, pageType} = meta;
-	const {color, imageSet, title, socialHeadline, socialDescription} = PropMetaData(propNum)
+	const {color, imageSet, title, socialHeadline, socialDescription} = PropMetaData(propNum);
 	const adjacentProps = GetNextAndPrevNum(propNum);
 
 	const prevLink = PROP_NUM_TO_CATEGORY_DICT[adjacentProps.prev] ?
@@ -91,7 +91,7 @@ const PropPageBuilder = (props) => {
 			/>
 		</div>
 	)
-}
+};
 
 PropPageBuilder.propTypes = {
 	data: PropTypes.shape({
@@ -108,6 +108,6 @@ PropPageBuilder.propTypes = {
 			}).isRequired
 		).isRequired
 	}).isRequired
-}
+};
 
 export default PropPageBuilder;

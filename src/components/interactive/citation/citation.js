@@ -53,7 +53,7 @@ const styles = {
 	hoverText: {
 		backgroundColor: Color('yellow1',0,10,0.8),
 	},
-}
+};
 class Citation extends React.Component {
 	constructor(props) {
 		super(props);
@@ -61,7 +61,7 @@ class Citation extends React.Component {
 			isPopupVisible: false,
 			taggedTextStyle: styles.deselectText,
 			isActive: false,
-		}
+		};
 	  this.clickLocationY=0;
 	  this.marker=null;
 	}
@@ -78,38 +78,38 @@ class Citation extends React.Component {
 		event.stopPropagation(); //-- because will propagate to click outside
 		this.clickLocationY = event.touches[0].pageY;
 		this.toggleVisibility()
-	}
+	};
 
 	handleIconClick = (event) => {
 		// event.preventDefault();
-		this.clickLocationY = event.pageY
+		this.clickLocationY = event.pageY;
 		this.toggleVisibility()
 		// sendGAEvent({
 		// 	category:"Citation",
 		// 	action:"Clicked to view citation",
 		// })
-	}
+	};
 
 	selectText = () => {
 		this.setState({
 			taggedTextStyle: styles.hoverText,
 		})
-	}
+	};
 	deselectText = () => {
 		this.setState({
 			taggedTextStyle: styles.deselectText,
 		})
-	}
+	};
 
 	toggleVisibility = (forceVisible) => {
-		let visibility = !this.state.isPopupVisible
-		if(forceVisible !== undefined) visibility = forceVisible
+		let visibility = !this.state.isPopupVisible;
+		if(forceVisible !== undefined) visibility = forceVisible;
 		this.setState({
 			isPopupVisible: visibility,
 			taggedTextStyle: (visibility ? styles.selectText : styles.deselectText),
 			isActive: visibility,
 		})
-	}
+	};
 
 	handleClickOutside() {
 		this.toggleVisibility(false)
@@ -161,7 +161,7 @@ Citation.propTypes = {
 		headline: PropTypes.string.isRequired,
 		directQuote: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 	}),
-}
+};
 
-Citation = enhanceWithClickOutside(Citation) //-- easy hack to dismiss other dialogs when another button is clicked
+Citation = enhanceWithClickOutside(Citation); //-- easy hack to dismiss other dialogs when another button is clicked
 export default Citation

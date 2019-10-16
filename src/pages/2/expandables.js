@@ -45,4 +45,4 @@ export const Citations = {
     headline:"Opinion: Proposition 2: First invest in our people",
     directQuote:"Proposition 2 is unnecessary because in 2017, the Legislature, through Assembly Bill 727, allowed counties to accumulate MHSA capital funds up to 10 years, enabling them to “pay as you go” both to build housing and help pay rent subsidies for these clients. This proposition goes against the intent of the MHSA approved by the voters in 2004 to allow counties maximum “home rule” flexibility to best determine how to spend their MHSA allocated funds, whether for treatment and/or housing."
   }
-}
+};

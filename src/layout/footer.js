@@ -9,25 +9,25 @@ import Line from 'components/static/rounded-line'
 const LineContainer = styled.div`
   max-width: 320px;
   margin: 0 auto;
-`
+`;
 
 const FooterContainer = styled.div`
   text-align: center;
   font-size: 13px;
   padding-right: 20px;
   padding-left: 20px;
-`
+`;
 const NavLink = styled(Link)`
   text-decoration: none;
   color: ${Color('black')};
-`
+`;
 const NavLabel = styled.span`
   @media not all and (hover: none) {
     &:hover {
       color: ${Color('red')};
     }
   }
-`
+`;
 
 
 
@@ -63,7 +63,7 @@ const Footer = () => {
       <Spacer height={90}/>
     </div>
   )
-}
+};
 
 const nav = [
   { to:"/about/", label:"about"},

@@ -61,7 +61,7 @@ export const PlatformBlock = (props) => {
             <br/>
         </React.Fragment>
     );
-}
+};
 
 PlatformBlock.propTypes = {
     partyPlatform: PropTypes.shape(PartyPlatformPropTypes),
@@ -86,12 +86,12 @@ function partyToTitleTransform(party){
     }
 
     return title;
-};
+}
 const PartyPlatformBlock = (props) => {
     const {party, partyPlatforms, nColWidth} = props.data;
 
     const nWidth = nColWidth || 6; // default hack
-    const offset = Math.floor((12-nWidth)/2)
+    const offset = Math.floor((12-nWidth)/2);
 
     const title = partyToTitleTransform(party);
     return(
@@ -118,7 +118,7 @@ const PartyPlatformBlock = (props) => {
             </Col>
         </Row>
     );
-}
+};
 
 
 const PartyPlatformBlockPropTypes = {

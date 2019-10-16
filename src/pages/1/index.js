@@ -48,5 +48,5 @@ const Data = {
     },
 	...partyPlatforms,
   ]
-}
+};
 export default () => (<PropPageBuilder data={Data}/>);

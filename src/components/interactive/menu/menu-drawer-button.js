@@ -34,9 +34,9 @@ class MenuDrawerButton extends React.Component {
 
   toggleVisibility = (forceVisible) => {
     let visibility = !this.state.showDrawer;
-    if(forceVisible !== undefined) visibility = forceVisible
+    if(forceVisible !== undefined) visibility = forceVisible;
     this.setState({ showDrawer: visibility})
-  }
+  };
 
   render() {
     return(
@@ -59,10 +59,10 @@ class MenuDrawerButton extends React.Component {
 MenuDrawerButton.propTypes = {
   text: PropTypes.string,
   items: PropTypes.array.isRequired,
-}
+};
 
 MenuDrawerButton.defaultProps = {
   text: 'More...'
-}
+};
 
 export default MenuDrawerButton

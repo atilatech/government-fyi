@@ -22,6 +22,6 @@ const SubscribeBlock = (props) => {
       </Col>
     </Row>
   );
-}
+};
 
 export default SubscribeBlock;

@@ -11,7 +11,7 @@ export const Acronyms = {
     expanded: "Senate Bill ",
     acronym: "SB"
   }
-}
+};
 
 export const Citations = {
   '1': {
@@ -50,4 +50,4 @@ export const Citations = {
     headline:"Best States ranking",
     directQuote:"Transportation (overall) #41; Bridge Quality #11; Commute Time #46; Public Transit Usage #9; Road Quality #49",
   }
-}
+};

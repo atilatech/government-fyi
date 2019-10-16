@@ -70,7 +70,7 @@ const SubsectionTitle = styled.h3`
 
 const LinkWrapper = styled.h4`
 	display: flex;
-`
+`;
 
 const ExternalLink = styled.a`
 	margin-top: 4px;
@@ -111,14 +111,14 @@ const LinksChunk = (props) => {
 				{link.text}
 			</LinkWrapper>
 		)
-	})
+	});
 	return(
 		<SectionWrapper>
 			<SubsectionTitle>{props.data.subsectionTitle}</SubsectionTitle>
 			{links}
 		</SectionWrapper>
 	);
-}
+};
 
 const LinksBlock = (props) => {
 	const evenSections = props.data.subsections.map( (section, i) => {
@@ -126,14 +126,14 @@ const LinksBlock = (props) => {
 			return( <LinksChunk key={i} data={section} /> );
 		}
 		return null;
-	})
+	});
 	//-- to make two columns
 	const oddSections = props.data.subsections.map( (section, i) => {
 		if(i%2===1) {
 			return( <LinksChunk key={i} data={section} /> );
 		}
 		return null;
-	})
+	});
 
 
 	return(
@@ -159,7 +159,7 @@ const LinksBlock = (props) => {
 			</Row>
 		</HideOnPrint>
 	);
-}
+};
 
 LinksBlock.propTypes = {
 	data: PropTypes.shape({
@@ -175,7 +175,7 @@ LinksBlock.propTypes = {
 			})
 		).isRequired
 	}).isRequired
-}
+};
 
 
 export default LinksBlock

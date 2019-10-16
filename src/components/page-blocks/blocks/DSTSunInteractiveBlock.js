@@ -19,7 +19,7 @@ const Container = styled.div`
     flex-direction: column;
     background-color: whitesmoke;
   }
-`
+`;
 
 const SelectorContainer = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ const SelectorContainer = styled.div`
     margin-bottom: 20px;
     margin-top: 20px;
   }
-`
+`;
 
 const Vert = styled.div`
   display:flex;
@@ -44,13 +44,13 @@ const Vert = styled.div`
   @media screen and (max-width: 767px){
     width: 80%;
   }
-`
+`;
 const DateSelectInput = styled.input`
   margin-left: 5px;
   margin-right: 5px;
   width: 100%;
   z-index: 3;
-`
+`;
 const DSTLabel = styled.div.attrs({
   style: props => ({
     color: props.sliderIsInDST ? 'white' : 'black',
@@ -76,7 +76,7 @@ const DSTLabel = styled.div.attrs({
     position: static;
     margin-top: 10px;
   }
-`
+`;
 
 const DSTMarking = styled.div.attrs({
   style: props => ({
@@ -97,14 +97,14 @@ const DSTMarking = styled.div.attrs({
   @media screen and (max-width: 767px) {
     top:-15px;
   }
-`
+`;
 const EndLabel = styled.h5`
   display: block;
   line-height: 12px;
   @media screen and (max-width: 767px) {
   }
 
-`
+`;
 
 const SelectorLabel = styled.div.attrs({
   style: props => ({
@@ -122,7 +122,7 @@ const SelectorLabel = styled.div.attrs({
     position: static;
     align-self: center;
   }
-`
+`;
 
 const FormContainer = styled.div`
   display: flex;
@@ -131,21 +131,21 @@ const FormContainer = styled.div`
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
-`
+`;
 const Form = styled.form`
   background-color: whitesmoke;
   padding: 5px 10px;
   border-radius: 2px;
-`
+`;
 const ToggleLabel = styled.label`
   display: inline-block;
   text-transform: none;
   padding-left: 5px;
   font-size: 12px;
-`
+`;
 const ToggleContainer = styled.div`
   max-width: 280px;
-`
+`;
 const Caption = styled.div`
   width: 70%;
   margin: 10px auto 0 auto;
@@ -165,10 +165,10 @@ class DSTSun extends React.Component{
     super(props);
     this.width = 1000;
     this.height = 150;
-    this.loadedData = []
+    this.loadedData = [];
     this.padding= 50;
     this.graphHeight= 60;
-    this.graphId = 'sun-viz'
+    this.graphId = 'sun-viz';
     this.isDSTToggled = false; // duplicated bc state doesn't update quickly enough or I'm stupid or both
     this.isXs = false;
     this.src = props.data.src;
@@ -206,40 +206,40 @@ class DSTSun extends React.Component{
     this.graphHeight = (w < 767) ? 140 : 60;
     this.isXs = (w < 767);
     this.redimensionGraph();
-  }
+  };
   handleToggleChange = (e) => {
-    const stateToSet = e.target.value === "all-year"
+    const stateToSet = e.target.value === "all-year";
     this.setState({isDSTToggled: stateToSet});
     this.isDSTToggled = stateToSet;
     this.draw(parseInt(document.querySelector('#date-select-input').value,10))
-  }
+  };
   handleSliderChange = (e) => {
-    this.setState({sliderValue: e.target.value})
+    this.setState({sliderValue: e.target.value});
     this.draw(parseInt(e.target.value,10));
-  }
+  };
 
   redimensionGraph = () => {
-    const graph = select("#"+this.graphId)
-    const midY = (this.height+this.graphHeight)/2
+    const graph = select("#"+this.graphId);
+    const midY = (this.height+this.graphHeight)/2;
 
     graph.select("rect")
     .attr("y",midY - this.graphHeight)
-    .attr("height",this.graphHeight)
+    .attr("height",this.graphHeight);
     graph.selectAll(".sunline")
     .attr("y1", midY)
-    .attr("y2", midY-this.graphHeight)
+    .attr("y2", midY-this.graphHeight);
     graph.select("g")
     .attr("transform", "translate("+this.padding+","+midY+")")
 
-  }
+  };
 
   removeAll =() => {
-    const graph = select("#"+this.graphId)
+    const graph = select("#"+this.graphId);
     graph.selectAll('g').remove();
     graph.selectAll('rect').remove();
     graph.selectAll('text').remove();
     graph.selectAll('line').remove();
-  }
+  };
 
   initDraw = () => {
     //-- load data
@@ -249,7 +249,7 @@ class DSTSun extends React.Component{
         sunrise: d.rise,
         sunset: d.set
       };
-    })
+    });
     //-- x axis
     this.xScale = scaleTime()
     .domain([(new Date(1900,0,1)), (new Date(1900,0,2))])
@@ -258,22 +258,22 @@ class DSTSun extends React.Component{
     const xAxis = axisBottom(this.xScale)
     .tickSize(10)
     .ticks(timeHour.every(6))
-    .tickFormat(d3TimeFormat("%-I %p"))//12 hour clock
+    .tickFormat(d3TimeFormat("%-I %p"));//12 hour clock
 
-    const graph = select("#"+this.graphId)
-    const midY = (this.height+this.graphHeight)/2
+    const graph = select("#"+this.graphId);
+    const midY = (this.height+this.graphHeight)/2;
     //-- gradient
     graph.append("rect")
     .attr("fill","url(#day-grad)")
     .attr("x",this.padding)
     .attr("y",midY-this.graphHeight)
     .attr("width",this.width-this.padding*2+1)
-    .attr("height",this.graphHeight)
+    .attr("height",this.graphHeight);
 
     graph.append("g")
     .attr("transform", "translate("+this.padding+","+midY+")")
     .attr("class", "x-axis")
-    .call(xAxis)
+    .call(xAxis);
 
     // lines for sunset/sunrise
     graph.append("line")
@@ -282,25 +282,25 @@ class DSTSun extends React.Component{
     .attr("y1", midY)
     .attr("y2", midY-this.graphHeight)
     .attr("stroke","white")
-    .attr("stroke-width", "2")
+    .attr("stroke-width", "2");
     graph.append("line")
     .attr("id", "set-line")
     .attr("class","sunline")
     .attr("y1", midY)
     .attr("y2", midY-this.graphHeight)
     .attr("stroke","white")
-    .attr("stroke-width", "2")
+    .attr("stroke-width", "2");
 
     //-- labels for sunrise/sunset
     graph.append("text")
     .attr("id","rise-label")
     .attr("text-anchor","end")
-    .attr("class", "time-label")
+    .attr("class", "time-label");
     graph.append("text")
     .attr("id","set-label")
     .attr("text-anchor","start")
     .attr("class", "time-label")
-  }
+  };
   //-------------------------------------
   //-- redraw graph
   draw = (selectedDateIndex) => {
@@ -311,12 +311,12 @@ class DSTSun extends React.Component{
     //-- change label on input
     const selectedDate = d3TimeParse("%Y-%m-%d")(this.loadedData[selectedDateIndex].date);
     const selectorWidth = this.inputSlider.getBoundingClientRect().width;
-    this.setState({sliderWidth: selectorWidth}) // width of slider changes when on mobiles
+    this.setState({sliderWidth: selectorWidth}); // width of slider changes when on mobiles
     // change label text and position
     this.setState({
       selectorLabel: (d3TimeFormat("%b %-d")(selectedDate)),
       labelLeft: selectedDateIndex/364 * (selectorWidth-10)+6 //some magic numbers
-    })
+    });
 
 
     //if DST toggled and in winter, add an hour (69th and 306th day are march 11, nov 4)
@@ -328,9 +328,9 @@ class DSTSun extends React.Component{
     }
 
     //-- change lines on graph
-    let sunriseTime = timeParse(this.loadedData[selectedDateIndex].sunrise)
+    let sunriseTime = timeParse(this.loadedData[selectedDateIndex].sunrise);
     sunriseTime.setHours(sunriseTime.getHours()+addTime);
-    const sunsetTime = timeParse(this.loadedData[selectedDateIndex].sunset)
+    const sunsetTime = timeParse(this.loadedData[selectedDateIndex].sunset);
     sunsetTime.setHours(sunsetTime.getHours()+addTime);
     const sunriseTimeX = this.xScale(sunriseTime)+this.padding;
     const sunsetTimeX = this.xScale(sunsetTime)+ this.padding;
@@ -343,18 +343,18 @@ class DSTSun extends React.Component{
     // sunrise
     select("#rise-line")
     .attr("x1", sunriseTimeX)
-    .attr("x2", sunriseTimeX)
+    .attr("x2", sunriseTimeX);
     select("#rise-label")
     .attr("transform","translate("+(sunriseTimeX-20)+","+(this.height/2+7)+")")
-    .text(timeFormat(sunriseTime))
+    .text(timeFormat(sunriseTime));
     //sunset
     select("#set-line")
     .attr("x1", sunsetTimeX)
-    .attr("x2", sunsetTimeX)
+    .attr("x2", sunsetTimeX);
     select("#set-label")
     .attr("transform","translate("+(sunsetTimeX+20)+","+(this.height/2+7)+")")
     .text(timeFormat(sunsetTime))
-  }
+  };
 
 
 

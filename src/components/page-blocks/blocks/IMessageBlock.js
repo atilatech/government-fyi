@@ -50,16 +50,16 @@ class IMessageBlock extends React.Component {
 
 			switch(message.from) {
 				case "them":
-					msg = <FromThem>{message.body}</FromThem>
+					msg = <FromThem>{message.body}</FromThem>;
 					break;
 				case "me":
-					msg = <FromMe>{message.body}</FromMe>
+					msg = <FromMe>{message.body}</FromMe>;
 					break;
 				case "me-no-bg":
-					msg = <FromMe style={{background:'none'}}>{message.body}</FromMe>
+					msg = <FromMe style={{background:'none'}}>{message.body}</FromMe>;
 					break;
 				case "them-no-bg":
-					msg = <FromThemEmoji>{message.body}</FromThemEmoji>
+					msg = <FromThemEmoji>{message.body}</FromThemEmoji>;
 					break;
 				default:
 					break;
@@ -71,7 +71,7 @@ class IMessageBlock extends React.Component {
 					<br />
 				</React.Fragment>
 			)
-		})
+		});
 		return(
 			<React.Fragment>
 			<Row className="fade-border">
@@ -100,6 +100,6 @@ IMessageBlock.propTypes = {
 	    })
 		)
   }).isRequired
-}
+};
 
 export default IMessageBlock

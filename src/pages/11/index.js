@@ -214,5 +214,5 @@ const Data = {
 			}
 		}
   ]
-}
+};
 export default () => (<PropPageBuilder data={Data}/>);

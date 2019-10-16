@@ -41,7 +41,7 @@ const Banner = styled.div`
 		padding-left: 30px;
 		padding-right: 30px
 	}
-`
+`;
 const ImgContainer = styled.div.attrs({
   style: props => ({
     backgroundColor: props.isActive?Color(props.color+'1'):'transparent'
@@ -55,11 +55,11 @@ const ImgContainer = styled.div.attrs({
 			background-color: ${props=>Color(props.color+'2')};
 		}
 	}
-`
+`;
 const NavItemContainer = styled.div`
 	max-width: 1000px;
 	min-height: 65px;
-`
+`;
 const HoverTitle = styled.h4`
 	font-size: 10px;
 	display: block
@@ -75,13 +75,13 @@ const HoverTitle = styled.h4`
 	@media screen and (max-width: 767px) {
 		max-width: 40px;
 	}
-`
+`;
 
 
 const TopNavBlock = (props) => {
 	const navArr = [];
 	for (let i = 1; i < 8; i++){
-		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i)
+		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i);
 		navArr.push(
 			{
 				color:color,
@@ -97,17 +97,17 @@ const TopNavBlock = (props) => {
 		return(
 			<NavItem key={i} isActive={props.currentProp === i+1} propNum={i} data={item}/>
 		)
-	})
+	});
   return(
     <Banner>
 			{navItems}
     </Banner>
   )
-}
+};
 
 TopNavBlock.propTypes = {
   currentProp: PropTypes.number
-}
+};
 
 export default TopNavBlock;
 
@@ -123,10 +123,10 @@ class NavItem extends React.Component {
 	}
 	handleMouseEnter = () => {
 		this.setState({isHovered: true})
-	}
+	};
 	handleMouseLeave = () => {
 		this.setState({isHovered: false})
-	}
+	};
 	render() {
 		const {color, title, desc, imageSet, result} = this.props.data;
     if (result === "Y"){

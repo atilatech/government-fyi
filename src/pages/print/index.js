@@ -30,12 +30,12 @@ const Container = styled.div`
   @media screen and (max-width: 767px) {
     justify-content: space-around;
   }
-`
+`;
 const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const DownloadLink = styled.a`
   display: block;
@@ -47,15 +47,15 @@ const DownloadLink = styled.a`
   @media screen and (max-width: 767px) {
     margin: 0;
   }
-`
+`;
 const Image = styled(MultisourceImg)`
   display: block;
   height: 100%;
   object-fit: contain;
-`
+`;
 const ImgLabel = styled.h3`
   margin-top: 20px;
-`
+`;
 
 const DownloadBox = (props) => {
   const links = props.links.map( (link, i) => (
@@ -67,13 +67,13 @@ const DownloadBox = (props) => {
       </DownloadLink>
       <ImgLabel>{link.label}</ImgLabel>
     </LinkContainer>
-  ))
+  ));
   return (
     <Container>
       {links}
     </Container>
   )
-}
+};
 
 const Data = {
 	pageId:"print-guide-page",
@@ -148,6 +148,6 @@ const Data = {
       }
     },
   ]
-}
+};
 
 export default () => (<PageBuilder data={Data}/>);

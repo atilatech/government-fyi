@@ -15,7 +15,7 @@ import {Spacer} from 'layout/util'
 const ButtonContainer = styled.div`
 	display: flex;
 	justify-content: center;
-`
+`;
 
 export const ExpandButton = styled(Link)`
 	margin-top: 20px;
@@ -38,14 +38,14 @@ const StyledH3 = styled.h3`
 	font-size: 14px;
   font-weight: bold;
   color: #fff;
-`
+`;
 const Btn = (props) => (
   <ButtonContainer>
     <ExpandButton to={props.to}>
       <StyledH3>{props.label}</StyledH3>
     </ExpandButton>
   </ButtonContainer>
-)
+);
 const Data = {
 	pageId: "procrastinators",
 	meta: {
@@ -352,6 +352,6 @@ const Data = {
     },
 
   ]
-}
+};
 
 export default () => (<PageBuilder data={Data}/>);

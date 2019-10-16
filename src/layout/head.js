@@ -178,7 +178,7 @@ Head.defaultProps = {
   headline: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
   description: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
   image: "general-2.png",
-}
+};
 
 
 Head.propTypes = {
@@ -190,6 +190,6 @@ Head.propTypes = {
   pageType:PropTypes.string,
   dateCreated: PropTypes.instanceOf(Date),
   dateModified: PropTypes.instanceOf(Date),
-}
+};
 
 export default Head;

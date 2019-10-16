@@ -253,4 +253,4 @@ export const ReferencesBlock = [
             subsections: References
         }
     }
-]
+];

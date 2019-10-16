@@ -39,7 +39,7 @@ const Text = styled.div`
 const TextWithTitleBlock = (props) => {
 	const {title, subtitle, text, nColWidth} = props.data;
 	const nWidth = nColWidth || 6; // default hack
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
 
 	return(
 		<Row>
@@ -64,7 +64,7 @@ const TextWithTitleBlock = (props) => {
 			</Col>
 		</Row>
 	);
-}
+};
 
 
 TextWithTitleBlock.propTypes = {
@@ -74,7 +74,7 @@ TextWithTitleBlock.propTypes = {
 		text: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 		nColWidth: PropTypes.number,
 	})
-}
+};
 
 
 export default TextWithTitleBlock

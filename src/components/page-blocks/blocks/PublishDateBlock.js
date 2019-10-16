@@ -12,11 +12,11 @@ const Timestamp = styled.h4`
 	letter-spacing: -0.2px;
 	@media screen and (max-width: 767px) {
 	}
-`
+`;
 
 const PublishDateBlock = (props) => {
 	const {dateCreated, dateModified} = props.data;
-	const dateOptions = {month: "2-digit", day: "2-digit", year: "2-digit", hour: '2-digit', minute:'2-digit'}
+	const dateOptions = {month: "2-digit", day: "2-digit", year: "2-digit", hour: '2-digit', minute:'2-digit'};
 	let publishDate = null;
 	if(dateCreated) {
 		publishDate = (dateCreated.getTime() !== dateModified.getTime()) ?
@@ -36,13 +36,13 @@ const PublishDateBlock = (props) => {
 			</Col>
 		</Row>
 	);
-}
+};
 
 PublishDateBlock.propTypes = {
 	data: PropTypes.shape({
 		dateCreated: PropTypes.instanceOf(Date),
 		dateModified: PropTypes.instanceOf(Date),
 	})
-}
+};
 
 export default PublishDateBlock;

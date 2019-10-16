@@ -16,7 +16,7 @@ const CrossOutContainer = styled.div.attrs({
   overflow: hidden;
   background-color: rgba(255,255,255,0.5);
   transition: opacity 200ms ease-out;
-`
+`;
 
 class CrossOutX extends React.Component {
   constructor(props) {
@@ -26,11 +26,11 @@ class CrossOutX extends React.Component {
 
   onMouseEnter = () => {
     this.setState({isHovered: true})
-  }
+  };
 
   onMouseLeave = () => {
     this.setState({isHovered: false})
-  }
+  };
 
   render() {
     return(

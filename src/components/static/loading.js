@@ -3,7 +3,7 @@ import './loading.css'
 
 export class LoadingAnimation extends React.Component {
 	constructor(props) {
-		super(props)
+		super(props);
 		this.state = { show: false }
 	}
 	componentDidMount() {
@@ -44,4 +44,4 @@ export const ErrorLoading = () => {
     	</div>
   	</div>
 	);
-}
+};

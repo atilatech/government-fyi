@@ -40,7 +40,7 @@ export const Button = styled.a`
 			color: white;
 		}
 	}
-`
+`;
 
 const Data = {
 	pageId: "about-page",
@@ -267,6 +267,6 @@ const Data = {
     //   }
     // },
   ]
-}
+};
 
 export default () => (<PageBuilder data={Data}/>);

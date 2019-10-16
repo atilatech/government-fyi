@@ -18,4 +18,4 @@ export const Citations = {
     directQuote:"On the flipside, the Republican Party may also be wary of three Californias. The proposal would give the people of California six US senators instead of two."
   }
 
-}
+};

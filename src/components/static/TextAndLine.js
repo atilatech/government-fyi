@@ -50,7 +50,7 @@ class TextAndLine extends React.Component {
 			isEmpty: (w===0),
 	  	lineWidth: lineW
 	  })
-	}
+	};
 	render() {
 		const { borderRadius, lineWidth, isEmpty} = this.state;
 		const isReversed = (this.props.align === "right");
@@ -68,11 +68,11 @@ class TextAndLine extends React.Component {
 
 TextAndLine.propTypes = {
 	align: PropTypes.string,
-}
+};
 
 TextAndLine.defaultProps = {
 	align: "left",
-}
+};
 
 
 export default TextAndLine;

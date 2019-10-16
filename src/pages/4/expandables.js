@@ -5,7 +5,7 @@ export const Acronyms = {
     expanded: "University of California",
     acronym: "UC"
   },
-}
+};
 
 export const Citations = {
   '1': {

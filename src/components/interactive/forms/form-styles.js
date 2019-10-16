@@ -65,7 +65,7 @@ const buttonStyle = styled.div`
   display:flex;
   align-items: center;
   justify-content: center;
-`
+`;
 export const ErrorMessage = styled(buttonStyle)`
   color: ${Color('orange2')};
   border: 4px solid ${Color('orange2')};

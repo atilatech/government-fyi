@@ -18,13 +18,13 @@ const Container = styled.div`
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-`
+`;
 const CenterLabel = styled.h1`
 	position: absolute;
 	@media screen and (max-width: 767px) {
 		font-size: 30px;
 	}
-`
+`;
 
 class DonutGraph extends React.Component {
 	constructor(props) {
@@ -60,13 +60,13 @@ class DonutGraph extends React.Component {
 
 		const outerArc = d3arc()
 			.innerRadius(radius * 0.88)
-			.outerRadius(radius * 0.88)
+			.outerRadius(radius * 0.88);
 
 		const pie = d3pie()
 			.sort(null)
 			.value(function(d) {
 				return d.amount
-			})
+			});
 
 		const svg = select(graphId)
 			.append("g")
@@ -79,7 +79,7 @@ class DonutGraph extends React.Component {
 				amount: +d.v,
 				description: d.d
 			};
-		})
+		});
 
 		//-- sets colorRange function
 		const colorRange = d3scaleLinear()
@@ -100,7 +100,7 @@ class DonutGraph extends React.Component {
 			.attr('stroke-width', '1')
 			.style('fill', function(d){
 				return colorRange(d.data.amount)
-			})
+			});
 
 		const centerToLabelDist = radius;
 		//-- move text labels to outside
@@ -118,7 +118,7 @@ class DonutGraph extends React.Component {
 				})
 				.text(function(d) {
 					return d.data.label;
-				})
+				});
 
 
 			// this.arcs.append('text')
@@ -135,7 +135,7 @@ class DonutGraph extends React.Component {
 			// 		return d.data.description;
 			// 	})
 
-		text.call(wrapText, 240)
+		text.call(wrapText, 240);
 		//-- create a polyline from centroid of arc to label
 		this.arcs.append("polyline")
 			.attr("points", function(d){
@@ -145,7 +145,7 @@ class DonutGraph extends React.Component {
 			})
 			.attr('stroke-width', '3')
 			.attr('stroke-linejoin','round')
-			.attr('stroke-linecap','round')
+			.attr('stroke-linecap','round');
 
 		function midAngle(d){
 			return (d.startAngle+d.endAngle)/2
@@ -159,12 +159,12 @@ class DonutGraph extends React.Component {
 				let lineNumber = 0;
 				const lineHeight = 1.3; // em
 				const dy = parseFloat(text.attr("dy"));
-				const y = text.attr("y") || 0
+				const y = text.attr("y") || 0;
 				let tspan = text.text(null)
 					.append("tspan")
-					.attr('y', y)
+					.attr('y', y);
 				while (true) {
-					word = words.pop()
+					word = words.pop();
 					if(!word) {break;}
 					line.push(word);
 					tspan.text(line.join(" "));
@@ -181,12 +181,12 @@ class DonutGraph extends React.Component {
 				}
 			});
 		}
-	}
+	};
 
 	render() {
 		const {nColWidth, centerLabel} = this.props.data;
 		const nWidth = nColWidth || 10;
-		const offset = Math.floor((12-nWidth)/2)
+		const offset = Math.floor((12-nWidth)/2);
 		return(
 			<Row>
 		    <Col
@@ -211,7 +211,7 @@ DonutGraph.propTypes = {
 	nColWidth: PropTypes.number,
 	colorRangeStart: PropTypes.string,
 	colorRangeEnd: PropTypes.string
-}
+};
 
 
 export default DonutGraph;

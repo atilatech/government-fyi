@@ -23,7 +23,7 @@ usage in data.js file:
 const TitlePos = styled.div`
 	position: relative;
 	top: -38px;
-`
+`;
 
 const Title = styled.h2`
 	display: block;
@@ -50,7 +50,7 @@ const Text = styled.div`
 const ResultBlock = (props) => {
 	const {title, text, nColWidth, result} = props.data;
 	const nWidth = nColWidth || 8; // default hack
-	const offset = Math.floor((12-nWidth)/2)
+	const offset = Math.floor((12-nWidth)/2);
 
 	return(
 		<Row>
@@ -69,7 +69,7 @@ const ResultBlock = (props) => {
 			</Col>
 		</Row>
 	);
-}
+};
 
 
 ResultBlock.propTypes = {
@@ -79,7 +79,7 @@ ResultBlock.propTypes = {
 		text: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
 		nColWidth: PropTypes.number,
 	})
-}
+};
 
 
 export default ResultBlock

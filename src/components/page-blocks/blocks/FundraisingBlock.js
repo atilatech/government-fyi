@@ -112,7 +112,7 @@ const FundraisingBlock = (props) => {
 			{fundingSections}
 		</React.Fragment>
 	);
-}
+};
 
 FundraisingBlock.propTypes = {
 	data: PropTypes.shape({
@@ -128,6 +128,6 @@ FundraisingBlock.propTypes = {
 			})
 		)
 	})
-}
+};
 
 export default FundraisingBlock;

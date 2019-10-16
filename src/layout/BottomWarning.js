@@ -23,6 +23,6 @@ const BottomWarning = () => {
 
     </BottomSticky>
   )
-}
+};
 
 export default BottomWarning;

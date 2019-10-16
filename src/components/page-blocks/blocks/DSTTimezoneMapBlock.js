@@ -22,7 +22,7 @@ class DSTMap extends React.Component{
 	}
 
   draw = (mapPath, tzMapPath) => {
-    const graphId = "#"+this.graphId
+    const graphId = "#"+this.graphId;
     // json('../mapdata/us-states-topo.json', function(error, topoData) {
     json(mapPath, function(error, topoData) {
       const us = feature(topoData, topoData.objects.states);
@@ -48,7 +48,7 @@ class DSTMap extends React.Component{
           .style("stroke-width", "1px")
 
     });
-  }
+  };
 
 	render() {
 		return(

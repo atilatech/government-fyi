@@ -27,7 +27,7 @@ will likely be used inside a parent component
 const popupDimensions = {
 	height: 220,
 	width: 245,
-}
+};
 
 const PopupPosition = styled.span`
 	position: absolute;
@@ -68,7 +68,7 @@ const Container = styled.span`
 class PopupContainer extends React.Component {
 	constructor(props) {
 		super(props);
-    let width = (window.innerWidth || document.documentElement.clientWidth)
+    let width = (window.innerWidth || document.documentElement.clientWidth);
 		this.state = {
 			windowWidth: width,
 			isXsScreen: (width < 1024),
@@ -111,30 +111,30 @@ class PopupContainer extends React.Component {
 
   removeScrollListener = () => {
     window.removeEventListener('scroll', this.handleScroll);
-  }
+  };
 
   handleKeyDown = (event) => {
     if(event.key === 'Escape') {
       this.props.toggleVisibility(false)
     }
-  }
+  };
 
 	handleResize = () => {
     let w = (window.innerWidth || document.documentElement.clientWidth);
     this.setState({ windowWidth: w });
     (w < 1024) ?	this.setState({ isXsScreen: true, }) : this.setState({ isXsScreen: false, });
     this.props.toggleVisibility(false)
-	}
+	};
 
   handleDismiss = () => {
   	this.props.toggleVisibility(false);
-  }
+  };
   handleScroll = () => {
-  	let currentY = (window.pageYOffset || document.documentElement.scrollTop)
+  	let currentY = (window.pageYOffset || document.documentElement.scrollTop);
 		//-- dismiss after user scrolls 20% of the screen height in either direction
-		let height = (window.innerHeight || document.documentElement.clientHeight)
+		let height = (window.innerHeight || document.documentElement.clientHeight);
 		if(this.state.doneScrolling && Math.abs(currentY - this.state.initialScrollY) > height/6) {this.props.toggleVisibility(false)}
-  }
+  };
 
 
 	render() {
@@ -152,6 +152,6 @@ PopupContainer.propTypes = {
 	toggleVisibility: PropTypes.func.isRequired, //-- to give access to the the visibility function
 	clickPos: PropTypes.number.isRequired, //-- used to focus the text in the right place
 	noComment: PropTypes.bool, //-- in case you don't want the comment card
-}
+};
 
 export default PopupContainer

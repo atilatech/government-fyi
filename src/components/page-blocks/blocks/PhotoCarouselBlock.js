@@ -86,7 +86,7 @@ const PhotoCarouselBlock = (props) => {
 			</Col>
 		</Row>
 	);
-}
+};
 
 PhotoCarouselBlock.propTypes = {
 	data: PropTypes.shape({
@@ -98,6 +98,6 @@ PhotoCarouselBlock.propTypes = {
 			})
 		).isRequired
 	}).isRequired
-}
+};
 
 export default PhotoCarouselBlock;
