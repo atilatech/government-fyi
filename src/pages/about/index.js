@@ -1,14 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
-import ImgAndText2Block from 'components/page-blocks/blocks/ImgAndText2Block'
+import PageBuilder from '../../components/page-blocks/aggregators/PageBuilder'
+import TextWithTitleBlock from '../../components/page-blocks/blocks/TextWithTitleBlock'
+import PageTitleBlock from '../../components/page-blocks/blocks/PageTitleBlock'
+import ImgAndText2Block from '../../components/page-blocks/blocks/ImgAndText2Block'
 import conciseImg from './images/concise.svg'
 import nonpartisanImg from './images/nonpartisan.svg'
 import toolImg from './images/tool.svg'
-import Color from 'layout/colors'
+import Color from '../../layout/colors'
 
 export const Button = styled.a`
 	font-family: ${props=>props.theme.fonts.avant};
@@ -136,15 +136,64 @@ const Data = {
     {
       component: TextWithTitleBlock,
       data: {
+        title: "Team",
+        text: <React.Fragment>
+            <div>
+                <img className="rounded-circle img-fluid d-block mx-auto team-image"
+                     src="https://tomiwa.ca/img/tomiwa-ivey-profile-picture.jpg"
+                     alt="Tomiwa Ademidun's Website Personal Picture" />
+                <h3>
+                    <a href="https://tomiwa.ca"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Tomiwa Ademidun
+                    </a>
+                    </h3>
+                <p style={{fontSize: 'larger'}}>I'm a Software engineering and business student currently studying at Ivey
+                    Business School, Western University.
+                    <br /><br />
+
+                    I'm also the founder of <a href="https://atila.ca" target="_blank"
+                                              rel="noopener noreferrer">Atila</a>,
+                    an ed-tech startup that helps students automatically find and apply to scholarships in one
+                    click.
+                </p>
+            </div>
+            <div>
+                <img className="rounded-circle img-fluid d-block mx-auto  team-image"
+                     src="https://media.licdn.com/dms/image/C4D03AQHydk9zj6SQjw/profile-displayphoto-shrink_800_800/0?e=1576713600&v=beta&t=yGHaPILXol-3HrPQlpbfjmBqsSeHLemUlidBfi1WA68"
+                     alt="Tomiwa Ademidun's Website Personal" />
+                <h3>
+                    <a href="https://ca.linkedin.com/in/mding5692"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Michael Ding
+                    </a>
+                </h3>
+                <p style={{fontSize: 'larger'}}>I'm a recent graduate in Computer Science and business from Ivey
+                    Business School, Western University
+                    <br /><br />
+                    I'm also the founder of <a href="https://firstdate.co" target="_blank"
+                                              rel="noopener noreferrer">firstdate.co</a>,
+                    a dating application for young people.
+                </p>
+            </div>
+        </React.Fragment>,
+        nColWidth: 6,
+      }
+    },
+    {
+      component: TextWithTitleBlock,
+      data: {
         title: "How Can I Help?",
           text: (<span>Great! There's a couple things you can do
           <ol>
-              <li>
-                  <strong>Donate:</strong>
-                  If you would like to support the website financially,
-                  You can visit our <Link to="/donate">donation page</Link>.
-                  Any amount is appreciated <span role="img" aria-label="smile emoji">🙂</span>.
-              </li>
+              {/*<li>*/}
+              {/*    <strong>Donate:</strong>*/}
+              {/*    If you would like to support the website financially,*/}
+              {/*    You can visit our <Link to="/donate">donation page</Link>.*/}
+              {/*    Any amount is appreciated <span role="img" aria-label="smile emoji">🙂</span>.*/}
+              {/*</li>*/}
               <li>
                   <strong>Like to Code?</strong> Our website is completely
                   <a href="https://github.com/atilatech/government-fyi/"
@@ -157,8 +206,13 @@ const Data = {
               </li>
               <li>
                   <strong>Something missing?</strong> the content for this site is also crowd-sourced.
-                  Fill this form (it asks for your name and email, that's it!) and you can help edit the information
-                  we have on existing issues and add new ones.
+                  You can add content to the site at this
+                  <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                  >
+                  wiki
+                  </a>
               </li>
           </ol>
 
@@ -170,7 +224,20 @@ const Data = {
       component: TextWithTitleBlock,
       data: {
         title: "Contact",
-        text: <span id="contact">Know something we don't?<br/><br/>Perfect. Email us the goods at fax@ourgovernment.fyi.</span>,
+        text: <span id="contact">
+            If you think this site is great or it's literally the worst thing ever.
+            Of anything inbetween and feedback on how to improve.
+            Please let us know!
+            <br/><br/>
+
+            Tweet us{' '}
+            <a href="https://twitter.com/atilatech"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+                      @atilatech
+                  </a>
+        </span>,
         nColWidth: 6,
       }
     },
