@@ -8,7 +8,7 @@ import {withRouter} from "react-router-dom";
 import Link from "react-router-dom/Link";
 import {ALL_PLATFORMS} from "../../data/PartyPlatformData";
 
-function DemographicDetail ({demographicIssues}){
+export function DemographicDetail ({demographicIssues}){
 
     return (
         <div>
@@ -21,6 +21,15 @@ function DemographicDetail ({demographicIssues}){
                             </span>
                         </Link>
                         {item.text}
+                        {item.source &&
+                        <React.Fragment>
+                        {' '}<a href={item.source}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                        (source)
+                        </a>
+                        </React.Fragment>
+                        }
                     </li>
                 ))}
             </ol>
@@ -28,7 +37,7 @@ function DemographicDetail ({demographicIssues}){
     );
 }
 
-function demographicsToIssueQuery(demographic) {
+export function demographicsToIssueQuery(demographic) {
 
     const demographicIssues = [];
 
@@ -38,10 +47,10 @@ function demographicsToIssueQuery(demographic) {
             .filter(item=> item.demographics)
             .forEach(item => {
                 const { party, topic } = platform;
-                const { text } = item;
+                const { text, source } = item;
                 if (item.demographics.includes(demographic.toLowerCase())) {
                     demographicIssues.push({
-                        party, topic, text
+                        party, topic, text, source
                     })
                 }
             });
