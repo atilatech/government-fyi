@@ -8,6 +8,7 @@ import MultisourceImage from "../../static/multisource-image";
 import {Spacer} from "../../../layout/util";
 import {withRouter} from 'react-router-dom'
 import CrossOutX from "../../static/cross-out-x";
+import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 const BannerLink = styled(Link)`
 	text-decoration: none;
@@ -121,7 +122,7 @@ const PropCardBlock = (props) => {
 	return (
 		<React.Fragment>
 			<Spacer height={2}/>
-			<Background id={`bg-${propNum}`} color1={Color(color+'1')} color2={Color(color+'2')}>
+			<Background id={PROP_NUM_TO_CATEGORY_DICT[propNum]} color1={Color(color+'1')} color2={Color(color+'2')}>
 				<Overflow>
 					{propNum === "9" && <CrossOutX />}
 

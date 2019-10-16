@@ -83,11 +83,12 @@ h5 {
 }
 
 a {
-	color: #FF454C;
+	color: #1890ff;
 	text-decoration: none;
 }
 a:hover, a:active {
   text-decoration: none;
+  color: #145294;
 }
 em {
 	font-style: italic;

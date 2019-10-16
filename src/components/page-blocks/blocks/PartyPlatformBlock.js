@@ -2,9 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {Col, Row} from 'react-flexbox-grid';
-import {Spacer} from 'layout/util'
-import FillRestWithLine from 'components/static/TextAndLine'
-import Color from 'layout/colors'
+import {Spacer} from '../../../layout/util'
+import FillRestWithLine from '../../static/TextAndLine'
 import {Link} from "react-router-dom";
 import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
 import {slugify} from "../../../services/Utils";
@@ -26,7 +25,6 @@ usage in data.js file:
 
 const Title = styled.h2`
 	display: inline-block;
-	color: ${Color('black')};
 	margin: 20px 0 3px 0;
 	text-transform: none;
 `;
@@ -42,7 +40,11 @@ export const PlatformBlock = (props) => {
                 {text}
                 {source &&
                     <React.Fragment>
-                        {' '}<a href={source}>(source)</a>
+                        {' '}<a href={source}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                        (source)
+                        </a>
                     </React.Fragment>
                 }
             </li>

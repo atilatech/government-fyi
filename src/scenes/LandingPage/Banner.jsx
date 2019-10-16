@@ -2,7 +2,7 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import {Col, Row} from "antd";
 import {scrollToElement, slugify, toTitleCase} from "../../services/Utils";
-import {ALL_DEMOGRAPHICS, ELECTION_TOPICS} from "../../data/Constants";
+import {ALL_DEMOGRAPHICS, ELECTION_TOPICS, PROP_NUM_TO_CATEGORY_DICT} from "../../data/Constants";
 import Link from "react-router-dom/Link";
 
 class Banner extends React.Component {
@@ -60,8 +60,10 @@ class Banner extends React.Component {
                     <h2> Topics </h2>
                     <ul className="font-size-xl">
                       {topicsData.map((topic, index) => (
-                          <li key={topic.title}><a href={`#bg-${index+1}`}
-                                                   onClick={()=>{scrollToElement(`#bg-${index+1}`)}}>
+                          <li key={topic.title}><a href={`#${PROP_NUM_TO_CATEGORY_DICT[index+1]}`}
+                                                   onClick={()=>{
+                                                     scrollToElement(`#${PROP_NUM_TO_CATEGORY_DICT[index+1]}`)
+                                                   }}>
                             {topic.title}
                           </a></li>
                       ))}
