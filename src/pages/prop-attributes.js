@@ -182,29 +182,29 @@ const images = [
 ]
 
 const thumbs = [
-  {
+  { // housing
     _1x: Prop1Img_thumb,
     _1x_webp: Prop1Img_thumb_w,
     _2x: Prop1Img_thumb_2x,
     _2x_webp: Prop1Img_thumb_2x_w,
   },
-  {
+  { // jobs and economy
     _1x: Prop2Img_thumb,
     _1x_webp: Prop2Img_thumb_w,
     _2x: Prop2Img_thumb_2x,
     _2x_webp: Prop2Img_thumb_2x_w,
   },
-  {
-    _1x: Prop3Img_thumb,
-    _1x_webp: Prop3Img_thumb_w,
-    _2x: Prop3Img_thumb_2x,
-    _2x_webp: Prop3Img_thumb_2x_w,
+  { //climate and energy
+    _1x: Prop6Img_thumb,
+    _1x_webp: Prop6Img_thumb_w,
+    _2x: Prop6Img_thumb_2x,
+    _2x_webp: Prop6Img_thumb_2x_w,
   },
-  {
-    _1x: Prop4Img_thumb,
-    _1x_webp: Prop4Img_thumb_w,
-    _2x: Prop4Img_thumb_2x,
-    _2x_webp: Prop4Img_thumb_2x_w,
+  { // education
+    _1x: Prop7Img_thumb,
+    _1x_webp: Prop7Img_thumb_w,
+    _2x: Prop7Img_thumb_2x,
+    _2x_webp: Prop7Img_thumb_2x_w,
   },
   { // healthcare
     _1x: Prop4Img_thumb,
