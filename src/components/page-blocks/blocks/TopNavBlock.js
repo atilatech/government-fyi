@@ -6,9 +6,6 @@ import {Link} from 'react-router-dom'
 import MultisourceImage from 'components/static/multisource-image'
 import Color from 'layout/colors'
 import {PropMetaData} from 'pages/prop-attributes'
-import PassedIcon from 'components/static/approved.svg'
-import FailedIcon from 'components/static/failed.svg'
-import UndeterminedIcon from 'components/static/undetermined.svg'
 import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 const Img = styled(MultisourceImage).attrs({
@@ -80,20 +77,10 @@ const HoverTitle = styled.h4`
 	}
 `
 
-const ResultIconContainer = styled.div`
-  align-self: flex-start;
-  position: absolute;
-  background-color: #fff;
-  line-height: 0;
-  border-radius: 7.5px;
-  height: 15px;
-  width: 15px;
-`
-
 
 const TopNavBlock = (props) => {
 	const navArr = [];
-	for (let i = 1; i < 13; i++){
+	for (let i = 1; i < 8; i++){
 		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i)
 		navArr.push(
 			{
@@ -131,7 +118,7 @@ class NavItem extends React.Component {
 		this.state={
 			isHovered: false,
 			pageLinks: ['/housing', '/jobs-and-economy', '/energy-and-climate' ,
-				'/education', '/healthcare', '/immigration'],
+				'/education', '/healthcare', '/immigration', '/taxes'],
 		}
 	}
 	handleMouseEnter = () => {
@@ -142,13 +129,9 @@ class NavItem extends React.Component {
 	}
 	render() {
 		const {color, title, desc, imageSet, result} = this.props.data;
-    	let resultIcon = null;
     if (result === "Y"){
-      resultIcon = PassedIcon;
-    } else if (result === "N") {
-      resultIcon = FailedIcon;
-    } else {
-      resultIcon = UndeterminedIcon;
+	} else if (result === "N") {
+	} else {
 	}
 	
 
@@ -170,10 +153,6 @@ class NavItem extends React.Component {
 							imageHandles={imageSet}
 							alt={desc}
       />
-            {(resultIcon && this.props.propNum+1 !== 9) &&
-              <ResultIconContainer>
-                <img src={resultIcon} alt={result}/>
-              </ResultIconContainer>}
 					</ImgContainer>
 				</Link>
 				{(this.state.isHovered || this.props.isActive) && <HoverTitle>{title}</HoverTitle>}

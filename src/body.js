@@ -27,7 +27,7 @@ const Body = (props) => {
         <Route path='/education' component={EducationPage}/>
         <Route path='/healthcare' component={HealthCarePage}/>
         <Route path='/immigration' component={ImmigrationPage}/>
-        <Route path='/prop-7' component={Prop7}/>
+        <Route path='/taxes' component={TaxesPage}/>
         <Route path='/prop-8' component={Prop8}/>
         <Route path='/prop-9' component={Prop9}/>
         <Route path='/prop-10' component={Prop10}/>
@@ -64,7 +64,7 @@ const EnergyAndClimatePage = mkLoadable(import("pages/3/index"));
 const EducationPage = mkLoadable(import("pages/4/index"));
 const HealthCarePage = mkLoadable(import("pages/5/index"));
 const ImmigrationPage = mkLoadable(import("pages/6/index"));
-const Prop7 = mkLoadable(import("pages/7/index"));
+const TaxesPage = mkLoadable(import("pages/7/index"));
 const Prop8 = mkLoadable(import("pages/8/index"));
 const Prop9 = mkLoadable(import("pages/9/index"));
 const Prop10 = mkLoadable(import("pages/10/index"));

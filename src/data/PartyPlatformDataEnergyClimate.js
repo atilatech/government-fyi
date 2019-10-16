@@ -6,6 +6,7 @@ import {HOUSING_PLATFORMS, JOBS_ECONOMY_PLATFORMS} from "./PartyPlatformData";
 import {EDUCATION_PLATFORMS} from "./PartyPlatformDataEducation";
 import {HEALTHCARE_PLATFORMS} from "./PartyPlatformDataHealthcare";
 import {IMMIGRATION_PLATFORMS} from "./PartyPlatformDataImmigration";
+import {TAXES_PLATFORMS} from "./PartyPlatformDataTaxes";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
@@ -194,4 +195,5 @@ export const ENERGY_CLIMATE_PLATFORMS = [
 
 ];
 export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS,
-    ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS, ...HEALTHCARE_PLATFORMS, ...IMMIGRATION_PLATFORMS];
+    ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS, ...HEALTHCARE_PLATFORMS,
+    ...IMMIGRATION_PLATFORMS, ...TAXES_PLATFORMS];
