@@ -1,3 +1,6 @@
+import Citation from "../../components/interactive/citation/citation";
+import React from "react";
+
 export const Acronyms = {
   UC: {
     expanded: "University of California",
@@ -78,5 +81,26 @@ export const Citations = {
     directQuote:"If you go to the hospital, your visit and care is currently covered under health insurance." +
         "If you need to get a prescription afterwards, health insurance doesn’t cover it for most people." +
         "Having pharmacare would mean that your prescription medicine is also covered under health insurance."
+  },
+  SafeThirdCountryAct:{
+    link:"https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/agreements/safe-third-country-agreement.html",
+    publication:"CBC",
+    headline:"What is the Safe Third Country Act?",
+    directQuote:<span>
+      Prevents refugees who made claims in the US from making claims in Canada.
+      For example, if you are a Syrian refugee and you applied for refugee status in Canada.
+      If you land in America first, America can decide if they should give you asylum.
+      If they say no, you can’t try and apply for asylum in Canada.
+      The original intention was that Canada and the US both have similar values for determining if someone should be given refugee status.
+      So if the US said no, Canada would likely say no as well.
+      Recently, an increasing number of people believe that
+      <a href="https://www.amnesty.ca/news/light-new-us-refugee-policy-canada-must-immediately-suspend-safe-third-country-agreement"
+         target="_blank"
+         rel="noopener noreferrer" >
+       this system should be changed
+      </a>
+      because the US has changed their refugee policies
+      and this system no longer aligns with the values of Canada’s refugee system.
+    </span>
   },
 }
