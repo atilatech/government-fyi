@@ -1,7 +1,7 @@
 import React from 'react'
-import {PropMetaData} from 'pages/prop-attributes'
-import PropCardBlock from 'components/page-blocks/blocks/PropCardBlock'
-import {OrderingContext} from 'ordering-context.js'
+import {PropMetaData} from '../../../pages/prop-attributes'
+import PropCardBlock from '../../page-blocks/blocks/PropCardBlock'
+import {OrderingContext} from '../../../ordering-context.js'
 import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 class PropSection extends React.Component {

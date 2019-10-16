@@ -3,13 +3,11 @@ import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-import Color from 'layout/colors';
-import MultisourceImage from 'components/static/multisource-image'
-// import shadowPattern from 'components/static/shadowPattern.png'
-import {Spacer} from 'layout/util';
+import Color from "../../../layout/colors";
+import MultisourceImage from "../../static/multisource-image";
+import {Spacer} from "../../../layout/util";
 import {withRouter} from 'react-router-dom'
-import CrossOutX from 'components/static/cross-out-x'
-import {mapResultToText, mapResultToColor} from 'pages/prop-attributes'
+import CrossOutX from "../../static/cross-out-x";
 
 const BannerLink = styled(Link)`
 	text-decoration: none;
@@ -118,28 +116,8 @@ const Description = styled.h2`
 	color: ${Color('black')};
 `
 
-const ResultContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #eee;
-	margin-top: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 8px;
-	border: 4px solid ${props=>(props.color===Color('green'))?Color('green'):'#fff'};
-	box-shadow: 0 0 10px rgba(0,0,0,0.05);
-	background-color: ${props=>(props.color===Color('green'))?'white':props.color};
-`
-
-const ResultText = styled.h2`
-	color: ${props=>(props.color===Color('green'))?Color('green'):'#fff'};
-	font-size: 40px;
-	line-height: 45px;
-`
-
 const PropCardBlock = (props) => {
-	const {propNum, color, header, description, linksTo, img, result} = props.data;
+	const {propNum, color, header, description, linksTo, img} = props.data;
 	return (
 		<BannerLink to={linksTo}>
 			<Spacer height={2}/>
@@ -154,11 +132,6 @@ const PropCardBlock = (props) => {
 					>
 						<Container>
 							<TextContainer>
-								{propNum !== "9" && result &&
-									<ResultContainer color={mapResultToColor[result]}>
-										<ResultText color={mapResultToColor[result]}>{mapResultToText[result]}</ResultText>
-									</ResultContainer>
-								}
 								<Header>{header}</Header>
 								<Description>{description}</Description>
 							</TextContainer>
