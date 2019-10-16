@@ -112,4 +112,25 @@ export const CitationsMaster = {
             among the 50 per cent of students who finished with debt – at $27,929
         </span>
     },
+    FreeTuitionCost:{
+        link:"https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/32724544_EN.pdf?timestamp=1571157057530",
+        publication:"Parliamentary Budget Office",
+        headline:"How much doe free tuition cost?",
+        directQuote: <span>
+            The parliamentary budget office conducted a study on how much it would cost the government to offer free tuition.
+            They estimated that tuition fee funding to provinces and territories would cost $10.6 billion.
+            The cost of forgiven debt and free tuition on Canada student Loans program would cost about $6.1 billion.
+            For a total cost of $16.4 billion.
+        </span>
+    },
+    GermanyFreeTuition:{
+        link:"http://www.cnn.com/2014/10/22/world/europe/want-education-cant-pay-germany/",
+        publication:"CNN",
+        headline:"Does Germany Have Free Tuition?",
+        directQuote: <span>
+            The country's federal state of Lower Saxony became the last region to scrap tuition fees
+            in mid-October 2014,
+            which means that studying in Germany is now completely free even for international students.
+        </span>
+    },
 }

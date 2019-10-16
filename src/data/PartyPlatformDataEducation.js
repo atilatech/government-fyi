@@ -89,7 +89,9 @@ export const EDUCATION_CONVERSATION_MESSAGES = [
         from: "them",
         body: <span>chill, that would be way too expensive.
 
-							You have the <Citation data={Citations['7']}>$10.6 billion</Citation> to pay for that?
+							You have the <Citation data={CitationsMaster.FreeTuitionCost}>
+                $16.4 billion
+        </Citation> to pay for that?
 						</span>
     },
     {
@@ -107,7 +109,10 @@ export const EDUCATION_CONVERSATION_MESSAGES = [
     {
         from: "them",
         body: <span>
-							You have a point though. I mean <Citation data={Citations['7']}>Germany has free tuition.</Citation>
+							You have a point though. I mean
+            <Citation data={CitationsMaster.GermanyFreeTuition}>
+                Germany has free tuition.
+            </Citation>
 							Even for international students.
 						</span>
     },
