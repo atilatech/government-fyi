@@ -16,7 +16,7 @@ export function slugify(party) {
 }
 
 export function unSlugify(str) {
-    return str.replace("-", " ");
+    return toTitleCase(str.replace(/-/g, " "));
 }
 
 export function toTitleCase(str) {

@@ -8,7 +8,9 @@ import BottomNavBlock from '../blocks/BottomNavBlock'
 import TopNavBlock from '../blocks/TopNavBlock'
 import PublishDateBlock from '../blocks/PublishDateBlock'
 import {PropMetaData, GetNextAndPrevNum} from 'pages/prop-attributes'
+import {} from "../../../data/Constants";
 import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
+import {unSlugify} from "../../../services/Utils";
 
 /*
 takes the block components and puts them together on a page
@@ -35,11 +37,16 @@ const PropPageBuilder = (props) => {
 	const nextLink = PROP_NUM_TO_CATEGORY_DICT[adjacentProps.next] ?
 		`/${PROP_NUM_TO_CATEGORY_DICT[adjacentProps.next]}`:
 		`/prop-${adjacentProps.next}`;
+
+	const customTitle = PROP_NUM_TO_CATEGORY_DICT[propNum]
+		? unSlugify(PROP_NUM_TO_CATEGORY_DICT[propNum]) : `Prop ${propNum}`;
+
+	// todo Change image attributes to use category names
 	return(
 		<div>
 			<Head
 				url={"https://www.ourgovernment.fyi/prop-" + propNum}
-				title={`Prop ${propNum} | California Propositions | ourgovernment.fyi`}
+				title={`${customTitle} | Canada Federal Elections 2019 | ourgovernment.fyi`}
 				headline={socialHeadline}
 				description={socialDescription}
 				image={`Prop-${propNum}.png`}

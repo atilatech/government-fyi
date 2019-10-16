@@ -46,12 +46,12 @@ export const Button = styled.a`
 const Data = {
 	pageId: "about-page",
 	meta: {
-		canonicalUrl:"https://www.ourgovernment.fyi/about/",
-		documentTitle:"About | ourgovernment.fyi",
-		socialHeadline:"We make you smart, at least for voting",
-		socialDescription:"By breaking down all the state propositions for this November",
-		socialImage:"general.png",
-	},
+        canonicalUrl:"https://ourgovernment.fyi/about",
+        documentTitle:"OurGovernment.FYI – A simple nonpartisan guide to Canada's 2019 Federal elections",
+        socialHeadline:"The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
+        socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, environment, housing",
+        socialImage:"general.png",
+    },
 	blocks: [
     {
     	component: PageTitleBlock,
