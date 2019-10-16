@@ -23,14 +23,17 @@ export const HOUSING = "Housing";
 export const JOBS_AND_ECONOMY = "Jobs and Economy";
 export const ENERGY_AND_CLIMATE = "Energy and Climate";
 export const EDUCATION = "Education";
+export const HEALTHCARE = "Healthcare";
+export const IMMIGRATION = "Immigration";
+export const TAXES = "Taxes";
 export const ELECTION_TOPICS = [
     HOUSING,
     JOBS_AND_ECONOMY,
     ENERGY_AND_CLIMATE,
     EDUCATION,
-    "Healthcare",
-    "Immigration",
-    "Taxes",
+    HEALTHCARE,
+    IMMIGRATION,
+    TAXES,
 ];
 
 export const PROP_NUM_TO_CATEGORY_DICT = {
@@ -38,5 +41,6 @@ export const PROP_NUM_TO_CATEGORY_DICT = {
     2: 'jobs-and-economy',
     3: 'energy-and-climate',
     4: 'education',
+    5: 'healthcare',
+    6: 'immigration',
 };
-console.log({PROP_NUM_TO_CATEGORY_SLUG: PROP_NUM_TO_CATEGORY_DICT});

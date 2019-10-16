@@ -46,12 +46,12 @@ export const Button = styled.a`
 const Data = {
 	pageId: "about-page",
 	meta: {
-		canonicalUrl:"https://www.ourgovernment.fyi/about/",
-		documentTitle:"About | ourgovernment.fyi",
-		socialHeadline:"We make you smart, at least for voting",
-		socialDescription:"By breaking down all the state propositions for this November",
-		socialImage:"general.png",
-	},
+        canonicalUrl:"https://ourgovernment.fyi/about",
+        documentTitle:"OurGovernment.FYI 🇨🇦 – A simple nonpartisan guide to Canada's 2019 Federal elections",
+        socialHeadline:"The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
+        socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, environment, housing",
+        socialImage:"general.png",
+    },
 	blocks: [
     {
     	component: PageTitleBlock,
@@ -66,8 +66,9 @@ const Data = {
         alt: "Venn diagram of a debate and politifact",
         title: "nonpartisan",
         flipped: true,
-        body: <span>We don't take sides. We don't try to to tell you which party is right or wrong.
-            We simply present the facts and let you decide what you think is best for you and our Country.</span>
+        body: <span>We don't try to tell you what to think and we don't take sides.
+            We simply present the facts
+            and let you decide what you think is best for you and our Country.</span>
       }
     },
     {
@@ -91,7 +92,8 @@ const Data = {
         flipped: true,
         alt: "Venn diagram of The more you know and you'll never believe",
         body: <span>Government affects us all but sometimes we feel like we don't understand what's happening.
-        We want you to feel good knowing that you understand how government works and how you can affect government.
+        We want you to feel good knowing that you understand how government works and
+            we want you to feel empowered to make a difference.
         </span>,
       }
     },
@@ -111,7 +113,6 @@ const Data = {
                rel="noopener noreferrer">
             Michael Ding
             </a>,
-            with the help of many friends, left and right.
             <br />
             The site was inspired by <a href="https://ballot.fyi"
                                         target="_blank"
@@ -127,7 +128,7 @@ const Data = {
             used to explain California's state propositions.
             <br />
             (They're site played a big part in making this site possible so you should check them out
-            and donate)
+            and show them some Love ❤️)
         </span>,
         nColWidth: 6,
       }
@@ -138,6 +139,12 @@ const Data = {
         title: "How Can I Help?",
           text: (<span>Great! There's a couple things you can do
           <ol>
+              <li>
+                  <strong>Donate:</strong>
+                  If you would like to support the website financially,
+                  You can visit our <Link to="/donate">donation page</Link>.
+                  Any amount is appreciated <span role="img" aria-label="smile emoji">🙂</span>.
+              </li>
               <li>
                   <strong>Like to Code?</strong> Our website is completely
                   <a href="https://github.com/atilatech/government-fyi/"
@@ -152,12 +159,6 @@ const Data = {
                   <strong>Something missing?</strong> the content for this site is also crowd-sourced.
                   Fill this form (it asks for your name and email, that's it!) and you can help edit the information
                   we have on existing issues and add new ones.
-              </li>
-              <li>
-                  <strong>Donate <span role="img" aria-label="money face emoji">🤑</span>!
-                  </strong> If you would like to support the website financially.
-                  You can visit our <Link to="/donate">donation page</Link>.
-                  Any amount is appreciated <span role="img" aria-label="smile emoji">🙂</span>.
               </li>
           </ol>
 

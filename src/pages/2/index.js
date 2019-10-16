@@ -15,7 +15,7 @@ const Data = {
 	pageId: "jobs-and-economy",
 	propNum: 2,
 	meta: {
-		dateCreated: new Date('October 8, 2018 10:00:00'),
+		dateCreated: new Date('October 14, 2019 7:00:00'),
 		dateModified: new Date('November 5, 2018 12:52:00')
 	},
 	blocks: [

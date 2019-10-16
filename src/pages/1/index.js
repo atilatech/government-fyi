@@ -1,18 +1,18 @@
 import React from 'react'
-import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
-import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
-import SectionTitleBlock from 'components/page-blocks/blocks/SectionTitleBlock'
-import SummaryListBlock from 'components/page-blocks/blocks/SummaryListBlock'
-import LinksBlock from 'components/page-blocks/blocks/LinksBlock'
-import IMessageBlock from 'components/page-blocks/blocks/IMessageBlock'
-import DonutGraphBlock from 'components/page-blocks/blocks/DonutGraphBlock'
+import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
+import TextWithTitleBlock from '../../components/page-blocks/blocks/TextWithTitleBlock'
+import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
+import SummaryListBlock from '../../components/page-blocks/blocks/SummaryListBlock'
+import LinksBlock from '../../components/page-blocks/blocks/LinksBlock'
+import IMessageBlock from '../../components/page-blocks/blocks/IMessageBlock'
+import DonutGraphBlock from '../../components/page-blocks/blocks/DonutGraphBlock'
 import BondData from './bond-data.json'
-import Color from 'layout/colors'
-import ResultBlock from 'components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from 'pages/prop-attributes'
+import Color from '../../layout/colors'
+import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
+import {PropMetaData} from '../prop-attributes'
 
-import Citation from 'components/interactive/citation/citation'
-import Acronym from 'components/interactive/acronym'
+import Citation from '../../components/interactive/citation/citation'
+import Acronym from '../../components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {HOUSING_PLATFORMS} from "../../data/PartyPlatformData";
@@ -28,8 +28,8 @@ const Data = {
 	pageId:"housing",
 	propNum: 1,
 	meta: {
-		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('November 7, 2018 14:10:00')
+		dateCreated: new Date('October 14, 2019 7:00:00'),
+		dateModified: new Date('October 14, 2019 7:00:00')
 	},
 	blocks: [
     {

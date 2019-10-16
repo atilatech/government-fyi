@@ -17,8 +17,8 @@ const Data = {
 	pageId:"education",
 	propNum: 4,
 	meta: {
-		dateCreated: new Date('October 14, 2019 10:00:00'),
-		dateModified: new Date('October 14, 2019 10:00:00')
+		dateCreated: new Date('October 14, 2019 7:00:00'),
+		dateModified: new Date('October 14, 2019 7:00:00')
 	},
 	blocks: [
 		{

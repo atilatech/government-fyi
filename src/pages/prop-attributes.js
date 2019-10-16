@@ -9,10 +9,10 @@ import Prop2Img from './home/images/prop-2.png'
 import Prop2Img_w from './home/images/prop-2.webp'
 import Prop2Img_2x from './home/images/prop-2@2x.png'
 import Prop2Img_2x_w from './home/images/prop-2@2x.webp'
-import Prop5Img from './home/images/prop-5.png'
-import Prop5Img_w from './home/images/prop-5.webp'
-import Prop5Img_2x from './home/images/prop-5@2x.png'
-import Prop5Img_2x_w from './home/images/prop-5@2x.webp'
+import Prop4Img from './home/images/prop-4.png'
+import Prop4Img_w from './home/images/prop-4.webp'
+import Prop4Img_2x from './home/images/prop-4@2x.png'
+import Prop4Img_2x_w from './home/images/prop-4@2x.webp'
 import Prop6Img from './home/images/prop-6.png'
 import Prop6Img_w from './home/images/prop-6.webp'
 import Prop6Img_2x from './home/images/prop-6@2x.png'
@@ -50,18 +50,10 @@ import Prop2Img_thumb from './thumbnails/prop-2-thumb.png'
 import Prop2Img_thumb_w from './thumbnails/prop-2-thumb.webp'
 import Prop2Img_thumb_2x from './thumbnails/prop-2@2x-thumb.png'
 import Prop2Img_thumb_2x_w from './thumbnails/prop-2@2x-thumb.webp'
-import Prop3Img_thumb from './thumbnails/prop-3-thumb.png'
-import Prop3Img_thumb_w from './thumbnails/prop-3-thumb.webp'
-import Prop3Img_thumb_2x from './thumbnails/prop-3@2x-thumb.png'
-import Prop3Img_thumb_2x_w from './thumbnails/prop-3@2x-thumb.webp'
 import Prop4Img_thumb from './thumbnails/prop-4-thumb.png'
 import Prop4Img_thumb_w from './thumbnails/prop-4-thumb.webp'
 import Prop4Img_thumb_2x from './thumbnails/prop-4@2x-thumb.png'
 import Prop4Img_thumb_2x_w from './thumbnails/prop-4@2x-thumb.webp'
-import Prop5Img_thumb from './thumbnails/prop-5-thumb.png'
-import Prop5Img_thumb_w from './thumbnails/prop-5-thumb.webp'
-import Prop5Img_thumb_2x from './thumbnails/prop-5@2x-thumb.png'
-import Prop5Img_thumb_2x_w from './thumbnails/prop-5@2x-thumb.webp'
 import Prop6Img_thumb from './thumbnails/prop-6-thumb.png'
 import Prop6Img_thumb_w from './thumbnails/prop-6-thumb.webp'
 import Prop6Img_thumb_2x from './thumbnails/prop-6@2x-thumb.png'
@@ -131,17 +123,17 @@ const images = [
     _2x: Prop7Img_2x,
     _2x_webp: Prop7Img_2x_w,
   },
-  {
-    _1x: Prop5Img,
-    _1x_webp: Prop5Img_w,
-    _2x: Prop5Img_2x,
-    _2x_webp: Prop5Img_2x_w,
+  { // healthcare
+    _1x: Prop4Img,
+    _1x_webp: Prop4Img_w,
+    _2x: Prop4Img_2x,
+    _2x_webp: Prop4Img_2x_w,
   },
-  {
-    _1x: Prop6Img,
-    _1x_webp: Prop6Img_w,
-    _2x: Prop6Img_2x,
-    _2x_webp: Prop6Img_2x_w,
+  { // immigration
+    _1x: Prop9Img,
+    _1x_webp: Prop9Img_w,
+    _2x: Prop9Img_2x,
+    _2x_webp: Prop9Img_2x_w,
   },
   {
     _1x: Prop7Img,
@@ -182,41 +174,41 @@ const images = [
 ]
 
 const thumbs = [
-  {
+  { // housing
     _1x: Prop1Img_thumb,
     _1x_webp: Prop1Img_thumb_w,
     _2x: Prop1Img_thumb_2x,
     _2x_webp: Prop1Img_thumb_2x_w,
   },
-  {
+  { // jobs and economy
     _1x: Prop2Img_thumb,
     _1x_webp: Prop2Img_thumb_w,
     _2x: Prop2Img_thumb_2x,
     _2x_webp: Prop2Img_thumb_2x_w,
   },
-  {
-    _1x: Prop3Img_thumb,
-    _1x_webp: Prop3Img_thumb_w,
-    _2x: Prop3Img_thumb_2x,
-    _2x_webp: Prop3Img_thumb_2x_w,
+  { //climate and energy
+    _1x: Prop6Img_thumb,
+    _1x_webp: Prop6Img_thumb_w,
+    _2x: Prop6Img_thumb_2x,
+    _2x_webp: Prop6Img_thumb_2x_w,
   },
-  {
+  { // education
+    _1x: Prop7Img_thumb,
+    _1x_webp: Prop7Img_thumb_w,
+    _2x: Prop7Img_thumb_2x,
+    _2x_webp: Prop7Img_thumb_2x_w,
+  },
+  { // healthcare
     _1x: Prop4Img_thumb,
     _1x_webp: Prop4Img_thumb_w,
     _2x: Prop4Img_thumb_2x,
     _2x_webp: Prop4Img_thumb_2x_w,
   },
-  {
-    _1x: Prop5Img_thumb,
-    _1x_webp: Prop5Img_thumb_w,
-    _2x: Prop5Img_thumb_2x,
-    _2x_webp: Prop5Img_thumb_2x_w,
-  },
-  {
-    _1x: Prop6Img_thumb,
-    _1x_webp: Prop6Img_thumb_w,
-    _2x: Prop6Img_thumb_2x,
-    _2x_webp: Prop6Img_thumb_2x_w,
+  { // immigration
+    _1x: Prop9Img_thumb,
+    _1x_webp: Prop9Img_thumb_w,
+    _2x: Prop9Img_thumb_2x,
+    _2x_webp: Prop9Img_thumb_2x_w,
   },
   {
     _1x: Prop7Img_thumb,
@@ -261,8 +253,8 @@ const titles = [
   "Jobs and Economy",
   "Energy and Climate",
   "Education",
-  "Prop 5 gives old folks a property tax discount when they move",
-  "Prop 6 repeals last year's gas tax",
+  "Healthcare",
+  "Immigration",
   "Prop 7 helps make Daylight Saving year-round",
   "Prop 8 limits dialysis clinics' revenue",
   "Prop 9 would have split CA into three states",
@@ -271,43 +263,16 @@ const titles = [
   "Prop 12 sets minimum space requirements for farm animals"
 ]
 
-const shortTitles = [
-  "Housing",
-  "Jobs and Economy",
-  "Energy and Climate",
-  "Education",
-  "Property tax discount",
-  "Gas tax repeal",
-  "Daylight Saving Time",
-  "Dialysis clinics",
-  "Three Californias",
-  "Rent control",
-  "EMT breaks required",
-  "Cage-free eggs",
-]
+const shortTitles = titles;
 
-const headlines = [
-  "Canadian Elections on Housing: The most expensive thing you will ever buy",
-  "Canadian Elections on the Economy: What's the best way to make us wealthier?",
-  "What price are we willing to pay to save the earth?",
-  "How should we help the future of our country?",
-  "Prop 5 lets older folk move with their property tax assesments",
-  "Prop 6 repeals last year's gas tax",
-  "Prop 7 makes Daylight Saving permanent",
-  "Prop 8 caps dialysis clinics' profits",
-  "Prop 9 would've split CA, literally",
-  "Prop 10 allows broad rent control again",
-  "Prop 11 requires EMTs be on-call during breaks",
-  "Prop 12 sets floor space requirements for farmed animals"
-]
 
 const descriptions = [
   "The most expensive thing you will ever buy",
   "What's the best way to make us wealthier?",
   "What price are we willing to pay to save the earth?",
   "How should we help the future of our country?",
-  "The idea is to free up housing. Will it work?",
-  "And future gas tax increases must be approved by voters.",
+  "Your health is the most important thing you have. How should we take care of it?",
+  "Who gets to come to Canada?",
   "If this passes, Congress still needs to approve it.",
   "Is this for patients or is it political?",
   "A wild proposition by a VC. Alas, it's been removed from the ballot.",
@@ -315,6 +280,9 @@ const descriptions = [
   "Should paramedics be required to respond to calls if they're on break?",
   "Guess what 1 square foot looks like relative to a chicken."
 ];
+
+
+const headlines = titles.map((title,index) => (`Canadian Elections on ${title} ${descriptions[index]}`));
 
 const results = [
   "Y",

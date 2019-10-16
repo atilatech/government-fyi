@@ -4,6 +4,8 @@ import Citation from "../components/interactive/citation/citation";
 import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
 import {HOUSING_PLATFORMS, JOBS_ECONOMY_PLATFORMS} from "./PartyPlatformData";
 import {EDUCATION_PLATFORMS} from "./PartyPlatformDataEducation";
+import {HEALTHCARE_PLATFORMS} from "./PartyPlatformDataHealthcare";
+import {IMMIGRATION_PLATFORMS} from "./PartyPlatformDataImmigration";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
@@ -192,4 +194,4 @@ export const ENERGY_CLIMATE_PLATFORMS = [
 
 ];
 export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS,
-    ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS];
+    ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS, ...HEALTHCARE_PLATFORMS, ...IMMIGRATION_PLATFORMS];
