@@ -42,7 +42,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
-	margin-top: 10px;
+	margin-top: 50px;
 	margin-left: 20px;
 	margin-right: 20px;
 `;
