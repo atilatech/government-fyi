@@ -36,6 +36,7 @@ const Footer = () => {
       if (item.externalLink) {
           return (
               <a href={item.to}
+                 key={i}
                  target="_blank"
                  rel="noreferrer noopener">
                   <NavLabel style={{color: '#1890ff'}}>{item.label}</NavLabel>

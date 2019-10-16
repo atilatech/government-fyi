@@ -14,7 +14,7 @@ function DemographicDetail ({demographicIssues}){
         <div>
             <ol>
                 {demographicIssues.map(item => (
-                    <li key={JSON.stringify(item.text)}>
+                    <li key={`${item.party}-${JSON.stringify(item.text)}`}>
                         <Link to={`/${slugify(item.topic)}`}>
                             <span className={slugify(item.party)}>
                                 {item.party} on {item.topic} <br />
