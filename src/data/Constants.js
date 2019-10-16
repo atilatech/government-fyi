@@ -164,5 +164,37 @@ export const CitationsMaster = {
         publication: "Green Peace",
         headline: "Why is oil bad for the environment?",
         directQuote: "Burning oil releases carbon dioxide into the atmosphere, contributing to the warming of our planet. In 2013, petroleum accounted for 41 percent of the U.S.’s carbon dioxide emissions from fossil fuels."
+    },
+    CarbonTaxCost: {
+        link: "https://theconversation.com/heres-what-the-carbon-tax-means-for-you-114671",
+        publication: "The Conversation",
+        headline: "How Much Will the Carbon Tax Cost You?",
+        directQuote: <span>
+            The average household cost from the federal carbon tax will range from $200 per year in New Brunswick to $400 in Saskatchewan, which relies more on coal to generate electricity.
+            In 2019, the carbon price starts at
+            {' '}
+            <a  target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.canada.ca/en/department-finance/news/2018/10/backgrounder-fuel-charge-rates-in-listed-provinces-and-territories.html">
+            4.4 cents per litre of gasoline.
+            </a>
+            The total cost will depend on how much fossil fuel energy you use.
+            If you drive a lot or heat a large house, you will pay more.
+        </span>
+    },
+    CarbonTaxNotEffective: {
+        link: "https://econweb.ucsd.edu/~carsonvs/papers/632.pdf",
+        publication: "Statistics Norway",
+        headline: "Are Carbon Taxes Effective? Not really",
+        directQuote: "\"We find that despite significant price increases for some fueltypes, the carbon tax effect on emissions was modest." +
+            " The taxes contributed to a reduction in onshore" +
+            "emissions of only 1.5 percent and total emissions of 2.3 percent.\""
+    },
+    CarbonTaxIsEffective: {
+        link: "https://www.clcouncil.org/economists-statement/",
+        publication: "Climate Leadership Council",
+        headline: "Are Carbon Taxes Effective? Yes",
+        directQuote: "A carbon tax offers the most cost-effective lever to reduce carbon emissions at a large scale and very quickly." +
+            "Sometimes market fail, and the price of a carbon tax will incentivize carbon emitters to use less carbon."
     }
 };

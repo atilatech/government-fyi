@@ -110,7 +110,7 @@ class CitationCard extends Component {
 				<SourcePublication>{publication}</SourcePublication>
 				<SourceHeadline>{headline}</SourceHeadline>
 				<SourceBody>
-					<Quotes>&ldquo;</Quotes>&nbsp;&nbsp;&nbsp;{directQuote}<Quotes>&rdquo;</Quotes>
+					{directQuote}
 				</SourceBody>
 				<LinkBar>
 					{!noLink &&
