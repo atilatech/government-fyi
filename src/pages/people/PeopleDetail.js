@@ -6,7 +6,7 @@ import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import {slugify, unSlugify} from "../../services/Utils";
 import {withRouter} from "react-router-dom";
 import Link from "react-router-dom/Link";
-import {ALL_PLATFORMS} from "../../data/PartyPlatformDataEnergyClimate";
+import {ALL_PLATFORMS} from "../../data/PartyPlatformData";
 
 function DemographicDetail ({demographicIssues}){
 

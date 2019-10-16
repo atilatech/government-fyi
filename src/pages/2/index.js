@@ -6,9 +6,7 @@ import { PropMetaData } from 'pages/prop-attributes'
 
 // import Acronym from 'components/interactive/acronym'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
-import {
-	JOBS_ECONOMY_PLATFORMS
-} from "../../data/PartyPlatformData";
+import {JOBS_ECONOMY_PLATFORMS} from "../../data/PartyPlatformDataJobsEconomy";
 
 const partyPlatforms = JOBS_ECONOMY_PLATFORMS.map(PLATFORM => (
 	{

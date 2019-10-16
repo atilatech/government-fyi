@@ -2,12 +2,6 @@ import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
-import {JOBS_ECONOMY_PLATFORMS} from "./PartyPlatformData";
-import {EDUCATION_PLATFORMS} from "./PartyPlatformDataEducation";
-import {HEALTHCARE_PLATFORMS} from "./PartyPlatformDataHealthcare";
-import {IMMIGRATION_PLATFORMS} from "./PartyPlatformDataImmigration";
-import {TAXES_PLATFORMS} from "./PartyPlatformDataTaxes";
-import {HOUSING_PLATFORMS} from "./PartyPlatformDataHousing";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
@@ -195,6 +189,3 @@ export const ENERGY_CLIMATE_PLATFORMS = [
     GREEN_ENERGY_CLIMATE, BLOC_QUEBECOIS_ENERGY_CLIMATE,PEOPLES_ENERGY_CLIMATE
 
 ];
-export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS,
-    ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS, ...HEALTHCARE_PLATFORMS,
-    ...IMMIGRATION_PLATFORMS, ...TAXES_PLATFORMS];
