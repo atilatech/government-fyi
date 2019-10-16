@@ -38,7 +38,7 @@ const Data = {
 		documentTitle:"Follow us – ourgovernment.fyi",
 		socialHeadline:"Receive updates from ourgovernment.fyi",
 		socialDescription:"11 CA propositions including daylight savings, cage-free eggs, and housing",
-		socialImage:"general.png",
+		socialImage:"general-2.png",
 	},
 	blocks: [
     {

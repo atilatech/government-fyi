@@ -174,10 +174,10 @@ class Head extends React.Component{
 
 Head.defaultProps = {
   url: "https://www.ourgovernment.fyi/",
-  title: "2018 California State Propositions – ourgovernment.fyi",
-  headline: "The quickest nonpartisan voter guide for the midterms",
-  description: "11 CA propositions including daylight savings, cage-free eggs, and housing",
-  image: "general.png",
+  title: "OurGovernment.FYI 🇨🇦 – A simple nonpartisan guide to Canada's 2019 Federal elections - ourgovernment.fyi",
+  headline: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
+  description: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
+  image: "general-2.png",
 }
 
 

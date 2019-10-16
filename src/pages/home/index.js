@@ -9,7 +9,7 @@ let Data = {
 		documentTitle:"Canadian Federal Elections 2019 – a simple nonpartisan guide",
 		socialHeadline:"The simples nonpartisan voter guide for the Canadian federal elections",
 		socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, environment, housing",
-		socialImage:"general.png",
+		socialImage:"general-2.png",
 	},
 	blocks: [
 		{

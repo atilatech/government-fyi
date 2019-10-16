@@ -49,7 +49,7 @@ const Data = {
         documentTitle:"OurGovernment.FYI 🇨🇦 – A simple nonpartisan guide to Canada's 2019 Federal elections",
         socialHeadline:"The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
         socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, environment, housing",
-        socialImage:"general.png",
+        socialImage:"general-2.png",
     },
 	blocks: [
     {
