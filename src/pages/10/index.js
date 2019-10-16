@@ -16,8 +16,8 @@ const Data = {
 	pageId:"prop-10",
 	propNum: 10,
 	meta: {
-		dateCreated: new Date('October 8, 2018 10:00:00'),
-		dateModified: new Date('November 7, 2018 14:10:00')
+		dateCreated: new Date('October 14, 2019 10:00:00'),
+		dateModified: new Date('October 14, 2019 10:00:00')
 	},
 	blocks: [
 		{
