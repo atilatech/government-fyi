@@ -15,7 +15,7 @@ const Data = {
 		documentTitle:"Terms of Serivce – ourgovernment.fyi",
 		socialHeadline:"Terms of Serivce – ourgovernment.fyi",
 		socialDescription:"If you're seeing this, somebody shared our terms and conditions page on social media. WTF.",
-		socialImage:"general.png",
+		socialImage:"general-2.png",
 	},
 	blocks: [
     {

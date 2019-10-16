@@ -131,7 +131,7 @@ class Header extends React.Component {
 }
 
 const nav = [
-  { to:"/", label:"Topics", longLabel: "Canadian Federal Elections 2019"},
+  { to:"/home", label:"Topics", longLabel: "Canadian Federal Elections 2019"},
   // { to:"/races/", label:"Races"},
   { to:"/about/", label:"About", longLabel:"About us"},
   { to:"/people/", label:"How does this affect me?", longLabel:"How does this affect me?"},

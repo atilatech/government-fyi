@@ -48,8 +48,8 @@ const Data = {
         canonicalUrl:"https://ourgovernment.fyi/about",
         documentTitle:"OurGovernment.FYI 🇨🇦 – A simple nonpartisan guide to Canada's 2019 Federal elections",
         socialHeadline:"The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
-        socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, environment, housing",
-        socialImage:"general.png",
+        socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, climate, education, and more",
+        socialImage:"general-2.png",
     },
 	blocks: [
     {

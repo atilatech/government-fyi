@@ -4,7 +4,6 @@ import React from "react";
 export const YOUNG_PEOPLE = 'young people';
 export const STUDENTS = 'students';
 export const CLIMATE_CONSCIOUS = 'climate conscious';
-// export const SENIORS = 'seniors';
 export const IMMIGRANTS = 'immigrants';
 export const HOMEOWNERS = 'homeowners';
 export const OIL_WORKERS = 'oil workers';
@@ -16,7 +15,7 @@ export const WOMEN = 'women';
 export const VISIBLE_MINORITY = 'visible minority';
 
 export const ALL_DEMOGRAPHICS = [
-    YOUNG_PEOPLE, STUDENTS, IMMIGRANTS, WOMEN,
+    STUDENTS, YOUNG_PEOPLE, IMMIGRANTS, WOMEN,
     CLIMATE_CONSCIOUS, VISIBLE_MINORITY, HOMEOWNERS, OIL_WORKERS,
     ENTREPRENEURS_AND_SMALL_BUSINESS, UNEMPLOYED,
     FOREIGNERS, LOW_INCOME];

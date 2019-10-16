@@ -9,6 +9,7 @@ import TextWithTitleBlock from "../../components/page-blocks/blocks/TextWithTitl
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import Link from "react-router-dom/Link";
 import {scrollToElement, slugify} from "../../services/Utils";
+import {DemographicDetail, demographicsToIssueQuery} from "./PeopleDetail";
 
 export const Button = styled.a`
 	font-family: ${props=>props.theme.fonts.avant};
@@ -47,25 +48,27 @@ export const Button = styled.a`
 
 const demographicsString = `How will the elections affect ${ALL_DEMOGRAPHICS.slice(0, 7).join(', ')} and more.`;
 
-const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => (
-    {
-        component: TextWithTitleBlock,
-        data: {
-            title: <div id={slugify(demographic)}>
-					    How will this affect {demographic}
-			        </div>,
-            text: (<ul>
-                <li>
-                    [tk add code to query all the platform data from PlatformData.js.demographics that affects:
-                    {demographic}
-                </li>
-                <Link to={`/people/${slugify(demographic)}`}>
-                    Read more about... {demographic}
-                </Link>
-            </ul>)
-        }
-    }
-));
+const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => {
+
+    const demographicIssues = demographicsToIssueQuery(demographic).slice(0,3);
+
+    return  (
+        {
+            component: TextWithTitleBlock,
+            data: {
+                title: <div id={slugify(demographic)}>
+                    How will this affect {demographic}
+                </div>,
+                text: (
+                    <React.Fragment>
+                        <DemographicDetail demographicIssues={demographicIssues}/>
+                        <Link to={`/people/${slugify(demographic)}`}>
+                            Read more issues affecting {demographic}
+                        </Link>
+                    </React.Fragment>)
+            }
+        })
+});
 
 function PeopleNavigatorScroll (){
 

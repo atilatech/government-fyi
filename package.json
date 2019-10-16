@@ -36,6 +36,7 @@
     "react-helmet": "^5.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-router-ga": "^1.2.2",
     "react-scripts": "^3.2.0",
     "styled-components": "^3.4.2",
     "topojson": "^3.0.2"
