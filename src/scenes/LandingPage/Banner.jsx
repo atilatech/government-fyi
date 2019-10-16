@@ -45,7 +45,7 @@ class Banner extends React.Component {
                 </QueueAnim>
               </Col>
             </Row>
-            <Row>
+            <Row className="my-5">
               <Col md={12} xs={24} className="px-4">
                 <QueueAnim
                     className="text-wrapper responsive-text"
@@ -53,7 +53,7 @@ class Banner extends React.Component {
                     type="bottom"
                 >
                   <div>
-                    <h2> What do the Different parties think about </h2>
+                    <h2> Topics </h2>
                     <ul className="font-size-xl">
                       {topicsData.map((topic, index) => (
                           <li key={topic.title}><a href={`#bg-${index+1}`}
@@ -73,7 +73,7 @@ class Banner extends React.Component {
                 >
                   <Link to="/people">
                     <h2 className="text-link">
-                      How Will These Issues Affect Me?
+                      How Will These Issues Affect You?
                     </h2>
                   </Link>
                   <div style={{ maxHeight: '300px', overflowY: 'scroll', width: '275px'}}>
