@@ -1,6 +1,3 @@
-import Citation from "../../components/interactive/citation/citation";
-import React from "react";
-
 export const Acronyms = {
   UC: {
     expanded: "University of California",
