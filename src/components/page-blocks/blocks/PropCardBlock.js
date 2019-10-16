@@ -119,28 +119,31 @@ const Description = styled.h2`
 const PropCardBlock = (props) => {
 	const {propNum, color, header, description, linksTo, img} = props.data;
 	return (
-		<BannerLink to={linksTo}>
+		<React.Fragment>
 			<Spacer height={2}/>
 			<Background id={`bg-${propNum}`} color1={Color(color+'1')} color2={Color(color+'2')}>
 				<Overflow>
 					{propNum === "9" && <CrossOutX />}
-					<Col
-						xsOffset={0} xs={12}
-						smOffset={1} sm={10}
-						mdOffset={2} md={8}
-						lgOffset={2} lg={8}
-					>
-						<Container>
-							<TextContainer>
-								<Header>{header}</Header>
-								<Description>{description}</Description>
-							</TextContainer>
-							<ImgContainer>
-								<Img imageHandles={img} alt={"Proposition" + propNum}	/>
-							</ImgContainer>
-							<PropNumber>{propNum}</PropNumber>
-						</Container>
-					</Col>
+
+					<BannerLink to={linksTo}>
+						<Col
+							xsOffset={0} xs={12}
+							smOffset={1} sm={10}
+							mdOffset={2} md={8}
+							lgOffset={2} lg={8}
+						>
+							<Container>
+								<TextContainer>
+									<Header>{header}</Header>
+									<Description>{description}</Description>
+								</TextContainer>
+								<ImgContainer>
+									<Img imageHandles={img} alt={"Proposition" + propNum}	/>
+								</ImgContainer>
+								<PropNumber>{propNum}</PropNumber>
+							</Container>
+						</Col>
+					</BannerLink>
 					<Col
 						xsOffset={0} xs={12}
 						smOffset={1} sm={10}
@@ -164,7 +167,7 @@ const PropCardBlock = (props) => {
 					</Col>
 				</Overflow>
 			</Background>
-		</BannerLink>
+		</React.Fragment>
 	);
 }
 
