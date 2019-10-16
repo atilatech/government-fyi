@@ -162,15 +162,9 @@ export const LIBERALS_EDUCATION = {
         },
         {
             text: "Increase interest free non-repayment period from 6-months to 24-months for federal student loans",
-            demographics: [
-                STUDENTS,
-            ]
         },
         {
             text: "Provide student borrowers with federal student loans with children that are aged 4 and under, an interest free non-repayment period until their youngest child turns 5",
-            demographics: [
-                STUDENTS,
-            ]
         },
         {
             text: "Total net cost of above programs: $170 million in 2020 to $1 billion in 2024",
