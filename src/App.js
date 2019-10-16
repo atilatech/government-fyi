@@ -7,6 +7,7 @@ import theme from './theme'
 import Body from './body'
 import {OrderingProvider} from './ordering-context'
 import './styles.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => (
   <ThemeProvider theme={theme}>

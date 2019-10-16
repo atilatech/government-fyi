@@ -47,5 +47,28 @@ export const Citations = {
     publication:"CA Policy Research Center",
     headline:"The Impact of Changing Public Policy on California's Hospital Infrastructure and Children's Hospital Outcomes - 1983-2000",
     directQuote:"In 1987, the legislature suspended the Certificate of Need and related planning activities and permitted hospitals to close or consolidate without state review.... California deregulated its healthcare system, finding it \"indispensable that providers of health care be free to engage in voluntary, cooperative efforts with consumers, government, or other providers of health care to fulfill the purposes of the health planning laws.\""
-  }
+  },
+  RESP:{
+    link:"https://www.moneysense.ca/save/investing/resp/what-is-resp-registered-education-savings-plan-explained/#whatis",
+    publication:"Money Sense Canada",
+    headline:"What is an RESP?",
+    directQuote:"An investment account which parents can use to save towards their Child’s education. The major benefit is that the government will match 20% of each dollar you put in up to $2,500. So if you put $1,000 into your child’s RESP account, the government puts in another $200."
+  },
+  RepaymentAssistancePlan:{
+    link:"https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans/repay/assistance/rap.html",
+    publication:"Government of Canada",
+    headline:"What is Repayment Assistance Plan?",
+    directQuote:"A loan which, depending on your income, you either don’t have to pay back the loan" +
+        " or your monthly payment is capped at 20% of your income." +
+        " After about 60 months or 10 years, you pay your monthly payments " +
+        "and the government covers the remaining principal and interest. " +
+        "15 years after leaving school, you no longer have to pay anything.\n" +
+        "This has been simplified to keep it short. For more details click read more.\n"
+  },
+  CanadaStudentGrant:{
+    link:"https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans.html",
+    publication:"Government of Canada",
+    headline:"What is Canada Student Grant?",
+    directQuote:"Money that the government gives you for school which you don't have to pay back."
+  },
 }

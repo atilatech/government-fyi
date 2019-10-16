@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid';
-import {FromThem, FromMe, Clear, Section, FromThemEmoji} from 'components/static/iMessageStyles'
+import {FromThem, FromMe, Clear, Section, FromThemEmoji} from '../../static/iMessageStyles'
 
 /*
 an iMessage conversation block
@@ -33,55 +33,62 @@ example usage for data.js
 },
 */
 
-const IMessageBlock = (props) => {
-	const {messages} = props.data;
-	let lastSender = null;
-	const conversation = messages.map( (message, i) => {
-		let conditionalClear = null;
-		let msg = null;
-		if (lastSender !== message.from) {
-			conditionalClear = <Clear/>
-		}
-		lastSender = message.from;
+class IMessageBlock extends React.Component {
 
-		switch(message.from) {
-			case "them":
-				msg = <FromThem>{message.body}</FromThem>
-				break;
-			case "me":
-				msg = <FromMe>{message.body}</FromMe>
-				break;
-			case "me-no-bg":
-				msg = <FromMe style={{background:'none'}}>{message.body}</FromMe>
-				break;
-			case "them-no-bg":
-				msg = <FromThemEmoji>{message.body}</FromThemEmoji>
-				break;
-			default:
-				break;
-		}
-		return (
-			<React.Fragment key={i}>
-				{conditionalClear}
-				{msg}
-				<br />
+	render ( ) {
+
+		let {messages} = this.props.data;
+
+		let lastSender = null;
+		const conversation = messages.map( (message, i) => {
+			let conditionalClear = null;
+			let msg = null;
+			if (lastSender !== message.from) {
+				conditionalClear = <Clear/>
+			}
+			lastSender = message.from;
+
+			switch(message.from) {
+				case "them":
+					msg = <FromThem>{message.body}</FromThem>
+					break;
+				case "me":
+					msg = <FromMe>{message.body}</FromMe>
+					break;
+				case "me-no-bg":
+					msg = <FromMe style={{background:'none'}}>{message.body}</FromMe>
+					break;
+				case "them-no-bg":
+					msg = <FromThemEmoji>{message.body}</FromThemEmoji>
+					break;
+				default:
+					break;
+			}
+			return (
+				<React.Fragment key={i}>
+					{conditionalClear}
+					{msg}
+					<br />
+				</React.Fragment>
+			)
+		})
+		return(
+			<React.Fragment>
+			<Row className="fade-border">
+				<Col
+					xsOffset={1} xs={10}
+					smOffset={2} sm={8}
+					mdOffset={3} md={6}
+					lgOffset={3} lg={6}
+				>
+					<Section>
+						{conversation}
+					</Section>
+				</Col>
+			</Row>
 			</React.Fragment>
-		)
-	})
-	return(
-		<Row>
-	    <Col
-	    	xsOffset={1} xs={10}
-	      smOffset={2} sm={8}
-	      mdOffset={3} md={6}
-	      lgOffset={3} lg={6}
-	    >
-				<Section>
-					{conversation}
-				</Section>
-			</Col>
-		</Row>
-	);
+		);
+	}
 }
 
 IMessageBlock.propTypes = {

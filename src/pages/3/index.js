@@ -43,7 +43,7 @@ const Data = {
 		{
 			component: SectionTitleBlock,
 			data:{
-				title: "A Casual Carbon Tax Conversation",
+				title: "A Casual Conversation about the Carbon Tax ",
 				nColWidth: 6,
 			}
 		},

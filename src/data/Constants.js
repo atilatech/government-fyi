@@ -18,3 +18,25 @@ export const ALL_DEMOGRAPHICS = [
     CLIMATE_CONSCIOUS, IMMIGRANTS, HOMEOWNERS, OIL_WORKERS,
     ENTREPRENEURS_AND_SMALL_BUSINESS, UNEMPLOYED,
     FOREIGNERS, LOW_INCOME, WOMEN, VISIBLE_MINORITY];
+
+export const HOUSING = "Housing";
+export const JOBS_AND_ECONOMY = "Jobs and Economy";
+export const ENERGY_AND_CLIMATE = "Energy and Climate";
+export const EDUCATION = "Education";
+export const ELECTION_TOPICS = [
+    HOUSING,
+    JOBS_AND_ECONOMY,
+    ENERGY_AND_CLIMATE,
+    EDUCATION,
+    "Healthcare",
+    "Immigration",
+    "Taxes",
+];
+
+export const PROP_NUM_TO_CATEGORY_DICT = {
+    1: 'housing',
+    2: 'jobs-and-economy',
+    3: 'energy-and-climate',
+    4: 'education',
+};
+console.log({PROP_NUM_TO_CATEGORY_SLUG: PROP_NUM_TO_CATEGORY_DICT});

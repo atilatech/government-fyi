@@ -9,6 +9,7 @@ import {PropMetaData} from 'pages/prop-attributes'
 import PassedIcon from 'components/static/approved.svg'
 import FailedIcon from 'components/static/failed.svg'
 import UndeterminedIcon from 'components/static/undetermined.svg'
+import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 const Img = styled(MultisourceImage).attrs({
   style: props => ({
@@ -129,7 +130,7 @@ class NavItem extends React.Component {
 		super(props);
 		this.state={
 			isHovered: false,
-			pageLinks: ['/housing', '/jobs-and-economy', '/energy-and-climate'],
+			pageLinks: ['/housing', '/jobs-and-economy', '/energy-and-climate' ,'/education'],
 		}
 	}
 	handleMouseEnter = () => {
@@ -150,10 +151,12 @@ class NavItem extends React.Component {
 	}
 	
 
-
+    const navLink = PROP_NUM_TO_CATEGORY_DICT[this.props.propNum+1] ?
+			`/${PROP_NUM_TO_CATEGORY_DICT[this.props.propNum+1]}`:
+			`/prop-${this.props.propNum+1}`;
 		return(
 			<NavItemContainer>
-				<Link to={this.props.propNum <= 1? this.state.pageLinks[this.props.propNum]: `/prop-${this.props.propNum+1}`}>
+				<Link to={navLink}>
 					<ImgContainer
 						onMouseEnter={this.handleMouseEnter}
 						onMouseLeave={this.handleMouseLeave}
