@@ -1,7 +1,7 @@
 import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
-import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import {CitationsMaster, CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
@@ -25,7 +25,7 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
         {
             text: <span>
                 Cancel
-                <Citation data={Citations['1']}>
+                <Citation data={CitationsMaster.BillC69}>
 						Bill C-69
                 </Citation>
             </span>,

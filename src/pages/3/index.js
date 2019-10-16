@@ -8,7 +8,6 @@ import {PropMetaData} from '../../pages/prop-attributes'
 
 
 import Citation from '../../components/interactive/citation/citation'
-import {Citations} from './expandables'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {ENERGY_CLIMATE_PLATFORMS} from "../../data/PartyPlatformDataEnergyClimate";
 import {CitationsMaster} from "../../data/Constants";
@@ -99,7 +98,7 @@ const Data = {
 					},
 					{
 						from:"me",
-						body:<span>Apparently
+						body:<span>Apparently{' '}
 							<Citation data={CitationsMaster.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
 						</span>
 					},
@@ -112,7 +111,7 @@ const Data = {
 						body:<span>
 							I mean
 							<Citation data={CitationsMaster.CarbonTaxIsEffective}>
-								27 Nobel Laureate economists released a statemnt saying that a Carbon tax
+								27 Nobel Laureate economists released a statement saying that a Carbon tax
 								is the most effective way of lowering emissions
 							</Citation>.
 						</span>
@@ -123,8 +122,11 @@ const Data = {
 					},
 					{
 						from: "them",
-						body:"I see what you mean but I think, it's an indication that very smart people have studied this." +
-							"And realized that this is one of the best options we have to save the earth."
+						body:"I see what you mean but I think, it's an indication that very smart people have studied this."
+					},
+					{
+						from: "them",
+						body:"And realized that this is one of the best options we have to save the Earth."
 					},
 					{
 						from:"them-no-bg",

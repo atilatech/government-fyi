@@ -63,12 +63,7 @@ const LinkBar = styled.span`
 	width: 100%;
 `;
 
-const Quotes = styled.span`
-	position: absolute;
-	font-family: Georgia, serif;
-	color: black;
-	font-size 14pt;
-`;
+
 
 const Button = styled.div`
 	display: flex;

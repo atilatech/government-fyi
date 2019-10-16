@@ -196,5 +196,16 @@ export const CitationsMaster = {
         headline: "Are Carbon Taxes Effective? Yes",
         directQuote: "A carbon tax offers the most cost-effective lever to reduce carbon emissions at a large scale and very quickly." +
             "Sometimes market fail, and the price of a carbon tax will incentivize carbon emitters to use less carbon."
+    },
+    BillC69: {
+        link: "https://openparliament.ca/bills/42-1/C-69/",
+        publication: "Open Parliament",
+        headline: "What is Bill C-69?",
+        directQuote: <span>
+            Bill C-69 makes it easier to cancel pipeline projects if it will badly harm the environment.
+            One perspective says that it will make us have a cleaner environment and help reduce the effects of climate change.
+            Another perspective says that it will cost a lot of jobs, make Canadian companies weaker globally
+            and slow down the economy in certain parts of Canada.
+        </span>
     }
 };
