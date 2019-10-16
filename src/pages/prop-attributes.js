@@ -129,11 +129,11 @@ const images = [
     _2x: Prop4Img_2x,
     _2x_webp: Prop4Img_2x_w,
   },
-  {
-    _1x: Prop6Img,
-    _1x_webp: Prop6Img_w,
-    _2x: Prop6Img_2x,
-    _2x_webp: Prop6Img_2x_w,
+  { // immigration
+    _1x: Prop9Img,
+    _1x_webp: Prop9Img_w,
+    _2x: Prop9Img_2x,
+    _2x_webp: Prop9Img_2x_w,
   },
   {
     _1x: Prop7Img,
@@ -204,11 +204,11 @@ const thumbs = [
     _2x: Prop4Img_thumb_2x,
     _2x_webp: Prop4Img_thumb_2x_w,
   },
-  {
-    _1x: Prop6Img_thumb,
-    _1x_webp: Prop6Img_thumb_w,
-    _2x: Prop6Img_thumb_2x,
-    _2x_webp: Prop6Img_thumb_2x_w,
+  { // immigration
+    _1x: Prop9Img_thumb,
+    _1x_webp: Prop9Img_thumb_w,
+    _2x: Prop9Img_thumb_2x,
+    _2x_webp: Prop9Img_thumb_2x_w,
   },
   {
     _1x: Prop7Img_thumb,
@@ -254,7 +254,7 @@ const titles = [
   "Energy and Climate",
   "Education",
   "Healthcare",
-  "Prop 6 repeals last year's gas tax",
+  "Immigration",
   "Prop 7 helps make Daylight Saving year-round",
   "Prop 8 limits dialysis clinics' revenue",
   "Prop 9 would have split CA into three states",
@@ -263,35 +263,8 @@ const titles = [
   "Prop 12 sets minimum space requirements for farm animals"
 ]
 
-const shortTitles = [
-  "Housing",
-  "Jobs and Economy",
-  "Energy and Climate",
-  "Education",
-  "Healthcare",
-  "Gas tax repeal",
-  "Daylight Saving Time",
-  "Dialysis clinics",
-  "Three Californias",
-  "Rent control",
-  "EMT breaks required",
-  "Cage-free eggs",
-]
+const shortTitles = titles;
 
-const headlines = [
-  "Canadian Elections on Housing: The most expensive thing you will ever buy",
-  "Canadian Elections on the Economy: What's the best way to make us wealthier?",
-  "What price are we willing to pay to save the earth?",
-  "How should we help the future of our country?",
-  "Your health is the most important thing you have. How should we take care of it?",
-  "Prop 6 repeals last year's gas tax",
-  "Prop 7 makes Daylight Saving permanent",
-  "Prop 8 caps dialysis clinics' profits",
-  "Prop 9 would've split CA, literally",
-  "Prop 10 allows broad rent control again",
-  "Prop 11 requires EMTs be on-call during breaks",
-  "Prop 12 sets floor space requirements for farmed animals"
-]
 
 const descriptions = [
   "The most expensive thing you will ever buy",
@@ -299,7 +272,7 @@ const descriptions = [
   "What price are we willing to pay to save the earth?",
   "How should we help the future of our country?",
   "Your health is the most important thing you have. How should we take care of it?",
-  "And future gas tax increases must be approved by voters.",
+  "Who gets to come to Canada?",
   "If this passes, Congress still needs to approve it.",
   "Is this for patients or is it political?",
   "A wild proposition by a VC. Alas, it's been removed from the ballot.",
@@ -307,6 +280,9 @@ const descriptions = [
   "Should paramedics be required to respond to calls if they're on break?",
   "Guess what 1 square foot looks like relative to a chicken."
 ];
+
+
+const headlines = titles.map((title,index) => (`Canadian Elections on ${title} ${descriptions[index]}`));
 
 const results = [
   "Y",
