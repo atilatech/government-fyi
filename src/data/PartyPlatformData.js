@@ -118,7 +118,7 @@ export const LIBERAL_JOBS_AND_ECONOMY = {
         },
         {
             text: "Introduce Career Insurance Benefit that starts after Employment Insurance ends. You get 20 percent of insured earnings the first year you’re laid off and 10 percent in the second year",
-        },,
+        },
         {
             text: "Reduce cost of incorporating a business federally from $200 to $50",
         },

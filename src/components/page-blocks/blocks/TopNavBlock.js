@@ -6,9 +6,6 @@ import {Link} from 'react-router-dom'
 import MultisourceImage from 'components/static/multisource-image'
 import Color from 'layout/colors'
 import {PropMetaData} from 'pages/prop-attributes'
-import PassedIcon from 'components/static/approved.svg'
-import FailedIcon from 'components/static/failed.svg'
-import UndeterminedIcon from 'components/static/undetermined.svg'
 import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 const Img = styled(MultisourceImage).attrs({
@@ -80,16 +77,6 @@ const HoverTitle = styled.h4`
 	}
 `
 
-const ResultIconContainer = styled.div`
-  align-self: flex-start;
-  position: absolute;
-  background-color: #fff;
-  line-height: 0;
-  border-radius: 7.5px;
-  height: 15px;
-  width: 15px;
-`
-
 
 const TopNavBlock = (props) => {
 	const navArr = [];
@@ -142,7 +129,6 @@ class NavItem extends React.Component {
 	}
 	render() {
 		const {color, title, desc, imageSet, result} = this.props.data;
-    	let resultIcon = null;
     if (result === "Y"){
 	} else if (result === "N") {
 	} else {
