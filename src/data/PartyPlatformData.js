@@ -4,11 +4,10 @@ import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {
     FOREIGNERS,
-    HOMEOWNERS,
+    HOMEOWNERS, IMMIGRANTS,
     LOW_INCOME,
     OIL_WORKERS,
-    RECENT_GRADS,
-    STUDENTS,
+    STUDENTS, UNEMPLOYED,
     VISIBLE_MINORITY,
     WOMEN,
     YOUNG_PEOPLE
@@ -77,7 +76,7 @@ export const CONSERVATIVE_JOBS_AND_ECONOMY = {
     partyPlatforms: [
         {
             text: "Improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.",
-            demographics: ['immigrants', 'unemployed'],
+            demographics: [IMMIGRANTS, UNEMPLOYED],
         },
         {
             text: "End foreign oil imports and get pipelines built, including the Trans Mountain, which they claim will create “tens of thousands” of jobs.",
@@ -85,7 +84,7 @@ export const CONSERVATIVE_JOBS_AND_ECONOMY = {
         },
         {
             text: "Tax credit for young graduates who move to Quebec, matching an existing provincial credit",
-            demographics: [RECENT_GRADS, STUDENTS, YOUNG_PEOPLE],
+            demographics: [STUDENTS, YOUNG_PEOPLE],
         }
     ],
 };
