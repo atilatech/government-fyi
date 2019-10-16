@@ -93,13 +93,7 @@ const HideOnPrint = styled.div`
 	}
 `;
 
-const Disclaimer = styled.h4`
-	font-size: 12px;
-	line-height: 17px;
-	padding: 10px 20px;
-	background-color: whitesmoke;
-	border-radius: 2px;
-`
+
 
 
 const LinksChunk = (props) => {
@@ -163,16 +157,6 @@ const LinksBlock = (props) => {
 		    	{oddSections}
 				</Col>
 			</Row>
-			{/*<Row>*/}
-			{/*	<Col*/}
-			{/*		xsOffset={1} xs={10}*/}
-			{/*		smOffset={1} sm={10}*/}
-			{/*		mdOffset={3} md={6}*/}
-			{/*		lgOffset={3} lg={6}*/}
-			{/*	>*/}
-			{/*		<Disclaimer><b>Note</b>: We intentionally omit links to arguments & rebuttals found in CA's official voter guide. We believe they exaggerate claims, mislead with emotions, and use ALL CAPS irresponsibly.</Disclaimer>*/}
-			{/*	</Col>*/}
-			{/*</Row>*/}
 		</HideOnPrint>
 	);
 }

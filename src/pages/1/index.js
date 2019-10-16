@@ -5,7 +5,6 @@ import {PropMetaData} from '../prop-attributes'
 
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {HOUSING_PLATFORMS} from "../../data/PartyPlatformDataHousing";
-import {ReferencesBlock} from "../../data/Constants";
 
 const partyPlatforms = HOUSING_PLATFORMS.map(PLATFORM => (
 	{
