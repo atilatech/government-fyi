@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
-        <Analytics  id="UA-150210691-1" debug={true}>
+        <Analytics  id="UA-150210691-1">
       <ScrollToTop>
         <Grid fluid style={{padding: 0, margin: 0}}>
           <OrderingProvider>
