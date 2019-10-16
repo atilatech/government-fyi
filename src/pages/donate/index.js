@@ -1,9 +1,7 @@
 import React from 'react'
 import PageBuilder from '../../components/page-blocks/aggregators/PageBuilder'
 import PageTitleBlock from "../../components/page-blocks/blocks/PageTitleBlock";
-import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import {Button} from "antd";
-import SectionTitleBlock from "../../components/page-blocks/blocks/SectionTitleBlock";
 import TextWithTitleBlock from "../../components/page-blocks/blocks/TextWithTitleBlock";
 
 import { Col } from 'react-flexbox-grid';
@@ -11,9 +9,9 @@ const Data = {
     pageId:"print-guide-page",
     meta: {
         canonicalUrl:"https://www.ourgovernment.fyi/print/",
-        documentTitle:"Printed guide – ourgovernment.fyi",
-        socialHeadline:"Prefer a physical voter guide?",
-        socialDescription:"Here's a beautiful guide you can print out.",
+        documentTitle:"Donate – Thank you for Supporting a good cause  ❤️ - ourgovernment.fyi",
+        socialHeadline:"Donate – Thank you for Supporting a good cause  ❤️ - ourgovernment.fyi",
+        socialDescription:"Donate – Thank you for Supporting a good cause  ❤️ - ourgovernment.fyi",
         socialImage:"printguide.png",
     },
     blocks: [
@@ -21,10 +19,7 @@ const Data = {
             component: PageTitleBlock,
             data: {
                 title: "Donate to OurGovernment.FYI",
-                subtitle:
-                    <span>
-            Thank you for Supporting a good cause ❤️
-          </span>,
+                subtitle: "Thank you for Supporting a good cause ❤️",
             }
         },
         {

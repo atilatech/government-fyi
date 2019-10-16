@@ -33,6 +33,15 @@ const NavLabel = styled.span`
 
 const Footer = () => {
   const navItems = nav.map((item,i) => {
+      if (item.externalLink) {
+          return (
+              <a href={item.to}
+                 target="_blank"
+                 rel="noreferrer noopener">
+                  <NavLabel style={{color: '#1890ff'}}>{item.label}</NavLabel>
+              </a>
+          )
+      }
     return(
       <NavLink key={i} to={item.to}>
         <NavLabel>{item.label}</NavLabel>
@@ -57,9 +66,16 @@ const Footer = () => {
 
 const nav = [
   { to:"/about/", label:"about"},
-  { to:"/about#contact", label:"contact"},
+  { to:"/topics", label:"topics"},
+  { to:"/people", label:"people"},
   // { to:"/follow/", label:"subscribe"},
   // { to:"/print/", label:"printed guide"},
+
+    {
+        to:"https://paypal.me/TomiwaAdemidun",
+        label:"Donate",
+        externalLink: true
+    },
 ];
 
 export default Footer;
