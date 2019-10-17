@@ -1,13 +1,10 @@
 import React from 'react'
 import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
-import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
-import {PropMetaData} from '../prop-attributes'
 
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {HOUSING_CONVERSATION, HOUSING_PLATFORMS} from "../../data/PartyPlatformDataHousing";
 import SectionTitleBlock from "../../components/page-blocks/blocks/SectionTitleBlock";
 import IMessageBlock from "../../components/page-blocks/blocks/IMessageBlock";
-import {ENERGY_CLIMATE_CARBON_TAX_CONVERSATION} from "../../data/PartyPlatformDataEnergyClimate";
 
 const partyPlatforms = HOUSING_PLATFORMS.map(PLATFORM => (
 	{

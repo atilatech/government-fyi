@@ -2,18 +2,15 @@ import React from 'react'
 import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
 import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleBlock'
 import IMessageBlock from '../../components/page-blocks/blocks/IMessageBlock'
-import {EmojiLg} from '../../components/static/iMessageStyles'
 import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 import {PropMetaData} from '../../pages/prop-attributes'
 
 
-import Citation from '../../components/interactive/citation/citation'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {
 	ENERGY_CLIMATE_CARBON_TAX_CONVERSATION,
 	ENERGY_CLIMATE_PLATFORMS
 } from "../../data/PartyPlatformDataEnergyClimate";
-import {CitationsMaster} from "../../data/Constants";
 
 const energyClimatePlatforms = ENERGY_CLIMATE_PLATFORMS.map(PLATFORM => (
 	{
