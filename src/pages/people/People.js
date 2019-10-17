@@ -50,7 +50,7 @@ const demographicsString = `How will the elections affect ${ALL_DEMOGRAPHICS.sli
 
 const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => {
 
-    const demographicIssues = demographicsToIssueQuery(demographic).slice(0,3);
+    const demographicIssues = demographicsToIssueQuery(demographic, true).slice(0,3);
 
     return  (
         {

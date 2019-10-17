@@ -1,5 +1,17 @@
 # Changelog
 
+## October 16, 2019
+### Shuffle An Array Rabbit Hole (random)
+
+- So I was trying to shuffle the array in `demographicsToIssueQuery()` and [googled "randomized array order javascript"](https://www.google.com/search?q=randomize+array+order+javascript)
+
+- top 2 results were pretty interesting, and I learnt a bit about 
+why the best random shuffle is not just random but "equally random"
+
+- https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+- https://javascript.info/task/shuffle
+- Who knew that Mathematic functions had socialist leanings 😉
+
 ## October 15, 2019
 ### Travis CI Wierdness
 
