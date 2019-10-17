@@ -127,7 +127,6 @@ class Head extends React.Component{
   }
   render() {
     const {title, description, headline, image, pageType} = this.props;
-
     const dynamicUrl = window.location.href;
 
     return(
@@ -136,19 +135,19 @@ class Head extends React.Component{
         <link rel="canonical"            href={dynamicUrl} />
         <meta name="viewport"            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta name="description"         content={description} />
-        <meta name="keywords"            content="CA, elections, propsitions" />
+        <meta name="keywords"            content="Canada, federal, elections" />
 
         <meta prefix="og: http://ogp.me/ns#" property="og:url"          content={dynamicUrl} />
         <meta prefix="og: http://ogp.me/ns#" property="og:type"         content="website" />
         <meta prefix="og: http://ogp.me/ns#" property="og:title"        content={headline} />
         <meta prefix="og: http://ogp.me/ns#" property="og:description"  content={description} />
-        <meta prefix="og: http://ogp.me/ns#" property="og:image"        content={`${dynamicUrl}socialimages/${image}`} />
+        <meta prefix="og: http://ogp.me/ns#" property="og:image"        content={`${window.location.origin}/socialimages/${image}`} />
         <meta prefix="og: http://ogp.me/ns#" property="og:image:secure_url"        content={"https://www.ourgovernment.fyi/socialimages/" + image} />
         <meta prefix="og: http://ogp.me/ns#" property="og:locale"       content="en_US" />
         <meta prefix="og: http://ogp.me/ns#" property="fb:app_id"       content="1134187086655814" />
 
         <meta name="twitter:card"        content="summary_large_image" />
-        <meta name="twitter:site"        content="@ballotfyi" />
+        <meta name="twitter:site"        content="@atilatech" />
         <meta name="twitter:title"       content={headline} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image"       content={"https://www.ourgovernment.fyi/socialimages/" + image} />
