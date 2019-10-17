@@ -14,7 +14,9 @@ export function DemographicDetail ({demographicIssues}){
         <div>
             <ol>
                 {demographicIssues.map(item => (
-                    <li key={`${item.party}-${JSON.stringify(item.text)}`}>
+                    <li key={`${item.party}-${JSON.stringify(item.text)}`}
+                        style={{fontSize: '20px', lineHeight: '36px'}}
+                        className="mb-5">
                         <Link to={`/${slugify(item.topic)}`}>
                             <span className={slugify(item.party)}>
                                 {item.party} on {item.topic} <br />
