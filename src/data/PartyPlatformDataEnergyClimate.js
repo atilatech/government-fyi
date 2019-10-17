@@ -125,7 +125,7 @@ export const GREEN_ENERGY_CLIMATE = {
             ],
         },
         {
-            text: "Replace all fuel cars with electric vehicles by 204",
+            text: "Replace all fuel cars with electric vehicles by 2040",
             demographics: [
                 OIL_WORKERS,
                 CLIMATE_CONSCIOUS,
