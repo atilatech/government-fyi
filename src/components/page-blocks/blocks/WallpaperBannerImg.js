@@ -51,6 +51,15 @@ const Title = styled.h1`
 	}
 `;
 
+const Subtitle = styled(Title)`
+	color: ${Color('black')};
+	margin-top: 10px;
+	filter: none;
+	font-size: 23px;
+	line-height: 27px;
+`;
+
+
 
 const Wallpaper = styled.div`
 	background-image: url('${props=>props.img}');
@@ -61,7 +70,9 @@ const Wallpaper = styled.div`
 `;
 
 const WallpaperBannerImg = (props) => {
-	const {color, image, repeatType, title} = props.data;
+	const {color, image, repeatType, title, subtitle} = props.data;
+
+	console.log({subtitle});
 	const repeatX = repeatType || "space";
 	return(
 		<React.Fragment>
@@ -74,6 +85,7 @@ const WallpaperBannerImg = (props) => {
 					<Wallpaper img={image} repeat={repeatX}/>
 				</AbsoluteUnderBleed>
 				<Title>{title}</Title>
+				<Subtitle>{subtitle}</Subtitle>
 			</Relative>
 			<Spacer height={35}/>
 		</React.Fragment>
@@ -89,6 +101,7 @@ WallpaperBannerImg.propTypes = {
 		color: PropTypes.string.isRequired,
 		image: PropTypes.string.isRequired,
 		title: PropTypes.string,
+		subtitle: PropTypes.string,
 		repeatType: PropTypes.oneOf(["space", "repeat", "round"]),
 	})
 };

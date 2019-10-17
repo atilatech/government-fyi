@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import Head from 'layout/head'
-import {Spacer} from 'layout/util'
+import Head from '../../../layout/head'
+import {Spacer} from '../../../layout/util'
 
 import WallpaperBannerImg from '../blocks/WallpaperBannerImg'
 import BottomNavBlock from '../blocks/BottomNavBlock'
 import TopNavBlock from '../blocks/TopNavBlock'
 import PublishDateBlock from '../blocks/PublishDateBlock'
-import {PropMetaData, GetNextAndPrevNum} from 'pages/prop-attributes'
+import {PropMetaData, GetNextAndPrevNum} from '../../../pages/prop-attributes'
 import {PROP_NUM_TO_CATEGORY_DICT, ReferencesBlock} from "../../../data/Constants";
 import {unSlugify} from "../../../services/Utils";
 
@@ -62,6 +62,7 @@ const PropPageBuilder = (props) => {
 					color: color,
 					image: imageSet._2x,
 					title: title,
+					subtitle: socialDescription,
 				}}
 			/>
 			{bodySections}

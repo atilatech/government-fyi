@@ -48,10 +48,10 @@ const SourceBody = styled.span`
 	display: block;
 	text-transform: none;
 	margin-top: 12px;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 16px;
 	font-weight: normal
 	text-align: left;
-	line-height: 16px;
 `;
 
 const LinkBar = styled.span`
@@ -100,7 +100,7 @@ class CitationCard extends Component {
 		const dataSource = this.props.data ? this.props.data : this.props; //-- supporting legacy
 		const {publication, headline, directQuote, link, noLink} = dataSource;
 		return(
-			<Card>
+			<Card className="CitationCard">
 				<CardLabel>Source</CardLabel>
 				<SourcePublication>{publication}</SourcePublication>
 				<SourceHeadline>{headline}</SourceHeadline>

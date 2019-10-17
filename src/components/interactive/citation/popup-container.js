@@ -26,7 +26,7 @@ will likely be used inside a parent component
 
 const popupDimensions = {
 	height: 220,
-	width: 245,
+	width: 300,
 };
 
 const PopupPosition = styled.span`
@@ -58,6 +58,11 @@ const Container = styled.span`
 		bottom: 0;
 		z-index: 3;
 	}
+	
+	
+  img {
+    max-width: 275px;
+  }
 
 `;
 

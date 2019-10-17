@@ -2,6 +2,7 @@ import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
 import {CitationsMaster, CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import {EmojiLg} from "../components/static/iMessageStyles";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
@@ -189,3 +190,92 @@ export const ENERGY_CLIMATE_PLATFORMS = [
     GREEN_ENERGY_CLIMATE, BLOC_QUEBECOIS_ENERGY_CLIMATE,PEOPLES_ENERGY_CLIMATE
 
 ];
+
+export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
+    {
+        from: "them",
+        body:<span>
+							Hey, so oil is
+								<Citation data={CitationsMaster.OilAndEnvironment}> really bad for the environment </Citation>
+						</span>
+    },
+    {
+        from: "me",
+        body:"k."
+    },
+    {
+        from: "me",
+        body:"So what do you want me to do about it?"
+    },
+    {
+        from: "them",
+        body:<span>How about if you use things that damage the environment you have to pay
+						an extra tax?</span>
+    },
+    {
+        from:"me",
+        body:<span>woah, relax. That's going to cost me like
+							<Citation data={CitationsMaster.CarbonTaxCost}> $200-$400 </Citation>
+						</span>
+    },
+    {
+        from:"me-no-bg",
+        body:<EmojiLg><span role="img" aria-label="money fly emoji">💸</span></EmojiLg>
+    },
+    {
+        from:"them",
+        body:<span>But this our planet we're talking about.
+						</span>
+    },
+    {
+        from:"them",
+        body:<span>$200 is a small price to pay if it means saving our planet
+						</span>
+    },
+    {
+        from:"me",
+        body:<span>Wait, How do you even know it's going to save our planet?
+						</span>
+    },
+    {
+        from:"me",
+        body:<span>Apparently{' '}
+            <Citation data={CitationsMaster.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
+						</span>
+    },
+    {
+        from: "them",
+        body:"It depends how you look at it."
+    },
+    {
+        from:"them",
+        body:<span>
+							I mean
+							<Citation data={CitationsMaster.CarbonTaxIsEffective}>
+								27 Nobel Laureate economists released a statement saying that a Carbon tax
+								is the most effective way of lowering emissions
+							</Citation>.
+						</span>
+    },
+    {
+        from: "me",
+        body:"Wait isn't that just an appeal to authority? That's a logical fallacy!"
+    },
+    {
+        from: "them",
+        body:"I see what you mean but I think, it's an indication that very smart people have studied this."
+    },
+    {
+        from: "them",
+        body:"And realized that this is one of the best options we have to save the Earth."
+    },
+    {
+        from:"them-no-bg",
+        body:<span>Earth has entered the conversation</span>
+    },
+    {
+        from:"them-no-bg",
+        body:<EmojiLg><span role="img" aria-label="earth emoji">🌏</span></EmojiLg>
+    },
+
+]

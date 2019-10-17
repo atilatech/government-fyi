@@ -3,7 +3,7 @@ import PageBuilder from '../../components/page-blocks/aggregators/PageBuilder'
 import PageTitleBlock from '../../components/page-blocks/blocks/PageTitleBlock'
 import diversityImage from './images/diversity.png'
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
-import {slugify, unSlugify} from "../../services/Utils";
+import {shuffle, slugify, unSlugify} from "../../services/Utils";
 import {withRouter} from "react-router-dom";
 import Link from "react-router-dom/Link";
 import {ALL_PLATFORMS} from "../../data/PartyPlatformData";
@@ -14,7 +14,9 @@ export function DemographicDetail ({demographicIssues}){
         <div>
             <ol>
                 {demographicIssues.map(item => (
-                    <li key={`${item.party}-${JSON.stringify(item.text)}`}>
+                    <li key={`${item.party}-${JSON.stringify(item.text)}`}
+                        style={{fontSize: '20px', lineHeight: '36px'}}
+                        className="mb-5">
                         <Link to={`/${slugify(item.topic)}`}>
                             <span className={slugify(item.party)}>
                                 {item.party} on {item.topic} <br />
@@ -37,7 +39,7 @@ export function DemographicDetail ({demographicIssues}){
     );
 }
 
-export function demographicsToIssueQuery(demographic) {
+export function demographicsToIssueQuery(demographic, randomize=false) {
 
     const demographicIssues = [];
 
@@ -56,6 +58,10 @@ export function demographicsToIssueQuery(demographic) {
             });
 
     });
+
+    if (randomize) {
+        shuffle(demographicIssues)
+    }
     return demographicIssues;
 }
 

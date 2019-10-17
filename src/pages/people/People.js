@@ -50,7 +50,7 @@ const demographicsString = `How will the elections affect ${ALL_DEMOGRAPHICS.sli
 
 const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => {
 
-    const demographicIssues = demographicsToIssueQuery(demographic).slice(0,3);
+    const demographicIssues = demographicsToIssueQuery(demographic, true).slice(0,3);
 
     return  (
         {
@@ -62,7 +62,8 @@ const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => {
                 text: (
                     <React.Fragment>
                         <DemographicDetail demographicIssues={demographicIssues}/>
-                        <Link to={`/people/${slugify(demographic)}`}>
+                        <Link to={`/people/${slugify(demographic)}`}
+                              style={{fontSize: '20px', lineHeight: '36px'}}>
                             Read more issues affecting {demographic}
                         </Link>
                     </React.Fragment>)
@@ -73,7 +74,8 @@ const demographicsBlocks = ALL_DEMOGRAPHICS.map(demographic => {
 function PeopleNavigatorScroll (){
 
     const demographicsLinks = ALL_DEMOGRAPHICS.map(demographic => (
-        <li key={demographic}><a href={`#${slugify(demographic)}`}
+        <li key={demographic} style={{fontSize: '20px', lineHeight: '36px'}}>
+            <a href={`#${slugify(demographic)}`}
                                  onClick={()=>{scrollToElement(`#${slugify(demographic)}`)}}>
             {demographic}
         </a></li>
