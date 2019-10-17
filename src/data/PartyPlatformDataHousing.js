@@ -1,6 +1,7 @@
 import {CitationsMaster, CLIMATE_CONSCIOUS, FOREIGNERS, HOMEOWNERS} from "./Constants";
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
+import {EmojiLg} from "../components/static/iMessageStyles";
 
 export const CONSERVATIVE_HOUSING = {
     party: "Conservative",
@@ -150,11 +151,98 @@ HOUSING_PLATFORMS
     .filter(platform =>platform.party!=="People's")
     .forEach(platform => {
 
-    platform.partyPlatforms.forEach( idea => {
+        platform.partyPlatforms.forEach( idea => {
 
-        if (!idea.demographics) {
-            idea.demographics = []
-        }
-        idea.demographics.push(HOMEOWNERS)
-    })
-});
+            if (!idea.demographics) {
+                idea.demographics = []
+            }
+            idea.demographics.push(HOMEOWNERS)
+        })
+    });
+
+export const HOUSING_CONVERSATION = [
+    {
+        from: "them",
+        body:"well, looks like I'm not going to be buying a house any time soon"
+    },
+    {
+        from: "me",
+        body:"why not?"
+    },
+    {
+        from: "them",
+        body:"Everything. Is. So. Expensive"
+    },
+    {
+        from: "them",
+        body: "The government should just let people build more houses"
+    },
+    {
+        from:"me",
+        body: "Yeah! That's a great idea"
+    },
+    {
+        from:"me",
+        body: "As long as it's not in my neighborhood, we should definitely build more houses! 👌🏿"
+    },
+    {
+        from:"me-no-bg",
+        body:<EmojiLg><span role="img" aria-label="money fly emoji">💸</span></EmojiLg>
+    },
+    {
+        from:"them",
+        body:<span>But this our planet we're talking about.
+						</span>
+    },
+    {
+        from:"them",
+        body:<span>$200 is a small price to pay if it means saving our planet
+						</span>
+    },
+    {
+        from:"me",
+        body:<span>Wait, How do you even know it's going to save our planet?
+						</span>
+    },
+    {
+        from:"me",
+        body:<span>Apparently{' '}
+            <Citation data={CitationsMaster.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
+						</span>
+    },
+    {
+        from: "them",
+        body:"It depends how you look at it."
+    },
+    {
+        from:"them",
+        body:<span>
+							I mean
+							<Citation data={CitationsMaster.CarbonTaxIsEffective}>
+								27 Nobel Laureate economists released a statement saying that a Carbon tax
+								is the most effective way of lowering emissions
+							</Citation>.
+						</span>
+    },
+    {
+        from: "me",
+        body:"Wait isn't that just an appeal to authority? That's a logical fallacy!"
+    },
+    {
+        from: "them",
+        body:"I see what you mean but I think, it's an indication that very smart people have studied this."
+    },
+    {
+        from: "them",
+        body:"And realized that this is one of the best options we have to save the Earth."
+    },
+    {
+        from:"them-no-bg",
+        body:<span>Earth has entered the conversation</span>
+    },
+    {
+        from:"them-no-bg",
+        body:<EmojiLg><span role="img" aria-label="earth emoji">🌏</span></EmojiLg>
+    },
+
+]
