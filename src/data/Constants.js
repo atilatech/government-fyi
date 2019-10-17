@@ -156,8 +156,27 @@ export const CitationsMaster = {
         headline: "What is a Speculation Tax",
         directQuote: <span>
             Tax applied on properties that are not the primary residences of the owner — they’re not living there for more than six months per year — and that aren’t being occupied by a tenant when the owner isn’t there.
-            <br/>
-            Note: This is the plan for BC's provincial speculation tax. The Liberal's speculation tax might have slightly different details
+            <br/><br/>
+            Note: This is the plan for BC's provincial speculation tax.
+
+            Other provinces and federal governments might have slightly different details,
+            but the general idea is the same.
+        </span>
+    },
+    SpeculationTaxForeignersRealEstate: {
+
+        link: "https://www.urbaneer.com/blog/foreign_buyers_policy_and_canadian_real_estate",
+        publication: "Urbaneer",
+        headline: "How Does Speculation Tax Affect Real Estate Prices?",
+        directQuote: <span>
+            "In Toronto (and in it surrounding Golden Horseshoe area)
+            a 15 per cent foreign investor tax was introduced in 2017.
+            This tax did cause the pullback of foreign investors and
+            Toronto housing prices moderated."
+            <img alt="How Does Speculation Tax Affect Real Estate Prices?"
+                 src="https://www.urbaneer.com/media/uploads/main_uploads/toronto_housing_graph.jpg"
+                 className="mt-3" />
+
         </span>
     },
     OilAndEnvironment: {
@@ -207,6 +226,19 @@ export const CitationsMaster = {
             One perspective says that it will make us have a cleaner environment and help reduce the effects of climate change.
             Another perspective says that it will cost a lot of jobs, make Canadian companies weaker globally
             and slow down the economy in certain parts of Canada.
+        </span>
+    },
+    NIMBYISM: {
+        link: "https://www.tvo.org/article/dont-you-be-my-neighbour-ontarios-new-nimbyism",
+        publication: "TVO",
+        headline: "What is NIMBYISM?",
+        directQuote: <span>
+            NIMBYISM is when people lobby against new homes being built in their neighborhoods.
+            Or lobby against certain types of homes being built, usually high-density homes.
+            The Pro NIMBYISM perspective says that it could reduce the values of their homes.
+            Another Pro NIMBYISM perspective says that it could affect the culture of the community.
+            The anti NIMBYISM perspective says that building more high homes and higher density homes,
+            creates more affordable housing for everyone
         </span>
     }
 };
