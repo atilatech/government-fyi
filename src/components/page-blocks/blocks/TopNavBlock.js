@@ -80,7 +80,7 @@ const HoverTitle = styled.h4`
 
 const TopNavBlock = (props) => {
 	const navArr = [];
-	for (let i = 1; i < 8; i++){
+	for (let i = 1; i < 9; i++){
 		const {color, imageSet, socialDescription, shortTitle, thumbSet, result} = PropMetaData(i);
 		navArr.push(
 			{
