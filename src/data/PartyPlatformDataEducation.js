@@ -134,7 +134,7 @@ export const CONSERVATIVES_EDUCATION = {
             text: <span>
                 Increase Federal contribution to <Citation data={CitationsMaster.RESP}>
 						RESP
-                </Citation> from 30 percent to 20 percent
+                </Citation> from 20 percent to 30 percent
 
             </span>,
             source: "https://www.bnnbloomberg.ca/conservatives-promise-to-boost-federal-contribution-to-resp-to-30-1.1317404",
