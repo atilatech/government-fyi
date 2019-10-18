@@ -29,7 +29,7 @@ class Banner extends React.Component {
           <Row>
             <Col md={18} xs={24}>
               <QueueAnim
-                className="text-wrapper responsive-text"
+                className="text-wrapper responsive-text banner-title-wrapper"
                 key="text"
                 type="bottom"
               >
