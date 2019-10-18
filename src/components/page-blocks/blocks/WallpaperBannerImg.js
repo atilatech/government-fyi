@@ -72,7 +72,6 @@ const Wallpaper = styled.div`
 const WallpaperBannerImg = (props) => {
 	const {color, image, repeatType, title, subtitle} = props.data;
 
-	console.log({subtitle});
 	const repeatX = repeatType || "space";
 	return(
 		<React.Fragment>
