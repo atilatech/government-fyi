@@ -21,10 +21,10 @@ import Prop7Img from './home/images/prop-7.png'
 import Prop7Img_w from './home/images/prop-7.webp'
 import Prop7Img_2x from './home/images/prop-7@2x.png'
 import Prop7Img_2x_w from './home/images/prop-7@2x.webp'
-import Prop8Img from './home/images/prop-8.png'
-import Prop8Img_w from './home/images/prop-8.webp'
-import Prop8Img_2x from './home/images/prop-8@2x.png'
-import Prop8Img_2x_w from './home/images/prop-8@2x.webp'
+import Prop8Img from './home/images/prop-1.png'
+import Prop8Img_w from './home/images/prop-1.webp'
+import Prop8Img_2x from './home/images/prop-1@2x.png'
+import Prop8Img_2x_w from './home/images/prop-1@2x.webp'
 import Prop9Img from './home/images/prop-9.png'
 import Prop9Img_w from './home/images/prop-9.webp'
 import Prop9Img_2x from './home/images/prop-9@2x.png'
@@ -62,10 +62,10 @@ import Prop7Img_thumb from './thumbnails/prop-7-thumb.png'
 import Prop7Img_thumb_w from './thumbnails/prop-7-thumb.webp'
 import Prop7Img_thumb_2x from './thumbnails/prop-7@2x-thumb.png'
 import Prop7Img_thumb_2x_w from './thumbnails/prop-7@2x-thumb.webp'
-import Prop8Img_thumb from './thumbnails/prop-8-thumb.png'
-import Prop8Img_thumb_w from './thumbnails/prop-8-thumb.webp'
-import Prop8Img_thumb_2x from './thumbnails/prop-8@2x-thumb.png'
-import Prop8Img_thumb_2x_w from './thumbnails/prop-8@2x-thumb.webp'
+import Prop8Img_thumb from './thumbnails/prop-1-thumb.png'
+import Prop8Img_thumb_w from './thumbnails/prop-1-thumb.webp'
+import Prop8Img_thumb_2x from './thumbnails/prop-1@2x-thumb.png'
+import Prop8Img_thumb_2x_w from './thumbnails/prop-1@2x-thumb.webp'
 import Prop9Img_thumb from './thumbnails/prop-9-thumb.png'
 import Prop9Img_thumb_w from './thumbnails/prop-9-thumb.webp'
 import Prop9Img_thumb_2x from './thumbnails/prop-9@2x-thumb.png'
@@ -216,7 +216,7 @@ const thumbs = [
     _2x: Prop10Img_thumb_2x,
     _2x_webp: Prop10Img_thumb_2x_w,
   },
-  {
+  { // Seniors
     _1x: Prop8Img_thumb,
     _1x_webp: Prop8Img_thumb_w,
     _2x: Prop8Img_thumb_2x,
@@ -256,7 +256,7 @@ const titles = [
   "Healthcare",
   "Immigration",
   "Taxes",
-  "Prop 8 limits dialysis clinics' revenue",
+  "Seniors",
   "Prop 9 would have split CA into three states",
   "Prop 10 allows broad rent control again",
   "Prop 11 requires EMTs to be on-call during breaks",
@@ -274,7 +274,7 @@ const descriptions = [
   "Your health is the most important thing you have. How should we take care of it?",
   "Who gets to come to Canada?",
   "How much of your money should the government get?",
-  "Is this for patients or is it political?",
+  "How should we take care of our seniors?",
   "A wild proposition by a VC. Alas, it's been removed from the ballot.",
   "Does it help or hurt to have cities regulate rents?",
   "Should paramedics be required to respond to calls if they're on break?",

@@ -6,6 +6,7 @@ import {HEALTHCARE_PLATFORMS} from "./PartyPlatformDataHealthcare";
 import {IMMIGRATION_PLATFORMS} from "./PartyPlatformDataImmigration";
 import {TAXES_PLATFORMS} from "./PartyPlatformDataTaxes";
 import {ENERGY_CLIMATE_PLATFORMS} from "./PartyPlatformDataEnergyClimate";
+import {SENIORS_PLATFORMS} from "./PartyPlatformDataSeniors";
 
 
 export const PartyPlatformPropTypes = {
@@ -20,4 +21,4 @@ export const PartyPlatformPropTypes = {
 
 export const ALL_PLATFORMS = [...HOUSING_PLATFORMS, ...JOBS_ECONOMY_PLATFORMS,
     ...ENERGY_CLIMATE_PLATFORMS, ...EDUCATION_PLATFORMS, ...HEALTHCARE_PLATFORMS,
-    ...IMMIGRATION_PLATFORMS, ...TAXES_PLATFORMS];
+    ...IMMIGRATION_PLATFORMS, ...TAXES_PLATFORMS, ...SENIORS_PLATFORMS];

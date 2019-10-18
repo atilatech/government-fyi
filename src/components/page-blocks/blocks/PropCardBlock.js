@@ -11,6 +11,7 @@ import CrossOutX from "../../static/cross-out-x";
 import {PROP_NUM_TO_CATEGORY_DICT} from "../../../data/Constants";
 
 const BannerLink = styled(Link)`
+	min-width: 100%;
 	text-decoration: none;
 `;
 const Overflow = styled(Row)`

@@ -15,6 +15,7 @@ export const FOREIGNERS = 'foreigners';
 export const LOW_INCOME = 'low income';
 export const WOMEN = 'women';
 export const VISIBLE_MINORITY = 'visible minority';
+export const SENIORS = 'seniors';
 
 export const ALL_DEMOGRAPHICS = [
     STUDENTS,
@@ -29,6 +30,7 @@ export const ALL_DEMOGRAPHICS = [
     OIL_WORKERS,
     UNEMPLOYED,
     FOREIGNERS,
+    SENIORS,
 ];
 
 export const HOUSING = "Housing";
@@ -38,6 +40,7 @@ export const EDUCATION = "Education";
 export const HEALTHCARE = "Healthcare";
 export const IMMIGRATION = "Immigration";
 export const TAXES = "Taxes";
+export const SENIORS_TOPIC = "Seniors";
 export const ELECTION_TOPICS = [
     HOUSING,
     JOBS_AND_ECONOMY,
@@ -46,6 +49,7 @@ export const ELECTION_TOPICS = [
     HEALTHCARE,
     IMMIGRATION,
     TAXES,
+    SENIORS_TOPIC,
 ];
 
 export const PROP_NUM_TO_CATEGORY_DICT = {
@@ -56,6 +60,7 @@ export const PROP_NUM_TO_CATEGORY_DICT = {
     5: 'healthcare',
     6: 'immigration',
     7: 'taxes',
+    8: 'seniors',
 };
 
 export const CitationsMaster = {
