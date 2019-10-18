@@ -33,8 +33,14 @@
     height: auto;
     display: none !important;
   }
-  .banner .text-wrapper {
+
+  .banner-title-wrapper {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
   }
+
   .banner .text-wrapper p {
     font-size: 14px;
     line-height: 28px;
