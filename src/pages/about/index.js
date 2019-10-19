@@ -126,8 +126,8 @@ const Data = {
                   </a> and
             used to explain California's state propositions.
             <br />
-            (They're site played a big part in making this site possible so you should check them out
-            and show them some Love ❤️)
+            (Their site played a big part in making this site possible, so you should check them out
+            and show them some love ❤️.)
         </span>,
         nColWidth: 6,
       }
