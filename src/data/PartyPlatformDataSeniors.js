@@ -108,7 +108,6 @@ SENIORS_PLATFORMS
             if (!idea.demographics) {
                 idea.demographics = []
             }
-            idea.demographics.push(HOMEOWNERS)
             idea.demographics.push(SENIORS)
         })
     });
