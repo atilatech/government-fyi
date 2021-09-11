@@ -7,8 +7,8 @@ export const References = [
                 url: "https://www.macleans.ca/rankings/2021-federal-election-platform-guide/"
             },
             {
-                text: "2019 Federal election platforms (CTV)",
-                url: "https://election.ctvnews.ca/platforms"
+                text: "Federal election 2021 platform guide: Where do the parties stand? (CTV)",
+                url: "https://www.ctvnews.ca/politics/federal-election-2021/federal-election-2021-platform-guide-where-do-the-parties-stand-1.5560982"
             },
         ]
     },
