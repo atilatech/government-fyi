@@ -7,7 +7,7 @@ We help you understand how our government works.
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d06ff187-a109-45ac-bdab-7ba48b67b046/deploy-status)](https://app.netlify.com/sites/ourgovernment/deploys)
 
 
-![Government FYI landing page](https://i.imgur.com/ZuRV3BT.png)
+![Government FYI landing page](https://i.imgur.com/lfhC9UR.png)
 
 ## How to Contribute
 

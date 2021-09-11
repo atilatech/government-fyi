@@ -15,6 +15,7 @@ import IGImg from './images/insta.png'
 import IGImg_w from './images/insta.webp'
 import IGImg_2x from './images/insta@2x.png'
 import IGImg_2x_w from './images/insta@2x.webp'
+import { SEO_META } from '../../data/Constants'
 
 // const CenteredText = styled.div`
 //   text-align: center;
@@ -34,12 +35,12 @@ import IGImg_2x_w from './images/insta@2x.webp'
 const Data = {
 	pageId:"subscribe-page",
 	meta: {
-		canonicalUrl:"https://www.ourgovernment.fyi/follow/",
-		documentTitle:"Follow us – ourgovernment.fyi",
-		socialHeadline:"Receive updates from ourgovernment.fyi",
-		socialDescription:"11 CA propositions including daylight savings, cage-free eggs, and housing",
-		socialImage:"general-2.png",
-	},
+    canonicalUrl:`${SEO_META.url}`,
+    documentTitle: SEO_META.description,
+    socialHeadline: SEO_META.headline,
+    socialDescription: SEO_META.description,
+    socialImage: SEO_META.image,
+},
 	blocks: [
     {
     	component: PageTitleBlock,

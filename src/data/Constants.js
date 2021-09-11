@@ -54,13 +54,14 @@ export const ELECTION_TOPICS = [
 
 export const ELECTION_YEAR = 2021;
 export const CREATION_DATE = `September 11, ${ELECTION_YEAR} 7:00:00`;
+export const BANNER_IMAGE = "banner-image-2021.png";
 
 export const SEO_META = {
     url: "https://www.ourgovernment.fyi/",
     title: `OurGovernment.FYI 🇨🇦 – The simplest nonpartisan guide to Canada's ${ELECTION_YEAR} Federal elections 🍁 - ourgovernment.fyi`,
     headline: `The simplest nonpartisan voter guide for the ${ELECTION_YEAR} Canadian federal elections`,
     description: `The simplest nonpartisan voter guide for the ${ELECTION_YEAR} Canadian federal elections`,
-    image: "general-2.png",
+    image: BANNER_IMAGE,
 };
 
 export const PROP_NUM_TO_CATEGORY_DICT = {
