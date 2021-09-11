@@ -15,10 +15,14 @@ export const FOREIGNERS = 'foreigners';
 export const LOW_INCOME = 'low income';
 export const WOMEN = 'women';
 export const VISIBLE_MINORITY = 'visible minority';
+export const PARENTS = 'parents';
+export const INDIGENOUS = 'indigenous';
 export const SENIORS = 'seniors';
 
 export const ALL_DEMOGRAPHICS = [
     STUDENTS,
+    PARENTS,
+    INDIGENOUS,
     YOUNG_PEOPLE,
     IMMIGRANTS,
     WOMEN,

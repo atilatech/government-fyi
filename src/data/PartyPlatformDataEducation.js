@@ -1,7 +1,7 @@
 import {EmojiLg} from "../components/static/iMessageStyles";
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
-import {EDUCATION, STUDENTS} from "./Constants";
+import {EDUCATION, INDIGENOUS, PARENTS, STUDENTS} from "./Constants";
 import { ALL_CITATIONS } from "./Citations";
 
 export const EDUCATION_CONVERSATION_MESSAGES = [
@@ -132,6 +132,13 @@ export const CONSERVATIVES_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
+            text: "Replace Liberal government child-care funding deals with a refundable tax credit of between $4,560 and $6,000",
+            source: "https://www.bnnbloomberg.ca/2021-federal-election-platform-tracker-where-each-party-stands-so-far-1.1639592#:~:text=Liberal%20government%20child-care%20funding%20deals%20in%20favour%20of%20a%20refundable%20tax%20credit%20of%20between%20%244%2C560%20and%20%246%2C000",
+            demographics: [
+                PARENTS,
+            ],
+        },
+        {
             text: <span>
                 Increase Federal contribution to <Citation data={ALL_CITATIONS.RESP}>
 						RESP
@@ -148,18 +155,21 @@ export const LIBERALS_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
+            text: "Reduce child care fees to $10 per day within the next five years(does not include Québec)",
+            source: "https://www.bnnbloomberg.ca/2021-federal-election-platform-tracker-where-each-party-stands-so-far-1.1639592#:~:text=Reduce%20child%20care%20fees%20to%20%2410%20per%20day%20on%20average%20within%20next%20five%20years%20%E2%80%93%20everywhere%20outside%20of%20Que.",
+        },
+        {
             text: <span>Increase <Citation data={ALL_CITATIONS.CanadaStudentGrant}>
 						Canada Student Grant
                 </Citation> by 40% and increase maximum annual amount from $3,000 to $4,200</span>,
             source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/33096593_EN.pdf?timestamp=1571158047327",
         },
         {
-            text: <span>Increase the minimum income you need to qualify for
+            text:  <React.Fragment>Change the student loan
                 <Citation data={ALL_CITATIONS.RepaymentAssistancePlan}>
 						Repayment Assistance Plan
-                </Citation>
-                from $25k to $35k for people with family size of one</span>,
-            source: "https://www.liberal.ca/liberals-move-forward-to-legislate-net-zero-emissions-by-2050/",
+                </Citation>, so that new grads don't have to start paying their loans back until they make at least $40,000 per year.</React.Fragment>,
+            source: "https://ottawa.ctvnews.ca/what-the-federal-parties-are-offering-ottawa-s-college-and-university-students-1.5565180#:~:text=The%20Liberals%20have%20also%20said%20they%20would%20change%20the%20student%20loan%20repayment%20assistance%20program",
         },
         {
             text: "Increase interest free non-repayment period from 6-months to 24-months for federal student loans",
@@ -179,8 +189,17 @@ export const NDP_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Remove interest on all current and future student loans,",
-            source: "https://www.bnnbloomberg.ca/ndp-promises-to-remove-interest-on-federal-student-loans-1.1328344",
+            text: "Remove interest from federal student loans",
+            source: "https://www.macleans.ca/rankings/2021-federal-election-platform-guide/#:~:text=Remove%20interest%20permanently%20on%20all%20federal%20student%20loans.",
+            source_details: [
+                {
+                    text: "Jagmeet Singh commits to cancelling up to $20,000 per person in federal student loan debt",
+                    url: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=17",
+                }
+            ],
+        },
+        {
+            text: "Introduce a debt forgiveness program for graduates that will forgive up to $20,000 in student debt."
         },
     ],
 };
@@ -190,14 +209,18 @@ export const GREEN_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Make college and university tuition free for all Canadian students",
-            source: "https://www.greenparty.ca/en/platform/renew-social-contract#investing-in-post-secondary-education",
+            text: "Abolish post-secondary education tuition and Cancel all federally held student loan debt",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Abolish%20post-secondary%20education%20tuition",
         },
         {
-            text: "Forgive the federal government part of existing student loans for unemployed students or those earning less than $70k per year",
+            text: "Triple the number of Canada Graduate Scholarships available for master’s students and doubling the number available for PhD students",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=tripling%20the%20number%20of%20Canada%20Graduate%20Scholarships%20available%20for%20master%E2%80%99s%20students%20and%20doubling%20the%20number%20available%20for%20PhD%20students"
         },
         {
             text: "Remove the two per cent cap on increases in education funding for Indigenous students",
+            demographics: [
+                INDIGENOUS,
+            ]
         },
     ],
 };
@@ -237,6 +260,7 @@ export const EDUCATION_PLATFORMS = [
     CONSERVATIVES_EDUCATION, LIBERALS_EDUCATION, NDP_EDUCATION,
     GREEN_EDUCATION, BLOC_QUEBECOIS_EDUCATION,PEOPLES_EDUCATION
 ];
+
 EDUCATION_PLATFORMS
     .filter(platform =>platform.party!=="People's")
     .forEach(platform => {
