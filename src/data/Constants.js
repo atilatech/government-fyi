@@ -58,9 +58,9 @@ export const BANNER_IMAGE = "banner-image-2021.png";
 
 export const SEO_META = {
     url: "https://www.ourgovernment.fyi/",
-    title: `OurGovernment.FYI 🇨🇦 – The simplest nonpartisan guide to Canada's ${ELECTION_YEAR} Federal elections 🍁 - ourgovernment.fyi`,
-    headline: `The simplest nonpartisan voter guide for the ${ELECTION_YEAR} Canadian federal elections`,
-    description: `The simplest nonpartisan voter guide for the ${ELECTION_YEAR} Canadian federal elections`,
+    title: `OurGovernment.FYI 🇨🇦 – The simplest non-partisan guide to Canada's ${ELECTION_YEAR} Federal elections 🍁 - ourgovernment.fyi`,
+    headline: `The simplest non-partisan voter guide for the ${ELECTION_YEAR} Canadian federal elections`,
+    description: `The simplest non-partisan voter guide for the ${ELECTION_YEAR} Canadian federal elections`,
     image: BANNER_IMAGE,
 };
 
