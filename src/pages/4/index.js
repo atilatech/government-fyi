@@ -5,6 +5,7 @@ import SectionTitleBlock from '../../components/page-blocks/blocks/SectionTitleB
 
 import {EDUCATION_CONVERSATION_MESSAGES, EDUCATION_PLATFORMS} from "../../data/PartyPlatformDataEducation";
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
+import { CREATION_DATE } from '../../data/Constants'
 
 const partyPlatforms = EDUCATION_PLATFORMS.map(PLATFORM => (
 	{
@@ -17,8 +18,8 @@ const Data = {
 	pageId:"education",
 	propNum: 4,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 7:00:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
 		{

@@ -2,7 +2,7 @@ import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import { Col, Row } from "antd";
 import { scrollToElement, slugify, toTitleCase } from "../../services/Utils";
-import { ALL_DEMOGRAPHICS, ELECTION_TOPICS, PROP_NUM_TO_CATEGORY_DICT } from "../../data/Constants";
+import { ALL_DEMOGRAPHICS, ELECTION_TOPICS, ELECTION_YEAR, PROP_NUM_TO_CATEGORY_DICT } from "../../data/Constants";
 import Link from "react-router-dom/Link";
 
 class Banner extends React.Component {
@@ -34,7 +34,7 @@ class Banner extends React.Component {
                 type="bottom"
               >
                 <h1 key="h1" className="mt-sm-5">
-                  A NONPARTISAN GUIDE TO CANADA'S 2019 ELECTIONS {' '}
+                  A NONPARTISAN GUIDE TO CANADA'S {ELECTION_YEAR} ELECTIONS {' '}
 
                   <span role="img" aria-label="Canada emoji">
                     🇨🇦

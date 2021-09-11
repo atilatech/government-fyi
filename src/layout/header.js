@@ -5,6 +5,7 @@ import Color from 'layout/colors'
 import MenuDrawerButton from 'components/interactive/menu/menu-drawer-button'
 import {Spacer} from 'layout/util'
 import shadowPattern from 'components/static/shadowPattern.png'
+import { ELECTION_YEAR } from '../data/Constants'
 
 const Container = styled.div`
   position: fixed;
@@ -131,7 +132,7 @@ class Header extends React.Component {
 }
 
 const nav = [
-  { to:"/home", label:"Topics", longLabel: "Canadian Federal Elections 2019"},
+  { to:"/home", label:"Topics", longLabel: `Canadian Federal Elections ${ELECTION_YEAR}`},
   // { to:"/races/", label:"Races"},
   { to:"/about/", label:"About", longLabel:"About us"},
   { to:"/people/", label:"How does this affect me?", longLabel:"How does this affect me?"},

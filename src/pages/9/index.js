@@ -13,13 +13,14 @@ import Cal3Img from './images/ca.png'
 import Cal3Img_w from './images/ca.webp'
 import Cal3Img_2x from './images/ca@2x.png'
 import Cal3Img_2x_w from './images/ca@2x.webp'
+import { CREATION_DATE } from '../../data/Constants'
 
 const Data = {
 	pageId:"prop-9",
 	propNum: 9,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 7:00:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
     {

@@ -11,6 +11,7 @@ import {
 	ENERGY_CLIMATE_CARBON_TAX_CONVERSATION,
 	ENERGY_CLIMATE_PLATFORMS
 } from "../../data/PartyPlatformDataEnergyClimate";
+import { CREATION_DATE } from '../../data/Constants'
 
 const energyClimatePlatforms = ENERGY_CLIMATE_PLATFORMS.map(PLATFORM => (
 	{
@@ -23,8 +24,8 @@ const Data = {
 	pageId:"energy-and-climate",
 	propNum: 3,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 14:10:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
 		{

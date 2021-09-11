@@ -8,7 +8,7 @@ import BottomNavBlock from '../blocks/BottomNavBlock'
 import TopNavBlock from '../blocks/TopNavBlock'
 import PublishDateBlock from '../blocks/PublishDateBlock'
 import {PropMetaData, GetNextAndPrevNum} from '../../../pages/prop-attributes'
-import {PROP_NUM_TO_CATEGORY_DICT, ReferencesBlock} from "../../../data/Constants";
+import {ELECTION_YEAR, PROP_NUM_TO_CATEGORY_DICT, ReferencesBlock} from "../../../data/Constants";
 import {unSlugify} from "../../../services/Utils";
 
 /*
@@ -47,7 +47,7 @@ const PropPageBuilder = (props) => {
 		<div>
 			<Head
 				url={"https://www.ourgovernment.fyi/prop-" + propNum}
-				title={`${customTitle} | Canada Federal Elections 2019 | ourgovernment.fyi`}
+				title={`${customTitle} | Canada Federal Elections ${ELECTION_YEAR} | ourgovernment.fyi`}
 				headline={socialHeadline}
 				description={socialDescription}
 				image={`${PROP_NUM_TO_CATEGORY_DICT[propNum]}.png`}
