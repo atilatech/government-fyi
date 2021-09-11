@@ -1,7 +1,8 @@
 import {EmojiLg} from "../components/static/iMessageStyles";
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
-import {CitationsMaster, EDUCATION, STUDENTS} from "./Constants";
+import {EDUCATION, STUDENTS} from "./Constants";
+import { ALL_CITATIONS } from "./Citations";
 
 export const EDUCATION_CONVERSATION_MESSAGES = [
     {
@@ -36,7 +37,7 @@ export const EDUCATION_CONVERSATION_MESSAGES = [
         from: "them",
         body: <span>
 							Most people graduate with about{' '}
-							<Citation data={CitationsMaster.StudentLoansDebt}>$28,00 in student loans</Citation>.
+							<Citation data={ALL_CITATIONS.StudentLoansDebt}>$28,00 in student loans</Citation>.
 						</span>
     },
     {
@@ -88,7 +89,7 @@ export const EDUCATION_CONVERSATION_MESSAGES = [
         from: "them",
         body: <span>chill, that would be way too expensive.
 
-							You have the <Citation data={CitationsMaster.FreeTuitionCost}>
+							You have the <Citation data={ALL_CITATIONS.FreeTuitionCost}>
                 $16.4 billion
         </Citation> to pay for that?
 						</span>
@@ -109,7 +110,7 @@ export const EDUCATION_CONVERSATION_MESSAGES = [
         from: "them",
         body: <span>
 							You have a point though. I mean
-            <Citation data={CitationsMaster.GermanyFreeTuition}>
+            <Citation data={ALL_CITATIONS.GermanyFreeTuition}>
                 Germany has free tuition.
             </Citation>
 							Even for international students.
@@ -132,7 +133,7 @@ export const CONSERVATIVES_EDUCATION = {
     partyPlatforms: [
         {
             text: <span>
-                Increase Federal contribution to <Citation data={CitationsMaster.RESP}>
+                Increase Federal contribution to <Citation data={ALL_CITATIONS.RESP}>
 						RESP
                 </Citation> from 20 percent to 30 percent
 
@@ -147,14 +148,14 @@ export const LIBERALS_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: <span>Increase <Citation data={CitationsMaster.CanadaStudentGrant}>
+            text: <span>Increase <Citation data={ALL_CITATIONS.CanadaStudentGrant}>
 						Canada Student Grant
                 </Citation> by 40% and increase maximum annual amount from $3,000 to $4,200</span>,
             source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/33096593_EN.pdf?timestamp=1571158047327",
         },
         {
             text: <span>Increase the minimum income you need to qualify for
-                <Citation data={CitationsMaster.RepaymentAssistancePlan}>
+                <Citation data={ALL_CITATIONS.RepaymentAssistancePlan}>
 						Repayment Assistance Plan
                 </Citation>
                 from $25k to $35k for people with family size of one</span>,

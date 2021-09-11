@@ -1,7 +1,8 @@
 import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
-import {CitationsMaster, CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import { ALL_CITATIONS } from "./Citations";
 import {EmojiLg} from "../components/static/iMessageStyles";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
@@ -26,7 +27,7 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
         {
             text: <span>
                 Cancel
-                <Citation data={CitationsMaster.BillC69}>
+                <Citation data={ALL_CITATIONS.BillC69}>
 						Bill C-69
                 </Citation>
             </span>,
@@ -196,7 +197,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
         from: "them",
         body:<span>
 							Hey, so oil is
-								<Citation data={CitationsMaster.OilAndEnvironment}> really bad for the environment </Citation>
+								<Citation data={ALL_CITATIONS.OilAndEnvironment}> really bad for the environment </Citation>
 						</span>
     },
     {
@@ -215,7 +216,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
     {
         from:"me",
         body:<span>woah, relax. That's going to cost me like
-							<Citation data={CitationsMaster.CarbonTaxCost}> $200-$400 </Citation>
+							<Citation data={ALL_CITATIONS.CarbonTaxCost}> $200-$400 </Citation>
 						</span>
     },
     {
@@ -240,7 +241,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
     {
         from:"me",
         body:<span>Apparently{' '}
-            <Citation data={CitationsMaster.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
+            <Citation data={ALL_CITATIONS.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
 						</span>
     },
     {
@@ -251,7 +252,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
         from:"them",
         body:<span>
 							I mean
-							<Citation data={CitationsMaster.CarbonTaxIsEffective}>
+							<Citation data={ALL_CITATIONS.CarbonTaxIsEffective}>
 								27 Nobel Laureate economists released a statement saying that a Carbon tax
 								is the most effective way of lowering emissions
 							</Citation>.
