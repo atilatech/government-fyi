@@ -1,6 +1,6 @@
 # Government-fyi
 
-A Simple Non-Partisan guide to Canadian Elections 🇨🇦.
+The Simplest Non-Partisan guide to Canadian Elections 🇨🇦
 
 https://ourgovernment.fyi/
 
@@ -16,13 +16,12 @@ Inspired by [ballotfyi](https://github.com/cjimmy/ballotfyi/)
 
 Anyone can contribute to the OurGovernment.FYI project. Whether or not you know how to code we're looking for all types of contributors.
 
-1. Read [CONTRIBUTING.md](CONTRIBUTING.md) and Watch this Loom Video to see how to contribute.
+1. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [Watch these Loom Videos](https://loom.com/share/folder/491544e880b347cb8083481bfc45a163) to see how to contribute.
 
-The quick summary is
+1. You will need a [Github account](https://github.com/join). It's free and takes 15 seconds to sign up.
 
-1. Sign up or login for a [Github account](https://github.com/join). It's free and takes 15 seconds to sign up.
-
-1. Open a pull request with your changes. We get notified whenever a new PR is opened but if you need a fast erresponse, tweet tomiwa (@tomiwa1a) on Twitter or @atilatech on Instagram or Twitter
+1. Open a pull request with your changes. 
+    1. We get notified whenever a new PR is opened but if you need a faster response, tweet tomiwa (@tomiwa1a) on Twitter or @atilatech on Instagram or Twitter
 
 ## Quick Start
 
