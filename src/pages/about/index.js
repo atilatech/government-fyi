@@ -8,6 +8,7 @@ import conciseImg from './images/concise.svg'
 import nonpartisanImg from './images/nonpartisan.svg'
 import toolImg from './images/tool.svg'
 import Color from '../../layout/colors'
+import { SEO_META } from '../../data/Constants'
 
 export const Button = styled.a`
 	font-family: ${props=>props.theme.fonts.avant};
@@ -45,11 +46,11 @@ export const Button = styled.a`
 const Data = {
 	pageId: "about-page",
 	meta: {
-        canonicalUrl:"https://ourgovernment.fyi/about",
-        documentTitle:"OurGovernment.FYI 🇨🇦 – The simplest nonpartisan guide to Canada's 2019 Federal elections 🍁",
-        socialHeadline:"The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
-        socialDescription:"A nonpartisan guide to Canada's Federal elections, including taxes, climate, education, and more",
-        socialImage:"general-2.png",
+        canonicalUrl:`${SEO_META.url}about"`,
+        documentTitle: SEO_META.description,
+        socialHeadline: SEO_META.headline,
+        socialDescription: SEO_META.description,
+        socialImage: SEO_META.image,
     },
 	blocks: [
     {

@@ -6,7 +6,7 @@ import {Spacer} from '../../../layout/util'
 import FillRestWithLine from '../../static/TextAndLine'
 import {Link} from "react-router-dom";
 import {PartyPlatformPropTypes} from "../../../data/PartyPlatformData";
-import {slugify} from "../../../services/Utils";
+import {getDomainFromUrl, slugify} from "../../../services/Utils";
 /*
 A block of text
 takes a title and body of text
@@ -31,7 +31,7 @@ const Title = styled.h2`
 
 
 export const PlatformBlock = (props) => {
-    const {text, source, demographics, question} = props.partyPlatform;
+    const {text, source, sources_details, demographics, question} = props.partyPlatform;
 
     return(
         <React.Fragment>
@@ -45,6 +45,20 @@ export const PlatformBlock = (props) => {
                                 rel="noopener noreferrer">
                         (source)
                         </a>
+                    </React.Fragment>
+                }
+                {sources_details &&
+                    <React.Fragment>
+                        <br/>
+                        {sources_details.map( source_detail => (
+                            <React.Fragment>
+                            {' '}<a href={source_detail.url}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                {source_detail.title} ({getDomainFromUrl(source_detail.url)})
+                                </a>
+                            </React.Fragment>
+                        ))}
                     </React.Fragment>
                 }
             </li>

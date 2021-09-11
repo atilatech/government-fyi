@@ -1,16 +1,18 @@
 import React from 'react'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import LandingPage from "../../scenes/LandingPage/LandingPage";
+import { SEO_META } from '../../data/Constants';
+
 
 let Data = {
 	pageId:"home-page",
 	meta: {
-		canonicalUrl:"https://ourgovernment.fyi/",
-		documentTitle:"Canadian Federal Elections 2019 – The simplest nonpartisan guide",
-		socialHeadline:"The simplest nonpartisan voter guide for the Canadian federal elections",
-		socialDescription:"A nonpartisan guide to Canada's Federal elections, taxes, climate, education, and more",
-		socialImage:"general-2.png",
-	},
+        canonicalUrl:`${SEO_META.url}`,
+        documentTitle: SEO_META.description,
+        socialHeadline: SEO_META.headline,
+        socialDescription: SEO_META.description,
+        socialImage: SEO_META.image,
+    },
 	blocks: [
 		{
 			component: LandingPage,

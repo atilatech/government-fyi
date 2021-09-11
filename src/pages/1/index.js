@@ -5,6 +5,7 @@ import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatfor
 import {HOUSING_CONVERSATION, HOUSING_PLATFORMS} from "../../data/PartyPlatformDataHousing";
 import SectionTitleBlock from "../../components/page-blocks/blocks/SectionTitleBlock";
 import IMessageBlock from "../../components/page-blocks/blocks/IMessageBlock";
+import { CREATION_DATE } from '../../data/Constants';
 
 const partyPlatforms = HOUSING_PLATFORMS.map(PLATFORM => (
 	{
@@ -17,8 +18,8 @@ const Data = {
 	pageId:"housing",
 	propNum: 1,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 7:00:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
 		{

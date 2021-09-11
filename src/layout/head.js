@@ -7,6 +7,7 @@ import appleTouchIcon from './touch/apple-touch-icon-180x180.png'
 import appleLaunchImg from './touch/apple-launch-img.png'
 import touchIcon192 from './touch/touch-icon-192x192.png'
 import touchIcon144 from './touch/touch-icon-144x144.png'
+import { SEO_META } from '../data/Constants';
 
 
 /* This will go at the top of every page in the <head> tag unless overridden.
@@ -175,14 +176,7 @@ class Head extends React.Component{
   }
 }
 
-Head.defaultProps = {
-  url: "https://www.ourgovernment.fyi/",
-  title: "OurGovernment.FYI 🇨🇦 – The simplest nonpartisan guide to Canada's 2019 Federal elections 🍁 - ourgovernment.fyi",
-  headline: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
-  description: "The simplest nonpartisan voter guide for the 2019 Canadian federal elections",
-  image: "general-2.png",
-};
-
+Head.defaultProps = SEO_META;
 
 Head.propTypes = {
   url: PropTypes.string.isRequired,

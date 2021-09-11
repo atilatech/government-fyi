@@ -1,6 +1,7 @@
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
-import {CitationsMaster, HEALTHCARE, LOW_INCOME} from "./Constants";
+import {HEALTHCARE, LOW_INCOME} from "./Constants";
+import { ALL_CITATIONS } from "./Citations";
 
 
 export const CONSERVATIVES_HEALTHCARE = {
@@ -25,7 +26,7 @@ export const LIBERALS_HEALTHCARE = {
         {
             text: <span>Spend $6 billion as “down payment” over the next four years to ,
 
-                <Citation data={CitationsMaster.Pharmacare}>
+                <Citation data={ALL_CITATIONS.Pharmacare}>
 						implement pharmacare
                 </Citation>, universal access to family doctor, mental health services and palliative care
                 (people with serious illnesses)</span>,

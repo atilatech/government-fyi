@@ -7,6 +7,7 @@ import { PropMetaData } from 'pages/prop-attributes'
 // import Acronym from 'components/interactive/acronym'
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {JOBS_ECONOMY_PLATFORMS} from "../../data/PartyPlatformDataJobsEconomy";
+import { CREATION_DATE } from '../../data/Constants'
 
 const partyPlatforms = JOBS_ECONOMY_PLATFORMS.map(PLATFORM => (
 	{
@@ -19,7 +20,7 @@ const Data = {
 	pageId: "jobs-and-economy",
 	propNum: 2,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
+		dateCreated: new Date(CREATION_DATE),
 		dateModified: new Date('November 5, 2018 12:52:00')
 	},
 	blocks: [

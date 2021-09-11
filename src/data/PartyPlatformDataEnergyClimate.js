@@ -1,13 +1,23 @@
 import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
-import {CitationsMaster, CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import { ALL_CITATIONS } from "./Citations";
 import {EmojiLg} from "../components/static/iMessageStyles";
 
 export const CONSERVATIVES_ENERGY_CLIMATE = {
     party: "Conservative",
     topic: ENERGY_AND_CLIMATE,
     partyPlatforms: [
+        {
+            text: "Introduce a zero emissions vehicle rule based on the one in British Columbia: 30% of light duty vehicles sold must be zero emissions by 2030.",
+            sources_details: [
+                {
+                    url: "https://cpcassets.conservative.ca/wp-content/uploads/2021/04/15104504/24068610becf2561.pdf#page=5",
+                    title: "Secure the Environment"
+                }
+            ]
+        },
         {
             text: "Cancel the carbon tax",
             source: "https://www.conservative.ca/cpc/build-the-pipe/",
@@ -26,7 +36,7 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
         {
             text: <span>
                 Cancel
-                <Citation data={CitationsMaster.BillC69}>
+                <Citation data={ALL_CITATIONS.BillC69}>
 						Bill C-69
                 </Citation>
             </span>,
@@ -42,6 +52,15 @@ export const LIBERALS_ENERGY_CLIMATE = {
     party: "Liberal",
     topic: ENERGY_AND_CLIMATE,
     partyPlatforms: [
+        {
+            text: "Eliminate fossil fuel subsidies from 2025 to 2023 and phase-out government funding of the fossil fuel industr, including from Crown corporations (companies owned by the government). This is part of the Liberals' plans to reach net-zero emissions by 2050",
+            sources_details: [
+                {
+                    url: "https://liberal.ca/our-platform/eliminating-subsidies-and-public-financing-for-fossil-fuel/",
+                    title: "Eliminating Subsidies and Public Financing for Fossil Fuel"
+                }
+            ]
+        },
         {
             text: "phase out coal power by 2030 to help exceed the Paris climate change agreement",
             source: "https://www.liberal.ca/liberals-move-forward-to-legislate-net-zero-emissions-by-2050/",
@@ -196,7 +215,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
         from: "them",
         body:<span>
 							Hey, so oil is
-								<Citation data={CitationsMaster.OilAndEnvironment}> really bad for the environment </Citation>
+								<Citation data={ALL_CITATIONS.OilAndEnvironment}> really bad for the environment </Citation>
 						</span>
     },
     {
@@ -215,7 +234,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
     {
         from:"me",
         body:<span>woah, relax. That's going to cost me like
-							<Citation data={CitationsMaster.CarbonTaxCost}> $200-$400 </Citation>
+							<Citation data={ALL_CITATIONS.CarbonTaxCost}> $200-$400 </Citation>
 						</span>
     },
     {
@@ -240,7 +259,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
     {
         from:"me",
         body:<span>Apparently{' '}
-            <Citation data={CitationsMaster.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
+            <Citation data={ALL_CITATIONS.CarbonTaxNotEffective}>carbon tax only reduces emissions by 2%</Citation>.
 						</span>
     },
     {
@@ -251,7 +270,7 @@ export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
         from:"them",
         body:<span>
 							I mean
-							<Citation data={CitationsMaster.CarbonTaxIsEffective}>
+							<Citation data={ALL_CITATIONS.CarbonTaxIsEffective}>
 								27 Nobel Laureate economists released a statement saying that a Carbon tax
 								is the most effective way of lowering emissions
 							</Citation>.

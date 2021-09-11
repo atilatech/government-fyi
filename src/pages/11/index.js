@@ -10,13 +10,14 @@ import {PropMetaData} from 'pages/prop-attributes'
 import Citation from 'components/interactive/citation/citation'
 import Acronym from 'components/interactive/acronym'
 import {Acronyms, Citations} from './expandables'
+import { CREATION_DATE } from '../../data/Constants'
 
 const Data = {
 	pageId:"prop-11",
 	propNum: 11,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 7:00:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
 		{

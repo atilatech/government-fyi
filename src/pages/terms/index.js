@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import PageBuilder from 'components/page-blocks/aggregators/PageBuilder'
 import TextWithTitleBlock from 'components/page-blocks/blocks/TextWithTitleBlock'
 import PageTitleBlock from 'components/page-blocks/blocks/PageTitleBlock'
+import { SEO_META } from '../../data/Constants'
 
 const H3 = styled.h3`
 	margin-top: 15px;
@@ -11,12 +12,12 @@ const H3 = styled.h3`
 const Data = {
 	pageId: "terms-page",
 	meta: {
-		canonicalUrl:"https://www.ourgovernment.fyi/terms/",
-		documentTitle:"Terms of Serivce – ourgovernment.fyi",
-		socialHeadline:"Terms of Serivce – ourgovernment.fyi",
-		socialDescription:"If you're seeing this, somebody shared our terms and conditions page on social media. WTF.",
-		socialImage:"general-2.png",
-	},
+        canonicalUrl:`${SEO_META.url}`,
+        documentTitle: SEO_META.description,
+        socialHeadline: SEO_META.headline,
+        socialDescription: SEO_META.description,
+        socialImage: SEO_META.image,
+    },
 	blocks: [
     {
     	component: PageTitleBlock,

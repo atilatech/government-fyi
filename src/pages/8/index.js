@@ -3,6 +3,7 @@ import PropPageBuilder from 'components/page-blocks/aggregators/PropPageBuilder'
 
 import { SENIORS_PLATFORMS} from "../../data/PartyPlatformDataSeniors";
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
+import { CREATION_DATE } from '../../data/Constants'
 
 const partyPlatforms = SENIORS_PLATFORMS.map(PLATFORM => (
 	{
@@ -16,8 +17,8 @@ const Data = {
 	pageId:"seniors",
 	propNum: 8,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 7:00:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
 		...partyPlatforms,

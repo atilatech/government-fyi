@@ -4,6 +4,7 @@ import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 
 import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
 import {HEALTHCARE_PLATFORMS} from "../../data/PartyPlatformDataHealthcare";
+import { CREATION_DATE } from '../../data/Constants'
 
 const partyPlatforms = HEALTHCARE_PLATFORMS.map(PLATFORM => (
 	{
@@ -16,8 +17,8 @@ const Data = {
 	pageId:"healthcare",
 	propNum: 5,
 	meta: {
-		dateCreated: new Date('October 14, 2019 7:00:00'),
-		dateModified: new Date('October 14, 2019 7:00:00')
+		dateCreated: new Date(CREATION_DATE),
+		dateModified: new Date(CREATION_DATE)
 	},
 	blocks: [
 		{

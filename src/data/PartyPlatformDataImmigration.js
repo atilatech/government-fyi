@@ -1,6 +1,7 @@
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
-import {CitationsMaster, CLIMATE_CONSCIOUS, IMMIGRANTS, IMMIGRATION, STUDENTS} from "./Constants";
+import {CLIMATE_CONSCIOUS, IMMIGRANTS, IMMIGRATION, STUDENTS} from "./Constants";
+import { ALL_CITATIONS } from "./Citations";
 
 
 export const CONSERVATIVES_IMMIGRATION = {
@@ -14,7 +15,7 @@ export const CONSERVATIVES_IMMIGRATION = {
         {
             text: <span>
                 Close the loophole in the
-                <Citation data={CitationsMaster.SafeThirdCountryAct}>
+                <Citation data={ALL_CITATIONS.SafeThirdCountryAct}>
 						Safe Third Country Act
                 </Citation>
                 that

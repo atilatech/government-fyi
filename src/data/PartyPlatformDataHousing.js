@@ -1,4 +1,5 @@
-import {CitationsMaster, CLIMATE_CONSCIOUS, FOREIGNERS, HOMEOWNERS} from "./Constants";
+import {CLIMATE_CONSCIOUS, FOREIGNERS, HOMEOWNERS} from "./Constants";
+import { ALL_CITATIONS } from "./Citations";
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
 import {EmojiLg} from "../components/static/iMessageStyles";
@@ -8,7 +9,7 @@ export const CONSERVATIVE_HOUSING = {
     topic: "Housing",
     partyPlatforms: [
         {
-            text: <span>Increase <Citation data={CitationsMaster.MortgageTermCalculator}>mortgage term length</Citation> to 30 years for first-time homebuyers</span>,
+            text: <span>Increase <Citation data={ALL_CITATIONS.MortgageTermCalculator}>mortgage term length</Citation> to 30 years for first-time homebuyers</span>,
             source: "https://www.conservative.ca/andrew-scheer-announces-four-point-plan-to-make-home-ownership-more-affordable/",
         },
         {
@@ -33,7 +34,7 @@ export const LIBERAL_HOUSING = {
     partyPlatforms: [
         {
             text: <span>Make it harder for foreigners to speculate on Canadian real estate market through a{' '}
-                <Citation data={CitationsMaster.SpeculationTax}>
+                <Citation data={ALL_CITATIONS.SpeculationTax}>
                 speculation tax.
                 </Citation>
             </span>,
@@ -190,7 +191,7 @@ export const HOUSING_CONVERSATION = [
     {
         from:"me",
         body:<span>That's literally{' '}
-            <Citation data={CitationsMaster.NIMBYISM}>NIMBYISM</Citation>.
+            <Citation data={ALL_CITATIONS.NIMBYISM}>NIMBYISM</Citation>.
 						</span>
     },
     {
@@ -224,7 +225,7 @@ export const HOUSING_CONVERSATION = [
     {
         from:"them",
         body:<span>What we need is a
-            <Citation data={CitationsMaster.SpeculationTax}>
+            <Citation data={ALL_CITATIONS.SpeculationTax}>
                 speculation or foreign buyer's tax.
                 </Citation>
             </span>
@@ -232,7 +233,7 @@ export const HOUSING_CONVERSATION = [
     {
         from: "me",
         body:<span>Wait, won't that
-                <Citation data={CitationsMaster.SpeculationTaxForeignersRealEstate}>
+                <Citation data={ALL_CITATIONS.SpeculationTaxForeignersRealEstate}>
                           decrease the value of your house
                 </Citation>
             </span>
