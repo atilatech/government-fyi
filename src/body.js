@@ -32,7 +32,7 @@ const Body = (props) => {
         <Route path='/about' component={AboutPage}/>
         <Route path='/people/:demographic' component={PeopleDetail}/>
         <Route path='/people' component={People}/>
-        <Route path='/terms' component={TermsPage}/>
+        {/* <Route path='/terms' component={TermsPage}/> */}
         <Route path='/donate' component={DonatePage}/>
         <Route component={Page404}/>
       </Switch>
@@ -46,7 +46,7 @@ const HomePage = mkLoadable(import("pages/home/index"));
 const AboutPage = mkLoadable(import("pages/about/index"));
 const People = mkLoadable(import("pages/people/People"));
 const PeopleDetail = mkLoadable(import("pages/people/PeopleDetail"));
-const TermsPage = mkLoadable(import("pages/terms/index"));
+// const TermsPage = mkLoadable(import("pages/terms/index"));
 mkLoadable(import("pages/subscribe/index"));
 const DonatePage = mkLoadable(import("pages/donate/index"));
 mkLoadable(import("pages/procrastinators/index"));
