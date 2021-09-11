@@ -65,3 +65,18 @@ export function shuffle(array) {
 
     return array;
 }
+
+/**
+ * see: https://stackoverflow.com/a/8498629
+ * @param {*} url 
+ * @returns 
+ */
+export function getDomainFromUrl(url, excludeSubDomains= true) {
+    const matches = url.match(/^https?:\/\/([^/?#]+)(?:[/?#]|$)/i);
+    let domain = matches && matches[1];  // domain will be null if no match is found
+
+    if (excludeSubDomains) {
+        domain = domain.split(".").slice(-2).join(".");
+    }
+    return domain
+}
