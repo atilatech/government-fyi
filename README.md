@@ -1,7 +1,8 @@
 # Government-fyi
-Inspired by [ballotfyi](https://github.com/cjimmy/ballotfyi/)
 
-We help you understand how our government works.
+A Simple Non-Partisan guide to Canadian Elections 🇨🇦.
+
+https://ourgovernment.fyi/
 
 [![Build Status](https://travis-ci.org/atilatech/government-fyi.svg?branch=master)](https://travis-ci.org/atilatech/government-fyi)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d06ff187-a109-45ac-bdab-7ba48b67b046/deploy-status)](https://app.netlify.com/sites/ourgovernment/deploys)
@@ -9,19 +10,23 @@ We help you understand how our government works.
 
 ![Government FYI landing page](https://i.imgur.com/lfhC9UR.png)
 
+Inspired by [ballotfyi](https://github.com/cjimmy/ballotfyi/)
+
 ## How to Contribute
 
-Anyone can join the Our Government FYI project.
+Anyone can join the Our Government FYI project. Whether or not you know how to code we're looking for all types of contributors.
 
-Read this [wiki on how to Contribute to Government FYI](https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI)
+1. Watch this Loom Video to see how to contribute. TODO make a Loom video showing how to contribute.
 
-1. If you want to research and write about a politcal topic on the webiste
-you can add it to [this google doc](https://docs.google.com/document/d/1r0bxUVZR_ernVrV0Jhwy7-1weESWNs4dJC-ZPKPyFwQ/edit?usp=sharing).
+1. All you need is a [Github account](https://github.com/join). It's free and takes 15 seconds to sign up.
 
-2. If you want to help write the code for the website. 
-Tweet to [Tomiwa](http://tomiwa.ca) with what you want to help with and we can give you write access to the Repo
+1. To add a party policy. go to [`data`](https://github.com/atilatech/government-fyi/tree/master/src/data) and make a pull request
 
-## Getting Started
+Questions or comments? Tweet tomiwa (@tomiwa1a) or @atilatech on Instagram or Twitter
+
+## Quick Start
+
+You only have to do this step if you are making a code change, for policy changes you can do it all from the web browser.
 
 1. `npm install`
 2. `npm start`
