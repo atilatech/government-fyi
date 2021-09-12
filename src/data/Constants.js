@@ -15,10 +15,14 @@ export const FOREIGNERS = 'foreigners';
 export const LOW_INCOME = 'low income';
 export const WOMEN = 'women';
 export const VISIBLE_MINORITY = 'visible minority';
+export const PARENTS = 'parents';
+export const INDIGENOUS = 'indigenous';
 export const SENIORS = 'seniors';
 
 export const ALL_DEMOGRAPHICS = [
     STUDENTS,
+    PARENTS,
+    INDIGENOUS,
     YOUNG_PEOPLE,
     IMMIGRANTS,
     WOMEN,
@@ -51,6 +55,8 @@ export const ELECTION_TOPICS = [
     TAXES,
     SENIORS_TOPIC,
 ];
+
+export const CONTRIBUTION_INSTRUCTIONS_LINK = "https://github.com/atilatech/government-fyi/tree/update_2021_policies#how-to-contribute"
 
 export const ELECTION_YEAR = 2021;
 export const CREATION_DATE = `September 11, ${ELECTION_YEAR} 7:00:00`;
