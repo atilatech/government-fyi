@@ -1,7 +1,7 @@
 import {EmojiLg} from "../components/static/iMessageStyles";
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
-import {EDUCATION, INDIGENOUS, PARENTS, STUDENTS} from "./Constants";
+import {CONTRIBUTION_INSTRUCTIONS_LINK, EDUCATION, INDIGENOUS, PARENTS, STUDENTS} from "./Constants";
 import { ALL_CITATIONS } from "./Citations";
 
 export const EDUCATION_CONVERSATION_MESSAGES = [
@@ -234,7 +234,7 @@ export const BLOC_QUEBECOIS_EDUCATION = {
         {
             text: <>
             The only information for Bloc Quebecois we could find on this issue was written in French. If anyone undestands French and wants to add their policy. You can
-            {' '}<a href="https://github.com/atilatech/government-fyi"
+            {' '}<a href={CONTRIBUTION_INSTRUCTIONS_LINK}
              target="_blank" rel="noopener noreferrer">contribute policy information</a>.
             </>,
             source_details: [
@@ -256,7 +256,7 @@ export const PEOPLES_EDUCATION = {
         },
         {
             text: <span>If you know some you can{' '}
-                <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
+                <a href={CONTRIBUTION_INSTRUCTIONS_LINK}
                    target="_blank"
                    rel="noopener noreferrer">
                 contribute them here
