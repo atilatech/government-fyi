@@ -237,9 +237,9 @@ const Data = {
       data: {
         title: "Contact",
         text: <span id="contact">
-            If you think this site is great or it's literally the worst thing ever.
-            Of anything inbetween and feedback on how to improve.
-            Please let us know!
+            If you think this site is great or it's literally the worst thing ever or
+             anything inbetween. Or if you have feedback on how we could improve,
+            please let us know!
             <br/><br/>
 
             Tweet us{' '}
