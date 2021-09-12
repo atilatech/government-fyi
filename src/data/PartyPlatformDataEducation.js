@@ -186,7 +186,7 @@ export const NDP_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Remove interest from federal student loans",
+            text: "Remove interest on all current and future student loans",
             source: "https://www.macleans.ca/rankings/2021-federal-election-platform-guide/#:~:text=Remove%20interest%20permanently%20on%20all%20federal%20student%20loans.",
             source_details: [
                 {
