@@ -211,7 +211,7 @@ export const GREEN_EDUCATION = {
     topic: EDUCATION,
     partyPlatforms: [
         {
-            text: "Abolish post-secondary education tuition and Cancel all federally held student loan debt",
+            text: "Make college and university tuition free for all Canadian students and cancel all federally held student loan debt",
             source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Abolish%20post-secondary%20education%20tuition",
         },
         {
