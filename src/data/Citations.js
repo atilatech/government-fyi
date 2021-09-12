@@ -190,5 +190,23 @@ export const ALL_CITATIONS = {
             The anti NIMBYISM perspective says that building more high homes and higher density homes,
             creates more affordable housing for everyone
         </span>
+    },
+    FRACKING: {
+        link: "https://www.vox.com/2014/4/14/18076690/fracking",
+        // TODO add Pros and cons sections: 
+        publication: "VOX",
+        headline: "Fracking, explained",
+        directQuote: <span>
+            Fracking is the process of injecting water, chemicals and sand underground at a very high pressure
+            to release the oil trapped inside.
+            <br/><br/>
+
+            <a href="https://www.vox.com/2014/4/14/18076690/fracking" target="_blank" rel="noopener noreferrer">Some people say</a> Fracking is bad because it can contaminate the groundwater and pollute the air.
+            <br/><br/>
+
+            <a href="https://www.forbes.com/sites/ucenergy/2018/02/20/fracking-has-its-costs-and-benefits-the-trick-is-balancing-them/?sh=464d7ca619b4" target="_blank" rel="noopener noreferrer">Some people say</a> Fracking is good because it  lowers carbon emissions when
+            used in the place of coal. It's also cheaper than other methods of getting gas.
+            Therefore, consumers pay lower gas prices and mroe jobs are added to the economy.
+        </span>
     }
 };

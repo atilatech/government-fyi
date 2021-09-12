@@ -122,39 +122,49 @@ export const GREEN_ENERGY_CLIMATE = {
     topic: ENERGY_AND_CLIMATE,
     partyPlatforms: [
         {
-            text: "Reduce greenhouse gas emissions by 60 percent by 2030, zero emissions by 2050",
-            source: "https://www.greenparty.ca/en/mission-possible",
+            text: "Ban the sale of all passenger cars powered by gas by 2030.",
+            source: "https://www.greenparty.ca/en/platform/green-future#:~:text=Ban%20the%20sale%20of%20all%20internal%20combustion%20engine%20passenger%20vehicles%20by%202030%2C%20and%20expand%20charging%20stations%20for%20electric%20vehicles%2C%20including%20charging%20stations%20in%20smaller%20communities%20and%20rural%20areas.%C2%A0",
+        },
+        {
+            text: "Expand charging stations for electric vehicles, including charging stations in smaller communities and rural areas.",
+            source: "https://www.greenparty.ca/en/platform/green-future#:~:text=Ban%20the%20sale%20of%20all%20internal%20combustion%20engine%20passenger%20vehicles%20by%202030%2C%20and%20expand%20charging%20stations%20for%20electric%20vehicles%2C%20including%20charging%20stations%20in%20smaller%20communities%20and%20rural%20areas.%C2%A0",
+        },
+        {
+            text: "No construction of new oil and gas pipelines and exploration projects, including in the offshore. End the expansion of the federally owned Trans Mountain pipeline.",
+            source: "https://www.macleans.ca/rankings/2021-federal-election-platform-guide/#:~:text=No%20construction%20of%20new%20oil%20and%20gas%20pipelines%2C%20including%20an%20end%20to%20the%20federally%20owned%20Trans%20Mountain%20pipeline%20expansion.",
+            sources_details: [
+                {
+                    title: "Green Party opposes the construction of any new gas or oil pipelines in Quebec",
+                    url: "https://www.greenparty.ca/en/media-release/2021-05-11/green-party-opposes-construction-any-new-gas-or-oil-pipelines-quebec"
+                },
+                {
+                    title: "A Green Future",
+                    url: "https://www.greenparty.ca/en/platform/green-future#:~:text=Cancel%20all%20new%20oil%20exploration%20projects%2C%20including%20in%20the%20off-shore"
+                },
+            ],
             demographics: [
                 OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
             ],
         },
         {
-            text: "Ban fracking",
+            text: <>Ban <Citation data={ALL_CITATIONS.FRACKING}>Fracking</Citation>  and end all subsidies to the fossil fuel sector</>,
+            source: "https://www.greenparty.ca/en/platform/green-future#:~:text=Ban%20hydraulic%20fracturing%20(fracking)",
             demographics: [
                 OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
             ],
         },
         {
-            text: "Remove all fossil fuel generation from electrical grid by 3030",
+            text: "Require federal public investment funds (including the Canada Pension Plan Investment Board) to divest from fossil fuels",
+            source: "https://www.greenparty.ca/en/platform/green-future#:~:text=Require%20federal%20public%20investment%20funds%20(including%20the%20Canada%20Pension%20Plan%20Investment%20Board)%20to%20divest%20from%20fossil%20fuels",
             demographics: [
                 OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
             ],
         },
         {
-            text: "Replace all fuel cars with electric vehicles by 2040",
+            text: "Beginning in 2022 and up to 2030, increase carbon taxes by $25 per tonne each year.",
+            source: "https://www.greenparty.ca/en/platform/green-future#:~:text=Beginning%20in%202022%20and%20up%20to%202030%2C%20increase%20carbon%20taxes%20by%20%2425%20per%20tonne%20each%20year.%C2%A0",
             demographics: [
                 OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
-            ],
-        },
-        {
-            text: "Build a cross-country electric vehicle charging system ",
-            demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
             ],
         },
     ],
@@ -209,6 +219,19 @@ export const ENERGY_CLIMATE_PLATFORMS = [
     GREEN_ENERGY_CLIMATE, BLOC_QUEBECOIS_ENERGY_CLIMATE,PEOPLES_ENERGY_CLIMATE
 
 ];
+
+ENERGY_CLIMATE_PLATFORMS
+    .filter(platform =>platform.party!=="People's")
+    .forEach(platform => {
+
+        platform.partyPlatforms.forEach( idea => {
+
+            if (!idea.demographics) {
+                idea.demographics = []
+            }
+            idea.demographics.push(CLIMATE_CONSCIOUS)
+        })
+    });
 
 export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
     {
