@@ -59,23 +59,27 @@ export const LIBERALS_ENERGY_CLIMATE = {
                     url: "https://liberal.ca/our-platform/eliminating-subsidies-and-public-financing-for-fossil-fuel/",
                     title: "Eliminating Subsidies and Public Financing for Fossil Fuel"
                 }
-            ]
-        },
-        {
-            text: "phase out coal power by 2030 to help exceed the Paris climate change agreement",
-            source: "https://www.liberal.ca/liberals-move-forward-to-legislate-net-zero-emissions-by-2050/",
+            ],
             demographics: [
                 OIL_WORKERS,
                 CLIMATE_CONSCIOUS,
             ],
         },
         {
-            text: "Ban single use plastics",
-            source: "https://www.liberal.ca/liberals-move-forward-to-legislate-net-zero-emissions-by-2050/",
+            text: "Make sure the oil and gas sector reduces emissions at a rate needed to achieve net-zero by 2050, with 5-year targets to stay on track to achieving this shared goal", //TODO add Citation explaining what net-zero means
+            source: "https://liberal.ca/our-platform/cap-and-cut-emissions-from-oil-and-gas/#:~:text=Make%20sure%20the%20oil%20and%20gas%20sector%20reduces%20emissions%20at%20a%20pace%20and%20scale%20needed%20to%20achieve%20net-zero%20by%202050%2C%20with%205-year%20targets%20to%20stay%20on%20track%20to%20achieving%20this%20shared%20goal",
+            demographics: [
+                OIL_WORKERS,
+                CLIMATE_CONSCIOUS,
+            ],
+        },
+        {
+            text: "Require that all plastic packaging in Canada contain at least 50% recycled content by 2030.",
+            source: "https://liberal.ca/our-platform/zero-plastic-waste-by-2030/",
         },
         {
             text: "Plant two billion trees over ten years",
-            source: "https://www.liberal.ca/liberals-move-forward-to-plant-two-billion-trees/",
+            source: "https://liberal.ca/our-platform/natural-climate-solutions/#:~:text=planting%202%20billion%20trees%20across%20the%20country",
             demographics: [
                 CLIMATE_CONSCIOUS,
             ]
