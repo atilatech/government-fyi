@@ -61,7 +61,7 @@ export const PlatformBlock = (props) => {
                     </ol>
                 }
             </li>
-            {demographics &&
+            {demographics && demographics.length  >0 &&
             <React.Fragment>
                 <strong>Groups Affected:</strong> {' '}
             {demographics.map(group => (
@@ -101,7 +101,9 @@ function partyToTitleTransform(party){
     return title;
 }
 const PartyPlatformBlock = (props) => {
-    const {party, partyPlatforms, nColWidth} = props.data;
+    // TODO figure out why this is causing ypeError: Converting circular structure to JSON
+    // const {party, partyPlatforms, nColWidth} = PlatformUtils.addMissingPlatformData(props.data);
+    const {party, partyPlatforms, nColWidth} = props.data
 
     const nWidth = nColWidth || 6; // default hack
     const offset = Math.floor((12-nWidth)/2);

@@ -197,7 +197,7 @@ ENERGY_CLIMATE_PLATFORMS
                 idea.demographics.push(CLIMATE_CONSCIOUS)
             })
         }
-    });
+});
 
 export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
     {
