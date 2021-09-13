@@ -10,7 +10,7 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
     topic: ENERGY_AND_CLIMATE,
     partyPlatforms: [
         {
-            text: "Introduce a zero emissions vehicle rule based on the one in British Columbia: 30% of light duty vehicles sold must be zero emissions by 2030.",
+            text: "Require that 30% of light duty vehicles (e.g. passenger vehicles) sold must be zero emissions by 2030. (Nased on the British Columbia rule)",
             sources_details: [
                 {
                     url: "https://cpcassets.conservative.ca/wp-content/uploads/2021/04/15104504/24068610becf2561.pdf#page=5",
@@ -19,31 +19,25 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
             ]
         },
         {
-            text: "Cancel the carbon tax",
-            source: "https://www.conservative.ca/cpc/build-the-pipe/",
+            text: "Requiring that every building where the federal government has employees or offers services to the public and provides parking to have a charging station by 2025",
             demographics: [
                 OIL_WORKERS,
                 CLIMATE_CONSCIOUS,
             ],
         },
         {
-            text: "End the shipping ban in British Columbia",
-            source: "https://www.conservative.ca/cpc/build-the-pipe/",
+            text: "Require 15% of downstream natural gas consumption to be renewable by 2030. (based on the British Columbia rule)", // TODO: explain "downstream natural gas consumption"
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/04/15104504/24068610becf2561.pdf#page=7",
             demographics: [
                 OIL_WORKERS,
             ],
         },
         {
+            // TODO make Personal Low Carbon Savings Account a Citation
             text: <span>
-                Cancel
-                <Citation data={ALL_CITATIONS.BillC69}>
-						Bill C-69
-                </Citation>
+                Introduce a Personal Low Carbon Savings Account: each time Canadians buy Hydrocarbon-based fuel that money will be applied to an account that can be used to buy clean energy products. E.g. bicyycle, public transit, electric vehicle, energy efficient furnace, energy efficient windows etc.
             </span>,
-            demographics: [
-                OIL_WORKERS,
-                CLIMATE_CONSCIOUS,
-            ]
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/04/15104504/24068610becf2561.pdf#page=4",
         }
     ],
 };
