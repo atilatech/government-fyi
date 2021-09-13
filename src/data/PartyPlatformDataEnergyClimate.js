@@ -1,7 +1,6 @@
-import {Citations} from "../pages/1/expandables";
 import React from "react";
 import Citation from "../components/interactive/citation/citation";
-import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, OIL_WORKERS} from "./Constants";
+import {CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, IncompletePartyInformation, OIL_WORKERS} from "./Constants";
 import { ALL_CITATIONS } from "./Citations";
 import {EmojiLg} from "../components/static/iMessageStyles";
 
@@ -35,7 +34,7 @@ export const CONSERVATIVES_ENERGY_CLIMATE = {
         {
             // TODO make Personal Low Carbon Savings Account a Citation
             text: <span>
-                Introduce a Personal Low Carbon Savings Account: each time Canadians buy Hydrocarbon-based fuel that money will be applied to an account that can be used to buy clean energy products. E.g. bicyycle, public transit, electric vehicle, energy efficient furnace, energy efficient windows etc.
+                Introduce a Personal Low Carbon Savings Account: each time Canadians buy Hydrocarbon-based fuel that money will be applied to an account that can be used to buy clean energy products. E.g. bicycle, public transit, electric vehicle, energy efficient furnace, energy efficient windows etc.
             </span>,
             source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/04/15104504/24068610becf2561.pdf#page=4",
         }
@@ -86,31 +85,22 @@ export const NDP_ENERGY_CLIMATE = {
     topic: ENERGY_AND_CLIMATE,
     partyPlatforms: [
         {
-            text: "Electrify transit fleets by 2030",
-            source: "https://action.ndp.ca/page/-/2019/Q2/Power-to-change-full-announcement.pdf",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-            ],
+            text: "Reduce emissions by at least 50% from 2005 levels by 2030 and eliminate fossil fuel subsidies", 
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=46",
         },
         {
-            text: "Eliminate fossil fuel subsidies immediately and get Canada powered by net carbon-free electricity by 2030",
-            demographics: [
-                OIL_WORKERS,
-            ],
+            text: "Set a target of net carbon-free electricity by 2030, and move to 100% nonemitting electricity by 2040."
         },
         {
-            text: "Reducing Canada’s greenhouse gas emissions to 450 Mt by 2030",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-                OIL_WORKERS,
-            ]
+            text: "Renovate all buildings in Canada by 2050 to make them energy efficient, beginning with upgrades to all buildings built before 2020 in the next 20 years",
         },
         {
-            text: "Ban all single-use plastics by 2022",
-            source: "https://www.ndp.ca/news/ndp-lets-ban-single-use-plastics-2022",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-            ]
+            text: "Immediately ban single-use plastics", 
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=57",
+        },
+        {
+            text: "Make having a healthy environment a Canadian human right by creating a Canadian Environmental Bill of Right",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=57"
         }
     ],
 };
@@ -171,44 +161,15 @@ export const GREEN_ENERGY_CLIMATE = {
 export const BLOC_QUEBECOIS_ENERGY_CLIMATE = {
     party: "Bloc Quebecois",
     topic: ENERGY_AND_CLIMATE,
-    partyPlatforms: [
-        {
-            text: "Reject the Energy East pipeline that would run through Quebec",
-            source: "https://www.bnnbloomberg.ca/2019-federal-election-platform-tracker-where-the-major-parties-stand-so-far-1.1308714#ENERGY%20&%20ENVIRONMENT",
-        },
-        {
-            text: "Give Quebec veto over any pipeline that runs through the province",
-            source: "https://newsinteractives.cbc.ca/elections/federal/2019/party-platforms/",
-        },
-        {
-            text: "End fossil fuel subsidies",
-            source: "http://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
-        }
-    ],
+    incomplete: true,
+    partyPlatforms: [],
 };
 
 export const PEOPLES_ENERGY_CLIMATE = {
     party: "People's",
     topic: ENERGY_AND_CLIMATE,
-    partyPlatforms: [
-        {
-            text: "Cancel Bill C-69",
-            source: "https://www.bnnbloomberg.ca/2019-federal-election-platform-tracker-where-the-major-parties-stand-so-far-1.1308714#ENERGY%20&%20ENVIRONMENT",
-        },
-        {
-            text: "Give Quebec veto over any pipeline that runs through the province",
-            source: "https://newsinteractives.cbc.ca/elections/federal/2019/party-platforms/",
-        },
-        {
-            text: <span>
-                Privatize Trans Mountain.
-                <Citation data={Citations['1']}>
-						Why privatize Trans Mountain?
-                </Citation>
-            </span>,
-            source: "https://www.peoplespartyofcanada.ca/pipelines_allowing_our_oil_and_gas_industry_to_grow",
-        }
-    ],
+    incomplete: true,
+    partyPlatforms: [],
 };
 
 
@@ -219,16 +180,23 @@ export const ENERGY_CLIMATE_PLATFORMS = [
 ];
 
 ENERGY_CLIMATE_PLATFORMS
-    .filter(platform =>platform.party!=="People's")
     .forEach(platform => {
 
-        platform.partyPlatforms.forEach( idea => {
+        if (platform.incomplete) {
+            platform.partyPlatforms.push(
+                {
+                    text: <IncompletePartyInformation />
+                }
+            )
+        } else {
+            platform.partyPlatforms.forEach( idea => {
 
-            if (!idea.demographics) {
-                idea.demographics = []
-            }
-            idea.demographics.push(CLIMATE_CONSCIOUS)
-        })
+                if (!idea.demographics) {
+                    idea.demographics = []
+                }
+                idea.demographics.push(CLIMATE_CONSCIOUS)
+            })
+        }
     });
 
 export const ENERGY_CLIMATE_CARBON_TAX_CONVERSATION = [
