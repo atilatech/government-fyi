@@ -1,4 +1,5 @@
 // export const RECENT_GRADS = 'recent grads';
+import React from "react";
 import LinksBlock from "../components/page-blocks/blocks/LinksBlock";
 import SectionTitleBlock from "../components/page-blocks/blocks/SectionTitleBlock";
 import { References } from "./References";
@@ -56,7 +57,7 @@ export const ELECTION_TOPICS = [
     SENIORS_TOPIC,
 ];
 
-export const CONTRIBUTION_INSTRUCTIONS_LINK = "https://github.com/atilatech/government-fyi/tree/update_2021_policies#how-to-contribute"
+export const CONTRIBUTION_INSTRUCTIONS_LINK = "https://github.com/atilatech/government-fyi#how-to-contribute"
 
 export const ELECTION_YEAR = 2021;
 export const CREATION_DATE = `September 11, ${ELECTION_YEAR} 7:00:00`;
@@ -95,3 +96,10 @@ export const ReferencesBlock = [
         }
     }
 ];
+
+export const IncompletePartyInformation = () => (
+    (<React.Fragment>
+        Information for this party is incomplete, however, you can <a href={CONTRIBUTION_INSTRUCTIONS_LINK}
+                 target="_blank" rel="noopener noreferrer">contribute policy information here</a>.
+    </React.Fragment>)
+);

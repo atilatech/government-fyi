@@ -1,7 +1,8 @@
 import Citation from "../components/interactive/citation/citation";
 import React from "react";
-import {HEALTHCARE, LOW_INCOME} from "./Constants";
+import {HEALTHCARE, SENIORS, STUDENTS} from "./Constants";
 import { ALL_CITATIONS } from "./Citations";
+import { PlatformUtils } from "services/PlatformUtils";
 
 
 export const CONSERVATIVES_HEALTHCARE = {
@@ -9,12 +10,21 @@ export const CONSERVATIVES_HEALTHCARE = {
     topic: HEALTHCARE,
     partyPlatforms: [
         {
-            text: "Spend $1.5 billion to buy new MRI and CT machines across Canada",
-            source: "https://www.conservative.ca/andrew-scheer-to-invest-1-5-billion-to-replace-and-purchase-new-mri-and-ct-machines/",
+            text: "Offer employers a tax credit of 25 per cent of the cost of additional mental health coverage for the first three years after adding it to employee benefit plans, for $29 million over five years.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=33",
+        },
+        // TODO addd citation for Bill
+        {
+            text: <>Reinstate the rule that patients must wait 10-days before seeking medical assistance in dying, restore the requirement for two independent witnesses to be present and repeal the provision of Bill C-7 that allows medical assistance in dying for patients with mental health challenges.</>,
+            source: "http://s3.documentcloud.org/documents/6236510/Morneau-letter-to-Scheer.pdf#page=34",
         },
         {
-            text: "Increase the amount of money the federal government gives to provinces for healthcare by at least three per cent every year",
-            source: "http://s3.documentcloud.org/documents/6236510/Morneau-letter-to-Scheer.pdf",
+            text: <>Provide $1 billion over five years to boost funding for Indigenous mental health and drug treatment programs.</>,
+            source: "http://s3.documentcloud.org/documents/6236510/Morneau-letter-to-Scheer.pdf#page=60",
+        },
+        {
+            text: <>Invest $325 over three years to create 1,000 residential drug treatment beds and build 50 recovery community centres.</>,
+            source: "http://s3.documentcloud.org/documents/6236510/Morneau-letter-to-Scheer.pdf#page=29",
         },
     ],
 };
@@ -24,13 +34,30 @@ export const LIBERALS_HEALTHCARE = {
     topic: HEALTHCARE,
     partyPlatforms: [
         {
-            text: <span>Spend $6 billion as “down payment” over the next four years to ,
-
-                <Citation data={ALL_CITATIONS.Pharmacare}>
-						implement pharmacare
-                </Citation>, universal access to family doctor, mental health services and palliative care
-                (people with serious illnesses)</span>,
-            source: "https://globalnews.ca/news/5939030/trudeau-pledges-6b-to-kickstart-talks-on-health-care-national-pharmacare-with-provinces/",
+            text: "No longer provide charity status to anti-abortion organizations (for example, Crisis Pregnancy Centres) that provide dishonest counseling to women about their rights and about the options available to them at all stages of the pregnancy.",
+            source: "https://liberal.ca/our-platform/protecting-your-sexual-and-reproductive-health-and-rights/#:~:text=No%20longer%20provide%20charity%20status%20to%20anti-abortion%20organizations"
+        },
+        {
+            text: "Make a law that no matter where someone lives, they have access to publicly available sexual and reproductive health services. If provinces don't meet this standard they will get less money from the federal government.",
+            source: "https://liberal.ca/our-platform/protecting-your-sexual-and-reproductive-health-and-rights/#:~:text=no%20matter%20where%20someone%20lives%2C%20that%20they%20have%20access%20to%20publicly%20available%20sexual%20and%20reproductive%20health%20services.",
+        },
+        {
+            text: "Raise wages for personal support workers, including a guaranteed minimum wage of at least $25 per hour.",
+            source: "https://liberal.ca/our-platform/better-working-conditions-for-personal-support-workers/#:~:text=Raise%20wages%20for%20personal%20support%20workers",
+            demographics: [
+                SENIORS,
+            ],
+        },
+        {
+            text: "Increase the maximum student loans debt relief that family doctors, residents in family medicine, nurse practitioners, or nurses are eligible for by 50% (from $40,000 to $60,000 over 5 years)",
+            source: "https://liberal.ca/our-platform/increasing-rural-and-underserved-communities-access-to-health-care/#:~:text=increasing%20by%2050%25%20(from%20%2440%2C000%20up%20to%20%2460%2C000%20over%205%20years)%2C",
+            demographics: [
+                STUDENTS,
+            ],
+        },
+        {
+            text: "Offer health care professionals, a one-time income tax deduction of up to $15,000 over their first 3 years of practice to help with the costs of setting up a practice.",
+            source: "https://liberal.ca/our-platform/increasing-rural-and-underserved-communities-access-to-health-care/#:~:text=Offer%20health%20care%20professionals%2C%20who%20are%20just%20starting%20out%20in%20their%20careers%2C%20a%20one-time%20income%20tax%20deduction%20of%20up%20to%20%2415%2C000",
         }
     ],
 };
@@ -40,12 +67,30 @@ export const NDP_HEALTHCARE = {
     topic: HEALTHCARE,
     partyPlatforms: [
         {
-            text: "Spend $10 billion a year to create universal pharmacare program by 2020",
-            source: "https://www.bnnbloomberg.ca/ndp-s-jagmeet-singh-highlights-pledge-for-universal-drug-coverage-1.1319460",
+            text: <>Expand public health care to include <Citation data={ALL_CITATIONS.Pharmacare}>
+            Pharmacare
+    </Citation>.</>,
+            source: "https://www.greenparty.ca/en/our-vision/health-care#:~:text=Expand%20public%20health%20care%20to%20include%20pharmacare",
         },
         {
-            text: "Spend $1.9 billion in Public dental coverage for households making less than $70k per year",
+            text: "End private, for-profit long-term care and bring long-term care homes under the government owned company, Revera.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=64",
+            demographics: [
+                SENIORS
+            ]
         },
+        {
+            text: "End the ban on blood donation by men who have sex with anyone assigned male at birth. Instead use behaviour-based screening.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=111"
+        },
+        {
+            text: "Enforce the Canada Health Act to require all provinces to make medical and surgical abortion available in all areas of the country.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=110"
+        },
+        {
+            text: "Provide mental health care for uninsured Canadians.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=67"
+        }
     ],
 };
 
@@ -54,17 +99,18 @@ export const GREEN_HEALTHCARE = {
     topic: HEALTHCARE,
     partyPlatforms: [
         {
-            text: "Expand health insurance to include Pharmacare for everyone as well as free dental care for low-income Canadians",
-            source: "https://www.greenparty.ca/en/platform/renew-social-contract#health-care",
-            demographics: [
-                LOW_INCOME,
-            ],
+            text: <>Expand public health care to include <Citation data={ALL_CITATIONS.Pharmacare}>
+            Pharmacare
+    </Citation>, create a government company to bulk purchase and dispense prescription drugs.</>,
+            source: "https://www.greenparty.ca/en/our-vision/health-care#:~:text=Expand%20public%20health%20care%20to%20include%20pharmacare",
         },
         {
-            text: "Address the opioid crisis as a health-care issue, not a criminal issue, by declaring a national health emergency.",
+            text: "Decriminalize possession of illicit drugs for personal use. Provide automatic pardons to anyone convicted in the past of simple possession of cannabis and ensure that any records of such offences and circumstances are expunged from police records.",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Decriminalize%20possession%20of%20illicit%20drugs%20for%20personal%20use"
         },
         {
-            text: "Ban for-profit blood collection services and remove barriers to blood donations not based on science",
+            text: "Add a 10% tax on sugary drinks",
+            source: "https://www.greenparty.ca/sites/default/files/platform_2021_en_web_-_20210907.pdf#page=62"
         },
     ],
 };
@@ -72,28 +118,15 @@ export const GREEN_HEALTHCARE = {
 export const BLOC_QUEBECOIS_HEALTHCARE = {
     party: "Bloc Quebecois",
     topic: HEALTHCARE,
-    partyPlatforms: [
-        {
-            text: "Stop pricing drugs relative to their prices in the United States, thus lowering the price of drugs",
-            source: "https://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
-        },
-    ],
+    incomplete: true,
+    partyPlatforms: [],
 };
 
 export const PEOPLES_HEALTHCARE = {
     party: "People's",
     topic: HEALTHCARE,
-    partyPlatforms: [
-        {
-            text: "Replace how much money the government gives to provinces for health care" +
-                " with giving the tax revenue money back to the provinces and territories ",
-            source: "https://www.peoplespartyofcanada.ca/health_care_giving_provinces_the_incentives_to_deal_with_wait_times_and_rising_costs",
-        },
-        {
-            text: "Provinces that get less in tax revenue compared to what" +
-                " they used to receive in transfer payments will be compensated with a temporary program",
-        },
-    ],
+    incomplete: true,
+    partyPlatforms: [],
 };
 
 
@@ -101,3 +134,6 @@ export const HEALTHCARE_PLATFORMS = [
     CONSERVATIVES_HEALTHCARE, LIBERALS_HEALTHCARE, NDP_HEALTHCARE,
     GREEN_HEALTHCARE, BLOC_QUEBECOIS_HEALTHCARE,PEOPLES_HEALTHCARE
 ];
+// TODO implement this in PatyPlatformBlock.js so we don't have to call this for each block.
+// currently giving error: TypeError: Converting circular structure to JSON  --> starting at object with constructor 'FiberNode'
+HEALTHCARE_PLATFORMS.forEach(platform => PlatformUtils.addMissingPlatformData(platform));

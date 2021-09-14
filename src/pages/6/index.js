@@ -2,18 +2,9 @@ import React from 'react'
 import PropPageBuilder from '../../components/page-blocks/aggregators/PropPageBuilder'
 import ResultBlock from '../../components/page-blocks/blocks/ResultBlock'
 
-import PartyPlatformBlock from "../../components/page-blocks/blocks/PartyPlatformBlock";
-import {IMMIGRATION_PLATFORMS} from "../../data/PartyPlatformDataImmigration";
 import CustomBlock from "../../components/page-blocks/blocks/CustomBlock";
 import {Link} from "react-router-dom";
-import { CREATION_DATE } from '../../data/Constants'
-
-const partyPlatforms = IMMIGRATION_PLATFORMS.map(PLATFORM => (
-	{
-		component: PartyPlatformBlock,
-		data: PLATFORM,
-	}
-));
+import { CONTRIBUTION_INSTRUCTIONS_LINK, CREATION_DATE } from '../../data/Constants'
 
 const Data = {
 	pageId:"immigration",
@@ -44,7 +35,21 @@ const Data = {
 					" What criteria should we use for allowing people to come into the country",
 			},
 		},
-		...partyPlatforms,
+		{
+			component: CustomBlock,
+			data: {
+				body: <div>
+						<h1>Party Platform information has not been added yet
+						</h1>
+					<h2>
+						If you know some you can <a href={CONTRIBUTION_INSTRUCTIONS_LINK} target="_blank" rel="noopener noreferrer">
+							contribute policy information here</a>.
+					</h2>
+				</div>
+			}
+		},
+		// TODO add 2021 immigration plattforms or include 
+		// ...partyPlatforms,
 	]
 };
 export default () => (<PropPageBuilder data={Data}/>);

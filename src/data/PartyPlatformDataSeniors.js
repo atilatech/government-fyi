@@ -1,120 +1,119 @@
-import React from "react";
+import { PlatformUtils } from "services/PlatformUtils";
 
-import { SENIORS } from "./Constants";
+import { SENIORS_TOPIC } from "./Constants";
 
 export const CONSERVATIVE_SENIORS = {
     party: "Conservative",
-    topic: "Seniors",
+    // TODO SENIORS_TOPIC should be automatically added by iterating through the array of all plattforms in SENIORS_PLATFORMS.forEach()
+    topic: SENIORS_TOPIC,
     partyPlatforms: [
         {
             
-            text: "Promises to increase the Age Tax Credit by $1,000, available to seniors making less than $87,750",
-            source: "https://www.conservative.ca/andrew-scheer-will-give-more-support-to-seniors/",
+            text: "Introducing the Canada Seniors Care benefit, paying $200 per month per household to any Canadian who is living with and taking care of a parent over the age of 70",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=75",
         },
         {
-            text: "Make federally regulated companies disclose the solvency of their pension funds and allow for transfers from pension plans",
-            source: "https://www.theglobeandmail.com/business/article-conservatives-target-executive-payouts-in-bankrupt-companies-with/",
+            text: "Amending the Home Accessibility (making a home more accessible for people with disabilities) Tax Credit by increasing the limit from $10,000 per dwelling to $10,000 per person.",
         },
+        {
+            text: "Allowing seniors or their caregivers, including their children, to claim the Medical Expense Tax Credit for home care instead of only allowing them to claim attendant care if they live in a group home."
+        },
+        {
+            text: "Devote $3 billion of infrastructure funding over the next three years to renovate Long-Term Care Homes in all provinces and territories across Canada to improve the care that residents receive",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=76",
+        },
+        {
+            text: "Double the Canada Workers Benefit up to a maximum of $2,800 for individuals or $5,000 for families and pay it as a quarterly direct deposit rather than a tax refund at year-end"
+        },
+        {
+            text: "Prevent executives from paying themselves bonuses while managing a company going through restructuring if the pension plan is not fully funded."
+        }
     ],
 };
 
 export const LIBERAL_SENIORS = {
     party: "Liberal",
-    topic: "Seniors",
+    topic: SENIORS_TOPIC,
     partyPlatforms: [
         {
-            text: "Boost Old Age Security at age 75 by 10%",
-            source: "https://globalnews.ca/news/5917725/liberals-old-age-security-cpp-trdueau/",
+            text: "Increase the Guaranteed Income Supplement by $500 for single seniors and $750 for couples, starting at age 65.",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=26",
         },
         {
-            text: "Increase the Canada Pension Plan by 25% for widows and widowers",
-            source: "https://globalnews.ca/news/5917725/liberals-old-age-security-cpp-trdueau/",
+            text: "Increase the Old Age Support by 10% next year for seniors 75 and over.",
         },
         {
-            text: "Want to adjust the Criminal Code with new penalties for elder abuse and to collect better data on how widespread it is",
-            source: "https://2019.liberal.ca/our-platform/elder-abuse/",
+            text: "Double the Home Accessibility Tax Credit, to $20,000, putting up to $1,500",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=27",
         },
+        {
+            text: "Raise wages for personal support workers, including a guaranteed minimum wage of at least $25 per hour. Train up to 50,000 new personal support workers.",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=16",
+        }
     ],
 };
 export const NDP_SENIORS = {
     party: "NDP",
-    topic: "Seniors",
+    topic: SENIORS_TOPIC,
     partyPlatforms: [
+        // TODO this point is copied from healthcare, allow platforms to be reused in multiple places
         {
-            text: "Create a national seniors strategy, which would include a strategy for dementia and a prevention plan for elder abuse",
-            source: "https://www.ndp.ca/news/ndp-statement-national-seniors-day-0",
+            text: "End private, for-profit long-term care and bring long-term care homes under the government owned company, Revera.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=64"
         },
         {
-            text: "Make the Caregiver Tax Credit refundable, to help those who look after seniors",
-            source: "https://business.financialpost.com/personal-finance/taxes/these-are-the-tax-proposals-that-could-affect-your-bottom-line-this-election",
+            text: "Stop companies from paying out dividends and bonuses when pensions are under-funded. Ceate a mandatory, industry-financed pension insurance program",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=71"
+        },
+        // TODO add citation for Old Age Security and Guaranteed Income Supplement
+        {
+            text: "Make automatic enrollment in Old Age Security and Guaranteed Income Supplement retroactive. So seniors who weren't enrolled before can still receive benefits they should have received."
+        },
+        {
+            text: "Add a one year delay to help seniors at risk of having their GIS benefits suspended for being unable to make the required income statement."
+        },
+        {
+            text: "Make the Caregiver Tax Credit refundable",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=72",
             
         },
     ],
 };
 export const GREEN_SENIORS = {
     party: "Green",
-    topic: "Seniors",
+    topic: SENIORS_TOPIC,
     partyPlatforms: [
+        // TODO this coould also go in Healthcare
         {
-            text: "Develop a national seniors strategy that includes a national dementia strategy",
-            source: "https://www.greenparty.ca/en/statement/2019-10-01/green-party-statement-seniors-day",
+            text: "Develop a national seniors strategy that includes a national dementia strategy. Increasing overall Canadian investment from $50 million to $150 million over five years in the field of dementia research.",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Fully%20fund%20the%20National%20Dementia%20Strategy",
         },
         {
-            text: "Wants more long-term care beds in neighbourhood facilities",
+            text: "Give high priority to pensions if a company goes bankrupt",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=To%20better%20protect%20the%20pensions%20of%20all%20Canadians%20whose%20companies%20file%20for%20bankruptcy"
+        },
+        {
+            text: "Amend pension benefit laws for federally regulated pensions: Maintain the solvency target at 100%.",
             source: "https://www.greenparty.ca/en/platform/renew-social-contract#respecting-and-supporting-seniors",
         },
         {
-            text: "Boost the CPP’s target income replacement rate from 25 to 50% of income made",
-            source: "https://www.greenparty.ca/en/platform/renew-social-contract#respecting-and-supporting-seniors",
+            text: "introduce a refundable tax credit equal to the amount of pension loss an individual incurs when a pension fails.",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=introduce%20a%20refundable%20tax%20credit%20equal%20to%20the%20amount%20of%20pension%20loss%20an%20individual%20incurs%20when%20a%20pension%20fails.",
         },
     ],
 };
 export const BLOC_QUEBECOIS_SENIORS = {
     party: "Bloc Quebecois",
-    topic: "Seniors",
-    partyPlatforms: [
-        {
-            text: "Make the Caregiver Tax Credit refundable",
-            source: "https://election.ctvnews.ca/security-housing-pharmacare-this-is-what-each-party-is-promising-seniors-1.4618897",
-        },
-        {
-            text: "Wants anyone 65 and older automatically enrolled in the guaranteed income supplement and increase the supplement",
-            source: "https://election.ctvnews.ca/security-housing-pharmacare-this-is-what-each-party-is-promising-seniors-1.4618897",
-        },
-    ],
+    topic: SENIORS_TOPIC,
+    incomplete: true,
 };
 export const PEOPLES_SENIORS = {
     party: "People's",
-    topic: "SENIORS",
-    partyPlatforms: [
-        {
-            text: "No specific proposals to date. ",
-        },
-        {
-            text: <span>If you know some you can{' '}
-                <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    contribute them here
-                </a>.
-            </span>,
-        },
-    ],
+    topic: SENIORS_TOPIC,
+    incomplete: true,
 };
 
 export const SENIORS_PLATFORMS = [CONSERVATIVE_SENIORS, LIBERAL_SENIORS, NDP_SENIORS,
     GREEN_SENIORS, BLOC_QUEBECOIS_SENIORS, PEOPLES_SENIORS];
 
-SENIORS_PLATFORMS
-    .filter(platform => platform.party !== "People's")
-    .forEach(platform => {
-
-        platform.partyPlatforms.forEach(idea => {
-
-            if (!idea.demographics) {
-                idea.demographics = []
-            }
-            idea.demographics.push(SENIORS)
-        })
-    });
-
+SENIORS_PLATFORMS.forEach(platform => PlatformUtils.addMissingPlatformData(platform));

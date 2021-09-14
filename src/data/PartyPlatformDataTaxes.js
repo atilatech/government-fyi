@@ -1,6 +1,7 @@
 import React from "react";
-import {CLIMATE_CONSCIOUS, TAXES, ENTREPRENEURS_AND_SMALL_BUSINESS} from "./Constants";
+import {CLIMATE_CONSCIOUS, TAXES, ENTREPRENEURS_AND_SMALL_BUSINESS, FOREIGNERS} from "./Constants";
 import {EmojiLg} from "../components/static/iMessageStyles";
+import { PlatformUtils } from "services/PlatformUtils";
 
 export const TAXES_CONVERSATION_MESSAGES = [
     {
@@ -25,7 +26,7 @@ export const TAXES_CONVERSATION_MESSAGES = [
     },
     {
         from: "them",
-        body: "But those are the same taxes that paid for you to go to public school and free hospital visits when you're socl"
+        body: "But those are the same taxes that paid for you to go to public school and free hospital visits when you're sick"
     },
     {
         from:"me-no-bg",
@@ -79,10 +80,6 @@ export const TAXES_CONVERSATION_MESSAGES = [
         from: "them",
         body: "good question"
     },
-    {
-        from: "them-no-bg",
-        body: <span>Chanel has left the conversation</span>
-    },
 ];
 
 export const CONSERVATIVES_TAXES = {
@@ -90,33 +87,44 @@ export const CONSERVATIVES_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Universal Tax Cut, the tax rate on income under $47,630 will be reduced from 15 per cent to 13.75 percent",
-            source: "https://www.pbo-dpb.gc.ca/web/default/files/Documents/ElectionProposalCosting/Results/32644536_EN.pdf?timestamp=1571166194063",
+            text: "Provide more funding to the Canada Revenue Agency, increasing to $750 million per year, to fund stronger enforcement of taxation for big companies, international tax and tax evasion",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=79",
         },
         {
-            text: "Single tax return for Quebecers",
-            source: "https://www.conservative.ca/andrew-scheer-announces-fives-measures-for-quebec/",
+            text: "Foreign tech companies pay their fair share of taxes including sales tax and a digital services tax representing 3% of their gross revenue in Canada if they don’t pay corporate income tax here.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=79",
         },
         {
-            text: "Work to reunite survivors of genocide, who have already resettled in Canada, more expeditiously",
+            text: "Exempt Canadian-controlled start-ups headquartered and with at least 2/3 of their employees in Canada from the current plan to tax stock options. ",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=15",
+            demographics: [
+                ENTREPRENEURS_AND_SMALL_BUSINESS
+            ]
         },
         {
-            text: "remove federal income tax from Employment Insurance (EI) maternity and EI paternal/maternal" +
-                " benefits by providing a non-refundable tax credit of 15 percent for any income earned under these two programs",
-            source: "https://www.conservative.ca/scheer-to-make-maternity-benefits-tax-free/",
+            text: "Create a tax credit for buying from a Canadian start-up."
         },
         {
-            text: "15 percent tax credit for weekly and monthly transit passes",
-            source: "https://www.conservative.ca/andrew-scheer-to-reduce-cost-of-public-transit/",
-
+            text: "Increase the amount of money that charitable foundations have to spend on charitable activities from 3.5% to 7.5%",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=11"
         },
         {
-            text: "remove the Goods and Services Tax (GST) from home heating and energy bills",
-            source: "https://www.conservative.ca/conservatives-to-remove-gst-from-home-heating/"
+            text: "Implement a month-long GST holiday this fall. All purchases made at retail stores will be tax free for this month.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=26"
         },
         {
-            text: "Add a 3 per cent tax on revenues of large multinational tech companies",
-            source: "https://nationalpost.com/news/politics/election-2019/how-the-tories-plan-to-balance-the-budget-scheer-says-transfer-payments-core-services-safe-from-cuts"
+            text: "Introduce a tax credit for use of Carbon Capture, Utilization and Storage technology in the energy sector and in other industries that have few alternatives to burning fossil fuels, like fertilizer and chemical production",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=17",
+            demographics: [
+                CLIMATE_CONSCIOUS
+            ]
+        },
+        {
+            text: "tax relief to the first five facilities that use new technology that provides meaningful emissions reductions and has a high cost to build",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=41",
+            demographics: [
+                CLIMATE_CONSCIOUS
+            ]
         }
     ],
 };
@@ -126,25 +134,29 @@ export const LIBERALS_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "introduce a new 10 per cent tax on luxury cars, boats, and personal aircraft over $100,000",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/Forward-A-real-plan-for-the-middle-class.pdf#page=79",
+            text: "Raise corporate income taxes on the largest, most profitable banks and insurance companies who earn more than $1 billion per year and introduce a temporary Canada Recovery Dividend that these companies would pay in recognition of the fact they have recovered faster and stronger than many other industries",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=84",
         },
         {
-            text: "Place a  national tax on vacant houses owned by non-Canadians who don’t live in Canada",
+            text: "Minimum tax rule so that everyone who earns enough to qualify for the top bracket pays at least 15 % each year",
         },
         {
-            text: "Decrease the amount of your income that you pay tax on by $15,000," +
-                " if you make less than $147,000 per year. " +
-                "For example, if you make $50,000 you will only be taxed on $35,000",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/2019-backgrounder-tax-cut-ENG.pdf",
+            text: "Implement a tax on luxury cars, boats, and planes"
         },
         {
-            text: "Lower corporate taxes for small cleantech businesses from 9 to 4.5%," +
-                " and larger cleantech companies from 15 to 7.5%",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/cutting-taxes-for-clean-tech-businesses.pdf#page=2",
+            text: "Work with our international partners to implement a global minimum tax",
+        },
+        {
+            text: "Eliminate flow through shares for oil, gas, and coal projects to help promote",
             demographics: [
-                CLIMATE_CONSCIOUS,
+                CLIMATE_CONSCIOUS
             ]
+        },
+        {
+            text: "Implement a national anti-flipping tax and national tax on nonresident, non-Canadians on vacant land and residential property."
+        },
+        {
+            text: "National tax on vaping products and require tobacco manufacturers to pay for the cost of federal public health investments in tobacco control."
         }
     ],
 };
@@ -154,27 +166,27 @@ export const NDP_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Raise corporate taxes to 18% (from 15%) and tax capital gains at a rate of 75%",
-            source: "https://action.ndp.ca/page/-/2019/Q2/NDP-Commitments_EN.pdf#page=108",
+            text: "Introduce a temporary COVID-19 excess profit tax that puts an additional 15% tax on large corporate windfall profits during the pandemic",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=42",
         },
         {
-            text: "Maintain the small business tax rate at its current level",
-            demographics: [
-                ENTREPRENEURS_AND_SMALL_BUSINESS,
-            ]
+            text: "Increase the capital gains inclusion rate to 75 percent",
         },
         {
-            text: "Ensure that multinational tech giants pay corporate tax on the revenue they generate in Canada",
+            text: "Boost the top marginal tax rate two points, put in place a luxury goods tax on things like yachts and private jets",
         },
         {
-            text: "Increase the top marginal tax rate by two points to 35 percent for those making over $210,000",
+            // TODO use a proper citation for wealth  tax
+            text: "Implement a wealth tax (tax based on assets you already have instead of income generated) for the 'very richest millinaires'",
         },
         {
-            text: "Increase the amount of investment profits that will be subject to a capital gains tax to 75 percent",
+            text: "Roll back the Conservatives’ corporate income tax cuts by three percentage points to 2010 levels",
+            page: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=43"
         },
         {
-            text: "Introduce one percent wealth tax on those with wealth over $20 million",
-        },
+            text: "Close loopholes that include eliminating bearer shares, force companies to prove their offshore transactions, and improving transparency on the taxes paid by large corporations.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=43"
+        }
     ],
 };
 
@@ -183,8 +195,8 @@ export const GREEN_TAXES = {
     topic: TAXES,
     partyPlatforms: [
         {
-            text: "Apply a corporate tax on transnational e-commerce companies doing business in Canada",
-            source: "https://www.greenparty.ca/en/platform/green-economy#fair-taxation",
+            text: "Apply a corporate tax on international e-commerce companies doing business in Canada",
+            source: "https://www.greenparty.ca/en/platform/just-society#:~:text=Apply%20a%20corporate%20tax%20on%20transnational%20e-commerce%20companies%20doing%20business%20in%20Canada",
         },
         {
             text: "Impose a financial transactions tax of 0.5 per cent in the finance sector",
@@ -193,16 +205,37 @@ export const GREEN_TAXES = {
             text: "Increase the federal corporate tax rate from 15 to 21 per cent",
         },
         {
-            text: "Maintain the small business tax rate at its current level",
-            demographics: [
-                ENTREPRENEURS_AND_SMALL_BUSINESS
-            ]
-        },
-        {
             text: "Charge a five per cent surtax on commercial bank profits",
         },
         {
+            text: "Apply a tax on luxury goods, such as planes, and luxury cars.",
+        },
+        {   //TODO other (all?) parties mention this as well
+            text: "Work with our international partners to implement a global minimum tax"
+        },
+        {   
+            text: "Prohibit Canadian businesses from deducting the cost of advertising on foreign-owned sites such as Google and Facebook which now account for 80 per cent of all spending on advertising Canada."
+        },
+        {   
+            text: "Eliminate the 50 per cent corporate meals and entertainment expense deduction, which includes season tickets and private boxes at sporting events"
+        },
+        {
             text: "Apply a one per cent tax on net (family) wealth above $20 million",
+            source: "https://www.greenparty.ca/en/platform/just-society#:~:text=Apply%20a%20one%20per%20cent%20tax%20on%20net%20(family)%20wealth%20above%20%2420%20million."
+        },
+        // TODO add the following 2 to housing
+        {
+            text: "Create an “empty home” tax for foreign and corporate residential property owners who leave buildings and units vacant",
+            source: "https://www.greenparty.ca/en/platform/just-society#:~:text=Create%20an%20%E2%80%9Cempty%20home%E2%80%9D%20tax%20for%20foreign%20and%20corporate%20residential%20property",
+            demographics: [
+                FOREIGNERS
+            ]
+        },
+        {
+            text: "Close tax haven loopholes that allow foreign investors to hide the names of beneficial owners of properties in Canada",
+            demographics: [
+                FOREIGNERS
+            ]
         },
     ],
 };
@@ -210,31 +243,13 @@ export const GREEN_TAXES = {
 export const BLOC_QUEBECOIS_TAXES = {
     party: "Bloc Quebecois",
     topic: TAXES,
-    partyPlatforms: [
-        {
-            text: "Revenu Quebec to collect federal income taxes instead of Canada Revenu agency," +
-                "  so Quebecers only have to file one income tax return",
-            source: "https://www.blocquebecois.org/wp-content/uploads/2019/10/Plateforme_Bloc2019_web-1.pdf",
-        },
-    ],
+    incomplete: true,
 };
 
 export const PEOPLES_TAXES = {
     party: "People's",
     topic: TAXES,
-    partyPlatforms: [
-        {
-            text: "Reduce the number of tax brackets from five to two. Incomes from $15,001 to $100,000 taxed at 15%, and income over $100,000 taxed at 25%. No taxes for those making $15k or less",
-            source: "https://www.peoplespartyofcanada.ca/public_finance_balancing_the_budget_in_two_years_and_cutting_taxes",
-        },
-        {
-            text: "Abolish the personal capital gains tax, decreasing the inclusion rate from 50% to 0%",
-        },
-        {
-            text: "Reduce the corporate income tax rate from 15% down to 10%",
-            source: "https://www.peoplespartyofcanada.ca/economy_encouraging_investment_and_productivity_growth",
-        }
-    ],
+    incomplete: true,
 };
 
 
@@ -242,3 +257,5 @@ export const TAXES_PLATFORMS = [
     CONSERVATIVES_TAXES, LIBERALS_TAXES, NDP_TAXES,
     GREEN_TAXES, BLOC_QUEBECOIS_TAXES,PEOPLES_TAXES
 ];
+
+TAXES_PLATFORMS.forEach(platform => PlatformUtils.addMissingPlatformData(platform));

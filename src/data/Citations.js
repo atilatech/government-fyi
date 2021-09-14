@@ -167,6 +167,42 @@ export const ALL_CITATIONS = {
         directQuote: "A carbon tax offers the most cost-effective lever to reduce carbon emissions at a large scale and very quickly." +
             "Sometimes market fail, and the price of a carbon tax will incentivize carbon emitters to use less carbon."
     },
+    CMHC: {
+        link: "https://www.investopedia.com/terms/c/cmhc.asp",
+        publication: "Investopedia",
+        headline: "What Is the Canada Mortgage and Housing Corporation (CMHC)?",
+        directQuote: <>The Canada Mortgage and Housing Corporation (CMHC) is a government department that acts as Canada's national housing agency. 
+        The goal of the CMHCC is to help Canadians access affordable housing options, mainly by providing mortgage insurance to homebuyers.
+        <br/><br/>
+        Mortgage insurance is an insurance policy which compensates mortgage lenders if the bororower of the mortgage defaults on their loan.
+        </>
+    },
+    HomeCoOwnership: {
+        link: "https://www.ontario.ca/document/co-owning-home",
+        publication: "Ontario Government",
+        headline: "Co-owning a home",
+        directQuote: <>Co-ownership housing is a shared living arrangement where two or more people own and live in a home together. 
+        Co-owners may share living spaces like kitchens and living rooms, or the home may be divided into separate units.
+        <br/><br/>
+        Co-ownership housing has recently become more popular (for example in <a href="https://vancouversun.com/homes/buying-selling/co-ownership-on-the-rise-in-metro-vancouver-housing-market" target="_blank" rel="noopener noreferrer">
+        Vancouver</a> and <a href="https://www.thestar.com/life/homes/2021/07/07/co-ops-and.html" target="_blank" rel="noopener noreferrer">
+        Toronto</a>) as house prices have become more expensive 
+            and more people seek alternative ways to afford a home.
+        </>
+    },
+    GuaranteedLivableIncome: {
+        link: "https://en.wikipedia.org/wiki/Guaranteed_minimum_income",
+        publication: "Wikipedia",
+        headline: "Guaranteed Minimum Income",
+        directQuote: <>Guaranteed Livable Income (commonly known as Guaranteed Minimum Income (GMI)) is similar to
+        <a href="https://en.wikipedia.org/wiki/Universal_basic_income" target="_blank" rel="noopener noreferrer">Universal Basic Income</a>
+         .<br/> <br/>
+
+        However, in UBI, everyone gets the same amount of money. GMI is means-based so people who have less income receive more money. It's similar to 
+        welfare programs that already exist, but the biggest difference is that these programs typically involve direct cash payments given to the recipients
+        and they have more freedom in how they choose to spend the money.
+        </>
+    },
     BillC69: {
         link: "https://openparliament.ca/bills/42-1/C-69/",
         publication: "Open Parliament",
@@ -189,6 +225,24 @@ export const ALL_CITATIONS = {
             Another Pro NIMBYISM perspective says that it could affect the culture of the community.
             The anti NIMBYISM perspective says that building more high homes and higher density homes,
             creates more affordable housing for everyone
+        </span>
+    },
+    FRACKING: {
+        link: "https://www.vox.com/2014/4/14/18076690/fracking",
+        // TODO add Pros and cons sections: 
+        publication: "VOX",
+        headline: "Fracking, explained",
+        directQuote: <span>
+            Fracking is the process of injecting water, chemicals and sand underground at a very high pressure
+            to release the oil trapped inside.
+            <br/><br/>
+
+            <a href="https://www.vox.com/2014/4/14/18076690/fracking" target="_blank" rel="noopener noreferrer">Some people say</a> Fracking is bad because it can contaminate the groundwater and pollute the air.
+            <br/><br/>
+
+            <a href="https://www.forbes.com/sites/ucenergy/2018/02/20/fracking-has-its-costs-and-benefits-the-trick-is-balancing-them/?sh=464d7ca619b4" target="_blank" rel="noopener noreferrer">Some people say</a> Fracking is good because it  lowers carbon emissions when
+            used in the place of coal. It's also cheaper than other methods of getting gas.
+            Therefore, consumers pay lower gas prices and mroe jobs are added to the economy.
         </span>
     }
 };

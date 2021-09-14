@@ -1,29 +1,31 @@
-import {CLIMATE_CONSCIOUS, FOREIGNERS, HOMEOWNERS} from "./Constants";
+import React from "react";
 import { ALL_CITATIONS } from "./Citations";
 import Citation from "../components/interactive/citation/citation";
-import React from "react";
 import {EmojiLg} from "../components/static/iMessageStyles";
+import { PlatformUtils } from "services/PlatformUtils";
+import { FOREIGNERS } from "./Constants";
 
 export const CONSERVATIVE_HOUSING = {
     party: "Conservative",
     topic: "Housing",
     partyPlatforms: [
         {
-            text: <span>Increase <Citation data={ALL_CITATIONS.MortgageTermCalculator}>mortgage term length</Citation> to 30 years for first-time homebuyers</span>,
-            source: "https://www.conservative.ca/andrew-scheer-announces-four-point-plan-to-make-home-ownership-more-affordable/",
+            text: "Release at least 15% of the federal government's real estate for housing.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=28",
         },
         {
-            text: "Reduce the number of criteria you have to qualify to buy a home. Remove the criteria for mortgage renewals",
+            text: "Remove the requirement to conduct a stress test when a homeowner renews a mortgage with another lender instead of only when staying with their current lender, as is the case today",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=29"
         },
         {
-            text: "Make extra federal land available for building more houses",
+            text: "Invest $325 million over the next three years to create 1,000 residential drug treatment beds and build 50 recovery community centres across the country",
         },
         {
-            text: "implement a 20 per cent green homes tax credit for up to $20,000 spent" +
-                " over two years to pay for energy-saving renovations",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-            ]
+            text: "Ban foreign investors not living in or moving to Canada from buying homes here for a two year period after which it will be reviewed.",
+        },
+        {
+            text: "Extend the ability to defer capital gains tax when selling a rental property and reinvesting in rental housing.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=28"
         }
     ],
 };
@@ -33,43 +35,25 @@ export const LIBERAL_HOUSING = {
     topic: "Housing",
     partyPlatforms: [
         {
-            text: <span>Make it harder for foreigners to speculate on Canadian real estate market through a{' '}
-                <Citation data={ALL_CITATIONS.SpeculationTax}>
-                speculation tax.
-                </Citation>
-            </span>,
-            source: "https://www.bnnbloomberg.ca/trudeau-promises-new-speculation-tax-on-foreign-buyers-if-re-elected-1.1315217",
-            demographics: [
-                FOREIGNERS,
-            ]
+            text: "Introduce a tax-free First Home Savings Account will allow Canadians under 40 to save up to $40,000 towards their first home, and to withdraw it tax-free to put towards their first home purchase, with no requirement to repay it",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=21",
         },
         {
-            text: "Build 100,000 affordable homes over a decade and offer first-time home-buyer subsidies of 10 per cent on new home purchases and 5 per cent on resales — with restrictions.",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/cutting-home-energy-bills-and-pollution.pdf",
+            text: "Banning blind bidding, establishing a legal right to a home inspection, and banning new foreign ownership for two years.",
+            source: "https://liberal.ca/a-home-for-everyone-liberals-move-forward-with-a-new-housing-plan/#:~:text=banning%20blind%20bidding%2C%20establishing%20a%20legal%20right%20to%20a%20home%20inspection%2C%20and%20banning%20new%20foreign%20ownership%20for%20two%20years."
         },
         {
-            text: "offer interest-free loans up to $40,000 to homeowners and landlords to make houses weather-resilient",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/cutting-home-energy-bills-and-pollution.pdf"
+            text: "Double the First-Time Home Buyers Tax Credit, from $5,000 to $10,000.",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=21",
         },
         {
-            text: "retrofit 1.5 million homes for energy efficiency over 5 years",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/cutting-home-energy-bills-and-pollution.pdf",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-            ]
+            text: "Introduce a new Multigenerational Home Renovation tax credit: families adding a secondary unit to their home for a family member can claim a 15% tax credit for up to $50,000 in renovation and construction costs. $7,500 in tax savings.",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=22",
         },
         {
-            text: "Make Energy Star certification mandatory for new appliances in homes by 2022",
-            demographics: [
-                CLIMATE_CONSCIOUS,
-            ]
+            text: "Establish an anti-flipping tax on residential properties, requiring properties to be held for at least 12 months.",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=23",
         },
-        {
-            text: "Provide 5-10% down payment for first-time home buyers in Victoria," +
-                " Vancouver and Toronto to buy a new home. The maximum value for a qualifying home will increase from" +
-                " $500,000 to about $800,000",
-            source: "https://globalnews.ca/video/5893882/liberal-leader-trudeau-makes-campaign-announcement-on-housing-affordability"
-        }
     ],
 };
 export const NDP_HOUSING = {
@@ -77,21 +61,26 @@ export const NDP_HOUSING = {
     topic: "Housing",
     partyPlatforms: [
         {
-            text: "Build 500,000 affordable housing units over 10 years",
-            source: "https://action.ndp.ca/page/-/2019/Q4/PDF%20assets/NDP-TheFiscalPlan-EN-PRINT.pdf#page=3",
+            text: "Create at least 500,000 units of quality, affordable housing in the next ten years, with half of that done within five years",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=11",
         },
         {
-            text: "Removing GST from New Rental Buildings",
-            source: "https://www.ndp.ca/news/jagmeet-singh-lets-build-half-million-affordable-housing-units",
+            text: <>Re-introduce 30-year terms to <Citation data={ALL_CITATIONS.CMHC}>
+            CMHC
+    </Citation> insured mortgages on entry-level homes for first time home buyers</>,
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=12",
         },
         {
-            text: "NDP proposes a 15% extra tax on foreign buyers.",
-            source: "https://vancouversun.com/news/local-news/ndp-leader-jagmeet-singh-in-vancouver-and-port-moody",
-            demographics: [FOREIGNERS]
+            text: <>Provide model <Citation data={ALL_CITATIONS.HomeCoOwnership}>
+            co-ownership
+    </Citation> agreements and offer mortgage insurance backed by the CMHC for co-ownership of homes.</>,
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=12",
         },
         {
-            text: "Increase mortgage term length to 30 years for first-time homebuyers",
-            source: "https://globalnews.ca/news/4981158/ndp-leader-jagmeet-singh-proposes-new-housing-measures/",
+            text: "20% Foreign Buyer’s tax on the sale of homes to individuals who aren’t Canadian citizens or permanent residents",
+        },
+        {
+            text: "Doubling the Home Buyer’s Tax Credit to $1,500",
         }
     ],
 };
@@ -100,63 +89,41 @@ export const GREEN_HOUSING = {
     topic: "Housing",
     partyPlatforms: [
         {
-            text: "$750 million for rent assistance for 125,000 households",
-            souce: "https://www.greenparty.ca/en/platform/renew-social-contract",
+            text: "Build and acquire a minimum of 300,000 units of deeply affordable non-market, co-op and non-profit housing over a decade.",
+            souce: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Build%20and%20acquire%20a%20minimum%20of%20300%2C000%20units%20of%20deeply%20affordable",
         },
         {
-            text: "Provide support to the co-operative housing sector at a total cost of $950 million"
+            text: "Invest in construction and operation of 50,000 supportive housing units over 10 years.",
         },
         {
-            text: "Provide incentives of $250 million to convert existing properties to rentals by 2025"
+            text: <>Change the focus of the <Citation data={ALL_CITATIONS.CMHC}>
+            CMHC
+    </Citation> from it's current priority of helping Canadian lenders derisk their investment and individual home ownership to supporting affordable, non-market and cooperative housing.</>,
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Re-focus%20the%20core%20mandate%20of%20Canada%20Mortgage%20and%20Housing%20Corporation%20(CMHC)"
         },
         {
-            text: "Legislate housing as a legally protected fundamental human right for all Canadians and permanent residents"
-        }
+            text: "Raise the “empty home” tax for foreign and corporate residential property owners who leave buildings and units vacant. Close tax haven loopholes that allow foreign investors to hide the names of beneficial owners of properties in Canada.",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Strengthen%20regulation%20to%20limit%20foreign%20investment%20and%20end%20predatory%20practices%20in%20residential%20real%20estate%C2%A0",
+            demographics: [
+                FOREIGNERS
+            ]
+        },
     ],
 };
 export const BLOC_QUEBECOIS_HOUSING = {
     party: "Bloc Quebecois",
     topic: "Housing",
-    partyPlatforms: [
-        {
-            text: "Invest $400 million in social housing",
-            souce: "https://www.blocquebecois.org/familles-et-citoyens/",
-        },
-    ],
+    incomplete: true,
 };
 export const PEOPLES_HOUSING = {
     party: "People's",
     topic: "Housing",
-    partyPlatforms: [
-        {
-            text: "No specific proposals to date. ",
-        },
-        {
-            text: <span>If you know some you can{' '}
-                <a href="https://github.com/atilatech/government-fyi/wiki/Contributing-to-Government-FYI"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                contribute them here
-                </a>.
-            </span>,
-        },
-    ],
+    incomplete: true,
 };
 
 export const HOUSING_PLATFORMS = [CONSERVATIVE_HOUSING, LIBERAL_HOUSING, NDP_HOUSING,
     GREEN_HOUSING, BLOC_QUEBECOIS_HOUSING, PEOPLES_HOUSING];
-HOUSING_PLATFORMS
-    .filter(platform =>platform.party!=="People's")
-    .forEach(platform => {
-
-        platform.partyPlatforms.forEach( idea => {
-
-            if (!idea.demographics) {
-                idea.demographics = []
-            }
-            idea.demographics.push(HOMEOWNERS)
-        })
-    });
+HOUSING_PLATFORMS.forEach(platform => PlatformUtils.addMissingPlatformData(platform));
 
 export const HOUSING_CONVERSATION = [
     {
