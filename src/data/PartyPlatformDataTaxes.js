@@ -25,7 +25,7 @@ export const TAXES_CONVERSATION_MESSAGES = [
     },
     {
         from: "them",
-        body: "But those are the same taxes that paid for you to go to public school and free hospital visits when you're socl"
+        body: "But those are the same taxes that paid for you to go to public school and free hospital visits when you're sick"
     },
     {
         from:"me-no-bg",
