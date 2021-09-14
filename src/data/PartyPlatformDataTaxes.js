@@ -79,10 +79,6 @@ export const TAXES_CONVERSATION_MESSAGES = [
         from: "them",
         body: "good question"
     },
-    {
-        from: "them-no-bg",
-        body: <span>Chanel has left the conversation</span>
-    },
 ];
 
 export const CONSERVATIVES_TAXES = {
