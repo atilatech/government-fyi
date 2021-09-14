@@ -57,7 +57,7 @@ export const ELECTION_TOPICS = [
     SENIORS_TOPIC,
 ];
 
-export const CONTRIBUTION_INSTRUCTIONS_LINK = "https://github.com/atilatech/government-fyi/tree/update_2021_policies#how-to-contribute"
+export const CONTRIBUTION_INSTRUCTIONS_LINK = "https://github.com/atilatech/government-fyi#how-to-contribute"
 
 export const ELECTION_YEAR = 2021;
 export const CREATION_DATE = `September 11, ${ELECTION_YEAR} 7:00:00`;

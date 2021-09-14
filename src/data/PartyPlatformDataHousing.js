@@ -1,9 +1,9 @@
-import {FOREIGNERS, HOMEOWNERS} from "./Constants";
+import React from "react";
 import { ALL_CITATIONS } from "./Citations";
 import Citation from "../components/interactive/citation/citation";
-import React from "react";
 import {EmojiLg} from "../components/static/iMessageStyles";
 import { PlatformUtils } from "services/PlatformUtils";
+import { FOREIGNERS } from "./Constants";
 
 export const CONSERVATIVE_HOUSING = {
     party: "Conservative",
@@ -61,21 +61,26 @@ export const NDP_HOUSING = {
     topic: "Housing",
     partyPlatforms: [
         {
-            text: "Build 500,000 affordable housing units over 10 years",
-            source: "https://action.ndp.ca/page/-/2019/Q4/PDF%20assets/NDP-TheFiscalPlan-EN-PRINT.pdf#page=3",
+            text: "Create at least 500,000 units of quality, affordable housing in the next ten years, with half of that done within five years",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=11",
         },
         {
-            text: "Removing GST from New Rental Buildings",
-            source: "https://www.ndp.ca/news/jagmeet-singh-lets-build-half-million-affordable-housing-units",
+            text: <>Re-introduce 30-year terms to <Citation data={ALL_CITATIONS.CMHC}>
+            CMHC
+    </Citation> insured mortgages on entry-level homes for first time home buyers</>,
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=12",
         },
         {
-            text: "NDP proposes a 15% extra tax on foreign buyers.",
-            source: "https://vancouversun.com/news/local-news/ndp-leader-jagmeet-singh-in-vancouver-and-port-moody",
-            demographics: [FOREIGNERS]
+            text: <>Provide model <Citation data={ALL_CITATIONS.HomeCoOwnership}>
+            co-ownership
+    </Citation> agreements and offer mortgage insurance backed by the CMHC for co-ownership of homes.</>,
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=12",
         },
         {
-            text: "Increase mortgage term length to 30 years for first-time homebuyers",
-            source: "https://globalnews.ca/news/4981158/ndp-leader-jagmeet-singh-proposes-new-housing-measures/",
+            text: "20% Foreign Buyer’s tax on the sale of homes to individuals who aren’t Canadian citizens or permanent residents",
+        },
+        {
+            text: "Doubling the Home Buyer’s Tax Credit to $1,500",
         }
     ],
 };
@@ -84,18 +89,25 @@ export const GREEN_HOUSING = {
     topic: "Housing",
     partyPlatforms: [
         {
-            text: "$750 million for rent assistance for 125,000 households",
-            souce: "https://www.greenparty.ca/en/platform/renew-social-contract",
+            text: "Build and acquire a minimum of 300,000 units of deeply affordable non-market, co-op and non-profit housing over a decade.",
+            souce: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Build%20and%20acquire%20a%20minimum%20of%20300%2C000%20units%20of%20deeply%20affordable",
         },
         {
-            text: "Provide support to the co-operative housing sector at a total cost of $950 million"
+            text: "Invest in construction and operation of 50,000 supportive housing units over 10 years.",
         },
         {
-            text: "Provide incentives of $250 million to convert existing properties to rentals by 2025"
+            text: <>Change the focus of the <Citation data={ALL_CITATIONS.CMHC}>
+            CMHC
+    </Citation> from it's current priority of helping Canadian lenders derisk their investment and individual home ownership to supporting affordable, non-market and cooperative housing.</>,
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Re-focus%20the%20core%20mandate%20of%20Canada%20Mortgage%20and%20Housing%20Corporation%20(CMHC)"
         },
         {
-            text: "Legislate housing as a legally protected fundamental human right for all Canadians and permanent residents"
-        }
+            text: "Raise the “empty home” tax for foreign and corporate residential property owners who leave buildings and units vacant. Close tax haven loopholes that allow foreign investors to hide the names of beneficial owners of properties in Canada.",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#:~:text=Strengthen%20regulation%20to%20limit%20foreign%20investment%20and%20end%20predatory%20practices%20in%20residential%20real%20estate%C2%A0",
+            demographics: [
+                FOREIGNERS
+            ]
+        },
     ],
 };
 export const BLOC_QUEBECOIS_HOUSING = {
