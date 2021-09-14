@@ -1,12 +1,11 @@
+import { PlatformUtils } from "services/PlatformUtils";
 import {
     ENTREPRENEURS_AND_SMALL_BUSINESS,
     IMMIGRANTS,
-    LOW_INCOME,
+    PARENTS,
     STUDENTS,
     UNEMPLOYED,
-    VISIBLE_MINORITY,
     WOMEN,
-    YOUNG_PEOPLE
 } from "./Constants";
 
 export const CONSERVATIVE_JOBS_AND_ECONOMY = {
@@ -14,17 +13,31 @@ export const CONSERVATIVE_JOBS_AND_ECONOMY = {
     topic: "Jobs and Economy",
     partyPlatforms: [
         {
-            text: "Improve “credential recognition” to make it easier for immigrants to get jobs, if they have equivalent skills.",
-            source: "https://www.conservative.ca/cpc/andrew-scheers-immigration-plan/",
-            demographics: [IMMIGRANTS, UNEMPLOYED],
+            text: "Introduce a Dine and Discover Program: Provide a 50% rebate for food and non-alcoholic drinks purchased for dine-in from Monday to Wednesday for one month once it is safe to do so and eliminate the Liberal escalator tax on alcohol.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=11",
         },
         {
-            text: "Spend $187 billion on infrastructure investments",
-            source: "https://www.bnnbloomberg.ca/punting-infrastructure-funds-key-to-conservatives-balanced-budget-plan-1.1330412",
+            text: "Launch the Explore and Support Canada initiative with a 15% tax credit for vacation expenses of up to $1,000 per person for Canadians to vacation in Canada in 2022, helping our tourism sector get back on its feet",
         },
         {
-            text: "Balance the budget in five years",
-            source: "https://www.conservative.ca/andrew-scheer-reveals-his-plan-for-you-to-get-ahead/",
+            text: "Launch the Main Street Business Loan to provide loans of up to $200,000. (The current Canada Emergency Business Account (CEBA) is $60,000).",
+        },
+        {
+            text: "Provide a 25% tax credit on amounts of up to $100,000 that Canadians personally invest in a small business over the next two years.",
+        },
+        {
+            text: " Allow businesses with less than $60,000 in revenues to use simple cash accounting.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=12",
+            demographics: [
+                ENTREPRENEURS_AND_SMALL_BUSINESS
+            ]
+        },
+        {
+            text: "Appoint a Minister Responsible for Red Tape Reduction tasked with introducing and passing at least one red tape reduction bill per year, eliminating unneeded or counterproductive red tape.",
+            source: "https://cpcassets.conservative.ca/wp-content/uploads/2021/08/16102359/f8279981721e07a.pdf#page=14",
+            demographics: [
+                ENTREPRENEURS_AND_SMALL_BUSINESS
+            ]
         },
     ],
 };
@@ -33,22 +46,22 @@ export const LIBERAL_JOBS_AND_ECONOMY = {
     topic: "Jobs and Economy",
     partyPlatforms: [
         {
-            text: "Raise the federal minimum wage to $15 per hour.",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/Forward-A-real-plan-for-the-middle-class.pdf#page=12",
-            demographics: [LOW_INCOME,],
+            text: "Introduce a new EI benefit for self-employed Canadians, delivered through the tax system, that would provide similar unemployment assistance to EI and lasting for up to 26 weeks. Self-employed Canadians would only pay the portion they would normally pay if they were a salaried employee",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=32",
+            demographics: [UNEMPLOYED, ENTREPRENEURS_AND_SMALL_BUSINESS],
         },
         {
-            text: "Give 2,000 entrepreneurs up to $50,000 to launch a new business",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/BG_EN_Backgrounder.pdf",
-            demographics: [ENTREPRENEURS_AND_SMALL_BUSINESS,],
+            text: "Provide up to 5 new paid leave days for federally regulated employees who experience a miscarriage or stillbirth, which can happen in up to 1 in 5 pregnancies.",
+            source: "https://liberal.ca/wp-content/uploads/sites/292/2021/09/Platform-Forward-For-Everyone.pdf#page=33",
+            demographics: [WOMEN,],
         },
         {
-            text: "Add an additional $9 million over three years to help more visible minority newcomer women find work",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/Forward-A-real-plan-for-the-middle-class.pdf#page=47",
-            demographics: [WOMEN, VISIBLE_MINORITY]
+            text: "Establish a new Apprenticeship Service which will connect 55,000 first-year apprentices in Red Seal trades with opportunities at small and medium-sized employers",
+            demographics: [ENTREPRENEURS_AND_SMALL_BUSINESS]
         },
         {
-            text: "Create a new federal Family Day holiday"
+            text: "Give microgrants of up to $2,400 to smaller Main Street businesses so they can afford the costs of new technology",
+            demographics: [ENTREPRENEURS_AND_SMALL_BUSINESS]
         },
         {
             text: "250 to every new business looking to expand online",
@@ -58,11 +71,13 @@ export const LIBERAL_JOBS_AND_ECONOMY = {
             text: "Introduce Career Insurance Benefit that starts after Employment Insurance ends. You get 20 percent of insured earnings the first year you’re laid off and 10 percent in the second year",
         },
         {
-            text: "Reduce cost of incorporating a business federally from $200 to $50",
+            text: "Offer zero-interest loans to small and medium-sized businesses so they can finance larger technology adoption projects.",
         },
         {
-            text: "extending Employment Insurance sickness benefits from 15 weeks to 26 weeks",
-            source: "https://2019.liberal.ca/wp-content/uploads/sites/292/2019/09/Forward-A-real-plan-for-the-middle-class.pdf#page=12",
+            text: "Build on the Economic Mobility Pathways Pilot and work with employers and communities across Canada to welcome 2,000 skilled refugees to fill labour shortages in in-demand sectors such as health care.",
+            demographics: [
+                IMMIGRANTS
+            ]
         }
 
     ],
@@ -72,43 +87,34 @@ export const NDP_JOBS_AND_ECONOMY = {
     topic: "Jobs and Economy",
     partyPlatforms: [
         {
-            text: "Raise the federal minimum wage to $15 per hour",
-            source: "https://www.ndp.ca/economy",
-            demographics: [LOW_INCOME,],
+            text: "Bring in a new special leave that allows parents to take shorter parental leave at a higher replacement rate. We’ll also allow self-employed workers to opt-into parental benefits at any time before taking the leave, and move to double leave for parents of multiples.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=27",
+            demographics: [PARENTS, ENTREPRENEURS_AND_SMALL_BUSINESS],
         },
         {
-            text: "Reduce hours to qualify for employment insurance (EI) to 360 hours to cover more workers",
-            source: "https://www.ndp.ca/commitments",
+            text: "Allow sick leave to be taken by workers one or two days at a time, give full income replacement to workers who are sick, and reimburse employers instead of putting the onus on workers to apply for the program.",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=31",
         },
         {
-            text: "Ban unpaid internships if they don’t count for school credit",
-            source: "https://www.ndp.ca/commitments",
+            text: "Put in place a living federal minimum wage starting at $15 an hour and rising to $20 an hour, indexed to the cost of living",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=32"
+        },
+        {
+            text: "Put in place rules to require that part-time and contract workers be compensated equally to full-time workers.",
+        },
+        {
+            text: "Immediately ban unpaid internships outside of education programs.",
             demographics: [
-                STUDENTS, YOUNG_PEOPLE
+                STUDENTS
             ]
         },
         {
-            text: "roll back the Conservatives’ corporate income tax cuts by three percentage points",
-            source: "https://www.ndp.ca/economy"
-        },
-        {
-            text: "require the use of Canadian-made steel and aluminum"
-        },
-        {
-            text: "If you are unemployed, increase the amount of your income that is replaced to 60 percent ",
+            text: "Change EI rules to allow workers who quit their job to go to school to qualify for EI benefits",
+            source: "https://xfer.ndp.ca/2021/Commitments/Ready%20for%20Better-NDP%202021%20Commitments_AccessibleVersion.pdf#page=33",
             demographics: [
                 UNEMPLOYED,
             ]
         },
-        {
-            text: "create a low income supplement so that no one receiving EI regular or special benefits receives less than $1,200 a month",
-            demographics: [
-                LOW_INCOME
-            ]
-        },
-        {
-            text: "extend sickness benefits to 50 weeks"
-        }
     ],
 };
 export const GREEN_JOBS_AND_ECONOMY = {
@@ -116,78 +122,23 @@ export const GREEN_JOBS_AND_ECONOMY = {
     topic: "Jobs and Economy",
     partyPlatforms: [
         {
-            text: "raise the federal minimum wage to $15 an hour",
-            source: "https://www.greenparty.ca/sites/default/files/platform_2019_en_web_update_09-16.pdf",
+            text: "Establish a Guaranteed Livable Income program: Every Canadian would be guaranteed a minimum income.",
+            source: "https://www.greenparty.ca/en/platform/life-with-dignity#guaranteed-livable-income",
         },
-        {
-            text: "ban unpaid internships that aren’t for school credits",
-            demographics: [
-                STUDENTS,
-                YOUNG_PEOPLE
-            ]
-        },
-        {
-            text: "Introduce a robot tax,  companies to pay a tax when they replace an employee with a machine"
-        },
-        {
-            text: "provide $1 billion annually to municipalities to hire Canadian youth",
-            source: "https://www.greenparty.ca/en/platform/green-economy",
-            demographics: [
-                STUDENTS,
-                YOUNG_PEOPLE
-            ]
-        }
 
     ],
 };
 export const BLOC_QUEBECOIS_JOBS_AND_ECONOMY = {
     party: "Bloc Qubecois",
     topic: "Jobs and Economy",
-    partyPlatforms: [
-        {
-            text: "Protect Quebec jobs and corporations from foreign takeovers",
-            source: "https://www.blocquebecois.org/wp-content/uploads/2019/09/Plateforme_Bloc2019_web-1.pdf",
-        },
-        {
-            text: "ban unpaid internships that aren’t for school credits",
-            demographics: [
-                STUDENTS,
-                YOUNG_PEOPLE
-            ]
-        },
-        {
-            text: "reduced tax rate for overtime work"
-        },
-        {
-            text: "Establish loans and loan guarantee programs for companies looking to automate",
-        }
-
-    ],
+    incomplete: true,
 };
 export const PEOPLES_JOBS_AND_ECONOMY = {
     party: "People's",
     topic: "Jobs and Economy",
-    partyPlatforms: [
-        {
-            // todo add Citation for supply management
-            text: "Phase out the supply management system over a number of years",
-            source: "https://www.peoplespartyofcanada.ca/supply_management_making_dairy_poultry_and_eggs_more_affordable",
-        },
-        {
-            text: "Privatize Canada Post",
-            source: "https://www.bnnbloomberg.ca/airlines-telecoms-canada-post-maxime-bernier-unveils-people-s-party-vision-for-canada-1.1138093",
-        },
-        {
-            text: "Privatize airports",
-            source: "https://www.maximebernier.com/lower_air_travel_costs_by_privatizing_airports_and_opening_the_sector_to_more_competition",
-
-        },
-        {
-            text: "Get rid of the deficit in two years through spending cuts and fiscal prudence. Spending cuts will include: corporate welfare ($5B-$10B), foreign development aid ($5B), CBC ($1B), equalization payments, and funding for programs which are provincial or municipal responsibilities.",
-            source: "https://www.peoplespartyofcanada.ca/public_finance_balancing_the_budget_in_two_years_and_cutting_taxes",
-        }
-
-    ],
+    incomplete: true,
 };
 export const JOBS_ECONOMY_PLATFORMS = [CONSERVATIVE_JOBS_AND_ECONOMY, LIBERAL_JOBS_AND_ECONOMY, NDP_JOBS_AND_ECONOMY,
     GREEN_JOBS_AND_ECONOMY, BLOC_QUEBECOIS_JOBS_AND_ECONOMY, PEOPLES_JOBS_AND_ECONOMY];
+
+JOBS_ECONOMY_PLATFORMS.forEach(platform => PlatformUtils.addMissingPlatformData(platform));

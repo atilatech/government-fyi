@@ -190,6 +190,19 @@ export const ALL_CITATIONS = {
             and more people seek alternative ways to afford a home.
         </>
     },
+    GuaranteedLivableIncome: {
+        link: "https://en.wikipedia.org/wiki/Guaranteed_minimum_income",
+        publication: "Wikipedia",
+        headline: "Guaranteed Minimum Income",
+        directQuote: <>Guaranteed Livable Income (commonly known as Guaranteed Minimum Income (GMI)) is similar to
+        <a href="https://en.wikipedia.org/wiki/Universal_basic_income" target="_blank" rel="noopener noreferrer">Universal Basic Income</a>
+         .<br/> <br/>
+
+        However, in UBI, everyone gets the same amount of money. GMI is means-based so people who have less income receive more money. It's similar to 
+        welfare programs that already exist, but the biggest difference is that these programs typically involve direct cash payments given to the recipients
+        and they have more freedom in how they choose to spend the money.
+        </>
+    },
     BillC69: {
         link: "https://openparliament.ca/bills/42-1/C-69/",
         publication: "Open Parliament",
