@@ -1,5 +1,5 @@
 import React from 'react';
-import { CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, IncompletePartyInformation } from "data/Constants"
+import { CLIMATE_CONSCIOUS, ENERGY_AND_CLIMATE, IncompletePartyInformation, SENIORS, SENIORS_TOPIC } from "data/Constants"
 
 
 export class PlatformUtils {
@@ -21,6 +21,8 @@ export class PlatformUtils {
                     idea.demographics = []
                 } if (platformData.topic === ENERGY_AND_CLIMATE) {
                     idea.demographics.push(CLIMATE_CONSCIOUS)
+                } if (platformData.topic === SENIORS_TOPIC) {
+                    idea.demographics.push(SENIORS)
                 }
                 
             })
