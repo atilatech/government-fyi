@@ -123,7 +123,9 @@ class Citation extends React.Component {
 			<span>
 					<span style={taggedTextStyle}>
 						{' '}
-						{this.props.children}
+						<mark>
+							{this.props.children}
+						</mark>
 						<CitationButton
 							onTouchEnd={this.handleTouch}
 							isActive={isActive}
