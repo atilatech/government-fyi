@@ -107,12 +107,7 @@ const Data = {
                target="_blank"
                rel="noopener noreferrer">
             Tomiwa Ademidun
-            </a> and {' '}
-            <a href="https://ca.linkedin.com/in/mding5692"
-               target="_blank"
-               rel="noopener noreferrer">
-            Michael Ding
-            </a>.
+            </a> with some help from others.
             <br />
             The site was inspired by <a href="https://ballot.fyi"
                                         target="_blank"
@@ -153,31 +148,10 @@ const Data = {
 
                     I'm the founder of <a href="https://atila.ca" target="_blank"
                                               rel="noopener noreferrer">Atila</a>,
-                    an ed-tech startup that helps students easily find and apply to scholarships.
+                    a website that makes it easy to start and get scholarships
                     <br /><br />
 
-                    I'm also a Software engineering and business student currently studying at Ivey
-                    Business School, Western University.
-                </p>
-            </div>
-            <div>
-                <img className="rounded-circle img-fluid d-block mx-auto  team-image"
-                     src="https://media.licdn.com/dms/image/C4D03AQHydk9zj6SQjw/profile-displayphoto-shrink_800_800/0?e=1576713600&v=beta&t=yGHaPILXol-3HrPQlpbfjmBqsSeHLemUlidBfi1WA68"
-                     alt="Tomiwa Ademidun's Website Personal" />
-                <h3>
-                    <a href="https://ca.linkedin.com/in/mding5692"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Michael Ding
-                    </a>
-                </h3>
-                <p style={{fontSize: 'larger'}}>
-
-                    I'm the co-founder of <a href="https://firstdate.co" target="_blank"
-                                                  rel="noopener noreferrer">firstdate.co</a>,
-                    a dating application for young people.
-                    <br /><br />
-                    I'm also a recent graduate in Computer Science and business from Ivey
+                    I'm a Software engineer based in Toronto and a recent grad from the  Software engineering and business program at Ivey
                     Business School, Western University.
                 </p>
             </div>
