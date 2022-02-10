@@ -23,7 +23,7 @@
     "jquery": "^3.4.1",
     "loadable-components": "^2.2.3",
     "netlify-cli": "^2.17.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.6.2",
     "rc-queue-anim": "^1.8.2",
     "rc-scroll-anim": "^2.6.2",
