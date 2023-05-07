@@ -20,7 +20,7 @@
     "enquire-js": "^0.2.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "loadable-components": "^2.2.3",
     "netlify-cli": "^2.17.0",
     "node-sass": "^4.12.0",
